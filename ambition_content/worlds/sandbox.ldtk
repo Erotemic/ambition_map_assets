@@ -31579,7 +31579,12 @@
 									"params": ["pirate_shark_rider"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": { "entityIid": "EnemySpawn-6806", "layerIid": "Ambition-4477", "levelIid": "pirate_sky_lookout-4475", "worldIid": "ambition-sandbox-world" }, "__tile": null, "defUid": 6805, "realEditorValues": [{
+									"id": "V_String",
+									"params": [
+										"{'entityIid': 'EnemySpawn-6806', 'layerIid': 'Ambition-4477', 'levelIid': 'pirate_sky_lookout-4475', 'worldIid': 'ambition-sandbox-world'}"
+									]
+								}] }
 							],
 							"__worldX": 2752,
 							"__worldY": 3312
@@ -31606,7 +31611,12 @@
 									"params": ["pirate_shark_rider"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": { "entityIid": "EnemySpawn-6807", "layerIid": "Ambition-4477", "levelIid": "pirate_sky_lookout-4475", "worldIid": "ambition-sandbox-world" }, "__tile": null, "defUid": 6805, "realEditorValues": [{
+									"id": "V_String",
+									"params": [
+										"{'entityIid': 'EnemySpawn-6807', 'layerIid': 'Ambition-4477', 'levelIid': 'pirate_sky_lookout-4475', 'worldIid': 'ambition-sandbox-world'}"
+									]
+								}] }
 							],
 							"__worldX": 3120,
 							"__worldY": 3232
@@ -31633,7 +31643,12 @@
 									"params": ["pirate_shark_rider"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": { "entityIid": "EnemySpawn-6808", "layerIid": "Ambition-4477", "levelIid": "pirate_sky_lookout-4475", "worldIid": "ambition-sandbox-world" }, "__tile": null, "defUid": 6805, "realEditorValues": [{
+									"id": "V_String",
+									"params": [
+										"{'entityIid': 'EnemySpawn-6808', 'layerIid': 'Ambition-4477', 'levelIid': 'pirate_sky_lookout-4475', 'worldIid': 'ambition-sandbox-world'}"
+									]
+								}] }
 							],
 							"__worldX": 3520,
 							"__worldY": 3312
@@ -31712,7 +31727,12 @@
 									"params": ["pirate_heavy_shark_rider"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": { "entityIid": "EnemySpawn-6809", "layerIid": "Ambition-4477", "levelIid": "pirate_sky_lookout-4475", "worldIid": "ambition-sandbox-world" }, "__tile": null, "defUid": 6805, "realEditorValues": [{
+									"id": "V_String",
+									"params": [
+										"{'entityIid': 'EnemySpawn-6809', 'layerIid': 'Ambition-4477', 'levelIid': 'pirate_sky_lookout-4475', 'worldIid': 'ambition-sandbox-world'}"
+									]
+								}] }
 							],
 							"__worldX": 3280,
 							"__worldY": 3392
