@@ -11,7 +11,7 @@
 	"iid": "ambition-mary-o-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 107071,
+	"nextUid": 107073,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -12553,6 +12553,44 @@
 								{ "__identifier": "loop_dy", "__type": "Float", "__value": -640.0, "__tile": null, "defUid": 107066, "realEditorValues": [{ "id": "V_Float", "params": [-640.0] }] },
 								{ "__identifier": "loop_min_y", "__type": "Float", "__value": -96.0, "__tile": null, "defUid": 107067, "realEditorValues": [{ "id": "V_Float", "params": [-96.0] }] }
 							]
+						},
+						{
+							"__identifier": "OneWayPlatform",
+							"__grid": [100,11],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#A4D65E",
+							"__worldX": 1600,
+							"__worldY": 1200,
+							"iid": "OneWayPlatform-107071",
+							"width": 16,
+							"height": 16,
+							"defUid": 2003,
+							"px": [1600,176],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "goal_pole_knob", "__tile": null, "defUid": 3008, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["goal_pole_knob"]
+							}] }]
+						},
+						{
+							"__identifier": "OneWayPlatform",
+							"__grid": [100,13],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#A4D65E",
+							"__worldX": 1600,
+							"__worldY": 1232,
+							"iid": "OneWayPlatform-107072",
+							"width": 16,
+							"height": 32,
+							"defUid": 2003,
+							"px": [1600,208],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "goal_pole_banner", "__tile": null, "defUid": 3008, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["goal_pole_banner"]
+							}] }]
 						}
 					]
 				},
