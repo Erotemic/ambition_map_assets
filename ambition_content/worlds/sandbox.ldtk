@@ -17232,9 +17232,9 @@
 									"id": "V_String",
 									"params": ["gallery: goblin + striker"]
 								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "small_skitter", "__tile": null, "defUid": 3019, "realEditorValues": [{
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["small_skitter"]
+									"params": ["combatant"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
 								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
@@ -17302,9 +17302,9 @@
 									"id": "V_String",
 									"params": ["gallery: puppy slug + striker"]
 								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "medium_striker", "__tile": null, "defUid": 3019, "realEditorValues": [{
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["medium_striker"]
+									"params": ["combatant"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
 								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
@@ -17337,9 +17337,9 @@
 									"id": "V_String",
 									"params": ["gallery: AI slop + striker"]
 								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "gradient_seeker", "__tile": null, "defUid": 3019, "realEditorValues": [{
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gradient_seeker"]
+									"params": ["combatant"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
 								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
@@ -17372,9 +17372,9 @@
 									"id": "V_String",
 									"params": ["gallery: raider + door guard"]
 								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "large_brute", "__tile": null, "defUid": 3019, "realEditorValues": [{
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["large_brute"]
+									"params": ["combatant"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
 								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
@@ -40471,12 +40471,20 @@
 									"id": "V_String",
 									"params": ["pg_skitter"]
 								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "small_skitter", "__tile": null, "defUid": 3019, "realEditorValues": [{
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["small_skitter"]
+									"params": ["combatant"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_puppy_slug", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_puppy_slug"]
+								}] },
+								{ "__identifier": "brain_profile", "__type": "String", "__value": "patroller", "__tile": null, "defUid": 6859, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["patroller"]
+								}] }
 							],
 							"__worldX": 3048,
 							"__worldY": 436
@@ -40498,12 +40506,20 @@
 									"id": "V_String",
 									"params": ["pg_brute"]
 								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "large_brute", "__tile": null, "defUid": 3019, "realEditorValues": [{
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["large_brute"]
+									"params": ["combatant"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_heavy_iron_mary", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_pirate_heavy_iron_mary"]
+								}] },
+								{ "__identifier": "brain_profile", "__type": "String", "__value": "door_guard", "__tile": null, "defUid": 6859, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["door_guard"]
+								}] }
 							],
 							"__worldX": 3168,
 							"__worldY": 424
@@ -41303,12 +41319,20 @@
 									"id": "V_String",
 									"params": ["Skirmisher"]
 								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "ranged_skirmisher", "__tile": null, "defUid": 3019, "realEditorValues": [{
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["ranged_skirmisher"]
+									"params": ["combatant"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_pirate_raider"]
+								}] },
+								{ "__identifier": "brain_profile", "__type": "String", "__value": "skirmisher", "__tile": null, "defUid": 6859, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["skirmisher"]
+								}] }
 							],
 							"__worldX": 3128,
 							"__worldY": -340
@@ -41330,12 +41354,20 @@
 									"id": "V_String",
 									"params": ["Skirmisher"]
 								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "ranged_skirmisher", "__tile": null, "defUid": 3019, "realEditorValues": [{
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["ranged_skirmisher"]
+									"params": ["combatant"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_pirate_raider"]
+								}] },
+								{ "__identifier": "brain_profile", "__type": "String", "__value": "skirmisher", "__tile": null, "defUid": 6859, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["skirmisher"]
+								}] }
 							],
 							"__worldX": 3228,
 							"__worldY": -340
@@ -41843,12 +41875,20 @@
 									"id": "V_String",
 									"params": ["Skirmisher"]
 								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "ranged_skirmisher", "__tile": null, "defUid": 3019, "realEditorValues": [{
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["ranged_skirmisher"]
+									"params": ["combatant"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_pirate_raider"]
+								}] },
+								{ "__identifier": "brain_profile", "__type": "String", "__value": "skirmisher", "__tile": null, "defUid": 6859, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["skirmisher"]
+								}] }
 							],
 							"__worldX": -1016,
 							"__worldY": -340
@@ -41870,12 +41910,20 @@
 									"id": "V_String",
 									"params": ["Skirmisher"]
 								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "ranged_skirmisher", "__tile": null, "defUid": 3019, "realEditorValues": [{
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["ranged_skirmisher"]
+									"params": ["combatant"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_pirate_raider"]
+								}] },
+								{ "__identifier": "brain_profile", "__type": "String", "__value": "skirmisher", "__tile": null, "defUid": 6859, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["skirmisher"]
+								}] }
 							],
 							"__worldX": -636,
 							"__worldY": -340
