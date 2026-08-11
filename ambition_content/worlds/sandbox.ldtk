@@ -31710,6 +31710,15 @@
 										"{'entityIid': 'EnemySpawn-6806', 'layerIid': 'Ambition-4477', 'levelIid': 'pirate_sky_lookout-4475', 'worldIid': 'ambition-sandbox-world'}"
 									]
 								}] }
+							,
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_pirate_raider"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRest", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRest"]
+								}] }
 							],
 							"__worldX": 2752,
 							"__worldY": 3312
@@ -31742,6 +31751,15 @@
 										"{'entityIid': 'EnemySpawn-6807', 'layerIid': 'Ambition-4477', 'levelIid': 'pirate_sky_lookout-4475', 'worldIid': 'ambition-sandbox-world'}"
 									]
 								}] }
+							,
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_pirate_raider"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRest", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRest"]
+								}] }
 							],
 							"__worldX": 3120,
 							"__worldY": 3232
@@ -31773,6 +31791,15 @@
 									"params": [
 										"{'entityIid': 'EnemySpawn-6808', 'layerIid': 'Ambition-4477', 'levelIid': 'pirate_sky_lookout-4475', 'worldIid': 'ambition-sandbox-world'}"
 									]
+								}] }
+							,
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_pirate_raider"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRest", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRest"]
 								}] }
 							],
 							"__worldX": 3520,
@@ -31857,6 +31884,15 @@
 									"params": [
 										"{'entityIid': 'EnemySpawn-6809', 'layerIid': 'Ambition-4477', 'levelIid': 'pirate_sky_lookout-4475', 'worldIid': 'ambition-sandbox-world'}"
 									]
+								}] }
+							,
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_heavy_iron_mary", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_pirate_heavy_iron_mary"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRest", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRest"]
 								}] }
 							],
 							"__worldX": 3280,

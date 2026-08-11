@@ -1645,6 +1645,42 @@
 					"allowedRefTags": [],
 					"exportToToc": false,
 					"searchable": true
+				}, {
+					"identifier": "respawn",
+					"doc": "Respawn policy for THIS placement: DeadStaysDead, OnRest, OnRoomReenter. Empty = whatever the archetype says. Spawn-context (ADR 0022), not a property of the character.",
+					"__type": "String",
+					"uid": 104932,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
 				}
 			]
 		},
@@ -7985,6 +8021,15 @@
 										"{'entityIid': 'EnemySpawn-104914', 'layerIid': 'Ambition-104443', 'levelIid': 'pirate_sky_arena-104441', 'worldIid': 'ambition-intro-world'}"
 									]
 								}] }
+							,
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 104930, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_pirate_raider"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRest", "__tile": null, "defUid": 104932, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRest"]
+								}] }
 							],
 							"__worldX": 108600,
 							"__worldY": -784
@@ -8017,6 +8062,15 @@
 										"{'entityIid': 'EnemySpawn-104915', 'layerIid': 'Ambition-104443', 'levelIid': 'pirate_sky_arena-104441', 'worldIid': 'ambition-intro-world'}"
 									]
 								}] }
+							,
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 104930, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_pirate_raider"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRest", "__tile": null, "defUid": 104932, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRest"]
+								}] }
 							],
 							"__worldX": 109200,
 							"__worldY": -824
@@ -8048,6 +8102,15 @@
 									"params": [
 										"{'entityIid': 'EnemySpawn-104916', 'layerIid': 'Ambition-104443', 'levelIid': 'pirate_sky_arena-104441', 'worldIid': 'ambition-intro-world'}"
 									]
+								}] }
+							,
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 104930, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_pirate_raider"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRest", "__tile": null, "defUid": 104932, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRest"]
 								}] }
 							],
 							"__worldX": 109800,
