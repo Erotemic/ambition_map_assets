@@ -1608,6 +1608,43 @@
 					"allowedRefTags": [],
 					"exportToToc": false,
 					"searchable": true
+				},
+				{
+					"identifier": "disposition",
+					"doc": "Hostile or Peaceful. Empty = whatever the archetype says. Spawn-context, not a property of the character.",
+					"__type": "String",
+					"uid": 104931,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
 				}
 			]
 		},
@@ -9715,7 +9752,15 @@
 									"id": "V_String",
 									"params": ["puppy_slug"]
 								}] },
-								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] }
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_puppy_slug", "__tile": null, "defUid": 104930, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_puppy_slug"]
+								}] },
+								{ "__identifier": "disposition", "__type": "String", "__value": "Peaceful", "__tile": null, "defUid": 104931, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Peaceful"]
+								}] }
 							],
 							"__worldX": 3248,
 							"__worldY": 330
@@ -9741,7 +9786,15 @@
 									"id": "V_String",
 									"params": ["puppy_slug"]
 								}] },
-								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] }
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_puppy_slug", "__tile": null, "defUid": 104930, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_puppy_slug"]
+								}] },
+								{ "__identifier": "disposition", "__type": "String", "__value": "Peaceful", "__tile": null, "defUid": 104931, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Peaceful"]
+								}] }
 							],
 							"__worldX": 3574,
 							"__worldY": 394
@@ -9767,7 +9820,15 @@
 									"id": "V_String",
 									"params": ["puppy_slug"]
 								}] },
-								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] }
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_puppy_slug", "__tile": null, "defUid": 104930, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_puppy_slug"]
+								}] },
+								{ "__identifier": "disposition", "__type": "String", "__value": "Peaceful", "__tile": null, "defUid": 104931, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Peaceful"]
+								}] }
 							],
 							"__worldX": 2744,
 							"__worldY": 714
@@ -9793,7 +9854,15 @@
 									"id": "V_String",
 									"params": ["puppy_slug"]
 								}] },
-								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] }
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_puppy_slug", "__tile": null, "defUid": 104930, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_puppy_slug"]
+								}] },
+								{ "__identifier": "disposition", "__type": "String", "__value": "Peaceful", "__tile": null, "defUid": 104931, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Peaceful"]
+								}] }
 							],
 							"__worldX": 2934,
 							"__worldY": 778
