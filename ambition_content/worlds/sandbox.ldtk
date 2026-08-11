@@ -11197,6 +11197,15 @@
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
 								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+							,
+								{ "__identifier": "character_id", "__type": "String", "__value": "sandbag", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["sandbag"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "InPlace(0.85)", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["InPlace(0.85)"]
+								}] }
 							],
 							"__worldX": 3988,
 							"__worldY": -2440
@@ -14406,6 +14415,15 @@
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
 								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+							,
+								{ "__identifier": "character_id", "__type": "String", "__value": "sandbag", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["sandbag"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "InPlace(0.85)", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["InPlace(0.85)"]
+								}] }
 							],
 							"__worldX": -2264,
 							"__worldY": 72
@@ -17310,6 +17328,15 @@
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
 								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+							,
+								{ "__identifier": "character_id", "__type": "String", "__value": "sandbag", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["sandbag"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "InPlace(0.85)", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["InPlace(0.85)"]
+								}] }
 							],
 							"__worldX": 5416,
 							"__worldY": 2981
