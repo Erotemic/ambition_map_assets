@@ -1610,6 +1610,43 @@
 					"allowedRefTags": [],
 					"exportToToc": false,
 					"searchable": true
+				},
+				{
+					"identifier": "brain_profile",
+					"doc": "Which shared controller policy drives THIS placement, provider-relative (e.g. `door_guard`). Empty = the character's own. A name nobody published is a construction error.",
+					"__type": "String",
+					"uid": 6859,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
 				}, {
 					"identifier": "respawn",
 					"doc": "Respawn policy for THIS placement: DeadStaysDead, OnRest, OnRoomReenter. Empty = whatever the archetype says. Spawn-context (ADR 0022), not a property of the character.",
@@ -17156,16 +17193,24 @@
 							"defUid": 2008,
 							"px": [500,600],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "patrol cutter", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "gallery: goblin + patroller", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["patrol cutter"]
+									"params": ["gallery: goblin + patroller"]
 								}] },
 								{ "__identifier": "brain", "__type": "String", "__value": "Patrol:enemy_patrol_path_a", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Patrol:enemy_patrol_path_a"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "goblin", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["goblin"]
+								}] },
+								{ "__identifier": "brain_profile", "__type": "String", "__value": "patroller", "__tile": null, "defUid": 6859, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["patroller"]
+								}] }
 							],
 							"__worldX": 4596,
 							"__worldY": 2904
@@ -17183,16 +17228,24 @@
 							"defUid": 2008,
 							"px": [690,660],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "small skitter", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "gallery: goblin + striker", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["small skitter"]
+									"params": ["gallery: goblin + striker"]
 								}] },
 								{ "__identifier": "brain", "__type": "String", "__value": "small_skitter", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["small_skitter"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "goblin", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["goblin"]
+								}] },
+								{ "__identifier": "brain_profile", "__type": "String", "__value": "medium_striker", "__tile": null, "defUid": 6859, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["medium_striker"]
+								}] }
 							],
 							"__worldX": 4786,
 							"__worldY": 2964
@@ -17210,16 +17263,24 @@
 							"defUid": 2008,
 							"px": [980,666],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "guard striker", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "gallery: goblin + door guard", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["guard striker"]
+									"params": ["gallery: goblin + door guard"]
 								}] },
 								{ "__identifier": "brain", "__type": "String", "__value": "Guard:420", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Guard:420"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "goblin", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["goblin"]
+								}] },
+								{ "__identifier": "brain_profile", "__type": "String", "__value": "door_guard", "__tile": null, "defUid": 6859, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["door_guard"]
+								}] }
 							],
 							"__worldX": 5076,
 							"__worldY": 2970
@@ -17237,16 +17298,24 @@
 							"defUid": 2008,
 							"px": [1120,665],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "medium striker", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "gallery: puppy slug + striker", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["medium striker"]
+									"params": ["gallery: puppy slug + striker"]
 								}] },
 								{ "__identifier": "brain", "__type": "String", "__value": "medium_striker", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["medium_striker"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_puppy_slug", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_puppy_slug"]
+								}] },
+								{ "__identifier": "brain_profile", "__type": "String", "__value": "medium_striker", "__tile": null, "defUid": 6859, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["medium_striker"]
+								}] }
 							],
 							"__worldX": 5216,
 							"__worldY": 2969
@@ -17264,16 +17333,24 @@
 							"defUid": 2008,
 							"px": [1240,664],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "gradient seeker", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "gallery: AI slop + striker", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gradient seeker"]
+									"params": ["gallery: AI slop + striker"]
 								}] },
 								{ "__identifier": "brain", "__type": "String", "__value": "gradient_seeker", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["gradient_seeker"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_ai_slop", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_ai_slop"]
+								}] },
+								{ "__identifier": "brain_profile", "__type": "String", "__value": "medium_striker", "__tile": null, "defUid": 6859, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["medium_striker"]
+								}] }
 							],
 							"__worldX": 5336,
 							"__worldY": 2968
@@ -17291,16 +17368,24 @@
 							"defUid": 2008,
 							"px": [1524,646],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "large brute", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "gallery: raider + door guard", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["large brute"]
+									"params": ["gallery: raider + door guard"]
 								}] },
 								{ "__identifier": "brain", "__type": "String", "__value": "large_brute", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["large_brute"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_pirate_raider"]
+								}] },
+								{ "__identifier": "brain_profile", "__type": "String", "__value": "door_guard", "__tile": null, "defUid": 6859, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["door_guard"]
+								}] }
 							],
 							"__worldX": 5620,
 							"__worldY": 2950
@@ -17318,9 +17403,9 @@
 							"defUid": 2008,
 							"px": [1320,677],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "lab finite sandbag", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "gallery: practice target", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["lab finite sandbag"]
+									"params": ["gallery: practice target"]
 								}] },
 								{ "__identifier": "brain", "__type": "String", "__value": "sandbag_finite", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
@@ -17336,6 +17421,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "InPlace(0.85)", "__tile": null, "defUid": 6858, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["InPlace(0.85)"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "sandbag", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["sandbag"]
 								}] }
 							],
 							"__worldX": 5416,
