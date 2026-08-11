@@ -2552,6 +2552,42 @@
 					"allowedRefTags": [],
 					"exportToToc": false,
 					"searchable": true
+				}, {
+					"identifier": "respawn",
+					"doc": "Respawn policy for THIS placement: DeadStaysDead, OnRest, OnRoomReenter, InPlace(seconds). Empty = whatever the archetype says. Spawn-context (ADR 0022), not a property of the character.",
+					"__type": "String",
+					"uid": 107068,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
 				}
 			]
 		},
@@ -9469,6 +9505,11 @@
 									"id": "V_String",
 									"params": ["AI Slop"]
 								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							]
 						},
 						{
@@ -9497,6 +9538,11 @@
 								{ "__identifier": "name", "__type": "String", "__value": "AI Slop", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["AI Slop"]
+								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
 								}] }
 							]
 						},
@@ -9527,6 +9573,11 @@
 									"id": "V_String",
 									"params": ["AI Slop"]
 								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							]
 						},
 						{
@@ -9555,6 +9606,11 @@
 								{ "__identifier": "name", "__type": "String", "__value": "AI Slop", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["AI Slop"]
+								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
 								}] }
 							]
 						},
@@ -9585,6 +9641,11 @@
 									"id": "V_String",
 									"params": ["AI Slop"]
 								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							]
 						},
 						{
@@ -9613,6 +9674,11 @@
 								{ "__identifier": "name", "__type": "String", "__value": "AI Slop", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["AI Slop"]
+								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
 								}] }
 							]
 						},
@@ -9643,6 +9709,11 @@
 									"id": "V_String",
 									"params": ["AI Slop"]
 								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							]
 						},
 						{
@@ -9671,6 +9742,11 @@
 								{ "__identifier": "name", "__type": "String", "__value": "AI Slop", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["AI Slop"]
+								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
 								}] }
 							]
 						},
@@ -9701,6 +9777,11 @@
 									"id": "V_String",
 									"params": ["AI Slop"]
 								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							]
 						},
 						{
@@ -9729,6 +9810,11 @@
 								{ "__identifier": "name", "__type": "String", "__value": "AI Slop", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["AI Slop"]
+								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
 								}] }
 							]
 						},
@@ -9759,6 +9845,11 @@
 									"id": "V_String",
 									"params": ["AI Slop"]
 								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							]
 						},
 						{
@@ -9787,6 +9878,11 @@
 								{ "__identifier": "name", "__type": "String", "__value": "AI Slop", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["AI Slop"]
+								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
 								}] }
 							]
 						},
@@ -9817,6 +9913,11 @@
 									"id": "V_String",
 									"params": ["Solid Snake"]
 								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							]
 						},
 						{
@@ -9845,6 +9946,11 @@
 								{ "__identifier": "name", "__type": "String", "__value": "Solid Snake", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Solid Snake"]
+								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
 								}] }
 							]
 						},
@@ -9875,6 +9981,11 @@
 									"id": "V_String",
 									"params": ["Solid Snake"]
 								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							]
 						},
 						{
@@ -9904,6 +10015,11 @@
 									"id": "V_String",
 									"params": ["Solid Snake"]
 								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							]
 						},
 						{
@@ -9932,6 +10048,11 @@
 								{ "__identifier": "name", "__type": "String", "__value": "Solid Snake", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Solid Snake"]
+								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
 								}] }
 							]
 						},
@@ -12294,6 +12415,11 @@
 									"id": "V_String",
 									"params": ["AI Slop"]
 								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							]
 						},
 						{
@@ -12323,6 +12449,11 @@
 									"id": "V_String",
 									"params": ["Solid Snake"]
 								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							]
 						},
 						{
@@ -12351,6 +12482,11 @@
 								{ "__identifier": "name", "__type": "String", "__value": "AI Slop", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["AI Slop"]
+								}] }
+							,
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
 								}] }
 							]
 						},
