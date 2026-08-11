@@ -36649,6 +36649,10 @@
 							"defUid": 2008,
 							"px": [336,542],
 							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_exploding_mite", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_exploding_mite"]
+								}] },
 								{ "__identifier": "name", "__type": "String", "__value": "Exploding Mite", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Exploding Mite"]
@@ -36676,6 +36680,10 @@
 							"defUid": 2008,
 							"px": [688,542],
 							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_exploding_mite", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_exploding_mite"]
+								}] },
 								{ "__identifier": "name", "__type": "String", "__value": "Exploding Mite", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Exploding Mite"]
@@ -36703,6 +36711,10 @@
 							"defUid": 2008,
 							"px": [992,542],
 							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_exploding_mite", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_exploding_mite"]
+								}] },
 								{ "__identifier": "name", "__type": "String", "__value": "Exploding Mite", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Exploding Mite"]
@@ -40244,6 +40256,10 @@
 							"defUid": 2008,
 							"px": [240,428],
 							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_dividing_mite", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_dividing_mite"]
+								}] },
 								{ "__identifier": "name", "__type": "String", "__value": "Dividing Mite", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Dividing Mite"]
@@ -40271,6 +40287,10 @@
 							"defUid": 2008,
 							"px": [430,428],
 							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_dividing_mite", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_dividing_mite"]
+								}] },
 								{ "__identifier": "name", "__type": "String", "__value": "Dividing Mite", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Dividing Mite"]
@@ -40784,6 +40804,10 @@
 							"defUid": 2008,
 							"px": [360,414],
 							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_exploding_mite", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_exploding_mite"]
+								}] },
 								{ "__identifier": "name", "__type": "String", "__value": "Exploding Mite", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Exploding Mite"]
@@ -40811,6 +40835,10 @@
 							"defUid": 2008,
 							"px": [740,414],
 							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_exploding_mite", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_exploding_mite"]
+								}] },
 								{ "__identifier": "name", "__type": "String", "__value": "Exploding Mite", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Exploding Mite"]
@@ -40838,6 +40866,10 @@
 							"defUid": 2008,
 							"px": [560,428],
 							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_dividing_mite", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_dividing_mite"]
+								}] },
 								{ "__identifier": "name", "__type": "String", "__value": "Dividing Mite", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Dividing Mite"]
