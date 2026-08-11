@@ -52817,6 +52817,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "disposition", "__type": "String", "__value": "Peaceful", "__tile": null, "defUid": 6857, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Peaceful"]
 								}] }
 							],
 							"__worldX": 5906,
