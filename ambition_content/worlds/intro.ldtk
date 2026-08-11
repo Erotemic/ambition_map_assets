@@ -8120,6 +8120,10 @@
 								{ "__identifier": "brain", "__type": "String", "__value": "burning_flying_shark", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["burning_flying_shark"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_burning_flying_shark", "__tile": null, "defUid": 104930, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_burning_flying_shark"]
 								}] }
 							]
 						},
@@ -8145,6 +8149,10 @@
 								{ "__identifier": "brain", "__type": "String", "__value": "burning_flying_shark", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["burning_flying_shark"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_burning_flying_shark", "__tile": null, "defUid": 104930, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_burning_flying_shark"]
 								}] }
 							]
 						},
@@ -8170,6 +8178,10 @@
 								{ "__identifier": "brain", "__type": "String", "__value": "burning_flying_shark", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["burning_flying_shark"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_burning_flying_shark", "__tile": null, "defUid": 104930, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_burning_flying_shark"]
 								}] }
 							]
 						}

@@ -17373,6 +17373,10 @@
 								{ "__identifier": "brain", "__type": "String", "__value": "ai_slop", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["ai_slop"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_ai_slop", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_ai_slop"]
 								}] }
 							]
 						}
@@ -31907,9 +31911,9 @@
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
 								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_ai_slop", "__tile": null, "defUid": 6854, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_burning_flying_shark", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_ai_slop"]
+									"params": ["npc_burning_flying_shark"]
 								}] }
 							],
 							"__worldX": 2752,
@@ -31937,7 +31941,11 @@
 									"params": ["burning_flying_shark"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_burning_flying_shark", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_burning_flying_shark"]
+								}] }
 							],
 							"__worldX": 3120,
 							"__worldY": 3232
@@ -31964,7 +31972,11 @@
 									"params": ["burning_flying_shark"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_burning_flying_shark", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_burning_flying_shark"]
+								}] }
 							],
 							"__worldX": 3520,
 							"__worldY": 3312
@@ -31991,7 +32003,11 @@
 									"params": ["burning_flying_shark"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_burning_flying_shark", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_burning_flying_shark"]
+								}] }
 							],
 							"__worldX": 3280,
 							"__worldY": 3392
