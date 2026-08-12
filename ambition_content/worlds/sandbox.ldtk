@@ -11207,7 +11207,11 @@
 									"params": ["sandbag_infinite"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "sandbag_infinite", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["sandbag_infinite"]
+								}] }
 							],
 							"__worldX": 2648,
 							"__worldY": -2434
@@ -14424,7 +14428,11 @@
 									"params": ["sandbag_infinite"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "sandbag_infinite", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["sandbag_infinite"]
+								}] }
 							],
 							"__worldX": -3234,
 							"__worldY": -356
