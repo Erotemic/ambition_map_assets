@@ -11,7 +11,7 @@
 	"iid": "ambition-hall-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 109472,
+	"nextUid": 109473,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -255,8 +255,8 @@
 			"showName": true,
 			"tilesetId": 108504,
 			"tileRenderMode": "Cover",
-			"tileRect": { "tilesetUid": 108504, "x": 0, "y": 0, "w": 224, "h": 224 },
-			"uiTileRect": { "tilesetUid": 108504, "x": 0, "y": 0, "w": 224, "h": 224 },
+			"tileRect": { "tilesetUid": 108504, "x": 0, "y": 0, "w": 256, "h": 256 },
+			"uiTileRect": { "tilesetUid": 108504, "x": 0, "y": 0, "w": 256, "h": 256 },
 			"nineSliceBorders": [],
 			"maxCount": 0,
 			"limitScope": "PerLayer",
@@ -5989,22 +5989,22 @@
 		}
 	], "tilesets": [
 		{
-			"__cHei": 7,
-			"__cWid": 7,
+			"__cHei": 9,
+			"__cWid": 12,
 			"cachedPixelData": null,
 			"customData": [],
 			"embedAtlas": null,
 			"enumTags": [],
 			"identifier": "sprite_player_robot_v3",
 			"padding": 0,
-			"pxHei": 1728,
-			"pxWid": 1681,
+			"pxHei": 2484,
+			"pxWid": 3072,
 			"relPath": "../sprites/player_robot_v3_spritesheet.png",
 			"savedSelections": [],
 			"spacing": 0,
 			"tags": ["sprite"],
 			"tagsSourceEnumUid": null,
-			"tileGridSize": 224,
+			"tileGridSize": 256,
 			"uid": 108504
 		}
 	], "enums": [{ "identifier": "BreakablePlatformCollision", "uid": 5002, "values": [ { "id": "Solid", "tileRect": null, "color": 14180189 }, { "id": "OneWayUp", "tileRect": null, "color": 10802479 } ], "iconTilesetUid": null, "externalRelPath": null, "externalFileChecksum": null, "tags": [] }], "externalEnums": [], "levelFields": [

@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 6857,
+	"nextUid": 6858,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -255,8 +255,8 @@
 			"showName": true,
 			"tilesetId": 6852,
 			"tileRenderMode": "Cover",
-			"tileRect": { "tilesetUid": 6852, "x": 0, "y": 0, "w": 224, "h": 224 },
-			"uiTileRect": { "tilesetUid": 6852, "x": 0, "y": 0, "w": 224, "h": 224 },
+			"tileRect": { "tilesetUid": 6852, "x": 0, "y": 0, "w": 256, "h": 256 },
+			"uiTileRect": { "tilesetUid": 6852, "x": 0, "y": 0, "w": 256, "h": 256 },
 			"nineSliceBorders": [],
 			"maxCount": 0,
 			"limitScope": "PerLayer",
@@ -1647,7 +1647,8 @@
 					"allowedRefTags": [],
 					"exportToToc": false,
 					"searchable": true
-				}, {
+				},
+				{
 					"identifier": "respawn",
 					"doc": "Respawn policy for THIS placement: DeadStaysDead, OnRest, OnRoomReenter. Empty = whatever the archetype says. Spawn-context (ADR 0022), not a property of the character.",
 					"__type": "String",
@@ -6173,22 +6174,22 @@
 		}
 	], "tilesets": [
 		{
-			"__cHei": 7,
-			"__cWid": 7,
+			"__cHei": 9,
+			"__cWid": 12,
 			"cachedPixelData": null,
 			"customData": [],
 			"embedAtlas": null,
 			"enumTags": [],
 			"identifier": "sprite_player_robot_v3",
 			"padding": 0,
-			"pxHei": 1728,
-			"pxWid": 1681,
+			"pxHei": 2484,
+			"pxWid": 3072,
 			"relPath": "../sprites/player_robot_v3_spritesheet.png",
 			"savedSelections": [],
 			"spacing": 0,
 			"tags": ["sprite"],
 			"tagsSourceEnumUid": null,
-			"tileGridSize": 224,
+			"tileGridSize": 256,
 			"uid": 6852
 		}
 	], "enums": [{ "identifier": "BreakablePlatformCollision", "uid": 5002, "values": [ { "id": "Solid", "tileRect": null, "color": 14180189 }, { "id": "OneWayUp", "tileRect": null, "color": 10802479 } ], "iconTilesetUid": null, "externalRelPath": null, "externalFileChecksum": null, "tags": [] }], "externalEnums": [], "levelFields": [
@@ -11233,8 +11234,7 @@
 									"params": ["sandbag_finite"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
-							,
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "sandbag", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sandbag"]
@@ -14451,8 +14451,7 @@
 									"params": ["sandbag_finite"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
-							,
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "sandbag", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sandbag"]
@@ -17412,8 +17411,7 @@
 									"params": ["sandbag_finite"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
-							,
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "sandbag", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sandbag"]
@@ -31825,8 +31823,7 @@
 									"params": [
 										"{'entityIid': 'EnemySpawn-6806', 'layerIid': 'Ambition-4477', 'levelIid': 'pirate_sky_lookout-4475', 'worldIid': 'ambition-sandbox-world'}"
 									]
-								}] }
-							,
+								}] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["npc_pirate_raider"]
@@ -31866,8 +31863,7 @@
 									"params": [
 										"{'entityIid': 'EnemySpawn-6807', 'layerIid': 'Ambition-4477', 'levelIid': 'pirate_sky_lookout-4475', 'worldIid': 'ambition-sandbox-world'}"
 									]
-								}] }
-							,
+								}] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["npc_pirate_raider"]
@@ -31907,8 +31903,7 @@
 									"params": [
 										"{'entityIid': 'EnemySpawn-6808', 'layerIid': 'Ambition-4477', 'levelIid': 'pirate_sky_lookout-4475', 'worldIid': 'ambition-sandbox-world'}"
 									]
-								}] }
-							,
+								}] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["npc_pirate_raider"]
@@ -32000,8 +31995,7 @@
 									"params": [
 										"{'entityIid': 'EnemySpawn-6809', 'layerIid': 'Ambition-4477', 'levelIid': 'pirate_sky_lookout-4475', 'worldIid': 'ambition-sandbox-world'}"
 									]
-								}] }
-							,
+								}] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_heavy_iron_mary", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["npc_pirate_heavy_iron_mary"]
@@ -37539,13 +37533,11 @@
 									"params": ["medium_striker"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
-							,
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "goblin", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["goblin"]
-								}] }
-							,
+								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
@@ -37576,13 +37568,11 @@
 									"params": ["medium_striker"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
-							,
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "goblin", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["goblin"]
-								}] }
-							,
+								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
@@ -40365,13 +40355,11 @@
 									"params": ["medium_striker"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
-							,
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "goblin", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["goblin"]
-								}] }
-							,
+								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
@@ -40402,13 +40390,11 @@
 									"params": ["medium_striker"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
-							,
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "goblin", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["goblin"]
-								}] }
-							,
+								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
@@ -40439,13 +40425,11 @@
 									"params": ["medium_striker"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
-							,
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "goblin", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["goblin"]
-								}] }
-							,
+								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
@@ -52945,8 +52929,7 @@
 									"params": ["giant_gnu"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
-							,
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_giant_gnu", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["npc_giant_gnu"]

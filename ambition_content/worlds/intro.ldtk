@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 104931,
+	"nextUid": 104932,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -290,8 +290,8 @@
 			"showName": true,
 			"tilesetId": 104928,
 			"tileRenderMode": "Cover",
-			"tileRect": { "tilesetUid": 104928, "x": 0, "y": 0, "w": 224, "h": 224 },
-			"uiTileRect": { "tilesetUid": 104928, "x": 0, "y": 0, "w": 224, "h": 224 },
+			"tileRect": { "tilesetUid": 104928, "x": 0, "y": 0, "w": 256, "h": 256 },
+			"uiTileRect": { "tilesetUid": 104928, "x": 0, "y": 0, "w": 256, "h": 256 },
 			"nineSliceBorders": [],
 			"maxCount": 0,
 			"limitScope": "PerLayer",
@@ -1645,7 +1645,8 @@
 					"allowedRefTags": [],
 					"exportToToc": false,
 					"searchable": true
-				}, {
+				},
+				{
 					"identifier": "respawn",
 					"doc": "Respawn policy for THIS placement: DeadStaysDead, OnRest, OnRoomReenter. Empty = whatever the archetype says. Spawn-context (ADR 0022), not a property of the character.",
 					"__type": "String",
@@ -4925,22 +4926,22 @@
 			}
 		},
 		{
-			"__cHei": 7,
-			"__cWid": 7,
+			"__cHei": 9,
+			"__cWid": 12,
 			"cachedPixelData": null,
 			"customData": [],
 			"embedAtlas": null,
 			"enumTags": [],
 			"identifier": "sprite_player_robot_v3",
 			"padding": 0,
-			"pxHei": 1728,
-			"pxWid": 1681,
+			"pxHei": 2484,
+			"pxWid": 3072,
 			"relPath": "../sprites/player_robot_v3_spritesheet.png",
 			"savedSelections": [],
 			"spacing": 0,
 			"tags": ["sprite"],
 			"tagsSourceEnumUid": null,
-			"tileGridSize": 224,
+			"tileGridSize": 256,
 			"uid": 104928
 		}
 	], "enums": [{ "identifier": "BreakablePlatformCollision", "uid": 5002, "values": [ { "id": "Solid", "tileRect": null, "color": 14180189 }, { "id": "OneWayUp", "tileRect": null, "color": 10802479 } ], "iconTilesetUid": null, "externalRelPath": null, "externalFileChecksum": null, "tags": [] }], "externalEnums": [], "levelFields": [
@@ -8020,8 +8021,7 @@
 									"params": [
 										"{'entityIid': 'EnemySpawn-104914', 'layerIid': 'Ambition-104443', 'levelIid': 'pirate_sky_arena-104441', 'worldIid': 'ambition-intro-world'}"
 									]
-								}] }
-							,
+								}] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 104930, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["npc_pirate_raider"]
@@ -8061,8 +8061,7 @@
 									"params": [
 										"{'entityIid': 'EnemySpawn-104915', 'layerIid': 'Ambition-104443', 'levelIid': 'pirate_sky_arena-104441', 'worldIid': 'ambition-intro-world'}"
 									]
-								}] }
-							,
+								}] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 104930, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["npc_pirate_raider"]
@@ -8102,8 +8101,7 @@
 									"params": [
 										"{'entityIid': 'EnemySpawn-104916', 'layerIid': 'Ambition-104443', 'levelIid': 'pirate_sky_arena-104441', 'worldIid': 'ambition-intro-world'}"
 									]
-								}] }
-							,
+								}] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 104930, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["npc_pirate_raider"]
