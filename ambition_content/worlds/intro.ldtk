@@ -6694,7 +6694,11 @@
 									"id": "V_String",
 									"params": ["medium_striker"]
 								}] },
-								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] }
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_lab_raider", "__tile": null, "defUid": 104930, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_lab_raider"]
+								}] }
 							],
 							"__worldX": 1424,
 							"__worldY": 432
