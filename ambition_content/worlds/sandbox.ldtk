@@ -36965,7 +36965,11 @@
 									"params": ["exploding_mite"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							],
 							"__worldX": 3920,
 							"__worldY": 7198
@@ -36996,7 +37000,11 @@
 									"params": ["exploding_mite"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							],
 							"__worldX": 4272,
 							"__worldY": 7198
@@ -37027,7 +37035,11 @@
 									"params": ["exploding_mite"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							],
 							"__worldX": 4576,
 							"__worldY": 7198
@@ -40628,7 +40640,11 @@
 									"params": ["dividing_mite"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							],
 							"__worldX": 2288,
 							"__worldY": 428
@@ -40659,7 +40675,11 @@
 									"params": ["dividing_mite"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							],
 							"__worldX": 2478,
 							"__worldY": 428
@@ -41176,7 +41196,11 @@
 									"params": ["exploding_mite"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							],
 							"__worldX": 2408,
 							"__worldY": -354
@@ -41207,7 +41231,11 @@
 									"params": ["exploding_mite"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							],
 							"__worldX": 2788,
 							"__worldY": -354
@@ -41238,7 +41266,11 @@
 									"params": ["dividing_mite"]
 								}] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							],
 							"__worldX": 2608,
 							"__worldY": -340
