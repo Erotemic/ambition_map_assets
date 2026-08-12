@@ -6751,7 +6751,11 @@
 									"id": "V_String",
 									"params": ["gradient_seeker"]
 								}] },
-								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] }
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_salvage_guard", "__tile": null, "defUid": 104930, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_salvage_guard"]
+								}] }
 							],
 							"__worldX": 2224,
 							"__worldY": 432
