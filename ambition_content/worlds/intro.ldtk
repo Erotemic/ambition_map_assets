@@ -19783,7 +19783,11 @@
 									"id": "V_String",
 									"params": ["medium_striker"]
 								}] },
-								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] }
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_puppy_slug", "__tile": null, "defUid": 104930, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_puppy_slug"]
+								}] }
 							],
 							"__worldX": 4624,
 							"__worldY": 1712

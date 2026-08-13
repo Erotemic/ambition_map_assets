@@ -46975,30 +46975,6 @@
 							"__worldY": 4320
 						},
 						{
-							"__identifier": "EnemySpawn",
-							"__grid": [33,13],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FF6B6B",
-							"iid": "EnemySpawn-6126",
-							"width": 28,
-							"height": 46,
-							"defUid": 2008,
-							"px": [540,210],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "Target", "__tile": null, "defUid": 3018, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["Target"]
-								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "Passive", "__tile": null, "defUid": 3019, "realEditorValues": [] },
-								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] }
-							],
-							"__worldX": -2788,
-							"__worldY": 4306
-						},
-						{
 							"__identifier": "PlayerStart",
 							"__grid": [5,13],
 							"__pivot": [0,0],
