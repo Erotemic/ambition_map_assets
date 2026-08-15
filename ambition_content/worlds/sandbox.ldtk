@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 6858,
+	"nextUid": 6859,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -1684,6 +1684,43 @@
 					"allowedRefTags": [],
 					"exportToToc": false,
 					"searchable": true
+				},
+				{
+					"identifier": "path_ref",
+					"doc": "The KinematicPath this body patrols. Conversion resolves it to that path's own lookup id, so the reference cannot disagree with the target about how the path is spelled.",
+					"__type": "EntityRef",
+					"uid": 6858,
+					"type": "F_EntityRef",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayScale": 1,
+					"editorDisplayPos": "Above",
+					"editorLinkStyle": "CurvedArrow",
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorShowInWorld": true,
+					"editorCutLongValues": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"useForSmartColor": false,
+					"exportToToc": false,
+					"searchable": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": false,
+					"allowedRefs": "OnlySpecificEntity",
+					"allowedRefsEntityUid": 2012,
+					"allowedRefTags": [],
+					"tilesetUid": null
 				}
 			]
 		},
@@ -17228,10 +17265,7 @@
 									"id": "V_String",
 									"params": ["gallery: goblin + patroller"]
 								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "Patrol:enemy_patrol_path_a", "__tile": null, "defUid": 3019, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["Patrol:enemy_patrol_path_a"]
-								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": null, "__tile": null, "defUid": 3019, "realEditorValues": [] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
 								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6805, "realEditorValues": [] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "goblin", "__tile": null, "defUid": 6854, "realEditorValues": [{
@@ -17241,6 +17275,12 @@
 								{ "__identifier": "brain_profile", "__type": "String", "__value": "patroller", "__tile": null, "defUid": 6859, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["patroller"]
+								}] },
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": { "entityIid": "KinematicPath-0139", "layerIid": "Ambition-1497", "levelIid": "basement_enemies-1494", "worldIid": "ambition-sandbox-world" }, "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": [
+										"{'entityIid': 'KinematicPath-0139', 'layerIid': 'Ambition-1497', 'levelIid': 'basement_enemies-1494', 'worldIid': 'ambition-sandbox-world'}"
+									]
 								}] }
 							],
 							"__worldX": 4596,

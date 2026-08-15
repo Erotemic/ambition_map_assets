@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 104932,
+	"nextUid": 104933,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -1682,6 +1682,43 @@
 					"allowedRefTags": [],
 					"exportToToc": false,
 					"searchable": true
+				},
+				{
+					"identifier": "path_ref",
+					"doc": "The KinematicPath this body patrols. Conversion resolves it to that path's own lookup id, so the reference cannot disagree with the target about how the path is spelled.",
+					"__type": "EntityRef",
+					"uid": 104932,
+					"type": "F_EntityRef",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayScale": 1,
+					"editorDisplayPos": "Above",
+					"editorLinkStyle": "CurvedArrow",
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorShowInWorld": true,
+					"editorCutLongValues": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"useForSmartColor": false,
+					"exportToToc": false,
+					"searchable": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": false,
+					"allowedRefs": "OnlySpecificEntity",
+					"allowedRefsEntityUid": 2012,
+					"allowedRefTags": [],
+					"tilesetUid": null
 				}
 			]
 		},
@@ -18358,14 +18395,22 @@
 									"id": "V_String",
 									"params": ["Puppy Slug"]
 								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "Patrol:lab_patrol_line", "__tile": null, "defUid": 3019, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["Patrol:lab_patrol_line"]
-								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": null, "__tile": null, "defUid": 3019, "realEditorValues": [] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_puppy_slug", "__tile": null, "defUid": 104930, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["npc_puppy_slug"]
+								}] },
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": {
+									"entityIid": "KinematicPath-104852",
+									"layerIid": "Ambition-104844",
+									"levelIid": "combat_calibration_lab-104842",
+									"worldIid": "ambition-intro-world"
+								}, "__tile": null, "defUid": 104932, "realEditorValues": [{
+									"id": "V_String",
+									"params": [
+										"{'entityIid': 'KinematicPath-104852', 'layerIid': 'Ambition-104844', 'levelIid': 'combat_calibration_lab-104842', 'worldIid': 'ambition-intro-world'}"
+									]
 								}] }
 							],
 							"__worldX": 6928,
