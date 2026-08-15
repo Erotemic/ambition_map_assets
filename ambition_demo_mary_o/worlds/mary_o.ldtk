@@ -11,7 +11,7 @@
 	"iid": "ambition-mary-o-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 107227,
+	"nextUid": 107229,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -2559,6 +2559,43 @@
 					"__type": "String",
 					"uid": 107068,
 					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "facing",
+					"doc": null,
+					"__type": "LocalEnum.SpawnFacing",
+					"uid": 107228,
+					"type": "F_Enum(107227)",
 					"isArray": false,
 					"canBeNull": true,
 					"arrayMinLength": null,
@@ -7394,7 +7431,8 @@
 				"tileRect": { "tilesetUid": 106934, "x": 352, "y": 336, "w": 123, "h": 50 },
 				"color": 0
 			}
-		], "iconTilesetUid": 106934, "externalRelPath": null, "externalFileChecksum": null, "tags": [] }
+		], "iconTilesetUid": 106934, "externalRelPath": null, "externalFileChecksum": null, "tags": [] },
+		{ "identifier": "SpawnFacing", "uid": 107227, "values": [ { "id": "Left", "tileRect": null, "color": 0 }, { "id": "Right", "tileRect": null, "color": 0 } ], "iconTilesetUid": null, "externalRelPath": null, "externalFileChecksum": null, "tags": [] }
 	], "externalEnums": [], "levelFields": [
 		{
 			"identifier": "activeArea",
@@ -9552,6 +9590,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -9585,6 +9627,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -9618,6 +9664,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -9651,6 +9701,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -9684,6 +9738,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -9717,6 +9775,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -9750,6 +9812,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -9783,6 +9849,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -9816,6 +9886,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -9849,6 +9923,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -9882,6 +9960,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -9915,6 +9997,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -9948,6 +10034,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -9981,6 +10071,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -10014,6 +10108,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -10047,6 +10145,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -10080,6 +10182,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -12451,6 +12557,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -12484,6 +12594,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -12517,6 +12631,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -12550,6 +12668,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -12583,6 +12705,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -12616,6 +12742,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -12649,6 +12779,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -13483,6 +13617,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -13516,6 +13654,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -13549,6 +13691,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -13582,6 +13728,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -13615,6 +13765,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
@@ -13648,6 +13802,10 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 107068, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] },
+								{ "__identifier": "facing", "__type": "LocalEnum.SpawnFacing", "__value": "Left", "__tile": null, "defUid": 107228, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Left"]
 								}] }
 							]
 						},
