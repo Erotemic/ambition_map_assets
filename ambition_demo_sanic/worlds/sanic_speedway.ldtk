@@ -8668,25 +8668,6 @@
 						},
 						{
 							"__identifier": "OneWayPlatform",
-							"__grid": [93,40],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#A4D65E",
-							"__worldX": 1490,
-							"__worldY": 646,
-							"iid": "OneWayPlatform-106908",
-							"width": 26,
-							"height": 26,
-							"defUid": 2003,
-							"px": [1490,646],
-							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "monitor_super", "__tile": null, "defUid": 3008, "realEditorValues": [{
-								"id": "V_String",
-								"params": ["monitor_super"]
-							}] }]
-						},
-						{
-							"__identifier": "OneWayPlatform",
 							"__grid": [290,24],
 							"__pivot": [0,0],
 							"__tags": [],
