@@ -49659,9 +49659,9 @@
 							"defUid": 2006,
 							"px": [560,1206],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_noether", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_emmy_noether", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_noether"]
+									"params": ["npc_emmy_noether"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Talk to Emmy Ethereal (down)", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
@@ -49778,9 +49778,9 @@
 							"defUid": 2006,
 							"px": [32,560],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_noether", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_emmy_noether", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_noether"]
+									"params": ["npc_emmy_noether"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Talk to Emmy Ethereal (left)", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
@@ -49894,9 +49894,9 @@
 							"defUid": 2006,
 							"px": [678,32],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_noether", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_emmy_noether", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_noether"]
+									"params": ["npc_emmy_noether"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Talk to Emmy Ethereal (up)", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
@@ -50013,9 +50013,9 @@
 							"defUid": 2006,
 							"px": [1206,678],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_noether", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_emmy_noether", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_noether"]
+									"params": ["npc_emmy_noether"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Talk to Emmy Ethereal (right)", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
