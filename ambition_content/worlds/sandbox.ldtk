@@ -7529,9 +7529,9 @@
 									"id": "V_String",
 									"params": ["ldtk label"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "LDtk-authored central_hub_complex: hub chunk, doors, and continuous basement", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "// CENTRAL HUB — ROUTES OUTWARD; BASEMENT ACCESS BELOW", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["LDtk-authored central_hub_complex: hub chunk, doors, and continuous basement"]
+									"params": ["// CENTRAL HUB — ROUTES OUTWARD; BASEMENT ACCESS BELOW"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Room", "__tile": null, "defUid": 3017, "realEditorValues": [{
 									"id": "V_String",
