@@ -7568,9 +7568,9 @@
 									"id": "V_String",
 									"params": ["hall_of_characters_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "hall_of_characters_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_of_characters_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -11143,7 +11143,10 @@
 									"id": "V_String",
 									"params": ["Inspect"]
 								}] },
-								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hall_special_patent_clerk", "__tile": null, "defUid": 3014, "realEditorValues": [] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hall_special_patent_clerk", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_special_patent_clerk"]
+								}] },
 								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",

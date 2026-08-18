@@ -5818,9 +5818,9 @@
 									"id": "V_String",
 									"params": ["wake_room_arrival"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "wake_room_arrival", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["wake_room_arrival"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -5853,9 +5853,9 @@
 									"id": "V_String",
 									"params": ["wake_to_raid"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "wake_to_raid", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to raid corridor", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["wake_to_raid"]
+									"params": ["to raid corridor"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -6763,9 +6763,9 @@
 									"id": "V_String",
 									"params": ["raid_from_wake"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "raid_from_wake", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to wake room", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["raid_from_wake"]
+									"params": ["to wake room"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -6892,9 +6892,9 @@
 									"id": "V_String",
 									"params": ["raid_to_escape"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "raid_to_escape", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to escape shaft", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["raid_to_escape"]
+									"params": ["to escape shaft"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -8073,9 +8073,9 @@
 									"id": "V_String",
 									"params": ["sky_arrival"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "sky_arrival", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to gate stack", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["sky_arrival"]
+									"params": ["to gate stack"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -9696,9 +9696,9 @@
 									"id": "V_String",
 									"params": ["escape_from_raid"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "escape_from_raid", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to raid corridor", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["escape_from_raid"]
+									"params": ["to raid corridor"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -9862,9 +9862,9 @@
 									"id": "V_String",
 									"params": ["escape_to_drain"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "escape_to_drain", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to drain alley", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["escape_to_drain"]
+									"params": ["to drain alley"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -11361,9 +11361,9 @@
 									"id": "V_String",
 									"params": ["alice_from_under_town"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "alice_from_under_town", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to under-town pipes", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["alice_from_under_town"]
+									"params": ["to under-town pipes"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -11399,9 +11399,9 @@
 									"id": "V_String",
 									"params": ["alice_to_bob"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "alice_to_bob", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to Bob relay", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["alice_to_bob"]
+									"params": ["to Bob relay"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -12431,9 +12431,9 @@
 									"id": "V_String",
 									"params": ["bob_from_alice"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "bob_from_alice", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to Alice relay", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["bob_from_alice"]
+									"params": ["to Alice relay"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -12469,9 +12469,9 @@
 									"id": "V_String",
 									"params": ["bob_return_to_drain"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "bob_return_to_drain", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to drain alley", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["bob_return_to_drain"]
+									"params": ["to drain alley"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -13537,9 +13537,9 @@
 									"id": "V_String",
 									"params": ["boss_from_combat_lab"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "boss_from_combat_lab", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to combat lab", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["boss_from_combat_lab"]
+									"params": ["to combat lab"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -13575,9 +13575,9 @@
 									"id": "V_String",
 									"params": ["boss_return_to_drain"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "boss_return_to_drain", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to drain alley", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["boss_return_to_drain"]
+									"params": ["to drain alley"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "drain_alley", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -14793,9 +14793,9 @@
 									"id": "V_String",
 									"params": ["drain_from_escape"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "drain_from_escape", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to escape shaft", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["drain_from_escape"]
+									"params": ["to escape shaft"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -14831,9 +14831,9 @@
 									"id": "V_String",
 									"params": ["drain_to_gate_stack"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "drain_to_gate_stack", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to gate stack", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["drain_to_gate_stack"]
+									"params": ["to gate stack"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -15163,9 +15163,9 @@
 									"id": "V_String",
 									"params": ["under_town_to_drain"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "under_town_to_drain", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to under-town pipes", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["under_town_to_drain"]
+									"params": ["to under-town pipes"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "under_town_pipes", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -15250,9 +15250,9 @@
 									"id": "V_String",
 									"params": ["drain_from_bob_return"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "drain_from_bob_return", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to Bob relay", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["drain_from_bob_return"]
+									"params": ["to Bob relay"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "bob_relay", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -15337,9 +15337,9 @@
 									"id": "V_String",
 									"params": ["drain_from_boss_return"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "drain_from_boss_return", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to system boss", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["drain_from_boss_return"]
+									"params": ["to system boss"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "first_system_boss", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -16520,9 +16520,9 @@
 									"id": "V_String",
 									"params": ["gate_stack_from_drain"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gate_stack_from_drain", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to drain alley", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_stack_from_drain"]
+									"params": ["to drain alley"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -16558,9 +16558,9 @@
 									"id": "V_String",
 									"params": ["pirate_sky_up"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "pirate_sky_up", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to pirate sky", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["pirate_sky_up"]
+									"params": ["to pirate sky"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -16727,9 +16727,9 @@
 									"id": "V_String",
 									"params": ["intro_portal_zone"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "intro_portal_zone", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["intro_portal_zone"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -17030,9 +17030,9 @@
 									"id": "V_String",
 									"params": ["gate_to_combat_lab"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gate_to_combat_lab", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to combat lab", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_to_combat_lab"]
+									"params": ["to combat lab"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -18327,9 +18327,9 @@
 									"id": "V_String",
 									"params": ["combat_lab_from_gate"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "combat_lab_from_gate", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to gate stack", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["combat_lab_from_gate"]
+									"params": ["to gate stack"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -18365,9 +18365,9 @@
 									"id": "V_String",
 									"params": ["combat_lab_to_boss"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "combat_lab_to_boss", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to system boss", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["combat_lab_to_boss"]
+									"params": ["to system boss"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -19781,9 +19781,9 @@
 									"id": "V_String",
 									"params": ["under_town_from_drain"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "under_town_from_drain", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to drain alley", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["under_town_from_drain"]
+									"params": ["to drain alley"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "drain_alley", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -19816,9 +19816,9 @@
 									"id": "V_String",
 									"params": ["under_town_to_alice"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "under_town_to_alice", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to Alice relay", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["under_town_to_alice"]
+									"params": ["to Alice relay"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",

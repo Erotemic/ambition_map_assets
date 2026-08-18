@@ -5657,9 +5657,9 @@
 									"id": "V_String",
 									"params": ["cut_rope_arena_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "cut_rope_arena_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to hall of bosses", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["cut_rope_arena_entry"]
+									"params": ["to hall of bosses"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "hall_of_bosses", "__tile": null, "defUid": 3005, "realEditorValues": [{
