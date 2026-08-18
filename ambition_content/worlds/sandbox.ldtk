@@ -22051,9 +22051,9 @@
 									"id": "V_String",
 									"params": ["lab_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "lab_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["lab_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -23787,9 +23787,9 @@
 									"id": "V_String",
 									"params": ["crawl_lab_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "crawl_lab_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["crawl_lab_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -24293,9 +24293,9 @@
 									"id": "V_String",
 									"params": ["morph_lab_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "morph_lab_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["morph_lab_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -24793,9 +24793,9 @@
 									"id": "V_String",
 									"params": ["ladder_lab_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "ladder_lab_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["ladder_lab_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -25301,9 +25301,9 @@
 									"id": "V_String",
 									"params": ["cutscene_lab_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "cutscene_lab_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["cutscene_lab_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -25699,9 +25699,9 @@
 									"id": "V_String",
 									"params": ["quest_lab_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "quest_lab_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["quest_lab_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -26134,9 +26134,9 @@
 									"id": "V_String",
 									"params": ["switch_lab_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "switch_lab_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["switch_lab_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -26577,9 +26577,9 @@
 									"id": "V_String",
 									"params": ["military_tower_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "military_tower_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["military_tower_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -27097,9 +27097,9 @@
 									"id": "V_String",
 									"params": ["goblin_cantina_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "goblin_cantina_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["goblin_cantina_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -27588,9 +27588,9 @@
 									"id": "V_String",
 									"params": ["pulse_voyager_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "pulse_voyager_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["pulse_voyager_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -28133,9 +28133,9 @@
 									"id": "V_String",
 									"params": ["tech_bros_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "tech_bros_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["tech_bros_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -28703,9 +28703,9 @@
 									"id": "V_String",
 									"params": ["mockingbird_arena_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "mockingbird_arena_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to pirate cove", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["mockingbird_arena_entry"]
+									"params": ["to pirate cove"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -28818,9 +28818,9 @@
 									"id": "V_String",
 									"params": ["mockingbird_arena_ninja_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "mockingbird_arena_ninja_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to ninja dojo", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["mockingbird_arena_ninja_entry"]
+									"params": ["to ninja dojo"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -29374,9 +29374,9 @@
 									"id": "V_String",
 									"params": ["ninja_dojo_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "ninja_dojo_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["ninja_dojo_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -29415,9 +29415,9 @@
 									"id": "V_String",
 									"params": ["ninja_dojo_to_arena"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "ninja_dojo_to_arena", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to mockingbird arena", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["ninja_dojo_to_arena"]
+									"params": ["to mockingbird arena"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -30081,9 +30081,9 @@
 									"id": "V_String",
 									"params": ["hall_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "hall_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -30116,9 +30116,9 @@
 									"id": "V_String",
 									"params": ["hall_to_warden_portal"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "hall_to_warden_portal", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to boss lab", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_to_warden_portal"]
+									"params": ["to boss lab"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "basement_boss", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -30154,9 +30154,9 @@
 									"id": "V_String",
 									"params": ["hall_to_mockingbird_portal"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "hall_to_mockingbird_portal", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to mockingbird arena", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_to_mockingbird_portal"]
+									"params": ["to mockingbird arena"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "mockingbird_arena", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -30192,9 +30192,9 @@
 									"id": "V_String",
 									"params": ["hall_gnu_ton_portal"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "hall_gnu_ton_portal", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to GNU-ton arena", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_gnu_ton_portal"]
+									"params": ["to GNU-ton arena"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "gnu_ton_arena", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -30227,9 +30227,9 @@
 									"id": "V_String",
 									"params": ["hall_to_cut_rope_portal"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "hall_to_cut_rope_portal", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to cut the rope", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_to_cut_rope_portal"]
+									"params": ["to cut the rope"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "you_have_to_cut_the_rope", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -30262,9 +30262,9 @@
 									"id": "V_String",
 									"params": ["hall_to_fsm_portal"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "hall_to_fsm_portal", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to flying spaghetti monster", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_to_fsm_portal"]
+									"params": ["to flying spaghetti monster"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "flying_spaghetti_monster_arena", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -30297,9 +30297,9 @@
 									"id": "V_String",
 									"params": ["hall_to_trex_portal"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "hall_to_trex_portal", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to T-Rex arena", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_to_trex_portal"]
+									"params": ["to T-Rex arena"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "trex_arena", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -30332,9 +30332,9 @@
 									"id": "V_String",
 									"params": ["mode_collapse_arena_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "mode_collapse_arena_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to mode collapse", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["mode_collapse_arena_door"]
+									"params": ["to mode collapse"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "mode_collapse_arena", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -30367,9 +30367,9 @@
 									"id": "V_String",
 									"params": ["exploding_gradient_arena_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "exploding_gradient_arena_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to exploding gradient", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["exploding_gradient_arena_door"]
+									"params": ["to exploding gradient"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "exploding_gradient_arena", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -30402,9 +30402,9 @@
 									"id": "V_String",
 									"params": ["overflow_arena_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "overflow_arena_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to overflow arena", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["overflow_arena_door"]
+									"params": ["to overflow arena"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "overflow_arena", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -30975,9 +30975,9 @@
 									"id": "V_String",
 									"params": ["pirate_cove_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "pirate_cove_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["pirate_cove_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -31010,9 +31010,9 @@
 									"id": "V_String",
 									"params": ["pirate_cove_to_arena"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "pirate_cove_to_arena", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to mockingbird arena", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["pirate_cove_to_arena"]
+									"params": ["to mockingbird arena"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "mockingbird_arena", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -31208,9 +31208,9 @@
 									"id": "V_String",
 									"params": ["pirate_cove_sky_hatch"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "pirate_cove_sky_hatch", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to pirate sky lookout", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["pirate_cove_sky_hatch"]
+									"params": ["to pirate sky lookout"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "pirate_sky_lookout", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -31928,9 +31928,9 @@
 									"id": "V_String",
 									"params": ["pirate_sky_lookout_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "pirate_sky_lookout_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to pirate cove", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["pirate_sky_lookout_entry"]
+									"params": ["to pirate cove"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "pirate_cove", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -32908,9 +32908,9 @@
 									"id": "V_String",
 									"params": ["falling_sand_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "falling_sand_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["falling_sand_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -33735,9 +33735,9 @@
 									"id": "V_String",
 									"params": ["gravity_lab_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gravity_lab_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gravity_lab_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -34342,9 +34342,9 @@
 									"id": "V_String",
 									"params": ["fsm_arena_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "fsm_arena_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to hall of bosses", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fsm_arena_entry"]
+									"params": ["to hall of bosses"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "hall_of_bosses", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -34838,9 +34838,9 @@
 									"id": "V_String",
 									"params": ["trex_arena_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "trex_arena_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to hall of bosses", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["trex_arena_entry"]
+									"params": ["to hall of bosses"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "hall_of_bosses", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -35313,9 +35313,9 @@
 									"id": "V_String",
 									"params": ["gradient_ascent_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gradient_ascent_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gradient_ascent_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -35400,9 +35400,9 @@
 									"id": "V_String",
 									"params": ["gradient_summit_chamber_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gradient_summit_chamber_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to gradient summit", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gradient_summit_chamber_door"]
+									"params": ["to gradient summit"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "gradient_summit_chamber", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -35435,9 +35435,9 @@
 									"id": "V_String",
 									"params": ["ratchet_climb_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "ratchet_climb_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to ratchet climb", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["ratchet_climb_door"]
+									"params": ["to ratchet climb"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "ratchet_climb", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -35470,9 +35470,9 @@
 									"id": "V_String",
 									"params": ["gap_run_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gap_run_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to gap run", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gap_run_door"]
+									"params": ["to gap run"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "gap_run", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -35505,9 +35505,9 @@
 									"id": "V_String",
 									"params": ["wall_run_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "wall_run_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to wall run", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["wall_run_door"]
+									"params": ["to wall run"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "wall_run", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -35540,9 +35540,9 @@
 									"id": "V_String",
 									"params": ["ceiling_cross_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "ceiling_cross_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to ceiling cross", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["ceiling_cross_door"]
+									"params": ["to ceiling cross"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "ceiling_cross", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -35980,9 +35980,9 @@
 									"id": "V_String",
 									"params": ["gradient_summit_chamber_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gradient_summit_chamber_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to gradient ascent", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gradient_summit_chamber_entry"]
+									"params": ["to gradient ascent"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "gradient_ascent", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -36469,9 +36469,9 @@
 									"id": "V_String",
 									"params": ["mode_collapse_arena_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "mode_collapse_arena_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to hall of bosses", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["mode_collapse_arena_entry"]
+									"params": ["to hall of bosses"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "hall_of_bosses", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -37061,9 +37061,9 @@
 									"id": "V_String",
 									"params": ["exploding_gradient_arena_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "exploding_gradient_arena_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to hall of bosses", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["exploding_gradient_arena_entry"]
+									"params": ["to hall of bosses"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "hall_of_bosses", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -37784,9 +37784,9 @@
 									"id": "V_String",
 									"params": ["overfit_annex_entry_to_hub"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "overfit_annex_entry_to_hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["overfit_annex_entry_to_hub"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -37845,9 +37845,9 @@
 									"id": "V_String",
 									"params": ["overfit_annex_entry_climb_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "overfit_annex_entry_climb_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to overfit annex climb", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["overfit_annex_entry_climb_door"]
+									"params": ["to overfit annex climb"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "overfit_annex_climb", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -38331,9 +38331,9 @@
 									"id": "V_String",
 									"params": ["overfit_annex_climb_to_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "overfit_annex_climb_to_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to overfit annex", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["overfit_annex_climb_to_entry"]
+									"params": ["to overfit annex"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "overfit_annex_entry", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -38392,9 +38392,9 @@
 									"id": "V_String",
 									"params": ["overfit_annex_climb_vault_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "overfit_annex_climb_vault_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to overfit annex vault", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["overfit_annex_climb_vault_door"]
+									"params": ["to overfit annex vault"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "overfit_annex_vault", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -38887,9 +38887,9 @@
 									"id": "V_String",
 									"params": ["overfit_annex_vault_to_climb"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "overfit_annex_vault_to_climb", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to overfit annex climb", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["overfit_annex_vault_to_climb"]
+									"params": ["to overfit annex climb"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "overfit_annex_climb", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -38948,9 +38948,9 @@
 									"id": "V_String",
 									"params": ["overfit_annex_vault_boss_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "overfit_annex_vault_boss_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to overfit annex boss", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["overfit_annex_vault_boss_door"]
+									"params": ["to overfit annex boss"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "overfit_annex_boss", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -39396,9 +39396,9 @@
 									"id": "V_String",
 									"params": ["overfit_annex_boss_to_vault"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "overfit_annex_boss_to_vault", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to overfit annex vault", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["overfit_annex_boss_to_vault"]
+									"params": ["to overfit annex vault"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "overfit_annex_vault", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -39988,9 +39988,9 @@
 									"id": "V_String",
 									"params": ["overflow_arena_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "overflow_arena_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to hall of bosses", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["overflow_arena_entry"]
+									"params": ["to hall of bosses"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "hall_of_bosses", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -40736,9 +40736,9 @@
 									"id": "V_String",
 									"params": ["proving_grounds_to_hub"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "proving_grounds_to_hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["proving_grounds_to_hub"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -41318,9 +41318,9 @@
 									"id": "V_String",
 									"params": ["volatile_cache_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "volatile_cache_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["volatile_cache_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -42030,9 +42030,9 @@
 									"id": "V_String",
 									"params": ["skirmish_heights_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "skirmish_heights_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["skirmish_heights_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -42618,9 +42618,9 @@
 									"id": "V_String",
 									"params": ["ratchet_climb_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "ratchet_climb_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to gradient ascent", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["ratchet_climb_entry"]
+									"params": ["to gradient ascent"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "gradient_ascent", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -43090,9 +43090,9 @@
 									"id": "V_String",
 									"params": ["gap_run_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gap_run_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to gradient ascent", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gap_run_entry"]
+									"params": ["to gradient ascent"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "gradient_ascent", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -43151,9 +43151,9 @@
 									"id": "V_String",
 									"params": ["stagger_steps_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stagger_steps_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to stagger steps", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["stagger_steps_door"]
+									"params": ["to stagger steps"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "stagger_steps", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -43553,9 +43553,9 @@
 									"id": "V_String",
 									"params": ["stagger_steps_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stagger_steps_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to gap run", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["stagger_steps_entry"]
+									"params": ["to gap run"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "gap_run", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -43614,9 +43614,9 @@
 									"id": "V_String",
 									"params": ["live_floor_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "live_floor_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to live floor", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["live_floor_door"]
+									"params": ["to live floor"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "live_floor", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -44025,9 +44025,9 @@
 									"id": "V_String",
 									"params": ["live_floor_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "live_floor_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to stagger steps", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["live_floor_entry"]
+									"params": ["to stagger steps"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "stagger_steps", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -44086,9 +44086,9 @@
 									"id": "V_String",
 									"params": ["proof_summit_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "proof_summit_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to proof summit", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["proof_summit_door"]
+									"params": ["to proof summit"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "proof_summit", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -44525,9 +44525,9 @@
 									"id": "V_String",
 									"params": ["proof_summit_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "proof_summit_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to live floor", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["proof_summit_entry"]
+									"params": ["to live floor"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "live_floor", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -45057,9 +45057,9 @@
 									"id": "V_String",
 									"params": ["wall_run_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "wall_run_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to gradient ascent", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["wall_run_entry"]
+									"params": ["to gradient ascent"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "gradient_ascent", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -45570,9 +45570,9 @@
 									"id": "V_String",
 									"params": ["ceiling_cross_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "ceiling_cross_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to gradient ascent", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["ceiling_cross_entry"]
+									"params": ["to gradient ascent"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "gradient_ascent", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -45659,9 +45659,9 @@
 									"id": "V_String",
 									"params": ["portal_bridge_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "portal_bridge_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to portal bridge", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["portal_bridge_door"]
+									"params": ["to portal bridge"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "portal_bridge", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -46140,9 +46140,9 @@
 									"id": "V_String",
 									"params": ["portal_bridge_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "portal_bridge_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to ceiling cross", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["portal_bridge_entry"]
+									"params": ["to ceiling cross"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "ceiling_cross", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -46229,9 +46229,9 @@
 									"id": "V_String",
 									"params": ["blink_run_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "blink_run_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to blink run", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["blink_run_door"]
+									"params": ["to blink run"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "blink_run", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -46264,9 +46264,9 @@
 									"id": "V_String",
 									"params": ["dive_drill_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "dive_drill_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to dive drill", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["dive_drill_door"]
+									"params": ["to dive drill"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "dive_drill", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -46729,9 +46729,9 @@
 									"id": "V_String",
 									"params": ["blink_run_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "blink_run_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to portal bridge", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["blink_run_entry"]
+									"params": ["to portal bridge"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "portal_bridge", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -47124,9 +47124,9 @@
 									"id": "V_String",
 									"params": ["dive_drill_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "dive_drill_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to portal bridge", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["dive_drill_entry"]
+									"params": ["to portal bridge"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "portal_bridge", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -47884,9 +47884,9 @@
 									"id": "V_String",
 									"params": ["portal_lab_exit"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "portal_lab_exit", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["portal_lab_exit"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -50092,9 +50092,9 @@
 									"id": "V_String",
 									"params": ["symmetry_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "symmetry_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["symmetry_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -50912,9 +50912,9 @@
 									"id": "V_String",
 									"params": ["duel_arena_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "duel_arena_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["duel_arena_entry"]
+									"params": ["to central hub"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -53087,9 +53087,9 @@
 									"id": "V_String",
 									"params": ["gnu_ton_arena_exit"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gnu_ton_arena_exit", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to hall of bosses", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gnu_ton_arena_exit"]
+									"params": ["to hall of bosses"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "hall_of_bosses", "__tile": null, "defUid": 3005, "realEditorValues": [{
