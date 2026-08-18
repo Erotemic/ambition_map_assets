@@ -7558,9 +7558,9 @@
 									"id": "V_String",
 									"params": ["military_tower_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "military_tower_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to military tower", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["military_tower_door"]
+									"params": ["to military tower"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -7599,9 +7599,9 @@
 									"id": "V_String",
 									"params": ["goblin_cantina_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "goblin_cantina_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to goblin cantina", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["goblin_cantina_door"]
+									"params": ["to goblin cantina"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -7640,9 +7640,9 @@
 									"id": "V_String",
 									"params": ["pulse_voyager_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "pulse_voyager_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to pulse voyager outpost", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["pulse_voyager_door"]
+									"params": ["to pulse voyager outpost"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -7681,9 +7681,9 @@
 									"id": "V_String",
 									"params": ["tech_bros_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "tech_bros_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to tech bros basement", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["tech_bros_door"]
+									"params": ["to tech bros basement"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -7722,9 +7722,9 @@
 									"id": "V_String",
 									"params": ["pirate_cove_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "pirate_cove_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to pirate cove", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["pirate_cove_door"]
+									"params": ["to pirate cove"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -7763,9 +7763,9 @@
 									"id": "V_String",
 									"params": ["ninja_dojo_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "ninja_dojo_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to ninja dojo", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["ninja_dojo_door"]
+									"params": ["to ninja dojo"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -7804,9 +7804,9 @@
 									"id": "V_String",
 									"params": ["intro_wake_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "intro_wake_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to wake room", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["intro_wake_door"]
+									"params": ["to wake room"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "intro_wake_room", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -7839,9 +7839,9 @@
 									"id": "V_String",
 									"params": ["gate_stack_portal"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gate_stack_portal", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to gate stack", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_stack_portal"]
+									"params": ["to gate stack"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "gate_stack_lower", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -7877,9 +7877,9 @@
 									"id": "V_String",
 									"params": ["hall_of_bosses_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "hall_of_bosses_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to hall of bosses", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_of_bosses_door"]
+									"params": ["to hall of bosses"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "hall_of_bosses", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -7912,9 +7912,9 @@
 									"id": "V_String",
 									"params": ["falling_sand_main_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "falling_sand_lab", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to falling sand", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["falling_sand_lab"]
+									"params": ["to falling sand"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -7953,9 +7953,9 @@
 									"id": "V_String",
 									"params": ["hall_of_characters_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "hall_of_characters_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to hall of characters", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_of_characters_door"]
+									"params": ["to hall of characters"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "hall_of_characters", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -7988,9 +7988,9 @@
 									"id": "V_String",
 									"params": ["gravity_lab_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gravity_lab_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to gravity lab", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gravity_lab_door"]
+									"params": ["to gravity lab"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "gravity_lab", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -8023,9 +8023,9 @@
 									"id": "V_String",
 									"params": ["gradient_ascent_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gradient_ascent_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to gradient ascent", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gradient_ascent_door"]
+									"params": ["to gradient ascent"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "gradient_ascent", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -8058,9 +8058,9 @@
 									"id": "V_String",
 									"params": ["overfit_annex_hub_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "overfit_annex_hub_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to overfit annex", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["overfit_annex_hub_door"]
+									"params": ["to overfit annex"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "overfit_annex_entry", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -8093,9 +8093,9 @@
 									"id": "V_String",
 									"params": ["proving_grounds_hub_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "proving_grounds_hub_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to proving grounds", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["proving_grounds_hub_door"]
+									"params": ["to proving grounds"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "proving_grounds", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -8128,9 +8128,9 @@
 									"id": "V_String",
 									"params": ["volatile_cache_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "volatile_cache_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to volatile cache", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["volatile_cache_door"]
+									"params": ["to volatile cache"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "volatile_cache", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -8163,9 +8163,9 @@
 									"id": "V_String",
 									"params": ["skirmish_heights_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "skirmish_heights_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to skirmish heights", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["skirmish_heights_door"]
+									"params": ["to skirmish heights"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "skirmish_heights", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -9375,9 +9375,9 @@
 									"id": "V_String",
 									"params": ["lab_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "lab_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "goblins", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["lab_door"]
+									"params": ["goblins"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -9416,9 +9416,9 @@
 									"id": "V_String",
 									"params": ["water_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "water_world", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "water", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["water_world"]
+									"params": ["water"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -9457,9 +9457,9 @@
 									"id": "V_String",
 									"params": ["crawl_lab_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "crawl_lab_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "crawl lab", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["crawl_lab_door"]
+									"params": ["crawl lab"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -9498,9 +9498,9 @@
 									"id": "V_String",
 									"params": ["morph_lab_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "morph_lab_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "morph lab", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["morph_lab_door"]
+									"params": ["morph lab"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -9539,9 +9539,9 @@
 									"id": "V_String",
 									"params": ["ladder_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "ladder_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "ladder lab", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["ladder_door"]
+									"params": ["ladder lab"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -9580,9 +9580,9 @@
 									"id": "V_String",
 									"params": ["cutscene_lab_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "cutscene_lab_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "cutscene lab", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["cutscene_lab_door"]
+									"params": ["cutscene lab"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -9621,9 +9621,9 @@
 									"id": "V_String",
 									"params": ["quest_lab_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "quest_lab_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "quest lab", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["quest_lab_door"]
+									"params": ["quest lab"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -9662,9 +9662,9 @@
 									"id": "V_String",
 									"params": ["switch_lab_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "switch_lab_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "switch lab", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["switch_lab_door"]
+									"params": ["switch lab"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -9727,9 +9727,9 @@
 									"id": "V_String",
 									"params": ["falling_sand_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "falling_sand_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "falling sand", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["falling_sand_door"]
+									"params": ["falling sand"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -10224,9 +10224,9 @@
 									"id": "V_String",
 									"params": ["portal_lab_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "portal_lab_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "portal lab", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["portal_lab_door"]
+									"params": ["portal lab"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "portal_lab", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -10259,9 +10259,9 @@
 									"id": "V_String",
 									"params": ["basement_to_symmetry_room_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "basement_to_symmetry_room_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "symmetry room", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["basement_to_symmetry_room_door"]
+									"params": ["symmetry room"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "symmetry_room", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -10297,9 +10297,9 @@
 									"id": "V_String",
 									"params": ["duel_arena_basement_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "duel_arena_basement_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "duel arena", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["duel_arena_basement_door"]
+									"params": ["duel arena"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "duel_arena", "__tile": null, "defUid": 3005, "realEditorValues": [{
