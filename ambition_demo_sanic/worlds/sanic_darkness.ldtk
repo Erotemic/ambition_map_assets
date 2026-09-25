@@ -17964,12 +17964,12 @@
 							"__tile": null,
 							"__smartColor": "#A06CFF",
 							"__worldX": 10092,
-							"__worldY": 1412,
+							"__worldY": 1416,
 							"iid": "Portal-106902",
 							"width": 16,
 							"height": 128,
 							"defUid": 6138,
-							"px": [10092,1412],
+							"px": [10092,1416],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "viaduct_exit", "__tile": null, "defUid": 6135, "realEditorValues": [{
 									"id": "V_String",
@@ -18022,12 +18022,12 @@
 							"__tile": null,
 							"__smartColor": "#A06CFF",
 							"__worldX": 29392,
-							"__worldY": 1332,
+							"__worldY": 1336,
 							"iid": "Portal-106904",
 							"width": 16,
 							"height": 128,
 							"defUid": 6138,
-							"px": [29392,1332],
+							"px": [29392,1336],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "shadow_exit", "__tile": null, "defUid": 6135, "realEditorValues": [{
 									"id": "V_String",
@@ -18051,12 +18051,12 @@
 							"__tile": null,
 							"__smartColor": "#A06CFF",
 							"__worldX": 11792,
-							"__worldY": 1220,
+							"__worldY": 1224,
 							"iid": "Portal-106905",
 							"width": 16,
 							"height": 128,
 							"defUid": 6138,
-							"px": [11792,1220],
+							"px": [11792,1224],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "vault_secret_entrance", "__tile": null, "defUid": 6135, "realEditorValues": [{
 									"id": "V_String",
@@ -18074,18 +18074,18 @@
 						},
 						{
 							"__identifier": "Portal",
-							"__grid": [1374,67],
+							"__grid": [1374,66],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#A06CFF",
 							"__worldX": 21992,
-							"__worldY": 1072,
+							"__worldY": 1064,
 							"iid": "Portal-106906",
 							"width": 16,
 							"height": 128,
 							"defUid": 6138,
-							"px": [21992,1072],
+							"px": [21992,1064],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "vault_secret_exit", "__tile": null, "defUid": 6135, "realEditorValues": [{
 									"id": "V_String",
