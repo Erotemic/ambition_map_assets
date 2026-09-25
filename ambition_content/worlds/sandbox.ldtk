@@ -10354,18 +10354,18 @@
 						},
 						{
 							"__identifier": "NpcSpawn",
-							"__grid": [57,54],
+							"__grid": [112,54],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF9EEA",
-							"__worldX": 925,
+							"__worldX": 1792,
 							"__worldY": 1888,
 							"iid": "NpcSpawn-6889",
 							"width": 64,
 							"height": 64,
 							"defUid": 2006,
-							"px": [925,864],
+							"px": [1792,864],
 							"fieldInstances": [
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_companion_dog", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
@@ -10379,7 +10379,7 @@
 									"id": "V_String",
 									"params": ["hall_npc_companion_dog"]
 								}] },
-								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 800.0, "__tile": null, "defUid": 4123, "realEditorValues": [{ "id": "V_Float", "params": [800.0] }] }
+								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 1800.0, "__tile": null, "defUid": 4123, "realEditorValues": [{ "id": "V_Float", "params": [1800.0] }] }
 							]
 						}
 					]
