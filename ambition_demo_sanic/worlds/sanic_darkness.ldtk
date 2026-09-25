@@ -16357,7 +16357,7 @@
 							"px": [5480,1635],
 							"fieldInstances": [
 								{ "__identifier": "impulseX", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 3022, "realEditorValues": [] },
-								{ "__identifier": "impulseY", "__type": "Float", "__value": -1050.0, "__tile": null, "defUid": 3023, "realEditorValues": [{ "id": "V_Float", "params": [-1050.0] }] }
+								{ "__identifier": "impulseY", "__type": "Float", "__value": -1700.0, "__tile": null, "defUid": 3023, "realEditorValues": [{ "id": "V_Float", "params": [-1700.0] }] }
 							]
 						},
 						{
@@ -16376,7 +16376,7 @@
 							"px": [21500,1616],
 							"fieldInstances": [
 								{ "__identifier": "impulseX", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 3022, "realEditorValues": [] },
-								{ "__identifier": "impulseY", "__type": "Float", "__value": -1000.0, "__tile": null, "defUid": 3023, "realEditorValues": [{ "id": "V_Float", "params": [-1000.0] }] }
+								{ "__identifier": "impulseY", "__type": "Float", "__value": -1700.0, "__tile": null, "defUid": 3023, "realEditorValues": [{ "id": "V_Float", "params": [-1700.0] }] }
 							]
 						},
 						{
