@@ -11,7 +11,7 @@
 	"iid": "ambition-sanic-speedway-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 106913,
+	"nextUid": 106919,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -255,8 +255,8 @@
 			"showName": true,
 			"tilesetId": 6852,
 			"tileRenderMode": "Cover",
-			"tileRect": { "tilesetUid": 6852, "x": 0, "y": 0, "w": 224, "h": 224 },
-			"uiTileRect": { "tilesetUid": 6852, "x": 0, "y": 0, "w": 224, "h": 224 },
+			"tileRect": { "tilesetUid": 6852, "x": 0, "y": 0, "w": 256, "h": 256 },
+			"uiTileRect": { "tilesetUid": 6852, "x": 0, "y": 0, "w": 256, "h": 256 },
 			"nineSliceBorders": [],
 			"maxCount": 0,
 			"limitScope": "PerLayer",
@@ -1573,6 +1573,154 @@
 					"allowedRefTags": [],
 					"exportToToc": false,
 					"searchable": true
+				},
+				{
+					"identifier": "disposition",
+					"doc": "Hostile or Peaceful. Empty = whatever the archetype says. Spawn-context, not a property of the character.",
+					"__type": "String",
+					"uid": 6857,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "brain_profile",
+					"doc": "Which shared controller policy drives THIS placement, provider-relative (e.g. `door_guard`). Empty = the character's own. A name nobody published is a construction error.",
+					"__type": "String",
+					"uid": 6859,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "respawn",
+					"doc": "Respawn policy for THIS placement: DeadStaysDead, OnRest, OnRoomReenter. Empty = whatever the archetype says. Spawn-context (ADR 0022), not a property of the character.",
+					"__type": "String",
+					"uid": 6858,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "path_ref",
+					"doc": "The KinematicPath this body patrols. Conversion resolves it to that path's own lookup id, so the reference cannot disagree with the target about how the path is spelled.",
+					"__type": "EntityRef",
+					"uid": 6858,
+					"type": "F_EntityRef",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayScale": 1,
+					"editorDisplayPos": "Above",
+					"editorLinkStyle": "CurvedArrow",
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorShowInWorld": true,
+					"editorCutLongValues": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"useForSmartColor": false,
+					"exportToToc": false,
+					"searchable": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": false,
+					"allowedRefs": "OnlySpecificEntity",
+					"allowedRefsEntityUid": 2012,
+					"allowedRefTags": [],
+					"tilesetUid": null
 				}
 			]
 		},
@@ -2449,6 +2597,43 @@
 					"allowedRefsEntityUid": null,
 					"allowedRefTags": [],
 					"tilesetUid": null
+				},
+				{
+					"identifier": "encounter_id",
+					"doc": "Stable AUTHORED encounter id — the key this boss's cleared state persists under and the id `boss_cleared(...)` takes. Empty means fall back to the LDtk iid, which no author can type; name it before gating dialogue on it.",
+					"__type": "String",
+					"uid": 6863,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "NameAndValue",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": true,
+					"editorCutLongValues": true,
+					"editorShowInWorld": false,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
 				}
 			]
 		},
@@ -3030,7 +3215,7 @@
 					"identifier": "sprite",
 					"doc": null,
 					"__type": "String",
-					"uid": 106857,
+					"uid": 106864,
 					"type": "F_String",
 					"isArray": false,
 					"canBeNull": true,
@@ -4149,7 +4334,7 @@
 					"identifier": "on_activate",
 					"doc": null,
 					"__type": "String",
-					"uid": 106911,
+					"uid": 6861,
 					"type": "F_String",
 					"isArray": false,
 					"canBeNull": true,
@@ -4302,7 +4487,7 @@
 					"identifier": "gated_by",
 					"doc": null,
 					"__type": "String",
-					"uid": 106910,
+					"uid": 6860,
 					"type": "F_String",
 					"isArray": false,
 					"canBeNull": true,
@@ -6019,6 +6204,46 @@
 					"allowedRefsEntityUid": null,
 					"allowedRefTags": [],
 					"tilesetUid": null
+				},
+				{
+					"identifier": "fill",
+					"doc": null,
+					"__type": "Bool",
+					"uid": 106865,
+					"type": "F_Bool",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": {
+						"id": "V_Bool",
+						"params": [ true ]
+					},
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
 				}
 			]
 		},
@@ -6174,22 +6399,22 @@
 		}
 	], "tilesets": [
 		{
-			"__cHei": 7,
-			"__cWid": 7,
+			"__cHei": 9,
+			"__cWid": 12,
 			"cachedPixelData": null,
 			"customData": [],
 			"embedAtlas": null,
 			"enumTags": [],
 			"identifier": "sprite_player_robot_v3",
 			"padding": 0,
-			"pxHei": 1728,
-			"pxWid": 1681,
+			"pxHei": 2468,
+			"pxWid": 3072,
 			"relPath": "../sprites/player_robot_v3_spritesheet.png",
 			"savedSelections": [],
 			"spacing": 0,
 			"tags": ["sprite"],
 			"tagsSourceEnumUid": null,
-			"tileGridSize": 224,
+			"tileGridSize": 256,
 			"uid": 6852
 		}
 	], "enums": [{ "identifier": "BreakablePlatformCollision", "uid": 5002, "values": [ { "id": "Solid", "tileRect": null, "color": 14180189 }, { "id": "OneWayUp", "tileRect": null, "color": 10802479 } ], "iconTilesetUid": null, "externalRelPath": null, "externalFileChecksum": null, "tags": [] }], "externalEnums": [], "levelFields": [
@@ -6832,7 +7057,7 @@
 			"identifier": "next_room",
 			"doc": null,
 			"__type": "String",
-			"uid": 106912,
+			"uid": 106918,
 			"type": "F_String",
 			"isArray": false,
 			"canBeNull": true,
@@ -6870,13 +7095,13 @@
 	"levels": [
 		{
 			"identifier": "sanic_speedway",
-			"iid": "sanic_speedway-106858",
-			"uid": 106858,
+			"iid": "sanic_speedway-106866",
+			"uid": 106866,
 			"worldX": 0,
 			"worldY": 0,
 			"worldDepth": 0,
 			"pxWid": 6400,
-			"pxHei": 720,
+			"pxHei": 816,
 			"__bgColor": "#16202e",
 			"bgColor": "#16202e",
 			"useAutoIdentifier": false,
@@ -6892,7 +7117,7 @@
 					"id": "V_String",
 					"params": ["sanic_speedway"]
 				}] },
-				{ "__identifier": "next_room", "__type": "String", "__value": "sanic_highway", "__tile": null, "defUid": 106912, "realEditorValues": [{
+				{ "__identifier": "next_room", "__type": "String", "__value": "sanic_highway", "__tile": null, "defUid": 106918, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["sanic_highway"]
 				}] }
@@ -6901,7 +7126,7 @@
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
-					"iid": "Collision-106859",
+					"iid": "Collision-106867",
 					"layerDefUid": 5024,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -7414,27 +7639,95 @@
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 					],
 					"__cWid": 400,
-					"__cHei": 45,
+					"__cHei": 51,
 					"__gridSize": 16,
 					"__opacity": 1,
 					"__pxTotalOffsetX": 0,
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 106858,
+					"levelId": 106866,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 106858,
+					"seed": 106866,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -7442,24 +7735,24 @@
 				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-106860",
+					"iid": "Ambition-106868",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 400,
-					"__cHei": 45,
+					"__cHei": 51,
 					"__gridSize": 16,
 					"__opacity": 1,
 					"__pxTotalOffsetX": 0,
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 106858,
+					"levelId": 106866,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 106858,
+					"seed": 106866,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
@@ -7472,7 +7765,7 @@
 							"__smartColor": "#41D1FF",
 							"__worldX": 146,
 							"__worldY": 626,
-							"iid": "PlayerStart-106861",
+							"iid": "PlayerStart-106869",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
@@ -7491,7 +7784,7 @@
 							"__smartColor": "#7ED957",
 							"__worldX": 0,
 							"__worldY": 656,
-							"iid": "SurfaceChain-106862",
+							"iid": "SurfaceChain-106870",
 							"width": 16,
 							"height": 16,
 							"defUid": 6814,
@@ -7507,7 +7800,8 @@
 										"0,672; 350,672; 375,670.2; 400,664.9; 425,656.5; 450,645.7; 475,633.4; 500,620.6; 525,608.3; 550,597.5; 575,589.1; 600,583.8; 625,582; 650,583.8; 675,589.1; 700,597.5; 725,608.3; 750,620.6; 775,633.4; 800,645.7; 825,656.5; 850,664.9; 875,670.2; 900,672; 925,670.6; 950,666.4; 975,659.9; 1000,651.5; 1025,642; 1050,632; 1075,622.5; 1100,614.1; 1125,607.6; 1150,603.4; 1175,602; 1200,603.4; 1225,607.6; 1250,614.1; 1275,622.5; 1300,632; 1325,642; 1350,651.5; 1375,659.9; 1400,666.4; 1425,670.6; 1450,672; 1740,672; 2920,672; 4000,672"
 									]
 								}] },
-								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] }
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "fill", "__type": "Bool", "__value": true, "__tile": null, "defUid": 106865, "realEditorValues": [] }
 							]
 						},
 						{
@@ -7519,7 +7813,7 @@
 							"__smartColor": "#7ED957",
 							"__worldX": 4256,
 							"__worldY": 656,
-							"iid": "SurfaceChain-106863",
+							"iid": "SurfaceChain-106871",
 							"width": 16,
 							"height": 16,
 							"defUid": 6814,
@@ -7533,7 +7827,8 @@
 									"id": "V_String",
 									"params": ["4256,672; 6400,672"]
 								}] },
-								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] }
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "fill", "__type": "Bool", "__value": true, "__tile": null, "defUid": 106865, "realEditorValues": [] }
 							]
 						},
 						{
@@ -7545,7 +7840,7 @@
 							"__smartColor": "#7BDFF2",
 							"__worldX": 1640,
 							"__worldY": 650,
-							"iid": "ReboundPad-106864",
+							"iid": "ReboundPad-106872",
 							"width": 72,
 							"height": 22,
 							"defUid": 2010,
@@ -7564,7 +7859,7 @@
 							"__smartColor": "#7BDFF2",
 							"__worldX": 4680,
 							"__worldY": 648,
-							"iid": "ReboundPad-106865",
+							"iid": "ReboundPad-106873",
 							"width": 48,
 							"height": 24,
 							"defUid": 2010,
@@ -7583,7 +7878,7 @@
 							"__smartColor": "#7BDFF2",
 							"__worldX": 5152,
 							"__worldY": 648,
-							"iid": "ReboundPad-106866",
+							"iid": "ReboundPad-106874",
 							"width": 48,
 							"height": 24,
 							"defUid": 2010,
@@ -7595,6 +7890,28 @@
 						},
 						{
 							"__identifier": "DamageVolume",
+							"__grid": [250,48],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF5C8A",
+							"__worldX": 4000,
+							"__worldY": 768,
+							"iid": "DamageVolume-106875",
+							"width": 256,
+							"height": 16,
+							"defUid": 2011,
+							"px": [4000,768],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "pit_spikes", "__tile": null, "defUid": 3024, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pit_spikes"]
+								}] },
+								{ "__identifier": "damage", "__type": "Float", "__value": 1.0, "__tile": null, "defUid": 3025, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DamageVolume",
 							"__grid": [353,41],
 							"__pivot": [0,0],
 							"__tags": [],
@@ -7602,7 +7919,7 @@
 							"__smartColor": "#FF5C8A",
 							"__worldX": 5648,
 							"__worldY": 656,
-							"iid": "DamageVolume-106867",
+							"iid": "DamageVolume-106876",
 							"width": 96,
 							"height": 16,
 							"defUid": 2011,
@@ -7624,7 +7941,7 @@
 							"__smartColor": "#FF6B6B",
 							"__worldX": 3136,
 							"__worldY": 640,
-							"iid": "EnemySpawn-106868",
+							"iid": "EnemySpawn-106877",
 							"width": 28,
 							"height": 32,
 							"defUid": 2008,
@@ -7653,7 +7970,7 @@
 							"__smartColor": "#FF6B6B",
 							"__worldX": 3552,
 							"__worldY": 640,
-							"iid": "EnemySpawn-106869",
+							"iid": "EnemySpawn-106878",
 							"width": 28,
 							"height": 32,
 							"defUid": 2008,
@@ -7682,7 +7999,7 @@
 							"__smartColor": "#FF6B6B",
 							"__worldX": 5056,
 							"__worldY": 640,
-							"iid": "EnemySpawn-106870",
+							"iid": "EnemySpawn-106879",
 							"width": 28,
 							"height": 32,
 							"defUid": 2008,
@@ -7711,7 +8028,7 @@
 							"__smartColor": "#FF6B6B",
 							"__worldX": 5760,
 							"__worldY": 640,
-							"iid": "EnemySpawn-106871",
+							"iid": "EnemySpawn-106880",
 							"width": 28,
 							"height": 32,
 							"defUid": 2008,
@@ -7740,7 +8057,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 211,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106872",
+							"iid": "PickupSpawn-106881",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -7754,7 +8071,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -7769,7 +8086,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 271,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106873",
+							"iid": "PickupSpawn-106882",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -7783,7 +8100,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -7798,7 +8115,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 331,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106874",
+							"iid": "PickupSpawn-106883",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -7812,7 +8129,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -7827,7 +8144,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 461,
 							"__worldY": 619,
-							"iid": "PickupSpawn-106875",
+							"iid": "PickupSpawn-106884",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -7841,7 +8158,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -7856,7 +8173,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 538,
 							"__worldY": 572,
-							"iid": "PickupSpawn-106876",
+							"iid": "PickupSpawn-106885",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -7870,7 +8187,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -7885,7 +8202,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 616,
 							"__worldY": 553,
-							"iid": "PickupSpawn-106877",
+							"iid": "PickupSpawn-106886",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -7899,7 +8216,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -7914,7 +8231,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 694,
 							"__worldY": 572,
-							"iid": "PickupSpawn-106878",
+							"iid": "PickupSpawn-106887",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -7928,7 +8245,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -7943,7 +8260,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 771,
 							"__worldY": 619,
-							"iid": "PickupSpawn-106879",
+							"iid": "PickupSpawn-106888",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -7957,7 +8274,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -7972,7 +8289,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 941,
 							"__worldY": 619,
-							"iid": "PickupSpawn-106880",
+							"iid": "PickupSpawn-106889",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -7986,7 +8303,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8001,7 +8318,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 1054,
 							"__worldY": 582,
-							"iid": "PickupSpawn-106881",
+							"iid": "PickupSpawn-106890",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8015,7 +8332,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8030,7 +8347,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 1166,
 							"__worldY": 567,
-							"iid": "PickupSpawn-106882",
+							"iid": "PickupSpawn-106891",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8044,7 +8361,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8059,7 +8376,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 1278,
 							"__worldY": 582,
-							"iid": "PickupSpawn-106883",
+							"iid": "PickupSpawn-106892",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8073,7 +8390,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8088,7 +8405,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 1391,
 							"__worldY": 619,
-							"iid": "PickupSpawn-106884",
+							"iid": "PickupSpawn-106893",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8102,7 +8419,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8117,7 +8434,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 1481,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106885",
+							"iid": "PickupSpawn-106894",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8131,7 +8448,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8146,7 +8463,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 1541,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106886",
+							"iid": "PickupSpawn-106895",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8160,7 +8477,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8175,7 +8492,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 1601,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106887",
+							"iid": "PickupSpawn-106896",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8189,7 +8506,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8204,7 +8521,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 2961,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106888",
+							"iid": "PickupSpawn-106897",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8218,7 +8535,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8233,7 +8550,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 3021,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106889",
+							"iid": "PickupSpawn-106898",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8247,7 +8564,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8262,7 +8579,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 3081,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106890",
+							"iid": "PickupSpawn-106899",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8276,7 +8593,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8291,7 +8608,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 4011,
 							"__worldY": 603,
-							"iid": "PickupSpawn-106891",
+							"iid": "PickupSpawn-106900",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8305,7 +8622,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8320,7 +8637,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 4083,
 							"__worldY": 535,
-							"iid": "PickupSpawn-106892",
+							"iid": "PickupSpawn-106901",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8334,7 +8651,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8349,7 +8666,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 4155,
 							"__worldY": 535,
-							"iid": "PickupSpawn-106893",
+							"iid": "PickupSpawn-106902",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8363,7 +8680,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8378,7 +8695,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 4227,
 							"__worldY": 603,
-							"iid": "PickupSpawn-106894",
+							"iid": "PickupSpawn-106903",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8392,7 +8709,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8407,7 +8724,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 4351,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106895",
+							"iid": "PickupSpawn-106904",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8421,7 +8738,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8436,7 +8753,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 4411,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106896",
+							"iid": "PickupSpawn-106905",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8450,7 +8767,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8465,7 +8782,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 4471,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106897",
+							"iid": "PickupSpawn-106906",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8479,7 +8796,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8494,7 +8811,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 4531,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106898",
+							"iid": "PickupSpawn-106907",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8508,7 +8825,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8523,7 +8840,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 4591,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106899",
+							"iid": "PickupSpawn-106908",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8537,7 +8854,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8552,7 +8869,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 4621,
 							"__worldY": 371,
-							"iid": "PickupSpawn-106900",
+							"iid": "PickupSpawn-106909",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8566,7 +8883,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8581,7 +8898,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 4681,
 							"__worldY": 371,
-							"iid": "PickupSpawn-106901",
+							"iid": "PickupSpawn-106910",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8595,7 +8912,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8610,7 +8927,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 4741,
 							"__worldY": 371,
-							"iid": "PickupSpawn-106902",
+							"iid": "PickupSpawn-106911",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8624,7 +8941,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8639,7 +8956,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 5841,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106903",
+							"iid": "PickupSpawn-106912",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8653,7 +8970,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8668,7 +8985,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 5901,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106904",
+							"iid": "PickupSpawn-106913",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8682,7 +8999,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8697,7 +9014,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 5961,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106905",
+							"iid": "PickupSpawn-106914",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8711,7 +9028,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8726,7 +9043,7 @@
 							"__smartColor": "#8AFF80",
 							"__worldX": 6021,
 							"__worldY": 623,
-							"iid": "PickupSpawn-106906",
+							"iid": "PickupSpawn-106915",
 							"width": 18,
 							"height": 18,
 							"defUid": 2015,
@@ -8740,7 +9057,7 @@
 									"id": "V_String",
 									"params": ["currency:1"]
 								}] },
-								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106857, "realEditorValues": [{
+								{ "__identifier": "sprite", "__type": "String", "__value": "sanic_ring_prop", "__tile": null, "defUid": 106864, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["sanic_ring_prop"]
 								}] }
@@ -8755,7 +9072,7 @@
 							"__smartColor": "#A4D65E",
 							"__worldX": 4650,
 							"__worldY": 390,
-							"iid": "OneWayPlatform-106909",
+							"iid": "OneWayPlatform-106917",
 							"width": 26,
 							"height": 26,
 							"defUid": 2003,
@@ -8770,7 +9087,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-106907",
+					"iid": "Climbable-106916",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -9287,23 +9604,91 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 					],
 					"__cWid": 400,
-					"__cHei": 45,
+					"__cHei": 51,
 					"__gridSize": 16,
 					"__opacity": 1,
 					"__pxTotalOffsetX": 0,
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 106858,
+					"levelId": 106866,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 106858,
+					"seed": 106866,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
