@@ -7162,9 +7162,9 @@
 					"id": "V_String",
 					"params": ["sanic"]
 				}] },
-				{ "__identifier": "next_room", "__type": "String", "__value": "sanic_speedway", "__tile": null, "defUid": 107029, "realEditorValues": [{
+				{ "__identifier": "next_room", "__type": "String", "__value": "sanic_darkness", "__tile": null, "defUid": 107029, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["sanic_speedway"]
+					"params": ["sanic_darkness"]
 				}] }
 			],
 			"layerInstances": [
