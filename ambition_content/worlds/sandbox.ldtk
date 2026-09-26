@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 6893,
+	"nextUid": 6894,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -6993,6 +6993,43 @@
 			"editorLinkStyle": "ZigZag",
 			"editorDisplayColor": null,
 			"editorAlwaysShow": true,
+			"editorShowInWorld": false,
+			"editorCutLongValues": true,
+			"editorTextSuffix": null,
+			"editorTextPrefix": null,
+			"useForSmartColor": false,
+			"exportToToc": false,
+			"searchable": true,
+			"min": null,
+			"max": null,
+			"regex": null,
+			"acceptFileTypes": null,
+			"defaultOverride": null,
+			"textLanguageMode": null,
+			"symmetricalRef": false,
+			"autoChainRef": false,
+			"allowOutOfLevelRef": false,
+			"allowedRefs": "Any",
+			"allowedRefsEntityUid": null,
+			"allowedRefTags": [],
+			"tilesetUid": null
+		},
+		{
+			"identifier": "enemy_respawn",
+			"doc": "When the enemies of this room come back after they are defeated, for every EnemySpawn that does not author its own respawn: DeadStaysDead / OnRest / OnRoomReenter / InPlace(seconds). One switch for the whole enemy zone; unset leaves each placement to the engine default.",
+			"__type": "String",
+			"uid": 6893,
+			"type": "F_String",
+			"isArray": false,
+			"canBeNull": true,
+			"arrayMinLength": null,
+			"arrayMaxLength": null,
+			"editorDisplayMode": "NameAndValue",
+			"editorDisplayScale": 1,
+			"editorDisplayPos": "Above",
+			"editorLinkStyle": "ZigZag",
+			"editorDisplayColor": null,
+			"editorAlwaysShow": false,
 			"editorShowInWorld": false,
 			"editorCutLongValues": true,
 			"editorTextSuffix": null,
@@ -31838,7 +31875,11 @@
 				{ "__identifier": "foreground_treatment", "__type": "String", "__value": null, "__tile": null, "defUid": 4340, "realEditorValues": [] },
 				{ "__identifier": "nameplate_full_opacity_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6573, "realEditorValues": [] },
 				{ "__identifier": "nameplate_fade_out_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6574, "realEditorValues": [] },
-				{ "__identifier": "gallery", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6810, "realEditorValues": [] }
+				{ "__identifier": "gallery", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6810, "realEditorValues": [] },
+				{ "__identifier": "enemy_respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6893, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["OnRoomReenter"]
+				}] }
 			],
 			"layerInstances": [
 				{
@@ -32087,10 +32128,7 @@
 									"id": "V_String",
 									"params": ["npc_pirate_raider"]
 								}] },
-								{ "__identifier": "respawn", "__type": "String", "__value": "OnRest", "__tile": null, "defUid": 6858, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["OnRest"]
-								}] }
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] }
 							],
 							"__worldX": 2752,
 							"__worldY": 3312
@@ -32127,10 +32165,7 @@
 									"id": "V_String",
 									"params": ["npc_pirate_raider"]
 								}] },
-								{ "__identifier": "respawn", "__type": "String", "__value": "OnRest", "__tile": null, "defUid": 6858, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["OnRest"]
-								}] }
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] }
 							],
 							"__worldX": 3120,
 							"__worldY": 3232
@@ -32167,10 +32202,7 @@
 									"id": "V_String",
 									"params": ["npc_pirate_raider"]
 								}] },
-								{ "__identifier": "respawn", "__type": "String", "__value": "OnRest", "__tile": null, "defUid": 6858, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["OnRest"]
-								}] }
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] }
 							],
 							"__worldX": 3520,
 							"__worldY": 3312
@@ -32259,10 +32291,7 @@
 									"id": "V_String",
 									"params": ["npc_pirate_heavy_iron_mary"]
 								}] },
-								{ "__identifier": "respawn", "__type": "String", "__value": "OnRest", "__tile": null, "defUid": 6858, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["OnRest"]
-								}] }
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] }
 							],
 							"__worldX": 3280,
 							"__worldY": 3392
@@ -32294,10 +32323,7 @@
 									"id": "V_String",
 									"params": ["stochastic_parrot"]
 								}] },
-								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["OnRoomReenter"]
-								}] }
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] }
 							],
 							"__worldX": 2960,
 							"__worldY": 3202
@@ -32329,10 +32355,7 @@
 									"id": "V_String",
 									"params": ["stochastic_parrot"]
 								}] },
-								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["OnRoomReenter"]
-								}] }
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] }
 							],
 							"__worldX": 3440,
 							"__worldY": 3552
@@ -32364,10 +32387,7 @@
 									"id": "V_String",
 									"params": ["npc_burning_flying_shark"]
 								}] },
-								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["OnRoomReenter"]
-								}] }
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] }
 							],
 							"__worldX": 2752,
 							"__worldY": 3312
@@ -32399,10 +32419,7 @@
 									"id": "V_String",
 									"params": ["npc_burning_flying_shark"]
 								}] },
-								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["OnRoomReenter"]
-								}] }
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] }
 							],
 							"__worldX": 3120,
 							"__worldY": 3232
@@ -32434,10 +32451,7 @@
 									"id": "V_String",
 									"params": ["npc_burning_flying_shark"]
 								}] },
-								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["OnRoomReenter"]
-								}] }
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] }
 							],
 							"__worldX": 3520,
 							"__worldY": 3312
@@ -32469,10 +32483,7 @@
 									"id": "V_String",
 									"params": ["npc_burning_flying_shark"]
 								}] },
-								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["OnRoomReenter"]
-								}] }
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] }
 							],
 							"__worldX": 3280,
 							"__worldY": 3392
