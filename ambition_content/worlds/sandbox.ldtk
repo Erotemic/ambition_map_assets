@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 6894,
+	"nextUid": 6895,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -6494,6 +6494,43 @@
 			"tilesetUid": null
 		},
 		{
+			"identifier": "fight_music_track",
+			"doc": "Optional MusicTrack.id. Played while a fight (a boss or a wave) is on in this level's active area, in place of the fight's own track.",
+			"__type": "String",
+			"uid": 6894,
+			"type": "F_String",
+			"isArray": false,
+			"canBeNull": true,
+			"arrayMinLength": null,
+			"arrayMaxLength": null,
+			"editorDisplayMode": "NameAndValue",
+			"editorDisplayScale": 1,
+			"editorDisplayPos": "Above",
+			"editorLinkStyle": "ZigZag",
+			"editorDisplayColor": null,
+			"editorAlwaysShow": false,
+			"editorShowInWorld": false,
+			"editorCutLongValues": true,
+			"editorTextSuffix": null,
+			"editorTextPrefix": null,
+			"useForSmartColor": false,
+			"exportToToc": false,
+			"searchable": true,
+			"min": null,
+			"max": null,
+			"regex": null,
+			"acceptFileTypes": null,
+			"defaultOverride": null,
+			"textLanguageMode": null,
+			"symmetricalRef": false,
+			"autoChainRef": false,
+			"allowOutOfLevelRef": false,
+			"allowedRefs": "Any",
+			"allowedRefsEntityUid": null,
+			"allowedRefTags": [],
+			"tilesetUid": null
+		},
+		{
 			"identifier": "ambient_profile",
 			"doc": "Optional ambient sfx / particle profile id. Layered on top of music_track.",
 			"__type": "String",
@@ -7082,6 +7119,7 @@
 					"params": ["hub"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -8874,6 +8912,7 @@
 					"params": ["hub"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -10990,6 +11029,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -12454,6 +12494,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -14196,6 +14237,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -15651,6 +15693,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -16065,6 +16108,7 @@
 					"params": ["basement"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -17126,6 +17170,7 @@
 					"params": ["basement"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -18303,6 +18348,7 @@
 					"params": ["boss"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -19224,6 +19270,7 @@
 					"params": ["basement"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -20391,6 +20438,7 @@
 					"params": ["basement"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -21140,6 +21188,7 @@
 					"params": ["basement"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -21957,6 +22006,7 @@
 					"params": ["mob_arena"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -22790,6 +22840,7 @@
 					"id": "V_String",
 					"params": ["pulse_drift_voyage"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -23787,6 +23838,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -24268,6 +24320,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -24724,6 +24777,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -25312,6 +25366,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -25710,6 +25765,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -26108,6 +26164,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -26546,6 +26603,7 @@
 					"id": "V_String",
 					"params": ["fighters_guild_oath_of_steel"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": "barracks", "__tile": null, "defUid": 4174, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["barracks"]
@@ -27092,6 +27150,7 @@
 					"id": "V_String",
 					"params": ["first_goblin_tune_v2_radio"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": "rowdy", "__tile": null, "defUid": 4174, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["rowdy"]
@@ -27560,6 +27619,7 @@
 					"id": "V_String",
 					"params": ["pulse_drift_voyage"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": "tide", "__tile": null, "defUid": 4174, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["tide"]
@@ -28097,6 +28157,7 @@
 					"id": "V_String",
 					"params": ["tech_bros_disruption"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": "hum", "__tile": null, "defUid": 4174, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["hum"]
@@ -28658,6 +28719,7 @@
 					"id": "V_String",
 					"params": ["how_to_kill_a_mockingbird"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": "tide", "__tile": null, "defUid": 4174, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["tide"]
@@ -29324,6 +29386,7 @@
 					"id": "V_String",
 					"params": ["ninja_guild_shadow_kata"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": "tide", "__tile": null, "defUid": 4174, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["tide"]
@@ -30019,6 +30082,7 @@
 					"id": "V_String",
 					"params": ["pulse_drift_voyage"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": "hum", "__tile": null, "defUid": 4174, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["hum"]
@@ -30925,6 +30989,7 @@
 					"id": "V_String",
 					"params": ["pirates_guild_black_flag_jig"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": "tide", "__tile": null, "defUid": 4174, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["tide"]
@@ -31860,6 +31925,7 @@
 					"id": "V_String",
 					"params": ["pirates_guild_black_flag_jig"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": "tide", "__tile": null, "defUid": 4174, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["tide"]
@@ -32856,6 +32922,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -33683,6 +33750,7 @@
 					"id": "V_String",
 					"params": ["tech_bros_disruption"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -34281,6 +34349,7 @@
 					"id": "V_String",
 					"params": ["flying_spaghetti_monster_roots_boss_choir_backing"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -34786,6 +34855,7 @@
 					"id": "V_String",
 					"params": ["dinosaur_liberators"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -35261,6 +35331,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -35974,6 +36045,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -36373,6 +36445,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -36965,6 +37038,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -37662,6 +37736,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -38279,6 +38354,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -38826,6 +38902,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -39300,6 +39377,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -39892,6 +39970,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -40484,6 +40563,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -41266,6 +41346,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -41978,6 +42059,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -42585,6 +42667,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -43066,6 +43149,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -43529,6 +43613,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -43992,6 +44077,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -44482,6 +44568,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -44993,6 +45080,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -45505,6 +45593,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -46063,6 +46152,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -46698,6 +46788,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -47089,6 +47180,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -47494,6 +47586,7 @@
 					"params": ["lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -49433,6 +49526,7 @@
 					"id": "V_String",
 					"params": ["for_emmy_forever_ago"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -50831,6 +50925,7 @@
 					"params": ["hub"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 4173, "realEditorValues": [] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -51396,6 +51491,7 @@
 					"id": "V_String",
 					"params": ["pulse_drift_voyage"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -52839,6 +52935,7 @@
 					"id": "V_String",
 					"params": ["standing_on_shoulders"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": "hum", "__tile": null, "defUid": 4174, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["hum"]

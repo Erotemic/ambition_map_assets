@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 104969,
+	"nextUid": 104970,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -6375,6 +6375,43 @@
 			"tilesetUid": null
 		},
 		{
+			"identifier": "fight_music_track",
+			"doc": "Optional MusicTrack.id. Played while a fight (a boss or a wave) is on in this level's active area, in place of the fight's own track.",
+			"__type": "String",
+			"uid": 104969,
+			"type": "F_String",
+			"isArray": false,
+			"canBeNull": true,
+			"arrayMinLength": null,
+			"arrayMaxLength": null,
+			"editorDisplayMode": "NameAndValue",
+			"editorDisplayScale": 1,
+			"editorDisplayPos": "Above",
+			"editorLinkStyle": "ZigZag",
+			"editorDisplayColor": null,
+			"editorAlwaysShow": false,
+			"editorShowInWorld": false,
+			"editorCutLongValues": true,
+			"editorTextSuffix": null,
+			"editorTextPrefix": null,
+			"useForSmartColor": false,
+			"exportToToc": false,
+			"searchable": true,
+			"min": null,
+			"max": null,
+			"regex": null,
+			"acceptFileTypes": null,
+			"defaultOverride": null,
+			"textLanguageMode": null,
+			"symmetricalRef": false,
+			"autoChainRef": false,
+			"allowOutOfLevelRef": false,
+			"allowedRefs": "Any",
+			"allowedRefsEntityUid": null,
+			"allowedRefTags": [],
+			"tilesetUid": null
+		},
+		{
 			"identifier": "ambient_profile",
 			"doc": "Optional ambient sfx / particle profile id. Layered on top of music_track.",
 			"__type": "String",
@@ -6852,6 +6889,7 @@
 					"id": "V_String",
 					"params": ["tech_bros_disruption"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 104969, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -7780,6 +7818,7 @@
 					"id": "V_String",
 					"params": ["tech_bros_disruption"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 104969, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -8926,6 +8965,7 @@
 					"id": "V_String",
 					"params": ["pirates_guild_black_flag_jig"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 104969, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -10622,6 +10662,7 @@
 					"id": "V_String",
 					"params": ["tech_bros_disruption"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 104969, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -12382,6 +12423,7 @@
 					"id": "V_String",
 					"params": ["tech_bros_disruption"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 104969, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -13452,6 +13494,7 @@
 					"id": "V_String",
 					"params": ["tech_bros_disruption"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 104969, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -14536,6 +14579,7 @@
 					"id": "V_String",
 					"params": ["tech_bros_disruption"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 104969, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -15784,6 +15828,7 @@
 					"id": "V_String",
 					"params": ["tech_bros_disruption"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 104969, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -17510,6 +17555,7 @@
 					"id": "V_String",
 					"params": ["tech_bros_disruption"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 104969, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -19326,6 +19372,7 @@
 					"id": "V_String",
 					"params": ["tech_bros_disruption"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 104969, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
@@ -20802,6 +20849,7 @@
 					"id": "V_String",
 					"params": ["tech_bros_disruption"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 104969, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
