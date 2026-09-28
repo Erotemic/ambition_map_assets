@@ -11,7 +11,7 @@
 	"iid": "ambition-mary-o-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 107263,
+	"nextUid": 107264,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -8219,6 +8219,43 @@
 			"allowedRefsEntityUid": null,
 			"allowedRefTags": [],
 			"tilesetUid": null
+		},
+		{
+			"identifier": "title",
+			"doc": "What a player is told this level is called, for a title card such as WORLD 1-2. Empty means no title.",
+			"__type": "String",
+			"uid": 107263,
+			"type": "F_String",
+			"isArray": false,
+			"canBeNull": true,
+			"arrayMinLength": null,
+			"arrayMaxLength": null,
+			"editorDisplayMode": "NameAndValue",
+			"editorDisplayScale": 1,
+			"editorDisplayPos": "Above",
+			"editorLinkStyle": "ZigZag",
+			"editorDisplayColor": null,
+			"editorAlwaysShow": true,
+			"editorShowInWorld": false,
+			"editorCutLongValues": true,
+			"editorTextSuffix": null,
+			"editorTextPrefix": null,
+			"useForSmartColor": false,
+			"exportToToc": false,
+			"searchable": true,
+			"min": null,
+			"max": null,
+			"regex": null,
+			"acceptFileTypes": null,
+			"defaultOverride": null,
+			"textLanguageMode": null,
+			"symmetricalRef": false,
+			"autoChainRef": false,
+			"allowOutOfLevelRef": false,
+			"allowedRefs": "Any",
+			"allowedRefsEntityUid": null,
+			"allowedRefTags": [],
+			"tilesetUid": null
 		}
 	] },
 	"worlds": [],
@@ -8251,7 +8288,11 @@
 					"id": "V_String",
 					"params": ["mary_o_1_2"]
 				}] },
-				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 107262, "realEditorValues": [] }
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 107262, "realEditorValues": [] },
+				{ "__identifier": "title", "__type": "String", "__value": "WORLD 1-1", "__tile": null, "defUid": 107263, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["WORLD 1-1"]
+				}] }
 			],
 			"layerInstances": [
 				{
@@ -11068,7 +11109,11 @@
 					"id": "V_String",
 					"params": ["mary_o_1_3"]
 				}] },
-				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 107262, "realEditorValues": [] }
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 107262, "realEditorValues": [] },
+				{ "__identifier": "title", "__type": "String", "__value": "WORLD 1-2", "__tile": null, "defUid": 107263, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["WORLD 1-2"]
+				}] }
 			],
 			"layerInstances": [
 				{
@@ -13269,7 +13314,11 @@
 					"id": "V_String",
 					"params": ["mary_o_1_1"]
 				}] },
-				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 107262, "realEditorValues": [] }
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 107262, "realEditorValues": [] },
+				{ "__identifier": "title", "__type": "String", "__value": "WORLD 1-3", "__tile": null, "defUid": 107263, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["WORLD 1-3"]
+				}] }
 			],
 			"layerInstances": [
 				{
