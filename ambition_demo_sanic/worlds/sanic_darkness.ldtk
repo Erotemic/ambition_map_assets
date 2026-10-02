@@ -9199,6 +9199,22 @@
 				{ "__identifier": "next_room", "__type": "String", "__value": "sanic_speedway", "__tile": null, "defUid": 107302, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["sanic_speedway"]
+				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "basement", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["basement"]
+				}] },
+				{ "__identifier": "visual_theme", "__type": "String", "__value": "eclipse", "__tile": null, "defUid": 4175, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["eclipse"]
+				}] },
+				{ "__identifier": "visual_profile", "__type": "String", "__value": "sanic_darkness", "__tile": null, "defUid": 4336, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["sanic_darkness"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "eclipse", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["eclipse"]
 				}] }
 			],
 			"layerInstances": [

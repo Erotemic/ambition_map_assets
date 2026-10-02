@@ -9264,6 +9264,26 @@
 				{ "__identifier": "next_room", "__type": "String", "__value": "sanic_highway", "__tile": null, "defUid": 107017, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["sanic_highway"]
+				}] },
+				{ "__identifier": "mode", "__type": "String", "__value": "sanic", "__tile": null, "defUid": 6849, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["sanic"]
+				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "skybridge", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["skybridge"]
+				}] },
+				{ "__identifier": "visual_theme", "__type": "String", "__value": "skybridge", "__tile": null, "defUid": 4175, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["skybridge"]
+				}] },
+				{ "__identifier": "visual_profile", "__type": "String", "__value": "sanic_speedway", "__tile": null, "defUid": 4336, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["sanic_speedway"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "skybridge", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["skybridge"]
 				}] }
 			],
 			"layerInstances": [

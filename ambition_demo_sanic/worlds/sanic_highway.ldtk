@@ -9199,6 +9199,22 @@
 				{ "__identifier": "next_room", "__type": "String", "__value": "sanic_darkness", "__tile": null, "defUid": 107115, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["sanic_darkness"]
+				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "cove", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["cove"]
+				}] },
+				{ "__identifier": "visual_theme", "__type": "String", "__value": "cove", "__tile": null, "defUid": 4175, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["cove"]
+				}] },
+				{ "__identifier": "visual_profile", "__type": "String", "__value": "sanic_highway", "__tile": null, "defUid": 4336, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["sanic_highway"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "cove", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["cove"]
 				}] }
 			],
 			"layerInstances": [
