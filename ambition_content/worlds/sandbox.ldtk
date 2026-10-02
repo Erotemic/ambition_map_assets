@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 6897,
+	"nextUid": 6898,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -7161,6 +7161,43 @@
 			"allowedRefsEntityUid": null,
 			"allowedRefTags": [],
 			"tilesetUid": null
+		},
+		{
+			"identifier": "entry_cutscene",
+			"doc": "The cutscene id that plays the first time this room becomes live. Two levels of one active area must not both set it.",
+			"__type": "String",
+			"uid": 6897,
+			"type": "F_String",
+			"isArray": false,
+			"canBeNull": true,
+			"arrayMinLength": null,
+			"arrayMaxLength": null,
+			"editorDisplayMode": "NameAndValue",
+			"editorDisplayScale": 1,
+			"editorDisplayPos": "Above",
+			"editorLinkStyle": "ZigZag",
+			"editorDisplayColor": null,
+			"editorAlwaysShow": true,
+			"editorShowInWorld": false,
+			"editorCutLongValues": true,
+			"editorTextSuffix": null,
+			"editorTextPrefix": null,
+			"useForSmartColor": false,
+			"exportToToc": false,
+			"searchable": true,
+			"min": null,
+			"max": null,
+			"regex": null,
+			"acceptFileTypes": null,
+			"defaultOverride": null,
+			"textLanguageMode": null,
+			"symmetricalRef": false,
+			"autoChainRef": false,
+			"allowOutOfLevelRef": false,
+			"allowedRefs": "Any",
+			"allowedRefsEntityUid": null,
+			"allowedRefTags": [],
+			"tilesetUid": null
 		}
 	] },
 	"levels": [
@@ -7203,7 +7240,11 @@
 				{ "__identifier": "foreground_treatment", "__type": "String", "__value": null, "__tile": null, "defUid": 4340, "realEditorValues": [] },
 				{ "__identifier": "nameplate_full_opacity_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6573, "realEditorValues": [] },
 				{ "__identifier": "nameplate_fade_out_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6574, "realEditorValues": [] },
-				{ "__identifier": "gallery", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6810, "realEditorValues": [] }
+				{ "__identifier": "gallery", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6810, "realEditorValues": [] },
+				{ "__identifier": "entry_cutscene", "__type": "String", "__value": "test_intro", "__tile": null, "defUid": 6897, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["test_intro"]
+				}] }
 			],
 			"layerInstances": [
 				{
@@ -18432,7 +18473,11 @@
 				{ "__identifier": "foreground_treatment", "__type": "String", "__value": null, "__tile": null, "defUid": 4340, "realEditorValues": [] },
 				{ "__identifier": "nameplate_full_opacity_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6573, "realEditorValues": [] },
 				{ "__identifier": "nameplate_fade_out_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6574, "realEditorValues": [] },
-				{ "__identifier": "gallery", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6810, "realEditorValues": [] }
+				{ "__identifier": "gallery", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6810, "realEditorValues": [] },
+				{ "__identifier": "entry_cutscene", "__type": "String", "__value": "boss_intro_gradient_sentinel", "__tile": null, "defUid": 6897, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["boss_intro_gradient_sentinel"]
+				}] }
 			],
 			"layerInstances": [
 				{
@@ -25450,7 +25495,11 @@
 				{ "__identifier": "foreground_treatment", "__type": "String", "__value": null, "__tile": null, "defUid": 4340, "realEditorValues": [] },
 				{ "__identifier": "nameplate_full_opacity_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6573, "realEditorValues": [] },
 				{ "__identifier": "nameplate_fade_out_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6574, "realEditorValues": [] },
-				{ "__identifier": "gallery", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6810, "realEditorValues": [] }
+				{ "__identifier": "gallery", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6810, "realEditorValues": [] },
+				{ "__identifier": "entry_cutscene", "__type": "String", "__value": "cutscene_lab_intro", "__tile": null, "defUid": 6897, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["cutscene_lab_intro"]
+				}] }
 			],
 			"layerInstances": [
 				{
