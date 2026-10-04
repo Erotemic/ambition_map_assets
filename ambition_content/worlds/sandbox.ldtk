@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 6899,
+	"nextUid": 6901,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -3319,6 +3319,83 @@
 					"allowedRefsEntityUid": null,
 					"allowedRefTags": [],
 					"tilesetUid": null
+				},
+				{
+					"identifier": "respawn",
+					"doc": "Regrowth policy: Never, OnRoomReload, AfterSeconds. AfterSeconds regrows the pickup that long after it is collected, on the world clock (Q152).",
+					"__type": "String",
+					"uid": 6899,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": {
+						"id": "V_String",
+						"params": ["Never"]
+					},
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "respawn_seconds",
+					"doc": "Seconds of world time before an AfterSeconds pickup regrows.",
+					"__type": "Float",
+					"uid": 6900,
+					"type": "F_Float",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": { "id": "V_Float", "params": [0.0] },
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
 				}
 			]
 		},
@@ -20076,14 +20153,19 @@
 							"defUid": 2015,
 							"px": [816,320],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "Pickup", "__tile": null, "defUid": 3039, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "regrowing heart", "__tile": null, "defUid": 3039, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["Pickup"]
+									"params": ["regrowing heart"]
 								}] },
 								{ "__identifier": "kind", "__type": "String", "__value": "health:1", "__tile": null, "defUid": 3040, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["health:1"]
-								}] }
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "AfterSeconds", "__tile": null, "defUid": 6899, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["AfterSeconds"]
+								}] },
+								{ "__identifier": "respawn_seconds", "__type": "Float", "__value": 4.0, "__tile": null, "defUid": 6900, "realEditorValues": [{ "id": "V_Float", "params": [4.0] }] }
 							],
 							"__worldX": 4912,
 							"__worldY": 5696
