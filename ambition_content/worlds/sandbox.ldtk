@@ -3322,7 +3322,7 @@
 				},
 				{
 					"identifier": "respawn",
-					"doc": "Regrowth policy: Never, OnRoomReload, AfterSeconds. AfterSeconds regrows the pickup that long after it is collected, on the world clock (Q152).",
+					"doc": "Regrowth policy. Empty or OnRoomReload: back when its room is built again. Never: gone for the run once collected (a checkpoint restore can bring it back). AfterSeconds: regrows that long after it is collected, on the world clock (Q152, Q154).",
 					"__type": "String",
 					"uid": 6899,
 					"type": "F_String",
@@ -3348,7 +3348,7 @@
 					"tilesetUid": null,
 					"defaultOverride": {
 						"id": "V_String",
-						"params": ["Never"]
+						"params": ["OnRoomReload"]
 					},
 					"textLanguageMode": null,
 					"symmetricalRef": false,
@@ -20183,13 +20183,17 @@
 							"defUid": 2015,
 							"px": [976,320],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "Pickup", "__tile": null, "defUid": 3039, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "one-time heart", "__tile": null, "defUid": 3039, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["Pickup"]
+									"params": ["one-time heart"]
 								}] },
 								{ "__identifier": "kind", "__type": "String", "__value": "health:1", "__tile": null, "defUid": 3040, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["health:1"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "Never", "__tile": null, "defUid": 6899, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Never"]
 								}] }
 							],
 							"__worldX": 5072,
