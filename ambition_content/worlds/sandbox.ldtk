@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 6908,
+	"nextUid": 6915,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -53546,8 +53546,8 @@
 		},
 		{
 			"identifier": "trex_arena",
-			"iid": "trex_arena-6901",
-			"uid": 6901,
+			"iid": "trex_arena-6908",
+			"uid": 6908,
 			"worldX": -14000,
 			"worldY": 0,
 			"worldDepth": 0,
@@ -53581,7 +53581,7 @@
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
-					"iid": "Collision-6902",
+					"iid": "Collision-6909",
 					"layerDefUid": 5024,
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -53734,13 +53734,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 6901,
+					"levelId": 6908,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 6901,
+					"seed": 6908,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -53748,7 +53748,7 @@
 				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-6903",
+					"iid": "Ambition-6910",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 112,
@@ -53759,13 +53759,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 6901,
+					"levelId": 6908,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 6901,
+					"seed": 6908,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
@@ -53778,7 +53778,7 @@
 							"__smartColor": "#41D1FF",
 							"__worldX": -13888,
 							"__worldY": 624,
-							"iid": "PlayerStart-6904",
+							"iid": "PlayerStart-6911",
 							"width": 24,
 							"height": 48,
 							"defUid": 2000,
@@ -53797,7 +53797,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": -13960,
 							"__worldY": 576,
-							"iid": "LoadingZone-6905",
+							"iid": "LoadingZone-6912",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -53807,9 +53807,9 @@
 									"id": "V_String",
 									"params": ["trex_arena_entry"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "trex_arena_entry", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to the hall of bosses", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["trex_arena_entry"]
+									"params": ["to the hall of bosses"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "hall_of_bosses", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -53832,7 +53832,7 @@
 							"__smartColor": "#C77DFF",
 							"__worldX": -12880,
 							"__worldY": 560,
-							"iid": "BossSpawn-6906",
+							"iid": "BossSpawn-6913",
 							"width": 140,
 							"height": 112,
 							"defUid": 2013,
@@ -53853,7 +53853,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-6907",
+					"iid": "Climbable-6914",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -54006,13 +54006,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 6901,
+					"levelId": 6908,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 6901,
+					"seed": 6908,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
