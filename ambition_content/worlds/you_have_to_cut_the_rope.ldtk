@@ -6036,16 +6036,16 @@
 		}
 	], "tilesets": [
 		{
-			"__cHei": 9,
-			"__cWid": 12,
+			"__cHei": 14,
+			"__cWid": 16,
 			"cachedPixelData": null,
 			"customData": [],
 			"embedAtlas": null,
 			"enumTags": [],
 			"identifier": "sprite_player_robot_v3",
 			"padding": 0,
-			"pxHei": 2468,
-			"pxWid": 3072,
+			"pxHei": 3776,
+			"pxWid": 4096,
 			"relPath": "../sprites/player_robot_v3_spritesheet.png",
 			"savedSelections": [],
 			"spacing": 0,

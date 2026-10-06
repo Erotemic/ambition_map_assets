@@ -120,7 +120,6 @@
 					"isOptional": false,
 					"rules": [
 						{
-							"uid": 107232,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[1222]],
@@ -149,10 +148,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107232
 						},
 						{
-							"uid": 107233,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[1223]],
@@ -181,10 +180,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107233
 						},
 						{
-							"uid": 107234,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[1254]],
@@ -213,10 +212,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107234
 						},
 						{
-							"uid": 107235,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[1255]],
@@ -245,10 +244,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107235
 						},
 						{
-							"uid": 107236,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[448]],
@@ -277,10 +276,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107236
 						},
 						{
-							"uid": 107237,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[449]],
@@ -309,10 +308,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107237
 						},
 						{
-							"uid": 107238,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[1048]],
@@ -341,10 +340,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107238
 						},
 						{
-							"uid": 107239,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[1049]],
@@ -373,10 +372,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107239
 						},
 						{
-							"uid": 107240,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[1080]],
@@ -405,10 +404,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107240
 						},
 						{
-							"uid": 107241,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[1081]],
@@ -437,10 +436,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107241
 						},
 						{
-							"uid": 107242,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[26]],
@@ -469,10 +468,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107242
 						},
 						{
-							"uid": 107243,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[27]],
@@ -501,10 +500,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107243
 						},
 						{
-							"uid": 107244,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[58]],
@@ -533,10 +532,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107244
 						},
 						{
-							"uid": 107245,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[59]],
@@ -565,10 +564,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107245
 						},
 						{
-							"uid": 107246,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[263]],
@@ -597,10 +596,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107246
 						},
 						{
-							"uid": 107247,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[264]],
@@ -629,7 +628,8 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107247
 						}
 					],
 					"usesWizard": false,
@@ -754,7 +754,6 @@
 					"isOptional": false,
 					"rules": [
 						{
-							"uid": 107249,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[1232]],
@@ -783,10 +782,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107249
 						},
 						{
-							"uid": 107250,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[1233]],
@@ -815,10 +814,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107250
 						},
 						{
-							"uid": 107251,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[1264]],
@@ -847,10 +846,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107251
 						},
 						{
-							"uid": 107252,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[1265]],
@@ -879,10 +878,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107252
 						},
 						{
-							"uid": 107253,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[1232]],
@@ -911,10 +910,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107253
 						},
 						{
-							"uid": 107254,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[1233]],
@@ -943,10 +942,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107254
 						},
 						{
-							"uid": 107255,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[1264]],
@@ -975,10 +974,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107255
 						},
 						{
-							"uid": 107256,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[1265]],
@@ -1007,7 +1006,8 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107256
 						}
 					],
 					"usesWizard": false,
@@ -1098,7 +1098,6 @@
 					"isOptional": false,
 					"rules": [
 						{
-							"uid": 107258,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[265]],
@@ -1127,10 +1126,10 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107258
 						},
 						{
-							"uid": 107259,
 							"active": true,
 							"size": 1,
 							"tileRectsIds": [[297]],
@@ -1159,7 +1158,8 @@
 							"perlinSeed": 0,
 							"perlinScale": 0.2,
 							"perlinOctaves": 2,
-							"invalidated": true
+							"invalidated": true,
+							"uid": 107259
 						}
 					],
 					"usesWizard": false,
@@ -4143,8 +4143,8 @@
 			"showName": true,
 			"tilesetId": 106934,
 			"tileRenderMode": "FitInside",
-			"tileRect": { "tilesetUid": 106934, "x": 240, "y": 0, "w": 92, "h": 71 },
-			"uiTileRect": { "tilesetUid": 106934, "x": 240, "y": 0, "w": 92, "h": 71 },
+			"tileRect": { "tilesetUid": 106934, "x": 240, "y": 0, "w": 94, "h": 74 },
+			"uiTileRect": { "tilesetUid": 106934, "x": 240, "y": 0, "w": 94, "h": 74 },
 			"nineSliceBorders": [],
 			"maxCount": 0,
 			"limitScope": "PerLayer",
@@ -7533,7 +7533,7 @@
 		{ "identifier": "MaryOPipeMouth", "uid": 106966, "values": [ { "id": "Up", "tileRect": { "tilesetUid": 106934, "x": 256, "y": 512, "w": 61, "h": 30 }, "color": 0 }, { "id": "Down", "tileRect": { "tilesetUid": 106934, "x": 320, "y": 512, "w": 61, "h": 30 }, "color": 0 } ], "iconTilesetUid": 106934, "externalRelPath": null, "externalFileChecksum": null, "tags": [] },
 		{ "identifier": "MaryOPipeRole", "uid": 106967, "values": [ { "id": "Entrance", "tileRect": null, "color": 0 }, { "id": "Exit", "tileRect": null, "color": 0 } ], "iconTilesetUid": null, "externalRelPath": null, "externalFileChecksum": null, "tags": [] },
 		{ "identifier": "MaryOEnemyBrain", "uid": 107032, "values": [
-			{ "id": "mary_o_ai_slop", "tileRect": { "tilesetUid": 106934, "x": 0, "y": 336, "w": 257, "h": 167 }, "color": 0 },
+			{ "id": "mary_o_ai_slop", "tileRect": { "tilesetUid": 106934, "x": 0, "y": 336, "w": 267, "h": 167 }, "color": 0 },
 			{ "id": "mary_o_snake", "tileRect": { "tilesetUid": 106934, "x": 128, "y": 512, "w": 117, "h": 49 }, "color": 0 },
 			{
 				"id": "mary_o_snakes_on_a_paper_plane",
@@ -7542,7 +7542,7 @@
 			},
 			{
 				"id": "mary_o_snakes_on_a_cartesian_plane",
-				"tileRect": { "tilesetUid": 106934, "x": 352, "y": 336, "w": 123, "h": 50 },
+				"tileRect": { "tilesetUid": 106934, "x": 352, "y": 336, "w": 123, "h": 51 },
 				"color": 0
 			}
 		], "iconTilesetUid": 106934, "externalRelPath": null, "externalFileChecksum": null, "tags": [] },
