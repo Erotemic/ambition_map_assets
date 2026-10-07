@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 6940,
+	"nextUid": 6949,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -30909,6 +30909,339 @@
 							],
 							"__worldX": 2218,
 							"__worldY": 2688
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [13,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 988,
+							"__worldY": 2608,
+							"iid": "Switch-6940",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [220,304],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "hall_warden_life_switch", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_warden_life_switch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Clockwork Warden life switch", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Clockwork Warden life switch"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Revive or defeat the Clockwork Warden", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Revive or defeat the Clockwork Warden"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "hall.clockwork_warden", "__tile": null, "defUid": 4049, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.clockwork_warden"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "BossLife", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["BossLife"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [39,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 1396,
+							"__worldY": 2608,
+							"iid": "Switch-6941",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [628,304],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "hall_mockingbird_life_switch", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_mockingbird_life_switch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Mockingbird life switch", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Mockingbird life switch"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Revive or defeat the Mockingbird", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Revive or defeat the Mockingbird"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "hall.mockingbird", "__tile": null, "defUid": 4049, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.mockingbird"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "BossLife", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["BossLife"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [39,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 1396,
+							"__worldY": 2752,
+							"iid": "Switch-6942",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [628,448],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "hall_gnu_ton_life_switch", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_gnu_ton_life_switch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "GNU-ton life switch", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["GNU-ton life switch"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Revive or defeat the GNU-ton", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Revive or defeat the GNU-ton"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "hall.gnu_ton", "__tile": null, "defUid": 4049, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.gnu_ton"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "BossLife", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["BossLife"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [18,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 1070,
+							"__worldY": 2752,
+							"iid": "Switch-6943",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [302,448],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "hall_cut_the_rope_life_switch", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_cut_the_rope_life_switch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Cut the Rope life switch", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cut the Rope life switch"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Revive or defeat the Cut the Rope", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Revive or defeat the Cut the Rope"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "hall.cut_the_rope", "__tile": null, "defUid": 4049, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.cut_the_rope"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "BossLife", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["BossLife"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [77,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 2014,
+							"__worldY": 2608,
+							"iid": "Switch-6944",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [1246,304],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "hall_flying_spaghetti_monster_life_switch", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_flying_spaghetti_monster_life_switch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Flying Spaghetti Monster life switch", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Flying Spaghetti Monster life switch"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Revive or defeat the Flying Spaghetti Monster", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Revive or defeat the Flying Spaghetti Monster"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "hall.flying_spaghetti_monster", "__tile": null, "defUid": 4049, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.flying_spaghetti_monster"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "BossLife", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["BossLife"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [77,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 2014,
+							"__worldY": 2752,
+							"iid": "Switch-6945",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [1246,448],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "hall_trex_life_switch", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_trex_life_switch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "T-Rex life switch", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["T-Rex life switch"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Revive or defeat the T-Rex", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Revive or defeat the T-Rex"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "hall.trex", "__tile": null, "defUid": 4049, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.trex"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "BossLife", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["BossLife"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [57,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 1692,
+							"__worldY": 2752,
+							"iid": "Switch-6946",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [924,448],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "hall_mode_collapse_life_switch", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_mode_collapse_life_switch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Mode Collapse life switch", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Mode Collapse life switch"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Revive or defeat the Mode Collapse", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Revive or defeat the Mode Collapse"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "hall.mode_collapse", "__tile": null, "defUid": 4049, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.mode_collapse"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "BossLife", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["BossLife"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [57,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 1692,
+							"__worldY": 2608,
+							"iid": "Switch-6947",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [924,304],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "hall_exploding_gradient_life_switch", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_exploding_gradient_life_switch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Exploding Gradient life switch", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Exploding Gradient life switch"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Revive or defeat the Exploding Gradient", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Revive or defeat the Exploding Gradient"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "hall.exploding_gradient", "__tile": null, "defUid": 4049, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.exploding_gradient"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "BossLife", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["BossLife"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [92,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 2242,
+							"__worldY": 2752,
+							"iid": "Switch-6948",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [1474,448],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "hall_overflow_life_switch", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_overflow_life_switch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Overflow life switch", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Overflow life switch"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Revive or defeat the Overflow", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Revive or defeat the Overflow"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "hall.overflow", "__tile": null, "defUid": 4049, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.overflow"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "BossLife", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["BossLife"]
+								}] }
+							]
 						}
 					]
 				},
@@ -34850,7 +35183,11 @@
 									"id": "V_String",
 									"params": ["PhaseScript:flying_spaghetti_monster_boss"]
 								}] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6832, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6832, "realEditorValues": [] },
+								{ "__identifier": "encounter_id", "__type": "String", "__value": "hall.flying_spaghetti_monster", "__tile": null, "defUid": 6863, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.flying_spaghetti_monster"]
+								}] }
 							],
 							"__worldX": 6624,
 							"__worldY": 2288
@@ -36256,7 +36593,11 @@
 				{ "__identifier": "foreground_treatment", "__type": "String", "__value": null, "__tile": null, "defUid": 4340, "realEditorValues": [] },
 				{ "__identifier": "nameplate_full_opacity_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6573, "realEditorValues": [] },
 				{ "__identifier": "nameplate_fade_out_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6574, "realEditorValues": [] },
-				{ "__identifier": "gallery", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6810, "realEditorValues": [] }
+				{ "__identifier": "gallery", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6810, "realEditorValues": [] },
+				{ "__identifier": "practice", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6915, "realEditorValues": [{
+					"id": "V_Bool",
+					"params": [ true ]
+				}] }
 			],
 			"layerInstances": [
 				{
@@ -36441,7 +36782,11 @@
 									"id": "V_String",
 									"params": ["PhaseScript:mode_collapse_boss"]
 								}] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6832, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6832, "realEditorValues": [] },
+								{ "__identifier": "encounter_id", "__type": "String", "__value": "hall.mode_collapse", "__tile": null, "defUid": 6863, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.mode_collapse"]
+								}] }
 							],
 							"__worldX": 856,
 							"__worldY": 7528
@@ -37034,7 +37379,11 @@
 									"id": "V_String",
 									"params": ["PhaseScript:exploding_gradient_boss"]
 								}] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6832, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6832, "realEditorValues": [] },
+								{ "__identifier": "encounter_id", "__type": "String", "__value": "hall.exploding_gradient", "__tile": null, "defUid": 6863, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.exploding_gradient"]
+								}] }
 							],
 							"__worldX": 4184,
 							"__worldY": 6996
@@ -39966,7 +40315,11 @@
 									"id": "V_String",
 									"params": ["PhaseScript:overflow_boss"]
 								}] },
-								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6832, "realEditorValues": [] }
+								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6832, "realEditorValues": [] },
+								{ "__identifier": "encounter_id", "__type": "String", "__value": "hall.overflow", "__tile": null, "defUid": 6863, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.overflow"]
+								}] }
 							],
 							"__worldX": 6784,
 							"__worldY": 3412
@@ -53212,6 +53565,10 @@
 									"params": [
 										"{'entityIid': 'EnemySpawn-6882', 'layerIid': 'Ambition-6878', 'levelIid': 'gnu_ton_arena-6876', 'worldIid': 'ambition-sandbox-world'}"
 									]
+								}] },
+								{ "__identifier": "encounter_id", "__type": "String", "__value": "hall.gnu_ton", "__tile": null, "defUid": 6863, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.gnu_ton"]
 								}] }
 							]
 						},
@@ -53879,6 +54236,10 @@
 								{ "__identifier": "brain", "__type": "String", "__value": "PhaseScript:trex_boss", "__tile": null, "defUid": 3034, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["PhaseScript:trex_boss"]
+								}] },
+								{ "__identifier": "encounter_id", "__type": "String", "__value": "hall.trex", "__tile": null, "defUid": 6863, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.trex"]
 								}] }
 							]
 						}

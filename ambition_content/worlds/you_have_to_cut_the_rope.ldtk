@@ -7011,6 +7011,10 @@
 								{ "__identifier": "brain", "__type": "String", "__value": "PhaseScript:smirking_behemoth_boss", "__tile": null, "defUid": 3034, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["PhaseScript:smirking_behemoth_boss"]
+								}] },
+								{ "__identifier": "encounter_id", "__type": "String", "__value": "hall.cut_the_rope", "__tile": null, "defUid": 105873, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.cut_the_rope"]
 								}] }
 							],
 							"__worldX": 768,
