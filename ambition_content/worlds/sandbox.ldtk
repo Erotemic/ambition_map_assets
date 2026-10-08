@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 7041,
+	"nextUid": 7044,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -52710,42 +52710,6 @@
 							}] }],
 							"__worldX": 9800,
 							"__worldY": 3834
-						},
-						{
-							"__identifier": "CameraZone",
-							"__grid": [0,0],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#86A8E7",
-							"iid": "CameraZone-6827",
-							"width": 3200,
-							"height": 1008,
-							"defUid": 4002,
-							"px": [0,0],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "sanic_sandbox_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["sanic_sandbox_camera"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "sanic_sandbox_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["sanic_sandbox_camera"]
-								}] },
-								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["Default"]
-								}] },
-								{ "__identifier": "priority", "__type": "Int", "__value": 0, "__tile": null, "defUid": 4329, "realEditorValues": [] },
-								{ "__identifier": "zoom", "__type": "Float", "__value": null, "__tile": null, "defUid": 4330, "realEditorValues": [] },
-								{ "__identifier": "target_offset_x", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4331, "realEditorValues": [] },
-								{ "__identifier": "target_offset_y", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4332, "realEditorValues": [] },
-								{ "__identifier": "easing_hz", "__type": "Float", "__value": null, "__tile": null, "defUid": 4333, "realEditorValues": [] },
-								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
-								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
-							],
-							"__worldX": 9600,
-							"__worldY": 3000
 						}
 					]
 				},
@@ -53546,7 +53510,44 @@
 					"seed": 382153,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
-					"entityInstances": []
+					"entityInstances": [
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"iid": "CameraZone-6827",
+							"width": 3200,
+							"height": 1008,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "sanic_sandbox_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["sanic_sandbox_camera"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "sanic_sandbox_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["sanic_sandbox_camera"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] },
+								{ "__identifier": "priority", "__type": "Int", "__value": 0, "__tile": null, "defUid": 4329, "realEditorValues": [] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": null, "__tile": null, "defUid": 4330, "realEditorValues": [] },
+								{ "__identifier": "target_offset_x", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4331, "realEditorValues": [] },
+								{ "__identifier": "target_offset_y", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4332, "realEditorValues": [] },
+								{ "__identifier": "easing_hz", "__type": "Float", "__value": null, "__tile": null, "defUid": 4333, "realEditorValues": [] },
+								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
+							],
+							"__worldX": 9600,
+							"__worldY": 3000
+						}
+					]
 				}
 			],
 			"__neighbours": []
@@ -53878,6 +53879,62 @@
 					"entityInstances": []
 				},
 				{
+					"__identifier": "AmbitionCameras",
+					"__type": "Entities",
+					"iid": "AmbitionCameras-7041",
+					"layerDefUid": 5743,
+					"intGridCsv": [],
+					"__cWid": 112,
+					"__cHei": 80,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 6876,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 6876,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 5120,
+							"__worldY": 6656,
+							"iid": "CameraZone-6884",
+							"width": 1792,
+							"height": 1280,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "gnu_ton_arena_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gnu_ton_arena_camera"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "gnu_ton_arena_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gnu_ton_arena_camera"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.25, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.25] }] }
+							]
+						}
+					]
+				},
+				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
 					"iid": "Ambition-6878",
@@ -54060,36 +54117,6 @@
 									"id": "V_String",
 									"params": ["hall.gnu_ton"]
 								}] }
-							]
-						},
-						{
-							"__identifier": "CameraZone",
-							"__grid": [0,0],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#86A8E7",
-							"__worldX": 5120,
-							"__worldY": 6656,
-							"iid": "CameraZone-6884",
-							"width": 1792,
-							"height": 1280,
-							"defUid": 4002,
-							"px": [0,0],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "gnu_ton_arena_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gnu_ton_arena_camera"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gnu_ton_arena_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gnu_ton_arena_camera"]
-								}] },
-								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["Default"]
-								}] },
-								{ "__identifier": "zoom", "__type": "Float", "__value": 1.25, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.25] }] }
 							]
 						},
 						{
@@ -56671,6 +56698,63 @@
 					"entityInstances": []
 				},
 				{
+					"__identifier": "AmbitionCameras",
+					"__type": "Entities",
+					"iid": "AmbitionCameras-7042",
+					"layerDefUid": 5743,
+					"intGridCsv": [],
+					"__cWid": 80,
+					"__cHei": 45,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 7000,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 7000,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 1744,
+							"__worldY": 7232,
+							"iid": "CameraZone-7015",
+							"width": 1280,
+							"height": 720,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "mockingbird_sky_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["mockingbird_sky_camera"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "mockingbird_sky_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["mockingbird_sky_camera"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.6, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.6] }] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
+							]
+						}
+					]
+				},
+				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
 					"iid": "Ambition-7002",
@@ -57113,37 +57197,6 @@
 							]
 						},
 						{
-							"__identifier": "CameraZone",
-							"__grid": [0,0],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#86A8E7",
-							"__worldX": 1744,
-							"__worldY": 7232,
-							"iid": "CameraZone-7015",
-							"width": 1280,
-							"height": 720,
-							"defUid": 4002,
-							"px": [0,0],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "mockingbird_sky_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["mockingbird_sky_camera"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "mockingbird_sky_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["mockingbird_sky_camera"]
-								}] },
-								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["Default"]
-								}] },
-								{ "__identifier": "zoom", "__type": "Float", "__value": 1.6, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.6] }] },
-								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
-							]
-						},
-						{
 							"__identifier": "Solid",
 							"__grid": [0,0],
 							"__pivot": [0,0],
@@ -57510,6 +57563,63 @@
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
+				},
+				{
+					"__identifier": "AmbitionCameras",
+					"__type": "Entities",
+					"iid": "AmbitionCameras-7043",
+					"layerDefUid": 5743,
+					"intGridCsv": [],
+					"__cWid": 80,
+					"__cHei": 45,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 7019,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 7000,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 3408,
+							"__worldY": -224,
+							"iid": "CameraZone-7034",
+							"width": 1280,
+							"height": 720,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "hall_mockingbird_sky_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_mockingbird_sky_camera"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "hall_mockingbird_sky_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_mockingbird_sky_camera"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.6, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.6] }] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
+							]
+						}
+					]
 				},
 				{
 					"__identifier": "Ambition",
@@ -57951,37 +58061,6 @@
 									"id": "V_String",
 									"params": ["hall_mockingbird_arena_to_sky"]
 								}] }
-							]
-						},
-						{
-							"__identifier": "CameraZone",
-							"__grid": [0,0],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#86A8E7",
-							"__worldX": 3408,
-							"__worldY": -224,
-							"iid": "CameraZone-7034",
-							"width": 1280,
-							"height": 720,
-							"defUid": 4002,
-							"px": [0,0],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "hall_mockingbird_sky_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hall_mockingbird_sky_camera"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "hall_mockingbird_sky_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hall_mockingbird_sky_camera"]
-								}] },
-								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["Default"]
-								}] },
-								{ "__identifier": "zoom", "__type": "Float", "__value": 1.6, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.6] }] },
-								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							]
 						},
 						{

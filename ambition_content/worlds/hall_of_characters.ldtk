@@ -11,7 +11,7 @@
 	"iid": "ambition-hall-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 109915,
+	"nextUid": 110061,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -7778,6 +7778,61 @@
 					"entityInstances": []
 				},
 				{
+					"__identifier": "AmbitionCameras",
+					"__type": "Entities",
+					"iid": "AmbitionCameras-110060",
+					"layerDefUid": 5743,
+					"intGridCsv": [],
+					"__cWid": 128,
+					"__cHei": 228,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 109770,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 109915,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 40000,
+							"__worldY": 0,
+							"iid": "CameraZone-109913",
+							"width": 2048,
+							"height": 3648,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "hall_of_characters_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_of_characters_camera"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "hall_of_characters_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_of_characters_camera"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] }
+							]
+						}
+					]
+				},
+				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
 					"iid": "Ambition-109772",
@@ -12544,35 +12599,6 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["stand_still"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "CameraZone",
-							"__grid": [0,0],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#86A8E7",
-							"__worldX": 40000,
-							"__worldY": 0,
-							"iid": "CameraZone-109913",
-							"width": 2048,
-							"height": 3648,
-							"defUid": 4002,
-							"px": [0,0],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "hall_of_characters_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hall_of_characters_camera"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "hall_of_characters_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hall_of_characters_camera"]
-								}] },
-								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["Default"]
 								}] }
 							]
 						}
