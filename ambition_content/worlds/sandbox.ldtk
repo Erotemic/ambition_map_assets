@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 7045,
+	"nextUid": 7046,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -9117,6 +9117,43 @@
 							],
 							"__worldX": 873,
 							"__worldY": 896
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [61,56],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 990,
+							"__worldY": 896,
+							"iid": "Switch-7045",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [990,896],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "hub_state_switch", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hub_state_switch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Hub State Switch", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Hub State Switch"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Shift the hall", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Shift the hall"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "ToggleFlag", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ToggleFlag"]
+								}] },
+								{ "__identifier": "on_activate", "__type": "String", "__value": "look.cycle central_hub_complex", "__tile": null, "defUid": 6861, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["look.cycle central_hub_complex"]
+								}] }
+							]
 						}
 					]
 				},
