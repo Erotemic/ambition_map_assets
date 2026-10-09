@@ -7870,7 +7870,10 @@
 				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
 				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4337, "realEditorValues": [] },
-				{ "__identifier": "palette", "__type": "String", "__value": null, "__tile": null, "defUid": 4338, "realEditorValues": [] },
+				{ "__identifier": "palette", "__type": "String", "__value": "clean_corrupted", "__tile": null, "defUid": 4338, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["clean_corrupted"]
+				}] },
 				{ "__identifier": "lighting_hint", "__type": "String", "__value": null, "__tile": null, "defUid": 4339, "realEditorValues": [] },
 				{ "__identifier": "foreground_treatment", "__type": "String", "__value": null, "__tile": null, "defUid": 4340, "realEditorValues": [] },
 				{ "__identifier": "nameplate_full_opacity_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6573, "realEditorValues": [] },
