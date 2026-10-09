@@ -12817,31 +12817,6 @@
 							"__worldY": 1712
 						},
 						{
-							"__identifier": "PickupSpawn",
-							"__grid": [25,43],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#8AFF80",
-							"iid": "PickupSpawn-104515",
-							"width": 24,
-							"height": 24,
-							"defUid": 2015,
-							"px": [400,696],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "alice_route_note", "__tile": null, "defUid": 3039, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["alice_route_note"]
-								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "flag:alice_route_note_carried", "__tile": null, "defUid": 3040, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["flag:alice_route_note_carried"]
-								}] }
-							],
-							"__worldX": 5328,
-							"__worldY": 1720
-						},
-						{
 							"__identifier": "DebugLabel",
 							"__grid": [2,6],
 							"__pivot": [0,0],
@@ -13964,31 +13939,6 @@
 							],
 							"__worldX": 6800,
 							"__worldY": 1600
-						},
-						{
-							"__identifier": "PickupSpawn",
-							"__grid": [55,36],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#8AFF80",
-							"iid": "PickupSpawn-104534",
-							"width": 24,
-							"height": 24,
-							"defUid": 2015,
-							"px": [880,584],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "bob_field_survey", "__tile": null, "defUid": 3039, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["bob_field_survey"]
-								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "flag:bob_field_survey_received", "__tile": null, "defUid": 3040, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["flag:bob_field_survey_received"]
-								}] }
-							],
-							"__worldX": 6832,
-							"__worldY": 1608
 						},
 						{
 							"__identifier": "DebugLabel",
