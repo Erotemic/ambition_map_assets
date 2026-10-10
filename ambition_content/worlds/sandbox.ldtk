@@ -8723,7 +8723,10 @@
 									"id": "V_String",
 									"params": ["wake_room_arrival"]
 								}] },
-								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
 							],
 							"__worldX": 908,
 							"__worldY": 624

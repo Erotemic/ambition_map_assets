@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 104976,
+	"nextUid": 104990,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -7187,7 +7187,7 @@
 					"entityInstances": [
 						{
 							"__identifier": "PlayerStart",
-							"__grid": [6,15],
+							"__grid": [7,15],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -7196,12 +7196,12 @@
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
-							"px": [106,248],
+							"px": [122,248],
 							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "wake_room_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
 								"id": "V_String",
 								"params": ["wake_room_spawn"]
 							}] }],
-							"__worldX": 106,
+							"__worldX": 122,
 							"__worldY": 248
 						},
 						{
@@ -7237,7 +7237,7 @@
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [17,16],
+							"__grid": [7,12],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -7246,29 +7246,26 @@
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [284,256],
+							"px": [112,198],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "wake_room_arrival", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["wake_room_arrival"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "wake room arrival", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["to central hub"]
+									"params": ["wake room arrival"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
-								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["central_hub_complex"]
-								}] },
-								{ "__identifier": "target_zone", "__type": "String", "__value": "intro_wake_door", "__tile": null, "defUid": 3006, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["intro_wake_door"]
-								}] },
-								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+								{ "__identifier": "target_room", "__type": "String", "__value": "", "__tile": null, "defUid": 3005, "realEditorValues": [] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "", "__tile": null, "defUid": 3006, "realEditorValues": [] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
 							],
-							"__worldX": 284,
-							"__worldY": 256
+							"__worldX": 112,
+							"__worldY": 198
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -7437,18 +7434,18 @@
 						},
 						{
 							"__identifier": "MovingPlatform",
-							"__grid": [2,18],
+							"__grid": [3,18],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#5BA1FF",
-							"__worldX": 32,
+							"__worldX": 48,
 							"__worldY": 294,
 							"iid": "MovingPlatform-104975",
 							"width": 176,
 							"height": 12,
 							"defUid": 4251,
-							"px": [32,294],
+							"px": [48,294],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "intro_cart", "__tile": null, "defUid": 104929, "realEditorValues": [{
 									"id": "V_String",
@@ -7462,6 +7459,440 @@
 								{ "__identifier": "visual", "__type": "String", "__value": "intro_cart", "__tile": null, "defUid": 104973, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["intro_cart"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 104974, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [14,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 224,
+							"__worldY": 298,
+							"iid": "MovingPlatform-104976",
+							"width": 7,
+							"height": 54,
+							"defUid": 4251,
+							"px": [224,298],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_cart_ramp_step_01", "__tile": null, "defUid": 104929, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart_ramp_step_01"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Cart ramp step 1", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cart ramp step 1"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "intro_cart_ramp", "__tile": null, "defUid": 104973, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart_ramp"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 104974, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [14,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 231,
+							"__worldY": 302,
+							"iid": "MovingPlatform-104977",
+							"width": 7,
+							"height": 50,
+							"defUid": 4251,
+							"px": [231,302],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_cart_ramp_step_02", "__tile": null, "defUid": 104929, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart_ramp_step_02"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Cart ramp step 2", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cart ramp step 2"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 104973, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 104974, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [14,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 238,
+							"__worldY": 306,
+							"iid": "MovingPlatform-104978",
+							"width": 7,
+							"height": 46,
+							"defUid": 4251,
+							"px": [238,306],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_cart_ramp_step_03", "__tile": null, "defUid": 104929, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart_ramp_step_03"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Cart ramp step 3", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cart ramp step 3"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 104973, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 104974, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [15,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 245,
+							"__worldY": 310,
+							"iid": "MovingPlatform-104979",
+							"width": 7,
+							"height": 42,
+							"defUid": 4251,
+							"px": [245,310],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_cart_ramp_step_04", "__tile": null, "defUid": 104929, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart_ramp_step_04"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Cart ramp step 4", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cart ramp step 4"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 104973, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 104974, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [15,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 252,
+							"__worldY": 314,
+							"iid": "MovingPlatform-104980",
+							"width": 7,
+							"height": 38,
+							"defUid": 4251,
+							"px": [252,314],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_cart_ramp_step_05", "__tile": null, "defUid": 104929, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart_ramp_step_05"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Cart ramp step 5", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cart ramp step 5"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 104973, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 104974, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [16,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 259,
+							"__worldY": 318,
+							"iid": "MovingPlatform-104981",
+							"width": 7,
+							"height": 34,
+							"defUid": 4251,
+							"px": [259,318],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_cart_ramp_step_06", "__tile": null, "defUid": 104929, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart_ramp_step_06"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Cart ramp step 6", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cart ramp step 6"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 104973, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 104974, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [16,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 266,
+							"__worldY": 322,
+							"iid": "MovingPlatform-104982",
+							"width": 7,
+							"height": 30,
+							"defUid": 4251,
+							"px": [266,322],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_cart_ramp_step_07", "__tile": null, "defUid": 104929, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart_ramp_step_07"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Cart ramp step 7", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cart ramp step 7"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 104973, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 104974, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [17,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 273,
+							"__worldY": 326,
+							"iid": "MovingPlatform-104983",
+							"width": 7,
+							"height": 26,
+							"defUid": 4251,
+							"px": [273,326],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_cart_ramp_step_08", "__tile": null, "defUid": 104929, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart_ramp_step_08"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Cart ramp step 8", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cart ramp step 8"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 104973, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 104974, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [17,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 280,
+							"__worldY": 330,
+							"iid": "MovingPlatform-104984",
+							"width": 7,
+							"height": 22,
+							"defUid": 4251,
+							"px": [280,330],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_cart_ramp_step_09", "__tile": null, "defUid": 104929, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart_ramp_step_09"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Cart ramp step 9", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cart ramp step 9"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 104973, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 104974, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [17,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 287,
+							"__worldY": 334,
+							"iid": "MovingPlatform-104985",
+							"width": 7,
+							"height": 18,
+							"defUid": 4251,
+							"px": [287,334],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_cart_ramp_step_10", "__tile": null, "defUid": 104929, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart_ramp_step_10"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Cart ramp step 10", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cart ramp step 10"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 104973, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 104974, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [18,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 294,
+							"__worldY": 338,
+							"iid": "MovingPlatform-104986",
+							"width": 7,
+							"height": 14,
+							"defUid": 4251,
+							"px": [294,338],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_cart_ramp_step_11", "__tile": null, "defUid": 104929, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart_ramp_step_11"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Cart ramp step 11", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cart ramp step 11"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 104973, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 104974, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [18,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 301,
+							"__worldY": 342,
+							"iid": "MovingPlatform-104987",
+							"width": 7,
+							"height": 10,
+							"defUid": 4251,
+							"px": [301,342],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_cart_ramp_step_12", "__tile": null, "defUid": 104929, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart_ramp_step_12"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Cart ramp step 12", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cart ramp step 12"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 104973, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 104974, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [19,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 308,
+							"__worldY": 346,
+							"iid": "MovingPlatform-104988",
+							"width": 7,
+							"height": 6,
+							"defUid": 4251,
+							"px": [308,346],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_cart_ramp_step_13", "__tile": null, "defUid": 104929, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart_ramp_step_13"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Cart ramp step 13", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cart ramp step 13"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 104973, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 104974, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [19,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 315,
+							"__worldY": 350,
+							"iid": "MovingPlatform-104989",
+							"width": 7,
+							"height": 2,
+							"defUid": 4251,
+							"px": [315,350],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_cart_ramp_step_14", "__tile": null, "defUid": 104929, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart_ramp_step_14"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Cart ramp step 14", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cart ramp step 14"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 104973, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
 								}] },
 								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 104974, "realEditorValues": [] }
 							]
