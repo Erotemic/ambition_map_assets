@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 104973,
+	"nextUid": 104976,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -4968,6 +4968,83 @@
 					"allowedRefsEntityUid": null,
 					"allowedRefTags": [],
 					"tilesetUid": null
+				},
+				{
+					"identifier": "visual",
+					"doc": null,
+					"__type": "String",
+					"uid": 104973,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "one_way",
+					"doc": null,
+					"__type": "Bool",
+					"uid": 104974,
+					"type": "F_Bool",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": {
+						"id": "V_Bool",
+						"params": [ true ]
+					},
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
 				}
 			]
 		},
@@ -7058,8 +7135,8 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,2,2,2,2,2,
-						2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -7110,7 +7187,7 @@
 					"entityInstances": [
 						{
 							"__identifier": "PlayerStart",
-							"__grid": [12,11],
+							"__grid": [6,15],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -7119,13 +7196,13 @@
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
-							"px": [200,178],
+							"px": [106,248],
 							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "wake_room_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
 								"id": "V_String",
 								"params": ["wake_room_spawn"]
 							}] }],
-							"__worldX": 200,
-							"__worldY": 178
+							"__worldX": 106,
+							"__worldY": 248
 						},
 						{
 							"__identifier": "NpcSpawn",
@@ -7160,7 +7237,7 @@
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [11,16],
+							"__grid": [17,16],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -7169,7 +7246,7 @@
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [180,256],
+							"px": [284,256],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "wake_room_arrival", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -7190,7 +7267,7 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 180,
+							"__worldX": 284,
 							"__worldY": 256
 						},
 						{
@@ -7285,31 +7362,6 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [7,14],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#9966CC",
-							"iid": "Prop-104427",
-							"width": 192,
-							"height": 128,
-							"defUid": 104426,
-							"px": [120,224],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "Diagnostic Cart", "__tile": null, "defUid": 104424, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["Diagnostic Cart"]
-								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "intro_cart", "__tile": null, "defUid": 104425, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["intro_cart"]
-								}] }
-							],
-							"__worldX": 120,
-							"__worldY": 224
-						},
-						{
-							"__identifier": "Prop",
 							"__grid": [21,14],
 							"__pivot": [0,0],
 							"__tags": [],
@@ -7382,6 +7434,37 @@
 							],
 							"__worldX": 744,
 							"__worldY": 224
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [2,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 32,
+							"__worldY": 294,
+							"iid": "MovingPlatform-104975",
+							"width": 176,
+							"height": 12,
+							"defUid": 4251,
+							"px": [32,294],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_cart", "__tile": null, "defUid": 104929, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Diagnostic Cart", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Diagnostic Cart"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "intro_cart", "__tile": null, "defUid": 104973, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_cart"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 104974, "realEditorValues": [] }
+							]
 						}
 					]
 				},
