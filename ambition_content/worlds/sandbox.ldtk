@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 7189,
+	"nextUid": 7190,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -9167,7 +9167,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 1432,
 							"__worldY": 880,
-							"iid": "LoadingZone-7173",
+							"iid": "LoadingZone-7174",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -58715,7 +58715,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 48,
 							"__worldY": 9712,
-							"iid": "LoadingZone-7174",
+							"iid": "LoadingZone-7175",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -58876,8 +58876,8 @@
 			"__neighbours": []
 		},
 		{
-			"identifier": "biome_hub_clean",
-			"iid": "biome_hub_clean-7053",
+			"identifier": "biome_clean_corrupted",
+			"iid": "biome_clean_corrupted-7053",
 			"uid": 7053,
 			"worldX": 1344,
 			"worldY": 9184,
@@ -58895,9 +58895,9 @@
 			"__bgPos": null,
 			"externalRelPath": null,
 			"fieldInstances": [
-				{ "__identifier": "activeArea", "__type": "String", "__value": "biome_hub_clean", "__tile": null, "defUid": 4000, "realEditorValues": [{
+				{ "__identifier": "activeArea", "__type": "String", "__value": "biome_clean_corrupted", "__tile": null, "defUid": 4000, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["biome_hub_clean"]
+					"params": ["biome_clean_corrupted"]
 				}] },
 				{ "__identifier": "biome", "__type": "String", "__value": "hub", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
@@ -58906,6 +58906,10 @@
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "hub_clean", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["hub_clean"]
+				}] },
+				{ "__identifier": "palette", "__type": "String", "__value": "clean_corrupted", "__tile": null, "defUid": 4338, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["clean_corrupted"]
 				}] }
 			],
 			"layerInstances": [
@@ -59077,9 +59081,9 @@
 							"defUid": 4130,
 							"px": [992,576],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "biome_hub_clean_pool", "__tile": null, "defUid": 4124, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "biome_clean_corrupted_pool", "__tile": null, "defUid": 4124, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["biome_hub_clean_pool"]
+									"params": ["biome_clean_corrupted_pool"]
 								}] },
 								{ "__identifier": "name", "__type": "String", "__value": "pool", "__tile": null, "defUid": 4125, "realEditorValues": [{
 									"id": "V_String",
@@ -59101,9 +59105,9 @@
 							"height": 46,
 							"defUid": 2000,
 							"px": [128,578],
-							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "biome_hub_clean_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "biome_clean_corrupted_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
 								"id": "V_String",
-								"params": ["biome_hub_clean_spawn"]
+								"params": ["biome_clean_corrupted_spawn"]
 							}] }]
 						},
 						{
@@ -59121,15 +59125,54 @@
 							"defUid": 2007,
 							"px": [112,48],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "biome_hub_clean_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "biome_clean_corrupted_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["biome_hub_clean_sign"]
+									"params": ["biome_clean_corrupted_sign"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "Hub, clean  (parallax_theme: hub_clean)", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "Clean / corrupted  (parallax_theme: hub_clean, palette: clean_corrupted. The switch changes the state)", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["Hub, clean  (parallax_theme: hub_clean)"]
+									"params": [
+										"Clean / corrupted  (parallax_theme: hub_clean, palette: clean_corrupted. The switch changes the state)"
+									]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [15,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 1584,
+							"__worldY": 9776,
+							"iid": "Switch-7059",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [240,592],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "biome_clean_corrupted_state_switch", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["biome_clean_corrupted_state_switch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "State switch", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["State switch"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Shift the room", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Shift the room"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "ToggleFlag", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ToggleFlag"]
+								}] },
+								{ "__identifier": "on_activate", "__type": "String", "__value": "look.cycle biome_clean_corrupted", "__tile": null, "defUid": 6861, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["look.cycle biome_clean_corrupted"]
+								}] }
 							]
 						},
 						{
@@ -59141,15 +59184,15 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 1392,
 							"__worldY": 9712,
-							"iid": "LoadingZone-7175",
+							"iid": "LoadingZone-7176",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
 							"px": [48,528],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "biome_hub_clean_entry", "__tile": null, "defUid": 3002, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "biome_clean_corrupted_entry", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["biome_hub_clean_entry"]
+									"params": ["biome_clean_corrupted_entry"]
 								}] },
 								{ "__identifier": "name", "__type": "String", "__value": "to hall of biomes", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
@@ -59160,9 +59203,9 @@
 									"id": "V_String",
 									"params": ["hall_of_biomes"]
 								}] },
-								{ "__identifier": "target_zone", "__type": "String", "__value": "hall_to_biome_hub_clean", "__tile": null, "defUid": 3006, "realEditorValues": [{
+								{ "__identifier": "target_zone", "__type": "String", "__value": "hall_to_biome_clean_corrupted", "__tile": null, "defUid": 3006, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_to_biome_hub_clean"]
+									"params": ["hall_to_biome_clean_corrupted"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							]
@@ -59172,7 +59215,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-7059",
+					"iid": "Climbable-7060",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -59302,9 +59345,9 @@
 			"__neighbours": []
 		},
 		{
-			"identifier": "biome_hub_corrupt",
-			"iid": "biome_hub_corrupt-7060",
-			"uid": 7060,
+			"identifier": "biome_blueprint",
+			"iid": "biome_blueprint-7061",
+			"uid": 7061,
 			"worldX": 2688,
 			"worldY": 9184,
 			"worldDepth": 0,
@@ -59321,24 +59364,24 @@
 			"__bgPos": null,
 			"externalRelPath": null,
 			"fieldInstances": [
-				{ "__identifier": "activeArea", "__type": "String", "__value": "biome_hub_corrupt", "__tile": null, "defUid": 4000, "realEditorValues": [{
+				{ "__identifier": "activeArea", "__type": "String", "__value": "biome_blueprint", "__tile": null, "defUid": 4000, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["biome_hub_corrupt"]
+					"params": ["biome_blueprint"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "hub", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "basement", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["hub"]
+					"params": ["basement"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "hub_corrupt", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "palette", "__type": "String", "__value": "debug_beautiful", "__tile": null, "defUid": 4338, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["hub_corrupt"]
+					"params": ["debug_beautiful"]
 				}] }
 			],
 			"layerInstances": [
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
-					"iid": "Collision-7061",
+					"iid": "Collision-7062",
 					"layerDefUid": 5024,
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -59453,13 +59496,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7060,
+					"levelId": 7061,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7060,
+					"seed": 7061,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -59467,7 +59510,7 @@
 				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-7062",
+					"iid": "Ambition-7063",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 80,
@@ -59478,13 +59521,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7060,
+					"levelId": 7061,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7060,
+					"seed": 7061,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
@@ -59497,15 +59540,15 @@
 							"__smartColor": "#3DB8E0",
 							"__worldX": 3680,
 							"__worldY": 9760,
-							"iid": "WaterVolume-7063",
+							"iid": "WaterVolume-7064",
 							"width": 208,
 							"height": 48,
 							"defUid": 4130,
 							"px": [992,576],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "biome_hub_corrupt_pool", "__tile": null, "defUid": 4124, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "biome_blueprint_pool", "__tile": null, "defUid": 4124, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["biome_hub_corrupt_pool"]
+									"params": ["biome_blueprint_pool"]
 								}] },
 								{ "__identifier": "name", "__type": "String", "__value": "pool", "__tile": null, "defUid": 4125, "realEditorValues": [{
 									"id": "V_String",
@@ -59522,14 +59565,14 @@
 							"__smartColor": "#41D1FF",
 							"__worldX": 2816,
 							"__worldY": 9762,
-							"iid": "PlayerStart-7064",
+							"iid": "PlayerStart-7065",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
 							"px": [128,578],
-							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "biome_hub_corrupt_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "biome_blueprint_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
 								"id": "V_String",
-								"params": ["biome_hub_corrupt_spawn"]
+								"params": ["biome_blueprint_spawn"]
 							}] }]
 						},
 						{
@@ -59541,19 +59584,19 @@
 							"__smartColor": "#FFFFFF",
 							"__worldX": 2800,
 							"__worldY": 9232,
-							"iid": "DebugLabel-7065",
+							"iid": "DebugLabel-7066",
 							"width": 900,
 							"height": 24,
 							"defUid": 2007,
 							"px": [112,48],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "biome_hub_corrupt_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "biome_blueprint_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["biome_hub_corrupt_sign"]
+									"params": ["biome_blueprint_sign"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "Hub, corrupt  (parallax_theme: hub_corrupt)", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "Blueprint  (palette: debug_beautiful)", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["Hub, corrupt  (parallax_theme: hub_corrupt)"]
+									"params": ["Blueprint  (palette: debug_beautiful)"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -59567,15 +59610,15 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 2736,
 							"__worldY": 9712,
-							"iid": "LoadingZone-7176",
+							"iid": "LoadingZone-7177",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
 							"px": [48,528],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "biome_hub_corrupt_entry", "__tile": null, "defUid": 3002, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "biome_blueprint_entry", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["biome_hub_corrupt_entry"]
+									"params": ["biome_blueprint_entry"]
 								}] },
 								{ "__identifier": "name", "__type": "String", "__value": "to hall of biomes", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
@@ -59586,9 +59629,9 @@
 									"id": "V_String",
 									"params": ["hall_of_biomes"]
 								}] },
-								{ "__identifier": "target_zone", "__type": "String", "__value": "hall_to_biome_hub_corrupt", "__tile": null, "defUid": 3006, "realEditorValues": [{
+								{ "__identifier": "target_zone", "__type": "String", "__value": "hall_to_biome_blueprint", "__tile": null, "defUid": 3006, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_to_biome_hub_corrupt"]
+									"params": ["hall_to_biome_blueprint"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							]
@@ -59598,7 +59641,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-7066",
+					"iid": "Climbable-7067",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -59713,13 +59756,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7060,
+					"levelId": 7061,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7060,
+					"seed": 7061,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -59729,8 +59772,8 @@
 		},
 		{
 			"identifier": "biome_lab",
-			"iid": "biome_lab-7067",
-			"uid": 7067,
+			"iid": "biome_lab-7068",
+			"uid": 7068,
 			"worldX": 4032,
 			"worldY": 9184,
 			"worldDepth": 0,
@@ -59764,7 +59807,7 @@
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
-					"iid": "Collision-7068",
+					"iid": "Collision-7069",
 					"layerDefUid": 5024,
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -59879,13 +59922,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7067,
+					"levelId": 7068,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7067,
+					"seed": 7068,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -59893,7 +59936,7 @@
 				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-7069",
+					"iid": "Ambition-7070",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 80,
@@ -59904,13 +59947,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7067,
+					"levelId": 7068,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7067,
+					"seed": 7068,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
@@ -59923,7 +59966,7 @@
 							"__smartColor": "#3DB8E0",
 							"__worldX": 5024,
 							"__worldY": 9760,
-							"iid": "WaterVolume-7070",
+							"iid": "WaterVolume-7071",
 							"width": 208,
 							"height": 48,
 							"defUid": 4130,
@@ -59948,7 +59991,7 @@
 							"__smartColor": "#41D1FF",
 							"__worldX": 4160,
 							"__worldY": 9762,
-							"iid": "PlayerStart-7071",
+							"iid": "PlayerStart-7072",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
@@ -59967,7 +60010,7 @@
 							"__smartColor": "#FFFFFF",
 							"__worldX": 4144,
 							"__worldY": 9232,
-							"iid": "DebugLabel-7072",
+							"iid": "DebugLabel-7073",
 							"width": 900,
 							"height": 24,
 							"defUid": 2007,
@@ -59993,7 +60036,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 4080,
 							"__worldY": 9712,
-							"iid": "LoadingZone-7177",
+							"iid": "LoadingZone-7178",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -60024,7 +60067,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-7073",
+					"iid": "Climbable-7074",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -60139,13 +60182,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7067,
+					"levelId": 7068,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7067,
+					"seed": 7068,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -60155,8 +60198,8 @@
 		},
 		{
 			"identifier": "biome_alarm",
-			"iid": "biome_alarm-7074",
-			"uid": 7074,
+			"iid": "biome_alarm-7075",
+			"uid": 7075,
 			"worldX": 5376,
 			"worldY": 9184,
 			"worldDepth": 0,
@@ -60190,7 +60233,7 @@
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
-					"iid": "Collision-7075",
+					"iid": "Collision-7076",
 					"layerDefUid": 5024,
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -60305,13 +60348,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7074,
+					"levelId": 7075,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7074,
+					"seed": 7075,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -60319,7 +60362,7 @@
 				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-7076",
+					"iid": "Ambition-7077",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 80,
@@ -60330,13 +60373,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7074,
+					"levelId": 7075,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7074,
+					"seed": 7075,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
@@ -60349,7 +60392,7 @@
 							"__smartColor": "#3DB8E0",
 							"__worldX": 6368,
 							"__worldY": 9760,
-							"iid": "WaterVolume-7077",
+							"iid": "WaterVolume-7078",
 							"width": 208,
 							"height": 48,
 							"defUid": 4130,
@@ -60374,7 +60417,7 @@
 							"__smartColor": "#41D1FF",
 							"__worldX": 5504,
 							"__worldY": 9762,
-							"iid": "PlayerStart-7078",
+							"iid": "PlayerStart-7079",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
@@ -60393,7 +60436,7 @@
 							"__smartColor": "#FFFFFF",
 							"__worldX": 5488,
 							"__worldY": 9232,
-							"iid": "DebugLabel-7079",
+							"iid": "DebugLabel-7080",
 							"width": 900,
 							"height": 24,
 							"defUid": 2007,
@@ -60419,7 +60462,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 5424,
 							"__worldY": 9712,
-							"iid": "LoadingZone-7178",
+							"iid": "LoadingZone-7179",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -60450,7 +60493,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-7080",
+					"iid": "Climbable-7081",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -60565,13 +60608,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7074,
+					"levelId": 7075,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7074,
+					"seed": 7075,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -60581,8 +60624,8 @@
 		},
 		{
 			"identifier": "biome_basement",
-			"iid": "biome_basement-7081",
-			"uid": 7081,
+			"iid": "biome_basement-7082",
+			"uid": 7082,
 			"worldX": 6720,
 			"worldY": 9184,
 			"worldDepth": 0,
@@ -60616,7 +60659,7 @@
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
-					"iid": "Collision-7082",
+					"iid": "Collision-7083",
 					"layerDefUid": 5024,
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -60731,13 +60774,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7081,
+					"levelId": 7082,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7081,
+					"seed": 7082,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -60745,7 +60788,7 @@
 				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-7083",
+					"iid": "Ambition-7084",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 80,
@@ -60756,13 +60799,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7081,
+					"levelId": 7082,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7081,
+					"seed": 7082,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
@@ -60775,7 +60818,7 @@
 							"__smartColor": "#3DB8E0",
 							"__worldX": 7712,
 							"__worldY": 9760,
-							"iid": "WaterVolume-7084",
+							"iid": "WaterVolume-7085",
 							"width": 208,
 							"height": 48,
 							"defUid": 4130,
@@ -60800,7 +60843,7 @@
 							"__smartColor": "#41D1FF",
 							"__worldX": 6848,
 							"__worldY": 9762,
-							"iid": "PlayerStart-7085",
+							"iid": "PlayerStart-7086",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
@@ -60819,7 +60862,7 @@
 							"__smartColor": "#FFFFFF",
 							"__worldX": 6832,
 							"__worldY": 9232,
-							"iid": "DebugLabel-7086",
+							"iid": "DebugLabel-7087",
 							"width": 900,
 							"height": 24,
 							"defUid": 2007,
@@ -60845,7 +60888,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 6768,
 							"__worldY": 9712,
-							"iid": "LoadingZone-7179",
+							"iid": "LoadingZone-7180",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -60876,7 +60919,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-7087",
+					"iid": "Climbable-7088",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -60991,13 +61034,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7081,
+					"levelId": 7082,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7081,
+					"seed": 7082,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -61007,8 +61050,8 @@
 		},
 		{
 			"identifier": "biome_undertown",
-			"iid": "biome_undertown-7088",
-			"uid": 7088,
+			"iid": "biome_undertown-7089",
+			"uid": 7089,
 			"worldX": 8064,
 			"worldY": 9184,
 			"worldDepth": 0,
@@ -61042,7 +61085,7 @@
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
-					"iid": "Collision-7089",
+					"iid": "Collision-7090",
 					"layerDefUid": 5024,
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -61157,13 +61200,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7088,
+					"levelId": 7089,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7088,
+					"seed": 7089,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -61171,7 +61214,7 @@
 				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-7090",
+					"iid": "Ambition-7091",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 80,
@@ -61182,13 +61225,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7088,
+					"levelId": 7089,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7088,
+					"seed": 7089,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
@@ -61201,7 +61244,7 @@
 							"__smartColor": "#3DB8E0",
 							"__worldX": 9056,
 							"__worldY": 9760,
-							"iid": "WaterVolume-7091",
+							"iid": "WaterVolume-7092",
 							"width": 208,
 							"height": 48,
 							"defUid": 4130,
@@ -61226,7 +61269,7 @@
 							"__smartColor": "#41D1FF",
 							"__worldX": 8192,
 							"__worldY": 9762,
-							"iid": "PlayerStart-7092",
+							"iid": "PlayerStart-7093",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
@@ -61245,7 +61288,7 @@
 							"__smartColor": "#FFFFFF",
 							"__worldX": 8176,
 							"__worldY": 9232,
-							"iid": "DebugLabel-7093",
+							"iid": "DebugLabel-7094",
 							"width": 900,
 							"height": 24,
 							"defUid": 2007,
@@ -61271,7 +61314,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 8112,
 							"__worldY": 9712,
-							"iid": "LoadingZone-7180",
+							"iid": "LoadingZone-7181",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -61302,7 +61345,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-7094",
+					"iid": "Climbable-7095",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -61417,13 +61460,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7088,
+					"levelId": 7089,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7088,
+					"seed": 7089,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -61433,8 +61476,8 @@
 		},
 		{
 			"identifier": "biome_boss",
-			"iid": "biome_boss-7095",
-			"uid": 7095,
+			"iid": "biome_boss-7096",
+			"uid": 7096,
 			"worldX": 9408,
 			"worldY": 9184,
 			"worldDepth": 0,
@@ -61468,7 +61511,7 @@
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
-					"iid": "Collision-7096",
+					"iid": "Collision-7097",
 					"layerDefUid": 5024,
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -61583,13 +61626,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7095,
+					"levelId": 7096,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7095,
+					"seed": 7096,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -61597,7 +61640,7 @@
 				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-7097",
+					"iid": "Ambition-7098",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 80,
@@ -61608,13 +61651,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7095,
+					"levelId": 7096,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7095,
+					"seed": 7096,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
@@ -61627,7 +61670,7 @@
 							"__smartColor": "#3DB8E0",
 							"__worldX": 10400,
 							"__worldY": 9760,
-							"iid": "WaterVolume-7098",
+							"iid": "WaterVolume-7099",
 							"width": 208,
 							"height": 48,
 							"defUid": 4130,
@@ -61652,7 +61695,7 @@
 							"__smartColor": "#41D1FF",
 							"__worldX": 9536,
 							"__worldY": 9762,
-							"iid": "PlayerStart-7099",
+							"iid": "PlayerStart-7100",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
@@ -61671,7 +61714,7 @@
 							"__smartColor": "#FFFFFF",
 							"__worldX": 9520,
 							"__worldY": 9232,
-							"iid": "DebugLabel-7100",
+							"iid": "DebugLabel-7101",
 							"width": 900,
 							"height": 24,
 							"defUid": 2007,
@@ -61697,7 +61740,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 9456,
 							"__worldY": 9712,
-							"iid": "LoadingZone-7181",
+							"iid": "LoadingZone-7182",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -61728,7 +61771,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-7101",
+					"iid": "Climbable-7102",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -61843,13 +61886,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7095,
+					"levelId": 7096,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7095,
+					"seed": 7096,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -61859,8 +61902,8 @@
 		},
 		{
 			"identifier": "biome_cave",
-			"iid": "biome_cave-7102",
-			"uid": 7102,
+			"iid": "biome_cave-7103",
+			"uid": 7103,
 			"worldX": 0,
 			"worldY": 9968,
 			"worldDepth": 0,
@@ -61894,7 +61937,7 @@
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
-					"iid": "Collision-7103",
+					"iid": "Collision-7104",
 					"layerDefUid": 5024,
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -62009,13 +62052,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7102,
+					"levelId": 7103,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7102,
+					"seed": 7103,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -62023,7 +62066,7 @@
 				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-7104",
+					"iid": "Ambition-7105",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 80,
@@ -62034,13 +62077,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7102,
+					"levelId": 7103,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7102,
+					"seed": 7103,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
@@ -62053,7 +62096,7 @@
 							"__smartColor": "#3DB8E0",
 							"__worldX": 992,
 							"__worldY": 10544,
-							"iid": "WaterVolume-7105",
+							"iid": "WaterVolume-7106",
 							"width": 208,
 							"height": 48,
 							"defUid": 4130,
@@ -62078,7 +62121,7 @@
 							"__smartColor": "#41D1FF",
 							"__worldX": 128,
 							"__worldY": 10546,
-							"iid": "PlayerStart-7106",
+							"iid": "PlayerStart-7107",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
@@ -62097,7 +62140,7 @@
 							"__smartColor": "#FFFFFF",
 							"__worldX": 112,
 							"__worldY": 10016,
-							"iid": "DebugLabel-7107",
+							"iid": "DebugLabel-7108",
 							"width": 900,
 							"height": 24,
 							"defUid": 2007,
@@ -62123,7 +62166,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 48,
 							"__worldY": 10496,
-							"iid": "LoadingZone-7182",
+							"iid": "LoadingZone-7183",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -62154,7 +62197,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-7108",
+					"iid": "Climbable-7109",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -62269,13 +62312,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7102,
+					"levelId": 7103,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7102,
+					"seed": 7103,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -62285,8 +62328,8 @@
 		},
 		{
 			"identifier": "biome_forest",
-			"iid": "biome_forest-7109",
-			"uid": 7109,
+			"iid": "biome_forest-7110",
+			"uid": 7110,
 			"worldX": 1344,
 			"worldY": 9968,
 			"worldDepth": 0,
@@ -62320,7 +62363,7 @@
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
-					"iid": "Collision-7110",
+					"iid": "Collision-7111",
 					"layerDefUid": 5024,
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -62435,13 +62478,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7109,
+					"levelId": 7110,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7109,
+					"seed": 7110,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -62449,7 +62492,7 @@
 				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-7111",
+					"iid": "Ambition-7112",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 80,
@@ -62460,13 +62503,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7109,
+					"levelId": 7110,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7109,
+					"seed": 7110,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
@@ -62479,7 +62522,7 @@
 							"__smartColor": "#3DB8E0",
 							"__worldX": 2336,
 							"__worldY": 10544,
-							"iid": "WaterVolume-7112",
+							"iid": "WaterVolume-7113",
 							"width": 208,
 							"height": 48,
 							"defUid": 4130,
@@ -62504,7 +62547,7 @@
 							"__smartColor": "#41D1FF",
 							"__worldX": 1472,
 							"__worldY": 10546,
-							"iid": "PlayerStart-7113",
+							"iid": "PlayerStart-7114",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
@@ -62523,7 +62566,7 @@
 							"__smartColor": "#FFFFFF",
 							"__worldX": 1456,
 							"__worldY": 10016,
-							"iid": "DebugLabel-7114",
+							"iid": "DebugLabel-7115",
 							"width": 900,
 							"height": 24,
 							"defUid": 2007,
@@ -62549,7 +62592,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 1392,
 							"__worldY": 10496,
-							"iid": "LoadingZone-7183",
+							"iid": "LoadingZone-7184",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -62580,7 +62623,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-7115",
+					"iid": "Climbable-7116",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -62695,13 +62738,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7109,
+					"levelId": 7110,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7109,
+					"seed": 7110,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -62711,8 +62754,8 @@
 		},
 		{
 			"identifier": "biome_cove",
-			"iid": "biome_cove-7116",
-			"uid": 7116,
+			"iid": "biome_cove-7117",
+			"uid": 7117,
 			"worldX": 2688,
 			"worldY": 9968,
 			"worldDepth": 0,
@@ -62746,7 +62789,7 @@
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
-					"iid": "Collision-7117",
+					"iid": "Collision-7118",
 					"layerDefUid": 5024,
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -62861,13 +62904,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7116,
+					"levelId": 7117,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7116,
+					"seed": 7117,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -62875,7 +62918,7 @@
 				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-7118",
+					"iid": "Ambition-7119",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 80,
@@ -62886,13 +62929,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7116,
+					"levelId": 7117,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7116,
+					"seed": 7117,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
@@ -62905,7 +62948,7 @@
 							"__smartColor": "#3DB8E0",
 							"__worldX": 3680,
 							"__worldY": 10544,
-							"iid": "WaterVolume-7119",
+							"iid": "WaterVolume-7120",
 							"width": 208,
 							"height": 48,
 							"defUid": 4130,
@@ -62930,7 +62973,7 @@
 							"__smartColor": "#41D1FF",
 							"__worldX": 2816,
 							"__worldY": 10546,
-							"iid": "PlayerStart-7120",
+							"iid": "PlayerStart-7121",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
@@ -62949,7 +62992,7 @@
 							"__smartColor": "#FFFFFF",
 							"__worldX": 2800,
 							"__worldY": 10016,
-							"iid": "DebugLabel-7121",
+							"iid": "DebugLabel-7122",
 							"width": 900,
 							"height": 24,
 							"defUid": 2007,
@@ -62975,7 +63018,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 2736,
 							"__worldY": 10496,
-							"iid": "LoadingZone-7184",
+							"iid": "LoadingZone-7185",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -63006,7 +63049,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-7122",
+					"iid": "Climbable-7123",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -63121,13 +63164,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7116,
+					"levelId": 7117,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7116,
+					"seed": 7117,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -63137,8 +63180,8 @@
 		},
 		{
 			"identifier": "biome_water",
-			"iid": "biome_water-7123",
-			"uid": 7123,
+			"iid": "biome_water-7124",
+			"uid": 7124,
 			"worldX": 4032,
 			"worldY": 9968,
 			"worldDepth": 0,
@@ -63172,7 +63215,7 @@
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
-					"iid": "Collision-7124",
+					"iid": "Collision-7125",
 					"layerDefUid": 5024,
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -63287,13 +63330,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7123,
+					"levelId": 7124,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7123,
+					"seed": 7124,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -63301,7 +63344,7 @@
 				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-7125",
+					"iid": "Ambition-7126",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 80,
@@ -63312,13 +63355,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7123,
+					"levelId": 7124,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7123,
+					"seed": 7124,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
@@ -63331,7 +63374,7 @@
 							"__smartColor": "#3DB8E0",
 							"__worldX": 5024,
 							"__worldY": 10544,
-							"iid": "WaterVolume-7126",
+							"iid": "WaterVolume-7127",
 							"width": 208,
 							"height": 48,
 							"defUid": 4130,
@@ -63356,7 +63399,7 @@
 							"__smartColor": "#41D1FF",
 							"__worldX": 4160,
 							"__worldY": 10546,
-							"iid": "PlayerStart-7127",
+							"iid": "PlayerStart-7128",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
@@ -63375,7 +63418,7 @@
 							"__smartColor": "#FFFFFF",
 							"__worldX": 4144,
 							"__worldY": 10016,
-							"iid": "DebugLabel-7128",
+							"iid": "DebugLabel-7129",
 							"width": 900,
 							"height": 24,
 							"defUid": 2007,
@@ -63401,7 +63444,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 4080,
 							"__worldY": 10496,
-							"iid": "LoadingZone-7185",
+							"iid": "LoadingZone-7186",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -63432,7 +63475,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-7129",
+					"iid": "Climbable-7130",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -63547,13 +63590,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7123,
+					"levelId": 7124,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7123,
+					"seed": 7124,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -63563,8 +63606,8 @@
 		},
 		{
 			"identifier": "biome_skybridge",
-			"iid": "biome_skybridge-7130",
-			"uid": 7130,
+			"iid": "biome_skybridge-7131",
+			"uid": 7131,
 			"worldX": 5376,
 			"worldY": 9968,
 			"worldDepth": 0,
@@ -63598,7 +63641,7 @@
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
-					"iid": "Collision-7131",
+					"iid": "Collision-7132",
 					"layerDefUid": 5024,
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -63713,13 +63756,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7130,
+					"levelId": 7131,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7130,
+					"seed": 7131,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -63727,7 +63770,7 @@
 				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-7132",
+					"iid": "Ambition-7133",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 80,
@@ -63738,13 +63781,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7130,
+					"levelId": 7131,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7130,
+					"seed": 7131,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
@@ -63757,7 +63800,7 @@
 							"__smartColor": "#3DB8E0",
 							"__worldX": 6368,
 							"__worldY": 10544,
-							"iid": "WaterVolume-7133",
+							"iid": "WaterVolume-7134",
 							"width": 208,
 							"height": 48,
 							"defUid": 4130,
@@ -63782,7 +63825,7 @@
 							"__smartColor": "#41D1FF",
 							"__worldX": 5504,
 							"__worldY": 10546,
-							"iid": "PlayerStart-7134",
+							"iid": "PlayerStart-7135",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
@@ -63801,7 +63844,7 @@
 							"__smartColor": "#FFFFFF",
 							"__worldX": 5488,
 							"__worldY": 10016,
-							"iid": "DebugLabel-7135",
+							"iid": "DebugLabel-7136",
 							"width": 900,
 							"height": 24,
 							"defUid": 2007,
@@ -63827,7 +63870,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 5424,
 							"__worldY": 10496,
-							"iid": "LoadingZone-7186",
+							"iid": "LoadingZone-7187",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -63858,7 +63901,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-7136",
+					"iid": "Climbable-7137",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -63973,13 +64016,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7130,
+					"levelId": 7131,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7130,
+					"seed": 7131,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -63989,8 +64032,8 @@
 		},
 		{
 			"identifier": "biome_open_sky",
-			"iid": "biome_open_sky-7137",
-			"uid": 7137,
+			"iid": "biome_open_sky-7138",
+			"uid": 7138,
 			"worldX": 6720,
 			"worldY": 9968,
 			"worldDepth": 0,
@@ -64024,7 +64067,7 @@
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
-					"iid": "Collision-7138",
+					"iid": "Collision-7139",
 					"layerDefUid": 5024,
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -64139,13 +64182,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7137,
+					"levelId": 7138,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7137,
+					"seed": 7138,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -64153,7 +64196,7 @@
 				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-7139",
+					"iid": "Ambition-7140",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 80,
@@ -64164,13 +64207,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7137,
+					"levelId": 7138,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7137,
+					"seed": 7138,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
@@ -64183,7 +64226,7 @@
 							"__smartColor": "#3DB8E0",
 							"__worldX": 7712,
 							"__worldY": 10544,
-							"iid": "WaterVolume-7140",
+							"iid": "WaterVolume-7141",
 							"width": 208,
 							"height": 48,
 							"defUid": 4130,
@@ -64208,7 +64251,7 @@
 							"__smartColor": "#41D1FF",
 							"__worldX": 6848,
 							"__worldY": 10546,
-							"iid": "PlayerStart-7141",
+							"iid": "PlayerStart-7142",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
@@ -64227,7 +64270,7 @@
 							"__smartColor": "#FFFFFF",
 							"__worldX": 6832,
 							"__worldY": 10016,
-							"iid": "DebugLabel-7142",
+							"iid": "DebugLabel-7143",
 							"width": 900,
 							"height": 24,
 							"defUid": 2007,
@@ -64253,7 +64296,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 6768,
 							"__worldY": 10496,
-							"iid": "LoadingZone-7187",
+							"iid": "LoadingZone-7188",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -64284,7 +64327,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-7143",
+					"iid": "Climbable-7144",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -64399,13 +64442,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7137,
+					"levelId": 7138,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7137,
+					"seed": 7138,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -64415,8 +64458,8 @@
 		},
 		{
 			"identifier": "biome_eclipse",
-			"iid": "biome_eclipse-7144",
-			"uid": 7144,
+			"iid": "biome_eclipse-7145",
+			"uid": 7145,
 			"worldX": 8064,
 			"worldY": 9968,
 			"worldDepth": 0,
@@ -64450,7 +64493,7 @@
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
-					"iid": "Collision-7145",
+					"iid": "Collision-7146",
 					"layerDefUid": 5024,
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -64565,13 +64608,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7144,
+					"levelId": 7145,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7144,
+					"seed": 7145,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -64579,7 +64622,7 @@
 				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-7146",
+					"iid": "Ambition-7147",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 80,
@@ -64590,13 +64633,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7144,
+					"levelId": 7145,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7144,
+					"seed": 7145,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
@@ -64609,7 +64652,7 @@
 							"__smartColor": "#3DB8E0",
 							"__worldX": 9056,
 							"__worldY": 10544,
-							"iid": "WaterVolume-7147",
+							"iid": "WaterVolume-7148",
 							"width": 208,
 							"height": 48,
 							"defUid": 4130,
@@ -64634,7 +64677,7 @@
 							"__smartColor": "#41D1FF",
 							"__worldX": 8192,
 							"__worldY": 10546,
-							"iid": "PlayerStart-7148",
+							"iid": "PlayerStart-7149",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
@@ -64653,7 +64696,7 @@
 							"__smartColor": "#FFFFFF",
 							"__worldX": 8176,
 							"__worldY": 10016,
-							"iid": "DebugLabel-7149",
+							"iid": "DebugLabel-7150",
 							"width": 900,
 							"height": 24,
 							"defUid": 2007,
@@ -64679,7 +64722,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 8112,
 							"__worldY": 10496,
-							"iid": "LoadingZone-7188",
+							"iid": "LoadingZone-7189",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -64710,7 +64753,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-7150",
+					"iid": "Climbable-7151",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -64825,13 +64868,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7144,
+					"levelId": 7145,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7144,
+					"seed": 7145,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -64841,8 +64884,8 @@
 		},
 		{
 			"identifier": "hall_of_biomes",
-			"iid": "hall_of_biomes-7151",
-			"uid": 7151,
+			"iid": "hall_of_biomes-7152",
+			"uid": 7152,
 			"worldX": 0,
 			"worldY": 8704,
 			"worldDepth": 0,
@@ -64872,7 +64915,7 @@
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
-					"iid": "Collision-7152",
+					"iid": "Collision-7153",
 					"layerDefUid": 5024,
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -64986,13 +65029,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7151,
+					"levelId": 7152,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7151,
+					"seed": 7152,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -65000,7 +65043,7 @@
 				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-7153",
+					"iid": "Ambition-7154",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 136,
@@ -65011,13 +65054,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7151,
+					"levelId": 7152,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7151,
+					"seed": 7152,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
@@ -65030,7 +65073,7 @@
 							"__smartColor": "#41D1FF",
 							"__worldX": 112,
 							"__worldY": 9042,
-							"iid": "PlayerStart-7154",
+							"iid": "PlayerStart-7155",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
@@ -65049,7 +65092,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 32,
 							"__worldY": 8992,
-							"iid": "LoadingZone-7155",
+							"iid": "LoadingZone-7156",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -65084,7 +65127,7 @@
 							"__smartColor": "#FFFFFF",
 							"__worldX": 192,
 							"__worldY": 8768,
-							"iid": "DebugLabel-7156",
+							"iid": "DebugLabel-7157",
 							"width": 900,
 							"height": 24,
 							"defUid": 2007,
@@ -65112,7 +65155,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 192,
 							"__worldY": 8992,
-							"iid": "LoadingZone-7157",
+							"iid": "LoadingZone-7158",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -65147,28 +65190,28 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 320,
 							"__worldY": 8992,
-							"iid": "LoadingZone-7158",
+							"iid": "LoadingZone-7159",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
 							"px": [320,288],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "hall_to_biome_hub_clean", "__tile": null, "defUid": 3002, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "hall_to_biome_clean_corrupted", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_to_biome_hub_clean"]
+									"params": ["hall_to_biome_clean_corrupted"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "Hub, clean", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "Clean / corrupted", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["Hub, clean"]
+									"params": ["Clean / corrupted"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
-								{ "__identifier": "target_room", "__type": "String", "__value": "biome_hub_clean", "__tile": null, "defUid": 3005, "realEditorValues": [{
+								{ "__identifier": "target_room", "__type": "String", "__value": "biome_clean_corrupted", "__tile": null, "defUid": 3005, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["biome_hub_clean"]
+									"params": ["biome_clean_corrupted"]
 								}] },
-								{ "__identifier": "target_zone", "__type": "String", "__value": "biome_hub_clean_entry", "__tile": null, "defUid": 3006, "realEditorValues": [{
+								{ "__identifier": "target_zone", "__type": "String", "__value": "biome_clean_corrupted_entry", "__tile": null, "defUid": 3006, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["biome_hub_clean_entry"]
+									"params": ["biome_clean_corrupted_entry"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							]
@@ -65182,28 +65225,28 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 448,
 							"__worldY": 8992,
-							"iid": "LoadingZone-7159",
+							"iid": "LoadingZone-7160",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
 							"px": [448,288],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "hall_to_biome_hub_corrupt", "__tile": null, "defUid": 3002, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "hall_to_biome_blueprint", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_to_biome_hub_corrupt"]
+									"params": ["hall_to_biome_blueprint"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "Hub, corrupt", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "Blueprint", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["Hub, corrupt"]
+									"params": ["Blueprint"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
-								{ "__identifier": "target_room", "__type": "String", "__value": "biome_hub_corrupt", "__tile": null, "defUid": 3005, "realEditorValues": [{
+								{ "__identifier": "target_room", "__type": "String", "__value": "biome_blueprint", "__tile": null, "defUid": 3005, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["biome_hub_corrupt"]
+									"params": ["biome_blueprint"]
 								}] },
-								{ "__identifier": "target_zone", "__type": "String", "__value": "biome_hub_corrupt_entry", "__tile": null, "defUid": 3006, "realEditorValues": [{
+								{ "__identifier": "target_zone", "__type": "String", "__value": "biome_blueprint_entry", "__tile": null, "defUid": 3006, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["biome_hub_corrupt_entry"]
+									"params": ["biome_blueprint_entry"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							]
@@ -65217,7 +65260,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 576,
 							"__worldY": 8992,
-							"iid": "LoadingZone-7160",
+							"iid": "LoadingZone-7161",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -65252,7 +65295,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 704,
 							"__worldY": 8992,
-							"iid": "LoadingZone-7161",
+							"iid": "LoadingZone-7162",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -65287,7 +65330,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 832,
 							"__worldY": 8992,
-							"iid": "LoadingZone-7162",
+							"iid": "LoadingZone-7163",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -65322,7 +65365,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 960,
 							"__worldY": 8992,
-							"iid": "LoadingZone-7163",
+							"iid": "LoadingZone-7164",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -65357,7 +65400,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 1088,
 							"__worldY": 8992,
-							"iid": "LoadingZone-7164",
+							"iid": "LoadingZone-7165",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -65392,7 +65435,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 1216,
 							"__worldY": 8992,
-							"iid": "LoadingZone-7165",
+							"iid": "LoadingZone-7166",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -65427,7 +65470,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 1344,
 							"__worldY": 8992,
-							"iid": "LoadingZone-7166",
+							"iid": "LoadingZone-7167",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -65462,7 +65505,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 1472,
 							"__worldY": 8992,
-							"iid": "LoadingZone-7167",
+							"iid": "LoadingZone-7168",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -65497,7 +65540,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 1600,
 							"__worldY": 8992,
-							"iid": "LoadingZone-7168",
+							"iid": "LoadingZone-7169",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -65532,7 +65575,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 1728,
 							"__worldY": 8992,
-							"iid": "LoadingZone-7169",
+							"iid": "LoadingZone-7170",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -65567,7 +65610,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 1856,
 							"__worldY": 8992,
-							"iid": "LoadingZone-7170",
+							"iid": "LoadingZone-7171",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -65602,7 +65645,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 1984,
 							"__worldY": 8992,
-							"iid": "LoadingZone-7171",
+							"iid": "LoadingZone-7172",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -65633,7 +65676,7 @@
 				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Climbable-7172",
+					"iid": "Climbable-7173",
 					"layerDefUid": 4201,
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -65747,13 +65790,13 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
-					"levelId": 7151,
+					"levelId": 7152,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"autoLayerTiles": [],
-					"seed": 7151,
+					"seed": 7152,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
