@@ -10894,10 +10894,7 @@
 									"id": "V_String",
 									"params": ["vault_floor"]
 								}] },
-								{ "__identifier": "color", "__type": "String", "__value": "#3D334D", "__tile": null, "defUid": 107265, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["#3D334D"]
-								}] }
+								{ "__identifier": "color", "__type": "String", "__value": null, "__tile": null, "defUid": 107265, "realEditorValues": [] }
 							]
 						},
 						{
@@ -10919,10 +10916,7 @@
 									"id": "V_String",
 									"params": ["vault_wall_0"]
 								}] },
-								{ "__identifier": "color", "__type": "String", "__value": "#3D334D", "__tile": null, "defUid": 107265, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["#3D334D"]
-								}] }
+								{ "__identifier": "color", "__type": "String", "__value": null, "__tile": null, "defUid": 107265, "realEditorValues": [] }
 							]
 						},
 						{
@@ -10944,10 +10938,7 @@
 									"id": "V_String",
 									"params": ["vault_wall_1"]
 								}] },
-								{ "__identifier": "color", "__type": "String", "__value": "#3D334D", "__tile": null, "defUid": 107265, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["#3D334D"]
-								}] }
+								{ "__identifier": "color", "__type": "String", "__value": null, "__tile": null, "defUid": 107265, "realEditorValues": [] }
 							]
 						}
 					]
@@ -11325,9 +11316,9 @@
 					"id": "V_String",
 					"params": ["WORLD 1-2"]
 				}] },
-				{ "__identifier": "block_color", "__type": "String", "__value": "#332B47", "__tile": null, "defUid": 107264, "realEditorValues": [{
+				{ "__identifier": "block_color", "__type": "String", "__value": "", "__tile": null, "defUid": 107264, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["#332B47"]
+					"params": [""]
 				}] },
 				{ "__identifier": "mode", "__type": "String", "__value": "mary_o", "__tile": null, "defUid": 6849, "realEditorValues": [{
 					"id": "V_String",
@@ -15268,10 +15259,7 @@
 									"id": "V_String",
 									"params": ["vault_wall_0"]
 								}] },
-								{ "__identifier": "color", "__type": "String", "__value": "#3D334D", "__tile": null, "defUid": 107265, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["#3D334D"]
-								}] }
+								{ "__identifier": "color", "__type": "String", "__value": null, "__tile": null, "defUid": 107265, "realEditorValues": [] }
 							]
 						},
 						{
@@ -15293,10 +15281,7 @@
 									"id": "V_String",
 									"params": ["vault_wall_1"]
 								}] },
-								{ "__identifier": "color", "__type": "String", "__value": "#3D334D", "__tile": null, "defUid": 107265, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["#3D334D"]
-								}] }
+								{ "__identifier": "color", "__type": "String", "__value": null, "__tile": null, "defUid": 107265, "realEditorValues": [] }
 							]
 						},
 						{
@@ -15318,10 +15303,7 @@
 									"id": "V_String",
 									"params": ["vault_floor"]
 								}] },
-								{ "__identifier": "color", "__type": "String", "__value": "#3D334D", "__tile": null, "defUid": 107265, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["#3D334D"]
-								}] }
+								{ "__identifier": "color", "__type": "String", "__value": null, "__tile": null, "defUid": 107265, "realEditorValues": [] }
 							]
 						},
 						{
