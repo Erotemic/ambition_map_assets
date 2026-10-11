@@ -8481,6 +8481,10 @@
 				{ "__identifier": "mode", "__type": "String", "__value": "mary_o", "__tile": null, "defUid": 6849, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["mary_o"]
+				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "starlight", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["starlight"]
 				}] }
 			],
 			"layerInstances": [
@@ -11329,6 +11333,10 @@
 					"id": "V_String",
 					"params": ["mary_o"]
 				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "starless", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["starless"]
+				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "embedded_theme", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["embedded_theme"]
@@ -13541,6 +13549,10 @@
 				{ "__identifier": "mode", "__type": "String", "__value": "mary_o", "__tile": null, "defUid": 6849, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["mary_o"]
+				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "starlight", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["starlight"]
 				}] }
 			],
 			"layerInstances": [

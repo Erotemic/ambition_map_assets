@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 7262,
+	"nextUid": 7333,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -9215,9 +9215,9 @@
 									"id": "V_String",
 									"params": ["primeval_hub_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "primeval_hub_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to the primeval trail", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["primeval_hub_door"]
+									"params": ["to the primeval trail"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "primeval_trailhead", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -66368,6 +66368,105 @@
 							]
 						},
 						{
+							"__identifier": "EnemySpawn",
+							"__grid": [86,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 21390,
+							"__worldY": 454,
+							"iid": "EnemySpawn-7275",
+							"width": 24,
+							"height": 26,
+							"defUid": 2008,
+							"px": [1390,454],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_trailhead_compsognathus_1", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_trailhead_compsognathus_1"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "compsognathus", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["compsognathus"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [90,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 21440,
+							"__worldY": 454,
+							"iid": "EnemySpawn-7276",
+							"width": 24,
+							"height": 26,
+							"defUid": 2008,
+							"px": [1440,454],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_trailhead_compsognathus_2", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_trailhead_compsognathus_2"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "compsognathus", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["compsognathus"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [93,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 21490,
+							"__worldY": 454,
+							"iid": "EnemySpawn-7277",
+							"width": 24,
+							"height": 26,
+							"defUid": 2008,
+							"px": [1490,454],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_trailhead_compsognathus_3", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_trailhead_compsognathus_3"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "compsognathus", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["compsognathus"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
 							"__grid": [4,2],
 							"__pivot": [0,0],
@@ -66402,7 +66501,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 21536,
 							"__worldY": 384,
-							"iid": "LoadingZone-7228",
+							"iid": "LoadingZone-7330",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -66412,9 +66511,9 @@
 									"id": "V_String",
 									"params": ["primeval_trailhead_east"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "primeval_trailhead_east", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to the run", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["primeval_trailhead_east"]
+									"params": ["to the run"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "primeval_run", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -67149,6 +67248,39 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
+							"__grid": [86,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 23380,
+							"__worldY": 408,
+							"iid": "EnemySpawn-7296",
+							"width": 44,
+							"height": 72,
+							"defUid": 2008,
+							"px": [1380,408],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_run_pachycephalosaurus_1", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_run_pachycephalosaurus_1"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "pachycephalosaurus", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pachycephalosaurus"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
 							"__grid": [102,23],
 							"__pivot": [0,0],
 							"__tags": [],
@@ -67214,6 +67346,39 @@
 							]
 						},
 						{
+							"__identifier": "EnemySpawn",
+							"__grid": [131,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 24110,
+							"__worldY": 294,
+							"iid": "EnemySpawn-7299",
+							"width": 44,
+							"height": 74,
+							"defUid": 2008,
+							"px": [2110,294],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_run_dilophosaurus_1", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_run_dilophosaurus_1"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "dilophosaurus", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["dilophosaurus"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
 							"__grid": [4,2],
 							"__pivot": [0,0],
@@ -67248,7 +67413,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 24336,
 							"__worldY": 384,
-							"iid": "LoadingZone-7250",
+							"iid": "LoadingZone-7331",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -67258,9 +67423,9 @@
 									"id": "V_String",
 									"params": ["primeval_run_east"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "primeval_run_east", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to the canopy", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["primeval_run_east"]
+									"params": ["to the canopy"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "primeval_canopy", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -68069,6 +68234,39 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
+							"__grid": [83,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 26330,
+							"__worldY": 342,
+							"iid": "EnemySpawn-7319",
+							"width": 44,
+							"height": 74,
+							"defUid": 2008,
+							"px": [1330,342],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_canopy_dilophosaurus_1", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_canopy_dilophosaurus_1"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "dilophosaurus", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["dilophosaurus"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
 							"__grid": [75,37],
 							"__pivot": [0,0],
 							"__tags": [],
@@ -68167,6 +68365,39 @@
 							]
 						},
 						{
+							"__identifier": "EnemySpawn",
+							"__grid": [111,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 26790,
+							"__worldY": 580,
+							"iid": "EnemySpawn-7323",
+							"width": 96,
+							"height": 92,
+							"defUid": 2008,
+							"px": [1790,580],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_canopy_triceratops_1", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_canopy_triceratops_1"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "triceratops", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["triceratops"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
 							"__grid": [4,2],
 							"__pivot": [0,0],
@@ -68201,7 +68432,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 26936,
 							"__worldY": 576,
-							"iid": "LoadingZone-7261",
+							"iid": "LoadingZone-7332",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
@@ -68211,9 +68442,9 @@
 									"id": "V_String",
 									"params": ["primeval_canopy_east"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "primeval_canopy_east", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to the tyrant's hall", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["primeval_canopy_east"]
+									"params": ["to the tyrant's hall"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "primeval_tyrant_hall", "__tile": null, "defUid": 3005, "realEditorValues": [{
