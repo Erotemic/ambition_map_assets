@@ -11328,6 +11328,10 @@
 				{ "__identifier": "mode", "__type": "String", "__value": "mary_o", "__tile": null, "defUid": 6849, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["mary_o"]
+				}] },
+				{ "__identifier": "music_track", "__type": "String", "__value": "embedded_theme", "__tile": null, "defUid": 4173, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["embedded_theme"]
 				}] }
 			],
 			"layerInstances": [
