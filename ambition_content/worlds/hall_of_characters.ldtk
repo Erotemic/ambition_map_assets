@@ -11,7 +11,7 @@
 	"iid": "ambition-hall-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 110222,
+	"nextUid": 110381,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -12426,17 +12426,17 @@
 							"defUid": 2006,
 							"px": [432,160],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "sanic", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "penguin", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["sanic"]
+									"params": ["penguin"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Inspect"]
 								}] },
-								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hall_sanic", "__tile": null, "defUid": 3014, "realEditorValues": [{
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hall_penguin", "__tile": null, "defUid": 3014, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_sanic"]
+									"params": ["hall_penguin"]
 								}] },
 								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
@@ -12460,17 +12460,17 @@
 							"defUid": 2006,
 							"px": [560,160],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "super_sanic", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "sanic", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["super_sanic"]
+									"params": ["sanic"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Inspect"]
 								}] },
-								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hall_super_sanic", "__tile": null, "defUid": 3014, "realEditorValues": [{
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hall_sanic", "__tile": null, "defUid": 3014, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_super_sanic"]
+									"params": ["hall_sanic"]
 								}] },
 								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
@@ -12494,17 +12494,17 @@
 							"defUid": 2006,
 							"px": [688,160],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "mary_o", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "super_sanic", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["mary_o"]
+									"params": ["super_sanic"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Inspect"]
 								}] },
-								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hall_mary_o", "__tile": null, "defUid": 3014, "realEditorValues": [{
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hall_super_sanic", "__tile": null, "defUid": 3014, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_mary_o"]
+									"params": ["hall_super_sanic"]
 								}] },
 								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
@@ -12527,6 +12527,40 @@
 							"height": 48,
 							"defUid": 2006,
 							"px": [816,160],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "mary_o", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["mary_o"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Inspect"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hall_mary_o", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_mary_o"]
+								}] },
+								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stand_still"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [59,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 40944,
+							"__worldY": 160,
+							"iid": "NpcSpawn-110361",
+							"width": 32,
+							"height": 48,
+							"defUid": 2006,
+							"px": [944,160],
 							"fieldInstances": [
 								{ "__identifier": "character_id", "__type": "String", "__value": "mary_o_tall", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
