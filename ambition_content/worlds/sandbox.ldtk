@@ -54332,12 +54332,12 @@
 							"__tile": null,
 							"__smartColor": "#C77DFF",
 							"__worldX": 6245,
-							"__worldY": 7344,
+							"__worldY": 7348,
 							"iid": "BossSpawn-6883",
 							"width": 54,
 							"height": 96,
 							"defUid": 2013,
-							"px": [1125,688],
+							"px": [1125,692],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "GNU-ton", "__tile": null, "defUid": 3033, "realEditorValues": [{
 									"id": "V_String",
