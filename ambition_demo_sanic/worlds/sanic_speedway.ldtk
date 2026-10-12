@@ -9993,6 +9993,10 @@
 				{ "__identifier": "next_room", "__type": "String", "__value": "sanic_highway", "__tile": null, "defUid": 107454, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["sanic_highway"]
+				}] },
+				{ "__identifier": "foreground_treatment", "__type": "String", "__value": "none", "__tile": null, "defUid": 4340, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["none"]
 				}] }
 			],
 			"layerInstances": [

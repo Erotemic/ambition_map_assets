@@ -9997,6 +9997,10 @@
 				{ "__identifier": "next_room", "__type": "String", "__value": "sanic_darkness", "__tile": null, "defUid": 107555, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["sanic_darkness"]
+				}] },
+				{ "__identifier": "foreground_treatment", "__type": "String", "__value": "none", "__tile": null, "defUid": 4340, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["none"]
 				}] }
 			],
 			"layerInstances": [
