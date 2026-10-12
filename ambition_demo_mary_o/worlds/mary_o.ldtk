@@ -11,7 +11,7 @@
 	"iid": "ambition-mary-o-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 108540,
+	"nextUid": 108636,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -42795,60 +42795,41 @@
 							]
 						},
 						{
-							"__identifier": "OneWayPlatform",
-							"__grid": [328,8],
+							"__identifier": "NpcSpawn",
+							"__grid": [326,21],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#A4D65E",
-							"__worldX": 5248,
-							"__worldY": 3520,
-							"iid": "OneWayPlatform-108537",
-							"width": 16,
-							"height": 256,
-							"defUid": 2003,
-							"px": [5248,128],
-							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "goal_pole", "__tile": null, "defUid": 3008, "realEditorValues": [{
+							"__smartColor": "#FF9EEA",
+							"__worldX": 5216,
+							"__worldY": 3732,
+							"iid": "NpcSpawn-108633",
+							"width": 28,
+							"height": 44,
+							"defUid": 2006,
+							"px": [5216,340],
+							"fieldInstances": [{ "__identifier": "character_id", "__type": "String", "__value": "mary_o_robot", "__tile": null, "defUid": 3012, "realEditorValues": [{
 								"id": "V_String",
-								"params": ["goal_pole"]
+								"params": ["mary_o_robot"]
 							}] }]
 						},
 						{
 							"__identifier": "OneWayPlatform",
-							"__grid": [328,7],
+							"__grid": [316,22],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#A4D65E",
-							"__worldX": 5248,
-							"__worldY": 3504,
-							"iid": "OneWayPlatform-108538",
-							"width": 16,
-							"height": 16,
-							"defUid": 2003,
-							"px": [5248,112],
-							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "goal_pole_knob", "__tile": null, "defUid": 3008, "realEditorValues": [{
-								"id": "V_String",
-								"params": ["goal_pole_knob"]
-							}] }]
-						},
-						{
-							"__identifier": "OneWayPlatform",
-							"__grid": [328,9],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#A4D65E",
-							"__worldX": 5248,
-							"__worldY": 3536,
-							"iid": "OneWayPlatform-108539",
-							"width": 16,
+							"__worldX": 5056,
+							"__worldY": 3744,
+							"iid": "OneWayPlatform-108635",
+							"width": 32,
 							"height": 32,
 							"defUid": 2003,
-							"px": [5248,144],
-							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "goal_pole_banner", "__tile": null, "defUid": 3008, "realEditorValues": [{
+							"px": [5056,352],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "goal_switch", "__tile": null, "defUid": 3008, "realEditorValues": [{
 								"id": "V_String",
-								"params": ["goal_pole_banner"]
+								"params": ["goal_switch"]
 							}] }]
 						}
 					]
