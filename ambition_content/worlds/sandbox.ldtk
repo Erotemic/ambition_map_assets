@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 7591,
+	"nextUid": 7626,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -71584,9 +71584,9 @@
 					"id": "V_String",
 					"params": ["noodly_narthex"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "boss", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "noodly", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["boss"]
+					"params": ["noodly"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "flying_spaghetti_monster_roots_stage_choir_backing", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
@@ -71858,14 +71858,14 @@
 							"defUid": 2006,
 							"px": [400,410],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_quartermaster", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_ramen_nujan", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_pirate_quartermaster"]
+									"params": ["npc_ramen_nujan"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
-								{ "__identifier": "dialogue_id", "__type": "String", "__value": "noodly_sexton", "__tile": null, "defUid": 3014, "realEditorValues": [{
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "noodly_ramen_nujan", "__tile": null, "defUid": 3014, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["noodly_sexton"]
+									"params": ["noodly_ramen_nujan"]
 								}] },
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
@@ -72122,9 +72122,9 @@
 					"id": "V_String",
 					"params": ["noodly_nave"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "boss", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "noodly", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["boss"]
+					"params": ["noodly"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "flying_spaghetti_monster_roots_stage_choir_backing", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
@@ -73233,9 +73233,9 @@
 					"id": "V_String",
 					"params": ["noodly_scullery"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "boss", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "noodly", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["boss"]
+					"params": ["noodly"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "flying_spaghetti_monster_roots_stage_choir_backing", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
@@ -73979,9 +73979,9 @@
 					"id": "V_String",
 					"params": ["noodly_cistern"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "boss", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "noodly", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["boss"]
+					"params": ["noodly"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "flying_spaghetti_monster_roots_stage_choir_backing", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
@@ -74879,6 +74879,90 @@
 							]
 						},
 						{
+							"__identifier": "GroundItem",
+							"__grid": [10,47],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7FE3C0",
+							"__worldX": 76170,
+							"__worldY": 756,
+							"iid": "GroundItem-7616",
+							"width": 72,
+							"height": 12,
+							"defUid": 5943,
+							"px": [170,756],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_pool_noodle_1", "__tile": null, "defUid": 5940, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodly_cistern_pool_noodle_1"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "pool noodle", "__tile": null, "defUid": 5941, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pool noodle"]
+								}] },
+								{ "__identifier": "held_item", "__type": "String", "__value": "pool_noodle", "__tile": null, "defUid": 5942, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pool_noodle"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "GroundItem",
+							"__grid": [81,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7FE3C0",
+							"__worldX": 77298,
+							"__worldY": 292,
+							"iid": "GroundItem-7617",
+							"width": 72,
+							"height": 12,
+							"defUid": 5943,
+							"px": [1298,292],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_pool_noodle_2", "__tile": null, "defUid": 5940, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodly_cistern_pool_noodle_2"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "pool noodle", "__tile": null, "defUid": 5941, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pool noodle"]
+								}] },
+								{ "__identifier": "held_item", "__type": "String", "__value": "pool_noodle", "__tile": null, "defUid": 5942, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pool_noodle"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [4,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 76076,
+							"__worldY": 658,
+							"iid": "DebugLabel-7618",
+							"width": 260,
+							"height": 24,
+							"defUid": 2007,
+							"px": [76,658],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "noodly_cistern_sign_noodle", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodly_cistern_sign_noodle"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "A pool noodle. Attack takes it.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["A pool noodle. Attack takes it."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
 							"__identifier": "EnemySpawn",
 							"__grid": [45,9],
 							"__pivot": [0,0],
@@ -75201,9 +75285,9 @@
 					"id": "V_String",
 					"params": ["noodly_belfry"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "boss", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "noodly", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["boss"]
+					"params": ["noodly"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "flying_spaghetti_monster_roots_stage_choir_backing", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
@@ -76482,9 +76566,9 @@
 					"id": "V_String",
 					"params": ["noodly_reliquary"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "boss", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "noodly", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["boss"]
+					"params": ["noodly"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "flying_spaghetti_monster_roots_stage_choir_backing", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
@@ -77097,9 +77181,9 @@
 					"id": "V_String",
 					"params": ["noodly_sanctum"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "boss", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "noodly", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["boss"]
+					"params": ["noodly"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "flying_spaghetti_monster_roots_boss_choir_backing", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
