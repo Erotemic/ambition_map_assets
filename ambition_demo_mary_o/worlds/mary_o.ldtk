@@ -70853,32 +70853,6 @@
 							]
 						},
 						{
-							"__identifier": "DebugLabel",
-							"__grid": [63,4],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 1008,
-							"__worldY": 4160,
-							"iid": "DebugLabel-109868",
-							"width": 128,
-							"height": 16,
-							"defUid": 2007,
-							"px": [1008,64],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "WARP ZONE", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["WARP ZONE"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "WARP ZONE", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["WARP ZONE"]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							]
-						},
-						{
 							"__identifier": "MaryOPipe",
 							"__grid": [18,20],
 							"__pivot": [0,0],
@@ -70902,32 +70876,6 @@
 									"id": "V_String",
 									"params": ["Warp"]
 								}] }
-							]
-						},
-						{
-							"__identifier": "DebugLabel",
-							"__grid": [17,16],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 272,
-							"__worldY": 4352,
-							"iid": "DebugLabel-109493",
-							"width": 128,
-							"height": 16,
-							"defUid": 2007,
-							"px": [272,256],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "1-1", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["1-1"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "1-1", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["1-1"]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
@@ -70957,32 +70905,6 @@
 							]
 						},
 						{
-							"__identifier": "DebugLabel",
-							"__grid": [31,16],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 496,
-							"__worldY": 4352,
-							"iid": "DebugLabel-109495",
-							"width": 128,
-							"height": 16,
-							"defUid": 2007,
-							"px": [496,256],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "1-2", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["1-2"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "1-2", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["1-2"]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							]
-						},
-						{
 							"__identifier": "MaryOPipe",
 							"__grid": [46,20],
 							"__pivot": [0,0],
@@ -71006,32 +70928,6 @@
 									"id": "V_String",
 									"params": ["Warp"]
 								}] }
-							]
-						},
-						{
-							"__identifier": "DebugLabel",
-							"__grid": [45,16],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 720,
-							"__worldY": 4352,
-							"iid": "DebugLabel-109497",
-							"width": 128,
-							"height": 16,
-							"defUid": 2007,
-							"px": [720,256],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "1-3", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["1-3"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "1-3", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["1-3"]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
@@ -71061,32 +70957,6 @@
 							]
 						},
 						{
-							"__identifier": "DebugLabel",
-							"__grid": [59,16],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 944,
-							"__worldY": 4352,
-							"iid": "DebugLabel-109499",
-							"width": 128,
-							"height": 16,
-							"defUid": 2007,
-							"px": [944,256],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "1-4", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["1-4"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "1-4", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["1-4"]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							]
-						},
-						{
 							"__identifier": "MaryOPipe",
 							"__grid": [74,20],
 							"__pivot": [0,0],
@@ -71110,32 +70980,6 @@
 									"id": "V_String",
 									"params": ["Warp"]
 								}] }
-							]
-						},
-						{
-							"__identifier": "DebugLabel",
-							"__grid": [73,16],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 1168,
-							"__worldY": 4352,
-							"iid": "DebugLabel-109878",
-							"width": 128,
-							"height": 16,
-							"defUid": 2007,
-							"px": [1168,256],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "2-1", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["2-1"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "2-1", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["2-1"]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
@@ -71165,32 +71009,6 @@
 							]
 						},
 						{
-							"__identifier": "DebugLabel",
-							"__grid": [87,16],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 1392,
-							"__worldY": 4352,
-							"iid": "DebugLabel-109880",
-							"width": 128,
-							"height": 16,
-							"defUid": 2007,
-							"px": [1392,256],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "2-2", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["2-2"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "2-2", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["2-2"]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							]
-						},
-						{
 							"__identifier": "MaryOPipe",
 							"__grid": [102,20],
 							"__pivot": [0,0],
@@ -71217,32 +71035,6 @@
 							]
 						},
 						{
-							"__identifier": "DebugLabel",
-							"__grid": [101,16],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 1616,
-							"__worldY": 4352,
-							"iid": "DebugLabel-109882",
-							"width": 128,
-							"height": 16,
-							"defUid": 2007,
-							"px": [1616,256],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "2-3", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["2-3"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "2-3", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["2-3"]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							]
-						},
-						{
 							"__identifier": "MaryOPipe",
 							"__grid": [116,20],
 							"__pivot": [0,0],
@@ -71266,32 +71058,6 @@
 									"id": "V_String",
 									"params": ["Warp"]
 								}] }
-							]
-						},
-						{
-							"__identifier": "DebugLabel",
-							"__grid": [115,16],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 1840,
-							"__worldY": 4352,
-							"iid": "DebugLabel-109884",
-							"width": 128,
-							"height": 16,
-							"defUid": 2007,
-							"px": [1840,256],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "2-4", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["2-4"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "2-4", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["2-4"]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						}
 					]
