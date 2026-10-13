@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 7626,
+	"nextUid": 7663,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -73963,7 +73963,7 @@
 			"worldY": 0,
 			"worldDepth": 0,
 			"pxWid": 1600,
-			"pxHei": 800,
+			"pxHei": 896,
 			"__bgColor": "#15131F",
 			"bgColor": "#15131F",
 			"useAutoIdentifier": false,
@@ -74122,25 +74122,43 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,
-						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,
+						1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,
+						0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,
+						0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,
+						1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,
+						1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,
+						0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+						
 					],
 					"__cWid": 100,
-					"__cHei": 50,
+					"__cHei": 56,
 					"__gridSize": 16,
 					"__opacity": 1,
 					"__pxTotalOffsetX": 0,
@@ -74165,7 +74183,7 @@
 					"layerDefUid": 5743,
 					"intGridCsv": [],
 					"__cWid": 100,
-					"__cHei": 50,
+					"__cHei": 56,
 					"__gridSize": 16,
 					"__opacity": 1,
 					"__pxTotalOffsetX": 0,
@@ -74193,7 +74211,7 @@
 							"__worldY": 0,
 							"iid": "CameraZone-7497",
 							"width": 1600,
-							"height": 800,
+							"height": 896,
 							"defUid": 4002,
 							"px": [0,0],
 							"fieldInstances": [
@@ -74220,7 +74238,7 @@
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 100,
-					"__cHei": 50,
+					"__cHei": 56,
 					"__gridSize": 16,
 					"__opacity": 1,
 					"__pxTotalOffsetX": 0,
@@ -74238,19 +74256,119 @@
 					"gridTiles": [],
 					"entityInstances": [
 						{
+							"__identifier": "WaterVolume",
+							"__grid": [21,49],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#3DB8E0",
+							"__worldX": 76336,
+							"__worldY": 784,
+							"iid": "WaterVolume-7629",
+							"width": 112,
+							"height": 80,
+							"defUid": 4130,
+							"px": [336,784],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_pool_0", "__tile": null, "defUid": 4124, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodly_cistern_pool_0"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "a pool", "__tile": null, "defUid": 4125, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["a pool"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "WaterVolume",
+							"__grid": [35,49],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#3DB8E0",
+							"__worldX": 76560,
+							"__worldY": 784,
+							"iid": "WaterVolume-7630",
+							"width": 144,
+							"height": 80,
+							"defUid": 4130,
+							"px": [560,784],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_pool_1", "__tile": null, "defUid": 4124, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodly_cistern_pool_1"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "a pool", "__tile": null, "defUid": 4125, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["a pool"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "WaterVolume",
+							"__grid": [52,49],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#3DB8E0",
+							"__worldX": 76832,
+							"__worldY": 784,
+							"iid": "WaterVolume-7631",
+							"width": 160,
+							"height": 80,
+							"defUid": 4130,
+							"px": [832,784],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_pool_2", "__tile": null, "defUid": 4124, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodly_cistern_pool_2"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "a pool", "__tile": null, "defUid": 4125, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["a pool"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "WaterVolume",
+							"__grid": [76,49],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#3DB8E0",
+							"__worldX": 77216,
+							"__worldY": 784,
+							"iid": "WaterVolume-7632",
+							"width": 208,
+							"height": 80,
+							"defUid": 4130,
+							"px": [1216,784],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_pool_3", "__tile": null, "defUid": 4124, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodly_cistern_pool_3"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "a pool", "__tile": null, "defUid": 4125, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["a pool"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "PlayerStart",
 							"__grid": [6,45],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#41D1FF",
-							"__worldX": 76110,
+							"__worldX": 76096,
 							"__worldY": 722,
-							"iid": "PlayerStart-7472",
+							"iid": "PlayerStart-7633",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
-							"px": [110,722],
+							"px": [96,722],
 							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "noodly_cistern_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
 								"id": "V_String",
 								"params": ["noodly_cistern_spawn"]
@@ -74293,18 +74411,18 @@
 						},
 						{
 							"__identifier": "Switch",
-							"__grid": [18,46],
+							"__grid": [16,46],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFC857",
-							"__worldX": 76300,
+							"__worldX": 76270,
 							"__worldY": 736,
-							"iid": "Switch-7474",
+							"iid": "Switch-7635",
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
-							"px": [300,736],
+							"px": [270,736],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "noodly_wheel_a", "__tile": null, "defUid": 4046, "realEditorValues": [{
 									"id": "V_String",
@@ -74326,18 +74444,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [15,43],
+							"__grid": [13,43],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 76252,
+							"__worldX": 76222,
 							"__worldY": 688,
-							"iid": "DebugLabel-7475",
+							"iid": "DebugLabel-7636",
 							"width": 120,
 							"height": 24,
 							"defUid": 2007,
-							"px": [252,688],
+							"px": [222,688],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "noodly_cistern_sign_wheel_a", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -74365,21 +74483,21 @@
 							"defUid": 4084,
 							"px": [480,240],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_sluice_high", "__tile": null, "defUid": 4082, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_gate_high", "__tile": null, "defUid": 4082, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["noodly_cistern_sluice_high"]
+									"params": ["noodly_cistern_gate_high"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "the high sluice", "__tile": null, "defUid": 4083, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "the high gate", "__tile": null, "defUid": 4083, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["the high sluice"]
+									"params": ["the high gate"]
 								}] },
 								{ "__identifier": "gated_by", "__type": "String", "__value": "world.switch_on noodly_wheel_b", "__tile": null, "defUid": 6860, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["world.switch_on noodly_wheel_b"]
 								}] },
-								{ "__identifier": "look", "__type": "String", "__value": "temple_gate_sluice_2", "__tile": null, "defUid": 7407, "realEditorValues": [{
+								{ "__identifier": "look", "__type": "String", "__value": "temple_gate_wheel_2", "__tile": null, "defUid": 7407, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["temple_gate_sluice_2"]
+									"params": ["temple_gate_wheel_2"]
 								}] }
 							]
 						},
@@ -74398,21 +74516,21 @@
 							"defUid": 4084,
 							"px": [480,640],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_sluice_low", "__tile": null, "defUid": 4082, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_gate_low", "__tile": null, "defUid": 4082, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["noodly_cistern_sluice_low"]
+									"params": ["noodly_cistern_gate_low"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "the low sluice", "__tile": null, "defUid": 4083, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "the low gate", "__tile": null, "defUid": 4083, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["the low sluice"]
+									"params": ["the low gate"]
 								}] },
 								{ "__identifier": "gated_by", "__type": "String", "__value": "world.switch_on noodly_wheel_a", "__tile": null, "defUid": 6860, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["world.switch_on noodly_wheel_a"]
 								}] },
-								{ "__identifier": "look", "__type": "String", "__value": "temple_gate_sluice_1", "__tile": null, "defUid": 7407, "realEditorValues": [{
+								{ "__identifier": "look", "__type": "String", "__value": "temple_gate_wheel_1", "__tile": null, "defUid": 7407, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["temple_gate_sluice_1"]
+									"params": ["temple_gate_wheel_1"]
 								}] }
 							]
 						},
@@ -74542,21 +74660,21 @@
 							"defUid": 4084,
 							"px": [912,240],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_sluice_well", "__tile": null, "defUid": 4082, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_gate_well", "__tile": null, "defUid": 4082, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["noodly_cistern_sluice_well"]
+									"params": ["noodly_cistern_gate_well"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "the sluice of the well", "__tile": null, "defUid": 4083, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "the gate of the well", "__tile": null, "defUid": 4083, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["the sluice of the well"]
+									"params": ["the gate of the well"]
 								}] },
 								{ "__identifier": "gated_by", "__type": "String", "__value": "not world.switch_on noodly_wheel_a", "__tile": null, "defUid": 6860, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["not world.switch_on noodly_wheel_a"]
 								}] },
-								{ "__identifier": "look", "__type": "String", "__value": "temple_gate_sluice_1_shut", "__tile": null, "defUid": 7407, "realEditorValues": [{
+								{ "__identifier": "look", "__type": "String", "__value": "temple_gate_wheel_1_shut", "__tile": null, "defUid": 7407, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["temple_gate_sluice_1_shut"]
+									"params": ["temple_gate_wheel_1_shut"]
 								}] }
 							]
 						},
@@ -74588,18 +74706,18 @@
 						},
 						{
 							"__identifier": "Switch",
-							"__grid": [47,42],
+							"__grid": [47,46],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFC857",
 							"__worldX": 76756,
-							"__worldY": 672,
-							"iid": "Switch-7484",
+							"__worldY": 736,
+							"iid": "Switch-7645",
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
-							"px": [756,672],
+							"px": [756,736],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "noodly_wheel_b", "__tile": null, "defUid": 4046, "realEditorValues": [{
 									"id": "V_String",
@@ -74621,18 +74739,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [44,39],
+							"__grid": [44,43],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
 							"__worldX": 76708,
-							"__worldY": 624,
-							"iid": "DebugLabel-7485",
+							"__worldY": 688,
+							"iid": "DebugLabel-7646",
 							"width": 120,
 							"height": 24,
 							"defUid": 2007,
-							"px": [708,624],
+							"px": [708,688],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "noodly_cistern_sign_wheel_b", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -74643,31 +74761,6 @@
 									"params": ["Wheel II"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							]
-						},
-						{
-							"__identifier": "WaterVolume",
-							"__grid": [32,42],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#3DB8E0",
-							"__worldX": 76512,
-							"__worldY": 672,
-							"iid": "WaterVolume-7486",
-							"width": 528,
-							"height": 96,
-							"defUid": 4130,
-							"px": [512,672],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_basin_water", "__tile": null, "defUid": 4124, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["noodly_cistern_basin_water"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "the basin", "__tile": null, "defUid": 4125, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["the basin"]
-								}] }
 							]
 						},
 						{
@@ -74685,21 +74778,21 @@
 							"defUid": 4084,
 							"px": [1040,640],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_sluice_lock_a", "__tile": null, "defUid": 4082, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_gate_lock_a", "__tile": null, "defUid": 4082, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["noodly_cistern_sluice_lock_a"]
+									"params": ["noodly_cistern_gate_lock_a"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "the first sluice of the lock", "__tile": null, "defUid": 4083, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "the first gate of the lock", "__tile": null, "defUid": 4083, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["the first sluice of the lock"]
+									"params": ["the first gate of the lock"]
 								}] },
 								{ "__identifier": "gated_by", "__type": "String", "__value": "not world.switch_on noodly_wheel_a", "__tile": null, "defUid": 6860, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["not world.switch_on noodly_wheel_a"]
 								}] },
-								{ "__identifier": "look", "__type": "String", "__value": "temple_gate_sluice_1_shut", "__tile": null, "defUid": 7407, "realEditorValues": [{
+								{ "__identifier": "look", "__type": "String", "__value": "temple_gate_wheel_1_shut", "__tile": null, "defUid": 7407, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["temple_gate_sluice_1_shut"]
+									"params": ["temple_gate_wheel_1_shut"]
 								}] }
 							]
 						},
@@ -74718,21 +74811,21 @@
 							"defUid": 4084,
 							"px": [1136,640],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_sluice_lock_b", "__tile": null, "defUid": 4082, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_gate_lock_b", "__tile": null, "defUid": 4082, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["noodly_cistern_sluice_lock_b"]
+									"params": ["noodly_cistern_gate_lock_b"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "the second sluice of the lock", "__tile": null, "defUid": 4083, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "the second gate of the lock", "__tile": null, "defUid": 4083, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["the second sluice of the lock"]
+									"params": ["the second gate of the lock"]
 								}] },
 								{ "__identifier": "gated_by", "__type": "String", "__value": "world.switch_on noodly_wheel_c", "__tile": null, "defUid": 6860, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["world.switch_on noodly_wheel_c"]
 								}] },
-								{ "__identifier": "look", "__type": "String", "__value": "temple_gate_sluice_3", "__tile": null, "defUid": 7407, "realEditorValues": [{
+								{ "__identifier": "look", "__type": "String", "__value": "temple_gate_wheel_3", "__tile": null, "defUid": 7407, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["temple_gate_sluice_3"]
+									"params": ["temple_gate_wheel_3"]
 								}] }
 							]
 						},
@@ -74760,31 +74853,6 @@
 									"params": ["I shuts. III opens."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							]
-						},
-						{
-							"__identifier": "WaterVolume",
-							"__grid": [73,42],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#3DB8E0",
-							"__worldX": 77168,
-							"__worldY": 672,
-							"iid": "WaterVolume-7490",
-							"width": 288,
-							"height": 96,
-							"defUid": 4130,
-							"px": [1168,672],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_vault_water", "__tile": null, "defUid": 4124, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["noodly_cistern_vault_water"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "the vault", "__tile": null, "defUid": 4125, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["the vault"]
-								}] }
 							]
 						},
 						{
@@ -74880,18 +74948,18 @@
 						},
 						{
 							"__identifier": "GroundItem",
-							"__grid": [10,47],
+							"__grid": [9,47],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#7FE3C0",
-							"__worldX": 76170,
+							"__worldX": 76150,
 							"__worldY": 756,
-							"iid": "GroundItem-7616",
+							"iid": "GroundItem-7653",
 							"width": 72,
 							"height": 12,
 							"defUid": 5943,
-							"px": [170,756],
+							"px": [150,756],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "noodly_cistern_pool_noodle_1", "__tile": null, "defUid": 5940, "realEditorValues": [{
 									"id": "V_String",
@@ -74938,18 +75006,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [4,41],
+							"__grid": [3,39],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 76076,
-							"__worldY": 658,
-							"iid": "DebugLabel-7618",
+							"__worldX": 76060,
+							"__worldY": 638,
+							"iid": "DebugLabel-7655",
 							"width": 260,
 							"height": 24,
 							"defUid": 2007,
-							"px": [76,658],
+							"px": [60,638],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "noodly_cistern_sign_noodle", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -75080,9 +75148,9 @@
 									"id": "V_String",
 									"params": ["noodly_cistern_sign_title"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "The cistern. A wheel that opens one sluice shuts another.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "The cistern. A wheel that opens one gate shuts another.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["The cistern. A wheel that opens one sluice shuts another."]
+									"params": ["The cistern. A wheel that opens one gate shuts another."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -75237,10 +75305,28 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+						
 					],
 					"__cWid": 100,
-					"__cHei": 50,
+					"__cHei": 56,
 					"__gridSize": 16,
 					"__opacity": 1,
 					"__pxTotalOffsetX": 0,
