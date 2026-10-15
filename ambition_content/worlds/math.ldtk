@@ -7939,9 +7939,9 @@
 					"id": "V_String",
 					"params": ["math_undercroft"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "shoulders_at_rest", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "math_town_day", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["shoulders_at_rest"]
+					"params": ["math_town_day"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_undercroft", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -9611,9 +9611,9 @@
 					"id": "V_String",
 					"params": ["math_town"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "shoulders_at_rest", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "math_town_day", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["shoulders_at_rest"]
+					"params": ["math_town_day"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_town", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
