@@ -11,7 +11,7 @@
 	"iid": "ambition-math-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 208095,
+	"nextUid": 208193,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -6797,6 +6797,80 @@
 					"allowedRefsEntityUid": null,
 					"allowedRefTags": [],
 					"tilesetUid": null
+				},
+				{
+					"identifier": "visual",
+					"doc": null,
+					"__type": "String",
+					"uid": 208095,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "boarding",
+					"doc": null,
+					"__type": "String",
+					"uid": 208096,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
 				}
 			]
 		},
@@ -8237,852 +8311,32 @@
 							]
 						},
 						{
-							"__identifier": "MovingPlatform",
-							"__grid": [41,41],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 656,
-							"__worldY": 656,
-							"iid": "MovingPlatform-207708",
-							"width": 288,
-							"height": 48,
-							"defUid": 4251,
-							"px": [656,656],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_plinth", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_plinth"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_plinth", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_plinth"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
+							"__identifier": "SurfaceChain",
 							"__grid": [35,43],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#5BA1FF",
+							"__smartColor": "#7ED957",
 							"__worldX": 560,
-							"__worldY": 700,
-							"iid": "MovingPlatform-208056",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [560,700],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w01", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w01"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w01", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w01"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [64,43],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 1032,
-							"__worldY": 700,
-							"iid": "MovingPlatform-208057",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1032,700],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e01", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e01"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e01", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e01"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [35,43],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 568,
-							"__worldY": 696,
-							"iid": "MovingPlatform-208058",
-							"width": 8,
-							"height": 8,
-							"defUid": 4251,
-							"px": [568,696],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w02", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w02"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w02", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w02"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [64,43],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 1024,
-							"__worldY": 696,
-							"iid": "MovingPlatform-208059",
-							"width": 8,
-							"height": 8,
-							"defUid": 4251,
-							"px": [1024,696],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e02", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e02"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e02", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e02"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [36,43],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 576,
-							"__worldY": 692,
-							"iid": "MovingPlatform-208060",
-							"width": 8,
-							"height": 12,
-							"defUid": 4251,
-							"px": [576,692],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w03", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w03"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w03", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w03"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [63,43],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 1016,
-							"__worldY": 692,
-							"iid": "MovingPlatform-208061",
-							"width": 8,
-							"height": 12,
-							"defUid": 4251,
-							"px": [1016,692],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e03", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e03"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e03", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e03"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [36,43],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 584,
 							"__worldY": 688,
-							"iid": "MovingPlatform-208062",
-							"width": 8,
+							"iid": "SurfaceChain-208102",
+							"width": 16,
 							"height": 16,
-							"defUid": 4251,
-							"px": [584,688],
+							"defUid": 6814,
+							"px": [560,688],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w04", "__tile": null, "defUid": 6853, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_cradle_walk", "__tile": null, "defUid": 6811, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_gate_step_w04"]
+									"params": ["math_gate_cradle_walk"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w04", "__tile": null, "defUid": 4248, "realEditorValues": [{
+								{ "__identifier": "points", "__type": "String", "__value": "560,704; 656,656; 944,656; 1040,704", "__tile": null, "defUid": 6812, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_gate_step_w04"]
+									"params": ["560,704; 656,656; 944,656; 1040,704"]
 								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [63,43],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 1008,
-							"__worldY": 688,
-							"iid": "MovingPlatform-208063",
-							"width": 8,
-							"height": 16,
-							"defUid": 4251,
-							"px": [1008,688],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e04", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e04"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e04", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e04"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [37,42],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 592,
-							"__worldY": 684,
-							"iid": "MovingPlatform-208064",
-							"width": 8,
-							"height": 20,
-							"defUid": 4251,
-							"px": [592,684],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w05", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w05"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w05", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w05"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [62,42],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 1000,
-							"__worldY": 684,
-							"iid": "MovingPlatform-208065",
-							"width": 8,
-							"height": 20,
-							"defUid": 4251,
-							"px": [1000,684],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e05", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e05"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e05", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e05"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [37,42],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 600,
-							"__worldY": 680,
-							"iid": "MovingPlatform-208066",
-							"width": 8,
-							"height": 24,
-							"defUid": 4251,
-							"px": [600,680],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w06", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w06"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w06", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w06"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [62,42],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 992,
-							"__worldY": 680,
-							"iid": "MovingPlatform-208067",
-							"width": 8,
-							"height": 24,
-							"defUid": 4251,
-							"px": [992,680],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e06", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e06"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e06", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e06"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [38,42],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 608,
-							"__worldY": 676,
-							"iid": "MovingPlatform-208068",
-							"width": 8,
-							"height": 28,
-							"defUid": 4251,
-							"px": [608,676],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w07", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w07"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w07", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w07"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [61,42],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 984,
-							"__worldY": 676,
-							"iid": "MovingPlatform-208069",
-							"width": 8,
-							"height": 28,
-							"defUid": 4251,
-							"px": [984,676],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e07", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e07"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e07", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e07"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [38,42],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 616,
-							"__worldY": 672,
-							"iid": "MovingPlatform-208070",
-							"width": 8,
-							"height": 32,
-							"defUid": 4251,
-							"px": [616,672],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w08", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w08"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w08", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w08"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [61,42],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 976,
-							"__worldY": 672,
-							"iid": "MovingPlatform-208071",
-							"width": 8,
-							"height": 32,
-							"defUid": 4251,
-							"px": [976,672],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e08", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e08"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e08", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e08"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [39,41],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 624,
-							"__worldY": 668,
-							"iid": "MovingPlatform-208072",
-							"width": 8,
-							"height": 36,
-							"defUid": 4251,
-							"px": [624,668],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w09", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w09"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w09", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w09"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [60,41],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 968,
-							"__worldY": 668,
-							"iid": "MovingPlatform-208073",
-							"width": 8,
-							"height": 36,
-							"defUid": 4251,
-							"px": [968,668],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e09", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e09"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e09", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e09"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [39,41],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 632,
-							"__worldY": 664,
-							"iid": "MovingPlatform-208074",
-							"width": 8,
-							"height": 40,
-							"defUid": 4251,
-							"px": [632,664],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w10", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w10"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w10", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w10"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [60,41],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 960,
-							"__worldY": 664,
-							"iid": "MovingPlatform-208075",
-							"width": 8,
-							"height": 40,
-							"defUid": 4251,
-							"px": [960,664],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e10", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e10"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e10", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e10"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [40,41],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 640,
-							"__worldY": 660,
-							"iid": "MovingPlatform-208076",
-							"width": 8,
-							"height": 44,
-							"defUid": 4251,
-							"px": [640,660],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w11", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w11"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w11", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w11"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [59,41],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 952,
-							"__worldY": 660,
-							"iid": "MovingPlatform-208077",
-							"width": 8,
-							"height": 44,
-							"defUid": 4251,
-							"px": [952,660],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e11", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e11"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e11", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e11"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [40,41],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 648,
-							"__worldY": 656,
-							"iid": "MovingPlatform-208078",
-							"width": 8,
-							"height": 48,
-							"defUid": 4251,
-							"px": [648,656],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w12", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w12"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w12", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_w12"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [59,41],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 944,
-							"__worldY": 656,
-							"iid": "MovingPlatform-208079",
-							"width": 8,
-							"height": 48,
-							"defUid": 4251,
-							"px": [944,656],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e12", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e12"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e12", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_step_e12"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
 								}] }
 							]
 						},
@@ -10023,19 +9277,19 @@
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,
+						0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -11171,2212 +10425,70 @@
 							]
 						},
 						{
-							"__identifier": "MovingPlatform",
-							"__grid": [109,79],
+							"__identifier": "SurfaceChain",
+							"__grid": [90,71],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3464,
-							"__worldY": 1276,
-							"iid": "MovingPlatform-207953",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1752,1276],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_00", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_00"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_00", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_00"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [109,79],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3456,
-							"__worldY": 1272,
-							"iid": "MovingPlatform-207954",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1744,1272],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_01", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_01"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_01", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_01"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [108,79],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3448,
-							"__worldY": 1268,
-							"iid": "MovingPlatform-207955",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1736,1268],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_02", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_02"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_02", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_02"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [108,79],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3440,
-							"__worldY": 1264,
-							"iid": "MovingPlatform-207956",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1728,1264],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_03", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_03"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_03", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_03"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [107,78],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3432,
-							"__worldY": 1260,
-							"iid": "MovingPlatform-207957",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1720,1260],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_04", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_04"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_04", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_04"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [107,78],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3424,
-							"__worldY": 1256,
-							"iid": "MovingPlatform-207958",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1712,1256],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_05", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_05"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_05", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_05"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [106,78],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3416,
-							"__worldY": 1252,
-							"iid": "MovingPlatform-207959",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1704,1252],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_06", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_06"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_06", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_06"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [106,78],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3408,
-							"__worldY": 1248,
-							"iid": "MovingPlatform-207960",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1696,1248],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_07", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_07"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_07", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_07"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [105,77],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3400,
-							"__worldY": 1244,
-							"iid": "MovingPlatform-207961",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1688,1244],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_08", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_08"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_08", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_08"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [105,77],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3392,
-							"__worldY": 1240,
-							"iid": "MovingPlatform-207962",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1680,1240],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_09", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_09"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_09", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_09"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [104,77],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3384,
-							"__worldY": 1236,
-							"iid": "MovingPlatform-207963",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1672,1236],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_10", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_10"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_10", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_10"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [104,77],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3376,
-							"__worldY": 1232,
-							"iid": "MovingPlatform-207964",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1664,1232],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_11", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_11"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_11", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_11"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [103,76],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3368,
-							"__worldY": 1228,
-							"iid": "MovingPlatform-207965",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1656,1228],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_12", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_12"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_12", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_12"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [103,76],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3360,
-							"__worldY": 1224,
-							"iid": "MovingPlatform-207966",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1648,1224],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_13", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_13"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_13", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_13"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [102,76],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3352,
-							"__worldY": 1220,
-							"iid": "MovingPlatform-207967",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1640,1220],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_14", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_14"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_14", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_14"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [102,76],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3344,
-							"__worldY": 1216,
-							"iid": "MovingPlatform-207968",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1632,1216],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_15", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_15"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_15", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_15"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [101,75],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3336,
-							"__worldY": 1212,
-							"iid": "MovingPlatform-207969",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1624,1212],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_16", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_16"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_16", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_16"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [101,75],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3328,
-							"__worldY": 1208,
-							"iid": "MovingPlatform-207970",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1616,1208],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_17", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_17"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_17", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_17"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [100,75],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3320,
-							"__worldY": 1204,
-							"iid": "MovingPlatform-207971",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1608,1204],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_18", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_18"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_18", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_18"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [100,75],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3312,
-							"__worldY": 1200,
-							"iid": "MovingPlatform-207972",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1600,1200],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_19", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_19"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_19", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_19"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [99,74],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3304,
-							"__worldY": 1196,
-							"iid": "MovingPlatform-207973",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1592,1196],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_20", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_20"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_20", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_20"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [99,74],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3296,
-							"__worldY": 1192,
-							"iid": "MovingPlatform-207974",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1584,1192],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_21", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_21"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_21", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_21"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [98,74],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3288,
-							"__worldY": 1188,
-							"iid": "MovingPlatform-207975",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1576,1188],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_22", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_22"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_22", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_22"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [98,74],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3280,
-							"__worldY": 1184,
-							"iid": "MovingPlatform-207976",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1568,1184],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_23", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_23"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_23", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_23"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [97,73],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3272,
-							"__worldY": 1180,
-							"iid": "MovingPlatform-207977",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1560,1180],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_24", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_24"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_24", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_24"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [97,73],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3264,
-							"__worldY": 1176,
-							"iid": "MovingPlatform-207978",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1552,1176],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_25", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_25"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_25", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_25"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [96,73],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3256,
-							"__worldY": 1172,
-							"iid": "MovingPlatform-207979",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1544,1172],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_26", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_26"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_26", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_26"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [96,73],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3248,
-							"__worldY": 1168,
-							"iid": "MovingPlatform-207980",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1536,1168],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_27", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_27"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_27", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_27"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [95,72],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3240,
-							"__worldY": 1164,
-							"iid": "MovingPlatform-207981",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1528,1164],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_28", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_28"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_28", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_28"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [95,72],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3232,
-							"__worldY": 1160,
-							"iid": "MovingPlatform-207982",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1520,1160],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_29", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_29"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_29", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_29"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [94,72],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3224,
-							"__worldY": 1156,
-							"iid": "MovingPlatform-207983",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1512,1156],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_30", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_30"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_30", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_30"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [94,72],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3216,
-							"__worldY": 1152,
-							"iid": "MovingPlatform-207984",
-							"width": 8,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1504,1152],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_31", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_31"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_31", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_31"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [92,71],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3184,
-							"__worldY": 1148,
-							"iid": "MovingPlatform-207985",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1472,1148],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_32", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_32"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_32", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_32"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [92,71],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3193,
-							"__worldY": 1144,
-							"iid": "MovingPlatform-207986",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1481,1144],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_33", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_33"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_33", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_33"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [93,71],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3202,
-							"__worldY": 1140,
-							"iid": "MovingPlatform-207987",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1490,1140],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_34", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_34"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_34", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_34"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [93,71],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3211,
-							"__worldY": 1136,
-							"iid": "MovingPlatform-207988",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1499,1136],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_35", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_35"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_35", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_35"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [94,70],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3220,
-							"__worldY": 1132,
-							"iid": "MovingPlatform-207989",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1508,1132],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_36", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_36"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_36", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_36"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [94,70],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3229,
-							"__worldY": 1128,
-							"iid": "MovingPlatform-207990",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1517,1128],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_37", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_37"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_37", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_37"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [95,70],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3238,
-							"__worldY": 1124,
-							"iid": "MovingPlatform-207991",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1526,1124],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_38", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_38"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_38", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_38"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [95,70],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3247,
-							"__worldY": 1120,
-							"iid": "MovingPlatform-207992",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1535,1120],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_39", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_39"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_39", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_39"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [96,69],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3256,
-							"__worldY": 1116,
-							"iid": "MovingPlatform-207993",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1544,1116],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_40", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_40"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_40", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_40"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [97,69],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3265,
-							"__worldY": 1112,
-							"iid": "MovingPlatform-207994",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1553,1112],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_41", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_41"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_41", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_41"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [97,69],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3274,
-							"__worldY": 1108,
-							"iid": "MovingPlatform-207995",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1562,1108],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_42", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_42"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_42", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_42"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [98,69],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3283,
-							"__worldY": 1104,
-							"iid": "MovingPlatform-207996",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1571,1104],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_43", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_43"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_43", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_43"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [98,68],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3292,
-							"__worldY": 1100,
-							"iid": "MovingPlatform-207997",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1580,1100],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_44", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_44"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_44", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_44"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [99,68],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3301,
-							"__worldY": 1096,
-							"iid": "MovingPlatform-207998",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1589,1096],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_45", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_45"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_45", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_45"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [99,68],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3310,
-							"__worldY": 1092,
-							"iid": "MovingPlatform-207999",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1598,1092],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_46", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_46"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_46", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_46"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [100,68],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3319,
-							"__worldY": 1088,
-							"iid": "MovingPlatform-208000",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1607,1088],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_47", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_47"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_47", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_47"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [101,67],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3328,
-							"__worldY": 1084,
-							"iid": "MovingPlatform-208001",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1616,1084],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_48", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_48"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_48", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_48"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [101,67],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3337,
-							"__worldY": 1080,
-							"iid": "MovingPlatform-208002",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1625,1080],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_49", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_49"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_49", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_49"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [102,67],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3346,
-							"__worldY": 1076,
-							"iid": "MovingPlatform-208003",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1634,1076],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_50", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_50"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_50", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_50"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [102,67],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3355,
-							"__worldY": 1072,
-							"iid": "MovingPlatform-208004",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1643,1072],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_51", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_51"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_51", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_51"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [103,66],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3364,
-							"__worldY": 1068,
-							"iid": "MovingPlatform-208005",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1652,1068],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_52", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_52"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_52", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_52"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [103,66],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3373,
-							"__worldY": 1064,
-							"iid": "MovingPlatform-208006",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1661,1064],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_53", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_53"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_53", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_53"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [104,66],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3382,
-							"__worldY": 1060,
-							"iid": "MovingPlatform-208007",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1670,1060],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_54", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_54"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_54", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_54"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [104,66],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3391,
-							"__worldY": 1056,
-							"iid": "MovingPlatform-208008",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1679,1056],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_55", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_55"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_55", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_55"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [105,65],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3400,
-							"__worldY": 1052,
-							"iid": "MovingPlatform-208009",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1688,1052],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_56", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_56"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_56", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_56"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [106,65],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3409,
-							"__worldY": 1048,
-							"iid": "MovingPlatform-208010",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1697,1048],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_57", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_57"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_57", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_57"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [106,65],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3418,
-							"__worldY": 1044,
-							"iid": "MovingPlatform-208011",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1706,1044],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_58", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_58"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_58", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_58"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [107,65],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3427,
-							"__worldY": 1040,
-							"iid": "MovingPlatform-208012",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1715,1040],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_59", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_59"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_59", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_59"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [107,64],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3436,
-							"__worldY": 1036,
-							"iid": "MovingPlatform-208013",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1724,1036],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_60", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_60"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_60", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_60"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [108,64],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3445,
-							"__worldY": 1032,
-							"iid": "MovingPlatform-208014",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1733,1032],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_61", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_61"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_61", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_61"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [108,64],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3454,
-							"__worldY": 1028,
-							"iid": "MovingPlatform-208015",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1742,1028],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_62", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_62"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_62", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_62"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [109,64],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 3463,
-							"__worldY": 1024,
-							"iid": "MovingPlatform-208016",
-							"width": 9,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1751,1024],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_tread_63", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_63"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_tread_63", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stair_tread_63"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["none"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [90,72],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
+							"__smartColor": "#7ED957",
 							"__worldX": 3152,
-							"__worldY": 1152,
-							"iid": "MovingPlatform-208017",
-							"width": 64,
-							"height": 4,
-							"defUid": 4251,
-							"px": [1440,1152],
+							"__worldY": 1136,
+							"iid": "SurfaceChain-208159",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1440,1136],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "stair_landing", "__tile": null, "defUid": 6853, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "stair_flight_1", "__tile": null, "defUid": 6811, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["stair_landing"]
+									"params": ["stair_flight_1"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "stair_landing", "__tile": null, "defUid": 4248, "realEditorValues": [{
+								{ "__identifier": "points", "__type": "String", "__value": "1440,1152; 1504,1152; 1760,1280", "__tile": null, "defUid": 6812, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["stair_landing"]
+									"params": ["1440,1152; 1504,1152; 1760,1280"]
 								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["none"]
 								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
+								{ "__identifier": "boarding", "__type": "String", "__value": "up", "__tile": null, "defUid": 208096, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["up"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [92,71],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": 3184,
+							"__worldY": 1136,
+							"iid": "SurfaceChain-208160",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1472,1136],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "stair_flight_2", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stair_flight_2"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "1472,1152; 1760,1024", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["1472,1152; 1760,1024"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "boarding", "__type": "String", "__value": "up", "__tile": null, "defUid": 208096, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["up"]
 								}] }
 							]
 						},
@@ -14350,175 +11462,209 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -14568,46 +11714,12 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
