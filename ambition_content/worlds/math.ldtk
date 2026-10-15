@@ -11,7 +11,7 @@
 	"iid": "ambition-math-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 207703,
+	"nextUid": 207827,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -7919,7 +7919,7 @@
 			"worldY": 0,
 			"worldDepth": 0,
 			"pxWid": 1600,
-			"pxHei": 896,
+			"pxHei": 768,
 			"__bgColor": "#BFD7EE",
 			"bgColor": "#BFD7EE",
 			"useAutoIdentifier": false,
@@ -7935,17 +7935,17 @@
 					"id": "V_String",
 					"params": ["math_gate_hall"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "math_town", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "math_undercroft", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["math_town"]
+					"params": ["math_undercroft"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "standing_on_shoulders", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "shoulders_at_rest", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["standing_on_shoulders"]
+					"params": ["shoulders_at_rest"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_town", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_undercroft", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["math_town"]
+					"params": ["math_undercroft"]
 				}] }
 			],
 			"layerInstances": [
@@ -7955,6 +7955,46 @@
 					"iid": "Collision-207678",
 					"layerDefUid": 5024,
 					"intGridCsv": [
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
@@ -8006,46 +8046,26 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
-						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
-						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+						2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
-						2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						2,2,2,2,2,2,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -8060,50 +8080,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
-						2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,
-						0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,2,2,2,2,2,2,2,2,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,
-						2,2,2,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -8114,11 +8091,11 @@
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-						
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1
 					],
 					"__cWid": 100,
-					"__cHei": 56,
+					"__cHei": 48,
 					"__gridSize": 16,
 					"__opacity": 1,
 					"__pxTotalOffsetX": 0,
@@ -8143,7 +8120,7 @@
 					"layerDefUid": 5743,
 					"intGridCsv": [],
 					"__cWid": 100,
-					"__cHei": 56,
+					"__cHei": 48,
 					"__gridSize": 16,
 					"__opacity": 1,
 					"__pxTotalOffsetX": 0,
@@ -8171,7 +8148,7 @@
 							"__worldY": 0,
 							"iid": "CameraZone-207689",
 							"width": 1600,
-							"height": 896,
+							"height": 768,
 							"defUid": 4002,
 							"px": [0,0],
 							"fieldInstances": [
@@ -8198,7 +8175,7 @@
 					"layerDefUid": 1070,
 					"intGridCsv": [],
 					"__cWid": 100,
-					"__cHei": 56,
+					"__cHei": 48,
 					"__gridSize": 16,
 					"__opacity": 1,
 					"__pxTotalOffsetX": 0,
@@ -8217,18 +8194,18 @@
 					"entityInstances": [
 						{
 							"__identifier": "PlayerStart",
-							"__grid": [36,49],
+							"__grid": [29,41],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#41D1FF",
-							"__worldX": 584,
-							"__worldY": 786,
-							"iid": "PlayerStart-207680",
+							"__worldX": 470,
+							"__worldY": 658,
+							"iid": "PlayerStart-207706",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
-							"px": [584,786],
+							"px": [470,658],
 							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "math_gate_hall_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
 								"id": "V_String",
 								"params": ["math_gate_hall_spawn"]
@@ -8236,18 +8213,893 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [44,40],
+							"__grid": [35,33],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 560,
+							"__worldY": 528,
+							"iid": "Prop-207765",
+							"width": 480,
+							"height": 176,
+							"defUid": 4351,
+							"px": [560,528],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate Cradle", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate Cradle"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_cradle", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_cradle"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [41,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 656,
+							"__worldY": 656,
+							"iid": "MovingPlatform-207708",
+							"width": 288,
+							"height": 48,
+							"defUid": 4251,
+							"px": [656,656],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_plinth", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_plinth"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_plinth", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_plinth"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [35,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 560,
+							"__worldY": 700,
+							"iid": "MovingPlatform-207709",
+							"width": 8,
+							"height": 4,
+							"defUid": 4251,
+							"px": [560,700],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w01", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w01"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w01", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w01"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [64,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 1032,
+							"__worldY": 700,
+							"iid": "MovingPlatform-207710",
+							"width": 8,
+							"height": 4,
+							"defUid": 4251,
+							"px": [1032,700],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e01", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e01"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e01", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e01"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [35,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 568,
+							"__worldY": 696,
+							"iid": "MovingPlatform-207711",
+							"width": 8,
+							"height": 8,
+							"defUid": 4251,
+							"px": [568,696],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w02", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w02"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w02", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w02"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [64,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 1024,
+							"__worldY": 696,
+							"iid": "MovingPlatform-207712",
+							"width": 8,
+							"height": 8,
+							"defUid": 4251,
+							"px": [1024,696],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e02", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e02"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e02", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e02"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [36,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 576,
+							"__worldY": 692,
+							"iid": "MovingPlatform-207713",
+							"width": 8,
+							"height": 12,
+							"defUid": 4251,
+							"px": [576,692],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w03", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w03"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w03", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w03"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [63,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 1016,
+							"__worldY": 692,
+							"iid": "MovingPlatform-207714",
+							"width": 8,
+							"height": 12,
+							"defUid": 4251,
+							"px": [1016,692],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e03", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e03"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e03", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e03"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [36,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 584,
+							"__worldY": 688,
+							"iid": "MovingPlatform-207715",
+							"width": 8,
+							"height": 16,
+							"defUid": 4251,
+							"px": [584,688],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w04", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w04"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w04", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w04"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [63,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 1008,
+							"__worldY": 688,
+							"iid": "MovingPlatform-207716",
+							"width": 8,
+							"height": 16,
+							"defUid": 4251,
+							"px": [1008,688],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e04", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e04"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e04", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e04"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [37,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 592,
+							"__worldY": 684,
+							"iid": "MovingPlatform-207717",
+							"width": 8,
+							"height": 20,
+							"defUid": 4251,
+							"px": [592,684],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w05", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w05"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w05", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w05"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [62,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 1000,
+							"__worldY": 684,
+							"iid": "MovingPlatform-207718",
+							"width": 8,
+							"height": 20,
+							"defUid": 4251,
+							"px": [1000,684],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e05", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e05"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e05", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e05"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [37,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 600,
+							"__worldY": 680,
+							"iid": "MovingPlatform-207719",
+							"width": 8,
+							"height": 24,
+							"defUid": 4251,
+							"px": [600,680],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w06", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w06"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w06", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w06"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [62,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 992,
+							"__worldY": 680,
+							"iid": "MovingPlatform-207720",
+							"width": 8,
+							"height": 24,
+							"defUid": 4251,
+							"px": [992,680],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e06", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e06"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e06", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e06"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [38,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 608,
+							"__worldY": 676,
+							"iid": "MovingPlatform-207721",
+							"width": 8,
+							"height": 28,
+							"defUid": 4251,
+							"px": [608,676],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w07", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w07"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w07", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w07"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [61,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 984,
+							"__worldY": 676,
+							"iid": "MovingPlatform-207722",
+							"width": 8,
+							"height": 28,
+							"defUid": 4251,
+							"px": [984,676],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e07", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e07"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e07", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e07"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [38,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 616,
+							"__worldY": 672,
+							"iid": "MovingPlatform-207723",
+							"width": 8,
+							"height": 32,
+							"defUid": 4251,
+							"px": [616,672],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w08", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w08"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w08", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w08"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [61,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 976,
+							"__worldY": 672,
+							"iid": "MovingPlatform-207724",
+							"width": 8,
+							"height": 32,
+							"defUid": 4251,
+							"px": [976,672],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e08", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e08"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e08", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e08"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [39,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 624,
+							"__worldY": 668,
+							"iid": "MovingPlatform-207725",
+							"width": 8,
+							"height": 36,
+							"defUid": 4251,
+							"px": [624,668],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w09", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w09"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w09", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w09"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [60,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 968,
+							"__worldY": 668,
+							"iid": "MovingPlatform-207726",
+							"width": 8,
+							"height": 36,
+							"defUid": 4251,
+							"px": [968,668],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e09", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e09"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e09", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e09"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [39,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 632,
+							"__worldY": 664,
+							"iid": "MovingPlatform-207727",
+							"width": 8,
+							"height": 40,
+							"defUid": 4251,
+							"px": [632,664],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w10", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w10"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w10", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w10"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [60,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 960,
+							"__worldY": 664,
+							"iid": "MovingPlatform-207728",
+							"width": 8,
+							"height": 40,
+							"defUid": 4251,
+							"px": [960,664],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e10", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e10"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e10", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e10"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [40,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 640,
+							"__worldY": 660,
+							"iid": "MovingPlatform-207729",
+							"width": 8,
+							"height": 44,
+							"defUid": 4251,
+							"px": [640,660],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w11", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w11"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w11", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w11"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [59,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 952,
+							"__worldY": 660,
+							"iid": "MovingPlatform-207730",
+							"width": 8,
+							"height": 44,
+							"defUid": 4251,
+							"px": [952,660],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e11", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e11"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e11", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e11"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [40,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 648,
+							"__worldY": 656,
+							"iid": "MovingPlatform-207731",
+							"width": 8,
+							"height": 48,
+							"defUid": 4251,
+							"px": [648,656],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_w12", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w12"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_w12", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_w12"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [59,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 944,
+							"__worldY": 656,
+							"iid": "MovingPlatform-207732",
+							"width": 8,
+							"height": 48,
+							"defUid": 4251,
+							"px": [944,656],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_step_e12", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e12"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_gate_step_e12", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_gate_step_e12"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [44,29],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"__worldX": 704,
-							"__worldY": 640,
-							"iid": "Prop-207681",
+							"__worldY": 464,
+							"iid": "Prop-207733",
 							"width": 192,
 							"height": 192,
 							"defUid": 4351,
-							"px": [704,640],
+							"px": [704,464],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Math Gate Ring (Math)", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -8261,18 +9113,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [44,40],
+							"__grid": [44,29],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"__worldX": 704,
-							"__worldY": 640,
-							"iid": "Prop-207682",
+							"__worldY": 464,
+							"iid": "Prop-207734",
 							"width": 192,
 							"height": 192,
 							"defUid": 4351,
-							"px": [704,640],
+							"px": [704,464],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Math Gate Portal (Math)", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -8286,18 +9138,18 @@
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [47,40],
+							"__grid": [47,29],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"__worldX": 752,
-							"__worldY": 640,
-							"iid": "LoadingZone-207683",
+							"__worldY": 464,
+							"iid": "LoadingZone-207735",
 							"width": 96,
 							"height": 192,
 							"defUid": 2002,
-							"px": [752,640],
+							"px": [752,464],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "math_gate_return_zone", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -8324,56 +9176,128 @@
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [99,37],
+							"__grid": [93,38],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
-							"__worldX": 1584,
-							"__worldY": 592,
-							"iid": "LoadingZone-207684",
-							"width": 16,
-							"height": 240,
+							"__worldX": 1488,
+							"__worldY": 608,
+							"iid": "LoadingZone-207736",
+							"width": 48,
+							"height": 96,
 							"defUid": 2002,
-							"px": [1584,592],
+							"px": [1488,608],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_gate_hall_east", "__tile": null, "defUid": 3002, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "math_gate_hall_up", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_gate_hall_east"]
+									"params": ["math_gate_hall_up"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "to the town", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "up to the town", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["to the town"]
+									"params": ["up to the town"]
 								}] },
-								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["EdgeExit"]
-								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "math_town_street", "__tile": null, "defUid": 3005, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["math_town_street"]
 								}] },
-								{ "__identifier": "target_zone", "__type": "String", "__value": "math_town_street_west", "__tile": null, "defUid": 3006, "realEditorValues": [{
+								{ "__identifier": "target_zone", "__type": "String", "__value": "math_town_street_down", "__tile": null, "defUid": 3006, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_town_street_west"]
+									"params": ["math_town_street_down"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							]
 						},
 						{
+							"__identifier": "NpcSpawn",
+							"__grid": [13,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 220,
+							"__worldY": 640,
+							"iid": "NpcSpawn-207737",
+							"width": 32,
+							"height": 64,
+							"defUid": 2006,
+							"px": [220,640],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_trent", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_trent"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["townsfolk_roam"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [73,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 1180,
+							"__worldY": 640,
+							"iid": "NpcSpawn-207738",
+							"width": 32,
+							"height": 64,
+							"defUid": 2006,
+							"px": [1180,640],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_walter", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_walter"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["townsfolk_roam"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [82,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 1320,
+							"__worldY": 656,
+							"iid": "NpcSpawn-207739",
+							"width": 32,
+							"height": 48,
+							"defUid": 2006,
+							"px": [1320,656],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_busy_beaver", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_busy_beaver"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["townsfolk_roam"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [41,37],
+							"__grid": [40,25],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 664,
-							"__worldY": 596,
-							"iid": "DebugLabel-207685",
+							"__worldX": 650,
+							"__worldY": 404,
+							"iid": "DebugLabel-207740",
 							"width": 300,
 							"height": 24,
 							"defUid": 2007,
-							"px": [664,596],
+							"px": [650,404],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hall_sign_gate", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -8388,18 +9312,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [12,35],
+							"__grid": [4,29],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 200,
-							"__worldY": 572,
-							"iid": "DebugLabel-207686",
+							"__worldX": 64,
+							"__worldY": 468,
+							"iid": "DebugLabel-207741",
 							"width": 380,
 							"height": 24,
 							"defUid": 2007,
-							"px": [200,572],
+							"px": [64,468],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hall_sign_axioms", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -8414,18 +9338,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [63,35],
+							"__grid": [72,29],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 1020,
-							"__worldY": 572,
-							"iid": "DebugLabel-207687",
+							"__worldX": 1156,
+							"__worldY": 468,
+							"iid": "DebugLabel-207742",
 							"width": 380,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1020,572],
+							"px": [1156,468],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hall_sign_infinity", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -8440,18 +9364,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [2,49],
+							"__grid": [2,41],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
 							"__worldX": 40,
-							"__worldY": 792,
-							"iid": "DebugLabel-207688",
+							"__worldY": 664,
+							"iid": "DebugLabel-207743",
 							"width": 420,
 							"height": 24,
 							"defUid": 2007,
-							"px": [40,792],
+							"px": [40,664],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hall_sign_manifest", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -8483,9 +9407,9 @@
 									"id": "V_String",
 									"params": ["math_gate_hall_label"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "The gate square of the Math dimension.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "The gate hall under the Math town.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["The gate square of the Math dimension."]
+									"params": ["The gate hall under the Math town."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -8635,33 +9559,10 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-						
+						0,0,0,0,0
 					],
 					"__cWid": 100,
-					"__cHei": 56,
+					"__cHei": 48,
 					"__gridSize": 16,
 					"__opacity": 1,
 					"__pxTotalOffsetX": 0,
@@ -8710,9 +9611,9 @@
 					"id": "V_String",
 					"params": ["math_town"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "standing_on_shoulders", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "shoulders_at_rest", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["standing_on_shoulders"]
+					"params": ["shoulders_at_rest"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_town", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -8726,281 +9627,281 @@
 					"iid": "Collision-207694",
 					"layerDefUid": 5024,
 					"intGridCsv": [
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,
+						1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,
 						2,2,2,2,2,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -9142,40 +10043,339 @@
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [0,50],
+							"__grid": [6,59],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
-							"__worldX": 1712,
-							"__worldY": 800,
-							"iid": "LoadingZone-207697",
-							"width": 16,
-							"height": 240,
+							"__worldX": 1808,
+							"__worldY": 944,
+							"iid": "LoadingZone-207752",
+							"width": 48,
+							"height": 96,
 							"defUid": 2002,
-							"px": [0,800],
+							"px": [96,944],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_town_street_west", "__tile": null, "defUid": 3002, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "math_town_street_down", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_town_street_west"]
+									"params": ["math_town_street_down"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "to the gate square", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "down to the gate hall", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["to the gate square"]
+									"params": ["down to the gate hall"]
 								}] },
-								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["EdgeExit"]
-								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "math_gate_hall", "__tile": null, "defUid": 3005, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["math_gate_hall"]
 								}] },
-								{ "__identifier": "target_zone", "__type": "String", "__value": "math_gate_hall_east", "__tile": null, "defUid": 3006, "realEditorValues": [{
+								{ "__identifier": "target_zone", "__type": "String", "__value": "math_gate_hall_up", "__tile": null, "defUid": 3006, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_gate_hall_east"]
+									"params": ["math_gate_hall_up"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [26,61],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 2132,
+							"__worldY": 976,
+							"iid": "NpcSpawn-207753",
+							"width": 32,
+							"height": 64,
+							"defUid": 2006,
+							"px": [420,976],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_peggy", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_peggy"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["townsfolk_roam"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [56,61],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 2612,
+							"__worldY": 976,
+							"iid": "NpcSpawn-207754",
+							"width": 32,
+							"height": 64,
+							"defUid": 2006,
+							"px": [900,976],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_victor", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_victor"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["townsfolk_roam"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [103,46],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 3372,
+							"__worldY": 736,
+							"iid": "NpcSpawn-207755",
+							"width": 32,
+							"height": 64,
+							"defUid": 2006,
+							"px": [1660,736],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_olivia", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_olivia"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["townsfolk_roam"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [12,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1904,
+							"__worldY": 702,
+							"iid": "Prop-207814",
+							"width": 176,
+							"height": 338,
+							"defUid": 4351,
+							"px": [192,702],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "rose_house", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["rose_house"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "math_house_rose", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_house_rose"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [12,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 1904,
+							"__worldY": 702,
+							"iid": "MovingPlatform-207815",
+							"width": 176,
+							"height": 4,
+							"defUid": 4251,
+							"px": [192,702],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "rose_house_walk_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["rose_house_walk_0"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "rose_house_walk_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["rose_house_walk_0"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [27,47],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2144,
+							"__worldY": 758,
+							"iid": "Prop-207816",
+							"width": 188,
+							"height": 282,
+							"defUid": 4351,
+							"px": [432,758],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "dome_house", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["dome_house"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "math_house_dome", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_house_dome"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [31,57],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 2214,
+							"__worldY": 912,
+							"iid": "MovingPlatform-207817",
+							"width": 54,
+							"height": 4,
+							"defUid": 4251,
+							"px": [502,912],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "dome_house_walk_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["dome_house_walk_0"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "dome_house_walk_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["dome_house_walk_0"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [44,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2416,
+							"__worldY": 584,
+							"iid": "Prop-207818",
+							"width": 136,
+							"height": 456,
+							"defUid": 4351,
+							"px": [704,584],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "tower_house", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tower_house"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "math_house_tower", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_house_tower"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [45,48],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 2440,
+							"__worldY": 780,
+							"iid": "MovingPlatform-207819",
+							"width": 88,
+							"height": 4,
+							"defUid": 4251,
+							"px": [728,780],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "tower_house_walk_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tower_house_walk_0"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "tower_house_walk_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tower_house_walk_0"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [57,46],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2624,
+							"__worldY": 739,
+							"iid": "Prop-207820",
+							"width": 232,
+							"height": 301,
+							"defUid": 4351,
+							"px": [912,739],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "shop_house", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["shop_house"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "math_house_shop", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_house_shop"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [100,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3312,
+							"__worldY": 518,
+							"iid": "Prop-207821",
+							"width": 243,
+							"height": 282,
+							"defUid": 4351,
+							"px": [1600,518],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "surveyors_office", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["surveyors_office"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "math_house_arcade", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_house_arcade"]
+								}] }
 							]
 						},
 						{
