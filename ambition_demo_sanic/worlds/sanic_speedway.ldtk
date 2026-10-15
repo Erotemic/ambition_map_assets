@@ -11,7 +11,7 @@
 	"iid": "ambition-sanic-speedway-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 107455,
+	"nextUid": 107456,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -12083,6 +12083,34 @@
 								"id": "V_String",
 								"params": ["monitor_speed"]
 							}] }]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [18,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 292,
+							"__worldY": 434,
+							"iid": "DebugLabel-107455",
+							"width": 16,
+							"height": 16,
+							"defUid": 2007,
+							"px": [292,434],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "start_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["start_sign"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "START   {action:jump}: JUMP   DOWN+{action:spin_dash}: REV   RELEASE DOWN: DASH   {action:transform}: SUPER", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": [
+										"START   {action:jump}: JUMP   DOWN+{action:spin_dash}: REV   RELEASE DOWN: DASH   {action:transform}: SUPER"
+									]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
 						}
 					]
 				},
