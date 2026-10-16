@@ -11,7 +11,7 @@
 	"iid": "ambition-hall-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 111032,
+	"nextUid": 111198,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -12771,17 +12771,17 @@
 							"defUid": 2006,
 							"px": [1456,160],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "sanic", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_evil_heavy", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["sanic"]
+									"params": ["npc_evil_heavy"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Inspect"]
 								}] },
-								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hall_sanic", "__tile": null, "defUid": 3014, "realEditorValues": [{
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hall_npc_evil_heavy", "__tile": null, "defUid": 3014, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hall_sanic"]
+									"params": ["hall_npc_evil_heavy"]
 								}] },
 								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
@@ -12804,6 +12804,108 @@
 							"height": 48,
 							"defUid": 2006,
 							"px": [1584,160],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_evil_failed_prototype", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_evil_failed_prototype"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Inspect"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hall_npc_evil_failed_prototype", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_npc_evil_failed_prototype"]
+								}] },
+								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stand_still"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [107,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 41712,
+							"__worldY": 160,
+							"iid": "NpcSpawn-111177",
+							"width": 32,
+							"height": 48,
+							"defUid": 2006,
+							"px": [1712,160],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_evil_attack_hound", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_evil_attack_hound"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Inspect"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hall_npc_evil_attack_hound", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_npc_evil_attack_hound"]
+								}] },
+								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stand_still"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [115,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 41840,
+							"__worldY": 160,
+							"iid": "NpcSpawn-111178",
+							"width": 32,
+							"height": 48,
+							"defUid": 2006,
+							"px": [1840,160],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "sanic", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["sanic"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Inspect"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hall_sanic", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_sanic"]
+								}] },
+								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stand_still"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [123,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 41968,
+							"__worldY": 160,
+							"iid": "NpcSpawn-111179",
+							"width": 32,
+							"height": 48,
+							"defUid": 2006,
+							"px": [1968,160],
 							"fieldInstances": [
 								{ "__identifier": "character_id", "__type": "String", "__value": "mary_o", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
