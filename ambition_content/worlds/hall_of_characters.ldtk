@@ -11,7 +11,7 @@
 	"iid": "ambition-hall-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 110869,
+	"nextUid": 111032,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -13258,6 +13258,40 @@
 								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hall_npc_hunny_horror_boss", "__tile": null, "defUid": 3014, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["hall_npc_hunny_horror_boss"]
+								}] },
+								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stand_still"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [46,201],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 40744,
+							"__worldY": 3216,
+							"iid": "NpcSpawn-111027",
+							"width": 48,
+							"height": 80,
+							"defUid": 2006,
+							"px": [744,3216],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_wolfenstein_boss", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_wolfenstein_boss"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Inspect"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hall_npc_wolfenstein_boss", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_npc_wolfenstein_boss"]
 								}] },
 								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{

@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 7695,
+	"nextUid": 7700,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -9560,6 +9560,144 @@
 									"params": ["noodly_narthex_to_hub"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Solid",
+							"__grid": [88,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#6B7280",
+							"__worldX": 1408,
+							"__worldY": 400,
+							"iid": "Solid-7695",
+							"width": 384,
+							"height": 32,
+							"defUid": 2001,
+							"px": [1408,400],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "evil_gate_shelf", "__tile": null, "defUid": 3001, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["evil_gate_shelf"]
+							}] }]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [90,13],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1440,
+							"__worldY": 208,
+							"iid": "Prop-7696",
+							"width": 192,
+							"height": 192,
+							"defUid": 4351,
+							"px": [1440,208],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Evil Gate Ring (Home)", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Evil Gate Ring (Home)"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_ring"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [90,13],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1440,
+							"__worldY": 208,
+							"iid": "Prop-7697",
+							"width": 192,
+							"height": 192,
+							"defUid": 4351,
+							"px": [1440,208],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Evil Gate Portal (Home)", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Evil Gate Portal (Home)"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_portal"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [93,13],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 1488,
+							"__worldY": 208,
+							"iid": "LoadingZone-7698",
+							"width": 96,
+							"height": 192,
+							"defUid": 2002,
+							"px": [1488,208],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "evil_gate_home_zone", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["evil_gate_home_zone"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "to the Evil dimension", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["to the Evil dimension"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "evil_gate_forest", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["evil_gate_forest"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "evil_gate_return_zone", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["evil_gate_return_zone"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [105,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 1680,
+							"__worldY": 368,
+							"iid": "Switch-7699",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [1680,368],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "evil_gate_switch", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["evil_gate_switch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "evil_gate_switch", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["evil_gate_switch"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Power the gate", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Power the gate"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "", "__tile": null, "defUid": 4049, "realEditorValues": [] },
+								{ "__identifier": "action", "__type": "String", "__value": "ResetEncounter", "__tile": null, "defUid": 4050, "realEditorValues": [] }
 							]
 						}
 					]
