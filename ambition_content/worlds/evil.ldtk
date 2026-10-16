@@ -11,7 +11,7 @@
 	"iid": "ambition-evil-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 307912,
+	"nextUid": 308017,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -9280,6 +9280,131 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [12,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2201,
+							"__worldY": 601,
+							"iid": "Prop-307918",
+							"width": 152,
+							"height": 103,
+							"defUid": 4351,
+							"px": [201,601],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "guard_post", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["guard_post"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_guard_post", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_guard_post"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [26,30],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2421,
+							"__worldY": 492,
+							"iid": "Prop-307919",
+							"width": 46,
+							"height": 62,
+							"defUid": 4351,
+							"px": [421,492],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "wanted_robot", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wanted_robot"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_wanted_poster", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_wanted_poster"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [51,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2831,
+							"__worldY": 464,
+							"iid": "Prop-307920",
+							"width": 46,
+							"height": 70,
+							"defUid": 4351,
+							"px": [831,464],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "poster_obey", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["poster_obey"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_propaganda_poster_a", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_propaganda_poster_a"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [69,30],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3111,
+							"__worldY": 484,
+							"iid": "Prop-307921",
+							"width": 46,
+							"height": 70,
+							"defUid": 4351,
+							"px": [1111,484],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "poster_papers", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["poster_papers"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_propaganda_poster_c", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_propaganda_poster_c"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [86,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3386,
+							"__worldY": 627,
+							"iid": "Prop-307922",
+							"width": 56,
+							"height": 77,
+							"defUid": 4351,
+							"px": [1386,627],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "searchlight_gate", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["searchlight_gate"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_searchlight", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_searchlight"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "EnemySpawn",
 							"__grid": [40,35],
 							"__pivot": [0,0],
@@ -10092,6 +10217,231 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [22,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 4156,
+							"__worldY": 465,
+							"iid": "Prop-307938",
+							"width": 217,
+							"height": 239,
+							"defUid": 4351,
+							"px": [364,465],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "bunk_bed_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["bunk_bed_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_bunk_bed", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_bunk_bed"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [62,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 4796,
+							"__worldY": 465,
+							"iid": "Prop-307939",
+							"width": 217,
+							"height": 239,
+							"defUid": 4351,
+							"px": [1004,465],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "bunk_bed_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["bunk_bed_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_bunk_bed", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_bunk_bed"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [102,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5436,
+							"__worldY": 465,
+							"iid": "Prop-307940",
+							"width": 217,
+							"height": 239,
+							"defUid": 4351,
+							"px": [1644,465],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "bunk_bed_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["bunk_bed_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_bunk_bed", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_bunk_bed"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [11,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3975,
+							"__worldY": 610,
+							"iid": "Prop-307941",
+							"width": 122,
+							"height": 94,
+							"defUid": 4351,
+							"px": [183,610],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lockers_west", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lockers_west"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_locker_row", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_locker_row"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [78,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5047,
+							"__worldY": 666,
+							"iid": "Prop-307942",
+							"width": 150,
+							"height": 38,
+							"defUid": 4351,
+							"px": [1255,666],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "mess_table", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["mess_table"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_mess_table", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_mess_table"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [118,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5695,
+							"__worldY": 610,
+							"iid": "Prop-307943",
+							"width": 122,
+							"height": 94,
+							"defUid": 4351,
+							"px": [1903,610],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lockers_east", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lockers_east"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_locker_row", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_locker_row"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [55,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 4673,
+							"__worldY": 374,
+							"iid": "Prop-307944",
+							"width": 46,
+							"height": 70,
+							"defUid": 4351,
+							"px": [881,374],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "poster_order", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["poster_order"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_propaganda_poster_b", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_propaganda_poster_b"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [128,30],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5853,
+							"__worldY": 492,
+							"iid": "Prop-307945",
+							"width": 46,
+							"height": 62,
+							"defUid": 4351,
+							"px": [2061,492],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "wanted_barracks", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wanted_barracks"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_wanted_poster", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_wanted_poster"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [151,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6213,
+							"__worldY": 464,
+							"iid": "Prop-307946",
+							"width": 46,
+							"height": 70,
+							"defUid": 4351,
+							"px": [2421,464],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "poster_obey_barracks", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["poster_obey_barracks"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_propaganda_poster_a", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_propaganda_poster_a"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "EnemySpawn",
 							"__grid": [32,39],
 							"__pivot": [0,0],
@@ -10722,17 +11072,17 @@
 					"id": "V_String",
 					"params": ["castle_godwin_tower"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "castle_godwin", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "castle_godwin_lab", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["castle_godwin"]
+					"params": ["castle_godwin_lab"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "military_iron_resolve", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["military_iron_resolve"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "castle_godwin", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "castle_godwin_lab", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["castle_godwin"]
+					"params": ["castle_godwin_lab"]
 				}] }
 			],
 			"layerInstances": [
@@ -11235,6 +11585,156 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [18,99],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6846,
+							"__worldY": 1586,
+							"iid": "Prop-307970",
+							"width": 72,
+							"height": 142,
+							"defUid": 4351,
+							"px": [302,1586],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "vat_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["vat_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_specimen_vat", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_specimen_vat"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [25,99],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6946,
+							"__worldY": 1586,
+							"iid": "Prop-307971",
+							"width": 72,
+							"height": 142,
+							"defUid": 4351,
+							"px": [402,1586],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "vat_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["vat_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_specimen_vat", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_specimen_vat"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [31,99],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 7046,
+							"__worldY": 1586,
+							"iid": "Prop-307972",
+							"width": 72,
+							"height": 142,
+							"defUid": 4351,
+							"px": [502,1586],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "vat_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["vat_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_specimen_vat", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_specimen_vat"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [40,97],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 7186,
+							"__worldY": 1556,
+							"iid": "Prop-307973",
+							"width": 56,
+							"height": 172,
+							"defUid": 4351,
+							"px": [642,1556],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "coil_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coil_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_tesla_coil", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_tesla_coil"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [53,97],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 7406,
+							"__worldY": 1556,
+							"iid": "Prop-307974",
+							"width": 56,
+							"height": 172,
+							"defUid": 4351,
+							"px": [862,1556],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "coil_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coil_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_tesla_coil", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_tesla_coil"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [40,11],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 7191,
+							"__worldY": 191,
+							"iid": "Prop-307975",
+							"width": 168,
+							"height": 65,
+							"defUid": 4351,
+							"px": [647,191],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "operating_table", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["operating_table"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_operating_table", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_operating_table"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "EnemySpawn",
 							"__grid": [47,11],
 							"__pivot": [0,0],
@@ -11385,9 +11885,9 @@
 									"id": "V_String",
 									"params": ["castle_godwin_tower_label"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "Castle Godwin: the tower.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "Castle Godwin: the lab tower.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["Castle Godwin: the tower."]
+									"params": ["Castle Godwin: the lab tower."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -12176,6 +12676,131 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [56,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 8659,
+							"__worldY": 692,
+							"iid": "Prop-307994",
+							"width": 122,
+							"height": 92,
+							"defUid": 4351,
+							"px": [899,692],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "rally_podium", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["rally_podium"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_rally_podium", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_rally_podium"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [44,47],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 8466,
+							"__worldY": 755,
+							"iid": "Prop-307995",
+							"width": 56,
+							"height": 77,
+							"defUid": 4351,
+							"px": [706,755],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "searchlight_west", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["searchlight_west"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_searchlight", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_searchlight"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [72,47],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 8922,
+							"__worldY": 755,
+							"iid": "Prop-307996",
+							"width": 56,
+							"height": 77,
+							"defUid": 4351,
+							"px": [1162,755],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "searchlight_east", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["searchlight_east"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_searchlight", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_searchlight"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [35,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 8321,
+							"__worldY": 462,
+							"iid": "Prop-307997",
+							"width": 46,
+							"height": 70,
+							"defUid": 4351,
+							"px": [561,462],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "poster_hall_obey", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["poster_hall_obey"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_propaganda_poster_a", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_propaganda_poster_a"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [81,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 9061,
+							"__worldY": 462,
+							"iid": "Prop-307998",
+							"width": 46,
+							"height": 70,
+							"defUid": 4351,
+							"px": [1301,462],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "poster_hall_order", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["poster_hall_order"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_propaganda_poster_b", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_propaganda_poster_b"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
 							"__grid": [4,2],
 							"__pivot": [0,0],
@@ -12449,17 +13074,17 @@
 					"id": "V_String",
 					"params": ["castle_godwin_throne"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "castle_godwin", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "castle_godwin_throne", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["castle_godwin"]
+					"params": ["castle_godwin_throne"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "military_iron_resolve", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["military_iron_resolve"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "castle_godwin", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "castle_godwin_throne", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["castle_godwin"]
+					"params": ["castle_godwin_throne"]
 				}] }
 			],
 			"layerInstances": [
@@ -12813,6 +13438,106 @@
 									"params": ["castle_godwin_great_hall_east"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [90,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 11372,
+							"__worldY": 660,
+							"iid": "Prop-308008",
+							"width": 56,
+							"height": 172,
+							"defUid": 4351,
+							"px": [1452,660],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "coil_throne_west", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coil_throne_west"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_tesla_coil", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_tesla_coil"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [97,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 11485,
+							"__worldY": 642,
+							"iid": "Prop-308009",
+							"width": 150,
+							"height": 190,
+							"defUid": 4351,
+							"px": [1565,642],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "iron_throne", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["iron_throne"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_iron_throne", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_iron_throne"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [110,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 11682,
+							"__worldY": 660,
+							"iid": "Prop-308010",
+							"width": 56,
+							"height": 172,
+							"defUid": 4351,
+							"px": [1762,660],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "coil_throne_east", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coil_throne_east"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_tesla_coil", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_tesla_coil"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [12,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 10121,
+							"__worldY": 620,
+							"iid": "Prop-308011",
+							"width": 46,
+							"height": 62,
+							"defUid": 4351,
+							"px": [201,620],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "wanted_throne", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wanted_throne"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "castle_wanted_poster", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_wanted_poster"]
+								}] }
 							]
 						},
 						{
