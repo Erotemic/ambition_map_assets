@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 7700,
+	"nextUid": 7705,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -49727,6 +49727,151 @@
 									"params": ["G: spinning plank <-> shelf"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "GroundItem",
+							"__grid": [8,55],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7FE3C0",
+							"__worldX": 6018,
+							"__worldY": 373,
+							"iid": "GroundItem-7700",
+							"width": 18,
+							"height": 15,
+							"defUid": 5943,
+							"px": [130,885],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "portal_lab_coconut_1", "__tile": null, "defUid": 5940, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_coconut_1"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5941, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coconut"]
+								}] },
+								{ "__identifier": "held_item", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5942, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coconut"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "GroundItem",
+							"__grid": [10,55],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7FE3C0",
+							"__worldX": 6053,
+							"__worldY": 373,
+							"iid": "GroundItem-7701",
+							"width": 18,
+							"height": 15,
+							"defUid": 5943,
+							"px": [165,885],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "portal_lab_coconut_2", "__tile": null, "defUid": 5940, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_coconut_2"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5941, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coconut"]
+								}] },
+								{ "__identifier": "held_item", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5942, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coconut"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "GroundItem",
+							"__grid": [12,55],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7FE3C0",
+							"__worldX": 6088,
+							"__worldY": 373,
+							"iid": "GroundItem-7702",
+							"width": 18,
+							"height": 15,
+							"defUid": 5943,
+							"px": [200,885],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "portal_lab_coconut_3", "__tile": null, "defUid": 5940, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_coconut_3"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5941, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coconut"]
+								}] },
+								{ "__identifier": "held_item", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5942, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coconut"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "GroundItem",
+							"__grid": [164,17],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7FE3C0",
+							"__worldX": 8519,
+							"__worldY": -239,
+							"iid": "GroundItem-7703",
+							"width": 18,
+							"height": 15,
+							"defUid": 5943,
+							"px": [2631,273],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "portal_lab_coconut_4", "__tile": null, "defUid": 5940, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_coconut_4"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5941, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coconut"]
+								}] },
+								{ "__identifier": "held_item", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5942, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coconut"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "GroundItem",
+							"__grid": [168,17],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7FE3C0",
+							"__worldX": 8589,
+							"__worldY": -239,
+							"iid": "GroundItem-7704",
+							"width": 18,
+							"height": 15,
+							"defUid": 5943,
+							"px": [2701,273],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "portal_lab_coconut_5", "__tile": null, "defUid": 5940, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_coconut_5"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5941, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coconut"]
+								}] },
+								{ "__identifier": "held_item", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5942, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coconut"]
+								}] }
 							]
 						}
 					]
