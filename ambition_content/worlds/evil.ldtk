@@ -8161,9 +8161,9 @@
 					"id": "V_String",
 					"params": ["evil_forest"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "oppressive_crush", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "tritone_decree", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["oppressive_crush"]
+					"params": ["tritone_decree"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "evil_forest", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -9069,9 +9069,9 @@
 					"id": "V_String",
 					"params": ["castle_godwin"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "military_iron_resolve", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "tritone_decree", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["military_iron_resolve"]
+					"params": ["tritone_decree"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "castle_godwin", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -9957,9 +9957,9 @@
 					"id": "V_String",
 					"params": ["castle_godwin"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "military_iron_resolve", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "tritone_decree", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["military_iron_resolve"]
+					"params": ["tritone_decree"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "castle_godwin", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -11299,9 +11299,9 @@
 					"id": "V_String",
 					"params": ["castle_godwin_lab"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "military_iron_resolve", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "tritone_decree", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["military_iron_resolve"]
+					"params": ["tritone_decree"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "castle_godwin_lab", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -12404,9 +12404,9 @@
 					"id": "V_String",
 					"params": ["castle_godwin"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "military_iron_resolve", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "tritone_decree", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["military_iron_resolve"]
+					"params": ["tritone_decree"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "castle_godwin", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
