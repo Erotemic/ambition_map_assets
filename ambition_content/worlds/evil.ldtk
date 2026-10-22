@@ -11,7 +11,7 @@
 	"iid": "ambition-evil-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 308397,
+	"nextUid": 308420,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -8198,9 +8198,9 @@
 					"id": "V_String",
 					"params": ["evil_forest"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "tritone_decree", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "oppressive_crush", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["tritone_decree"]
+					"params": ["oppressive_crush"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "evil_forest", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -8872,6 +8872,39 @@
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_evil_zombie", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["npc_evil_zombie"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [51,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 820,
+							"__worldY": 600,
+							"iid": "EnemySpawn-308415",
+							"width": 56,
+							"height": 56,
+							"defUid": 2008,
+							"px": [820,600],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "evil_gate_forest_wolf_1", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["evil_gate_forest_wolf_1"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_evil_spectral_wolf", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_evil_spectral_wolf"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
 									"id": "V_String",
