@@ -12377,6 +12377,10 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["townsfolk_roam"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "erdish", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["erdish"]
 								}] }
 							]
 						},
