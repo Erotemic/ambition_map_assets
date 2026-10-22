@@ -8485,6 +8485,10 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["townsfolk_roam"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "trent", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["trent"]
 								}] }
 							]
 						},
@@ -8510,6 +8514,10 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["townsfolk_roam"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "walter", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["walter"]
 								}] }
 							]
 						},
@@ -8535,6 +8543,10 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["townsfolk_roam"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "busy_beaver", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["busy_beaver"]
 								}] }
 							]
 						},
@@ -11080,6 +11092,10 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["townsfolk_roam"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "peggy", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["peggy"]
 								}] }
 							]
 						},
@@ -11105,6 +11121,10 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["townsfolk_roam"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "victor", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["victor"]
 								}] }
 							]
 						},
@@ -11130,6 +11150,10 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["townsfolk_roam"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "data_lovelace", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["data_lovelace"]
 								}] }
 							]
 						},
@@ -11155,6 +11179,10 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["townsfolk_roam"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "olivia", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["olivia"]
 								}] }
 							]
 						},
@@ -11180,6 +11208,10 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["townsfolk_roam"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "leib_knives", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["leib_knives"]
 								}] }
 							]
 						},
@@ -11205,6 +11237,10 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["townsfolk_roam"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hypatia_prime", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hypatia_prime"]
 								}] }
 							]
 						},
@@ -12406,6 +12442,10 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["townsfolk_roam"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "emmy_noether_cafe", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["emmy_noether_cafe"]
 								}] }
 							]
 						},
@@ -12950,6 +12990,10 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["townsfolk_roam"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "georg_canter", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["georg_canter"]
 								}] }
 							]
 						},
@@ -13508,6 +13552,10 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "townsfolk_roam", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["townsfolk_roam"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "davy_hylbert", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["davy_hylbert"]
 								}] }
 							]
 						},
