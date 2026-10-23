@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 7718,
+	"nextUid": 7717,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -9702,18 +9702,18 @@
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [80,55],
+							"__grid": [94,55],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
-							"__worldX": 1280,
+							"__worldX": 1504,
 							"__worldY": 880,
 							"iid": "LoadingZone-7716",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [1280,880],
+							"px": [1504,880],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "gnu_ton_handle_hub_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -9724,53 +9724,15 @@
 									"params": ["to GNU-ton gravity handle"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
-								{ "__identifier": "target_room", "__type": "String", "__value": "gnu_ton_outer_handle", "__tile": null, "defUid": 3005, "realEditorValues": [{
+								{ "__identifier": "target_room", "__type": "String", "__value": "gnu_ton_orchard", "__tile": null, "defUid": 3005, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gnu_ton_outer_handle"]
+									"params": ["gnu_ton_orchard"]
 								}] },
-								{ "__identifier": "target_zone", "__type": "String", "__value": "outer_arrival_from_hub", "__tile": null, "defUid": 3006, "realEditorValues": [{
+								{ "__identifier": "target_zone", "__type": "String", "__value": "orchard_hub_door", "__tile": null, "defUid": 3006, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["outer_arrival_from_hub"]
+									"params": ["orchard_hub_door"]
 								}] },
-								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ false ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "LoadingZone",
-							"__grid": [85,55],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFD166",
-							"__worldX": 1360,
-							"__worldY": 880,
-							"iid": "LoadingZone-7717",
-							"width": 48,
-							"height": 96,
-							"defUid": 2002,
-							"px": [1360,880],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "gnu_ton_handle_hub_arrival", "__tile": null, "defUid": 3002, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gnu_ton_handle_hub_arrival"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gnu ton handle hub arrival", "__tile": null, "defUid": 3003, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gnu ton handle hub arrival"]
-								}] },
-								{ "__identifier": "activation", "__type": "String", "__value": "Walk", "__tile": null, "defUid": 3004, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["Walk"]
-								}] },
-								{ "__identifier": "target_room", "__type": "String", "__value": "", "__tile": null, "defUid": 3005, "realEditorValues": [] },
-								{ "__identifier": "target_zone", "__type": "String", "__value": "", "__tile": null, "defUid": 3006, "realEditorValues": [] },
-								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ false ]
-								}] }
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							]
 						}
 					]
