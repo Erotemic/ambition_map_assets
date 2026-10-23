@@ -6140,7 +6140,7 @@
 		}
 	], "tilesets": [
 		{
-			"__cHei": 14,
+			"__cHei": 15,
 			"__cWid": 16,
 			"cachedPixelData": null,
 			"customData": [],
@@ -6148,7 +6148,7 @@
 			"enumTags": [],
 			"identifier": "sprite_player_robot_v3",
 			"padding": 0,
-			"pxHei": 3783,
+			"pxHei": 3882,
 			"pxWid": 4096,
 			"relPath": "../sprites/player_robot_v3_spritesheet.png",
 			"savedSelections": [],
