@@ -8574,7 +8574,7 @@
 						},
 						{
 							"__identifier": "NpcSpawn",
-							"__grid": [71,56],
+							"__grid": [106,56],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -8583,7 +8583,7 @@
 							"width": 42,
 							"height": 68,
 							"defUid": 2006,
-							"px": [1150,904],
+							"px": [1700,904],
 							"fieldInstances": [
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_kernel_guide", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
@@ -8600,7 +8600,7 @@
 								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 96, "__tile": null, "defUid": 4123, "realEditorValues": [{ "id": "V_Float", "params": [96] }] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4343, "realEditorValues": [] }
 							],
-							"__worldX": 1150,
+							"__worldX": 1700,
 							"__worldY": 904
 						},
 						{
