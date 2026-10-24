@@ -11,7 +11,7 @@
 	"iid": "ambition-ninja-village-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 707811,
+	"nextUid": 707939,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -8426,6 +8426,106 @@
 					"gridTiles": [],
 					"entityInstances": [
 						{
+							"__identifier": "Prop",
+							"__grid": [60,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 960,
+							"__worldY": 448,
+							"iid": "Prop-707814",
+							"width": 640,
+							"height": 256,
+							"defUid": 4351,
+							"px": [960,448],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_shrine_stair_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_shrine_stair_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_shrine_stair", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_shrine_stair"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [74,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1192,
+							"__worldY": 292,
+							"iid": "Prop-707815",
+							"width": 156,
+							"height": 156,
+							"defUid": 4351,
+							"px": [1192,292],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_torii_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_torii_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_torii", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_torii"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [83,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1338,
+							"__worldY": 292,
+							"iid": "Prop-707816",
+							"width": 262,
+							"height": 156,
+							"defUid": 4351,
+							"px": [1338,292],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_shrine_hall_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_shrine_hall_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_shrine_hall", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_shrine_hall"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [33,34],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 535,
+							"__worldY": 548,
+							"iid": "Prop-707817",
+							"width": 402,
+							"height": 156,
+							"defUid": 4351,
+							"px": [535,548],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_shrine_small_things_3", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_shrine_small_things_3"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_shrine_small_things", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_shrine_small_things"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [19,38],
 							"__pivot": [0,0],
@@ -9301,6 +9401,181 @@
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
+						{
+							"__identifier": "Prop",
+							"__grid": [0,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1856,
+							"__worldY": 470,
+							"iid": "Prop-707833",
+							"width": 520,
+							"height": 298,
+							"defUid": 4351,
+							"px": [0,470],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_house_baker_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_house_baker_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_house_baker", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_house_baker"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [32,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2376,
+							"__worldY": 474,
+							"iid": "Prop-707834",
+							"width": 520,
+							"height": 294,
+							"defUid": 4351,
+							"px": [520,474],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_house_weaver_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_house_weaver_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_house_weaver", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_house_weaver"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [65,33],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2896,
+							"__worldY": 538,
+							"iid": "Prop-707835",
+							"width": 480,
+							"height": 230,
+							"defUid": 4351,
+							"px": [1040,538],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_tea_house_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_tea_house_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_tea_house", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_tea_house"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [95,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3376,
+							"__worldY": 442,
+							"iid": "Prop-707836",
+							"width": 480,
+							"height": 326,
+							"defUid": 4351,
+							"px": [1520,442],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_dojo_front_3", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_dojo_front_3"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_dojo_front", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_dojo_front"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [125,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3856,
+							"__worldY": 410,
+							"iid": "Prop-707837",
+							"width": 440,
+							"height": 358,
+							"defUid": 4351,
+							"px": [2000,410],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_storehouse_4", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_storehouse_4"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_storehouse", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_storehouse"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [137,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 4048,
+							"__worldY": 666,
+							"iid": "Prop-707838",
+							"width": 96,
+							"height": 102,
+							"defUid": 4351,
+							"px": [2192,666],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_notice_board_5", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_notice_board_5"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_notice_board", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_notice_board"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [152,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 4296,
+							"__worldY": 322,
+							"iid": "Prop-707839",
+							"width": 376,
+							"height": 446,
+							"defUid": 4351,
+							"px": [2440,322],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_watch_house_6", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_watch_house_6"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_watch_house", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_watch_house"]
+								}] }
+							]
+						},
 						{
 							"__identifier": "LoadingZone",
 							"__grid": [0,42],
@@ -10430,6 +10705,206 @@
 					"gridTiles": [],
 					"entityInstances": [
 						{
+							"__identifier": "Prop",
+							"__grid": [0,8],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 4938,
+							"__worldY": 134,
+							"iid": "Prop-707921",
+							"width": 392,
+							"height": 698,
+							"defUid": 4351,
+							"px": [10,134],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_cedar_0_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_cedar_0_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_cedar_0", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_cedar_0"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [23,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5302,
+							"__worldY": 198,
+							"iid": "Prop-707922",
+							"width": 392,
+							"height": 634,
+							"defUid": 4351,
+							"px": [374,198],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_cedar_1_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_cedar_1_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_cedar_1", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_cedar_1"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [47,16],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5689,
+							"__worldY": 262,
+							"iid": "Prop-707923",
+							"width": 380,
+							"height": 570,
+							"defUid": 4351,
+							"px": [761,262],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_cedar_2_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_cedar_2_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_cedar_2", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_cedar_2"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [71,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6074,
+							"__worldY": 326,
+							"iid": "Prop-707924",
+							"width": 378,
+							"height": 506,
+							"defUid": 4351,
+							"px": [1146,326],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_cedar_3_3", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_cedar_3_3"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_cedar_3", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_cedar_3"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [95,24],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6450,
+							"__worldY": 390,
+							"iid": "Prop-707925",
+							"width": 392,
+							"height": 442,
+							"defUid": 4351,
+							"px": [1522,390],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_cedar_4_4", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_cedar_4_4"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_cedar_4", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_cedar_4"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [119,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6837,
+							"__worldY": 454,
+							"iid": "Prop-707926",
+							"width": 379,
+							"height": 378,
+							"defUid": 4351,
+							"px": [1909,454],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_cedar_5_5", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_cedar_5_5"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_cedar_5", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_cedar_5"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [143,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 7220,
+							"__worldY": 518,
+							"iid": "Prop-707927",
+							"width": 392,
+							"height": 314,
+							"defUid": 4351,
+							"px": [2292,518],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_cedar_6_6", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_cedar_6_6"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_cedar_6", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_cedar_6"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [162,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 7535,
+							"__worldY": 630,
+							"iid": "Prop-707865",
+							"width": 209,
+							"height": 202,
+							"defUid": 4351,
+							"px": [2607,630],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_clan_gatehouse_7", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_clan_gatehouse_7"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_clan_gatehouse", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_clan_gatehouse"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [0,46],
 							"__pivot": [0,0],
@@ -11216,6 +11691,56 @@
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
+						{
+							"__identifier": "Prop",
+							"__grid": [1,2],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1872,
+							"__worldY": 1184,
+							"iid": "Prop-707879",
+							"width": 512,
+							"height": 480,
+							"defUid": 4351,
+							"px": [16,32],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_dojo_entry_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_dojo_entry_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_dojo_entry", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_dojo_entry"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [33,2],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2384,
+							"__worldY": 1184,
+							"iid": "Prop-707880",
+							"width": 1056,
+							"height": 480,
+							"defUid": 4351,
+							"px": [528,32],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_dojo_exam_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_dojo_exam_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_dojo_exam", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_dojo_exam"]
+								}] }
+							]
+						},
 						{
 							"__identifier": "LoadingZone",
 							"__grid": [2,26],

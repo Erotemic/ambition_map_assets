@@ -11,7 +11,7 @@
 	"iid": "ambition-pirate-port-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 607798,
+	"nextUid": 607877,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -8426,6 +8426,81 @@
 					"gridTiles": [],
 					"entityInstances": [
 						{
+							"__identifier": "Prop",
+							"__grid": [62,7],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1000,
+							"__worldY": 120,
+							"iid": "Prop-607801",
+							"width": 600,
+							"height": 584,
+							"defUid": 4351,
+							"px": [1000,120],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_harbour_house_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_harbour_house_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_harbour_house", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_harbour_house"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [33,35],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 543,
+							"__worldY": 560,
+							"iid": "Prop-607802",
+							"width": 286,
+							"height": 144,
+							"defUid": 4351,
+							"px": [543,560],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_freight_booth_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_freight_booth_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_freight_booth", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_freight_booth"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [6,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 109,
+							"__worldY": 604,
+							"iid": "Prop-607803",
+							"width": 18,
+							"height": 100,
+							"defUid": 4351,
+							"px": [109,604],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_lamp_post_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_lamp_post_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_lamp_post", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_lamp_post"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [19,38],
 							"__pivot": [0,0],
@@ -9303,6 +9378,206 @@
 					"gridTiles": [],
 					"entityInstances": [
 						{
+							"__identifier": "Prop",
+							"__grid": [0,11],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1862,
+							"__worldY": 179,
+							"iid": "Prop-607820",
+							"width": 566,
+							"height": 589,
+							"defUid": 4351,
+							"px": [6,179],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_waterfront_west_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_waterfront_west_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_waterfront_west", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_waterfront_west"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [34,9],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2406,
+							"__worldY": 153,
+							"iid": "Prop-607821",
+							"width": 564,
+							"height": 615,
+							"defUid": 4351,
+							"px": [550,153],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_waterfront_middle_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_waterfront_middle_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_waterfront_middle", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_waterfront_middle"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [68,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2946,
+							"__worldY": 174,
+							"iid": "Prop-607822",
+							"width": 520,
+							"height": 594,
+							"defUid": 4351,
+							"px": [1090,174],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_tavern_front_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_tavern_front_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_tavern_front", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_tavern_front"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [25,35],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2256,
+							"__worldY": 560,
+							"iid": "Prop-607823",
+							"width": 256,
+							"height": 208,
+							"defUid": 4351,
+							"px": [400,560],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_waterfront_stair_3", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_waterfront_stair_3"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_waterfront_stair", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_waterfront_stair"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [47,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2613,
+							"__worldY": 653,
+							"iid": "Prop-607824",
+							"width": 204,
+							"height": 115,
+							"defUid": 4351,
+							"px": [757,653],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_chandler_stall_4", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_chandler_stall_4"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_chandler_stall", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_chandler_stall"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [104,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3520,
+							"__worldY": 434,
+							"iid": "Prop-607825",
+							"width": 352,
+							"height": 334,
+							"defUid": 4351,
+							"px": [1664,434],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_chandlery_5", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_chandlery_5"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_chandlery", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_chandlery"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [130,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3936,
+							"__worldY": 364,
+							"iid": "Prop-607826",
+							"width": 480,
+							"height": 404,
+							"defUid": 4351,
+							"px": [2080,364],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_net_loft_6", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_net_loft_6"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_net_loft", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_net_loft"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [101,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3473,
+							"__worldY": 668,
+							"iid": "Prop-607827",
+							"width": 18,
+							"height": 100,
+							"defUid": 4351,
+							"px": [1617,668],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_lamp_post_7", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_lamp_post_7"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_lamp_post", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_lamp_post"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [0,42],
 							"__pivot": [0,0],
@@ -10126,6 +10401,31 @@
 					"gridTiles": [],
 					"entityInstances": [
 						{
+							"__identifier": "Prop",
+							"__grid": [1,2],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1872,
+							"__worldY": 1184,
+							"iid": "Prop-607845",
+							"width": 992,
+							"height": 352,
+							"defUid": 4351,
+							"px": [16,32],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_tavern_room_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_tavern_room_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_tavern_room", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_tavern_room"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [2,18],
 							"__pivot": [0,0],
@@ -10793,6 +11093,131 @@
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
+						{
+							"__identifier": "Prop",
+							"__grid": [0,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 4676,
+							"__worldY": 232,
+							"iid": "Prop-607857",
+							"width": 879,
+							"height": 696,
+							"defUid": 4351,
+							"px": [4,232],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_gantry_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_gantry_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_gantry", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_gantry"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [52,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5508,
+							"__worldY": 448,
+							"iid": "Prop-607858",
+							"width": 668,
+							"height": 480,
+							"defUid": 4351,
+							"px": [836,448],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_warehouse_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_warehouse_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_warehouse", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_warehouse"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [93,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6172,
+							"__worldY": 200,
+							"iid": "Prop-607859",
+							"width": 1132,
+							"height": 568,
+							"defUid": 4351,
+							"px": [1500,200],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_brig_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_brig_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_brig", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_brig"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [15,45],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 4926,
+							"__worldY": 728,
+							"iid": "Prop-607860",
+							"width": 106,
+							"height": 40,
+							"defUid": 4351,
+							"px": [254,728],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_dock_clutter_3", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_dock_clutter_3"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_dock_clutter", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_dock_clutter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [161,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 7261,
+							"__worldY": 668,
+							"iid": "Prop-607861",
+							"width": 18,
+							"height": 100,
+							"defUid": 4351,
+							"px": [2589,668],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_lamp_post_4", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_lamp_post_4"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_lamp_post", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_lamp_post"]
+								}] }
+							]
+						},
 						{
 							"__identifier": "WaterVolume",
 							"__grid": [0,49],
