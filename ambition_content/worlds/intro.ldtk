@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 104998,
+	"nextUid": 105000,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -15308,9 +15308,9 @@
 									"id": "V_String",
 									"params": ["central_hub_complex"]
 								}] },
-								{ "__identifier": "target_zone", "__type": "String", "__value": "intro_wake_door", "__tile": null, "defUid": 3006, "realEditorValues": [{
+								{ "__identifier": "target_zone", "__type": "String", "__value": "gate_stack_portal", "__tile": null, "defUid": 3006, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["intro_wake_door"]
+									"params": ["gate_stack_portal"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
 									"id": "V_Bool",
@@ -15856,19 +15856,13 @@
 									"id": "V_String",
 									"params": ["math_gate_home_zone"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "to the Math dimension", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "ring 7", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["to the Math dimension"]
+									"params": ["ring 7"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
-								{ "__identifier": "target_room", "__type": "String", "__value": "math_gate_hall", "__tile": null, "defUid": 3005, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_hall"]
-								}] },
-								{ "__identifier": "target_zone", "__type": "String", "__value": "math_gate_return_zone", "__tile": null, "defUid": 3006, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_gate_return_zone"]
-								}] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "", "__tile": null, "defUid": 3005, "realEditorValues": [] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "", "__tile": null, "defUid": 3006, "realEditorValues": [] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ false ]
@@ -15894,12 +15888,16 @@
 									"id": "V_String",
 									"params": ["math_gate_switch"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "math_gate_switch", "__tile": null, "defUid": 4047, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "Ring 7 breaker", "__tile": null, "defUid": 4047, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_gate_switch"]
+									"params": ["Ring 7 breaker"]
 								}] },
 								{ "__identifier": "target_encounter", "__type": "String", "__value": "", "__tile": null, "defUid": 4049, "realEditorValues": [] },
-								{ "__identifier": "action", "__type": "String", "__value": "ResetEncounter", "__tile": null, "defUid": 4050, "realEditorValues": [] }
+								{ "__identifier": "action", "__type": "String", "__value": "ResetEncounter", "__tile": null, "defUid": 4050, "realEditorValues": [] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Throw the breaker", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Throw the breaker"]
+								}] }
 							]
 						},
 						{
@@ -15921,11 +15919,70 @@
 									"id": "V_String",
 									"params": ["gate_stack_sign_gate_seven"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "GATE 7: MATH (see the switch)", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "RING 7: the Math line (power: the breaker)", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["GATE 7: MATH (see the switch)"]
+									"params": ["RING 7: the Math line (power: the breaker)"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [87,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6328,
+							"__worldY": 680,
+							"iid": "Prop-104998",
+							"width": 64,
+							"height": 56,
+							"defUid": 104426,
+							"px": [1400,680],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Ring 7 (Home) Dialer", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Ring 7 (Home) Dialer"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_dialer"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [88,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 6348,
+							"__worldY": 692,
+							"iid": "Switch-104999",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [1420,692],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "ring7_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ring7_terminal"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Ring 7 (Home) terminal", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Ring 7 (Home) terminal"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Dial the gate", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Dial the gate"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "", "__tile": null, "defUid": 4049, "realEditorValues": [] },
+								{ "__identifier": "action", "__type": "String", "__value": "GateTerminal", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["GateTerminal"]
+								}] }
 							]
 						}
 					]
