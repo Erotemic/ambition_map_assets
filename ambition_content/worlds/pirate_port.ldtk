@@ -11,7 +11,7 @@
 	"iid": "ambition-pirate-port-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 607877,
+	"nextUid": 607882,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -8501,44 +8501,6 @@
 							]
 						},
 						{
-							"__identifier": "LoadingZone",
-							"__grid": [19,38],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFD166",
-							"__worldX": 312,
-							"__worldY": 608,
-							"iid": "LoadingZone-607720",
-							"width": 48,
-							"height": 96,
-							"defUid": 2002,
-							"px": [312,608],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "pirate_port_gate_arrival", "__tile": null, "defUid": 3002, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["pirate_port_gate_arrival"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "the gate (for now, home to the hub)", "__tile": null, "defUid": 3003, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["the gate (for now, home to the hub)"]
-								}] },
-								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
-								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["central_hub_complex"]
-								}] },
-								{ "__identifier": "target_zone", "__type": "String", "__value": "pirate_cove_door", "__tile": null, "defUid": 3006, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["pirate_cove_door"]
-								}] },
-								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ false ]
-								}] }
-							]
-						},
-						{
 							"__identifier": "PlayerStart",
 							"__grid": [20,41],
 							"__pivot": [0,0],
@@ -8795,6 +8757,147 @@
 									"params": ["THE PIRATE PORT: THE GATE PLAZA"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [10,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 160,
+							"__worldY": 512,
+							"iid": "Prop-607877",
+							"width": 192,
+							"height": 192,
+							"defUid": 4351,
+							"px": [160,512],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Port Gate (Plaza) Ring", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Port Gate (Plaza) Ring"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_ring"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [10,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 160,
+							"__worldY": 512,
+							"iid": "Prop-607878",
+							"width": 192,
+							"height": 192,
+							"defUid": 4351,
+							"px": [160,512],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Port Gate (Plaza) Portal", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Port Gate (Plaza) Portal"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_portal"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [13,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 208,
+							"__worldY": 512,
+							"iid": "LoadingZone-607879",
+							"width": 96,
+							"height": 192,
+							"defUid": 2002,
+							"px": [208,512],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "pirate_port_gate_arrival", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pirate_port_gate_arrival"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the gate", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the gate"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "", "__tile": null, "defUid": 3005, "realEditorValues": [] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "", "__tile": null, "defUid": 3006, "realEditorValues": [] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [22,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 364,
+							"__worldY": 648,
+							"iid": "Prop-607880",
+							"width": 64,
+							"height": 56,
+							"defUid": 4351,
+							"px": [364,648],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Port Gate (Plaza) Dialer", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Port Gate (Plaza) Dialer"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_dialer"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [24,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 384,
+							"__worldY": 660,
+							"iid": "Switch-607881",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [384,660],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "pirate_port_gate_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pirate_port_gate_terminal"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Port Gate (Plaza) terminal", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Port Gate (Plaza) terminal"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Dial the gate", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Dial the gate"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "", "__tile": null, "defUid": 4049, "realEditorValues": [] },
+								{ "__identifier": "action", "__type": "String", "__value": "GateTerminal", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["GateTerminal"]
+								}] }
 							]
 						}
 					]
