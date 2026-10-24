@@ -8178,10 +8178,7 @@
 				{ "__identifier": "nameplate_full_opacity_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6573, "realEditorValues": [] },
 				{ "__identifier": "nameplate_fade_out_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6574, "realEditorValues": [] },
 				{ "__identifier": "gallery", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6810, "realEditorValues": [] },
-				{ "__identifier": "entry_cutscene", "__type": "String", "__value": "test_intro", "__tile": null, "defUid": 6897, "realEditorValues": [{
-					"id": "V_String",
-					"params": ["test_intro"]
-				}] }
+				{ "__identifier": "entry_cutscene", "__type": "String", "__value": null, "__tile": null, "defUid": 6897, "realEditorValues": [] }
 			],
 			"layerInstances": [
 				{
