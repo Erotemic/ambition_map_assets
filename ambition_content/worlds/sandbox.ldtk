@@ -8865,7 +8865,7 @@
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [62,52],
+							"__grid": [68,52],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -8874,7 +8874,7 @@
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [1000,832],
+							"px": [1100,832],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "gate_stack_portal", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -8898,7 +8898,7 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 1000,
+							"__worldX": 1100,
 							"__worldY": 832
 						},
 						{
