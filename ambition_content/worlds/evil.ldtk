@@ -15385,9 +15385,7 @@
 								}] },
 								{ "__identifier": "wakes_after", "__type": "EntityRef", "__value": { "entityIid": "BossSpawn-308313", "layerIid": "Ambition-307833", "levelIid": "castle_godwin_throne-307831", "worldIid": "ambition-evil-world" }, "__tile": null, "defUid": 308188, "realEditorValues": [{
 									"id": "V_String",
-									"params": [
-										"{'entityIid': 'BossSpawn-308313', 'layerIid': 'Ambition-307833', 'levelIid': 'castle_godwin_throne-307831', 'worldIid': 'ambition-evil-world'}"
-									]
+									"params": ["BossSpawn-308313"]
 								}] }
 							]
 						},
@@ -21192,9 +21190,7 @@
 									"worldIid": "ambition-evil-world"
 								}, "__tile": null, "defUid": 308188, "realEditorValues": [{
 									"id": "V_String",
-									"params": [
-										"{'entityIid': 'BossSpawn-308381', 'layerIid': 'Ambition-308374', 'levelIid': 'hall_wolfenstein_arena-308366', 'worldIid': 'ambition-evil-world'}"
-									]
+									"params": ["BossSpawn-308381"]
 								}] }
 							]
 						},

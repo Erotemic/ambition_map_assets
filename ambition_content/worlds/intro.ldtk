@@ -9038,9 +9038,7 @@
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
 								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": { "entityIid": "EnemySpawn-104914", "layerIid": "Ambition-104443", "levelIid": "pirate_sky_arena-104441", "worldIid": "ambition-intro-world" }, "__tile": null, "defUid": 104913, "realEditorValues": [{
 									"id": "V_String",
-									"params": [
-										"{'entityIid': 'EnemySpawn-104914', 'layerIid': 'Ambition-104443', 'levelIid': 'pirate_sky_arena-104441', 'worldIid': 'ambition-intro-world'}"
-									]
+									"params": ["EnemySpawn-104914"]
 								}] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 104930, "realEditorValues": [{
 									"id": "V_String",
@@ -9078,9 +9076,7 @@
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
 								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": { "entityIid": "EnemySpawn-104915", "layerIid": "Ambition-104443", "levelIid": "pirate_sky_arena-104441", "worldIid": "ambition-intro-world" }, "__tile": null, "defUid": 104913, "realEditorValues": [{
 									"id": "V_String",
-									"params": [
-										"{'entityIid': 'EnemySpawn-104915', 'layerIid': 'Ambition-104443', 'levelIid': 'pirate_sky_arena-104441', 'worldIid': 'ambition-intro-world'}"
-									]
+									"params": ["EnemySpawn-104915"]
 								}] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 104930, "realEditorValues": [{
 									"id": "V_String",
@@ -9118,9 +9114,7 @@
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4344, "realEditorValues": [] },
 								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": { "entityIid": "EnemySpawn-104916", "layerIid": "Ambition-104443", "levelIid": "pirate_sky_arena-104441", "worldIid": "ambition-intro-world" }, "__tile": null, "defUid": 104913, "realEditorValues": [{
 									"id": "V_String",
-									"params": [
-										"{'entityIid': 'EnemySpawn-104916', 'layerIid': 'Ambition-104443', 'levelIid': 'pirate_sky_arena-104441', 'worldIid': 'ambition-intro-world'}"
-									]
+									"params": ["EnemySpawn-104916"]
 								}] },
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_pirate_raider", "__tile": null, "defUid": 104930, "realEditorValues": [{
 									"id": "V_String",
@@ -16806,9 +16800,7 @@
 									"worldIid": "ambition-intro-world"
 								}, "__tile": null, "defUid": 104932, "realEditorValues": [{
 									"id": "V_String",
-									"params": [
-										"{'entityIid': 'KinematicPath-104852', 'layerIid': 'Ambition-104844', 'levelIid': 'combat_calibration_lab-104842', 'worldIid': 'ambition-intro-world'}"
-									]
+									"params": ["KinematicPath-104852"]
 								}] }
 							],
 							"__worldX": 6928,

@@ -19590,9 +19590,7 @@
 									"worldIid": "ambition-gnu-ton-handle-world"
 								}, "__tile": null, "defUid": 6832, "realEditorValues": [{
 									"id": "V_String",
-									"params": [
-										"{'entityIid': 'EnemySpawn-409628', 'layerIid': 'Ambition-409622', 'levelIid': 'gnu_ton_shoulders-409620', 'worldIid': 'ambition-gnu-ton-handle-world'}"
-									]
+									"params": ["EnemySpawn-409628"]
 								}] },
 								{ "__identifier": "encounter_id", "__type": "String", "__value": "gnu_ton_handle.gnu_ton", "__tile": null, "defUid": 6863, "realEditorValues": [{
 									"id": "V_String",
