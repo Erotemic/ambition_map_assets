@@ -16811,10 +16811,7 @@
 									"id": "V_String",
 									"params": ["Default"]
 								}] },
-								{ "__identifier": "clamp_mode", "__type": "String", "__value": "zone_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["zone_bounds"]
-								}] }
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							]
 						}
 					]
@@ -24165,10 +24162,7 @@
 									"id": "V_String",
 									"params": ["Default"]
 								}] },
-								{ "__identifier": "clamp_mode", "__type": "String", "__value": "zone_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["zone_bounds"]
-								}] }
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							]
 						}
 					]
