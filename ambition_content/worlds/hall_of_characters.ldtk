@@ -11207,9 +11207,9 @@
 							"defUid": 2006,
 							"px": [1328,1312],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_village_kenji", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_village_nagisa", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_village_kenji"]
+									"params": ["npc_village_nagisa"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
@@ -11238,9 +11238,9 @@
 							"defUid": 2006,
 							"px": [1456,1312],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_village_ume", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_village_kenji", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_village_ume"]
+									"params": ["npc_village_kenji"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
@@ -11269,9 +11269,9 @@
 							"defUid": 2006,
 							"px": [1584,1312],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_village_daichi", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_village_ume", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_village_daichi"]
+									"params": ["npc_village_ume"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
@@ -11300,9 +11300,9 @@
 							"defUid": 2006,
 							"px": [1712,1312],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_village_hayashi", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_village_daichi", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_village_hayashi"]
+									"params": ["npc_village_daichi"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
@@ -11331,9 +11331,9 @@
 							"defUid": 2006,
 							"px": [1840,1312],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_village_ren", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_village_hayashi", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_village_ren"]
+									"params": ["npc_village_hayashi"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
@@ -11362,9 +11362,9 @@
 							"defUid": 2006,
 							"px": [1968,1312],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_station_okafor", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_village_ren", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_station_okafor"]
+									"params": ["npc_village_ren"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
@@ -11393,9 +11393,9 @@
 							"defUid": 2006,
 							"px": [48,1120],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_station_reyes", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_station_okafor", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_station_reyes"]
+									"params": ["npc_station_okafor"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
@@ -11424,9 +11424,9 @@
 							"defUid": 2006,
 							"px": [176,1120],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_station_lindqvist", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_station_reyes", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_station_lindqvist"]
+									"params": ["npc_station_reyes"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
@@ -11455,9 +11455,9 @@
 							"defUid": 2006,
 							"px": [304,1120],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_station_rahimi", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_station_lindqvist", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_station_rahimi"]
+									"params": ["npc_station_lindqvist"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
@@ -11486,9 +11486,9 @@
 							"defUid": 2006,
 							"px": [432,1120],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_station_pell", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_station_rahimi", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_station_pell"]
+									"params": ["npc_station_rahimi"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
@@ -11517,9 +11517,9 @@
 							"defUid": 2006,
 							"px": [560,1120],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_station_wen", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_station_pell", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_station_wen"]
+									"params": ["npc_station_pell"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
@@ -11548,9 +11548,9 @@
 							"defUid": 2006,
 							"px": [688,1120],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_armsmith_odile", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_station_wen", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_armsmith_odile"]
+									"params": ["npc_station_wen"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
@@ -11579,9 +11579,9 @@
 							"defUid": 2006,
 							"px": [816,1120],
 							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_gator_geisha", "__tile": null, "defUid": 3012, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_armsmith_odile", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_gator_geisha"]
+									"params": ["npc_armsmith_odile"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Inspect", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",

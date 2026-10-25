@@ -11,7 +11,7 @@
 	"iid": "ambition-ninja-village-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 707975,
+	"nextUid": 707999,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -8546,6 +8546,36 @@
 						},
 						{
 							"__identifier": "NpcSpawn",
+							"__grid": [33,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 532,
+							"__worldY": 640,
+							"iid": "NpcSpawn-707983",
+							"width": 32,
+							"height": 64,
+							"defUid": 2006,
+							"px": [532,640],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_village_nagisa", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_village_nagisa"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "ninja_village_nagisa", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ninja_village_nagisa"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stand_still"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
 							"__grid": [39,40],
 							"__pivot": [0,0],
 							"__tags": [],
@@ -8767,7 +8797,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 112,
 							"__worldY": 416,
-							"iid": "Prop-707970",
+							"iid": "Prop-707994",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -8792,7 +8822,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 112,
 							"__worldY": 416,
-							"iid": "Prop-707971",
+							"iid": "Prop-707995",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -8817,7 +8847,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 184,
 							"__worldY": 416,
-							"iid": "LoadingZone-707972",
+							"iid": "LoadingZone-707996",
 							"width": 144,
 							"height": 288,
 							"defUid": 2002,
@@ -8849,7 +8879,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 412,
 							"__worldY": 648,
-							"iid": "Prop-707973",
+							"iid": "Prop-707997",
 							"width": 64,
 							"height": 56,
 							"defUid": 4351,
@@ -8874,7 +8904,7 @@
 							"__smartColor": "#FFC857",
 							"__worldX": 432,
 							"__worldY": 660,
-							"iid": "Switch-707974",
+							"iid": "Switch-707998",
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
@@ -9827,36 +9857,6 @@
 								{ "__identifier": "dialogue_id", "__type": "String", "__value": "ninja_village_ume", "__tile": null, "defUid": 3014, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["ninja_village_ume"]
-								}] },
-								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stand_still"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "NpcSpawn",
-							"__grid": [91,44],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FF9EEA",
-							"__worldX": 3320,
-							"__worldY": 704,
-							"iid": "NpcSpawn-707959",
-							"width": 32,
-							"height": 64,
-							"defUid": 2006,
-							"px": [1464,704],
-							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_gator_geisha", "__tile": null, "defUid": 3012, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["npc_gator_geisha"]
-								}] },
-								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
-								{ "__identifier": "dialogue_id", "__type": "String", "__value": "ninja_village_gator_geisha", "__tile": null, "defUid": 3014, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["ninja_village_gator_geisha"]
 								}] },
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
