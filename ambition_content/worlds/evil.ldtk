@@ -16749,8 +16749,8 @@
 									"id": "V_String",
 									"params": ["Default"]
 								}] },
-								{ "__identifier": "zoom", "__type": "Float", "__value": 0.85, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [0.85] }] },
-								{ "__identifier": "target_offset_y", "__type": "Float", "__value": 160.0, "__tile": null, "defUid": 4332, "realEditorValues": [{ "id": "V_Float", "params": [160.0] }] }
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.6, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.6] }] },
+								{ "__identifier": "target_offset_y", "__type": "Float", "__value": 120.0, "__tile": null, "defUid": 4332, "realEditorValues": [{ "id": "V_Float", "params": [120.0] }] }
 							]
 						},
 						{
@@ -16780,8 +16780,9 @@
 									"id": "V_String",
 									"params": ["Default"]
 								}] },
-								{ "__identifier": "zoom", "__type": "Float", "__value": 0.8, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [0.8] }] },
-								{ "__identifier": "target_offset_x", "__type": "Float", "__value": 420.0, "__tile": null, "defUid": 4331, "realEditorValues": [{ "id": "V_Float", "params": [420.0] }] }
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.6, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.6] }] },
+								{ "__identifier": "target_offset_x", "__type": "Float", "__value": 220.0, "__tile": null, "defUid": 4331, "realEditorValues": [{ "id": "V_Float", "params": [220.0] }] },
+								{ "__identifier": "target_offset_y", "__type": "Float", "__value": -110.0, "__tile": null, "defUid": 4332, "realEditorValues": [{ "id": "V_Float", "params": [-110.0] }] }
 							]
 						},
 						{
@@ -16811,7 +16812,9 @@
 									"id": "V_String",
 									"params": ["Default"]
 								}] },
-								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.6, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.6] }] },
+								{ "__identifier": "target_offset_y", "__type": "Float", "__value": -60.0, "__tile": null, "defUid": 4332, "realEditorValues": [{ "id": "V_Float", "params": [-60.0] }] }
 							]
 						}
 					]
@@ -24100,8 +24103,8 @@
 									"id": "V_String",
 									"params": ["Default"]
 								}] },
-								{ "__identifier": "zoom", "__type": "Float", "__value": 0.85, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [0.85] }] },
-								{ "__identifier": "target_offset_y", "__type": "Float", "__value": 160.0, "__tile": null, "defUid": 4332, "realEditorValues": [{ "id": "V_Float", "params": [160.0] }] }
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.6, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.6] }] },
+								{ "__identifier": "target_offset_y", "__type": "Float", "__value": 120.0, "__tile": null, "defUid": 4332, "realEditorValues": [{ "id": "V_Float", "params": [120.0] }] }
 							]
 						},
 						{
@@ -24131,8 +24134,9 @@
 									"id": "V_String",
 									"params": ["Default"]
 								}] },
-								{ "__identifier": "zoom", "__type": "Float", "__value": 0.8, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [0.8] }] },
-								{ "__identifier": "target_offset_x", "__type": "Float", "__value": 420.0, "__tile": null, "defUid": 4331, "realEditorValues": [{ "id": "V_Float", "params": [420.0] }] }
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.6, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.6] }] },
+								{ "__identifier": "target_offset_x", "__type": "Float", "__value": 220.0, "__tile": null, "defUid": 4331, "realEditorValues": [{ "id": "V_Float", "params": [220.0] }] },
+								{ "__identifier": "target_offset_y", "__type": "Float", "__value": -110.0, "__tile": null, "defUid": 4332, "realEditorValues": [{ "id": "V_Float", "params": [-110.0] }] }
 							]
 						},
 						{
@@ -24162,7 +24166,9 @@
 									"id": "V_String",
 									"params": ["Default"]
 								}] },
-								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.6, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.6] }] },
+								{ "__identifier": "target_offset_y", "__type": "Float", "__value": -60.0, "__tile": null, "defUid": 4332, "realEditorValues": [{ "id": "V_Float", "params": [-60.0] }] }
 							]
 						}
 					]
