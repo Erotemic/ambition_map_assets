@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 105000,
+	"nextUid": 105003,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -15293,19 +15293,13 @@
 									"id": "V_String",
 									"params": ["intro_portal_zone"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "ring 1", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["to central hub"]
+									"params": ["ring 1"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
-								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["central_hub_complex"]
-								}] },
-								{ "__identifier": "target_zone", "__type": "String", "__value": "gate_stack_portal", "__tile": null, "defUid": 3006, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gate_stack_portal"]
-								}] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "", "__tile": null, "defUid": 3005, "realEditorValues": [] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "", "__tile": null, "defUid": 3006, "realEditorValues": [] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ false ]
@@ -15331,9 +15325,9 @@
 									"id": "V_String",
 									"params": ["intro_portal_switch"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "intro_portal_switch", "__tile": null, "defUid": 4047, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "Ring 1 power", "__tile": null, "defUid": 4047, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["intro_portal_switch"]
+									"params": ["Ring 1 power"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Toggle gate power", "__tile": null, "defUid": 4048, "realEditorValues": [{
 									"id": "V_String",
@@ -15976,6 +15970,103 @@
 								{ "__identifier": "action", "__type": "String", "__value": "GateTerminal", "__tile": null, "defUid": 4050, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["GateTerminal"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [30,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5416,
+							"__worldY": 680,
+							"iid": "Prop-105000",
+							"width": 64,
+							"height": 56,
+							"defUid": 104426,
+							"px": [488,680],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Ring 1 (Home) Dialer", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Ring 1 (Home) Dialer"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_dialer"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [31,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 5436,
+							"__worldY": 692,
+							"iid": "Switch-105001",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [508,692],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "ring1_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ring1_terminal"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Ring 1 (Home) terminal", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Ring 1 (Home) terminal"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Dial the gate", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Dial the gate"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "", "__tile": null, "defUid": 4049, "realEditorValues": [] },
+								{ "__identifier": "action", "__type": "String", "__value": "GateTerminal", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["GateTerminal"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [18,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 5216,
+							"__worldY": 640,
+							"iid": "LoadingZone-105002",
+							"width": 48,
+							"height": 96,
+							"defUid": 2002,
+							"px": [288,640],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "gate_stack_to_hub", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_stack_to_hub"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "to central hub", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["to central hub"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["central_hub_complex"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "gate_stack_portal", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_stack_portal"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
 								}] }
 							]
 						}

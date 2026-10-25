@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 8121,
+	"nextUid": 8095,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -8901,9 +8901,9 @@
 									"id": "V_String",
 									"params": ["gate_stack_lower"]
 								}] },
-								{ "__identifier": "target_zone", "__type": "String", "__value": "intro_portal_zone", "__tile": null, "defUid": 3006, "realEditorValues": [{
+								{ "__identifier": "target_zone", "__type": "String", "__value": "gate_stack_to_hub", "__tile": null, "defUid": 3006, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["intro_portal_zone"]
+									"params": ["gate_stack_to_hub"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
 									"id": "V_Bool",
@@ -28702,7 +28702,7 @@
 			"bgPos": null,
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
-			"__smartColor": "#FFFFFF",
+			"__smartColor": "#84878D",
 			"__bgPos": null,
 			"externalRelPath": null,
 			"fieldInstances": [
@@ -28718,6 +28718,7 @@
 					"id": "V_String",
 					"params": ["fighters_guild_oath_of_steel"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": "barracks", "__tile": null, "defUid": 4174, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["barracks"]
@@ -28726,74 +28727,105 @@
 					"id": "V_String",
 					"params": ["red"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "military_tower", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "skybridge", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["military_tower"]
-				}] }
+					"params": ["skybridge"]
+				}] },
+				{ "__identifier": "palette", "__type": "String", "__value": null, "__tile": null, "defUid": 4338, "realEditorValues": [] },
+				{ "__identifier": "lighting_hint", "__type": "String", "__value": null, "__tile": null, "defUid": 4339, "realEditorValues": [] },
+				{ "__identifier": "foreground_treatment", "__type": "String", "__value": null, "__tile": null, "defUid": 4340, "realEditorValues": [] },
+				{ "__identifier": "nameplate_full_opacity_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6573, "realEditorValues": [] },
+				{ "__identifier": "nameplate_fade_out_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6574, "realEditorValues": [] },
+				{ "__identifier": "gallery", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6810, "realEditorValues": [] },
+				{ "__identifier": "fall_out_margin", "__type": "Int", "__value": null, "__tile": null, "defUid": 6848, "realEditorValues": [] },
+				{ "__identifier": "mode", "__type": "String", "__value": null, "__tile": null, "defUid": 6849, "realEditorValues": [] },
+				{ "__identifier": "side_out_margin", "__type": "Int", "__value": null, "__tile": null, "defUid": 6850, "realEditorValues": [] },
+				{ "__identifier": "rise_out_margin", "__type": "Int", "__value": null, "__tile": null, "defUid": 6851, "realEditorValues": [] },
+				{ "__identifier": "enemy_respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 6893, "realEditorValues": [] },
+				{ "__identifier": "entry_cutscene", "__type": "String", "__value": null, "__tile": null, "defUid": 6897, "realEditorValues": [] },
+				{ "__identifier": "while_live", "__type": "String", "__value": null, "__tile": null, "defUid": 6898, "realEditorValues": [] },
+				{ "__identifier": "practice", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6915, "realEditorValues": [] },
+				{ "__identifier": "sky_scroll", "__type": "Int", "__value": null, "__tile": null, "defUid": 6949, "realEditorValues": [] },
+				{ "__identifier": "fall_rescue", "__type": "String", "__value": null, "__tile": null, "defUid": 6950, "realEditorValues": [] },
+				{ "__identifier": "boss_reward_drop", "__type": "String", "__value": null, "__tile": null, "defUid": 6951, "realEditorValues": [] }
 			],
 			"layerInstances": [
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
+					"__cWid": 30,
+					"__cHei": 80,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
 					"iid": "Collision-4254",
+					"levelId": 4253,
 					"layerDefUid": 5024,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
 					"intGridCsv": [
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
-						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,2,2,2,2,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,
+						2,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,0,0,0,
 						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						2,2,2,2,2,2,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,1,1,1,1,
-						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
-						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
-						1,1,1,1,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -28808,19 +28840,6 @@
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 					],
-					"__cWid": 30,
-					"__cHei": 80,
-					"__gridSize": 16,
-					"__opacity": 1,
-					"__pxTotalOffsetX": 0,
-					"__pxTotalOffsetY": 0,
-					"__tilesetDefUid": null,
-					"__tilesetRelPath": null,
-					"levelId": 4253,
-					"pxOffsetX": 0,
-					"pxOffsetY": 0,
-					"visible": true,
-					"optionalRules": [],
 					"autoLayerTiles": [],
 					"seed": 4253,
 					"overrideTilesetUid": null,
@@ -28828,66 +28847,8 @@
 					"entityInstances": []
 				},
 				{
-					"__identifier": "AmbitionCameras",
-					"__type": "Entities",
-					"iid": "AmbitionCameras-5764",
-					"layerDefUid": 5743,
-					"intGridCsv": [],
-					"__cWid": 30,
-					"__cHei": 80,
-					"__gridSize": 16,
-					"__opacity": 1,
-					"__pxTotalOffsetX": 0,
-					"__pxTotalOffsetY": 0,
-					"__tilesetDefUid": null,
-					"__tilesetRelPath": null,
-					"levelId": 4253,
-					"pxOffsetX": 0,
-					"pxOffsetY": 0,
-					"visible": true,
-					"optionalRules": [],
-					"autoLayerTiles": [],
-					"seed": 4253,
-					"overrideTilesetUid": null,
-					"gridTiles": [],
-					"entityInstances": [
-						{
-							"__identifier": "CameraZone",
-							"__grid": [0,0],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#86A8E7",
-							"__worldX": -1280,
-							"__worldY": 2304,
-							"iid": "CameraZone-4259",
-							"width": 480,
-							"height": 1280,
-							"defUid": 4002,
-							"px": [0,0],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "military_tower_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["military_tower_camera"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "military_tower_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["military_tower_camera"]
-								}] },
-								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["Default"]
-								}] }
-							]
-						}
-					]
-				},
-				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-4255",
-					"layerDefUid": 1070,
-					"intGridCsv": [],
 					"__cWid": 30,
 					"__cHei": 80,
 					"__gridSize": 16,
@@ -28896,150 +28857,26 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
+					"iid": "Ambition-4255",
 					"levelId": 4253,
+					"layerDefUid": 1070,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
+					"intGridCsv": [],
 					"autoLayerTiles": [],
 					"seed": 4253,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
-						{
-							"__identifier": "Prop",
-							"__grid": [1,64],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#9966CC",
-							"__worldX": -1264,
-							"__worldY": 3328,
-							"iid": "Prop-8096",
-							"width": 448,
-							"height": 224,
-							"defUid": 4351,
-							"px": [16,1024],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "tower_parade_deck_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["tower_parade_deck_0"]
-								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "tower_parade_deck", "__tile": null, "defUid": 4350, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["tower_parade_deck"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "Prop",
-							"__grid": [1,49],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#9966CC",
-							"__worldX": -1264,
-							"__worldY": 3088,
-							"iid": "Prop-8097",
-							"width": 448,
-							"height": 224,
-							"defUid": 4351,
-							"px": [16,784],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "tower_barracks_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["tower_barracks_0"]
-								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "tower_barracks", "__tile": null, "defUid": 4350, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["tower_barracks"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "Prop",
-							"__grid": [1,34],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#9966CC",
-							"__worldX": -1264,
-							"__worldY": 2848,
-							"iid": "Prop-8098",
-							"width": 448,
-							"height": 224,
-							"defUid": 4351,
-							"px": [16,544],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "tower_armory_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["tower_armory_0"]
-								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "tower_armory", "__tile": null, "defUid": 4350, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["tower_armory"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "Prop",
-							"__grid": [1,19],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#9966CC",
-							"__worldX": -1264,
-							"__worldY": 2608,
-							"iid": "Prop-8099",
-							"width": 448,
-							"height": 224,
-							"defUid": 4351,
-							"px": [16,304],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "tower_signals_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["tower_signals_0"]
-								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "tower_signals", "__tile": null, "defUid": 4350, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["tower_signals"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "Prop",
-							"__grid": [1,2],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#9966CC",
-							"__worldX": -1264,
-							"__worldY": 2336,
-							"iid": "Prop-8100",
-							"width": 448,
-							"height": 256,
-							"defUid": 4351,
-							"px": [16,32],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "tower_war_room_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["tower_war_room_0"]
-								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "tower_war_room", "__tile": null, "defUid": 4350, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["tower_war_room"]
-								}] }
-							]
-						},
 						{
 							"__identifier": "PlayerStart",
 							"__grid": [15,75],
 							"__pivot": [0,0],
 							"__tags": [],
-							"__tile": null,
+							"__tile": { "tilesetUid": 6852, "x": 0, "y": 0, "w": 256, "h": 256 },
 							"__smartColor": "#41D1FF",
-							"__worldX": -1040,
-							"__worldY": 3506,
 							"iid": "PlayerStart-4256",
 							"width": 28,
 							"height": 46,
@@ -29048,7 +28885,9 @@
 							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "military_tower_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
 								"id": "V_String",
 								"params": ["military_tower_spawn"]
-							}] }]
+							}] }],
+							"__worldX": -1040,
+							"__worldY": 3506
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -29057,8 +28896,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
-							"__worldX": -900,
-							"__worldY": 3456,
 							"iid": "LoadingZone-4257",
 							"width": 48,
 							"height": 96,
@@ -29073,7 +28910,10 @@
 									"id": "V_String",
 									"params": ["to central hub"]
 								}] },
-								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Door"]
+								}] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "central_hub_complex", "__tile": null, "defUid": 3005, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["central_hub_complex"]
@@ -29082,8 +28922,75 @@
 									"id": "V_String",
 									"params": ["military_tower_door"]
 								}] },
-								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
-							]
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							],
+							"__worldX": -900,
+							"__worldY": 3456
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [7,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"iid": "NpcSpawn-4258",
+							"width": 42,
+							"height": 70,
+							"defUid": 2006,
+							"px": [120,234],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_general", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_general"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Talk"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "military_general", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["military_general"]
+								}] },
+								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4123, "realEditorValues": [{ "id": "V_Float", "params": [0] }] },
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4343, "realEditorValues": [] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": null, "__tile": null, "defUid": 6842, "realEditorValues": [] },
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7038, "realEditorValues": [] }
+							],
+							"__worldX": -1160,
+							"__worldY": 2538
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [2,73],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"iid": "DebugLabel-4260",
+							"width": 400,
+							"height": 20,
+							"defUid": 2007,
+							"px": [40,1180],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "military_tower_intro_label", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["military_tower_intro_label"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Tower of the General — climb to the top.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Tower of the General — climb to the top."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Custom"]
+								}] }
+							],
+							"__worldX": -1240,
+							"__worldY": 3484
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -29092,8 +28999,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
-							"__worldX": -980,
-							"__worldY": 3456,
 							"iid": "LoadingZone-8062",
 							"width": 48,
 							"height": 96,
@@ -29118,7 +29023,9 @@
 									"params": ["military_gate_annex_door"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
-							]
+							],
+							"__worldX": -980,
+							"__worldY": 3456
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -29127,8 +29034,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -1010,
-							"__worldY": 3428,
 							"iid": "DebugLabel-8063",
 							"width": 140,
 							"height": 24,
@@ -29144,251 +29049,30 @@
 									"params": ["GATE ANNEX"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							]
-						},
-						{
-							"__identifier": "NpcSpawn",
-							"__grid": [12,74],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FF9EEA",
-							"__worldX": -1088,
-							"__worldY": 3488,
-							"iid": "NpcSpawn-8105",
-							"width": 32,
-							"height": 64,
-							"defUid": 2006,
-							"px": [192,1184],
-							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_tower_voss", "__tile": null, "defUid": 3012, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["npc_tower_voss"]
-								}] },
-								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
-								{ "__identifier": "dialogue_id", "__type": "String", "__value": "military_tower_voss", "__tile": null, "defUid": 3014, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["military_tower_voss"]
-								}] },
-								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stand_still"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "NpcSpawn",
-							"__grid": [27,74],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FF9EEA",
-							"__worldX": -848,
-							"__worldY": 3488,
-							"iid": "NpcSpawn-8106",
-							"width": 32,
-							"height": 64,
-							"defUid": 2006,
-							"px": [432,1184],
-							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_tower_dorsey", "__tile": null, "defUid": 3012, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["npc_tower_dorsey"]
-								}] },
-								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
-								{ "__identifier": "dialogue_id", "__type": "String", "__value": "military_tower_dorsey", "__tile": null, "defUid": 3014, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["military_tower_dorsey"]
-								}] },
-								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stand_still"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "NpcSpawn",
-							"__grid": [11,59],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FF9EEA",
-							"__worldX": -1100,
-							"__worldY": 3248,
-							"iid": "NpcSpawn-8107",
-							"width": 32,
-							"height": 64,
-							"defUid": 2006,
-							"px": [180,944],
-							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_tower_tanaka", "__tile": null, "defUid": 3012, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["npc_tower_tanaka"]
-								}] },
-								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
-								{ "__identifier": "dialogue_id", "__type": "String", "__value": "military_tower_tanaka", "__tile": null, "defUid": 3014, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["military_tower_tanaka"]
-								}] },
-								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stand_still"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "NpcSpawn",
-							"__grid": [16,59],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FF9EEA",
-							"__worldX": -1014,
-							"__worldY": 3248,
-							"iid": "NpcSpawn-8108",
-							"width": 32,
-							"height": 64,
-							"defUid": 2006,
-							"px": [266,944],
-							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_tower_bankole", "__tile": null, "defUid": 3012, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["npc_tower_bankole"]
-								}] },
-								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
-								{ "__identifier": "dialogue_id", "__type": "String", "__value": "military_tower_bankole", "__tile": null, "defUid": 3014, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["military_tower_bankole"]
-								}] },
-								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stand_still"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "NpcSpawn",
-							"__grid": [18,44],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FF9EEA",
-							"__worldX": -982,
-							"__worldY": 3008,
-							"iid": "NpcSpawn-8109",
-							"width": 32,
-							"height": 64,
-							"defUid": 2006,
-							"px": [298,704],
-							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_tower_granger", "__tile": null, "defUid": 3012, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["npc_tower_granger"]
-								}] },
-								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
-								{ "__identifier": "dialogue_id", "__type": "String", "__value": "military_tower_granger", "__tile": null, "defUid": 3014, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["military_tower_granger"]
-								}] },
-								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stand_still"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "NpcSpawn",
-							"__grid": [18,29],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FF9EEA",
-							"__worldX": -988,
-							"__worldY": 2768,
-							"iid": "NpcSpawn-8110",
-							"width": 32,
-							"height": 64,
-							"defUid": 2006,
-							"px": [292,464],
-							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_tower_ruiz", "__tile": null, "defUid": 3012, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["npc_tower_ruiz"]
-								}] },
-								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
-								{ "__identifier": "dialogue_id", "__type": "String", "__value": "military_tower_ruiz", "__tile": null, "defUid": 3014, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["military_tower_ruiz"]
-								}] },
-								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stand_still"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "NpcSpawn",
-							"__grid": [6,13],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FF9EEA",
-							"__worldX": -1170,
-							"__worldY": 2522,
-							"iid": "NpcSpawn-8111",
-							"width": 42,
-							"height": 70,
-							"defUid": 2006,
-							"px": [110,218],
-							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_general", "__tile": null, "defUid": 3012, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["npc_general"]
-								}] },
-								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
-								{ "__identifier": "dialogue_id", "__type": "String", "__value": "military_general", "__tile": null, "defUid": 3014, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["military_general"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "NpcSpawn",
-							"__grid": [19,14],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FF9EEA",
-							"__worldX": -970,
-							"__worldY": 2528,
-							"iid": "NpcSpawn-8112",
-							"width": 32,
-							"height": 64,
-							"defUid": 2006,
-							"px": [310,224],
-							"fieldInstances": [
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_tower_brandt", "__tile": null, "defUid": 3012, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["npc_tower_brandt"]
-								}] },
-								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
-								{ "__identifier": "dialogue_id", "__type": "String", "__value": "military_tower_brandt", "__tile": null, "defUid": 3014, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["military_tower_brandt"]
-								}] },
-								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["stand_still"]
-								}] }
-							]
+							],
+							"__worldX": -1010,
+							"__worldY": 3428
 						}
 					]
 				},
 				{
-					"__identifier": "Climbable",
+					"__identifier": "Water",
 					"__type": "IntGrid",
-					"iid": "Climbable-4261",
-					"layerDefUid": 4201,
+					"__cWid": 30,
+					"__cHei": 80,
+					"__gridSize": 16,
+					"__opacity": 0.6,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "aa919100-48b0-11f1-966f-994fc1d4aa2a",
+					"levelId": 4253,
+					"layerDefUid": 4140,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -29406,60 +29090,164 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,
-						0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 					],
+					"autoLayerTiles": [],
+					"seed": 6624294,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				},
+				{
+					"__identifier": "Climbable",
+					"__type": "IntGrid",
+					"__cWid": 30,
+					"__cHei": 80,
+					"__gridSize": 16,
+					"__opacity": 0.6,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "Climbable-4261",
+					"levelId": 4253,
+					"layerDefUid": 4201,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"intGridCsv": [
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+					],
+					"autoLayerTiles": [],
+					"seed": 4253,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				},
+				{
+					"__identifier": "AmbitionCameras",
+					"__type": "Entities",
 					"__cWid": 30,
 					"__cHei": 80,
 					"__gridSize": 16,
@@ -29468,13 +29256,78 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
+					"iid": "AmbitionCameras-5764",
 					"levelId": 4253,
+					"layerDefUid": 5743,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
+					"intGridCsv": [],
 					"autoLayerTiles": [],
 					"seed": 4253,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"iid": "CameraZone-4259",
+							"width": 480,
+							"height": 1280,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "military_tower_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["military_tower_camera"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "military_tower_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["military_tower_camera"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] },
+								{ "__identifier": "priority", "__type": "Int", "__value": 0, "__tile": null, "defUid": 4329, "realEditorValues": [] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": null, "__tile": null, "defUid": 4330, "realEditorValues": [] },
+								{ "__identifier": "target_offset_x", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4331, "realEditorValues": [] },
+								{ "__identifier": "target_offset_y", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4332, "realEditorValues": [] },
+								{ "__identifier": "easing_hz", "__type": "Float", "__value": null, "__tile": null, "defUid": 4333, "realEditorValues": [] },
+								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
+							],
+							"__worldX": -1280,
+							"__worldY": 2304
+						}
+					]
+				},
+				{
+					"__identifier": "AmbitionLoops",
+					"__type": "Entities",
+					"__cWid": 30,
+					"__cHei": 80,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "9dda5e20-bde0-11f1-aad3-4d5ff15e718a",
+					"levelId": 4253,
+					"layerDefUid": 6891,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"intGridCsv": [],
+					"autoLayerTiles": [],
+					"seed": 2591792,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -77510,6 +77363,65 @@
 							],
 							"__worldX": 36544,
 							"__worldY": 384
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [18,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 34300,
+							"__worldY": 424,
+							"iid": "Prop-8093",
+							"width": 64,
+							"height": 56,
+							"defUid": 4351,
+							"px": [300,424],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Rookery Survey Gate Dialer", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Rookery Survey Gate Dialer"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_dialer"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [20,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 34320,
+							"__worldY": 436,
+							"iid": "Switch-8094",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [320,436],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "rookery_gate_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["rookery_gate_terminal"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Rookery Survey Gate terminal", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Rookery Survey Gate terminal"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Dial the gate", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Dial the gate"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "", "__tile": null, "defUid": 4049, "realEditorValues": [] },
+								{ "__identifier": "action", "__type": "String", "__value": "GateTerminal", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["GateTerminal"]
+								}] }
+							]
 						}
 					]
 				},

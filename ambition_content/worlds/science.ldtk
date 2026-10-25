@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 409653,
+	"nextUid": 409655,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -20651,6 +20651,65 @@
 									"params": ["THE APPROACH: HE STANDS ON THE SHOULDERS OF A GIANT"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [60,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 11212,
+							"__worldY": -2264,
+							"iid": "Prop-409653",
+							"width": 64,
+							"height": 56,
+							"defUid": 4351,
+							"px": [972,296],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Trail Survey Gate Dialer", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Trail Survey Gate Dialer"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_dialer"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [62,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 11232,
+							"__worldY": -2252,
+							"iid": "Switch-409654",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [992,308],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "trail_survey_gate_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["trail_survey_gate_terminal"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Trail Survey Gate terminal", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Trail Survey Gate terminal"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Dial the gate", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Dial the gate"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "", "__tile": null, "defUid": 4049, "realEditorValues": [] },
+								{ "__identifier": "action", "__type": "String", "__value": "GateTerminal", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["GateTerminal"]
+								}] }
 							]
 						}
 					]
