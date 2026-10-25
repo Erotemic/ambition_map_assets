@@ -8584,7 +8584,7 @@
 						},
 						{
 							"__identifier": "NpcSpawn",
-							"__grid": [106,56],
+							"__grid": [108,56],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -8593,7 +8593,7 @@
 							"width": 42,
 							"height": 68,
 							"defUid": 2006,
-							"px": [1700,904],
+							"px": [1740,904],
 							"fieldInstances": [
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_kernel_guide", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
@@ -8612,7 +8612,7 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": null, "__tile": null, "defUid": 6842, "realEditorValues": [] },
 								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7038, "realEditorValues": [] }
 							],
-							"__worldX": 1700,
+							"__worldX": 1740,
 							"__worldY": 904
 						},
 						{
@@ -8990,16 +8990,16 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [81,49],
+							"__grid": [81,43],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"iid": "Prop-7740",
-							"width": 192,
-							"height": 192,
+							"width": 288,
+							"height": 288,
 							"defUid": 4351,
-							"px": [1296,784],
+							"px": [1296,688],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Public Gate (Hub) Ring", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -9011,20 +9011,20 @@
 								}] }
 							],
 							"__worldX": 1296,
-							"__worldY": 784
+							"__worldY": 688
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [81,49],
+							"__grid": [81,43],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"iid": "Prop-7741",
-							"width": 192,
-							"height": 192,
+							"width": 288,
+							"height": 288,
 							"defUid": 4351,
-							"px": [1296,784],
+							"px": [1296,688],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Public Gate (Hub) Portal", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -9036,20 +9036,20 @@
 								}] }
 							],
 							"__worldX": 1296,
-							"__worldY": 784
+							"__worldY": 688
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [84,49],
+							"__grid": [85,43],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-7742",
-							"width": 96,
-							"height": 192,
+							"width": 144,
+							"height": 288,
 							"defUid": 2002,
-							"px": [1344,784],
+							"px": [1368,688],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "hub_public_gate_zone", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -9067,12 +9067,12 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 1344,
-							"__worldY": 784
+							"__worldX": 1368,
+							"__worldY": 688
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [93,57],
+							"__grid": [99,57],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -9081,7 +9081,7 @@
 							"width": 64,
 							"height": 56,
 							"defUid": 4351,
-							"px": [1500,920],
+							"px": [1596,920],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Public Gate (Hub) Dialer", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -9092,12 +9092,12 @@
 									"params": ["gate_dialer"]
 								}] }
 							],
-							"__worldX": 1500,
+							"__worldX": 1596,
 							"__worldY": 920
 						},
 						{
 							"__identifier": "Switch",
-							"__grid": [95,58],
+							"__grid": [101,58],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -9106,7 +9106,7 @@
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
-							"px": [1520,932],
+							"px": [1616,932],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "hub_public_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
 									"id": "V_String",
@@ -9128,7 +9128,7 @@
 								{ "__identifier": "on_activate", "__type": "String", "__value": null, "__tile": null, "defUid": 6861, "realEditorValues": [] },
 								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7040, "realEditorValues": [] }
 							],
-							"__worldX": 1520,
+							"__worldX": 1616,
 							"__worldY": 932
 						},
 						{
@@ -9216,7 +9216,7 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [82,41],
+							"__grid": [88,32],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -9225,7 +9225,7 @@
 							"width": 160,
 							"height": 96,
 							"defUid": 4351,
-							"px": [1312,664],
+							"px": [1420,512],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hub_gate_traffic_board", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -9236,12 +9236,12 @@
 									"params": ["gate_traffic_board"]
 								}] }
 							],
-							"__worldX": 1312,
-							"__worldY": 664
+							"__worldX": 1420,
+							"__worldY": 512
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [100,58],
+							"__grid": [105,58],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -9250,7 +9250,7 @@
 							"width": 32,
 							"height": 48,
 							"defUid": 4351,
-							"px": [1600,928],
+							"px": [1680,928],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hub_gate_transit_bags", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -9261,7 +9261,7 @@
 									"params": ["gate_transit_bags"]
 								}] }
 							],
-							"__worldX": 1600,
+							"__worldX": 1680,
 							"__worldY": 928
 						},
 						{
@@ -9292,7 +9292,7 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [93,56],
+							"__grid": [98,56],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -9301,7 +9301,7 @@
 							"width": 260,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1490,900],
+							"px": [1570,900],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hub_gate_bags_label", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -9313,7 +9313,7 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 1490,
+							"__worldX": 1570,
 							"__worldY": 900
 						},
 						{
@@ -74118,16 +74118,16 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [6,18],
+							"__grid": [5,12],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"iid": "Prop-7779",
-							"width": 192,
-							"height": 192,
+							"width": 288,
+							"height": 288,
 							"defUid": 4351,
-							"px": [96,288],
+							"px": [80,192],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Primeval Gate (Trailhead) Ring", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -74138,21 +74138,21 @@
 									"params": ["gate_ring"]
 								}] }
 							],
-							"__worldX": 20096,
-							"__worldY": 288
+							"__worldX": 20080,
+							"__worldY": 192
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [6,18],
+							"__grid": [5,12],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"iid": "Prop-7780",
-							"width": 192,
-							"height": 192,
+							"width": 288,
+							"height": 288,
 							"defUid": 4351,
-							"px": [96,288],
+							"px": [80,192],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Primeval Gate (Trailhead) Portal", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -74163,21 +74163,21 @@
 									"params": ["gate_portal"]
 								}] }
 							],
-							"__worldX": 20096,
-							"__worldY": 288
+							"__worldX": 20080,
+							"__worldY": 192
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [9,18],
+							"__grid": [9,12],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-7781",
-							"width": 96,
-							"height": 192,
+							"width": 144,
+							"height": 288,
 							"defUid": 2002,
-							"px": [144,288],
+							"px": [152,192],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "primeval_trailhead_gate", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -74195,12 +74195,12 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 20144,
-							"__worldY": 288
+							"__worldX": 20152,
+							"__worldY": 192
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [18,26],
+							"__grid": [23,26],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -74209,7 +74209,7 @@
 							"width": 64,
 							"height": 56,
 							"defUid": 4351,
-							"px": [300,424],
+							"px": [380,424],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Primeval Gate (Trailhead) Dialer", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -74220,12 +74220,12 @@
 									"params": ["gate_dialer"]
 								}] }
 							],
-							"__worldX": 20300,
+							"__worldX": 20380,
 							"__worldY": 424
 						},
 						{
 							"__identifier": "Switch",
-							"__grid": [20,27],
+							"__grid": [25,27],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -74234,7 +74234,7 @@
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
-							"px": [320,436],
+							"px": [400,436],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "primeval_gate_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
 									"id": "V_String",
@@ -74256,7 +74256,7 @@
 								{ "__identifier": "on_activate", "__type": "String", "__value": null, "__tile": null, "defUid": 6861, "realEditorValues": [] },
 								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7040, "realEditorValues": [] }
 							],
-							"__worldX": 20320,
+							"__worldX": 20400,
 							"__worldY": 436
 						},
 						{
@@ -76764,16 +76764,16 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [6,18],
+							"__grid": [5,12],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"iid": "Prop-7829",
-							"width": 192,
-							"height": 192,
+							"width": 288,
+							"height": 288,
 							"defUid": 4351,
-							"px": [96,288],
+							"px": [80,192],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Rookery Survey Gate Ring", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -76784,21 +76784,21 @@
 									"params": ["gate_ring"]
 								}] }
 							],
-							"__worldX": 34096,
-							"__worldY": 288
+							"__worldX": 34080,
+							"__worldY": 192
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [6,18],
+							"__grid": [5,12],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"iid": "Prop-7830",
-							"width": 192,
-							"height": 192,
+							"width": 288,
+							"height": 288,
 							"defUid": 4351,
-							"px": [96,288],
+							"px": [80,192],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Rookery Survey Gate Portal", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -76809,21 +76809,21 @@
 									"params": ["gate_portal"]
 								}] }
 							],
-							"__worldX": 34096,
-							"__worldY": 288
+							"__worldX": 34080,
+							"__worldY": 192
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [9,18],
+							"__grid": [9,12],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-7831",
-							"width": 96,
-							"height": 192,
+							"width": 144,
+							"height": 288,
 							"defUid": 2002,
-							"px": [144,288],
+							"px": [152,192],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "primeval_rookery_gate", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -76841,8 +76841,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 34144,
-							"__worldY": 288
+							"__worldX": 34152,
+							"__worldY": 192
 						},
 						{
 							"__identifier": "Prop",
@@ -77366,18 +77366,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [18,26],
+							"__grid": [23,26],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 34300,
+							"__worldX": 34380,
 							"__worldY": 424,
 							"iid": "Prop-8093",
 							"width": 64,
 							"height": 56,
 							"defUid": 4351,
-							"px": [300,424],
+							"px": [380,424],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Rookery Survey Gate Dialer", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -77391,18 +77391,18 @@
 						},
 						{
 							"__identifier": "Switch",
-							"__grid": [20,27],
+							"__grid": [25,27],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFC857",
-							"__worldX": 34320,
+							"__worldX": 34400,
 							"__worldY": 436,
 							"iid": "Switch-8094",
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
-							"px": [320,436],
+							"px": [400,436],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "rookery_gate_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
 									"id": "V_String",
@@ -81638,16 +81638,16 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [6,18],
+							"__grid": [5,12],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"iid": "Prop-8029",
-							"width": 192,
-							"height": 192,
+							"width": 288,
+							"height": 288,
 							"defUid": 4351,
-							"px": [96,288],
+							"px": [80,192],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Noodly Gate (Narthex) Ring", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -81658,21 +81658,21 @@
 									"params": ["gate_ring"]
 								}] }
 							],
-							"__worldX": 70096,
-							"__worldY": 288
+							"__worldX": 70080,
+							"__worldY": 192
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [6,18],
+							"__grid": [5,12],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"iid": "Prop-8030",
-							"width": 192,
-							"height": 192,
+							"width": 288,
+							"height": 288,
 							"defUid": 4351,
-							"px": [96,288],
+							"px": [80,192],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Noodly Gate (Narthex) Portal", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -81683,21 +81683,21 @@
 									"params": ["gate_portal"]
 								}] }
 							],
-							"__worldX": 70096,
-							"__worldY": 288
+							"__worldX": 70080,
+							"__worldY": 192
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [9,18],
+							"__grid": [9,12],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-8031",
-							"width": 96,
-							"height": 192,
+							"width": 144,
+							"height": 288,
 							"defUid": 2002,
-							"px": [144,288],
+							"px": [152,192],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "noodly_narthex_gate", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -81715,12 +81715,12 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 70144,
-							"__worldY": 288
+							"__worldX": 70152,
+							"__worldY": 192
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [18,26],
+							"__grid": [23,26],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -81729,7 +81729,7 @@
 							"width": 64,
 							"height": 56,
 							"defUid": 4351,
-							"px": [300,424],
+							"px": [380,424],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Noodly Gate (Narthex) Dialer", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -81740,12 +81740,12 @@
 									"params": ["gate_dialer"]
 								}] }
 							],
-							"__worldX": 70300,
+							"__worldX": 70380,
 							"__worldY": 424
 						},
 						{
 							"__identifier": "Switch",
-							"__grid": [20,27],
+							"__grid": [25,27],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -81754,7 +81754,7 @@
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
-							"px": [320,436],
+							"px": [400,436],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "noodly_gate_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
 									"id": "V_String",
@@ -81776,7 +81776,7 @@
 								{ "__identifier": "on_activate", "__type": "String", "__value": null, "__tile": null, "defUid": 6861, "realEditorValues": [] },
 								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7040, "realEditorValues": [] }
 							],
-							"__worldX": 70320,
+							"__worldX": 70400,
 							"__worldY": 436
 						},
 						{
@@ -81816,7 +81816,7 @@
 						},
 						{
 							"__identifier": "NpcSpawn",
-							"__grid": [25,25],
+							"__grid": [30,25],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -81825,7 +81825,7 @@
 							"width": 42,
 							"height": 70,
 							"defUid": 2006,
-							"px": [400,410],
+							"px": [480,410],
 							"fieldInstances": [
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_ramen_nujan", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
@@ -81844,7 +81844,7 @@
 								}] },
 								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7038, "realEditorValues": [] }
 							],
-							"__worldX": 70400,
+							"__worldX": 70480,
 							"__worldY": 410
 						},
 						{
@@ -90420,16 +90420,16 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [40,12],
+							"__grid": [39,6],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"iid": "Prop-8052",
-							"width": 192,
-							"height": 192,
+							"width": 288,
+							"height": 288,
 							"defUid": 4351,
-							"px": [640,192],
+							"px": [632,96],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Military Gate (Annex) Ring", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -90440,21 +90440,21 @@
 									"params": ["gate_ring"]
 								}] }
 							],
-							"__worldX": 83840,
-							"__worldY": 3360
+							"__worldX": 83832,
+							"__worldY": 3264
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [40,12],
+							"__grid": [39,6],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"iid": "Prop-8053",
-							"width": 192,
-							"height": 192,
+							"width": 288,
+							"height": 288,
 							"defUid": 4351,
-							"px": [640,192],
+							"px": [632,96],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Military Gate (Annex) Portal", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -90465,21 +90465,21 @@
 									"params": ["gate_portal"]
 								}] }
 							],
-							"__worldX": 83840,
-							"__worldY": 3360
+							"__worldX": 83832,
+							"__worldY": 3264
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [43,12],
+							"__grid": [44,6],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-8054",
-							"width": 96,
-							"height": 192,
+							"width": 144,
+							"height": 288,
 							"defUid": 2002,
-							"px": [688,192],
+							"px": [704,96],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "military_gate_zone", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -90497,12 +90497,12 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 83888,
-							"__worldY": 3360
+							"__worldX": 83904,
+							"__worldY": 3264
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [53,20],
+							"__grid": [58,20],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -90511,7 +90511,7 @@
 							"width": 64,
 							"height": 56,
 							"defUid": 4351,
-							"px": [848,328],
+							"px": [932,328],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Military Gate (Annex) Dialer", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -90522,12 +90522,12 @@
 									"params": ["gate_dialer"]
 								}] }
 							],
-							"__worldX": 84048,
+							"__worldX": 84132,
 							"__worldY": 3496
 						},
 						{
 							"__identifier": "Switch",
-							"__grid": [54,21],
+							"__grid": [59,21],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -90536,7 +90536,7 @@
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
-							"px": [868,340],
+							"px": [952,340],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "military_gate_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
 									"id": "V_String",
@@ -90558,7 +90558,7 @@
 								{ "__identifier": "on_activate", "__type": "String", "__value": null, "__tile": null, "defUid": 6861, "realEditorValues": [] },
 								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7040, "realEditorValues": [] }
 							],
-							"__worldX": 84068,
+							"__worldX": 84152,
 							"__worldY": 3508
 						},
 						{

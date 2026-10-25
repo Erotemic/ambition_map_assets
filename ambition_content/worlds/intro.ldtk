@@ -15228,16 +15228,16 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [38,34],
+							"__grid": [35,28],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"iid": "Prop-104793",
-							"width": 192,
-							"height": 192,
+							"width": 288,
+							"height": 288,
 							"defUid": 104426,
-							"px": [620,544],
+							"px": [572,448],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Interdimensional Gate Ring", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
@@ -15248,21 +15248,21 @@
 									"params": ["gate_ring"]
 								}] }
 							],
-							"__worldX": 5548,
-							"__worldY": 544
+							"__worldX": 5500,
+							"__worldY": 448
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [38,34],
+							"__grid": [35,28],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"iid": "Prop-104794",
-							"width": 192,
-							"height": 192,
+							"width": 288,
+							"height": 288,
 							"defUid": 104426,
-							"px": [620,544],
+							"px": [572,448],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Interdimensional Gate Portal", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
@@ -15273,21 +15273,21 @@
 									"params": ["gate_portal"]
 								}] }
 							],
-							"__worldX": 5548,
-							"__worldY": 544
+							"__worldX": 5500,
+							"__worldY": 448
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [41,34],
+							"__grid": [40,28],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-104795",
-							"width": 96,
-							"height": 192,
+							"width": 144,
+							"height": 288,
 							"defUid": 2002,
-							"px": [668,544],
+							"px": [644,448],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "intro_portal_zone", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -15305,12 +15305,12 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 5596,
-							"__worldY": 544
+							"__worldX": 5572,
+							"__worldY": 448
 						},
 						{
 							"__identifier": "Switch",
-							"__grid": [35,44],
+							"__grid": [33,44],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -15319,7 +15319,7 @@
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
-							"px": [560,704],
+							"px": [532,704],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "intro_portal_switch", "__tile": null, "defUid": 4046, "realEditorValues": [{
 									"id": "V_String",
@@ -15336,7 +15336,7 @@
 								{ "__identifier": "target_encounter", "__type": "String", "__value": "", "__tile": null, "defUid": 4049, "realEditorValues": [] },
 								{ "__identifier": "action", "__type": "String", "__value": "ResetEncounter", "__tile": null, "defUid": 4050, "realEditorValues": [] }
 							],
-							"__worldX": 5488,
+							"__worldX": 5460,
 							"__worldY": 704
 						},
 						{
@@ -15777,18 +15777,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [71,34],
+							"__grid": [68,28],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 6078,
-							"__worldY": 544,
+							"__worldX": 6030,
+							"__worldY": 448,
 							"iid": "Prop-104990",
-							"width": 192,
-							"height": 192,
+							"width": 288,
+							"height": 288,
 							"defUid": 104426,
-							"px": [1150,544],
+							"px": [1102,448],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Math Gate Ring (Home)", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
@@ -15802,18 +15802,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [71,34],
+							"__grid": [68,28],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 6078,
-							"__worldY": 544,
+							"__worldX": 6030,
+							"__worldY": 448,
 							"iid": "Prop-104991",
-							"width": 192,
-							"height": 192,
+							"width": 288,
+							"height": 288,
 							"defUid": 104426,
-							"px": [1150,544],
+							"px": [1102,448],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Math Gate Portal (Home)", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
@@ -15827,18 +15827,18 @@
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [74,34],
+							"__grid": [73,28],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
-							"__worldX": 6126,
-							"__worldY": 544,
+							"__worldX": 6102,
+							"__worldY": 448,
 							"iid": "LoadingZone-104992",
-							"width": 96,
-							"height": 192,
+							"width": 144,
+							"height": 288,
 							"defUid": 2002,
-							"px": [1198,544],
+							"px": [1174,448],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "math_gate_home_zone", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -15859,18 +15859,18 @@
 						},
 						{
 							"__identifier": "Switch",
-							"__grid": [85,44],
+							"__grid": [87,44],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFC857",
-							"__worldX": 6288,
+							"__worldX": 6326,
 							"__worldY": 704,
 							"iid": "Switch-104993",
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
-							"px": [1360,704],
+							"px": [1398,704],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "math_gate_switch", "__tile": null, "defUid": 4046, "realEditorValues": [{
 									"id": "V_String",
@@ -15916,18 +15916,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [87,42],
+							"__grid": [89,42],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 6328,
+							"__worldX": 6358,
 							"__worldY": 680,
 							"iid": "Prop-104998",
 							"width": 64,
 							"height": 56,
 							"defUid": 104426,
-							"px": [1400,680],
+							"px": [1430,680],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Ring 7 (Home) Dialer", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
@@ -15941,18 +15941,18 @@
 						},
 						{
 							"__identifier": "Switch",
-							"__grid": [88,43],
+							"__grid": [90,43],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFC857",
-							"__worldX": 6348,
+							"__worldX": 6378,
 							"__worldY": 692,
 							"iid": "Switch-104999",
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
-							"px": [1420,692],
+							"px": [1450,692],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "ring7_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
 									"id": "V_String",
@@ -15975,18 +15975,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [30,42],
+							"__grid": [28,42],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 5416,
+							"__worldX": 5384,
 							"__worldY": 680,
 							"iid": "Prop-105000",
 							"width": 64,
 							"height": 56,
 							"defUid": 104426,
-							"px": [488,680],
+							"px": [456,680],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Ring 1 (Home) Dialer", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
@@ -16000,18 +16000,18 @@
 						},
 						{
 							"__identifier": "Switch",
-							"__grid": [31,43],
+							"__grid": [29,43],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFC857",
-							"__worldX": 5436,
+							"__worldX": 5404,
 							"__worldY": 692,
 							"iid": "Switch-105001",
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
-							"px": [508,692],
+							"px": [476,692],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "ring1_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
 									"id": "V_String",
