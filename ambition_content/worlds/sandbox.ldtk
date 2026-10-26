@@ -11606,7 +11606,7 @@
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [25,52],
+							"__grid": [38,52],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -11615,7 +11615,7 @@
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [400,832],
+							"px": [615,832],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "falling_sand_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -11642,7 +11642,7 @@
 									"params": [ true ]
 								}] }
 							],
-							"__worldX": 400,
+							"__worldX": 615,
 							"__worldY": 1856
 						}
 					]
