@@ -8572,6 +8572,10 @@
 				{ "__identifier": "biome", "__type": "String", "__value": "starlight", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["starlight"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "starlight", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["starlight"]
 				}] }
 			],
 			"layerInstances": [
@@ -11450,6 +11454,10 @@
 				{ "__identifier": "title", "__type": "String", "__value": "WORLD 1-3", "__tile": null, "defUid": 107263, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["WORLD 1-3"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "starlight", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["starlight"]
 				}] }
 			],
 			"layerInstances": [
@@ -19253,6 +19261,10 @@
 				{ "__identifier": "title", "__type": "String", "__value": "WORLD 1-2", "__tile": null, "defUid": 107263, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["WORLD 1-2"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "starless", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["starless"]
 				}] }
 			],
 			"layerInstances": [
@@ -34961,6 +34973,10 @@
 				{ "__identifier": "title", "__type": "String", "__value": "WORLD 1-4", "__tile": null, "defUid": 107263, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["WORLD 1-4"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "void_castle", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["void_castle"]
 				}] }
 			],
 			"layerInstances": [
@@ -42191,6 +42207,10 @@
 				{ "__identifier": "title", "__type": "String", "__value": "WORLD 2-1", "__tile": null, "defUid": 107263, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["WORLD 2-1"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "stardune", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["stardune"]
 				}] }
 			],
 			"layerInstances": [
@@ -48796,6 +48816,10 @@
 				{ "__identifier": "title", "__type": "String", "__value": "WORLD 2-2", "__tile": null, "defUid": 107263, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["WORLD 2-2"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "starless", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["starless"]
 				}] }
 			],
 			"layerInstances": [
@@ -55617,6 +55641,10 @@
 				{ "__identifier": "title", "__type": "String", "__value": "WORLD 2-3", "__tile": null, "defUid": 107263, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["WORLD 2-3"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "stardune", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["stardune"]
 				}] }
 			],
 			"layerInstances": [
@@ -62068,6 +62096,10 @@
 				{ "__identifier": "title", "__type": "String", "__value": "WORLD 2-4", "__tile": null, "defUid": 107263, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["WORLD 2-4"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "void_castle", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["void_castle"]
 				}] }
 			],
 			"layerInstances": [
@@ -69610,6 +69642,10 @@
 				{ "__identifier": "title", "__type": "String", "__value": "WARP ZONE", "__tile": null, "defUid": 107263, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["WARP ZONE"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "starlight", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["starlight"]
 				}] }
 			],
 			"layerInstances": [
