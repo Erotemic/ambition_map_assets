@@ -6951,6 +6951,10 @@
 				{ "__identifier": "gallery", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6810, "realEditorValues": [{
 					"id": "V_Bool",
 					"params": [ true ]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "hub", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["hub"]
 				}] }
 			],
 			"layerInstances": [
