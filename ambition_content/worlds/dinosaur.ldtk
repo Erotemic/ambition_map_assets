@@ -11,7 +11,7 @@
 	"iid": "ambition-dinosaur-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 500007,
+	"nextUid": 500022,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -8975,6 +8975,56 @@
 							],
 							"__worldX": 21584,
 							"__worldY": 384
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [43,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 20700,
+							"__worldY": 413,
+							"iid": "Prop-500007",
+							"width": 218,
+							"height": 67,
+							"defUid": 4351,
+							"px": [700,413],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_trailhead_jungle_fern_clump_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_trailhead_jungle_fern_clump_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_fern_clump", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_fern_clump"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [56,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 20900,
+							"__worldY": 444,
+							"iid": "Prop-500008",
+							"width": 252,
+							"height": 36,
+							"defUid": 4351,
+							"px": [900,444],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_trailhead_jungle_fallen_log_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_trailhead_jungle_fallen_log_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_fallen_log", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_fallen_log"]
+								}] }
+							]
 						}
 					]
 				},
@@ -10225,6 +10275,81 @@
 							],
 							"__worldX": 24784,
 							"__worldY": 384
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [38,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 22220,
+							"__worldY": 370,
+							"iid": "Prop-500009",
+							"width": 132,
+							"height": 110,
+							"defUid": 4351,
+							"px": [620,370],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_run_jungle_idol_head_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_run_jungle_idol_head_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_idol_head", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_idol_head"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [93,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 23100,
+							"__worldY": 413,
+							"iid": "Prop-500010",
+							"width": 218,
+							"height": 67,
+							"defUid": 4351,
+							"px": [1500,413],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_run_jungle_fern_clump_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_run_jungle_fern_clump_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_fern_clump", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_fern_clump"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [146,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 23950,
+							"__worldY": 360,
+							"iid": "Prop-500011",
+							"width": 320,
+							"height": 120,
+							"defUid": 4351,
+							"px": [2350,360],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_run_jungle_ribcage_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_run_jungle_ribcage_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_ribcage", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_ribcage"]
+								}] }
+							]
 						}
 					]
 				},
@@ -11715,6 +11840,106 @@
 									"params": ["GateTerminal"]
 								}] }
 							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [61,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 25790,
+							"__worldY": 424,
+							"iid": "Prop-500012",
+							"width": 160,
+							"height": 56,
+							"defUid": 4351,
+							"px": [990,424],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_rookery_jungle_nest_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_rookery_jungle_nest_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_nest", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_nest"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [83,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 26130,
+							"__worldY": 424,
+							"iid": "Prop-500013",
+							"width": 160,
+							"height": 56,
+							"defUid": 4351,
+							"px": [1330,424],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_rookery_jungle_nest_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_rookery_jungle_nest_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_nest", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_nest"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [131,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 26900,
+							"__worldY": 413,
+							"iid": "Prop-500014",
+							"width": 218,
+							"height": 67,
+							"defUid": 4351,
+							"px": [2100,413],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_rookery_jungle_fern_clump_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_rookery_jungle_fern_clump_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_fern_clump", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_fern_clump"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [143,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 27100,
+							"__worldY": 444,
+							"iid": "Prop-500015",
+							"width": 252,
+							"height": 36,
+							"defUid": 4351,
+							"px": [2300,444],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_rookery_jungle_fallen_log_3", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_rookery_jungle_fallen_log_3"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_fallen_log", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_fallen_log"]
+								}] }
+							]
 						}
 					]
 				},
@@ -13068,6 +13293,81 @@
 							],
 							"__worldX": 30800,
 							"__worldY": 384
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [37,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 28008,
+							"__worldY": 360,
+							"iid": "Prop-500016",
+							"width": 320,
+							"height": 120,
+							"defUid": 4351,
+							"px": [600,360],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_ridge_jungle_ribcage_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_ridge_jungle_ribcage_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_ribcage", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_ribcage"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [138,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 29628,
+							"__worldY": 370,
+							"iid": "Prop-500017",
+							"width": 132,
+							"height": 110,
+							"defUid": 4351,
+							"px": [2220,370],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_ridge_jungle_idol_head_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_ridge_jungle_idol_head_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_idol_head", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_idol_head"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [165,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 30058,
+							"__worldY": 413,
+							"iid": "Prop-500018",
+							"width": 218,
+							"height": 67,
+							"defUid": 4351,
+							"px": [2650,413],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_ridge_jungle_fern_clump_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_ridge_jungle_fern_clump_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_fern_clump", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_fern_clump"]
+								}] }
+							]
 						}
 					]
 				},
@@ -14485,6 +14785,81 @@
 							],
 							"__worldX": 32752,
 							"__worldY": 384
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [43,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 31516,
+							"__worldY": 444,
+							"iid": "Prop-500019",
+							"width": 252,
+							"height": 36,
+							"defUid": 4351,
+							"px": [700,636],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_canopy_jungle_fallen_log_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_canopy_jungle_fallen_log_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_fallen_log", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_fallen_log"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [28,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 31266,
+							"__worldY": 413,
+							"iid": "Prop-500020",
+							"width": 218,
+							"height": 67,
+							"defUid": 4351,
+							"px": [450,605],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_canopy_jungle_fern_clump_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_canopy_jungle_fern_clump_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_fern_clump", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_fern_clump"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [94,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 32326,
+							"__worldY": 424,
+							"iid": "Prop-500021",
+							"width": 160,
+							"height": 56,
+							"defUid": 4351,
+							"px": [1510,616],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_canopy_jungle_nest_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_canopy_jungle_nest_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_nest", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_nest"]
+								}] }
+							]
 						}
 					]
 				},
