@@ -9145,18 +9145,18 @@
 						},
 						{
 							"__identifier": "NpcSpawn",
-							"__grid": [40,26],
+							"__grid": [46,26],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF9EEA",
-							"__worldX": 20644,
+							"__worldX": 20744,
 							"__worldY": 416,
 							"iid": "NpcSpawn-500050",
 							"width": 32,
 							"height": 64,
 							"defUid": 2006,
-							"px": [644,416],
+							"px": [744,416],
 							"fieldInstances": [
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_primeval_brandvold", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
