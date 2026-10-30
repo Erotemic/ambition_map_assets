@@ -1270,7 +1270,7 @@
 					"uid": 7038,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
@@ -1290,7 +1290,10 @@
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"defaultOverride": null,
+					"defaultOverride": {
+						"id": "V_Bool",
+						"params": [ false ]
+					},
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -3631,7 +3634,7 @@
 					"uid": 7039,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
@@ -3651,7 +3654,10 @@
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"defaultOverride": null,
+					"defaultOverride": {
+						"id": "V_Bool",
+						"params": [ false ]
+					},
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -4009,7 +4015,7 @@
 					"uid": 4334,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "NameAndValue",
@@ -4671,7 +4677,7 @@
 					"uid": 7040,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
@@ -4691,7 +4697,10 @@
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"defaultOverride": null,
+					"defaultOverride": {
+						"id": "V_Bool",
+						"params": [ false ]
+					},
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -5645,7 +5654,7 @@
 					"uid": 6999,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
@@ -5665,7 +5674,10 @@
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"defaultOverride": null,
+					"defaultOverride": {
+						"id": "V_Bool",
+						"params": [ false ]
+					},
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -5682,7 +5694,7 @@
 					"uid": 7677,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
@@ -5702,7 +5714,10 @@
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"defaultOverride": null,
+					"defaultOverride": {
+						"id": "V_Bool",
+						"params": [ false ]
+					},
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -6913,7 +6928,7 @@
 					"uid": 6813,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
@@ -8489,7 +8504,10 @@
 									"params": ["GateTerminal"]
 								}] },
 								{ "__identifier": "on_activate", "__type": "String", "__value": null, "__tile": null, "defUid": 6861, "realEditorValues": [] },
-								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7040, "realEditorValues": [] }
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7040, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
 							],
 							"__worldX": 70400,
 							"__worldY": 436
@@ -8557,7 +8575,10 @@
 									"id": "V_String",
 									"params": ["stand_still"]
 								}] },
-								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7038, "realEditorValues": [] }
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7038, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
 							],
 							"__worldX": 70480,
 							"__worldY": 410
@@ -8616,7 +8637,10 @@
 									"id": "V_String",
 									"params": ["currency:150"]
 								}] },
-								{ "__identifier": "opened", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7039, "realEditorValues": [] }
+								{ "__identifier": "opened", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7039, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
 							],
 							"__worldX": 70700,
 							"__worldY": 182
@@ -10632,7 +10656,10 @@
 								}] },
 								{ "__identifier": "action", "__type": "String", "__value": "ResetEncounter", "__tile": null, "defUid": 4050, "realEditorValues": [] },
 								{ "__identifier": "on_activate", "__type": "String", "__value": null, "__tile": null, "defUid": 6861, "realEditorValues": [] },
-								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7040, "realEditorValues": [] }
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7040, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
 							],
 							"__worldX": 74140,
 							"__worldY": 576
@@ -10812,7 +10839,10 @@
 									"id": "V_String",
 									"params": ["health:3"]
 								}] },
-								{ "__identifier": "opened", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7039, "realEditorValues": [] }
+								{ "__identifier": "opened", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7039, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
 							],
 							"__worldX": 75190,
 							"__worldY": 294
@@ -11743,7 +11773,10 @@
 									"params": ["ToggleFlag"]
 								}] },
 								{ "__identifier": "on_activate", "__type": "String", "__value": null, "__tile": null, "defUid": 6861, "realEditorValues": [] },
-								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7040, "realEditorValues": [] }
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7040, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
 							],
 							"__worldX": 76270,
 							"__worldY": 736
@@ -11923,7 +11956,10 @@
 									"params": ["ToggleFlag"]
 								}] },
 								{ "__identifier": "on_activate", "__type": "String", "__value": null, "__tile": null, "defUid": 6861, "realEditorValues": [] },
-								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7040, "realEditorValues": [] }
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7040, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
 							],
 							"__worldX": 76690,
 							"__worldY": 336
@@ -12044,7 +12080,10 @@
 									"params": ["ToggleFlag"]
 								}] },
 								{ "__identifier": "on_activate", "__type": "String", "__value": null, "__tile": null, "defUid": 6861, "realEditorValues": [] },
-								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7040, "realEditorValues": [] }
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7040, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
 							],
 							"__worldX": 76756,
 							"__worldY": 736
@@ -12255,7 +12294,10 @@
 									"id": "V_String",
 									"params": ["currency:200"]
 								}] },
-								{ "__identifier": "opened", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7039, "realEditorValues": [] }
+								{ "__identifier": "opened", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7039, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
 							],
 							"__worldX": 77496,
 							"__worldY": 710
@@ -13524,7 +13566,10 @@
 									"params": ["ToggleFlag"]
 								}] },
 								{ "__identifier": "on_activate", "__type": "String", "__value": null, "__tile": null, "defUid": 6861, "realEditorValues": [] },
-								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7040, "realEditorValues": [] }
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7040, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
 							],
 							"__worldX": 78090,
 							"__worldY": 1184
@@ -13651,7 +13696,10 @@
 									"params": ["ToggleFlag"]
 								}] },
 								{ "__identifier": "on_activate", "__type": "String", "__value": null, "__tile": null, "defUid": 6861, "realEditorValues": [] },
-								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7040, "realEditorValues": [] }
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7040, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
 							],
 							"__worldX": 79080,
 							"__worldY": 768
@@ -13800,7 +13848,10 @@
 									"params": ["ToggleFlag"]
 								}] },
 								{ "__identifier": "on_activate", "__type": "String", "__value": null, "__tile": null, "defUid": 6861, "realEditorValues": [] },
-								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7040, "realEditorValues": [] }
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7040, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
 							],
 							"__worldX": 78090,
 							"__worldY": 448
@@ -14827,7 +14878,10 @@
 								}] },
 								{ "__identifier": "action", "__type": "String", "__value": "ResetEncounter", "__tile": null, "defUid": 4050, "realEditorValues": [] },
 								{ "__identifier": "on_activate", "__type": "String", "__value": null, "__tile": null, "defUid": 6861, "realEditorValues": [] },
-								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7040, "realEditorValues": [] }
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7040, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
 							],
 							"__worldX": 80140,
 							"__worldY": 576
