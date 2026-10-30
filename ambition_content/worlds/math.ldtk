@@ -11,7 +11,7 @@
 	"iid": "ambition-math-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 208694,
+	"nextUid": 208720,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -8266,6 +8266,81 @@
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
+						{
+							"__identifier": "Prop",
+							"__grid": [11,3],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 180,
+							"__worldY": 1392,
+							"iid": "Prop-208697",
+							"width": 1240,
+							"height": 174,
+							"defUid": 4351,
+							"px": [180,48],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hall_lamps", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_lamps"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "math_hall_lamps", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hall_lamps"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [1,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 16,
+							"__worldY": 1778,
+							"iid": "Prop-208698",
+							"width": 310,
+							"height": 270,
+							"defUid": 4351,
+							"px": [16,434],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hall_west", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_west"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "math_hall_west", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hall_west"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [74,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1198,
+							"__worldY": 1644,
+							"iid": "Prop-208699",
+							"width": 324,
+							"height": 404,
+							"defUid": 4351,
+							"px": [1198,300],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hall_east", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_east"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "math_hall_east", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hall_east"]
+								}] }
+							]
+						},
 						{
 							"__identifier": "PlayerStart",
 							"__grid": [29,41],
