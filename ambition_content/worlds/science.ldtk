@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 409988,
+	"nextUid": 410030,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -25885,7 +25885,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 368,
 							"__worldY": 7296,
-							"iid": "Prop-409981",
+							"iid": "Prop-410025",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -25910,7 +25910,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 368,
 							"__worldY": 7296,
-							"iid": "Prop-409982",
+							"iid": "Prop-410026",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -25935,7 +25935,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 440,
 							"__worldY": 7296,
-							"iid": "LoadingZone-409983",
+							"iid": "LoadingZone-410027",
 							"width": 144,
 							"height": 288,
 							"defUid": 2002,
@@ -25967,7 +25967,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 668,
 							"__worldY": 7528,
-							"iid": "Prop-409984",
+							"iid": "Prop-410028",
 							"width": 64,
 							"height": 56,
 							"defUid": 4351,
@@ -25992,7 +25992,7 @@
 							"__smartColor": "#FFC857",
 							"__worldX": 688,
 							"__worldY": 7540,
-							"iid": "Switch-409985",
+							"iid": "Switch-410029",
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
@@ -28253,6 +28253,124 @@
 								{ "__identifier": "text", "__type": "String", "__value": "N. TESSERACT, DIRECTOR: back soon", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["N. TESSERACT, DIRECTOR: back soon"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [74,30],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 4264,
+							"__worldY": 8544,
+							"iid": "Switch-409997",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [1192,480],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "lab_gravity_prototype", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lab_gravity_prototype"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the prototype", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the prototype"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Do not press", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Do not press"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "FlipGravity", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["FlipGravity"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [74,2],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 4264,
+							"__worldY": 8096,
+							"iid": "Switch-409998",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [1192,32],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "lab_gravity_prototype_twin", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lab_gravity_prototype_twin"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the prototype's twin", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the prototype's twin"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Press to come down", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Press to come down"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "FlipGravity", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["FlipGravity"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [55,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 3954,
+							"__worldY": 8466,
+							"iid": "DebugLabel-410020",
+							"width": 380,
+							"height": 24,
+							"defUid": 2007,
+							"px": [882,402],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lab_sign_prototype", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lab_sign_prototype"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "ANTI-GRAVITY PROTOTYPE: DO NOT PRESS", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ANTI-GRAVITY PROTOTYPE: DO NOT PRESS"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [65,6],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 4124,
+							"__worldY": 8166,
+							"iid": "DebugLabel-410021",
+							"width": 160,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1052,102],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lab_sign_told_you", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lab_sign_told_you"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "TOLD YOU.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["TOLD YOU."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
