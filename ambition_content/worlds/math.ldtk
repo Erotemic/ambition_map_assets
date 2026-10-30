@@ -11,7 +11,7 @@
 	"iid": "ambition-math-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 209613,
+	"nextUid": 209900,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -25310,29 +25310,29 @@
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,
-						2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,
-						2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
-						2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						1,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,
-						0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,
-						0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,
-						0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,
-						2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,
+						0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -25527,19 +25527,3614 @@
 							}] }]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [21,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1253,
+							"__worldY": 1508,
+							"iid": "Prop-209619",
+							"width": 26,
+							"height": 540,
+							"defUid": 4351,
+							"px": [347,164],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_needle_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_needle_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_needle", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_needle"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [49,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -813,
+							"__worldY": 1508,
+							"iid": "Prop-209620",
+							"width": 26,
+							"height": 540,
+							"defUid": 4351,
+							"px": [787,164],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_needle_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_needle_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_needle", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_needle"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [76,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -373,
+							"__worldY": 1508,
+							"iid": "Prop-209621",
+							"width": 26,
+							"height": 540,
+							"defUid": 4351,
+							"px": [1227,164],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_needle_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_needle_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_needle", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_needle"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [9,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1448,
+							"__worldY": 2040,
+							"iid": "Prop-209622",
+							"width": 416,
+							"height": 8,
+							"defUid": 4351,
+							"px": [152,696],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_64", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_64"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_64", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_64"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [9,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1448,
+							"__worldY": 2024,
+							"iid": "SurfaceChain-209764",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [152,680],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_64_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_64_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "152,696; 568,696", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["152,696; 568,696"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [9,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1445,
+							"__worldY": 2032,
+							"iid": "Prop-209623",
+							"width": 410,
+							"height": 8,
+							"defUid": 4351,
+							"px": [155,688],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_63", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_63"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_63", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_63"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [9,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1445,
+							"__worldY": 2016,
+							"iid": "SurfaceChain-209766",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [155,672],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_63_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_63_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "155,688; 565,688", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["155,688; 565,688"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [9,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1442,
+							"__worldY": 2024,
+							"iid": "Prop-209624",
+							"width": 404,
+							"height": 8,
+							"defUid": 4351,
+							"px": [158,680],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_62", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_62"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_62", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_62"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [9,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1442,
+							"__worldY": 2008,
+							"iid": "SurfaceChain-209768",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [158,664],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_62_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_62_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "158,680; 562,680", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["158,680; 562,680"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [10,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1439,
+							"__worldY": 2016,
+							"iid": "Prop-209625",
+							"width": 398,
+							"height": 8,
+							"defUid": 4351,
+							"px": [161,672],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_61", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_61"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_61", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_61"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [10,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1439,
+							"__worldY": 2000,
+							"iid": "SurfaceChain-209770",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [161,656],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_61_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_61_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "161,672; 559,672", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["161,672; 559,672"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [10,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1436,
+							"__worldY": 2008,
+							"iid": "Prop-209626",
+							"width": 392,
+							"height": 8,
+							"defUid": 4351,
+							"px": [164,664],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_60", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_60"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_60", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_60"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [10,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1436,
+							"__worldY": 1992,
+							"iid": "SurfaceChain-209772",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [164,648],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_60_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_60_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "164,664; 556,664", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["164,664; 556,664"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [10,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1433,
+							"__worldY": 2000,
+							"iid": "Prop-209627",
+							"width": 386,
+							"height": 8,
+							"defUid": 4351,
+							"px": [167,656],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_59", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_59"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_59", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_59"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [10,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1433,
+							"__worldY": 1984,
+							"iid": "SurfaceChain-209774",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [167,640],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_59_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_59_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "167,656; 553,656", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["167,656; 553,656"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [10,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1430,
+							"__worldY": 1992,
+							"iid": "Prop-209628",
+							"width": 380,
+							"height": 8,
+							"defUid": 4351,
+							"px": [170,648],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_58", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_58"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_58", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_58"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [10,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1430,
+							"__worldY": 1976,
+							"iid": "SurfaceChain-209776",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [170,632],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_58_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_58_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "170,648; 550,648", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["170,648; 550,648"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [10,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1427,
+							"__worldY": 1984,
+							"iid": "Prop-209629",
+							"width": 374,
+							"height": 8,
+							"defUid": 4351,
+							"px": [173,640],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_57", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_57"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_57", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_57"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [10,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1427,
+							"__worldY": 1968,
+							"iid": "SurfaceChain-209778",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [173,624],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_57_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_57_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "173,640; 547,640", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["173,640; 547,640"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [11,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1424,
+							"__worldY": 1976,
+							"iid": "Prop-209630",
+							"width": 368,
+							"height": 8,
+							"defUid": 4351,
+							"px": [176,632],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_56", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_56"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_56", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_56"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [11,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1424,
+							"__worldY": 1960,
+							"iid": "SurfaceChain-209780",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [176,616],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_56_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_56_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "176,632; 544,632", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["176,632; 544,632"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [11,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1421,
+							"__worldY": 1968,
+							"iid": "Prop-209631",
+							"width": 362,
+							"height": 8,
+							"defUid": 4351,
+							"px": [179,624],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_55", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_55"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_55", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_55"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [11,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1421,
+							"__worldY": 1952,
+							"iid": "SurfaceChain-209782",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [179,608],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_55_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_55_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "179,624; 541,624", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["179,624; 541,624"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [11,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1418,
+							"__worldY": 1960,
+							"iid": "Prop-209632",
+							"width": 356,
+							"height": 8,
+							"defUid": 4351,
+							"px": [182,616],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_54", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_54"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_54", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_54"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [11,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1418,
+							"__worldY": 1944,
+							"iid": "SurfaceChain-209784",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [182,600],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_54_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_54_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "182,616; 538,616", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["182,616; 538,616"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [11,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1415,
+							"__worldY": 1952,
+							"iid": "Prop-209633",
+							"width": 350,
+							"height": 8,
+							"defUid": 4351,
+							"px": [185,608],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_53", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_53"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_53", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_53"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [11,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1415,
+							"__worldY": 1936,
+							"iid": "SurfaceChain-209786",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [185,592],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_53_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_53_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "185,608; 535,608", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["185,608; 535,608"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [11,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1412,
+							"__worldY": 1944,
+							"iid": "Prop-209634",
+							"width": 344,
+							"height": 8,
+							"defUid": 4351,
+							"px": [188,600],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_52", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_52"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_52", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_52"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [11,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1412,
+							"__worldY": 1928,
+							"iid": "SurfaceChain-209788",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [188,584],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_52_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_52_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "188,600; 532,600", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["188,600; 532,600"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [11,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1409,
+							"__worldY": 1936,
+							"iid": "Prop-209635",
+							"width": 338,
+							"height": 8,
+							"defUid": 4351,
+							"px": [191,592],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_51", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_51"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_51", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_51"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [11,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1409,
+							"__worldY": 1920,
+							"iid": "SurfaceChain-209790",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [191,576],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_51_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_51_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "191,592; 529,592", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["191,592; 529,592"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [12,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1406,
+							"__worldY": 1928,
+							"iid": "Prop-209636",
+							"width": 332,
+							"height": 8,
+							"defUid": 4351,
+							"px": [194,584],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_50", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_50"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_50", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_50"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [12,35],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1406,
+							"__worldY": 1912,
+							"iid": "SurfaceChain-209792",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [194,568],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_50_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_50_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "194,584; 526,584", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["194,584; 526,584"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [12,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1403,
+							"__worldY": 1920,
+							"iid": "Prop-209637",
+							"width": 326,
+							"height": 8,
+							"defUid": 4351,
+							"px": [197,576],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_49", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_49"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_49", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_49"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [12,35],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1403,
+							"__worldY": 1904,
+							"iid": "SurfaceChain-209794",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [197,560],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_49_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_49_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "197,576; 523,576", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["197,576; 523,576"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [12,35],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1400,
+							"__worldY": 1912,
+							"iid": "Prop-209638",
+							"width": 320,
+							"height": 8,
+							"defUid": 4351,
+							"px": [200,568],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_48", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_48"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_48", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_48"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [12,34],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1400,
+							"__worldY": 1896,
+							"iid": "SurfaceChain-209796",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [200,552],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_48_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_48_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "200,568; 520,568", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["200,568; 520,568"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [12,35],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1397,
+							"__worldY": 1904,
+							"iid": "Prop-209639",
+							"width": 314,
+							"height": 8,
+							"defUid": 4351,
+							"px": [203,560],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_47", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_47"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_47", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_47"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [12,34],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1397,
+							"__worldY": 1888,
+							"iid": "SurfaceChain-209798",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [203,544],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_47_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_47_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "203,560; 517,560", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["203,560; 517,560"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [12,34],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1394,
+							"__worldY": 1896,
+							"iid": "Prop-209640",
+							"width": 308,
+							"height": 8,
+							"defUid": 4351,
+							"px": [206,552],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_46", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_46"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_46", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_46"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [12,33],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1394,
+							"__worldY": 1880,
+							"iid": "SurfaceChain-209800",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [206,536],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_46_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_46_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "206,552; 514,552", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["206,552; 514,552"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [13,34],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1391,
+							"__worldY": 1888,
+							"iid": "Prop-209641",
+							"width": 302,
+							"height": 8,
+							"defUid": 4351,
+							"px": [209,544],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_45", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_45"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_45", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_45"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [13,33],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1391,
+							"__worldY": 1872,
+							"iid": "SurfaceChain-209802",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [209,528],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_45_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_45_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "209,544; 511,544", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["209,544; 511,544"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [13,33],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1388,
+							"__worldY": 1880,
+							"iid": "Prop-209642",
+							"width": 296,
+							"height": 8,
+							"defUid": 4351,
+							"px": [212,536],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_44", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_44"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_44", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_44"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [13,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1388,
+							"__worldY": 1864,
+							"iid": "SurfaceChain-209804",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [212,520],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_44_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_44_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "212,536; 508,536", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["212,536; 508,536"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [13,33],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1385,
+							"__worldY": 1872,
+							"iid": "Prop-209643",
+							"width": 290,
+							"height": 8,
+							"defUid": 4351,
+							"px": [215,528],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_43", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_43"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_43", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_43"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [13,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1385,
+							"__worldY": 1856,
+							"iid": "SurfaceChain-209806",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [215,512],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_43_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_43_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "215,528; 505,528", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["215,528; 505,528"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [13,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1382,
+							"__worldY": 1864,
+							"iid": "Prop-209644",
+							"width": 284,
+							"height": 8,
+							"defUid": 4351,
+							"px": [218,520],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_42", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_42"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_42", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_42"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [13,31],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1382,
+							"__worldY": 1848,
+							"iid": "SurfaceChain-209808",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [218,504],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_42_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_42_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "218,520; 502,520", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["218,520; 502,520"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [13,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1379,
+							"__worldY": 1856,
+							"iid": "Prop-209645",
+							"width": 278,
+							"height": 8,
+							"defUid": 4351,
+							"px": [221,512],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_41", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_41"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_41", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_41"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [13,31],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1379,
+							"__worldY": 1840,
+							"iid": "SurfaceChain-209810",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [221,496],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_41_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_41_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "221,512; 499,512", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["221,512; 499,512"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [14,31],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1376,
+							"__worldY": 1848,
+							"iid": "Prop-209646",
+							"width": 272,
+							"height": 8,
+							"defUid": 4351,
+							"px": [224,504],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_40", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_40"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_40", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_40"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [14,30],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1376,
+							"__worldY": 1832,
+							"iid": "SurfaceChain-209812",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [224,488],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_40_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_40_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "224,504; 496,504", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["224,504; 496,504"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [14,31],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1373,
+							"__worldY": 1840,
+							"iid": "Prop-209647",
+							"width": 266,
+							"height": 8,
+							"defUid": 4351,
+							"px": [227,496],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_39", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_39"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_39", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_39"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [14,30],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1373,
+							"__worldY": 1824,
+							"iid": "SurfaceChain-209814",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [227,480],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_39_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_39_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "227,496; 493,496", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["227,496; 493,496"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [14,30],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1370,
+							"__worldY": 1832,
+							"iid": "Prop-209648",
+							"width": 260,
+							"height": 8,
+							"defUid": 4351,
+							"px": [230,488],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_38", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_38"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_38", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_38"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [14,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1370,
+							"__worldY": 1816,
+							"iid": "SurfaceChain-209816",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [230,472],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_38_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_38_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "230,488; 490,488", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["230,488; 490,488"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [14,30],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1367,
+							"__worldY": 1824,
+							"iid": "Prop-209649",
+							"width": 254,
+							"height": 8,
+							"defUid": 4351,
+							"px": [233,480],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_37", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_37"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_37", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_37"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [14,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1367,
+							"__worldY": 1808,
+							"iid": "SurfaceChain-209818",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [233,464],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_37_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_37_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "233,480; 487,480", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["233,480; 487,480"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [14,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1364,
+							"__worldY": 1816,
+							"iid": "Prop-209650",
+							"width": 248,
+							"height": 8,
+							"defUid": 4351,
+							"px": [236,472],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_36", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_36"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_36", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_36"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [14,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1364,
+							"__worldY": 1800,
+							"iid": "SurfaceChain-209820",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [236,456],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_36_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_36_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "236,472; 484,472", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["236,472; 484,472"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [14,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1361,
+							"__worldY": 1808,
+							"iid": "Prop-209651",
+							"width": 242,
+							"height": 8,
+							"defUid": 4351,
+							"px": [239,464],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_35", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_35"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_35", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_35"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [14,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1361,
+							"__worldY": 1792,
+							"iid": "SurfaceChain-209822",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [239,448],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_35_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_35_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "239,464; 481,464", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["239,464; 481,464"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [15,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1358,
+							"__worldY": 1800,
+							"iid": "Prop-209652",
+							"width": 236,
+							"height": 8,
+							"defUid": 4351,
+							"px": [242,456],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_34", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_34"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_34", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_34"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [15,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1358,
+							"__worldY": 1784,
+							"iid": "SurfaceChain-209824",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [242,440],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_34_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_34_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "242,456; 478,456", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["242,456; 478,456"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [15,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1355,
+							"__worldY": 1792,
+							"iid": "Prop-209653",
+							"width": 230,
+							"height": 8,
+							"defUid": 4351,
+							"px": [245,448],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_33", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_33"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_33", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_33"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [15,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1355,
+							"__worldY": 1776,
+							"iid": "SurfaceChain-209826",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [245,432],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_33_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_33_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "245,448; 475,448", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["245,448; 475,448"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [15,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1352,
+							"__worldY": 1784,
+							"iid": "Prop-209654",
+							"width": 224,
+							"height": 8,
+							"defUid": 4351,
+							"px": [248,440],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_32", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_32"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_32", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_32"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [15,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1352,
+							"__worldY": 1768,
+							"iid": "SurfaceChain-209828",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [248,424],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_32_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_32_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "248,440; 472,440", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["248,440; 472,440"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [15,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1349,
+							"__worldY": 1776,
+							"iid": "Prop-209655",
+							"width": 218,
+							"height": 8,
+							"defUid": 4351,
+							"px": [251,432],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_31", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_31"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_31", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_31"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [15,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1349,
+							"__worldY": 1760,
+							"iid": "SurfaceChain-209830",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [251,416],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_31_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_31_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "251,432; 469,432", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["251,432; 469,432"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [15,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1346,
+							"__worldY": 1768,
+							"iid": "Prop-209656",
+							"width": 212,
+							"height": 8,
+							"defUid": 4351,
+							"px": [254,424],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_30", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_30"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_30", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_30"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [15,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1346,
+							"__worldY": 1752,
+							"iid": "SurfaceChain-209832",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [254,408],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_30_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_30_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "254,424; 466,424", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["254,424; 466,424"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [16,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1343,
+							"__worldY": 1760,
+							"iid": "Prop-209657",
+							"width": 206,
+							"height": 8,
+							"defUid": 4351,
+							"px": [257,416],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_29", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_29"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_29", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_29"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [16,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1343,
+							"__worldY": 1744,
+							"iid": "SurfaceChain-209834",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [257,400],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_29_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_29_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "257,416; 463,416", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["257,416; 463,416"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [16,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1340,
+							"__worldY": 1752,
+							"iid": "Prop-209658",
+							"width": 200,
+							"height": 8,
+							"defUid": 4351,
+							"px": [260,408],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_28", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_28"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_28", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_28"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [16,24],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1340,
+							"__worldY": 1736,
+							"iid": "SurfaceChain-209836",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [260,392],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_28_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_28_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "260,408; 460,408", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["260,408; 460,408"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [16,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1337,
+							"__worldY": 1744,
+							"iid": "Prop-209659",
+							"width": 194,
+							"height": 8,
+							"defUid": 4351,
+							"px": [263,400],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_27", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_27"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_27", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_27"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [16,24],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1337,
+							"__worldY": 1728,
+							"iid": "SurfaceChain-209838",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [263,384],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_27_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_27_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "263,400; 457,400", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["263,400; 457,400"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [16,24],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1334,
+							"__worldY": 1736,
+							"iid": "Prop-209660",
+							"width": 188,
+							"height": 8,
+							"defUid": 4351,
+							"px": [266,392],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_26", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_26"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_26", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_26"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [16,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1334,
+							"__worldY": 1720,
+							"iid": "SurfaceChain-209840",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [266,376],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_26_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_26_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "266,392; 454,392", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["266,392; 454,392"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [16,24],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1331,
+							"__worldY": 1728,
+							"iid": "Prop-209661",
+							"width": 182,
+							"height": 8,
+							"defUid": 4351,
+							"px": [269,384],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_25", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_25"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_25", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_25"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [16,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1331,
+							"__worldY": 1712,
+							"iid": "SurfaceChain-209842",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [269,368],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_25_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_25_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "269,384; 451,384", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["269,384; 451,384"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [17,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1328,
+							"__worldY": 1720,
+							"iid": "Prop-209662",
+							"width": 176,
+							"height": 8,
+							"defUid": 4351,
+							"px": [272,376],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_24", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_24"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_24", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_24"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [17,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1328,
+							"__worldY": 1704,
+							"iid": "SurfaceChain-209844",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [272,360],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_24_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_24_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "272,376; 448,376", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["272,376; 448,376"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [17,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1325,
+							"__worldY": 1712,
+							"iid": "Prop-209663",
+							"width": 170,
+							"height": 8,
+							"defUid": 4351,
+							"px": [275,368],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_23", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_23"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_23", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_23"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [17,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1325,
+							"__worldY": 1696,
+							"iid": "SurfaceChain-209846",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [275,352],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_23_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_23_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "275,368; 445,368", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["275,368; 445,368"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [17,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1322,
+							"__worldY": 1704,
+							"iid": "Prop-209664",
+							"width": 164,
+							"height": 8,
+							"defUid": 4351,
+							"px": [278,360],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_22", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_22"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_22", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_22"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [17,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1322,
+							"__worldY": 1688,
+							"iid": "SurfaceChain-209848",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [278,344],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_22_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_22_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "278,360; 442,360", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["278,360; 442,360"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [17,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1319,
+							"__worldY": 1696,
+							"iid": "Prop-209665",
+							"width": 158,
+							"height": 8,
+							"defUid": 4351,
+							"px": [281,352],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_21", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_21"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_21", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_21"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [17,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -1319,
+							"__worldY": 1680,
+							"iid": "SurfaceChain-209850",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [281,336],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_21_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_21_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "281,352; 439,352", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["281,352; 439,352"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [45,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -873,
+							"__worldY": 2040,
+							"iid": "Prop-209666",
+							"width": 146,
+							"height": 8,
+							"defUid": 4351,
+							"px": [727,696],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_19", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_19"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_19", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_19"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [45,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -873,
+							"__worldY": 2024,
+							"iid": "SurfaceChain-209852",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [727,680],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_19_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_19_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "727,696; 873,696", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["727,696; 873,696"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [45,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -870,
+							"__worldY": 2032,
+							"iid": "Prop-209667",
+							"width": 140,
+							"height": 8,
+							"defUid": 4351,
+							"px": [730,688],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_18", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_18"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_18", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_18"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [45,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -870,
+							"__worldY": 2016,
+							"iid": "SurfaceChain-209854",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [730,672],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_18_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_18_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "730,688; 870,688", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["730,688; 870,688"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [45,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -867,
+							"__worldY": 2024,
+							"iid": "Prop-209668",
+							"width": 134,
+							"height": 8,
+							"defUid": 4351,
+							"px": [733,680],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_17", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_17"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_17", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_17"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [45,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -867,
+							"__worldY": 2008,
+							"iid": "SurfaceChain-209856",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [733,664],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_17_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_17_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "733,680; 867,680", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["733,680; 867,680"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [46,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -864,
+							"__worldY": 2016,
+							"iid": "Prop-209669",
+							"width": 128,
+							"height": 8,
+							"defUid": 4351,
+							"px": [736,672],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_16", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_16"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_16", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_16"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [46,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -864,
+							"__worldY": 2000,
+							"iid": "SurfaceChain-209858",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [736,656],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_16_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_16_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "736,672; 864,672", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["736,672; 864,672"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [46,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -849,
+							"__worldY": 2008,
+							"iid": "Prop-209670",
+							"width": 98,
+							"height": 8,
+							"defUid": 4351,
+							"px": [751,664],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_11", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_11"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_11", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_11"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [46,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -849,
+							"__worldY": 1992,
+							"iid": "SurfaceChain-209860",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [751,648],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_11_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_11_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "751,664; 849,664", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["751,664; 849,664"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [47,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -846,
+							"__worldY": 2000,
+							"iid": "Prop-209671",
+							"width": 92,
+							"height": 8,
+							"defUid": 4351,
+							"px": [754,656],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_10", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_10"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_10", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_10"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [47,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -846,
+							"__worldY": 1984,
+							"iid": "SurfaceChain-209862",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [754,640],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_10_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_10_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "754,656; 846,656", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["754,656; 846,656"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [47,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -843,
+							"__worldY": 1992,
+							"iid": "Prop-209672",
+							"width": 86,
+							"height": 8,
+							"defUid": 4351,
+							"px": [757,648],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_09", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_09"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_09", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_09"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [47,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -843,
+							"__worldY": 1976,
+							"iid": "SurfaceChain-209864",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [757,632],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_09_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_09_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "757,648; 843,648", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["757,648; 843,648"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [47,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -840,
+							"__worldY": 1984,
+							"iid": "Prop-209673",
+							"width": 80,
+							"height": 8,
+							"defUid": 4351,
+							"px": [760,640],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_08", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_08"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_08", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_08"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [47,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -840,
+							"__worldY": 1968,
+							"iid": "SurfaceChain-209866",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [760,624],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_08_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_08_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "760,640; 840,640", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["760,640; 840,640"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [47,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -837,
+							"__worldY": 1976,
+							"iid": "Prop-209674",
+							"width": 74,
+							"height": 8,
+							"defUid": 4351,
+							"px": [763,632],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_07", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_07"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_07", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_07"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [47,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -837,
+							"__worldY": 1960,
+							"iid": "SurfaceChain-209868",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [763,616],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_07_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_07_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "763,632; 837,632", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["763,632; 837,632"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [47,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -834,
+							"__worldY": 1968,
+							"iid": "Prop-209675",
+							"width": 68,
+							"height": 8,
+							"defUid": 4351,
+							"px": [766,624],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_06", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_06"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_06", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_06"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [47,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -834,
+							"__worldY": 1952,
+							"iid": "SurfaceChain-209870",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [766,608],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_06_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_06_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "766,624; 834,624", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["766,624; 834,624"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [72,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -436,
+							"__worldY": 2040,
+							"iid": "Prop-209676",
+							"width": 152,
+							"height": 8,
+							"defUid": 4351,
+							"px": [1164,696],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_20", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_20"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_20", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_20"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [72,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -436,
+							"__worldY": 2024,
+							"iid": "SurfaceChain-209872",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1164,680],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_20_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_20_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "1164,696; 1316,696", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["1164,696; 1316,696"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [73,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -421,
+							"__worldY": 2032,
+							"iid": "Prop-209677",
+							"width": 122,
+							"height": 8,
+							"defUid": 4351,
+							"px": [1179,688],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_15", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_15"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_15", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_15"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [73,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -421,
+							"__worldY": 2016,
+							"iid": "SurfaceChain-209874",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1179,672],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_15_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_15_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "1179,688; 1301,688", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["1179,688; 1301,688"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [73,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -418,
+							"__worldY": 2024,
+							"iid": "Prop-209678",
+							"width": 116,
+							"height": 8,
+							"defUid": 4351,
+							"px": [1182,680],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_14", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_14"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_14", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_14"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [73,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -418,
+							"__worldY": 2008,
+							"iid": "SurfaceChain-209876",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1182,664],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_14_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_14_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "1182,680; 1298,680", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["1182,680; 1298,680"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [74,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -415,
+							"__worldY": 2016,
+							"iid": "Prop-209679",
+							"width": 110,
+							"height": 8,
+							"defUid": 4351,
+							"px": [1185,672],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_13", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_13"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_13", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_13"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [74,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -415,
+							"__worldY": 2000,
+							"iid": "SurfaceChain-209878",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1185,656],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_13_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_13_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "1185,672; 1295,672", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["1185,672; 1295,672"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [74,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -412,
+							"__worldY": 2008,
+							"iid": "Prop-209680",
+							"width": 104,
+							"height": 8,
+							"defUid": 4351,
+							"px": [1188,664],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_12", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_12"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_12", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_12"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [74,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -412,
+							"__worldY": 1992,
+							"iid": "SurfaceChain-209880",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1188,648],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_12_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_12_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "1188,664; 1292,664", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["1188,664; 1292,664"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [75,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -391,
+							"__worldY": 2000,
+							"iid": "Prop-209681",
+							"width": 62,
+							"height": 8,
+							"defUid": 4351,
+							"px": [1209,656],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_05", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_05"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_05", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_05"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [75,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -391,
+							"__worldY": 1984,
+							"iid": "SurfaceChain-209882",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1209,640],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_05_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_05_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "1209,656; 1271,656", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["1209,656; 1271,656"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [75,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -388,
+							"__worldY": 1992,
+							"iid": "Prop-209682",
+							"width": 56,
+							"height": 8,
+							"defUid": 4351,
+							"px": [1212,648],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_04", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_04"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_04", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_04"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [75,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -388,
+							"__worldY": 1976,
+							"iid": "SurfaceChain-209884",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1212,632],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_04_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_04_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "1212,648; 1268,648", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["1212,648; 1268,648"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [75,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -385,
+							"__worldY": 1984,
+							"iid": "Prop-209683",
+							"width": 50,
+							"height": 8,
+							"defUid": 4351,
+							"px": [1215,640],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_03", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_03"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_03", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_03"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [75,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -385,
+							"__worldY": 1968,
+							"iid": "SurfaceChain-209886",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1215,624],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_03_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_03_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "1215,640; 1265,640", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["1215,640; 1265,640"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [76,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -382,
+							"__worldY": 1976,
+							"iid": "Prop-209684",
+							"width": 44,
+							"height": 8,
+							"defUid": 4351,
+							"px": [1218,632],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_02", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_02"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_02", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_02"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [76,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -382,
+							"__worldY": 1960,
+							"iid": "SurfaceChain-209888",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1218,616],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_02_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_02_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "1218,632; 1262,632", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["1218,632; 1262,632"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [76,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -379,
+							"__worldY": 1968,
+							"iid": "Prop-209685",
+							"width": 38,
+							"height": 8,
+							"defUid": 4351,
+							"px": [1221,624],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_01", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_01"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hanoi_disk_01", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_01"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [76,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -379,
+							"__worldY": 1952,
+							"iid": "SurfaceChain-209890",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1221,608],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hanoi_disk_01_top", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hanoi_disk_01_top"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "1221,624; 1259,624", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["1221,624; 1259,624"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6813, "realEditorValues": [] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 208095, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "ChestSpawn",
-							"__grid": [20,32],
+							"__grid": [17,18],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#F6C85F",
-							"__worldX": -1278,
-							"__worldY": 1870,
-							"iid": "ChestSpawn-209416",
+							"__worldX": -1319,
+							"__worldY": 1638,
+							"iid": "ChestSpawn-209686",
 							"width": 76,
 							"height": 58,
 							"defUid": 2016,
-							"px": [322,526],
+							"px": [281,294],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "a golden offcut", "__tile": null, "defUid": 3041, "realEditorValues": [{
 									"id": "V_String",
@@ -25583,18 +29178,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [35,6],
+							"__grid": [35,4],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
 							"__worldX": -1040,
-							"__worldY": 1454,
-							"iid": "DebugLabel-209418",
+							"__worldY": 1420,
+							"iid": "DebugLabel-209688",
 							"width": 480,
 							"height": 24,
 							"defUid": 2007,
-							"px": [560,110],
+							"px": [560,76],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hanoi_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -25609,26 +29204,26 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [35,20],
+							"__grid": [35,6],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
 							"__worldX": -1040,
-							"__worldY": 1664,
-							"iid": "DebugLabel-209419",
+							"__worldY": 1452,
+							"iid": "DebugLabel-209689",
 							"width": 480,
 							"height": 24,
 							"defUid": 2007,
-							"px": [560,320],
+							"px": [560,108],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hanoi_sign_count", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["hanoi_sign_count"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "Moves left: 18,446,744,073,708,503,040", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "Moves left: 18,446,744,073,708,996,576", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["Moves left: 18,446,744,073,708,503,040"]
+									"params": ["Moves left: 18,446,744,073,708,996,576"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
