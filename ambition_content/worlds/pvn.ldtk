@@ -11,7 +11,7 @@
 	"iid": "ambition-pvn-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 900196,
+	"nextUid": 900221,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -19348,7 +19348,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 112,
 							"__worldY": 416,
-							"iid": "Prop-900191",
+							"iid": "Prop-900216",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -19373,7 +19373,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 112,
 							"__worldY": 416,
-							"iid": "Prop-900192",
+							"iid": "Prop-900217",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -19398,7 +19398,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 184,
 							"__worldY": 416,
-							"iid": "LoadingZone-900193",
+							"iid": "LoadingZone-900218",
 							"width": 144,
 							"height": 288,
 							"defUid": 2002,
@@ -19430,7 +19430,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 412,
 							"__worldY": 648,
-							"iid": "Prop-900194",
+							"iid": "Prop-900219",
 							"width": 64,
 							"height": 56,
 							"defUid": 4351,
@@ -19455,7 +19455,7 @@
 							"__smartColor": "#FFC857",
 							"__worldX": 432,
 							"__worldY": 660,
-							"iid": "Switch-900195",
+							"iid": "Switch-900220",
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
@@ -23173,6 +23173,36 @@
 								"id": "V_String",
 								"params": ["pirate_wreckers_reef_spawn"]
 							}] }]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [14,44],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 7200,
+							"__worldY": 640,
+							"iid": "NpcSpawn-900204",
+							"width": 32,
+							"height": 64,
+							"defUid": 2006,
+							"px": [224,704],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_port_brine", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_port_brine"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "pirate_port_brine", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pirate_port_brine"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stand_still"]
+								}] }
+							]
 						},
 						{
 							"__identifier": "DebugLabel",
