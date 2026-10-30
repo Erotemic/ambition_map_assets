@@ -19592,6 +19592,90 @@
 							]
 						},
 						{
+							"__identifier": "DebugLabel",
+							"__grid": [61,24],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 13380,
+							"__worldY": 2784,
+							"iid": "DebugLabel-209706",
+							"width": 140,
+							"height": 24,
+							"defUid": 2007,
+							"px": [980,384],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "ballroom_sign_prize", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ballroom_sign_prize"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "TONIGHT'S PRIZE", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["TONIGHT'S PRIZE"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "ChestSpawn",
+							"__grid": [63,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#F6C85F",
+							"__worldX": 13410,
+							"__worldY": 2844,
+							"iid": "ChestSpawn-209707",
+							"width": 76,
+							"height": 58,
+							"defUid": 2016,
+							"px": [1010,444],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the prize money", "__tile": null, "defUid": 3041, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the prize money"]
+								}] },
+								{ "__identifier": "reward", "__type": "String", "__value": "currency:200", "__tile": null, "defUid": 3042, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["currency:200"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LockWall",
+							"__grid": [62,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9E9E9E",
+							"__worldX": 13400,
+							"__worldY": 2824,
+							"iid": "LockWall-209708",
+							"width": 96,
+							"height": 88,
+							"defUid": 4084,
+							"px": [1000,424],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_prize_case", "__tile": null, "defUid": 4082, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_prize_case"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the prize case", "__tile": null, "defUid": 4083, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the prize case"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "world.flag_set monty_won", "__tile": null, "defUid": 6860, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["world.flag_set monty_won"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "math_prize_case", "__tile": null, "defUid": 7407, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_prize_case"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "NpcSpawn",
 							"__grid": [13,28],
 							"__pivot": [0,0],
@@ -20086,54 +20170,102 @@
 							}] }]
 						},
 						{
-							"__identifier": "Prop",
-							"__grid": [13,11],
+							"__identifier": "LockWall",
+							"__grid": [10,2],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#9966CC",
-							"__worldX": 13980,
-							"__worldY": 2578,
-							"iid": "Prop-208776",
-							"width": 84,
-							"height": 78,
-							"defUid": 4351,
-							"px": [220,178],
+							"__smartColor": "#9E9E9E",
+							"__worldX": 13920,
+							"__worldY": 2432,
+							"iid": "LockWall-209720",
+							"width": 304,
+							"height": 224,
+							"defUid": 4084,
+							"px": [160,32],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_1_prize", "__tile": null, "defUid": 4349, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_1_curtain", "__tile": null, "defUid": 4082, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_hotel_door_1_prize"]
+									"params": ["math_hotel_door_1_curtain"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "math_goat", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "the curtain of door number 1", "__tile": null, "defUid": 4083, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the curtain of door number 1"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "world.flag_set monty_open_1", "__tile": null, "defUid": 6860, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["world.flag_set monty_open_1"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "math_closet_curtain", "__tile": null, "defUid": 7407, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_closet_curtain"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LockWall",
+							"__grid": [15,11],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9E9E9E",
+							"__worldX": 14010,
+							"__worldY": 2576,
+							"iid": "LockWall-209721",
+							"width": 100,
+							"height": 80,
+							"defUid": 4084,
+							"px": [250,176],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_1_goat", "__tile": null, "defUid": 4082, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_1_goat"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "a goat", "__tile": null, "defUid": 4083, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["a goat"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "not world.flag_set monty_goat_1", "__tile": null, "defUid": 6860, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["not world.flag_set monty_goat_1"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "math_goat", "__tile": null, "defUid": 7407, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["math_goat"]
 								}] }
 							]
 						},
 						{
-							"__identifier": "DebugLabel",
-							"__grid": [7,4],
+							"__identifier": "LockWall",
+							"__grid": [12,10],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 13880,
-							"__worldY": 2470,
-							"iid": "DebugLabel-208777",
-							"width": 340,
-							"height": 24,
-							"defUid": 2007,
-							"px": [120,70],
+							"__smartColor": "#9E9E9E",
+							"__worldX": 13960,
+							"__worldY": 2566,
+							"iid": "LockWall-209722",
+							"width": 210,
+							"height": 90,
+							"defUid": 4084,
+							"px": [200,166],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_1_words", "__tile": null, "defUid": 3015, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_1_car", "__tile": null, "defUid": 4082, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_hotel_door_1_words"]
+									"params": ["math_hotel_door_1_car"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "A GOAT.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "the car", "__tile": null, "defUid": 4083, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["A GOAT."]
+									"params": ["the car"]
 								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+								{ "__identifier": "gated_by", "__type": "String", "__value": "not world.flag_set monty_car_1", "__tile": null, "defUid": 6860, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["not world.flag_set monty_car_1"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "math_car", "__tile": null, "defUid": 7407, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_car"]
+								}] }
 							]
 						},
 						{
@@ -20471,78 +20603,101 @@
 							}] }]
 						},
 						{
-							"__identifier": "Prop",
-							"__grid": [13,10],
+							"__identifier": "LockWall",
+							"__grid": [10,2],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#9966CC",
-							"__worldX": 14540,
-							"__worldY": 2572,
-							"iid": "Prop-208787",
-							"width": 186,
-							"height": 84,
-							"defUid": 4351,
-							"px": [220,172],
+							"__smartColor": "#9E9E9E",
+							"__worldX": 14480,
+							"__worldY": 2432,
+							"iid": "LockWall-209733",
+							"width": 304,
+							"height": 224,
+							"defUid": 4084,
+							"px": [160,32],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_2_prize", "__tile": null, "defUid": 4349, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_2_curtain", "__tile": null, "defUid": 4082, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_hotel_door_2_prize"]
+									"params": ["math_hotel_door_2_curtain"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "math_car", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "the curtain of door number 2", "__tile": null, "defUid": 4083, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_car"]
+									"params": ["the curtain of door number 2"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "world.flag_set monty_open_2", "__tile": null, "defUid": 6860, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["world.flag_set monty_open_2"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "math_closet_curtain", "__tile": null, "defUid": 7407, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_closet_curtain"]
 								}] }
 							]
 						},
 						{
-							"__identifier": "DebugLabel",
-							"__grid": [7,4],
+							"__identifier": "LockWall",
+							"__grid": [15,11],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 14440,
-							"__worldY": 2470,
-							"iid": "DebugLabel-208788",
-							"width": 340,
-							"height": 24,
-							"defUid": 2007,
-							"px": [120,70],
+							"__smartColor": "#9E9E9E",
+							"__worldX": 14570,
+							"__worldY": 2576,
+							"iid": "LockWall-209734",
+							"width": 100,
+							"height": 80,
+							"defUid": 4084,
+							"px": [250,176],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_2_words", "__tile": null, "defUid": 3015, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_2_goat", "__tile": null, "defUid": 4082, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_hotel_door_2_words"]
+									"params": ["math_hotel_door_2_goat"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "A CAR! You did not switch. You did not need to. This time.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "a goat", "__tile": null, "defUid": 4083, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["A CAR! You did not switch. You did not need to. This time."]
+									"params": ["a goat"]
 								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+								{ "__identifier": "gated_by", "__type": "String", "__value": "not world.flag_set monty_goat_2", "__tile": null, "defUid": 6860, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["not world.flag_set monty_goat_2"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "math_goat", "__tile": null, "defUid": 7407, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_goat"]
+								}] }
 							]
 						},
 						{
-							"__identifier": "PickupSpawn",
-							"__grid": [25,14],
+							"__identifier": "LockWall",
+							"__grid": [12,10],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#8AFF80",
-							"__worldX": 14720,
-							"__worldY": 2632,
-							"iid": "PickupSpawn-208789",
-							"width": 24,
-							"height": 24,
-							"defUid": 2015,
-							"px": [400,232],
+							"__smartColor": "#9E9E9E",
+							"__worldX": 14520,
+							"__worldY": 2566,
+							"iid": "LockWall-209735",
+							"width": 210,
+							"height": 90,
+							"defUid": 4084,
+							"px": [200,166],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_2_prize_money", "__tile": null, "defUid": 3039, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_2_car", "__tile": null, "defUid": 4082, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_hotel_door_2_prize_money"]
+									"params": ["math_hotel_door_2_car"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "currency:100", "__tile": null, "defUid": 3040, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "the car", "__tile": null, "defUid": 4083, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["currency:100"]
+									"params": ["the car"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "not world.flag_set monty_car_2", "__tile": null, "defUid": 6860, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["not world.flag_set monty_car_2"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "math_car", "__tile": null, "defUid": 7407, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_car"]
 								}] }
 							]
 						},
@@ -20881,54 +21036,102 @@
 							}] }]
 						},
 						{
-							"__identifier": "Prop",
-							"__grid": [13,11],
+							"__identifier": "LockWall",
+							"__grid": [10,2],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#9966CC",
-							"__worldX": 15100,
-							"__worldY": 2578,
-							"iid": "Prop-208799",
-							"width": 84,
-							"height": 78,
-							"defUid": 4351,
-							"px": [220,178],
+							"__smartColor": "#9E9E9E",
+							"__worldX": 15040,
+							"__worldY": 2432,
+							"iid": "LockWall-209746",
+							"width": 304,
+							"height": 224,
+							"defUid": 4084,
+							"px": [160,32],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_3_prize", "__tile": null, "defUid": 4349, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_3_curtain", "__tile": null, "defUid": 4082, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_hotel_door_3_prize"]
+									"params": ["math_hotel_door_3_curtain"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "math_goat", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "the curtain of door number 3", "__tile": null, "defUid": 4083, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the curtain of door number 3"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "world.flag_set monty_open_3", "__tile": null, "defUid": 6860, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["world.flag_set monty_open_3"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "math_closet_curtain", "__tile": null, "defUid": 7407, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_closet_curtain"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LockWall",
+							"__grid": [15,11],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9E9E9E",
+							"__worldX": 15130,
+							"__worldY": 2576,
+							"iid": "LockWall-209747",
+							"width": 100,
+							"height": 80,
+							"defUid": 4084,
+							"px": [250,176],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_3_goat", "__tile": null, "defUid": 4082, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_3_goat"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "a goat", "__tile": null, "defUid": 4083, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["a goat"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "not world.flag_set monty_goat_3", "__tile": null, "defUid": 6860, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["not world.flag_set monty_goat_3"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "math_goat", "__tile": null, "defUid": 7407, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["math_goat"]
 								}] }
 							]
 						},
 						{
-							"__identifier": "DebugLabel",
-							"__grid": [7,4],
+							"__identifier": "LockWall",
+							"__grid": [12,10],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 15000,
-							"__worldY": 2470,
-							"iid": "DebugLabel-208800",
-							"width": 340,
-							"height": 24,
-							"defUid": 2007,
-							"px": [120,70],
+							"__smartColor": "#9E9E9E",
+							"__worldX": 15080,
+							"__worldY": 2566,
+							"iid": "LockWall-209748",
+							"width": 210,
+							"height": 90,
+							"defUid": 4084,
+							"px": [200,166],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_3_words", "__tile": null, "defUid": 3015, "realEditorValues": [{
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_3_car", "__tile": null, "defUid": 4082, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_hotel_door_3_words"]
+									"params": ["math_hotel_door_3_car"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "A GOAT. Statistically, you were going to meet me.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "the car", "__tile": null, "defUid": 4083, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["A GOAT. Statistically, you were going to meet me."]
+									"params": ["the car"]
 								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+								{ "__identifier": "gated_by", "__type": "String", "__value": "not world.flag_set monty_car_3", "__tile": null, "defUid": 6860, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["not world.flag_set monty_car_3"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "math_car", "__tile": null, "defUid": 7407, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_car"]
+								}] }
 							]
 						},
 						{
