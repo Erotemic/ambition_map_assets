@@ -11,7 +11,7 @@
 	"iid": "ambition-dinosaur-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 500327,
+	"nextUid": 500335,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -9080,6 +9080,57 @@
 									"params": ["stand_still"]
 								}] }
 							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [61,16],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 20990,
+							"__worldY": 260,
+							"iid": "DebugLabel-500327",
+							"width": 420,
+							"height": 24,
+							"defUid": 2007,
+							"px": [990,260],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "trailhead_sign_path", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["trailhead_sign_path"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "STAY ON THE PATH. The path is also not safe.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["STAY ON THE PATH. The path is also not safe."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "ChestSpawn",
+							"__grid": [69,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#F6C85F",
+							"__worldX": 21110,
+							"__worldY": 326,
+							"iid": "ChestSpawn-500331",
+							"width": 76,
+							"height": 58,
+							"defUid": 2016,
+							"px": [1110,326],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "a ranger's lost lunch", "__tile": null, "defUid": 3041, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["a ranger's lost lunch"]
+								}] },
+								{ "__identifier": "reward", "__type": "String", "__value": "health:2", "__tile": null, "defUid": 3042, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["health:2"]
+								}] }
+							]
 						}
 					]
 				},
@@ -10403,6 +10454,57 @@
 								{ "__identifier": "kind", "__type": "String", "__value": "jungle_ribcage", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["jungle_ribcage"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [35,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 22170,
+							"__worldY": 300,
+							"iid": "DebugLabel-500328",
+							"width": 380,
+							"height": 24,
+							"defUid": 2007,
+							"px": [570,300],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "run_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["run_sign"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "THE RUN: it is called this for a reason", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["THE RUN: it is called this for a reason"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "ChestSpawn",
+							"__grid": [91,17],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#F6C85F",
+							"__worldX": 23060,
+							"__worldY": 278,
+							"iid": "ChestSpawn-500332",
+							"width": 76,
+							"height": 58,
+							"defUid": 2016,
+							"px": [1460,278],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "a nest of something large", "__tile": null, "defUid": 3041, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["a nest of something large"]
+								}] },
+								{ "__identifier": "reward", "__type": "String", "__value": "currency:25", "__tile": null, "defUid": 3042, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["currency:25"]
 								}] }
 							]
 						}
@@ -13504,6 +13606,57 @@
 									"params": ["jungle_fern_clump"]
 								}] }
 							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [48,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 28178,
+							"__worldY": 300,
+							"iid": "DebugLabel-500329",
+							"width": 460,
+							"height": 24,
+							"defUid": 2007,
+							"px": [770,300],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "ridge_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ridge_sign"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "RIDGE ROAD: mind the edge. The edge does not mind you.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["RIDGE ROAD: mind the edge. The edge does not mind you."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "ChestSpawn",
+							"__grid": [161,17],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#F6C85F",
+							"__worldX": 29998,
+							"__worldY": 278,
+							"iid": "ChestSpawn-500333",
+							"width": 76,
+							"height": 58,
+							"defUid": 2016,
+							"px": [2590,278],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "a fossil hunter's cache", "__tile": null, "defUid": 3041, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["a fossil hunter's cache"]
+								}] },
+								{ "__identifier": "reward", "__type": "String", "__value": "currency:30", "__tile": null, "defUid": 3042, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["currency:30"]
+								}] }
+							]
 						}
 					]
 				},
@@ -15033,6 +15186,57 @@
 									"params": ["tar_west"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [47,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 31576,
+							"__worldY": 108,
+							"iid": "DebugLabel-500330",
+							"width": 480,
+							"height": 24,
+							"defUid": 2007,
+							"px": [760,300],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "canopy_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["canopy_sign"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "THE CANOPY: you are in the trees now. So is everything else.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["THE CANOPY: you are in the trees now. So is everything else."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "ChestSpawn",
+							"__grid": [81,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#F6C85F",
+							"__worldX": 32116,
+							"__worldY": 166,
+							"iid": "ChestSpawn-500334",
+							"width": 76,
+							"height": 58,
+							"defUid": 2016,
+							"px": [1300,358],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "an egg the size of a chest", "__tile": null, "defUid": 3041, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["an egg the size of a chest"]
+								}] },
+								{ "__identifier": "reward", "__type": "String", "__value": "currency:40", "__tile": null, "defUid": 3042, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["currency:40"]
+								}] }
 							]
 						}
 					]
