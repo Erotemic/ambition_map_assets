@@ -11,7 +11,7 @@
 	"iid": "ambition-dinosaur-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 500006,
+	"nextUid": 500007,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -15281,6 +15281,31 @@
 							],
 							"__worldX": 44070,
 							"__worldY": 40
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 44000,
+							"__worldY": 0,
+							"iid": "Prop-500006",
+							"width": 1792,
+							"height": 672,
+							"defUid": 4351,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_tyrant_hall_room_overlay", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_tyrant_hall_room_overlay"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "primeval_tyrant_hall_room", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_tyrant_hall_room"]
+								}] }
+							]
 						}
 					]
 				},
