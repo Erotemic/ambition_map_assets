@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 410623,
+	"nextUid": 410631,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -15825,6 +15825,198 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [22,5],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 360,
+							"__worldY": 80,
+							"iid": "Prop-410623",
+							"width": 224,
+							"height": 624,
+							"defUid": 4351,
+							"px": [360,80],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "orchard_rising_tree", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orchard_rising_tree"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "orchard_rising_tree", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orchard_rising_tree"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [67,5],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1076,
+							"__worldY": 80,
+							"iid": "Prop-410624",
+							"width": 392,
+							"height": 320,
+							"defUid": 4351,
+							"px": [1076,80],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "orchard_hanging_tree", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orchard_hanging_tree"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "orchard_hanging_tree", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orchard_hanging_tree"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [113,5],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1808,
+							"__worldY": 80,
+							"iid": "Prop-410625",
+							"width": 736,
+							"height": 26,
+							"defUid": 4351,
+							"px": [1808,80],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "orchard_swing_rail", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orchard_swing_rail"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "orchard_swing_rail", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orchard_swing_rail"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [100,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1600,
+							"__worldY": 630,
+							"iid": "Prop-410626",
+							"width": 116,
+							"height": 74,
+							"defUid": 4351,
+							"px": [1600,630],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "orchard_crates", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orchard_crates"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "orchard_crates", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orchard_crates"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [111,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 1784,
+							"__worldY": 664,
+							"iid": "EnemySpawn-410627",
+							"width": 40,
+							"height": 40,
+							"defUid": 2008,
+							"px": [1784,664],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "gnu_ton_orchard_bad_apple_1", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gnu_ton_orchard_bad_apple_1"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "bad_apple", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["bad_apple"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [160,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 2560,
+							"__worldY": 476,
+							"iid": "EnemySpawn-410628",
+							"width": 44,
+							"height": 44,
+							"defUid": 2008,
+							"px": [2560,476],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "gnu_ton_orchard_gravity_apple_2", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gnu_ton_orchard_gravity_apple_2"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "gravity_apple", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gravity_apple"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [97,35],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 1560,
+							"__worldY": 560,
+							"iid": "DebugLabel-410629",
+							"width": 300,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1560,560],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "orchard_crates_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orchard_crates_sign"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "PICKED APPLES: store this way up", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["PICKED APPLES: store this way up"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
 						}
 					]
 				},
@@ -21061,6 +21253,39 @@
 								{ "__identifier": "action", "__type": "String", "__value": "GateTerminal", "__tile": null, "defUid": 4050, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["GateTerminal"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [60,44],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 11200,
+							"__worldY": -1844,
+							"iid": "EnemySpawn-410630",
+							"width": 44,
+							"height": 44,
+							"defUid": 2008,
+							"px": [960,716],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "gnu_ton_works_approach_gravity_apple_3", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gnu_ton_works_approach_gravity_apple_3"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "gravity_apple", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gravity_apple"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
 								}] }
 							]
 						}
