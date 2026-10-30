@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 410438,
+	"nextUid": 410440,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -14547,6 +14547,56 @@
 									"params": ["THE SPOKE: TO THE GRAVITY WORKS"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [1,7],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -3696,
+							"__worldY": 312,
+							"iid": "Prop-410438",
+							"width": 1592,
+							"height": 504,
+							"defUid": 4351,
+							"px": [16,120],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "orbital_station_spoke_spoke_west_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orbital_station_spoke_spoke_west_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "spoke_west", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["spoke_west"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [99,7],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -2120,
+							"__worldY": 312,
+							"iid": "Prop-410439",
+							"width": 1592,
+							"height": 504,
+							"defUid": 4351,
+							"px": [1592,120],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "orbital_station_spoke_spoke_east_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orbital_station_spoke_spoke_east_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "spoke_east", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["spoke_east"]
+								}] }
 							]
 						}
 					]
