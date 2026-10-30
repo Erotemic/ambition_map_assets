@@ -11,7 +11,7 @@
 	"iid": "ambition-math-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 208740,
+	"nextUid": 208805,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -15624,6 +15624,41 @@
 							]
 						},
 						{
+							"__identifier": "LoadingZone",
+							"__grid": [18,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 8800,
+							"__worldY": 416,
+							"iid": "LoadingZone-208747",
+							"width": 48,
+							"height": 96,
+							"defUid": 2002,
+							"px": [300,416],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_lobby_ballroom", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_lobby_ballroom"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "to the ballroom", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["to the ballroom"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "math_hotel_ballroom", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_ballroom"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "math_hotel_ballroom_door", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_ballroom_door"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
 							"__identifier": "PlayerStart",
 							"__grid": [7,29],
 							"__pivot": [0,0],
@@ -17347,6 +17382,1656 @@
 					"optionalRules": [],
 					"autoLayerTiles": [],
 					"seed": 208659,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				}
+			],
+			"__neighbours": []
+		},
+		{
+			"identifier": "math_hotel_ballroom",
+			"iid": "math_hotel_ballroom-208756",
+			"uid": 208756,
+			"worldX": 12400,
+			"worldY": 0,
+			"worldDepth": 0,
+			"pxWid": 1280,
+			"pxHei": 576,
+			"__bgColor": "#BFD7EE",
+			"bgColor": "#BFD7EE",
+			"useAutoIdentifier": false,
+			"bgRelPath": null,
+			"bgPos": null,
+			"bgPivotX": 0.5,
+			"bgPivotY": 0.5,
+			"__smartColor": "#FFFFFF",
+			"__bgPos": null,
+			"externalRelPath": null,
+			"fieldInstances": [
+				{ "__identifier": "activeArea", "__type": "String", "__value": "math_hotel_ballroom", "__tile": null, "defUid": 4000, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["math_hotel_ballroom"]
+				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["math_interior"]
+				}] },
+				{ "__identifier": "music_track", "__type": "String", "__value": "math_town_day", "__tile": null, "defUid": 4173, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["math_town_day"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["math_interior"]
+				}] }
+			],
+			"layerInstances": [
+				{
+					"__identifier": "Collision",
+					"__type": "IntGrid",
+					"iid": "Collision-208757",
+					"layerDefUid": 5024,
+					"intGridCsv": [
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1
+					],
+					"__cWid": 80,
+					"__cHei": 36,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 208756,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 208756,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				},
+				{
+					"__identifier": "AmbitionCameras",
+					"__type": "Entities",
+					"iid": "AmbitionCameras-208770",
+					"layerDefUid": 5743,
+					"intGridCsv": [],
+					"__cWid": 80,
+					"__cHei": 36,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 208756,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 208756,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 12400,
+							"__worldY": 0,
+							"iid": "CameraZone-208767",
+							"width": 1280,
+							"height": 576,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_ballroom_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_ballroom_camera"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_ballroom_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_ballroom_camera"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] }
+							]
+						}
+					]
+				},
+				{
+					"__identifier": "Ambition",
+					"__type": "Entities",
+					"iid": "Ambition-208758",
+					"layerDefUid": 1070,
+					"intGridCsv": [],
+					"__cWid": 80,
+					"__cHei": 36,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 208756,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 208756,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "Prop",
+							"__grid": [1,2],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 12416,
+							"__worldY": 32,
+							"iid": "Prop-208759",
+							"width": 1248,
+							"height": 480,
+							"defUid": 4351,
+							"px": [16,32],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "ballroom_stage", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ballroom_stage"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "math_ballroom_room", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_ballroom_room"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [2,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 12440,
+							"__worldY": 416,
+							"iid": "LoadingZone-208760",
+							"width": 48,
+							"height": 96,
+							"defUid": 2002,
+							"px": [40,416],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_ballroom_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_ballroom_door"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "back to the lobby", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["back to the lobby"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "math_hotel_lobby", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_lobby"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "math_hotel_lobby_ballroom", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_lobby_ballroom"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "PlayerStart",
+							"__grid": [7,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#41D1FF",
+							"__worldX": 12520,
+							"__worldY": 466,
+							"iid": "PlayerStart-208761",
+							"width": 28,
+							"height": 46,
+							"defUid": 2000,
+							"px": [120,466],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "math_hotel_ballroom_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["math_hotel_ballroom_spawn"]
+							}] }]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [22,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 12760,
+							"__worldY": 416,
+							"iid": "LoadingZone-208762",
+							"width": 48,
+							"height": 96,
+							"defUid": 2002,
+							"px": [360,416],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_ballroom_door_1", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_ballroom_door_1"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "door number 1", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["door number 1"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "math_hotel_door_1", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_1"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "math_hotel_door_1_door", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_1_door"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [38,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 13016,
+							"__worldY": 416,
+							"iid": "LoadingZone-208763",
+							"width": 48,
+							"height": 96,
+							"defUid": 2002,
+							"px": [616,416],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_ballroom_door_2", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_ballroom_door_2"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "door number 2", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["door number 2"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "math_hotel_door_2", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_2"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "math_hotel_door_2_door", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_2_door"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [54,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 13272,
+							"__worldY": 416,
+							"iid": "LoadingZone-208764",
+							"width": 48,
+							"height": 96,
+							"defUid": 2002,
+							"px": [872,416],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_ballroom_door_3", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_ballroom_door_3"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "door number 3", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["door number 3"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "math_hotel_door_3", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_3"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "math_hotel_door_3_door", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_3_door"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [22,5],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 12760,
+							"__worldY": 80,
+							"iid": "DebugLabel-208765",
+							"width": 560,
+							"height": 24,
+							"defUid": 2007,
+							"px": [360,80],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "ballroom_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ballroom_sign"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "TONIGHT: PICK A DOOR. THEN SWITCH. ALWAYS SWITCH.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["TONIGHT: PICK A DOOR. THEN SWITCH. ALWAYS SWITCH."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [58,16],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 13340,
+							"__worldY": 270,
+							"iid": "DebugLabel-208766",
+							"width": 300,
+							"height": 24,
+							"defUid": 2007,
+							"px": [940,270],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "ballroom_sign_odds", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ballroom_sign_odds"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "STAY 1/3   SWITCH 2/3", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["STAY 1/3   SWITCH 2/3"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [4,2],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 12470,
+							"__worldY": 40,
+							"iid": "DebugLabel-208768",
+							"width": 900,
+							"height": 24,
+							"defUid": 2007,
+							"px": [70,40],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_ballroom_label", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_ballroom_label"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Hylbert's Hotel: the ballroom. Tonight: three doors.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Hylbert's Hotel: the ballroom. Tonight: three doors."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						}
+					]
+				},
+				{
+					"__identifier": "Climbable",
+					"__type": "IntGrid",
+					"iid": "Climbable-208769",
+					"layerDefUid": 4201,
+					"intGridCsv": [
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0
+					],
+					"__cWid": 80,
+					"__cHei": 36,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 208756,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 208756,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				}
+			],
+			"__neighbours": []
+		},
+		{
+			"identifier": "math_hotel_door_1",
+			"iid": "math_hotel_door_1-208771",
+			"uid": 208771,
+			"worldX": 13760,
+			"worldY": 0,
+			"worldDepth": 0,
+			"pxWid": 480,
+			"pxHei": 320,
+			"__bgColor": "#BFD7EE",
+			"bgColor": "#BFD7EE",
+			"useAutoIdentifier": false,
+			"bgRelPath": null,
+			"bgPos": null,
+			"bgPivotX": 0.5,
+			"bgPivotY": 0.5,
+			"__smartColor": "#FFFFFF",
+			"__bgPos": null,
+			"externalRelPath": null,
+			"fieldInstances": [
+				{ "__identifier": "activeArea", "__type": "String", "__value": "math_hotel_door_1", "__tile": null, "defUid": 4000, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["math_hotel_door_1"]
+				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["math_interior"]
+				}] },
+				{ "__identifier": "music_track", "__type": "String", "__value": "math_town_day", "__tile": null, "defUid": 4173, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["math_town_day"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["math_interior"]
+				}] }
+			],
+			"layerInstances": [
+				{
+					"__identifier": "Collision",
+					"__type": "IntGrid",
+					"iid": "Collision-208772",
+					"layerDefUid": 5024,
+					"intGridCsv": [
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1
+					],
+					"__cWid": 30,
+					"__cHei": 20,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 208771,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 208771,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				},
+				{
+					"__identifier": "AmbitionCameras",
+					"__type": "Entities",
+					"iid": "AmbitionCameras-208781",
+					"layerDefUid": 5743,
+					"intGridCsv": [],
+					"__cWid": 30,
+					"__cHei": 20,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 208771,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 208771,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 13760,
+							"__worldY": 0,
+							"iid": "CameraZone-208778",
+							"width": 480,
+							"height": 320,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_1_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_1_camera"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_1_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_1_camera"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] }
+							]
+						}
+					]
+				},
+				{
+					"__identifier": "Ambition",
+					"__type": "Entities",
+					"iid": "Ambition-208773",
+					"layerDefUid": 1070,
+					"intGridCsv": [],
+					"__cWid": 30,
+					"__cHei": 20,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 208771,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 208771,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [2,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 13800,
+							"__worldY": 160,
+							"iid": "LoadingZone-208774",
+							"width": 48,
+							"height": 96,
+							"defUid": 2002,
+							"px": [40,160],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_1_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_1_door"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "back to the stage", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["back to the stage"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "math_hotel_ballroom", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_ballroom"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "math_hotel_ballroom_door_1", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_ballroom_door_1"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "PlayerStart",
+							"__grid": [6,13],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#41D1FF",
+							"__worldX": 13870,
+							"__worldY": 210,
+							"iid": "PlayerStart-208775",
+							"width": 28,
+							"height": 46,
+							"defUid": 2000,
+							"px": [110,210],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_1_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["math_hotel_door_1_spawn"]
+							}] }]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [13,11],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 13980,
+							"__worldY": 178,
+							"iid": "Prop-208776",
+							"width": 84,
+							"height": 78,
+							"defUid": 4351,
+							"px": [220,178],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_1_prize", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_1_prize"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "math_goat", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_goat"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [7,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 13880,
+							"__worldY": 70,
+							"iid": "DebugLabel-208777",
+							"width": 340,
+							"height": 24,
+							"defUid": 2007,
+							"px": [120,70],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_1_words", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_1_words"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "A GOAT.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["A GOAT."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [4,2],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 13830,
+							"__worldY": 40,
+							"iid": "DebugLabel-208779",
+							"width": 340,
+							"height": 24,
+							"defUid": 2007,
+							"px": [70,40],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_1_label", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_1_label"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Behind door number 1.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Behind door number 1."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						}
+					]
+				},
+				{
+					"__identifier": "Climbable",
+					"__type": "IntGrid",
+					"iid": "Climbable-208780",
+					"layerDefUid": 4201,
+					"intGridCsv": [
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0
+					],
+					"__cWid": 30,
+					"__cHei": 20,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 208771,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 208771,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				}
+			],
+			"__neighbours": []
+		},
+		{
+			"identifier": "math_hotel_door_2",
+			"iid": "math_hotel_door_2-208782",
+			"uid": 208782,
+			"worldX": 14320,
+			"worldY": 0,
+			"worldDepth": 0,
+			"pxWid": 480,
+			"pxHei": 320,
+			"__bgColor": "#BFD7EE",
+			"bgColor": "#BFD7EE",
+			"useAutoIdentifier": false,
+			"bgRelPath": null,
+			"bgPos": null,
+			"bgPivotX": 0.5,
+			"bgPivotY": 0.5,
+			"__smartColor": "#FFFFFF",
+			"__bgPos": null,
+			"externalRelPath": null,
+			"fieldInstances": [
+				{ "__identifier": "activeArea", "__type": "String", "__value": "math_hotel_door_2", "__tile": null, "defUid": 4000, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["math_hotel_door_2"]
+				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["math_interior"]
+				}] },
+				{ "__identifier": "music_track", "__type": "String", "__value": "math_town_day", "__tile": null, "defUid": 4173, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["math_town_day"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["math_interior"]
+				}] }
+			],
+			"layerInstances": [
+				{
+					"__identifier": "Collision",
+					"__type": "IntGrid",
+					"iid": "Collision-208783",
+					"layerDefUid": 5024,
+					"intGridCsv": [
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1
+					],
+					"__cWid": 30,
+					"__cHei": 20,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 208782,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 208782,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				},
+				{
+					"__identifier": "AmbitionCameras",
+					"__type": "Entities",
+					"iid": "AmbitionCameras-208793",
+					"layerDefUid": 5743,
+					"intGridCsv": [],
+					"__cWid": 30,
+					"__cHei": 20,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 208782,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 208782,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 14320,
+							"__worldY": 0,
+							"iid": "CameraZone-208790",
+							"width": 480,
+							"height": 320,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_2_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_2_camera"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_2_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_2_camera"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] }
+							]
+						}
+					]
+				},
+				{
+					"__identifier": "Ambition",
+					"__type": "Entities",
+					"iid": "Ambition-208784",
+					"layerDefUid": 1070,
+					"intGridCsv": [],
+					"__cWid": 30,
+					"__cHei": 20,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 208782,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 208782,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [2,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 14360,
+							"__worldY": 160,
+							"iid": "LoadingZone-208785",
+							"width": 48,
+							"height": 96,
+							"defUid": 2002,
+							"px": [40,160],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_2_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_2_door"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "back to the stage", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["back to the stage"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "math_hotel_ballroom", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_ballroom"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "math_hotel_ballroom_door_2", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_ballroom_door_2"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "PlayerStart",
+							"__grid": [6,13],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#41D1FF",
+							"__worldX": 14430,
+							"__worldY": 210,
+							"iid": "PlayerStart-208786",
+							"width": 28,
+							"height": 46,
+							"defUid": 2000,
+							"px": [110,210],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_2_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["math_hotel_door_2_spawn"]
+							}] }]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [13,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 14540,
+							"__worldY": 172,
+							"iid": "Prop-208787",
+							"width": 186,
+							"height": 84,
+							"defUid": 4351,
+							"px": [220,172],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_2_prize", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_2_prize"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "math_car", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_car"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [7,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 14440,
+							"__worldY": 70,
+							"iid": "DebugLabel-208788",
+							"width": 340,
+							"height": 24,
+							"defUid": 2007,
+							"px": [120,70],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_2_words", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_2_words"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "A CAR! You did not switch. You did not need to. This time.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["A CAR! You did not switch. You did not need to. This time."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "PickupSpawn",
+							"__grid": [25,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#8AFF80",
+							"__worldX": 14720,
+							"__worldY": 232,
+							"iid": "PickupSpawn-208789",
+							"width": 24,
+							"height": 24,
+							"defUid": 2015,
+							"px": [400,232],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_2_prize_money", "__tile": null, "defUid": 3039, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_2_prize_money"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "currency:100", "__tile": null, "defUid": 3040, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["currency:100"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [4,2],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 14390,
+							"__worldY": 40,
+							"iid": "DebugLabel-208791",
+							"width": 340,
+							"height": 24,
+							"defUid": 2007,
+							"px": [70,40],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_2_label", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_2_label"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Behind door number 2.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Behind door number 2."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						}
+					]
+				},
+				{
+					"__identifier": "Climbable",
+					"__type": "IntGrid",
+					"iid": "Climbable-208792",
+					"layerDefUid": 4201,
+					"intGridCsv": [
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0
+					],
+					"__cWid": 30,
+					"__cHei": 20,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 208782,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 208782,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				}
+			],
+			"__neighbours": []
+		},
+		{
+			"identifier": "math_hotel_door_3",
+			"iid": "math_hotel_door_3-208794",
+			"uid": 208794,
+			"worldX": 14880,
+			"worldY": 0,
+			"worldDepth": 0,
+			"pxWid": 480,
+			"pxHei": 320,
+			"__bgColor": "#BFD7EE",
+			"bgColor": "#BFD7EE",
+			"useAutoIdentifier": false,
+			"bgRelPath": null,
+			"bgPos": null,
+			"bgPivotX": 0.5,
+			"bgPivotY": 0.5,
+			"__smartColor": "#FFFFFF",
+			"__bgPos": null,
+			"externalRelPath": null,
+			"fieldInstances": [
+				{ "__identifier": "activeArea", "__type": "String", "__value": "math_hotel_door_3", "__tile": null, "defUid": 4000, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["math_hotel_door_3"]
+				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["math_interior"]
+				}] },
+				{ "__identifier": "music_track", "__type": "String", "__value": "math_town_day", "__tile": null, "defUid": 4173, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["math_town_day"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["math_interior"]
+				}] }
+			],
+			"layerInstances": [
+				{
+					"__identifier": "Collision",
+					"__type": "IntGrid",
+					"iid": "Collision-208795",
+					"layerDefUid": 5024,
+					"intGridCsv": [
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1
+					],
+					"__cWid": 30,
+					"__cHei": 20,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 208794,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 208794,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				},
+				{
+					"__identifier": "AmbitionCameras",
+					"__type": "Entities",
+					"iid": "AmbitionCameras-208804",
+					"layerDefUid": 5743,
+					"intGridCsv": [],
+					"__cWid": 30,
+					"__cHei": 20,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 208794,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 208794,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 14880,
+							"__worldY": 0,
+							"iid": "CameraZone-208801",
+							"width": 480,
+							"height": 320,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_3_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_3_camera"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_3_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_3_camera"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] }
+							]
+						}
+					]
+				},
+				{
+					"__identifier": "Ambition",
+					"__type": "Entities",
+					"iid": "Ambition-208796",
+					"layerDefUid": 1070,
+					"intGridCsv": [],
+					"__cWid": 30,
+					"__cHei": 20,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 208794,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 208794,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [2,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 14920,
+							"__worldY": 160,
+							"iid": "LoadingZone-208797",
+							"width": 48,
+							"height": 96,
+							"defUid": 2002,
+							"px": [40,160],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_3_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_3_door"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "back to the stage", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["back to the stage"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "math_hotel_ballroom", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_ballroom"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "math_hotel_ballroom_door_3", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_ballroom_door_3"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "PlayerStart",
+							"__grid": [6,13],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#41D1FF",
+							"__worldX": 14990,
+							"__worldY": 210,
+							"iid": "PlayerStart-208798",
+							"width": 28,
+							"height": 46,
+							"defUid": 2000,
+							"px": [110,210],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_3_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["math_hotel_door_3_spawn"]
+							}] }]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [13,11],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 15100,
+							"__worldY": 178,
+							"iid": "Prop-208799",
+							"width": 84,
+							"height": 78,
+							"defUid": 4351,
+							"px": [220,178],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_3_prize", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_3_prize"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "math_goat", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_goat"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [7,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 15000,
+							"__worldY": 70,
+							"iid": "DebugLabel-208800",
+							"width": 340,
+							"height": 24,
+							"defUid": 2007,
+							"px": [120,70],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_3_words", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_3_words"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "A GOAT. Statistically, you were going to meet me.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["A GOAT. Statistically, you were going to meet me."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [4,2],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 14950,
+							"__worldY": 40,
+							"iid": "DebugLabel-208802",
+							"width": 340,
+							"height": 24,
+							"defUid": 2007,
+							"px": [70,40],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_door_3_label", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["math_hotel_door_3_label"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Behind door number 3.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Behind door number 3."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						}
+					]
+				},
+				{
+					"__identifier": "Climbable",
+					"__type": "IntGrid",
+					"iid": "Climbable-208803",
+					"layerDefUid": 4201,
+					"intGridCsv": [
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0
+					],
+					"__cWid": 30,
+					"__cHei": 20,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 208794,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 208794,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
