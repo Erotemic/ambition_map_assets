@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 410060,
+	"nextUid": 410142,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -24498,6 +24498,81 @@
 					"entityInstances": [
 						{
 							"__identifier": "Prop",
+							"__grid": [1,34],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1872,
+							"__worldY": 7362,
+							"iid": "Prop-410063",
+							"width": 648,
+							"height": 222,
+							"defUid": 4351,
+							"px": [16,546],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "quad_raised_walk_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["quad_raised_walk_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "quad_raised_walk", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["quad_raised_walk"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [90,34],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3296,
+							"__worldY": 7362,
+							"iid": "Prop-410064",
+							"width": 880,
+							"height": 222,
+							"defUid": 4351,
+							"px": [1440,546],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "quad_lecture_hall_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["quad_lecture_hall_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "quad_lecture_hall", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["quad_lecture_hall"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [145,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 4190,
+							"__worldY": 7116,
+							"iid": "Prop-410065",
+							"width": 452,
+							"height": 468,
+							"defUid": 4351,
+							"px": [2334,300],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "quad_lab_front_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["quad_lab_front_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "quad_lab_front", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["quad_lab_front"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
 							"__grid": [41,17],
 							"__pivot": [0,0],
 							"__tags": [],
@@ -24511,9 +24586,9 @@
 							"defUid": 4351,
 							"px": [668,276],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "eureka_patent_front_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "eureka_patent_front_3", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["eureka_patent_front_0"]
+									"params": ["eureka_patent_front_3"]
 								}] },
 								{ "__identifier": "kind", "__type": "String", "__value": "eureka_patent_front", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
@@ -24536,13 +24611,63 @@
 							"defUid": 4351,
 							"px": [2056,217],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "eureka_observatory_front_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "eureka_observatory_front_4", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["eureka_observatory_front_1"]
+									"params": ["eureka_observatory_front_4"]
 								}] },
 								{ "__identifier": "kind", "__type": "String", "__value": "eureka_observatory_front", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["eureka_observatory_front"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [62,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2856,
+							"__worldY": 7402,
+							"iid": "Prop-410068",
+							"width": 288,
+							"height": 182,
+							"defUid": 4351,
+							"px": [1000,586],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "quad_cafe_5", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["quad_cafe_5"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "quad_cafe", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["quad_cafe"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [78,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3116,
+							"__worldY": 7429,
+							"iid": "Prop-410069",
+							"width": 160,
+							"height": 155,
+							"defUid": 4351,
+							"px": [1260,613],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "quad_fountain_6", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["quad_fountain_6"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "quad_fountain", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["quad_fountain"]
 								}] }
 							]
 						},
@@ -25885,7 +26010,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 368,
 							"__worldY": 7296,
-							"iid": "Prop-410055",
+							"iid": "Prop-410137",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -25910,7 +26035,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 368,
 							"__worldY": 7296,
-							"iid": "Prop-410056",
+							"iid": "Prop-410138",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -25935,7 +26060,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 440,
 							"__worldY": 7296,
-							"iid": "LoadingZone-410057",
+							"iid": "LoadingZone-410139",
 							"width": 144,
 							"height": 288,
 							"defUid": 2002,
@@ -25967,7 +26092,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 668,
 							"__worldY": 7528,
-							"iid": "Prop-410058",
+							"iid": "Prop-410140",
 							"width": 64,
 							"height": 56,
 							"defUid": 4351,
@@ -25992,7 +26117,7 @@
 							"__smartColor": "#FFC857",
 							"__worldX": 688,
 							"__worldY": 7540,
-							"iid": "Switch-410059",
+							"iid": "Switch-410141",
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
