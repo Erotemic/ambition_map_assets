@@ -11,7 +11,7 @@
 	"iid": "ambition-evil-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 308737,
+	"nextUid": 308738,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -12358,6 +12358,31 @@
 									"params": ["The forest of the Evil dimension: the way to Castle Godwin."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [26,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 430,
+							"__worldY": 303,
+							"iid": "Prop-308737",
+							"width": 970,
+							"height": 353,
+							"defUid": 4351,
+							"px": [430,303],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "evil_forest_roadside_overlay", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["evil_forest_roadside_overlay"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "evil_forest_roadside", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["evil_forest_roadside"]
+								}] }
 							]
 						}
 					]
