@@ -1270,7 +1270,7 @@
 					"uid": 7038,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
@@ -1290,7 +1290,10 @@
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"defaultOverride": null,
+					"defaultOverride": {
+						"id": "V_Bool",
+						"params": [ false ]
+					},
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -3631,7 +3634,7 @@
 					"uid": 7039,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
@@ -3651,7 +3654,10 @@
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"defaultOverride": null,
+					"defaultOverride": {
+						"id": "V_Bool",
+						"params": [ false ]
+					},
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -4009,7 +4015,7 @@
 					"uid": 4334,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "NameAndValue",
@@ -4671,7 +4677,7 @@
 					"uid": 7040,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
@@ -4691,7 +4697,10 @@
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"defaultOverride": null,
+					"defaultOverride": {
+						"id": "V_Bool",
+						"params": [ false ]
+					},
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -5645,7 +5654,7 @@
 					"uid": 6999,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
@@ -5665,7 +5674,10 @@
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"defaultOverride": null,
+					"defaultOverride": {
+						"id": "V_Bool",
+						"params": [ false ]
+					},
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -5682,7 +5694,7 @@
 					"uid": 7677,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
@@ -5702,7 +5714,10 @@
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"defaultOverride": null,
+					"defaultOverride": {
+						"id": "V_Bool",
+						"params": [ false ]
+					},
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -6913,7 +6928,7 @@
 					"uid": 6813,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
@@ -8526,7 +8541,10 @@
 									"params": ["GateTerminal"]
 								}] },
 								{ "__identifier": "on_activate", "__type": "String", "__value": null, "__tile": null, "defUid": 6861, "realEditorValues": [] },
-								{ "__identifier": "requires_facing", "__type": "Bool", "__value": null, "__tile": null, "defUid": 7040, "realEditorValues": [] }
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7040, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
 							],
 							"__worldX": 20400,
 							"__worldY": 436
