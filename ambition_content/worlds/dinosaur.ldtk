@@ -11,7 +11,7 @@
 	"iid": "ambition-dinosaur-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 500049,
+	"nextUid": 500105,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -9025,6 +9025,61 @@
 									"params": ["jungle_fallen_log"]
 								}] }
 							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [29,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 20470,
+							"__worldY": 334,
+							"iid": "Prop-500049",
+							"width": 220,
+							"height": 146,
+							"defUid": 4351,
+							"px": [470,334],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_trailhead_jungle_ranger_hut_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_trailhead_jungle_ranger_hut_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_ranger_hut", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_ranger_hut"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [40,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 20644,
+							"__worldY": 416,
+							"iid": "NpcSpawn-500050",
+							"width": 32,
+							"height": 64,
+							"defUid": 2006,
+							"px": [644,416],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_primeval_brandvold", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_primeval_brandvold"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "primeval_brandvold", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_brandvold"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stand_still"]
+								}] }
+							]
 						}
 					]
 				},
@@ -16823,6 +16878,36 @@
 							]
 						},
 						{
+							"__identifier": "NpcSpawn",
+							"__grid": [135,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 34990,
+							"__worldY": 416,
+							"iid": "NpcSpawn-500066",
+							"width": 32,
+							"height": 64,
+							"defUid": 2006,
+							"px": [2174,512],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_primeval_feld", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_primeval_feld"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "primeval_feld", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_feld"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stand_still"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "EnemySpawn",
 							"__grid": [62,31],
 							"__pivot": [0,0],
@@ -16890,18 +16975,18 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [110,30],
+							"__grid": [107,30],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
-							"__worldX": 34576,
+							"__worldX": 34536,
 							"__worldY": 388,
-							"iid": "EnemySpawn-500039",
+							"iid": "EnemySpawn-500096",
 							"width": 96,
 							"height": 92,
 							"defUid": 2008,
-							"px": [1760,484],
+							"px": [1720,484],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "primeval_tar_pits_triceratops_3", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
@@ -16923,18 +17008,18 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [140,31],
+							"__grid": [21,31],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
-							"__worldX": 35056,
+							"__worldX": 33156,
 							"__worldY": 406,
-							"iid": "EnemySpawn-500040",
+							"iid": "EnemySpawn-500097",
 							"width": 44,
 							"height": 74,
 							"defUid": 2008,
-							"px": [2240,502],
+							"px": [340,502],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "primeval_tar_pits_dilophosaurus_4", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
@@ -16956,18 +17041,18 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [118,34],
+							"__grid": [60,34],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
-							"__worldX": 34716,
+							"__worldX": 33776,
 							"__worldY": 454,
-							"iid": "EnemySpawn-500041",
+							"iid": "EnemySpawn-500098",
 							"width": 24,
 							"height": 26,
 							"defUid": 2008,
-							"px": [1900,550],
+							"px": [960,550],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "primeval_tar_pits_compsognathus_5", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
@@ -16989,18 +17074,18 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [143,34],
+							"__grid": [77,34],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
-							"__worldX": 35116,
+							"__worldX": 34056,
 							"__worldY": 454,
-							"iid": "EnemySpawn-500042",
+							"iid": "EnemySpawn-500099",
 							"width": 24,
 							"height": 26,
 							"defUid": 2008,
-							"px": [2300,550],
+							"px": [1240,550],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "primeval_tar_pits_compsognathus_6", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
