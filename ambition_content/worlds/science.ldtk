@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 410193,
+	"nextUid": 410197,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -12506,6 +12506,109 @@
 								{ "__identifier": "text", "__type": "String", "__value": "THE SERVICE DECK", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["THE SERVICE DECK"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [81,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1196,
+							"__worldY": 1862,
+							"iid": "Prop-410193",
+							"width": 774,
+							"height": 250,
+							"defUid": 4351,
+							"px": [1300,582],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "orbital_station_service_deck_svc_clutter_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orbital_station_service_deck_svc_clutter_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "svc_clutter", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["svc_clutter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [109,34],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -741,
+							"__worldY": 1830,
+							"iid": "DebugLabel-410194",
+							"width": 260,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1755,550],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "service_sign_incident", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["service_sign_incident"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "DAYS WITHOUT INCIDENT:", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["DAYS WITHOUT INCIDENT:"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [99,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -906,
+							"__worldY": 1970,
+							"iid": "DebugLabel-410195",
+							"width": 420,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1590,690],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "service_sign_dock", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["service_sign_dock"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "ROBOTS: CHARGE HERE (do not charge the crew)", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ROBOTS: CHARGE HERE (do not charge the crew)"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [87,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -1094,
+							"__worldY": 1896,
+							"iid": "DebugLabel-410196",
+							"width": 320,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1402,616],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "service_sign_snacks", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["service_sign_snacks"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "SNACKS: weightless, not priceless", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SNACKS: weightless, not priceless"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
