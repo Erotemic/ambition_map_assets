@@ -11,7 +11,7 @@
 	"iid": "ambition-pvn-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 900050,
+	"nextUid": 900051,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -12690,6 +12690,31 @@
 							],
 							"__worldX": 2512,
 							"__worldY": 16144
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1792,
+							"__worldY": 15632,
+							"iid": "Prop-900050",
+							"width": 1280,
+							"height": 608,
+							"defUid": 4351,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "shadow_dojo_hall_overlay", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["shadow_dojo_hall_overlay"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "shadow_dojo_hall", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["shadow_dojo_hall"]
+								}] }
+							]
 						}
 					]
 				},
