@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 410440,
+	"nextUid": 410462,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -27444,6 +27444,31 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [86,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1642,
+							"__worldY": 7488,
+							"iid": "Prop-410444",
+							"width": 98,
+							"height": 96,
+							"defUid": 4351,
+							"px": [1386,608],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "court_busker_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["court_busker_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "court_busker", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["court_busker"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [0,38],
 							"__pivot": [0,0],
@@ -27550,6 +27575,36 @@
 									"params": ["The tether: ground station east of the quad. Cars on demand."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [89,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 1684,
+							"__worldY": 7520,
+							"iid": "NpcSpawn-410449",
+							"width": 32,
+							"height": 64,
+							"defUid": 2006,
+							"px": [1428,640],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_eureka_hum", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_eureka_hum"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "eureka_hum", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["eureka_hum"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stand_still"]
+								}] }
 							]
 						},
 						{
@@ -27663,7 +27718,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 368,
 							"__worldY": 7296,
-							"iid": "Prop-410433",
+							"iid": "Prop-410457",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -27688,7 +27743,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 368,
 							"__worldY": 7296,
-							"iid": "Prop-410434",
+							"iid": "Prop-410458",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -27713,7 +27768,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 440,
 							"__worldY": 7296,
-							"iid": "LoadingZone-410435",
+							"iid": "LoadingZone-410459",
 							"width": 144,
 							"height": 288,
 							"defUid": 2002,
@@ -27745,7 +27800,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 668,
 							"__worldY": 7528,
-							"iid": "Prop-410436",
+							"iid": "Prop-410460",
 							"width": 64,
 							"height": 56,
 							"defUid": 4351,
@@ -27770,7 +27825,7 @@
 							"__smartColor": "#FFC857",
 							"__worldX": 688,
 							"__worldY": 7540,
-							"iid": "Switch-410437",
+							"iid": "Switch-410461",
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
