@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 410631,
+	"nextUid": 410637,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -18089,6 +18089,82 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [2,3],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 4650,
+							"__worldY": -656,
+							"iid": "Prop-410631",
+							"width": 322,
+							"height": 562,
+							"defUid": 4351,
+							"px": [42,48],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hall_cradle", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_cradle"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hall_cradle", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_cradle"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [104,45],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6284,
+							"__worldY": 24,
+							"iid": "Prop-410632",
+							"width": 90,
+							"height": 168,
+							"defUid": 4351,
+							"px": [1676,728],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hall_lectern", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_lectern"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hall_lectern", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_lectern"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [107,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 6328,
+							"__worldY": -44,
+							"iid": "DebugLabel-410633",
+							"width": 420,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1720,660],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hall_lectern_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_lectern_sign"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "CONSERVATION HALL: what goes in comes out", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["CONSERVATION HALL: what goes in comes out"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
 						}
 					]
 				},
@@ -19170,6 +19246,82 @@
 								{ "__identifier": "text", "__type": "String", "__value": "THE INVERSION GALLERY: THE WHOLE ROOM TURNS OVER", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["THE INVERSION GALLERY: THE WHOLE ROOM TURNS OVER"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [27,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 7858,
+							"__worldY": -544,
+							"iid": "Prop-410634",
+							"width": 92,
+							"height": 64,
+							"defUid": 4351,
+							"px": [434,160],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "gallery_chandelier_hung", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gallery_chandelier_hung"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gallery_chandelier_hung", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gallery_chandelier_hung"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [27,52],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 7858,
+							"__worldY": 129,
+							"iid": "Prop-410635",
+							"width": 92,
+							"height": 63,
+							"defUid": 4351,
+							"px": [434,833],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "gallery_chandelier_stood", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gallery_chandelier_stood"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gallery_chandelier_stood", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gallery_chandelier_stood"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [30,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 7904,
+							"__worldY": -404,
+							"iid": "DebugLabel-410636",
+							"width": 400,
+							"height": 24,
+							"defUid": 2007,
+							"px": [480,300],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "gallery_chandeliers_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gallery_chandeliers_sign"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "THIS GALLERY IS HUNG BOTH WAYS UP", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["THIS GALLERY IS HUNG BOTH WAYS UP"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
