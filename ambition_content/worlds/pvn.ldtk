@@ -11,7 +11,7 @@
 	"iid": "ambition-pvn-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 900051,
+	"nextUid": 900056,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -11849,6 +11849,135 @@
 							],
 							"__worldX": 3280,
 							"__worldY": 3392
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [0,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2560,
+							"__worldY": 3272,
+							"iid": "Prop-900051",
+							"width": 1280,
+							"height": 568,
+							"defUid": 4351,
+							"px": [0,200],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "pirate_sky_lookout_sky_lookout_deck_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["pirate_sky_lookout_sky_lookout_deck_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "sky_lookout_deck", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["sky_lookout_deck"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [38,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 3180,
+							"__worldY": 3712,
+							"iid": "DebugLabel-900052",
+							"width": 420,
+							"height": 24,
+							"defUid": 2007,
+							"px": [620,640],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "sky_lookout_sign_parking", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["sky_lookout_sign_parking"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "SHARK PARKING: extinguish before boarding", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SHARK PARKING: extinguish before boarding"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [54,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 3426,
+							"__worldY": 3372,
+							"iid": "DebugLabel-900053",
+							"width": 380,
+							"height": 24,
+							"defUid": 2007,
+							"px": [866,300],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "sky_lookout_sign_nest", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["sky_lookout_sign_nest"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "CROW'S NEST: no crows. Some parrots.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["CROW'S NEST: no crows. Some parrots."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [0,24],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 2570,
+							"__worldY": 3462,
+							"iid": "DebugLabel-900054",
+							"width": 400,
+							"height": 24,
+							"defUid": 2007,
+							"px": [10,390],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "sky_lookout_sign_perch", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["sky_lookout_sign_perch"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "THE CAPTAIN'S PERCH (the captain is out)", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["THE CAPTAIN'S PERCH (the captain is out)"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [58,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 3490,
+							"__worldY": 3662,
+							"iid": "DebugLabel-900055",
+							"width": 340,
+							"height": 24,
+							"defUid": 2007,
+							"px": [930,590],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "sky_lookout_sign_cannon", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["sky_lookout_sign_cannon"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "ANTI-SHARK GUN: aim up, mostly", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ANTI-SHARK GUN: aim up, mostly"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
 						}
 					]
 				},
