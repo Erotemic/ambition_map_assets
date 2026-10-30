@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 409873,
+	"nextUid": 409890,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -21454,7 +21454,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 112,
 							"__worldY": 7296,
-							"iid": "Prop-409868",
+							"iid": "Prop-409885",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -21479,7 +21479,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 112,
 							"__worldY": 7296,
-							"iid": "Prop-409869",
+							"iid": "Prop-409886",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -21504,7 +21504,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 184,
 							"__worldY": 7296,
-							"iid": "LoadingZone-409870",
+							"iid": "LoadingZone-409887",
 							"width": 144,
 							"height": 288,
 							"defUid": 2002,
@@ -21536,7 +21536,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 412,
 							"__worldY": 7528,
-							"iid": "Prop-409871",
+							"iid": "Prop-409888",
 							"width": 64,
 							"height": 56,
 							"defUid": 4351,
@@ -21561,7 +21561,7 @@
 							"__smartColor": "#FFC857",
 							"__worldX": 432,
 							"__worldY": 7540,
-							"iid": "Switch-409872",
+							"iid": "Switch-409889",
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
@@ -23751,6 +23751,31 @@
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
+						{
+							"__identifier": "Prop",
+							"__grid": [1,2],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3088,
+							"__worldY": 8096,
+							"iid": "Prop-409876",
+							"width": 1248,
+							"height": 480,
+							"defUid": 4351,
+							"px": [16,32],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "eureka_lab_room_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["eureka_lab_room_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "eureka_lab_room", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["eureka_lab_room"]
+								}] }
+							]
+						},
 						{
 							"__identifier": "LoadingZone",
 							"__grid": [2,26],
