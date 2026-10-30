@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 410143,
+	"nextUid": 410162,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -25816,6 +25816,31 @@
 					"gridTiles": [],
 					"entityInstances": [
 						{
+							"__identifier": "Prop",
+							"__grid": [34,30],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 807,
+							"__worldY": 7362,
+							"iid": "Prop-410146",
+							"width": 1049,
+							"height": 222,
+							"defUid": 4351,
+							"px": [551,482],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "court_furniture_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["court_furniture_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "court_furniture", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["court_furniture"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [0,38],
 							"__pivot": [0,0],
@@ -26035,7 +26060,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 368,
 							"__worldY": 7296,
-							"iid": "Prop-410137",
+							"iid": "Prop-410157",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -26060,7 +26085,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 368,
 							"__worldY": 7296,
-							"iid": "Prop-410138",
+							"iid": "Prop-410158",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -26085,7 +26110,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 440,
 							"__worldY": 7296,
-							"iid": "LoadingZone-410139",
+							"iid": "LoadingZone-410159",
 							"width": 144,
 							"height": 288,
 							"defUid": 2002,
@@ -26117,7 +26142,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 668,
 							"__worldY": 7528,
-							"iid": "Prop-410140",
+							"iid": "Prop-410160",
 							"width": 64,
 							"height": 56,
 							"defUid": 4351,
@@ -26142,7 +26167,7 @@
 							"__smartColor": "#FFC857",
 							"__worldX": 688,
 							"__worldY": 7540,
-							"iid": "Switch-410141",
+							"iid": "Switch-410161",
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
