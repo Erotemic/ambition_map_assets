@@ -11,7 +11,7 @@
 	"iid": "ambition-pvn-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 900118,
+	"nextUid": 900148,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -17710,7 +17710,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 112,
 							"__worldY": 10416,
-							"iid": "Prop-900113",
+							"iid": "Prop-900143",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -17735,7 +17735,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 112,
 							"__worldY": 10416,
-							"iid": "Prop-900114",
+							"iid": "Prop-900144",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -17760,7 +17760,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 184,
 							"__worldY": 10416,
-							"iid": "LoadingZone-900115",
+							"iid": "LoadingZone-900145",
 							"width": 144,
 							"height": 288,
 							"defUid": 2002,
@@ -17792,7 +17792,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 412,
 							"__worldY": 10648,
-							"iid": "Prop-900116",
+							"iid": "Prop-900146",
 							"width": 64,
 							"height": 56,
 							"defUid": 4351,
@@ -17817,7 +17817,7 @@
 							"__smartColor": "#FFC857",
 							"__worldX": 432,
 							"__worldY": 10660,
-							"iid": "Switch-900117",
+							"iid": "Switch-900147",
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
@@ -22033,6 +22033,31 @@
 								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "ChestSpawn",
+							"__grid": [96,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#F6C85F",
+							"__worldX": 8776,
+							"__worldY": 10518,
+							"iid": "ChestSpawn-900131",
+							"width": 76,
+							"height": 58,
+							"defUid": 2016,
+							"px": [1544,646],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the clan's prize", "__tile": null, "defUid": 3041, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the clan's prize"]
+								}] },
+								{ "__identifier": "reward", "__type": "String", "__value": "health:2", "__tile": null, "defUid": 3042, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["health:2"]
 								}] }
 							]
 						},

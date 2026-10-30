@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 410030,
+	"nextUid": 410060,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -25885,7 +25885,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 368,
 							"__worldY": 7296,
-							"iid": "Prop-410025",
+							"iid": "Prop-410055",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -25910,7 +25910,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 368,
 							"__worldY": 7296,
-							"iid": "Prop-410026",
+							"iid": "Prop-410056",
 							"width": 288,
 							"height": 288,
 							"defUid": 4351,
@@ -25935,7 +25935,7 @@
 							"__smartColor": "#FFD166",
 							"__worldX": 440,
 							"__worldY": 7296,
-							"iid": "LoadingZone-410027",
+							"iid": "LoadingZone-410057",
 							"width": 144,
 							"height": 288,
 							"defUid": 2002,
@@ -25967,7 +25967,7 @@
 							"__smartColor": "#9966CC",
 							"__worldX": 668,
 							"__worldY": 7528,
-							"iid": "Prop-410028",
+							"iid": "Prop-410058",
 							"width": 64,
 							"height": 56,
 							"defUid": 4351,
@@ -25992,7 +25992,7 @@
 							"__smartColor": "#FFC857",
 							"__worldX": 688,
 							"__worldY": 7540,
-							"iid": "Switch-410029",
+							"iid": "Switch-410059",
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
@@ -26758,6 +26758,31 @@
 								"id": "V_String",
 								"params": ["eureka_test_range_spawn"]
 							}] }]
+						},
+						{
+							"__identifier": "ChestSpawn",
+							"__grid": [146,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#F6C85F",
+							"__worldX": -220,
+							"__worldY": 7238,
+							"iid": "ChestSpawn-410039",
+							"width": 76,
+							"height": 58,
+							"defUid": 2016,
+							"px": [2340,358],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the range's lost and found", "__tile": null, "defUid": 3041, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the range's lost and found"]
+								}] },
+								{ "__identifier": "reward", "__type": "String", "__value": "currency:50", "__tile": null, "defUid": 3042, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["currency:50"]
+								}] }
+							]
 						},
 						{
 							"__identifier": "DebugLabel",

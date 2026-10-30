@@ -11,7 +11,7 @@
 	"iid": "ambition-dinosaur-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 500105,
+	"nextUid": 500133,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -16796,6 +16796,31 @@
 								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "ChestSpawn",
+							"__grid": [131,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#F6C85F",
+							"__worldX": 34916,
+							"__worldY": 230,
+							"iid": "ChestSpawn-500117",
+							"width": 76,
+							"height": 58,
+							"defUid": 2016,
+							"px": [2100,326],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the dig's best find", "__tile": null, "defUid": 3041, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the dig's best find"]
+								}] },
+								{ "__identifier": "reward", "__type": "String", "__value": "currency:75", "__tile": null, "defUid": 3042, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["currency:75"]
 								}] }
 							]
 						},
