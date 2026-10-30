@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 410142,
+	"nextUid": 410143,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -10513,6 +10513,31 @@
 									"params": ["THE OBSERVATION DECK"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [1,3],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2512,
+							"__worldY": 1328,
+							"iid": "Prop-410142",
+							"width": 1568,
+							"height": 656,
+							"defUid": 4351,
+							"px": [16,48],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "orbital_station_observation_deck_obs_deck_window_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orbital_station_observation_deck_obs_deck_window_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "obs_deck_window", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["obs_deck_window"]
+								}] }
 							]
 						}
 					]
