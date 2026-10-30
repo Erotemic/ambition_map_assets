@@ -20293,9 +20293,9 @@
 							"defUid": 2008,
 							"px": [800,720],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "primeval_tar_pits_npc_raptor_stalker_1", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_smoking_mountain_npc_raptor_stalker_1", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["primeval_tar_pits_npc_raptor_stalker_1"]
+									"params": ["primeval_smoking_mountain_npc_raptor_stalker_1"]
 								}] },
 								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
@@ -20326,9 +20326,9 @@
 							"defUid": 2008,
 							"px": [1560,534],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "primeval_tar_pits_dilophosaurus_2", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_smoking_mountain_dilophosaurus_2", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["primeval_tar_pits_dilophosaurus_2"]
+									"params": ["primeval_smoking_mountain_dilophosaurus_2"]
 								}] },
 								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
@@ -20359,9 +20359,9 @@
 							"defUid": 2008,
 							"px": [1860,440],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "primeval_tar_pits_pachycephalosaurus_3", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_smoking_mountain_pachycephalosaurus_3", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["primeval_tar_pits_pachycephalosaurus_3"]
+									"params": ["primeval_smoking_mountain_pachycephalosaurus_3"]
 								}] },
 								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
@@ -20392,9 +20392,9 @@
 							"defUid": 2008,
 							"px": [300,870],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "primeval_tar_pits_compsognathus_4", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_smoking_mountain_compsognathus_4", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["primeval_tar_pits_compsognathus_4"]
+									"params": ["primeval_smoking_mountain_compsognathus_4"]
 								}] },
 								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
@@ -20425,9 +20425,9 @@
 							"defUid": 2008,
 							"px": [1100,678],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "primeval_tar_pits_compsognathus_5", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_smoking_mountain_compsognathus_5", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["primeval_tar_pits_compsognathus_5"]
+									"params": ["primeval_smoking_mountain_compsognathus_5"]
 								}] },
 								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
@@ -20458,9 +20458,9 @@
 							"defUid": 2008,
 							"px": [2120,150],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "primeval_tar_pits_vulture_6", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_smoking_mountain_vulture_6", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["primeval_tar_pits_vulture_6"]
+									"params": ["primeval_smoking_mountain_vulture_6"]
 								}] },
 								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
