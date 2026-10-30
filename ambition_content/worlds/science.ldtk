@@ -23046,9 +23046,9 @@
 					"id": "V_String",
 					"params": ["eureka"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "lofi_study_loop", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "graphite_and_rain", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["lofi_study_loop"]
+					"params": ["graphite_and_rain"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "eureka", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -23434,9 +23434,9 @@
 					"id": "V_String",
 					"params": ["eureka"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "lofi_study_loop", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "physicists_guild_event_horizon_waltz", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["lofi_study_loop"]
+					"params": ["physicists_guild_event_horizon_waltz"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "eureka", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
