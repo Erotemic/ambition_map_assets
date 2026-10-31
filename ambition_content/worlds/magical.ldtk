@@ -11,7 +11,7 @@
 	"iid": "ambition-magical-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1009047,
+	"nextUid": 1009068,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -22612,6 +22612,57 @@
 							}] }]
 						},
 						{
+							"__identifier": "ChestSpawn",
+							"__grid": [57,54],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#F6C85F",
+							"__worldX": 16410,
+							"__worldY": 2276,
+							"iid": "ChestSpawn-1009055",
+							"width": 76,
+							"height": 58,
+							"defUid": 2016,
+							"px": [922,868],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the ring's purse", "__tile": null, "defUid": 3041, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the ring's purse"]
+								}] },
+								{ "__identifier": "reward", "__type": "String", "__value": "currency:250", "__tile": null, "defUid": 3042, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["currency:250"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [46,49],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 16238,
+							"__worldY": 2204,
+							"iid": "DebugLabel-1009056",
+							"width": 420,
+							"height": 24,
+							"defUid": 2007,
+							"px": [750,796],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "coliseum_champion", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coliseum_champion"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "CHAMPION OF THE UNLIT RING: (vacant)", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["CHAMPION OF THE UNLIT RING: (vacant)"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
 							"__grid": [36,8],
 							"__pivot": [0,0],
@@ -22771,18 +22822,18 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [59,53],
+							"__grid": [41,62],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
-							"__worldX": 16432,
-							"__worldY": 2266,
-							"iid": "EnemySpawn-1009023",
+							"__worldX": 16152,
+							"__worldY": 2406,
+							"iid": "EnemySpawn-1009062",
 							"width": 32,
 							"height": 68,
 							"defUid": 2008,
-							"px": [944,858],
+							"px": [664,998],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "magical_void_coliseum_void_projectile_polygon", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
