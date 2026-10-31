@@ -11,7 +11,7 @@
 	"iid": "ambition-math-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 210023,
+	"nextUid": 210024,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -8067,6 +8067,46 @@
 			"allowedRefsEntityUid": null,
 			"allowedRefTags": [],
 			"tilesetUid": null
+		},
+		{
+			"identifier": "dangerous",
+			"doc": "Out of town: an NPC on the player's side joins the player's fights here (RoomMetadata::dangerous).",
+			"__type": "Bool",
+			"uid": 210023,
+			"type": "F_Bool",
+			"isArray": false,
+			"canBeNull": false,
+			"arrayMinLength": null,
+			"arrayMaxLength": null,
+			"editorDisplayMode": "NameAndValue",
+			"editorDisplayScale": 1,
+			"editorDisplayPos": "Above",
+			"editorLinkStyle": "ZigZag",
+			"editorDisplayColor": null,
+			"editorAlwaysShow": true,
+			"editorShowInWorld": false,
+			"editorCutLongValues": true,
+			"editorTextSuffix": null,
+			"editorTextPrefix": null,
+			"useForSmartColor": false,
+			"exportToToc": false,
+			"searchable": true,
+			"min": null,
+			"max": null,
+			"regex": null,
+			"acceptFileTypes": null,
+			"defaultOverride": {
+				"id": "V_Bool",
+				"params": [ false ]
+			},
+			"textLanguageMode": null,
+			"symmetricalRef": false,
+			"autoChainRef": false,
+			"allowOutOfLevelRef": false,
+			"allowedRefs": "Any",
+			"allowedRefsEntityUid": null,
+			"allowedRefTags": [],
+			"tilesetUid": null
 		}
 	] },
 	"worlds": [],
@@ -15017,6 +15057,10 @@
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_town", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["math_town"]
+				}] },
+				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 210023, "realEditorValues": [{
+					"id": "V_Bool",
+					"params": [ true ]
 				}] }
 			],
 			"layerInstances": [
