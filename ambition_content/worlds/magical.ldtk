@@ -11,7 +11,7 @@
 	"iid": "ambition-magical-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1008661,
+	"nextUid": 1008683,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -10152,6 +10152,36 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["stand_still"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [85,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 3416,
+							"__worldY": 608,
+							"iid": "NpcSpawn-1008676",
+							"width": 64,
+							"height": 32,
+							"defUid": 2006,
+							"px": [1368,608],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "solid_snake", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["solid_snake"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "magical_solid_snake", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["magical_solid_snake"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": [""]
 								}] }
 							]
 						},
