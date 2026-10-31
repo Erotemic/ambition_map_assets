@@ -11,7 +11,7 @@ carries them at full size. That is the cost this repo exists to remove.
 
 ```
 ambition_content/worlds/       -> game/ambition_content/assets/worlds/
-ambition_demo_mary_o/worlds/   -> game/ambition_demo_mary_o/assets/worlds/
+ambition_demo_mary_o/worlds/   -> game/ambition_demo_mary_o/authoring/worlds/
 ambition_demo_sanic/worlds/    -> game/ambition_demo_sanic/assets/worlds/
 ```
 
