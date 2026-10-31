@@ -11,7 +11,7 @@
 	"iid": "ambition-magical-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1008304,
+	"nextUid": 1008367,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -8583,6 +8583,131 @@
 					"entityInstances": [
 						{
 							"__identifier": "Prop",
+							"__grid": [3,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 60,
+							"__worldY": 592,
+							"iid": "Prop-1008307",
+							"width": 244,
+							"height": 48,
+							"defUid": 4351,
+							"px": [60,592],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "garden_beds", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["garden_beds"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "garden_beds", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["garden_beds"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [56,31],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 908,
+							"__worldY": 510,
+							"iid": "Prop-1008308",
+							"width": 263,
+							"height": 130,
+							"defUid": 4351,
+							"px": [908,510],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "garden_hill_low", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["garden_hill_low"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "garden_hill_low", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["garden_hill_low"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [70,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1120,
+							"__worldY": 414,
+							"iid": "Prop-1008309",
+							"width": 248,
+							"height": 226,
+							"defUid": 4351,
+							"px": [1120,414],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "garden_hill_high", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["garden_hill_high"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "garden_hill_high", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["garden_hill_high"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [82,34],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1318,
+							"__worldY": 554,
+							"iid": "Prop-1008310",
+							"width": 144,
+							"height": 96,
+							"defUid": 4351,
+							"px": [1318,554],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "garden_hatch", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["garden_hatch"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "garden_hatch", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["garden_hatch"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [97,15],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1560,
+							"__worldY": 250,
+							"iid": "Prop-1008311",
+							"width": 322,
+							"height": 390,
+							"defUid": 4351,
+							"px": [1560,250],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "garden_star_tree", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["garden_star_tree"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "garden_star_tree", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["garden_star_tree"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
 							"__grid": [22,22],
 							"__pivot": [0,0],
 							"__tags": [],
@@ -10929,6 +11054,131 @@
 					"gridTiles": [],
 					"entityInstances": [
 						{
+							"__identifier": "Prop",
+							"__grid": [18,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1323,
+							"__worldY": 768,
+							"iid": "Prop-1008330",
+							"width": 170,
+							"height": 588,
+							"defUid": 4351,
+							"px": [299,0],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hollow_shaft_light_west", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hollow_shaft_light_west"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hollow_shaft_light_west", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hollow_shaft_light_west"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [160,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3595,
+							"__worldY": 768,
+							"iid": "Prop-1008331",
+							"width": 170,
+							"height": 588,
+							"defUid": 4351,
+							"px": [2571,0],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hollow_shaft_light_east", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hollow_shaft_light_east"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hollow_shaft_light_east", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hollow_shaft_light_east"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [43,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1724,
+							"__worldY": 832,
+							"iid": "Prop-1008332",
+							"width": 1680,
+							"height": 105,
+							"defUid": 4351,
+							"px": [700,64],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hollow_star_roots", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hollow_star_roots"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hollow_star_roots", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hollow_star_roots"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [70,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2156,
+							"__worldY": 1208,
+							"iid": "Prop-1008333",
+							"width": 220,
+							"height": 136,
+							"defUid": 4351,
+							"px": [1132,440],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hollow_star_heap", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hollow_star_heap"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hollow_star_heap", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hollow_star_heap"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [137,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3220,
+							"__worldY": 1208,
+							"iid": "Prop-1008334",
+							"width": 225,
+							"height": 136,
+							"defUid": 4351,
+							"px": [2196,440],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hollow_star_heap_east", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hollow_star_heap_east"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hollow_star_heap_east", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hollow_star_heap_east"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [22,0],
 							"__pivot": [0,0],
@@ -12118,6 +12368,106 @@
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
+						{
+							"__identifier": "Prop",
+							"__grid": [68,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5699,
+							"__worldY": 448,
+							"iid": "Prop-1008351",
+							"width": 710,
+							"height": 192,
+							"defUid": 4351,
+							"px": [1091,448],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "road_dunes", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["road_dunes"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "road_dunes", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["road_dunes"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [130,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6699,
+							"__worldY": 512,
+							"iid": "Prop-1008352",
+							"width": 474,
+							"height": 128,
+							"defUid": 4351,
+							"px": [2091,512],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "road_dune_far", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["road_dune_far"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "road_dune_far", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["road_dune_far"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [24,35],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 4997,
+							"__worldY": 562,
+							"iid": "Prop-1008353",
+							"width": 269,
+							"height": 78,
+							"defUid": 4351,
+							"px": [389,562],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "road_cart", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["road_cart"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "road_cart", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["road_cart"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [181,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 7519,
+							"__worldY": 465,
+							"iid": "Prop-1008354",
+							"width": 74,
+							"height": 175,
+							"defUid": 4351,
+							"px": [2911,465],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "road_lamp", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["road_lamp"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "road_lamp", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["road_lamp"]
+								}] }
+							]
+						},
 						{
 							"__identifier": "LoadingZone",
 							"__grid": [0,34],
