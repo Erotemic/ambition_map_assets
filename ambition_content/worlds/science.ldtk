@@ -8617,9 +8617,9 @@
 									"id": "V_String",
 									"params": ["Orbital Gate (Dock) Ring"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_ring"]
+									"params": ["triangle_gate_ring"]
 								}] }
 							]
 						},
@@ -8642,9 +8642,9 @@
 									"id": "V_String",
 									"params": ["Orbital Gate (Dock) Portal"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_portal"]
+									"params": ["triangle_gate_portal"]
 								}] }
 							]
 						},
@@ -22917,9 +22917,9 @@
 									"id": "V_String",
 									"params": ["Eureka Gate (Court) Ring"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_ring"]
+									"params": ["triangle_gate_ring"]
 								}] }
 							]
 						},
@@ -22942,9 +22942,9 @@
 									"id": "V_String",
 									"params": ["Eureka Gate (Court) Portal"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_portal"]
+									"params": ["triangle_gate_portal"]
 								}] }
 							]
 						},
@@ -29541,9 +29541,9 @@
 									"id": "V_String",
 									"params": ["Gravity Trail Gate Ring"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_ring"]
+									"params": ["triangle_gate_ring"]
 								}] }
 							]
 						},
@@ -29566,9 +29566,9 @@
 									"id": "V_String",
 									"params": ["Gravity Trail Gate Portal"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_portal"]
+									"params": ["triangle_gate_portal"]
 								}] }
 							]
 						},
@@ -35514,9 +35514,9 @@
 									"id": "V_String",
 									"params": ["Trail Survey Gate Ring"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_ring"]
+									"params": ["triangle_gate_ring"]
 								}] }
 							]
 						},
@@ -35539,9 +35539,9 @@
 									"id": "V_String",
 									"params": ["Trail Survey Gate Portal"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_portal"]
+									"params": ["triangle_gate_portal"]
 								}] }
 							]
 						},

@@ -8383,9 +8383,9 @@
 									"id": "V_String",
 									"params": ["Noodly Gate (Narthex) Ring"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_ring"]
+									"params": ["triangle_gate_ring"]
 								}] }
 							],
 							"__worldX": 70080,
@@ -8408,9 +8408,9 @@
 									"id": "V_String",
 									"params": ["Noodly Gate (Narthex) Portal"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_portal"]
+									"params": ["triangle_gate_portal"]
 								}] }
 							],
 							"__worldX": 70080,

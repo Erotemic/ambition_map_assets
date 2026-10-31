@@ -15249,9 +15249,9 @@
 									"id": "V_String",
 									"params": ["Interdimensional Gate Ring"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 104425, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_ring", "__tile": null, "defUid": 104425, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_ring"]
+									"params": ["triangle_gate_ring"]
 								}] }
 							],
 							"__worldX": 5500,
@@ -15274,9 +15274,9 @@
 									"id": "V_String",
 									"params": ["Interdimensional Gate Portal"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 104425, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_portal", "__tile": null, "defUid": 104425, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_portal"]
+									"params": ["triangle_gate_portal"]
 								}] }
 							],
 							"__worldX": 5500,
@@ -15800,9 +15800,9 @@
 									"id": "V_String",
 									"params": ["Math Gate Ring (Home)"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 104425, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_ring", "__tile": null, "defUid": 104425, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_ring"]
+									"params": ["triangle_gate_ring"]
 								}] }
 							]
 						},
@@ -15825,9 +15825,9 @@
 									"id": "V_String",
 									"params": ["Math Gate Portal (Home)"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 104425, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_portal", "__tile": null, "defUid": 104425, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_portal"]
+									"params": ["triangle_gate_portal"]
 								}] }
 							]
 						},

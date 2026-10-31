@@ -17442,9 +17442,9 @@
 									"id": "V_String",
 									"params": ["Port Gate (Plaza) Ring"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_ring"]
+									"params": ["triangle_gate_ring"]
 								}] }
 							]
 						},
@@ -17467,9 +17467,9 @@
 									"id": "V_String",
 									"params": ["Port Gate (Plaza) Portal"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_portal"]
+									"params": ["triangle_gate_portal"]
 								}] }
 							]
 						},
@@ -27060,9 +27060,9 @@
 									"id": "V_String",
 									"params": ["Village Gate (Shrine) Ring"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_ring"]
+									"params": ["triangle_gate_ring"]
 								}] }
 							]
 						},
@@ -27085,9 +27085,9 @@
 									"id": "V_String",
 									"params": ["Village Gate (Shrine) Portal"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_portal"]
+									"params": ["triangle_gate_portal"]
 								}] }
 							]
 						},
