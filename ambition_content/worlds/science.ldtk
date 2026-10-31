@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 410641,
+	"nextUid": 410643,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -16057,6 +16057,36 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [95,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 1529,
+							"__worldY": 640,
+							"iid": "NpcSpawn-410641",
+							"width": 32,
+							"height": 64,
+							"defUid": 2006,
+							"px": [1529,640],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_station_pippin", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_station_pippin"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "works_pippin", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["works_pippin"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stand_still"]
+								}] }
+							]
 						}
 					]
 				},
@@ -21557,6 +21587,32 @@
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
 								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [45,11],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 10960,
+							"__worldY": -2380,
+							"iid": "DebugLabel-410642",
+							"width": 440,
+							"height": 24,
+							"defUid": 2007,
+							"px": [720,180],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "approach_door_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["approach_door_sign"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "LECTURE IN PROGRESS. PLEASE DO NOT INTERRUPT.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["LECTURE IN PROGRESS. PLEASE DO NOT INTERRUPT."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						}
 					]
