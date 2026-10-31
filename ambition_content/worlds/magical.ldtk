@@ -11,7 +11,7 @@
 	"iid": "ambition-magical-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1008244,
+	"nextUid": 1008282,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -9628,6 +9628,106 @@
 					"gridTiles": [],
 					"entityInstances": [
 						{
+							"__identifier": "Prop",
+							"__grid": [26,15],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2478,
+							"__worldY": 250,
+							"iid": "Prop-1008247",
+							"width": 340,
+							"height": 390,
+							"defUid": 4351,
+							"px": [430,250],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "square_wand_shop", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["square_wand_shop"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "square_wand_shop", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["square_wand_shop"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [58,11],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2978,
+							"__worldY": 180,
+							"iid": "Prop-1008248",
+							"width": 340,
+							"height": 460,
+							"defUid": 4351,
+							"px": [930,180],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "square_bakery", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["square_bakery"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "square_bakery", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["square_bakery"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [97,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3604,
+							"__worldY": 424,
+							"iid": "Prop-1008249",
+							"width": 152,
+							"height": 216,
+							"defUid": 4351,
+							"px": [1556,424],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "square_well", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["square_well"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "square_well", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["square_well"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [118,8],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3936,
+							"__worldY": 130,
+							"iid": "Prop-1008250",
+							"width": 310,
+							"height": 510,
+							"defUid": 4351,
+							"px": [1888,130],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "square_house", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["square_house"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "square_house", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["square_house"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [0,34],
 							"__pivot": [0,0],
@@ -9686,18 +9786,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [23,26],
+							"__grid": [23,9],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
 							"__worldX": 2428,
-							"__worldY": 420,
-							"iid": "DebugLabel-1008174",
+							"__worldY": 150,
+							"iid": "DebugLabel-1008272",
 							"width": 440,
 							"height": 24,
 							"defUid": 2007,
-							"px": [380,420],
+							"px": [380,150],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "square_wands", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -9712,18 +9812,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [52,26],
+							"__grid": [52,8],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
 							"__worldX": 2888,
-							"__worldY": 420,
-							"iid": "DebugLabel-1008175",
+							"__worldY": 130,
+							"iid": "DebugLabel-1008273",
 							"width": 520,
 							"height": 24,
 							"defUid": 2007,
-							"px": [840,420],
+							"px": [840,130],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "square_bakery", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
