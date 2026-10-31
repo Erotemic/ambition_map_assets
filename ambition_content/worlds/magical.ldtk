@@ -11,7 +11,7 @@
 	"iid": "ambition-magical-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1008769,
+	"nextUid": 1008802,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -22164,6 +22164,56 @@
 					"gridTiles": [],
 					"entityInstances": [
 						{
+							"__identifier": "Prop",
+							"__grid": [2,45],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 15528,
+							"__worldY": 2138,
+							"iid": "Prop-1008772",
+							"width": 440,
+							"height": 486,
+							"defUid": 4351,
+							"px": [40,730],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "coliseum_stand_west", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coliseum_stand_west"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "coliseum_stand_west", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coliseum_stand_west"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [90,45],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 16928,
+							"__worldY": 2138,
+							"iid": "Prop-1008773",
+							"width": 440,
+							"height": 486,
+							"defUid": 4351,
+							"px": [1440,730],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "coliseum_stand_east", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coliseum_stand_east"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "coliseum_stand_east", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coliseum_stand_east"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [58,0],
 							"__pivot": [0,0],
@@ -23313,6 +23363,31 @@
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
+						{
+							"__identifier": "Prop",
+							"__grid": [19,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 13241,
+							"__worldY": 2286,
+							"iid": "Prop-1008788",
+							"width": 2085,
+							"height": 338,
+							"defUid": 4351,
+							"px": [313,238],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "wastes_dead_things", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wastes_dead_things"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "wastes_dead_things", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wastes_dead_things"]
+								}] }
+							]
+						},
 						{
 							"__identifier": "LoadingZone",
 							"__grid": [0,30],
