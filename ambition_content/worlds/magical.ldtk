@@ -11,7 +11,7 @@
 	"iid": "ambition-magical-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1008825,
+	"nextUid": 1008848,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -10182,6 +10182,36 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": [""]
+								}] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [52,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 2882,
+							"__worldY": 592,
+							"iid": "NpcSpawn-1008841",
+							"width": 32,
+							"height": 48,
+							"defUid": 2006,
+							"px": [834,592],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "snake_plant", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["snake_plant"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "magical_snake_plant", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["magical_snake_plant"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stand_still"]
 								}] }
 							]
 						},
