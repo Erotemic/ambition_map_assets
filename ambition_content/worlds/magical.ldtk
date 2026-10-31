@@ -11,7 +11,7 @@
 	"iid": "ambition-magical-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1008802,
+	"nextUid": 1008825,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -20730,6 +20730,156 @@
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
+						{
+							"__identifier": "Prop",
+							"__grid": [191,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 15994,
+							"__worldY": 832,
+							"iid": "Prop-1008805",
+							"width": 227,
+							"height": 574,
+							"defUid": 4351,
+							"px": [3066,64],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "ledges_gap_5", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ledges_gap_5"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "ledges_gap", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ledges_gap"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [157,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 15454,
+							"__worldY": 832,
+							"iid": "Prop-1008806",
+							"width": 227,
+							"height": 574,
+							"defUid": 4351,
+							"px": [2526,64],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "ledges_gap_4", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ledges_gap_4"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "ledges_gap", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ledges_gap"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [121,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 14874,
+							"__worldY": 832,
+							"iid": "Prop-1008807",
+							"width": 227,
+							"height": 574,
+							"defUid": 4351,
+							"px": [1946,64],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "ledges_gap_3", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ledges_gap_3"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "ledges_gap", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ledges_gap"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [85,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 14294,
+							"__worldY": 832,
+							"iid": "Prop-1008808",
+							"width": 227,
+							"height": 574,
+							"defUid": 4351,
+							"px": [1366,64],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "ledges_gap_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ledges_gap_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "ledges_gap", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ledges_gap"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [59,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 13874,
+							"__worldY": 832,
+							"iid": "Prop-1008809",
+							"width": 227,
+							"height": 574,
+							"defUid": 4351,
+							"px": [946,64],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "ledges_gap_1", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ledges_gap_1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "ledges_gap", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ledges_gap"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [30,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 13414,
+							"__worldY": 832,
+							"iid": "Prop-1008810",
+							"width": 227,
+							"height": 574,
+							"defUid": 4351,
+							"px": [486,64],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "ledges_gap_0", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ledges_gap_0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "ledges_gap", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ledges_gap"]
+								}] }
+							]
+						},
 						{
 							"__identifier": "LoadingZone",
 							"__grid": [218,39],
