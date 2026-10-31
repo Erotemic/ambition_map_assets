@@ -11,7 +11,7 @@
 	"iid": "ambition-magical-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1009090,
+	"nextUid": 1009142,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -8704,6 +8704,57 @@
 									"id": "V_String",
 									"params": ["garden_star_tree"]
 								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [120,34],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1922,
+							"__worldY": 544,
+							"iid": "Prop-1009098",
+							"width": 106,
+							"height": 96,
+							"defUid": 4351,
+							"px": [1922,544],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "garden_pipe", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["garden_pipe"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "garden_pipe", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["garden_pipe"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [108,31],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 1740,
+							"__worldY": 500,
+							"iid": "DebugLabel-1009125",
+							"width": 280,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1740,500],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "garden_pipe_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["garden_pipe_sign"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "MARY-O (if out: the castle)", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["MARY-O (if out: the castle)"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
