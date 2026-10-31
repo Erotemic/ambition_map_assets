@@ -11,7 +11,7 @@
 	"iid": "ambition-magical-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1008848,
+	"nextUid": 1009047,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -10187,6 +10187,36 @@
 						},
 						{
 							"__identifier": "NpcSpawn",
+							"__grid": [147,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 4404,
+							"__worldY": 584,
+							"iid": "NpcSpawn-1008978",
+							"width": 48,
+							"height": 32,
+							"defUid": 2006,
+							"px": [2356,584],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_snakes_on_a_paper_plane", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_snakes_on_a_paper_plane"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "magical_paper_plane_snakes", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["magical_paper_plane_snakes"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stand_still"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
 							"__grid": [52,37],
 							"__pivot": [0,0],
 							"__tags": [],
@@ -12654,6 +12684,36 @@
 							}] }]
 						},
 						{
+							"__identifier": "NpcSpawn",
+							"__grid": [35,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 5181,
+							"__worldY": 576,
+							"iid": "NpcSpawn-1008951",
+							"width": 54,
+							"height": 40,
+							"defUid": 2006,
+							"px": [573,576],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "laden_swallow", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["laden_swallow"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "magical_laden_swallow", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["magical_laden_swallow"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stand_still"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
 							"__grid": [29,22],
 							"__pivot": [0,0],
@@ -14031,6 +14091,36 @@
 								"id": "V_String",
 								"params": ["magical_void_keep_spawn"]
 							}] }]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [22,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 8172,
+							"__worldY": 592,
+							"iid": "NpcSpawn-1008905",
+							"width": 32,
+							"height": 48,
+							"defUid": 2006,
+							"px": [364,592],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "mary_o_robot", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["mary_o_robot"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk", "__tile": null, "defUid": 3013, "realEditorValues": [] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "magical_rescued_robot", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["magical_rescued_robot"]
+								}] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stand_still"]
+								}] }
+							]
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -21054,9 +21144,9 @@
 									"id": "V_String",
 									"params": ["combatant"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["void_star"]
+									"params": ["npc_void_star"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
@@ -21087,9 +21177,9 @@
 									"id": "V_String",
 									"params": ["combatant"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["void_star"]
+									"params": ["npc_void_star"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
@@ -21120,9 +21210,9 @@
 									"id": "V_String",
 									"params": ["combatant"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["void_star"]
+									"params": ["npc_void_star"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
@@ -21153,9 +21243,9 @@
 									"id": "V_String",
 									"params": ["combatant"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["void_star"]
+									"params": ["npc_void_star"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
@@ -21186,9 +21276,42 @@
 									"id": "V_String",
 									"params": ["combatant"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["void_star"]
+									"params": ["npc_void_star"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [255,31],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 17012,
+							"__worldY": 1276,
+							"iid": "EnemySpawn-1009004",
+							"width": 32,
+							"height": 68,
+							"defUid": 2008,
+							"px": [4084,508],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "magical_void_ledges_void_projectile_polygon", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["magical_void_ledges_void_projectile_polygon"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "void_projectile_polygon", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["void_projectile_polygon"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
@@ -22537,9 +22660,9 @@
 									"id": "V_String",
 									"params": ["combatant"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["void_star"]
+									"params": ["npc_void_star"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
@@ -22570,9 +22693,108 @@
 									"id": "V_String",
 									"params": ["combatant"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["void_star"]
+									"params": ["npc_void_star"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [42,71],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 16172,
+							"__worldY": 2556,
+							"iid": "EnemySpawn-1009021",
+							"width": 32,
+							"height": 68,
+							"defUid": 2008,
+							"px": [684,1148],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "magical_void_coliseum_void_pointed_polygon", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["magical_void_coliseum_void_pointed_polygon"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "void_pointed_polygon", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["void_pointed_polygon"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [76,71],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 16712,
+							"__worldY": 2556,
+							"iid": "EnemySpawn-1009022",
+							"width": 32,
+							"height": 68,
+							"defUid": 2008,
+							"px": [1224,1148],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "magical_void_coliseum_void_pugnacious_polygon", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["magical_void_coliseum_void_pugnacious_polygon"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "void_pugnacious_polygon", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["void_pugnacious_polygon"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [59,53],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 16432,
+							"__worldY": 2266,
+							"iid": "EnemySpawn-1009023",
+							"width": 32,
+							"height": 68,
+							"defUid": 2008,
+							"px": [944,858],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "magical_void_coliseum_void_projectile_polygon", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["magical_void_coliseum_void_projectile_polygon"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "void_projectile_polygon", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["void_projectile_polygon"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
@@ -23712,9 +23934,9 @@
 									"id": "V_String",
 									"params": ["combatant"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["void_star"]
+									"params": ["npc_void_star"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
@@ -23745,9 +23967,9 @@
 									"id": "V_String",
 									"params": ["combatant"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["void_star"]
+									"params": ["npc_void_star"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
@@ -23778,9 +24000,42 @@
 									"id": "V_String",
 									"params": ["combatant"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_void_star", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["void_star"]
+									"params": ["npc_void_star"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [104,31],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 14592,
+							"__worldY": 2556,
+							"iid": "EnemySpawn-1009040",
+							"width": 32,
+							"height": 68,
+							"defUid": 2008,
+							"px": [1664,508],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "magical_void_wastes_void_pugnacious_polygon", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["magical_void_wastes_void_pugnacious_polygon"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "void_pugnacious_polygon", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["void_pugnacious_polygon"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
