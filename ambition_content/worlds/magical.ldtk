@@ -11,7 +11,7 @@
 	"iid": "ambition-magical-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1009142,
+	"nextUid": 1009167,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -10294,6 +10294,32 @@
 									"id": "V_String",
 									"params": ["stand_still"]
 								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [130,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 4128,
+							"__worldY": 470,
+							"iid": "DebugLabel-1009160",
+							"width": 440,
+							"height": 24,
+							"defUid": 2007,
+							"px": [2080,470],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "square_void_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["square_void_sign"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "-> THE CASTLE, THE VOID (Mary-O says: don't)", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["-> THE CASTLE, THE VOID (Mary-O says: don't)"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
