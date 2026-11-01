@@ -3102,21 +3102,22 @@
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayScale": 1,
 					"editorDisplayPos": "Above",
-					"editorDisplayScale": 1.0,
+					"editorLinkStyle": "CurvedArrow",
 					"editorDisplayColor": null,
 					"editorAlwaysShow": false,
-					"editorCutLongValues": true,
 					"editorShowInWorld": true,
+					"editorCutLongValues": true,
 					"editorTextSuffix": null,
 					"editorTextPrefix": null,
-					"editorLinkStyle": "CurvedArrow",
 					"useForSmartColor": false,
+					"exportToToc": false,
+					"searchable": true,
 					"min": null,
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"tilesetUid": null,
 					"defaultOverride": null,
 					"textLanguageMode": null,
 					"symmetricalRef": false,
@@ -3125,8 +3126,7 @@
 					"allowedRefs": "Any",
 					"allowedRefsEntityUid": null,
 					"allowedRefTags": [],
-					"exportToToc": false,
-					"searchable": true
+					"tilesetUid": null
 				},
 				{
 					"identifier": "look",
@@ -3139,21 +3139,22 @@
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayScale": 1,
 					"editorDisplayPos": "Above",
-					"editorDisplayScale": 1.0,
+					"editorLinkStyle": "CurvedArrow",
 					"editorDisplayColor": null,
 					"editorAlwaysShow": false,
-					"editorCutLongValues": true,
 					"editorShowInWorld": true,
+					"editorCutLongValues": true,
 					"editorTextSuffix": null,
 					"editorTextPrefix": null,
-					"editorLinkStyle": "CurvedArrow",
 					"useForSmartColor": false,
+					"exportToToc": false,
+					"searchable": true,
 					"min": null,
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"tilesetUid": null,
 					"defaultOverride": null,
 					"textLanguageMode": null,
 					"symmetricalRef": false,
@@ -3162,8 +3163,7 @@
 					"allowedRefs": "Any",
 					"allowedRefsEntityUid": null,
 					"allowedRefTags": [],
-					"exportToToc": false,
-					"searchable": true
+					"tilesetUid": null
 				}
 			]
 		},
@@ -7266,23 +7266,23 @@
 		}
 	], "tilesets": [
 		{
-			"__cHei": 15,
 			"__cWid": 16,
-			"cachedPixelData": null,
-			"customData": [],
-			"embedAtlas": null,
-			"enumTags": [],
+			"__cHei": 16,
 			"identifier": "sprite_player_robot_v3",
-			"padding": 0,
-			"pxHei": 3876,
-			"pxWid": 4096,
+			"uid": 6852,
 			"relPath": "../sprites/player_robot_v3_spritesheet.png",
-			"savedSelections": [],
+			"embedAtlas": null,
+			"pxWid": 4096,
+			"pxHei": 3876,
+			"tileGridSize": 256,
 			"spacing": 0,
+			"padding": 0,
 			"tags": ["sprite"],
 			"tagsSourceEnumUid": null,
-			"tileGridSize": 256,
-			"uid": 6852
+			"enumTags": [],
+			"customData": [],
+			"savedSelections": [],
+			"cachedPixelData": null
 		}
 	], "enums": [{ "identifier": "BreakablePlatformCollision", "uid": 5002, "values": [ { "id": "Solid", "tileRect": null, "color": 14180189 }, { "id": "OneWayUp", "tileRect": null, "color": 10802479 } ], "iconTilesetUid": null, "externalRelPath": null, "externalFileChecksum": null, "tags": [] }], "externalEnums": [], "levelFields": [
 		{
@@ -8430,8 +8430,8 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,
@@ -8966,7 +8966,7 @@
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [49,52],
+							"__grid": [66,39],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -8975,7 +8975,7 @@
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [786,832],
+							"px": [1058,624],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "gate_stack_portal", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -8999,8 +8999,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 786,
-							"__worldY": 832
+							"__worldX": 1058,
+							"__worldY": 624
 						},
 						{
 							"__identifier": "Switch",
@@ -9231,7 +9231,7 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [78,34],
+							"__grid": [78,28],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -9240,7 +9240,7 @@
 							"width": 420,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1256,556],
+							"px": [1256,460],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hub_public_gate_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -9256,20 +9256,20 @@
 								}] }
 							],
 							"__worldX": 1256,
-							"__worldY": 556
+							"__worldY": 460
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [93,44],
+							"__grid": [100,49],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
 							"iid": "DebugLabel-7746",
-							"width": 360,
-							"height": 24,
+							"width": 272,
+							"height": 64,
 							"defUid": 2007,
-							"px": [1500,716],
+							"px": [1604,788],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hub_dev_wing_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -9284,8 +9284,8 @@
 									"params": ["Room"]
 								}] }
 							],
-							"__worldX": 1500,
-							"__worldY": 716
+							"__worldX": 1604,
+							"__worldY": 788
 						},
 						{
 							"__identifier": "Prop",
@@ -9314,7 +9314,7 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [88,32],
+							"__grid": [84,32],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -9323,7 +9323,7 @@
 							"width": 160,
 							"height": 96,
 							"defUid": 4351,
-							"px": [1420,512],
+							"px": [1356,512],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hub_gate_traffic_board", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -9334,7 +9334,7 @@
 									"params": ["gate_traffic_board"]
 								}] }
 							],
-							"__worldX": 1420,
+							"__worldX": 1356,
 							"__worldY": 512
 						},
 						{
@@ -9390,7 +9390,7 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [98,56],
+							"__grid": [99,54],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -9399,7 +9399,7 @@
 							"width": 260,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1570,900],
+							"px": [1586,868],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hub_gate_bags_label", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -9411,8 +9411,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 1570,
-							"__worldY": 900
+							"__worldX": 1586,
+							"__worldY": 868
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -9492,7 +9492,7 @@
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [70,39],
+							"__grid": [48,52],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -9501,7 +9501,7 @@
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [1133,624],
+							"px": [781,832],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "hall_of_characters_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -9522,8 +9522,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 1133,
-							"__worldY": 624
+							"__worldX": 781,
+							"__worldY": 832
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -12247,8 +12247,8 @@
 			"identifier": "scroll_lab",
 			"iid": "scroll_lab-1242",
 			"uid": 1243,
-			"worldX": 2048,
-			"worldY": -3072,
+			"worldX": 3232,
+			"worldY": 96,
 			"worldDepth": 0,
 			"pxWid": 3200,
 			"pxHei": 900,
@@ -12691,8 +12691,8 @@
 								"id": "V_String",
 								"params": ["scroll_start"]
 							}] }],
-							"__worldX": 2244,
-							"__worldY": -2290
+							"__worldX": 3428,
+							"__worldY": 878
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -12732,8 +12732,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 2048,
-							"__worldY": -2396
+							"__worldX": 3232,
+							"__worldY": 772
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -12764,12 +12764,13 @@
 								}] },
 								{ "__identifier": "disposition", "__type": "String", "__value": null, "__tile": null, "defUid": 6857, "realEditorValues": [] },
 								{ "__identifier": "brain_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 6859, "realEditorValues": [] },
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 8092, "realEditorValues": [] },
 								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
-								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 8092, "realEditorValues": [] }
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 2648,
-							"__worldY": -2434
+							"__worldX": 3832,
+							"__worldY": 734
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -12800,15 +12801,16 @@
 								}] },
 								{ "__identifier": "disposition", "__type": "String", "__value": null, "__tile": null, "defUid": 6857, "realEditorValues": [] },
 								{ "__identifier": "brain_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 6859, "realEditorValues": [] },
-								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "InPlace(0.85)", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["InPlace(0.85)"]
-								}] }
+								}] },
+								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 3988,
-							"__worldY": -2440
+							"__worldX": 5172,
+							"__worldY": 728
 						},
 						{
 							"__identifier": "PogoOrb",
@@ -12826,8 +12828,8 @@
 								"id": "V_String",
 								"params": ["pogo alpha"]
 							}] }],
-							"__worldX": 2584,
-							"__worldY": -2586
+							"__worldX": 3768,
+							"__worldY": 582
 						},
 						{
 							"__identifier": "PogoOrb",
@@ -12845,8 +12847,8 @@
 								"id": "V_String",
 								"params": ["pogo beta"]
 							}] }],
-							"__worldX": 2879,
-							"__worldY": -2621
+							"__worldX": 4063,
+							"__worldY": 547
 						},
 						{
 							"__identifier": "PogoOrb",
@@ -12864,8 +12866,8 @@
 								"id": "V_String",
 								"params": ["pogo gamma"]
 							}] }],
-							"__worldX": 3164,
-							"__worldY": -2536
+							"__worldX": 4348,
+							"__worldY": 632
 						},
 						{
 							"__identifier": "PogoOrb",
@@ -12883,8 +12885,8 @@
 								"id": "V_String",
 								"params": ["pogo ceiling note"]
 							}] }],
-							"__worldX": 2731,
-							"__worldY": -2789
+							"__worldX": 3915,
+							"__worldY": 379
 						},
 						{
 							"__identifier": "ReboundPad",
@@ -12906,8 +12908,8 @@
 								{ "__identifier": "impulseX", "__type": "Float", "__value": 570, "__tile": null, "defUid": 3022, "realEditorValues": [{ "id": "V_Float", "params": [570] }] },
 								{ "__identifier": "impulseY", "__type": "Float", "__value": -810, "__tile": null, "defUid": 3023, "realEditorValues": [{ "id": "V_Float", "params": [-810] }] }
 							],
-							"__worldX": 2408,
-							"__worldY": -2260
+							"__worldX": 3592,
+							"__worldY": 908
 						},
 						{
 							"__identifier": "ReboundPad",
@@ -12929,8 +12931,8 @@
 								{ "__identifier": "impulseX", "__type": "Float", "__value": -720, "__tile": null, "defUid": 3022, "realEditorValues": [{ "id": "V_Float", "params": [-720] }] },
 								{ "__identifier": "impulseY", "__type": "Float", "__value": -680, "__tile": null, "defUid": 3023, "realEditorValues": [{ "id": "V_Float", "params": [-680] }] }
 							],
-							"__worldX": 3438,
-							"__worldY": -2277
+							"__worldX": 4622,
+							"__worldY": 891
 						},
 						{
 							"__identifier": "ReboundPad",
@@ -12952,8 +12954,8 @@
 								{ "__identifier": "impulseX", "__type": "Float", "__value": 760, "__tile": null, "defUid": 3022, "realEditorValues": [{ "id": "V_Float", "params": [760] }] },
 								{ "__identifier": "impulseY", "__type": "Float", "__value": 240, "__tile": null, "defUid": 3023, "realEditorValues": [{ "id": "V_Float", "params": [240] }] }
 							],
-							"__worldX": 2698,
-							"__worldY": -2988
+							"__worldX": 3882,
+							"__worldY": 180
 						},
 						{
 							"__identifier": "PogoOrb",
@@ -12971,8 +12973,8 @@
 								"id": "V_String",
 								"params": ["scroll wing pogo"]
 							}] }],
-							"__worldX": 4489,
-							"__worldY": -2631
+							"__worldX": 5673,
+							"__worldY": 537
 						},
 						{
 							"__identifier": "ReboundPad",
@@ -12994,8 +12996,31 @@
 								{ "__identifier": "impulseX", "__type": "Float", "__value": 630, "__tile": null, "defUid": 3022, "realEditorValues": [{ "id": "V_Float", "params": [630] }] },
 								{ "__identifier": "impulseY", "__type": "Float", "__value": -720, "__tile": null, "defUid": 3023, "realEditorValues": [{ "id": "V_Float", "params": [-720] }] }
 							],
-							"__worldX": 4658,
-							"__worldY": -2277
+							"__worldX": 5842,
+							"__worldY": 891
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [37,45],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"iid": "4ba232f0-bde0-11f1-91e4-07d4f4733876",
+							"width": 1,
+							"height": 80,
+							"defUid": 2002,
+							"px": [592,720],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "", "__tile": null, "defUid": 3002, "realEditorValues": [] },
+								{ "__identifier": "name", "__type": "String", "__value": "Loading Zone", "__tile": null, "defUid": 3003, "realEditorValues": [] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "", "__tile": null, "defUid": 3005, "realEditorValues": [] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "", "__tile": null, "defUid": 3006, "realEditorValues": [] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							],
+							"__worldX": 3824,
+							"__worldY": 816
 						}
 					]
 				},
@@ -14651,7 +14676,7 @@
 								{ "__identifier": "id", "__type": "String", "__value": null, "__tile": null, "defUid": 6853, "realEditorValues": [] },
 								{ "__identifier": "name", "__type": "String", "__value": "Moving Platform", "__tile": null, "defUid": 4248, "realEditorValues": [] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4342, "realEditorValues": [] },
-								{ "__identifier": "sweep_dx", "__type": "Float", "__value": 240, "__tile": null, "defUid": 4249, "realEditorValues": [{ "id": "V_Float", "params": [240.0] }] },
+								{ "__identifier": "sweep_dx", "__type": "Float", "__value": 240, "__tile": null, "defUid": 4249, "realEditorValues": [{ "id": "V_Float", "params": [240] }] },
 								{ "__identifier": "speed", "__type": "Float", "__value": 130, "__tile": null, "defUid": 4250, "realEditorValues": [] },
 								{ "__identifier": "loop_dy", "__type": "Float", "__value": null, "__tile": null, "defUid": 6855, "realEditorValues": [] },
 								{ "__identifier": "loop_min_y", "__type": "Float", "__value": null, "__tile": null, "defUid": 6856, "realEditorValues": [] },
@@ -14691,7 +14716,7 @@
 								{ "__identifier": "id", "__type": "String", "__value": null, "__tile": null, "defUid": 6853, "realEditorValues": [] },
 								{ "__identifier": "name", "__type": "String", "__value": "Moving Platform", "__tile": null, "defUid": 4248, "realEditorValues": [] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4342, "realEditorValues": [] },
-								{ "__identifier": "sweep_dx", "__type": "Float", "__value": 240, "__tile": null, "defUid": 4249, "realEditorValues": [{ "id": "V_Float", "params": [240.0] }] },
+								{ "__identifier": "sweep_dx", "__type": "Float", "__value": 240, "__tile": null, "defUid": 4249, "realEditorValues": [{ "id": "V_Float", "params": [240] }] },
 								{ "__identifier": "speed", "__type": "Float", "__value": 130, "__tile": null, "defUid": 4250, "realEditorValues": [] },
 								{ "__identifier": "loop_dy", "__type": "Float", "__value": null, "__tile": null, "defUid": 6855, "realEditorValues": [] },
 								{ "__identifier": "loop_min_y", "__type": "Float", "__value": null, "__tile": null, "defUid": 6856, "realEditorValues": [] },
@@ -28891,7 +28916,7 @@
 			"bgPos": null,
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
-			"__smartColor": "#FFFFFF",
+			"__smartColor": "#84878D",
 			"__bgPos": null,
 			"externalRelPath": null,
 			"fieldInstances": [
@@ -28907,6 +28932,7 @@
 					"id": "V_String",
 					"params": ["fighters_guild_oath_of_steel"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": "barracks", "__tile": null, "defUid": 4174, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["barracks"]
@@ -28915,17 +28941,48 @@
 					"id": "V_String",
 					"params": ["red"]
 				}] },
+				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "military_tower", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["military_tower"]
-				}] }
+				}] },
+				{ "__identifier": "palette", "__type": "String", "__value": null, "__tile": null, "defUid": 4338, "realEditorValues": [] },
+				{ "__identifier": "lighting_hint", "__type": "String", "__value": null, "__tile": null, "defUid": 4339, "realEditorValues": [] },
+				{ "__identifier": "foreground_treatment", "__type": "String", "__value": null, "__tile": null, "defUid": 4340, "realEditorValues": [] },
+				{ "__identifier": "nameplate_full_opacity_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6573, "realEditorValues": [] },
+				{ "__identifier": "nameplate_fade_out_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6574, "realEditorValues": [] },
+				{ "__identifier": "gallery", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6810, "realEditorValues": [] },
+				{ "__identifier": "fall_out_margin", "__type": "Int", "__value": null, "__tile": null, "defUid": 6848, "realEditorValues": [] },
+				{ "__identifier": "mode", "__type": "String", "__value": null, "__tile": null, "defUid": 6849, "realEditorValues": [] },
+				{ "__identifier": "side_out_margin", "__type": "Int", "__value": null, "__tile": null, "defUid": 6850, "realEditorValues": [] },
+				{ "__identifier": "rise_out_margin", "__type": "Int", "__value": null, "__tile": null, "defUid": 6851, "realEditorValues": [] },
+				{ "__identifier": "enemy_respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 6893, "realEditorValues": [] },
+				{ "__identifier": "entry_cutscene", "__type": "String", "__value": null, "__tile": null, "defUid": 6897, "realEditorValues": [] },
+				{ "__identifier": "while_live", "__type": "String", "__value": null, "__tile": null, "defUid": 6898, "realEditorValues": [] },
+				{ "__identifier": "practice", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6915, "realEditorValues": [] },
+				{ "__identifier": "sky_scroll", "__type": "Int", "__value": null, "__tile": null, "defUid": 6949, "realEditorValues": [] },
+				{ "__identifier": "fall_rescue", "__type": "String", "__value": null, "__tile": null, "defUid": 6950, "realEditorValues": [] },
+				{ "__identifier": "boss_reward_drop", "__type": "String", "__value": null, "__tile": null, "defUid": 6951, "realEditorValues": [] }
 			],
 			"layerInstances": [
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
+					"__cWid": 30,
+					"__cHei": 80,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
 					"iid": "Collision-4254",
+					"levelId": 4253,
 					"layerDefUid": 5024,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
@@ -28997,19 +29054,6 @@
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 					],
-					"__cWid": 30,
-					"__cHei": 80,
-					"__gridSize": 16,
-					"__opacity": 1,
-					"__pxTotalOffsetX": 0,
-					"__pxTotalOffsetY": 0,
-					"__tilesetDefUid": null,
-					"__tilesetRelPath": null,
-					"levelId": 4253,
-					"pxOffsetX": 0,
-					"pxOffsetY": 0,
-					"visible": true,
-					"optionalRules": [],
 					"autoLayerTiles": [],
 					"seed": 4253,
 					"overrideTilesetUid": null,
@@ -29017,66 +29061,8 @@
 					"entityInstances": []
 				},
 				{
-					"__identifier": "AmbitionCameras",
-					"__type": "Entities",
-					"iid": "AmbitionCameras-5764",
-					"layerDefUid": 5743,
-					"intGridCsv": [],
-					"__cWid": 30,
-					"__cHei": 80,
-					"__gridSize": 16,
-					"__opacity": 1,
-					"__pxTotalOffsetX": 0,
-					"__pxTotalOffsetY": 0,
-					"__tilesetDefUid": null,
-					"__tilesetRelPath": null,
-					"levelId": 4253,
-					"pxOffsetX": 0,
-					"pxOffsetY": 0,
-					"visible": true,
-					"optionalRules": [],
-					"autoLayerTiles": [],
-					"seed": 4253,
-					"overrideTilesetUid": null,
-					"gridTiles": [],
-					"entityInstances": [
-						{
-							"__identifier": "CameraZone",
-							"__grid": [0,0],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#86A8E7",
-							"__worldX": -1280,
-							"__worldY": 2304,
-							"iid": "CameraZone-4259",
-							"width": 480,
-							"height": 1280,
-							"defUid": 4002,
-							"px": [0,0],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "military_tower_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["military_tower_camera"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "military_tower_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["military_tower_camera"]
-								}] },
-								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["Default"]
-								}] }
-							]
-						}
-					]
-				},
-				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-4255",
-					"layerDefUid": 1070,
-					"intGridCsv": [],
 					"__cWid": 30,
 					"__cHei": 80,
 					"__gridSize": 16,
@@ -29085,11 +29071,14 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
+					"iid": "Ambition-4255",
 					"levelId": 4253,
+					"layerDefUid": 1070,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
+					"intGridCsv": [],
 					"autoLayerTiles": [],
 					"seed": 4253,
 					"overrideTilesetUid": null,
@@ -29102,8 +29091,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": -1264,
-							"__worldY": 3328,
 							"iid": "Prop-8096",
 							"width": 448,
 							"height": 224,
@@ -29118,7 +29105,9 @@
 									"id": "V_String",
 									"params": ["tower_parade_deck"]
 								}] }
-							]
+							],
+							"__worldX": -1264,
+							"__worldY": 3328
 						},
 						{
 							"__identifier": "Prop",
@@ -29127,8 +29116,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": -1264,
-							"__worldY": 3088,
 							"iid": "Prop-8097",
 							"width": 448,
 							"height": 224,
@@ -29143,7 +29130,9 @@
 									"id": "V_String",
 									"params": ["tower_barracks"]
 								}] }
-							]
+							],
+							"__worldX": -1264,
+							"__worldY": 3088
 						},
 						{
 							"__identifier": "Prop",
@@ -29152,8 +29141,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": -1264,
-							"__worldY": 2848,
 							"iid": "Prop-8098",
 							"width": 448,
 							"height": 224,
@@ -29168,7 +29155,9 @@
 									"id": "V_String",
 									"params": ["tower_armory"]
 								}] }
-							]
+							],
+							"__worldX": -1264,
+							"__worldY": 2848
 						},
 						{
 							"__identifier": "Prop",
@@ -29177,8 +29166,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": -1264,
-							"__worldY": 2608,
 							"iid": "Prop-8099",
 							"width": 448,
 							"height": 224,
@@ -29193,7 +29180,9 @@
 									"id": "V_String",
 									"params": ["tower_signals"]
 								}] }
-							]
+							],
+							"__worldX": -1264,
+							"__worldY": 2608
 						},
 						{
 							"__identifier": "Prop",
@@ -29202,8 +29191,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": -1264,
-							"__worldY": 2336,
 							"iid": "Prop-8100",
 							"width": 448,
 							"height": 256,
@@ -29218,17 +29205,17 @@
 									"id": "V_String",
 									"params": ["tower_war_room"]
 								}] }
-							]
+							],
+							"__worldX": -1264,
+							"__worldY": 2336
 						},
 						{
 							"__identifier": "PlayerStart",
 							"__grid": [15,75],
 							"__pivot": [0,0],
 							"__tags": [],
-							"__tile": null,
+							"__tile": { "tilesetUid": 6852, "x": 0, "y": 0, "w": 256, "h": 256 },
 							"__smartColor": "#41D1FF",
-							"__worldX": -1040,
-							"__worldY": 3506,
 							"iid": "PlayerStart-4256",
 							"width": 28,
 							"height": 46,
@@ -29237,7 +29224,9 @@
 							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "military_tower_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
 								"id": "V_String",
 								"params": ["military_tower_spawn"]
-							}] }]
+							}] }],
+							"__worldX": -1040,
+							"__worldY": 3506
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -29246,8 +29235,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
-							"__worldX": -900,
-							"__worldY": 3456,
 							"iid": "LoadingZone-4257",
 							"width": 48,
 							"height": 96,
@@ -29272,7 +29259,9 @@
 									"params": ["military_tower_door"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
-							]
+							],
+							"__worldX": -900,
+							"__worldY": 3456
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -29281,8 +29270,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
-							"__worldX": -980,
-							"__worldY": 3456,
 							"iid": "LoadingZone-8062",
 							"width": 48,
 							"height": 96,
@@ -29307,7 +29294,9 @@
 									"params": ["military_gate_annex_door"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
-							]
+							],
+							"__worldX": -980,
+							"__worldY": 3456
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -29316,8 +29305,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -1010,
-							"__worldY": 3428,
 							"iid": "DebugLabel-8063",
 							"width": 140,
 							"height": 24,
@@ -29333,7 +29320,9 @@
 									"params": ["GATE ANNEX"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							]
+							],
+							"__worldX": -1010,
+							"__worldY": 3428
 						},
 						{
 							"__identifier": "NpcSpawn",
@@ -29342,8 +29331,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF9EEA",
-							"__worldX": -1088,
-							"__worldY": 3488,
 							"iid": "NpcSpawn-8105",
 							"width": 32,
 							"height": 64,
@@ -29359,11 +29346,16 @@
 									"id": "V_String",
 									"params": ["military_tower_voss"]
 								}] },
+								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4343, "realEditorValues": [] },
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["stand_still"]
-								}] }
-							]
+								}] },
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7038, "realEditorValues": [] }
+							],
+							"__worldX": -1088,
+							"__worldY": 3488
 						},
 						{
 							"__identifier": "NpcSpawn",
@@ -29372,8 +29364,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF9EEA",
-							"__worldX": -848,
-							"__worldY": 3488,
 							"iid": "NpcSpawn-8106",
 							"width": 32,
 							"height": 64,
@@ -29389,11 +29379,16 @@
 									"id": "V_String",
 									"params": ["military_tower_dorsey"]
 								}] },
+								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4343, "realEditorValues": [] },
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["stand_still"]
-								}] }
-							]
+								}] },
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7038, "realEditorValues": [] }
+							],
+							"__worldX": -848,
+							"__worldY": 3488
 						},
 						{
 							"__identifier": "NpcSpawn",
@@ -29402,8 +29397,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF9EEA",
-							"__worldX": -1100,
-							"__worldY": 3248,
 							"iid": "NpcSpawn-8107",
 							"width": 32,
 							"height": 64,
@@ -29419,11 +29412,16 @@
 									"id": "V_String",
 									"params": ["military_tower_tanaka"]
 								}] },
+								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4343, "realEditorValues": [] },
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["stand_still"]
-								}] }
-							]
+								}] },
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7038, "realEditorValues": [] }
+							],
+							"__worldX": -1100,
+							"__worldY": 3248
 						},
 						{
 							"__identifier": "NpcSpawn",
@@ -29432,8 +29430,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF9EEA",
-							"__worldX": -1014,
-							"__worldY": 3248,
 							"iid": "NpcSpawn-8108",
 							"width": 32,
 							"height": 64,
@@ -29449,11 +29445,16 @@
 									"id": "V_String",
 									"params": ["military_tower_bankole"]
 								}] },
+								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4343, "realEditorValues": [] },
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["stand_still"]
-								}] }
-							]
+								}] },
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7038, "realEditorValues": [] }
+							],
+							"__worldX": -1014,
+							"__worldY": 3248
 						},
 						{
 							"__identifier": "NpcSpawn",
@@ -29462,8 +29463,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF9EEA",
-							"__worldX": -982,
-							"__worldY": 3008,
 							"iid": "NpcSpawn-8109",
 							"width": 32,
 							"height": 64,
@@ -29479,11 +29478,16 @@
 									"id": "V_String",
 									"params": ["military_tower_granger"]
 								}] },
+								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4343, "realEditorValues": [] },
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["stand_still"]
-								}] }
-							]
+								}] },
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7038, "realEditorValues": [] }
+							],
+							"__worldX": -982,
+							"__worldY": 3008
 						},
 						{
 							"__identifier": "NpcSpawn",
@@ -29492,8 +29496,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF9EEA",
-							"__worldX": -988,
-							"__worldY": 2768,
 							"iid": "NpcSpawn-8110",
 							"width": 32,
 							"height": 64,
@@ -29509,11 +29511,16 @@
 									"id": "V_String",
 									"params": ["military_tower_ruiz"]
 								}] },
+								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4343, "realEditorValues": [] },
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["stand_still"]
-								}] }
-							]
+								}] },
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7038, "realEditorValues": [] }
+							],
+							"__worldX": -988,
+							"__worldY": 2768
 						},
 						{
 							"__identifier": "NpcSpawn",
@@ -29522,8 +29529,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF9EEA",
-							"__worldX": -1170,
-							"__worldY": 2522,
 							"iid": "NpcSpawn-8111",
 							"width": 42,
 							"height": 70,
@@ -29538,8 +29543,14 @@
 								{ "__identifier": "dialogue_id", "__type": "String", "__value": "military_general", "__tile": null, "defUid": 3014, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["military_general"]
-								}] }
-							]
+								}] },
+								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4343, "realEditorValues": [] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": null, "__tile": null, "defUid": 6842, "realEditorValues": [] },
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7038, "realEditorValues": [] }
+							],
+							"__worldX": -1170,
+							"__worldY": 2522
 						},
 						{
 							"__identifier": "NpcSpawn",
@@ -29548,8 +29559,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF9EEA",
-							"__worldX": -970,
-							"__worldY": 2528,
 							"iid": "NpcSpawn-8112",
 							"width": 32,
 							"height": 64,
@@ -29565,19 +29574,132 @@
 									"id": "V_String",
 									"params": ["military_tower_brandt"]
 								}] },
+								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4343, "realEditorValues": [] },
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["stand_still"]
-								}] }
-							]
+								}] },
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7038, "realEditorValues": [] }
+							],
+							"__worldX": -970,
+							"__worldY": 2528
 						}
 					]
 				},
 				{
+					"__identifier": "Water",
+					"__type": "IntGrid",
+					"__cWid": 30,
+					"__cHei": 80,
+					"__gridSize": 16,
+					"__opacity": 0.6,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "2f7bb210-bde0-11f1-9418-03bff6c5f1ba",
+					"levelId": 4253,
+					"layerDefUid": 4140,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"intGridCsv": [
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+					],
+					"autoLayerTiles": [],
+					"seed": 7826749,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				},
+				{
 					"__identifier": "Climbable",
 					"__type": "IntGrid",
+					"__cWid": 30,
+					"__cHei": 80,
+					"__gridSize": 16,
+					"__opacity": 0.6,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
 					"iid": "Climbable-4261",
+					"levelId": 4253,
 					"layerDefUid": 4201,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -29649,6 +29771,15 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 					],
+					"autoLayerTiles": [],
+					"seed": 4253,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				},
+				{
+					"__identifier": "AmbitionCameras",
+					"__type": "Entities",
 					"__cWid": 30,
 					"__cHei": 80,
 					"__gridSize": 16,
@@ -29657,13 +29788,78 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
+					"iid": "AmbitionCameras-5764",
 					"levelId": 4253,
+					"layerDefUid": 5743,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
+					"intGridCsv": [],
 					"autoLayerTiles": [],
 					"seed": 4253,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"iid": "CameraZone-4259",
+							"width": 480,
+							"height": 1280,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "military_tower_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["military_tower_camera"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "military_tower_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["military_tower_camera"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] },
+								{ "__identifier": "priority", "__type": "Int", "__value": 0, "__tile": null, "defUid": 4329, "realEditorValues": [] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": null, "__tile": null, "defUid": 4330, "realEditorValues": [] },
+								{ "__identifier": "target_offset_x", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4331, "realEditorValues": [] },
+								{ "__identifier": "target_offset_y", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4332, "realEditorValues": [] },
+								{ "__identifier": "easing_hz", "__type": "Float", "__value": null, "__tile": null, "defUid": 4333, "realEditorValues": [] },
+								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
+							],
+							"__worldX": -1280,
+							"__worldY": 2304
+						}
+					]
+				},
+				{
+					"__identifier": "AmbitionLoops",
+					"__type": "Entities",
+					"__cWid": 30,
+					"__cHei": 80,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "2f7bb211-bde0-11f1-9418-c3fc895586e5",
+					"levelId": 4253,
+					"layerDefUid": 6891,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"intGridCsv": [],
+					"autoLayerTiles": [],
+					"seed": 7855230,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
@@ -31379,8 +31575,8 @@
 			"identifier": "hall_of_bosses",
 			"iid": "hall_of_bosses-4362",
 			"uid": 4362,
-			"worldX": 768,
-			"worldY": 2304,
+			"worldX": 8192,
+			"worldY": 6176,
 			"worldDepth": 0,
 			"pxWid": 1808,
 			"pxHei": 512,
@@ -31610,8 +31806,8 @@
 								"id": "V_String",
 								"params": ["hall_spawn"]
 							}] }],
-							"__worldX": 876,
-							"__worldY": 2738
+							"__worldX": 8300,
+							"__worldY": 6610
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -31645,8 +31841,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 784,
-							"__worldY": 2688
+							"__worldX": 8208,
+							"__worldY": 6560
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -31680,8 +31876,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 1020,
-							"__worldY": 2544
+							"__worldX": 8444,
+							"__worldY": 6416
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -31715,8 +31911,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 1340,
-							"__worldY": 2544
+							"__worldX": 8764,
+							"__worldY": 6416
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -31750,8 +31946,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 1340,
-							"__worldY": 2688
+							"__worldX": 8764,
+							"__worldY": 6560
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -31785,8 +31981,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 1014,
-							"__worldY": 2688
+							"__worldX": 8438,
+							"__worldY": 6560
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -31820,8 +32016,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 1958,
-							"__worldY": 2544
+							"__worldX": 9382,
+							"__worldY": 6416
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -31855,8 +32051,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 1958,
-							"__worldY": 2688
+							"__worldX": 9382,
+							"__worldY": 6560
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -31890,8 +32086,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 1668,
-							"__worldY": 2688
+							"__worldX": 9092,
+							"__worldY": 6560
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -31925,8 +32121,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 2218,
-							"__worldY": 2688
+							"__worldX": 9642,
+							"__worldY": 6560
 						},
 						{
 							"__identifier": "Switch",
@@ -31967,8 +32163,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 988,
-							"__worldY": 2608
+							"__worldX": 8412,
+							"__worldY": 6480
 						},
 						{
 							"__identifier": "Switch",
@@ -32009,8 +32205,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 1396,
-							"__worldY": 2608
+							"__worldX": 8820,
+							"__worldY": 6480
 						},
 						{
 							"__identifier": "Switch",
@@ -32051,8 +32247,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 1396,
-							"__worldY": 2752
+							"__worldX": 8820,
+							"__worldY": 6624
 						},
 						{
 							"__identifier": "Switch",
@@ -32093,8 +32289,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 1070,
-							"__worldY": 2752
+							"__worldX": 8494,
+							"__worldY": 6624
 						},
 						{
 							"__identifier": "Switch",
@@ -32135,8 +32331,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 2014,
-							"__worldY": 2608
+							"__worldX": 9438,
+							"__worldY": 6480
 						},
 						{
 							"__identifier": "Switch",
@@ -32177,8 +32373,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 2014,
-							"__worldY": 2752
+							"__worldX": 9438,
+							"__worldY": 6624
 						},
 						{
 							"__identifier": "Switch",
@@ -32219,8 +32415,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 1692,
-							"__worldY": 2752
+							"__worldX": 9116,
+							"__worldY": 6624
 						},
 						{
 							"__identifier": "Switch",
@@ -32261,8 +32457,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 1692,
-							"__worldY": 2608
+							"__worldX": 9116,
+							"__worldY": 6480
 						},
 						{
 							"__identifier": "Switch",
@@ -32303,8 +32499,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 2242,
-							"__worldY": 2752
+							"__worldX": 9666,
+							"__worldY": 6624
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -32338,8 +32534,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 1668,
-							"__worldY": 2544
+							"__worldX": 9092,
+							"__worldY": 6416
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -32373,8 +32569,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 2288,
-							"__worldY": 2544
+							"__worldX": 9712,
+							"__worldY": 6416
 						},
 						{
 							"__identifier": "Switch",
@@ -32415,8 +32611,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 2344,
-							"__worldY": 2608
+							"__worldX": 9768,
+							"__worldY": 6480
 						}
 					]
 				},
@@ -32737,8 +32933,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 768,
-							"__worldY": 2304
+							"__worldX": 8192,
+							"__worldY": 6176
 						}
 					]
 				},
@@ -33885,16 +34081,16 @@
 						},
 						{
 							"__identifier": "GravityZone",
-							"__grid": [23,11],
+							"__grid": [25,0],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#B98CFF",
 							"iid": "GravityZone-6000",
 							"width": 200,
-							"height": 420,
+							"height": 608,
 							"defUid": 5998,
-							"px": [370,180],
+							"px": [402,8],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "glab_up_column", "__tile": null, "defUid": 5993, "realEditorValues": [{
 									"id": "V_String",
@@ -33908,8 +34104,8 @@
 								{ "__identifier": "oscillate_amplitude", "__type": "Float", "__value": 0, "__tile": null, "defUid": 5996, "realEditorValues": [] },
 								{ "__identifier": "oscillate_freq", "__type": "Float", "__value": 1, "__tile": null, "defUid": 5997, "realEditorValues": [] }
 							],
-							"__worldX": -142,
-							"__worldY": 2484
+							"__worldX": -110,
+							"__worldY": 2312
 						},
 						{
 							"__identifier": "GravityZone",
@@ -33941,16 +34137,16 @@
 						},
 						{
 							"__identifier": "GravityZone",
-							"__grid": [37,3],
+							"__grid": [38,17],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#B98CFF",
 							"iid": "GravityZone-6002",
-							"width": 416,
-							"height": 560,
+							"width": 400,
+							"height": 336,
 							"defUid": 5998,
-							"px": [592,48],
+							"px": [608,272],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "glab_wall_walk_right", "__tile": null, "defUid": 5993, "realEditorValues": [{
 									"id": "V_String",
@@ -33967,21 +34163,21 @@
 								{ "__identifier": "oscillate_amplitude", "__type": "Float", "__value": 0, "__tile": null, "defUid": 5996, "realEditorValues": [] },
 								{ "__identifier": "oscillate_freq", "__type": "Float", "__value": 1, "__tile": null, "defUid": 5997, "realEditorValues": [] }
 							],
-							"__worldX": 80,
-							"__worldY": 2352
+							"__worldX": 96,
+							"__worldY": 2576
 						},
 						{
 							"__identifier": "GravityZone",
-							"__grid": [1,3],
+							"__grid": [1,13],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#B98CFF",
 							"iid": "GravityZone-6133",
-							"width": 84,
-							"height": 552,
+							"width": 96,
+							"height": 384,
 							"defUid": 5998,
-							"px": [16,48],
+							"px": [16,216],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "glab_wall_walk_left", "__tile": null, "defUid": 5993, "realEditorValues": [{
 									"id": "V_String",
@@ -33999,7 +34195,69 @@
 								{ "__identifier": "oscillate_freq", "__type": "Float", "__value": 1, "__tile": null, "defUid": 5997, "realEditorValues": [] }
 							],
 							"__worldX": -496,
-							"__worldY": 2352
+							"__worldY": 2520
+						},
+						{
+							"__identifier": "GravityZone",
+							"__grid": [38,1],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#B98CFF",
+							"iid": "8a96c130-bde0-11f1-9418-edcf15dd5222",
+							"width": 400,
+							"height": 256,
+							"defUid": 5998,
+							"px": [608,16],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "glab_wall_fallback_left", "__tile": null, "defUid": 5993, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["glab_wall_fallback_left"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Falling Left Zone", "__tile": null, "defUid": 5994, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Falling Left Zone"]
+								}] },
+								{ "__identifier": "dir", "__type": "String", "__value": "left", "__tile": null, "defUid": 5995, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["left"]
+								}] },
+								{ "__identifier": "oscillate_amplitude", "__type": "Float", "__value": 0, "__tile": null, "defUid": 5996, "realEditorValues": [] },
+								{ "__identifier": "oscillate_freq", "__type": "Float", "__value": 1, "__tile": null, "defUid": 5997, "realEditorValues": [] }
+							],
+							"__worldX": 96,
+							"__worldY": 2320
+						},
+						{
+							"__identifier": "GravityZone",
+							"__grid": [1,1],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#B98CFF",
+							"iid": "11e32340-bde0-11f1-9418-31f25b11767f",
+							"width": 272,
+							"height": 208,
+							"defUid": 5998,
+							"px": [16,16],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "glab_wall_fallback_right", "__tile": null, "defUid": 5993, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["glab_wall_fallback_right"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Falling Right Zone", "__tile": null, "defUid": 5994, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Falling Right Zone"]
+								}] },
+								{ "__identifier": "dir", "__type": "String", "__value": "right", "__tile": null, "defUid": 5995, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["right"]
+								}] },
+								{ "__identifier": "oscillate_amplitude", "__type": "Float", "__value": 0, "__tile": null, "defUid": 5996, "realEditorValues": [] },
+								{ "__identifier": "oscillate_freq", "__type": "Float", "__value": 1, "__tile": null, "defUid": 5997, "realEditorValues": [] }
+							],
+							"__worldX": -496,
+							"__worldY": 2320
 						}
 					]
 				},
@@ -34260,8 +34518,8 @@
 			"identifier": "flying_spaghetti_monster_arena",
 			"iid": "flying_spaghetti_monster_arena-5785",
 			"uid": 5785,
-			"worldX": 6144,
-			"worldY": 2048,
+			"worldX": 8624,
+			"worldY": 7056,
 			"worldDepth": 0,
 			"pxWid": 960,
 			"pxHei": 768,
@@ -34464,8 +34722,8 @@
 								"id": "V_String",
 								"params": ["flying_spaghetti_monster_arena_spawn"]
 							}] }],
-							"__worldX": 6240,
-							"__worldY": 2720
+							"__worldX": 8720,
+							"__worldY": 7728
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -34499,8 +34757,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 6304,
-							"__worldY": 2688
+							"__worldX": 8784,
+							"__worldY": 7696
 						},
 						{
 							"__identifier": "BossSpawn",
@@ -34529,8 +34787,8 @@
 									"params": ["hall.flying_spaghetti_monster"]
 								}] }
 							],
-							"__worldX": 6624,
-							"__worldY": 2288
+							"__worldX": 9104,
+							"__worldY": 7296
 						}
 					]
 				},
@@ -34809,8 +35067,8 @@
 			"identifier": "gradient_ascent",
 			"iid": "gradient_ascent-5801",
 			"uid": 5801,
-			"worldX": -1536,
-			"worldY": 0,
+			"worldX": 8976,
+			"worldY": -1584,
 			"worldDepth": 0,
 			"pxWid": 1280,
 			"pxHei": 512,
@@ -35001,8 +35259,8 @@
 								"id": "V_String",
 								"params": ["gradient_ascent_spawn"]
 							}] }],
-							"__worldX": -1476,
-							"__worldY": 434
+							"__worldX": 9036,
+							"__worldY": -1150
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -35036,8 +35294,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -1520,
-							"__worldY": 384
+							"__worldX": 8992,
+							"__worldY": -1200
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -35062,8 +35320,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": -1476,
-							"__worldY": 96
+							"__worldX": 9036,
+							"__worldY": -1488
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -35088,21 +35346,21 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": -636,
-							"__worldY": 200
+							"__worldX": 9876,
+							"__worldY": -1384
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [67,9],
+							"__grid": [65,9],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-5819",
-							"width": 16,
+							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [1080,144],
+							"px": [1048,144],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "gradient_summit_chamber_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -35123,21 +35381,21 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -456,
-							"__worldY": 144
+							"__worldX": 10024,
+							"__worldY": -1440
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [73,24],
+							"__grid": [71,24],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-6012",
-							"width": 16,
+							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [1180,384],
+							"px": [1148,384],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "ratchet_climb_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -35158,21 +35416,21 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -356,
-							"__worldY": 384
+							"__worldX": 10124,
+							"__worldY": -1200
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [68,24],
+							"__grid": [58,24],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-6021",
-							"width": 16,
+							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [1100,384],
+							"px": [940,384],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "gap_run_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -35193,21 +35451,21 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -436,
-							"__worldY": 384
+							"__worldX": 9916,
+							"__worldY": -1200
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [7,24],
+							"__grid": [11,21],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-6060",
-							"width": 16,
+							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [120,384],
+							"px": [184,336],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "wall_run_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -35228,21 +35486,21 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -1416,
-							"__worldY": 384
+							"__worldX": 9160,
+							"__worldY": -1248
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [9,24],
+							"__grid": [38,24],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-6071",
-							"width": 16,
+							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [152,384],
+							"px": [616,384],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "ceiling_cross_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -35263,8 +35521,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -1384,
-							"__worldY": 384
+							"__worldX": 9592,
+							"__worldY": -1200
 						}
 					]
 				},
@@ -35525,8 +35783,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": -1536,
-							"__worldY": 0
+							"__worldX": 8976,
+							"__worldY": -1584
 						}
 					]
 				},
@@ -35562,8 +35820,8 @@
 			"identifier": "gradient_summit_chamber",
 			"iid": "gradient_summit_chamber-5811",
 			"uid": 5811,
-			"worldX": 1024,
-			"worldY": -512,
+			"worldX": 4240,
+			"worldY": -2096,
 			"worldDepth": 0,
 			"pxWid": 640,
 			"pxHei": 384,
@@ -35708,8 +35966,8 @@
 								"id": "V_String",
 								"params": ["gradient_summit_chamber_spawn"]
 							}] }],
-							"__worldX": 1084,
-							"__worldY": -206
+							"__worldX": 4300,
+							"__worldY": -1790
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -35743,8 +36001,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 1040,
-							"__worldY": -256
+							"__worldX": 4256,
+							"__worldY": -1840
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -35769,8 +36027,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 1144,
-							"__worldY": -392
+							"__worldX": 4360,
+							"__worldY": -1976
 						},
 						{
 							"__identifier": "PickupSpawn",
@@ -35797,8 +36055,8 @@
 								{ "__identifier": "respawn_seconds", "__type": "Float", "__value": 0, "__tile": null, "defUid": 6900, "realEditorValues": [] },
 								{ "__identifier": "sprite", "__type": "String", "__value": null, "__tile": null, "defUid": 7408, "realEditorValues": [] }
 							],
-							"__worldX": 1424,
-							"__worldY": -184
+							"__worldX": 4640,
+							"__worldY": -1768
 						}
 					]
 				},
@@ -35967,8 +36225,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 1024,
-							"__worldY": -512
+							"__worldX": 4240,
+							"__worldY": -2096
 						}
 					]
 				},
@@ -36643,8 +36901,8 @@
 			"identifier": "overfit_annex_entry",
 			"iid": "overfit_annex_entry-5841",
 			"uid": 5841,
-			"worldX": 3328,
-			"worldY": 1280,
+			"worldX": 5392,
+			"worldY": -2288,
 			"worldDepth": 0,
 			"pxWid": 1280,
 			"pxHei": 512,
@@ -36835,8 +37093,8 @@
 								"id": "V_String",
 								"params": ["overfit_annex_entry_spawn"]
 							}] }],
-							"__worldX": 3398,
-							"__worldY": 1714
+							"__worldX": 5462,
+							"__worldY": -1854
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -36867,15 +37125,16 @@
 								}] },
 								{ "__identifier": "disposition", "__type": "String", "__value": null, "__tile": null, "defUid": 6857, "realEditorValues": [] },
 								{ "__identifier": "brain_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 6859, "realEditorValues": [] },
-								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
-								}] }
+								}] },
+								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 3948,
-							"__worldY": 1712
+							"__worldX": 6012,
+							"__worldY": -1856
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -36906,15 +37165,16 @@
 								}] },
 								{ "__identifier": "disposition", "__type": "String", "__value": null, "__tile": null, "defUid": 6857, "realEditorValues": [] },
 								{ "__identifier": "brain_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 6859, "realEditorValues": [] },
-								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
-								}] }
+								}] },
+								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 4148,
-							"__worldY": 1712
+							"__worldX": 6212,
+							"__worldY": -1856
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -36948,8 +37208,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 3344,
-							"__worldY": 1664
+							"__worldX": 5408,
+							"__worldY": -1904
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -36974,8 +37234,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 3398,
-							"__worldY": 1350
+							"__worldX": 5462,
+							"__worldY": -2218
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -37009,8 +37269,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 4508,
-							"__worldY": 1664
+							"__worldX": 6572,
+							"__worldY": -1904
 						}
 					]
 				},
@@ -37271,8 +37531,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 3328,
-							"__worldY": 1280
+							"__worldX": 5392,
+							"__worldY": -2288
 						}
 					]
 				},
@@ -37302,14 +37562,14 @@
 					"entityInstances": []
 				}
 			],
-			"__neighbours": [{ "levelIid": "overfit_annex_climb-5852", "dir": "n" }]
+			"__neighbours": []
 		},
 		{
 			"identifier": "overfit_annex_climb",
 			"iid": "overfit_annex_climb-5852",
 			"uid": 5852,
-			"worldX": 3584,
-			"worldY": 768,
+			"worldX": 5312,
+			"worldY": -1488,
 			"worldDepth": 0,
 			"pxWid": 1280,
 			"pxHei": 512,
@@ -37500,8 +37760,8 @@
 								"id": "V_String",
 								"params": ["overfit_annex_climb_spawn"]
 							}] }],
-							"__worldX": 3654,
-							"__worldY": 1202
+							"__worldX": 5382,
+							"__worldY": -1054
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -37535,8 +37795,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 3600,
-							"__worldY": 1152
+							"__worldX": 5328,
+							"__worldY": -1104
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -37561,8 +37821,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 3654,
-							"__worldY": 864
+							"__worldX": 5382,
+							"__worldY": -1392
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -37596,8 +37856,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 4664,
-							"__worldY": 912
+							"__worldX": 6392,
+							"__worldY": -1344
 						}
 					]
 				},
@@ -37858,8 +38118,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 3584,
-							"__worldY": 768
+							"__worldX": 5312,
+							"__worldY": -1488
 						}
 					]
 				},
@@ -37889,14 +38149,14 @@
 					"entityInstances": []
 				}
 			],
-			"__neighbours": [{ "levelIid": "overfit_annex_entry-5841", "dir": "s" }]
+			"__neighbours": []
 		},
 		{
 			"identifier": "overfit_annex_vault",
 			"iid": "overfit_annex_vault-5861",
 			"uid": 5861,
-			"worldX": 5120,
-			"worldY": 768,
+			"worldX": 4080,
+			"worldY": -1168,
 			"worldDepth": 0,
 			"pxWid": 768,
 			"pxHei": 384,
@@ -38046,8 +38306,8 @@
 								"id": "V_String",
 								"params": ["overfit_annex_vault_spawn"]
 							}] }],
-							"__worldX": 5180,
-							"__worldY": 1074
+							"__worldX": 4140,
+							"__worldY": -862
 						},
 						{
 							"__identifier": "PickupSpawn",
@@ -38074,8 +38334,8 @@
 								{ "__identifier": "respawn_seconds", "__type": "Float", "__value": 0, "__tile": null, "defUid": 6900, "realEditorValues": [] },
 								{ "__identifier": "sprite", "__type": "String", "__value": null, "__tile": null, "defUid": 7408, "realEditorValues": [] }
 							],
-							"__worldX": 5480,
-							"__worldY": 1096
+							"__worldX": 4440,
+							"__worldY": -840
 						},
 						{
 							"__identifier": "PickupSpawn",
@@ -38102,8 +38362,8 @@
 								{ "__identifier": "respawn_seconds", "__type": "Float", "__value": 0, "__tile": null, "defUid": 6900, "realEditorValues": [] },
 								{ "__identifier": "sprite", "__type": "String", "__value": null, "__tile": null, "defUid": 7408, "realEditorValues": [] }
 							],
-							"__worldX": 5580,
-							"__worldY": 1096
+							"__worldX": 4540,
+							"__worldY": -840
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -38137,8 +38397,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 5136,
-							"__worldY": 1024
+							"__worldX": 4096,
+							"__worldY": -912
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -38163,8 +38423,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 5240,
-							"__worldY": 888
+							"__worldX": 4200,
+							"__worldY": -1048
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -38198,8 +38458,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 5824,
-							"__worldY": 1024
+							"__worldX": 4784,
+							"__worldY": -912
 						}
 					]
 				},
@@ -38378,8 +38638,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 5120,
-							"__worldY": 768
+							"__worldX": 4080,
+							"__worldY": -1168
 						}
 					]
 				},
@@ -38415,8 +38675,8 @@
 			"identifier": "overfit_annex_boss",
 			"iid": "overfit_annex_boss-5872",
 			"uid": 5872,
-			"worldX": 5888,
-			"worldY": 1280,
+			"worldX": 10096,
+			"worldY": 7056,
 			"worldDepth": 0,
 			"pxWid": 1280,
 			"pxHei": 640,
@@ -38625,8 +38885,8 @@
 								"id": "V_String",
 								"params": ["overfit_annex_boss_spawn"]
 							}] }],
-							"__worldX": 6008,
-							"__worldY": 1842
+							"__worldX": 10216,
+							"__worldY": 7618
 						},
 						{
 							"__identifier": "BossSpawn",
@@ -38652,8 +38912,8 @@
 								{ "__identifier": "mounted_on", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6832, "realEditorValues": [] },
 								{ "__identifier": "encounter_id", "__type": "String", "__value": null, "__tile": null, "defUid": 6863, "realEditorValues": [] }
 							],
-							"__worldX": 6528,
-							"__worldY": 1640
+							"__worldX": 10736,
+							"__worldY": 7416
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -38687,8 +38947,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 5904,
-							"__worldY": 1792
+							"__worldX": 10112,
+							"__worldY": 7568
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -38713,8 +38973,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 6008,
-							"__worldY": 1360
+							"__worldX": 10216,
+							"__worldY": 7136
 						}
 					]
 				},
@@ -39011,8 +39271,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 5888,
-							"__worldY": 1280
+							"__worldX": 10096,
+							"__worldY": 7056
 						}
 					]
 				},
@@ -39048,8 +39308,8 @@
 			"identifier": "overflow_arena",
 			"iid": "overflow_arena-5882",
 			"uid": 5882,
-			"worldX": 6144,
-			"worldY": 3072,
+			"worldX": 11392,
+			"worldY": -2896,
 			"worldDepth": 0,
 			"pxWid": 1280,
 			"pxHei": 640,
@@ -39258,8 +39518,8 @@
 								"id": "V_String",
 								"params": ["overflow_arena_spawn"]
 							}] }],
-							"__worldX": 6264,
-							"__worldY": 3634
+							"__worldX": 11512,
+							"__worldY": -2334
 						},
 						{
 							"__identifier": "BossSpawn",
@@ -39288,8 +39548,8 @@
 									"params": ["hall.overflow"]
 								}] }
 							],
-							"__worldX": 6784,
-							"__worldY": 3412
+							"__worldX": 12032,
+							"__worldY": -2556
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -39323,8 +39583,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 6160,
-							"__worldY": 3584
+							"__worldX": 11408,
+							"__worldY": -2384
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -39349,8 +39609,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 6264,
-							"__worldY": 3152
+							"__worldX": 11512,
+							"__worldY": -2816
 						}
 					]
 				},
@@ -39647,8 +39907,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 6144,
-							"__worldY": 3072
+							"__worldX": 11392,
+							"__worldY": -2896
 						}
 					]
 				},
@@ -39684,8 +39944,8 @@
 			"identifier": "proving_grounds",
 			"iid": "proving_grounds-5892",
 			"uid": 5892,
-			"worldX": 2048,
-			"worldY": 0,
+			"worldX": 7184,
+			"worldY": -1616,
 			"worldDepth": 0,
 			"pxWid": 1280,
 			"pxHei": 512,
@@ -39876,8 +40136,8 @@
 								"id": "V_String",
 								"params": ["proving_grounds_spawn"]
 							}] }],
-							"__worldX": 2118,
-							"__worldY": 434
+							"__worldX": 7254,
+							"__worldY": -1182
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -39908,15 +40168,16 @@
 								}] },
 								{ "__identifier": "disposition", "__type": "String", "__value": null, "__tile": null, "defUid": 6857, "realEditorValues": [] },
 								{ "__identifier": "brain_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 6859, "realEditorValues": [] },
-								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
-								}] }
+								}] },
+								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 2568,
-							"__worldY": 432
+							"__worldX": 7704,
+							"__worldY": -1184
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -39947,15 +40208,16 @@
 								}] },
 								{ "__identifier": "disposition", "__type": "String", "__value": null, "__tile": null, "defUid": 6857, "realEditorValues": [] },
 								{ "__identifier": "brain_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 6859, "realEditorValues": [] },
-								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
-								}] }
+								}] },
+								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 2728,
-							"__worldY": 432
+							"__worldX": 7864,
+							"__worldY": -1184
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -39986,15 +40248,16 @@
 								}] },
 								{ "__identifier": "disposition", "__type": "String", "__value": null, "__tile": null, "defUid": 6857, "realEditorValues": [] },
 								{ "__identifier": "brain_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 6859, "realEditorValues": [] },
-								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
-								}] }
+								}] },
+								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 2888,
-							"__worldY": 432
+							"__worldX": 8024,
+							"__worldY": -1184
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -40028,12 +40291,13 @@
 									"id": "V_String",
 									"params": ["patroller"]
 								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 8092, "realEditorValues": [] },
 								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
-								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 8092, "realEditorValues": [] }
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 3048,
-							"__worldY": 436
+							"__worldX": 8184,
+							"__worldY": -1180
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -40067,12 +40331,13 @@
 									"id": "V_String",
 									"params": ["door_guard"]
 								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 8092, "realEditorValues": [] },
 								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
-								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 8092, "realEditorValues": [] }
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 3168,
-							"__worldY": 424
+							"__worldX": 8304,
+							"__worldY": -1192
 						},
 						{
 							"__identifier": "PickupSpawn",
@@ -40099,8 +40364,8 @@
 								{ "__identifier": "respawn_seconds", "__type": "Float", "__value": 0, "__tile": null, "defUid": 6900, "realEditorValues": [] },
 								{ "__identifier": "sprite", "__type": "String", "__value": null, "__tile": null, "defUid": 7408, "realEditorValues": [] }
 							],
-							"__worldX": 2668,
-							"__worldY": 320
+							"__worldX": 7804,
+							"__worldY": -1296
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -40134,8 +40399,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 2064,
-							"__worldY": 384
+							"__worldX": 7200,
+							"__worldY": -1232
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -40160,8 +40425,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 2118,
-							"__worldY": 70
+							"__worldX": 7254,
+							"__worldY": -1546
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -40192,15 +40457,16 @@
 								}] },
 								{ "__identifier": "disposition", "__type": "String", "__value": null, "__tile": null, "defUid": 6857, "realEditorValues": [] },
 								{ "__identifier": "brain_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 6859, "realEditorValues": [] },
-								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
-								}] }
+								}] },
+								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 2288,
-							"__worldY": 428
+							"__worldX": 7424,
+							"__worldY": -1188
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -40231,15 +40497,16 @@
 								}] },
 								{ "__identifier": "disposition", "__type": "String", "__value": null, "__tile": null, "defUid": 6857, "realEditorValues": [] },
 								{ "__identifier": "brain_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 6859, "realEditorValues": [] },
-								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
-								}] }
+								}] },
+								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 2478,
-							"__worldY": 428
+							"__worldX": 7614,
+							"__worldY": -1188
 						}
 					]
 				},
@@ -40500,8 +40767,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 2048,
-							"__worldY": 0
+							"__worldX": 7184,
+							"__worldY": -1616
 						}
 					]
 				},
@@ -40531,14 +40798,14 @@
 					"entityInstances": []
 				}
 			],
-			"__neighbours": [{ "levelIid": "central_hub_dev_wing-7753", "dir": "s" }]
+			"__neighbours": []
 		},
 		{
 			"identifier": "volatile_cache",
 			"iid": "volatile_cache-5912",
 			"uid": 5912,
-			"worldX": 2048,
-			"worldY": -768,
+			"worldX": 9136,
+			"worldY": -2544,
 			"worldDepth": 0,
 			"pxWid": 1280,
 			"pxHei": 512,
@@ -40729,8 +40996,8 @@
 								"id": "V_String",
 								"params": ["volatile_cache_spawn"]
 							}] }],
-							"__worldX": 2108,
-							"__worldY": -334
+							"__worldX": 9196,
+							"__worldY": -2110
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -40764,8 +41031,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 2064,
-							"__worldY": -384
+							"__worldX": 9152,
+							"__worldY": -2160
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -40796,15 +41063,16 @@
 								}] },
 								{ "__identifier": "disposition", "__type": "String", "__value": null, "__tile": null, "defUid": 6857, "realEditorValues": [] },
 								{ "__identifier": "brain_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 6859, "realEditorValues": [] },
-								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
-								}] }
+								}] },
+								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 2408,
-							"__worldY": -354
+							"__worldX": 9496,
+							"__worldY": -2130
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -40835,15 +41103,16 @@
 								}] },
 								{ "__identifier": "disposition", "__type": "String", "__value": null, "__tile": null, "defUid": 6857, "realEditorValues": [] },
 								{ "__identifier": "brain_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 6859, "realEditorValues": [] },
-								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
-								}] }
+								}] },
+								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 2788,
-							"__worldY": -354
+							"__worldX": 9876,
+							"__worldY": -2130
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -40874,15 +41143,16 @@
 								}] },
 								{ "__identifier": "disposition", "__type": "String", "__value": null, "__tile": null, "defUid": 6857, "realEditorValues": [] },
 								{ "__identifier": "brain_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 6859, "realEditorValues": [] },
-								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
-								}] }
+								}] },
+								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 2608,
-							"__worldY": -340
+							"__worldX": 9696,
+							"__worldY": -2116
 						},
 						{
 							"__identifier": "PickupSpawn",
@@ -40909,8 +41179,8 @@
 								{ "__identifier": "respawn_seconds", "__type": "Float", "__value": 0, "__tile": null, "defUid": 6900, "realEditorValues": [] },
 								{ "__identifier": "sprite", "__type": "String", "__value": null, "__tile": null, "defUid": 7408, "realEditorValues": [] }
 							],
-							"__worldX": 2968,
-							"__worldY": -568
+							"__worldX": 10056,
+							"__worldY": -2344
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -40935,8 +41205,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 2108,
-							"__worldY": -672
+							"__worldX": 9196,
+							"__worldY": -2448
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -40970,12 +41240,13 @@
 									"id": "V_String",
 									"params": ["skirmisher"]
 								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 8092, "realEditorValues": [] },
 								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
-								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 8092, "realEditorValues": [] }
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 3128,
-							"__worldY": -340
+							"__worldX": 10216,
+							"__worldY": -2116
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -41009,12 +41280,13 @@
 									"id": "V_String",
 									"params": ["skirmisher"]
 								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 8092, "realEditorValues": [] },
 								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
-								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 8092, "realEditorValues": [] }
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 3228,
-							"__worldY": -340
+							"__worldX": 10316,
+							"__worldY": -2116
 						}
 					]
 				},
@@ -41275,8 +41547,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 2048,
-							"__worldY": -768
+							"__worldX": 9136,
+							"__worldY": -2544
 						}
 					]
 				},
@@ -41312,8 +41584,8 @@
 			"identifier": "skirmish_heights",
 			"iid": "skirmish_heights-5927",
 			"uid": 5927,
-			"worldX": -1536,
-			"worldY": -768,
+			"worldX": 7216,
+			"worldY": -2512,
 			"worldDepth": 0,
 			"pxWid": 1280,
 			"pxHei": 512,
@@ -41504,8 +41776,8 @@
 								"id": "V_String",
 								"params": ["skirmish_heights_spawn"]
 							}] }],
-							"__worldX": -1476,
-							"__worldY": -334
+							"__worldX": 7276,
+							"__worldY": -2078
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -41539,8 +41811,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -1520,
-							"__worldY": -384
+							"__worldX": 7232,
+							"__worldY": -2128
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -41574,12 +41846,13 @@
 									"id": "V_String",
 									"params": ["skirmisher"]
 								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 8092, "realEditorValues": [] },
 								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
-								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 8092, "realEditorValues": [] }
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": -1016,
-							"__worldY": -340
+							"__worldX": 7736,
+							"__worldY": -2084
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -41613,12 +41886,13 @@
 									"id": "V_String",
 									"params": ["skirmisher"]
 								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 8092, "realEditorValues": [] },
 								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
-								{ "__identifier": "respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 8092, "realEditorValues": [] }
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": -636,
-							"__worldY": -340
+							"__worldX": 8116,
+							"__worldY": -2084
 						},
 						{
 							"__identifier": "PickupSpawn",
@@ -41645,8 +41919,8 @@
 								{ "__identifier": "respawn_seconds", "__type": "Float", "__value": 0, "__tile": null, "defUid": 6900, "realEditorValues": [] },
 								{ "__identifier": "sprite", "__type": "String", "__value": null, "__tile": null, "defUid": 7408, "realEditorValues": [] }
 							],
-							"__worldX": -476,
-							"__worldY": -628
+							"__worldX": 8276,
+							"__worldY": -2372
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -41671,8 +41945,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": -1476,
-							"__worldY": -672
+							"__worldX": 7276,
+							"__worldY": -2416
 						}
 					]
 				},
@@ -41933,8 +42207,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": -1536,
-							"__worldY": -768
+							"__worldX": 7216,
+							"__worldY": -2512
 						}
 					]
 				},
@@ -42491,8 +42765,8 @@
 			"identifier": "gap_run",
 			"iid": "gap_run-6013",
 			"uid": 6013,
-			"worldX": -5888,
-			"worldY": 7168,
+			"worldX": 10768,
+			"worldY": 1072,
 			"worldDepth": 0,
 			"pxWid": 1280,
 			"pxHei": 320,
@@ -42655,8 +42929,8 @@
 								"id": "V_String",
 								"params": ["gap_run_spawn"]
 							}] }],
-							"__worldX": -5798,
-							"__worldY": 7410
+							"__worldX": 10858,
+							"__worldY": 1314
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -42690,8 +42964,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -5864,
-							"__worldY": 7360
+							"__worldX": 10792,
+							"__worldY": 1264
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -42716,21 +42990,21 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": -5748,
-							"__worldY": 7268
+							"__worldX": 10908,
+							"__worldY": 1172
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [75,12],
+							"__grid": [73,12],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-6030",
-							"width": 16,
+							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [1200,192],
+							"px": [1168,192],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "stagger_steps_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -42751,8 +43025,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -4688,
-							"__worldY": 7360
+							"__worldX": 11936,
+							"__worldY": 1264
 						}
 					]
 				},
@@ -42957,8 +43231,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": -5888,
-							"__worldY": 7168
+							"__worldX": 10768,
+							"__worldY": 1072
 						}
 					]
 				},
@@ -42994,8 +43268,8 @@
 			"identifier": "stagger_steps",
 			"iid": "stagger_steps-6022",
 			"uid": 6022,
-			"worldX": -4608,
-			"worldY": 7680,
+			"worldX": 13168,
+			"worldY": 576,
 			"worldDepth": 0,
 			"pxWid": 800,
 			"pxHei": 512,
@@ -43158,8 +43432,8 @@
 								"id": "V_String",
 								"params": ["stagger_steps_spawn"]
 							}] }],
-							"__worldX": -4438,
-							"__worldY": 8113
+							"__worldX": 13338,
+							"__worldY": 1009
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -43193,8 +43467,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -4592,
-							"__worldY": 8064
+							"__worldX": 13184,
+							"__worldY": 960
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -43219,8 +43493,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": -4528,
-							"__worldY": 7780
+							"__worldX": 13248,
+							"__worldY": 676
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -43254,8 +43528,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -3908,
-							"__worldY": 7824
+							"__worldX": 13868,
+							"__worldY": 720
 						}
 					]
 				},
@@ -43460,8 +43734,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": -4608,
-							"__worldY": 7680
+							"__worldX": 13168,
+							"__worldY": 576
 						}
 					]
 				},
@@ -43497,8 +43771,8 @@
 			"identifier": "live_floor",
 			"iid": "live_floor-6031",
 			"uid": 6031,
-			"worldX": -3584,
-			"worldY": 7680,
+			"worldX": 12560,
+			"worldY": -208,
 			"worldDepth": 0,
 			"pxWid": 1280,
 			"pxHei": 384,
@@ -43670,8 +43944,8 @@
 								"id": "V_String",
 								"params": ["live_floor_spawn"]
 							}] }],
-							"__worldX": -3504,
-							"__worldY": 7934
+							"__worldX": 12640,
+							"__worldY": 46
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -43705,8 +43979,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -3544,
-							"__worldY": 7884
+							"__worldX": 12600,
+							"__worldY": -4
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -43731,8 +44005,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": -3444,
-							"__worldY": 7770
+							"__worldX": 12700,
+							"__worldY": -118
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -43766,8 +44040,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -2384,
-							"__worldY": 7872
+							"__worldX": 13760,
+							"__worldY": -16
 						}
 					]
 				},
@@ -43990,8 +44264,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": -3584,
-							"__worldY": 7680
+							"__worldX": 12560,
+							"__worldY": -208
 						}
 					]
 				},
@@ -44027,8 +44301,8 @@
 			"identifier": "proof_summit",
 			"iid": "proof_summit-6040",
 			"uid": 6040,
-			"worldX": -2048,
-			"worldY": 7424,
+			"worldX": 12448,
+			"worldY": -1488,
 			"worldDepth": 0,
 			"pxWid": 896,
 			"pxHei": 640,
@@ -44210,8 +44484,8 @@
 								"id": "V_String",
 								"params": ["proof_summit_spawn"]
 							}] }],
-							"__worldX": -1978,
-							"__worldY": 7986
+							"__worldX": 12518,
+							"__worldY": -926
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -44245,8 +44519,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -2032,
-							"__worldY": 7936
+							"__worldX": 12464,
+							"__worldY": -976
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -44271,8 +44545,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": -1968,
-							"__worldY": 7534
+							"__worldX": 12528,
+							"__worldY": -1378
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -44297,8 +44571,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": -1588,
-							"__worldY": 7744
+							"__worldX": 12908,
+							"__worldY": -1168
 						}
 					]
 				},
@@ -44541,8 +44815,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": -2048,
-							"__worldY": 7424
+							"__worldX": 12448,
+							"__worldY": -1488
 						}
 					]
 				},
@@ -44578,8 +44852,8 @@
 			"identifier": "wall_run",
 			"iid": "wall_run-6050",
 			"uid": 6050,
-			"worldX": -3072,
-			"worldY": 2304,
+			"worldX": 11184,
+			"worldY": -1088,
 			"worldDepth": 0,
 			"pxWid": 640,
 			"pxHei": 768,
@@ -44763,8 +45037,8 @@
 								{ "__identifier": "oscillate_amplitude", "__type": "Float", "__value": 0, "__tile": null, "defUid": 5996, "realEditorValues": [] },
 								{ "__identifier": "oscillate_freq", "__type": "Float", "__value": 1, "__tile": null, "defUid": 5997, "realEditorValues": [] }
 							],
-							"__worldX": -2812,
-							"__worldY": 2320
+							"__worldX": 11444,
+							"__worldY": -1072
 						},
 						{
 							"__identifier": "PlayerStart",
@@ -44782,8 +45056,8 @@
 								"id": "V_String",
 								"params": ["wall_run_spawn"]
 							}] }],
-							"__worldX": -2992,
-							"__worldY": 3010
+							"__worldX": 11264,
+							"__worldY": -382
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -44817,8 +45091,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -3056,
-							"__worldY": 2960
+							"__worldX": 11200,
+							"__worldY": -432
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -44843,8 +45117,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": -3032,
-							"__worldY": 2414
+							"__worldX": 11224,
+							"__worldY": -978
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -44869,8 +45143,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": -2712,
-							"__worldY": 2364
+							"__worldX": 11544,
+							"__worldY": -1028
 						}
 					]
 				},
@@ -45093,8 +45367,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": -3072,
-							"__worldY": 2304
+							"__worldX": 11184,
+							"__worldY": -1088
 						}
 					]
 				},
@@ -45130,8 +45404,8 @@
 			"identifier": "ceiling_cross",
 			"iid": "ceiling_cross-6061",
 			"uid": 6061,
-			"worldX": -5632,
-			"worldY": 3328,
+			"worldX": 9232,
+			"worldY": -576,
 			"worldDepth": 0,
 			"pxWid": 1024,
 			"pxHei": 512,
@@ -45316,8 +45590,8 @@
 								{ "__identifier": "oscillate_amplitude", "__type": "Float", "__value": 0, "__tile": null, "defUid": 5996, "realEditorValues": [] },
 								{ "__identifier": "oscillate_freq", "__type": "Float", "__value": 1, "__tile": null, "defUid": 5997, "realEditorValues": [] }
 							],
-							"__worldX": -5362,
-							"__worldY": 3344
+							"__worldX": 9502,
+							"__worldY": -560
 						},
 						{
 							"__identifier": "PlayerStart",
@@ -45335,8 +45609,8 @@
 								"id": "V_String",
 								"params": ["ceiling_cross_spawn"]
 							}] }],
-							"__worldX": -5562,
-							"__worldY": 3746
+							"__worldX": 9302,
+							"__worldY": -158
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -45370,8 +45644,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -5616,
-							"__worldY": 3696
+							"__worldX": 9248,
+							"__worldY": -208
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -45398,8 +45672,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": -5592,
-							"__worldY": 3438
+							"__worldX": 9272,
+							"__worldY": -466
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -45424,8 +45698,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": -4872,
-							"__worldY": 3708
+							"__worldX": 9992,
+							"__worldY": -196
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -45459,8 +45733,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -4732,
-							"__worldY": 3696
+							"__worldX": 10132,
+							"__worldY": -208
 						}
 					]
 				},
@@ -45691,8 +45965,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": -5632,
-							"__worldY": 3328
+							"__worldX": 9232,
+							"__worldY": -576
 						}
 					]
 				},
@@ -45728,8 +46002,8 @@
 			"identifier": "portal_bridge",
 			"iid": "portal_bridge-6072",
 			"uid": 6072,
-			"worldX": -4352,
-			"worldY": 3328,
+			"worldX": 7472,
+			"worldY": -560,
 			"worldDepth": 0,
 			"pxWid": 1280,
 			"pxHei": 512,
@@ -45926,8 +46200,8 @@
 									"params": ["Portal gun"]
 								}] }
 							],
-							"__worldX": -4192,
-							"__worldY": 3752
+							"__worldX": 7632,
+							"__worldY": -136
 						},
 						{
 							"__identifier": "PlayerStart",
@@ -45945,8 +46219,8 @@
 								"id": "V_String",
 								"params": ["portal_bridge_spawn"]
 							}] }],
-							"__worldX": -4272,
-							"__worldY": 3746
+							"__worldX": 7552,
+							"__worldY": -142
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -45980,8 +46254,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -4336,
-							"__worldY": 3696
+							"__worldX": 7488,
+							"__worldY": -192
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -46008,8 +46282,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": -4312,
-							"__worldY": 3438
+							"__worldX": 7512,
+							"__worldY": -450
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -46034,8 +46308,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": -3472,
-							"__worldY": 3708
+							"__worldX": 8352,
+							"__worldY": -180
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -46069,8 +46343,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -3252,
-							"__worldY": 3696
+							"__worldX": 8572,
+							"__worldY": -192
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -46104,8 +46378,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -3402,
-							"__worldY": 3696
+							"__worldX": 8422,
+							"__worldY": -192
 						}
 					]
 				},
@@ -46366,8 +46640,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": -4352,
-							"__worldY": 3328
+							"__worldX": 7472,
+							"__worldY": -560
 						}
 					]
 				},
@@ -46403,8 +46677,8 @@
 			"identifier": "blink_run",
 			"iid": "blink_run-6083",
 			"uid": 6083,
-			"worldX": -3328,
-			"worldY": 4608,
+			"worldX": 10928,
+			"worldY": 336,
 			"worldDepth": 0,
 			"pxWid": 1024,
 			"pxHei": 208,
@@ -46555,8 +46829,8 @@
 									"params": ["blink"]
 								}] }
 							],
-							"__worldX": -3208,
-							"__worldY": 4716
+							"__worldX": 11048,
+							"__worldY": 444
 						},
 						{
 							"__identifier": "PlayerStart",
@@ -46574,8 +46848,8 @@
 								"id": "V_String",
 								"params": ["blink_run_spawn"]
 							}] }],
-							"__worldX": -3288,
-							"__worldY": 4702
+							"__worldX": 10968,
+							"__worldY": 430
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -46609,8 +46883,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -3312,
-							"__worldY": 4688
+							"__worldX": 10944,
+							"__worldY": 416
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -46635,8 +46909,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": -3248,
-							"__worldY": 4694
+							"__worldX": 11008,
+							"__worldY": 422
 						}
 					]
 				},
@@ -46797,8 +47071,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": -3328,
-							"__worldY": 4608
+							"__worldX": 10928,
+							"__worldY": 336
 						}
 					]
 				},
@@ -46834,8 +47108,8 @@
 			"identifier": "dive_drill",
 			"iid": "dive_drill-6122",
 			"uid": 6122,
-			"worldX": -3328,
-			"worldY": 4096,
+			"worldX": 9536,
+			"worldY": 288,
 			"worldDepth": 0,
 			"pxWid": 768,
 			"pxHei": 320,
@@ -46990,8 +47264,8 @@
 									"params": ["dive"]
 								}] }
 							],
-							"__worldX": -3218,
-							"__worldY": 4320
+							"__worldX": 9646,
+							"__worldY": 512
 						},
 						{
 							"__identifier": "PlayerStart",
@@ -47009,8 +47283,8 @@
 								"id": "V_String",
 								"params": ["dive_drill_spawn"]
 							}] }],
-							"__worldX": -3248,
-							"__worldY": 4306
+							"__worldX": 9616,
+							"__worldY": 498
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -47044,8 +47318,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -3312,
-							"__worldY": 4256
+							"__worldX": 9552,
+							"__worldY": 448
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -47072,8 +47346,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": -3288,
-							"__worldY": 4206
+							"__worldX": 9576,
+							"__worldY": 398
 						}
 					]
 				},
@@ -47242,8 +47516,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": -3328,
-							"__worldY": 4096
+							"__worldX": 9536,
+							"__worldY": 288
 						}
 					]
 				},
@@ -47279,8 +47553,8 @@
 			"identifier": "portal_lab",
 			"iid": "portal_lab-6139",
 			"uid": 6139,
-			"worldX": 5888,
-			"worldY": -512,
+			"worldX": 2592,
+			"worldY": -4752,
 			"worldDepth": 0,
 			"pxWid": 3488,
 			"pxHei": 1056,
@@ -47809,8 +48083,8 @@
 								"id": "V_String",
 								"params": ["start"]
 							}] }],
-							"__worldX": 5968,
-							"__worldY": 340
+							"__worldX": 2672,
+							"__worldY": -3900
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -47844,8 +48118,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 5928,
-							"__worldY": 292
+							"__worldX": 2632,
+							"__worldY": -3948
 						},
 						{
 							"__identifier": "Portal",
@@ -47875,8 +48149,8 @@
 									"params": ["portal_lab_a_ground_ground"]
 								}] }
 							],
-							"__worldX": 6142,
-							"__worldY": 379
+							"__worldX": 2846,
+							"__worldY": -3861
 						},
 						{
 							"__identifier": "Portal",
@@ -47909,8 +48183,8 @@
 									"params": ["portal_lab_a_ground_ground"]
 								}] }
 							],
-							"__worldX": 6442,
-							"__worldY": 379
+							"__worldX": 3146,
+							"__worldY": -3861
 						},
 						{
 							"__identifier": "Portal",
@@ -47946,8 +48220,8 @@
 									"params": ["portal_lab_b_wall_wall"]
 								}] }
 							],
-							"__worldX": 7069,
-							"__worldY": 292
+							"__worldX": 3773,
+							"__worldY": -3948
 						},
 						{
 							"__identifier": "Portal",
@@ -47983,8 +48257,8 @@
 									"params": ["portal_lab_b_wall_wall"]
 								}] }
 							],
-							"__worldX": 7069,
-							"__worldY": -8
+							"__worldX": 3773,
+							"__worldY": -4248
 						},
 						{
 							"__identifier": "Portal",
@@ -48017,8 +48291,8 @@
 									"params": ["portal_lab_c_ground_ceiling"]
 								}] }
 							],
-							"__worldX": 6742,
-							"__worldY": 379
+							"__worldX": 3446,
+							"__worldY": -3861
 						},
 						{
 							"__identifier": "Portal",
@@ -48054,8 +48328,8 @@
 									"params": ["portal_lab_c_ground_ceiling"]
 								}] }
 							],
-							"__worldX": 6742,
-							"__worldY": -301
+							"__worldX": 3446,
+							"__worldY": -4541
 						},
 						{
 							"__identifier": "Portal",
@@ -48088,8 +48362,8 @@
 									"params": ["portal_lab_d_ground_wall"]
 								}] }
 							],
-							"__worldX": 7292,
-							"__worldY": 379
+							"__worldX": 3996,
+							"__worldY": -3861
 						},
 						{
 							"__identifier": "Portal",
@@ -48125,8 +48399,8 @@
 									"params": ["portal_lab_d_ground_wall"]
 								}] }
 							],
-							"__worldX": 7655,
-							"__worldY": 142
+							"__worldX": 4359,
+							"__worldY": -4098
 						},
 						{
 							"__identifier": "Portal",
@@ -48159,8 +48433,8 @@
 									"params": ["portal_thin_wall_door_link"]
 								}] }
 							],
-							"__worldX": 8080,
-							"__worldY": 304
+							"__worldX": 4784,
+							"__worldY": -3936
 						},
 						{
 							"__identifier": "Portal",
@@ -48193,8 +48467,8 @@
 									"params": ["portal_thin_wall_door_link"]
 								}] }
 							],
-							"__worldX": 8112,
-							"__worldY": 304
+							"__worldX": 4816,
+							"__worldY": -3936
 						},
 						{
 							"__identifier": "Portal",
@@ -48224,8 +48498,8 @@
 									"params": ["portal_pacman_link"]
 								}] }
 							],
-							"__worldX": 8432,
-							"__worldY": -304
+							"__worldX": 5136,
+							"__worldY": -4544
 						},
 						{
 							"__identifier": "Portal",
@@ -48255,8 +48529,8 @@
 									"params": ["portal_pacman_link"]
 								}] }
 							],
-							"__worldX": 8672,
-							"__worldY": -304
+							"__worldX": 5376,
+							"__worldY": -4544
 						},
 						{
 							"__identifier": "Portal",
@@ -48286,8 +48560,8 @@
 									"params": ["corner_portal_link1"]
 								}] }
 							],
-							"__worldX": 6160,
-							"__worldY": -368
+							"__worldX": 2864,
+							"__worldY": -4608
 						},
 						{
 							"__identifier": "Portal",
@@ -48317,8 +48591,8 @@
 									"params": ["corner_portal_link1"]
 								}] }
 							],
-							"__worldX": 6192,
-							"__worldY": -208
+							"__worldX": 2896,
+							"__worldY": -4448
 						},
 						{
 							"__identifier": "SurfaceChain",
@@ -48345,8 +48619,8 @@
 								{ "__identifier": "visual", "__type": "String", "__value": null, "__tile": null, "defUid": 7681, "realEditorValues": [] },
 								{ "__identifier": "boarding", "__type": "String", "__value": null, "__tile": null, "defUid": 7682, "realEditorValues": [] }
 							],
-							"__worldX": 8720,
-							"__worldY": 432
+							"__worldX": 5424,
+							"__worldY": -3808
 						},
 						{
 							"__identifier": "Portal",
@@ -48382,8 +48656,8 @@
 									"params": ["lab_e"]
 								}] }
 							],
-							"__worldX": 8792,
-							"__worldY": 371
+							"__worldX": 5496,
+							"__worldY": -3869
 						},
 						{
 							"__identifier": "Portal",
@@ -48419,8 +48693,8 @@
 									"params": ["lab_e"]
 								}] }
 							],
-							"__worldX": 9326,
-							"__worldY": 342
+							"__worldX": 6030,
+							"__worldY": -3898
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -48445,8 +48719,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 8728,
-							"__worldY": 248
+							"__worldX": 5432,
+							"__worldY": -3992
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -48491,8 +48765,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": 25, "__tile": null, "defUid": 7679, "realEditorValues": [{ "id": "V_Float", "params": [25] }] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": 4, "__tile": null, "defUid": 7680, "realEditorValues": [{ "id": "V_Float", "params": [4] }] }
 							],
-							"__worldX": 9038,
-							"__worldY": 128
+							"__worldX": 5742,
+							"__worldY": -4112
 						},
 						{
 							"__identifier": "Portal",
@@ -48525,8 +48799,8 @@
 									"params": ["lab_f"]
 								}] }
 							],
-							"__worldX": 9092,
-							"__worldY": 121
+							"__worldX": 5796,
+							"__worldY": -4119
 						},
 						{
 							"__identifier": "Portal",
@@ -48559,8 +48833,8 @@
 									"params": ["lab_f"]
 								}] }
 							],
-							"__worldX": 9162,
-							"__worldY": 439
+							"__worldX": 5866,
+							"__worldY": -3801
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -48585,8 +48859,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 9038,
-							"__worldY": 48
+							"__worldX": 5742,
+							"__worldY": -4192
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -48631,8 +48905,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 8924,
-							"__worldY": -332
+							"__worldX": 5628,
+							"__worldY": -4572
 						},
 						{
 							"__identifier": "Portal",
@@ -48665,8 +48939,8 @@
 									"params": ["lab_g"]
 								}] }
 							],
-							"__worldX": 8978,
-							"__worldY": -339
+							"__worldX": 5682,
+							"__worldY": -4579
 						},
 						{
 							"__identifier": "Portal",
@@ -48696,8 +48970,8 @@
 									"params": ["lab_g"]
 								}] }
 							],
-							"__worldX": 8742,
-							"__worldY": -185
+							"__worldX": 5446,
+							"__worldY": -4425
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -48722,8 +48996,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 8728,
-							"__worldY": -452
+							"__worldX": 5432,
+							"__worldY": -4692
 						},
 						{
 							"__identifier": "GroundItem",
@@ -48751,8 +49025,8 @@
 									"params": ["coconut"]
 								}] }
 							],
-							"__worldX": 6020,
-							"__worldY": 377
+							"__worldX": 2724,
+							"__worldY": -3863
 						},
 						{
 							"__identifier": "GroundItem",
@@ -48780,8 +49054,8 @@
 									"params": ["coconut"]
 								}] }
 							],
-							"__worldX": 6055,
-							"__worldY": 377
+							"__worldX": 2759,
+							"__worldY": -3863
 						},
 						{
 							"__identifier": "GroundItem",
@@ -48809,8 +49083,8 @@
 									"params": ["coconut"]
 								}] }
 							],
-							"__worldX": 6090,
-							"__worldY": 377
+							"__worldX": 2794,
+							"__worldY": -3863
 						},
 						{
 							"__identifier": "GroundItem",
@@ -48838,8 +49112,8 @@
 									"params": ["coconut"]
 								}] }
 							],
-							"__worldX": 8521,
-							"__worldY": -235
+							"__worldX": 5225,
+							"__worldY": -4475
 						},
 						{
 							"__identifier": "GroundItem",
@@ -48867,8 +49141,8 @@
 									"params": ["coconut"]
 								}] }
 							],
-							"__worldX": 8591,
-							"__worldY": -235
+							"__worldX": 5295,
+							"__worldY": -4475
 						}
 					]
 				},
@@ -53359,8 +53633,8 @@
 			"identifier": "gnu_ton_arena",
 			"iid": "gnu_ton_arena-6876",
 			"uid": 6876,
-			"worldX": 5120,
-			"worldY": 6656,
+			"worldX": 6480,
+			"worldY": 7024,
 			"worldDepth": 0,
 			"pxWid": 1792,
 			"pxHei": 1280,
@@ -53754,10 +54028,12 @@
 								{ "__identifier": "trigger", "__type": "String", "__value": "OnStand", "__tile": null, "defUid": 5015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnStand"]
-								}] }
+								}] },
+								{ "__identifier": "id", "__type": "String", "__value": null, "__tile": null, "defUid": 8121, "realEditorValues": [] },
+								{ "__identifier": "look", "__type": "String", "__value": null, "__tile": null, "defUid": 8122, "realEditorValues": [] }
 							],
-							"__worldX": 5424,
-							"__worldY": 6864
+							"__worldX": 6784,
+							"__worldY": 7232
 						},
 						{
 							"__identifier": "PlayerStart",
@@ -53775,8 +54051,8 @@
 								"id": "V_String",
 								"params": ["gnu_ton_arena_spawn"]
 							}] }],
-							"__worldX": 5488,
-							"__worldY": 6818
+							"__worldX": 6848,
+							"__worldY": 7186
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -53810,8 +54086,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 5184,
-							"__worldY": 6768
+							"__worldX": 6544,
+							"__worldY": 7136
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -53845,18 +54121,19 @@
 									"params": ["Peaceful"]
 								}] },
 								{ "__identifier": "brain_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 6859, "realEditorValues": [] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] },
 								{ "__identifier": "depth_plane", "__type": "String", "__value": "Behind", "__tile": null, "defUid": 6895, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Behind"]
 								}] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
-								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["OnRoomReenter"]
-								}] }
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 5701,
-							"__worldY": 7440
+							"__worldX": 7061,
+							"__worldY": 7808
 						},
 						{
 							"__identifier": "BossSpawn",
@@ -53888,8 +54165,8 @@
 									"params": ["hall.gnu_ton"]
 								}] }
 							],
-							"__worldX": 6245,
-							"__worldY": 7348
+							"__worldX": 7605,
+							"__worldY": 7716
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -53914,8 +54191,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 5248,
-							"__worldY": 7872
+							"__worldX": 6608,
+							"__worldY": 8240
 						},
 						{
 							"__identifier": "Solid",
@@ -53936,8 +54213,8 @@
 								}] },
 								{ "__identifier": "color", "__type": "String", "__value": null, "__tile": null, "defUid": 6896, "realEditorValues": [] }
 							],
-							"__worldX": 5232,
-							"__worldY": 6864
+							"__worldX": 6592,
+							"__worldY": 7232
 						}
 					]
 				},
@@ -54564,8 +54841,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 5120,
-							"__worldY": 6656
+							"__worldX": 6480,
+							"__worldY": 7024
 						}
 					]
 				},
@@ -54595,14 +54872,14 @@
 					"entityInstances": []
 				}
 			],
-			"__neighbours": [{ "levelIid": "gnu_ton_approach-7707", "dir": "e" }]
+			"__neighbours": [{ "levelIid": "gnu_ton_approach-7707", "dir": "w" }]
 		},
 		{
 			"identifier": "trex_arena",
 			"iid": "trex_arena-6908",
 			"uid": 6908,
-			"worldX": -14000,
-			"worldY": 0,
+			"worldX": 12448,
+			"worldY": 7248,
 			"worldDepth": 0,
 			"pxWid": 1792,
 			"pxHei": 704,
@@ -54863,8 +55140,8 @@
 								"id": "V_String",
 								"params": ["trex_arena_spawn"]
 							}] }],
-							"__worldX": -13888,
-							"__worldY": 624
+							"__worldX": 12560,
+							"__worldY": 7872
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -54898,8 +55175,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": -13960,
-							"__worldY": 576
+							"__worldX": 12488,
+							"__worldY": 7824
 						},
 						{
 							"__identifier": "BossSpawn",
@@ -54928,8 +55205,8 @@
 									"params": ["hall.trex"]
 								}] }
 							],
-							"__worldX": -12880,
-							"__worldY": 560
+							"__worldX": 13568,
+							"__worldY": 7808
 						}
 					]
 				},
@@ -55324,8 +55601,8 @@
 			"identifier": "hall_mockingbird_arena",
 			"iid": "hall_mockingbird_arena-6916",
 			"uid": 6916,
-			"worldX": 1984,
-			"worldY": 1424,
+			"worldX": 10352,
+			"worldY": 5968,
 			"worldDepth": 0,
 			"pxWid": 960,
 			"pxHei": 768,
@@ -55540,8 +55817,8 @@
 								"id": "V_String",
 								"params": ["hall_mockingbird_arena_spawn"]
 							}] }],
-							"__worldX": 2104,
-							"__worldY": 2114
+							"__worldX": 10472,
+							"__worldY": 6658
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -55578,8 +55855,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 2040,
-							"__worldY": 2064
+							"__worldX": 10408,
+							"__worldY": 6608
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -55607,8 +55884,8 @@
 									"params": ["Custom"]
 								}] }
 							],
-							"__worldX": 2024,
-							"__worldY": 2084
+							"__worldX": 10392,
+							"__worldY": 6628
 						},
 						{
 							"__identifier": "Solid",
@@ -55629,8 +55906,8 @@
 								}] },
 								{ "__identifier": "color", "__type": "String", "__value": null, "__tile": null, "defUid": 6896, "realEditorValues": [] }
 							],
-							"__worldX": 2000,
-							"__worldY": 2064
+							"__worldX": 10368,
+							"__worldY": 6608
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -55678,8 +55955,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 2584,
-							"__worldY": 2084
+							"__worldX": 10952,
+							"__worldY": 6628
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -55716,8 +55993,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 2560,
-							"__worldY": 1424
+							"__worldX": 10928,
+							"__worldY": 5968
 						}
 					]
 				},
@@ -55996,8 +56273,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 1984,
-							"__worldY": 1424
+							"__worldX": 10352,
+							"__worldY": 5968
 						}
 					]
 				},
@@ -56033,8 +56310,8 @@
 			"identifier": "hall_warden_arena",
 			"iid": "hall_warden_arena-6930",
 			"uid": 6930,
-			"worldX": 1728,
-			"worldY": -1904,
+			"worldX": 12416,
+			"worldY": 5824,
 			"worldDepth": 0,
 			"pxWid": 1900,
 			"pxHei": 980,
@@ -56368,8 +56645,8 @@
 								"id": "V_String",
 								"params": ["hall_warden_arena_start"]
 							}] }],
-							"__worldX": 1884,
-							"__worldY": -1042
+							"__worldX": 12572,
+							"__worldY": 6686
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -56406,8 +56683,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 1823,
-							"__worldY": -1072
+							"__worldX": 12511,
+							"__worldY": 6656
 						},
 						{
 							"__identifier": "BossSpawn",
@@ -56436,8 +56713,8 @@
 									"params": ["hall.clockwork_warden"]
 								}] }
 							],
-							"__worldX": 2748,
-							"__worldY": -1439
+							"__worldX": 13436,
+							"__worldY": 6289
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -56465,8 +56742,8 @@
 									"params": ["Boss"]
 								}] }
 							],
-							"__worldX": 1812,
-							"__worldY": -1284
+							"__worldX": 12500,
+							"__worldY": 6444
 						}
 					]
 				},
@@ -57001,8 +57278,8 @@
 			"identifier": "hall_mockingbird_sky",
 			"iid": "hall_mockingbird_sky-7019",
 			"uid": 7019,
-			"worldX": 3408,
-			"worldY": -224,
+			"worldX": 10144,
+			"worldY": 5136,
 			"worldDepth": 0,
 			"pxWid": 1280,
 			"pxHei": 720,
@@ -57248,8 +57525,8 @@
 									"params": ["hall.mockingbird"]
 								}] }
 							],
-							"__worldX": 3533,
-							"__worldY": 11
+							"__worldX": 10269,
+							"__worldY": 5371
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -57297,8 +57574,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 3468,
-							"__worldY": 76
+							"__worldX": 10204,
+							"__worldY": 5436
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -57346,8 +57623,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 3988,
-							"__worldY": 76
+							"__worldX": 10724,
+							"__worldY": 5436
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -57395,8 +57672,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 4508,
-							"__worldY": 76
+							"__worldX": 11244,
+							"__worldY": 5436
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -57444,8 +57721,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 3628,
-							"__worldY": 206
+							"__worldX": 10364,
+							"__worldY": 5566
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -57493,8 +57770,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 4148,
-							"__worldY": 206
+							"__worldX": 10884,
+							"__worldY": 5566
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -57542,8 +57819,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 4558,
-							"__worldY": 206
+							"__worldX": 11294,
+							"__worldY": 5566
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -57591,8 +57868,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 3548,
-							"__worldY": 336
+							"__worldX": 10284,
+							"__worldY": 5696
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -57640,8 +57917,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 4068,
-							"__worldY": 336
+							"__worldX": 10804,
+							"__worldY": 5696
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -57689,8 +57966,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 4563,
-							"__worldY": 336
+							"__worldX": 11299,
+							"__worldY": 5696
 						},
 						{
 							"__identifier": "PlayerStart",
@@ -57708,8 +57985,8 @@
 								"id": "V_String",
 								"params": ["hall_mockingbird_sky_spawn"]
 							}] }],
-							"__worldX": 4034,
-							"__worldY": 366
+							"__worldX": 10770,
+							"__worldY": 5726
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -57746,8 +58023,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 3408,
-							"__worldY": 480
+							"__worldX": 10144,
+							"__worldY": 5840
 						},
 						{
 							"__identifier": "Solid",
@@ -57771,8 +58048,8 @@
 									"params": ["#00000000"]
 								}] }
 							],
-							"__worldX": 3408,
-							"__worldY": -224
+							"__worldX": 10144,
+							"__worldY": 5136
 						},
 						{
 							"__identifier": "Solid",
@@ -57796,8 +58073,8 @@
 									"params": ["#00000000"]
 								}] }
 							],
-							"__worldX": 4680,
-							"__worldY": -224
+							"__worldX": 11416,
+							"__worldY": 5136
 						}
 					]
 				},
@@ -58116,8 +58393,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 3408,
-							"__worldY": -224
+							"__worldX": 10144,
+							"__worldY": 5136
 						}
 					]
 				},
@@ -69721,16 +69998,16 @@
 					"entityInstances": [
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [70,16],
+							"__grid": [70,15],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-7756",
 							"width": 30,
-							"height": 176,
+							"height": 224,
 							"defUid": 2002,
-							"px": [1122,264],
+							"px": [1122,248],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "east_exit", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -69758,7 +70035,7 @@
 								}] }
 							],
 							"__worldX": 3026,
-							"__worldY": 776
+							"__worldY": 760
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -69793,7 +70070,7 @@
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [16,23],
+							"__grid": [3,23],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -69802,7 +70079,7 @@
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [268,368],
+							"px": [60,368],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "gravity_lab_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -69823,12 +70100,12 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 2172,
+							"__worldX": 1964,
 							"__worldY": 880
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [21,23],
+							"__grid": [11,23],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -69837,7 +70114,7 @@
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [336,368],
+							"px": [176,368],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "gradient_ascent_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -69858,12 +70135,12 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 2240,
+							"__worldX": 2080,
 							"__worldY": 880
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [25,23],
+							"__grid": [18,23],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -69872,7 +70149,7 @@
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [404,368],
+							"px": [292,368],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "skirmish_heights_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -69893,12 +70170,12 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 2308,
+							"__worldX": 2196,
 							"__worldY": 880
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [29,23],
+							"__grid": [25,23],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -69907,7 +70184,7 @@
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [472,368],
+							"px": [408,368],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "proving_grounds_hub_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -69928,12 +70205,12 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 2376,
+							"__worldX": 2312,
 							"__worldY": 880
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [33,23],
+							"__grid": [31,23],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -69942,7 +70219,7 @@
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [540,368],
+							"px": [508,368],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "overfit_annex_hub_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -69963,7 +70240,7 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 2444,
+							"__worldX": 2412,
 							"__worldY": 880
 						},
 						{
@@ -70003,7 +70280,7 @@
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [42,23],
+							"__grid": [44,23],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -70012,7 +70289,7 @@
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [680,368],
+							"px": [712,368],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "pirate_cove_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -70033,7 +70310,7 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 2584,
+							"__worldX": 2616,
 							"__worldY": 880
 						},
 						{
@@ -70143,7 +70420,7 @@
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [63,23],
+							"__grid": [65,23],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -70152,7 +70429,7 @@
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [1016,368],
+							"px": [1048,368],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "gnu_ton_handle_hub_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -70173,7 +70450,7 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 2920,
+							"__worldX": 2952,
 							"__worldY": 880
 						}
 					]
@@ -70413,7 +70690,7 @@
 					"entityInstances": []
 				}
 			],
-			"__neighbours": [{ "levelIid": "proving_grounds-5892", "dir": "n" }]
+			"__neighbours": []
 		},
 		{
 			"identifier": "military_gate_annex",
@@ -71173,8 +71450,8 @@
 			"identifier": "gnu_ton_approach",
 			"iid": "gnu_ton_approach-7707",
 			"uid": 7707,
-			"worldX": 6912,
-			"worldY": 6656,
+			"worldX": 4880,
+			"worldY": 6784,
 			"worldDepth": 0,
 			"pxWid": 1600,
 			"pxHei": 512,
@@ -71392,8 +71669,8 @@
 								"id": "V_String",
 								"params": ["gnu_ton_approach_spawn"]
 							}] }],
-							"__worldX": 7008,
-							"__worldY": 6930
+							"__worldX": 4976,
+							"__worldY": 7058
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -71427,15 +71704,16 @@
 									"params": ["Hostile"]
 								}] },
 								{ "__identifier": "brain_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 6859, "realEditorValues": [] },
-								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
-								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "DeadStaysDead", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["DeadStaysDead"]
-								}] }
+								}] },
+								{ "__identifier": "depth_plane", "__type": "String", "__value": null, "__tile": null, "defUid": 6895, "realEditorValues": [] },
+								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
+								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 7712,
-							"__worldY": 6976
+							"__worldX": 5680,
+							"__worldY": 7104
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -71469,8 +71747,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 6936,
-							"__worldY": 6880
+							"__worldX": 4904,
+							"__worldY": 7008
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -71504,8 +71782,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 8424,
-							"__worldY": 7008
+							"__worldX": 6392,
+							"__worldY": 7136
 						}
 					]
 				},
@@ -71802,8 +72080,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 6912,
-							"__worldY": 6656
+							"__worldX": 4880,
+							"__worldY": 6784
 						}
 					]
 				},
@@ -71833,7 +72111,7 @@
 					"entityInstances": []
 				}
 			],
-			"__neighbours": [{ "levelIid": "gnu_ton_arena-6876", "dir": "w" }]
+			"__neighbours": [{ "levelIid": "gnu_ton_arena-6876", "dir": "e" }]
 		},
 		{
 			"identifier": "breakable_wall_lab",
@@ -71844,14 +72122,14 @@
 			"worldDepth": 0,
 			"pxWid": 960,
 			"pxHei": 288,
-			"__bgColor": "#1c1a22",
-			"bgColor": "#1c1a22",
+			"__bgColor": "#1C1A22",
+			"bgColor": "#1C1A22",
 			"useAutoIdentifier": false,
 			"bgRelPath": null,
 			"bgPos": null,
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
-			"__smartColor": "#FFFFFF",
+			"__smartColor": "#828185",
 			"__bgPos": null,
 			"externalRelPath": null,
 			"fieldInstances": [
@@ -71867,17 +72145,51 @@
 					"id": "V_String",
 					"params": ["tech_bros_disruption"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
+				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
+				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
+				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "lab", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["lab"]
-				}] }
+				}] },
+				{ "__identifier": "palette", "__type": "String", "__value": null, "__tile": null, "defUid": 4338, "realEditorValues": [] },
+				{ "__identifier": "lighting_hint", "__type": "String", "__value": null, "__tile": null, "defUid": 4339, "realEditorValues": [] },
+				{ "__identifier": "foreground_treatment", "__type": "String", "__value": null, "__tile": null, "defUid": 4340, "realEditorValues": [] },
+				{ "__identifier": "nameplate_full_opacity_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6573, "realEditorValues": [] },
+				{ "__identifier": "nameplate_fade_out_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6574, "realEditorValues": [] },
+				{ "__identifier": "gallery", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6810, "realEditorValues": [] },
+				{ "__identifier": "fall_out_margin", "__type": "Int", "__value": null, "__tile": null, "defUid": 6848, "realEditorValues": [] },
+				{ "__identifier": "mode", "__type": "String", "__value": null, "__tile": null, "defUid": 6849, "realEditorValues": [] },
+				{ "__identifier": "side_out_margin", "__type": "Int", "__value": null, "__tile": null, "defUid": 6850, "realEditorValues": [] },
+				{ "__identifier": "rise_out_margin", "__type": "Int", "__value": null, "__tile": null, "defUid": 6851, "realEditorValues": [] },
+				{ "__identifier": "enemy_respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 6893, "realEditorValues": [] },
+				{ "__identifier": "entry_cutscene", "__type": "String", "__value": null, "__tile": null, "defUid": 6897, "realEditorValues": [] },
+				{ "__identifier": "while_live", "__type": "String", "__value": null, "__tile": null, "defUid": 6898, "realEditorValues": [] },
+				{ "__identifier": "practice", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6915, "realEditorValues": [] },
+				{ "__identifier": "sky_scroll", "__type": "Int", "__value": null, "__tile": null, "defUid": 6949, "realEditorValues": [] },
+				{ "__identifier": "fall_rescue", "__type": "String", "__value": null, "__tile": null, "defUid": 6950, "realEditorValues": [] },
+				{ "__identifier": "boss_reward_drop", "__type": "String", "__value": null, "__tile": null, "defUid": 6951, "realEditorValues": [] }
 			],
 			"layerInstances": [
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
+					"__cWid": 60,
+					"__cHei": 18,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
 					"iid": "Collision-8124",
+					"levelId": 8123,
 					"layerDefUid": 5024,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -71911,19 +72223,6 @@
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 					],
-					"__cWid": 60,
-					"__cHei": 18,
-					"__gridSize": 16,
-					"__opacity": 1,
-					"__pxTotalOffsetX": 0,
-					"__pxTotalOffsetY": 0,
-					"__tilesetDefUid": null,
-					"__tilesetRelPath": null,
-					"levelId": 8123,
-					"pxOffsetX": 0,
-					"pxOffsetY": 0,
-					"visible": true,
-					"optionalRules": [],
 					"autoLayerTiles": [],
 					"seed": 8123,
 					"overrideTilesetUid": null,
@@ -71931,66 +72230,8 @@
 					"entityInstances": []
 				},
 				{
-					"__identifier": "AmbitionCameras",
-					"__type": "Entities",
-					"iid": "AmbitionCameras-8134",
-					"layerDefUid": 5743,
-					"intGridCsv": [],
-					"__cWid": 60,
-					"__cHei": 18,
-					"__gridSize": 16,
-					"__opacity": 1,
-					"__pxTotalOffsetX": 0,
-					"__pxTotalOffsetY": 0,
-					"__tilesetDefUid": null,
-					"__tilesetRelPath": null,
-					"levelId": 8123,
-					"pxOffsetX": 0,
-					"pxOffsetY": 0,
-					"visible": true,
-					"optionalRules": [],
-					"autoLayerTiles": [],
-					"seed": 8123,
-					"overrideTilesetUid": null,
-					"gridTiles": [],
-					"entityInstances": [
-						{
-							"__identifier": "CameraZone",
-							"__grid": [0,0],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#86A8E7",
-							"__worldX": 86016,
-							"__worldY": 0,
-							"iid": "CameraZone-8130",
-							"width": 960,
-							"height": 288,
-							"defUid": 4002,
-							"px": [0,0],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "breakable_wall_lab_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["breakable_wall_lab_camera"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "breakable_wall_lab_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["breakable_wall_lab_camera"]
-								}] },
-								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["Default"]
-								}] }
-							]
-						}
-					]
-				},
-				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-8125",
-					"layerDefUid": 1070,
-					"intGridCsv": [],
 					"__cWid": 60,
 					"__cHei": 18,
 					"__gridSize": 16,
@@ -71999,11 +72240,14 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
+					"iid": "Ambition-8125",
 					"levelId": 8123,
+					"layerDefUid": 1070,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
+					"intGridCsv": [],
 					"autoLayerTiles": [],
 					"seed": 8123,
 					"overrideTilesetUid": null,
@@ -72014,10 +72258,8 @@
 							"__grid": [6,11],
 							"__pivot": [0,0],
 							"__tags": [],
-							"__tile": null,
+							"__tile": { "tilesetUid": 6852, "x": 0, "y": 0, "w": 256, "h": 256 },
 							"__smartColor": "#41D1FF",
-							"__worldX": 86122,
-							"__worldY": 178,
 							"iid": "PlayerStart-8126",
 							"width": 28,
 							"height": 46,
@@ -72026,7 +72268,9 @@
 							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "breakable_wall_lab_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
 								"id": "V_String",
 								"params": ["breakable_wall_lab_spawn"]
-							}] }]
+							}] }],
+							"__worldX": 86122,
+							"__worldY": 178
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -72035,8 +72279,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 86156,
-							"__worldY": 80,
 							"iid": "DebugLabel-8127",
 							"width": 360,
 							"height": 24,
@@ -72052,7 +72294,9 @@
 									"params": ["Hit the cracked wall until it breaks"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							]
+							],
+							"__worldX": 86156,
+							"__worldY": 80
 						},
 						{
 							"__identifier": "BreakablePlatform",
@@ -72061,8 +72305,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#D8A15D",
-							"__worldX": 86656,
-							"__worldY": 64,
 							"iid": "BreakablePlatform-8128",
 							"width": 64,
 							"height": 160,
@@ -72073,11 +72315,12 @@
 									"id": "V_String",
 									"params": ["the cracked wall"]
 								}] },
-								{ "__identifier": "max_hp", "__type": "Float", "__value": 3.0, "__tile": null, "defUid": 5011, "realEditorValues": [] },
+								{ "__identifier": "max_hp", "__type": "Float", "__value": 3, "__tile": null, "defUid": 5011, "realEditorValues": [] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "Persistent", "__tile": null, "defUid": 5012, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Persistent"]
 								}] },
+								{ "__identifier": "respawn_seconds", "__type": "Float", "__value": 0, "__tile": null, "defUid": 5013, "realEditorValues": [] },
 								{ "__identifier": "collision", "__type": "LocalEnum.BreakablePlatformCollision", "__value": "Solid", "__tile": null, "defUid": 5014, "realEditorValues": [] },
 								{ "__identifier": "trigger", "__type": "String", "__value": "OnHit", "__tile": null, "defUid": 5015, "realEditorValues": [] },
 								{ "__identifier": "id", "__type": "String", "__value": "breakable_wall_lab_wall", "__tile": null, "defUid": 8121, "realEditorValues": [{
@@ -72088,7 +72331,9 @@
 									"id": "V_String",
 									"params": ["castle_cracked_wall"]
 								}] }
-							]
+							],
+							"__worldX": 86656,
+							"__worldY": 64
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -72097,8 +72342,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
-							"__worldX": 86960,
-							"__worldY": 128,
 							"iid": "LoadingZone-8129",
 							"width": 16,
 							"height": 96,
@@ -72126,7 +72369,9 @@
 									"params": ["secret_west"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
-							]
+							],
+							"__worldX": 86960,
+							"__worldY": 128
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -72135,8 +72380,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 86086,
-							"__worldY": 40,
 							"iid": "DebugLabel-8131",
 							"width": 820,
 							"height": 24,
@@ -72152,15 +72395,30 @@
 									"params": ["Breakable wall lab"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							]
+							],
+							"__worldX": 86086,
+							"__worldY": 40
 						}
 					]
 				},
 				{
-					"__identifier": "Climbable",
+					"__identifier": "Water",
 					"__type": "IntGrid",
-					"iid": "Climbable-8132",
-					"layerDefUid": 4201,
+					"__cWid": 60,
+					"__cHei": 18,
+					"__gridSize": 16,
+					"__opacity": 0.6,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "Water-8133",
+					"levelId": 8123,
+					"layerDefUid": 4140,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -72194,19 +72452,6 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 					],
-					"__cWid": 60,
-					"__cHei": 18,
-					"__gridSize": 16,
-					"__opacity": 1,
-					"__pxTotalOffsetX": 0,
-					"__pxTotalOffsetY": 0,
-					"__tilesetDefUid": null,
-					"__tilesetRelPath": null,
-					"levelId": 8123,
-					"pxOffsetX": 0,
-					"pxOffsetY": 0,
-					"visible": true,
-					"optionalRules": [],
 					"autoLayerTiles": [],
 					"seed": 8123,
 					"overrideTilesetUid": null,
@@ -72214,10 +72459,23 @@
 					"entityInstances": []
 				},
 				{
-					"__identifier": "Water",
+					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Water-8133",
-					"layerDefUid": 4140,
+					"__cWid": 60,
+					"__cHei": 18,
+					"__gridSize": 16,
+					"__opacity": 0.6,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "Climbable-8132",
+					"levelId": 8123,
+					"layerDefUid": 4201,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -72251,6 +72509,15 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 					],
+					"autoLayerTiles": [],
+					"seed": 8123,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				},
+				{
+					"__identifier": "AmbitionCameras",
+					"__type": "Entities",
 					"__cWid": 60,
 					"__cHei": 18,
 					"__gridSize": 16,
@@ -72259,19 +72526,84 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
+					"iid": "AmbitionCameras-8134",
 					"levelId": 8123,
+					"layerDefUid": 5743,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
+					"intGridCsv": [],
 					"autoLayerTiles": [],
 					"seed": 8123,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"iid": "CameraZone-8130",
+							"width": 960,
+							"height": 288,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "breakable_wall_lab_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["breakable_wall_lab_camera"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "breakable_wall_lab_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["breakable_wall_lab_camera"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] },
+								{ "__identifier": "priority", "__type": "Int", "__value": 0, "__tile": null, "defUid": 4329, "realEditorValues": [] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": null, "__tile": null, "defUid": 4330, "realEditorValues": [] },
+								{ "__identifier": "target_offset_x", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4331, "realEditorValues": [] },
+								{ "__identifier": "target_offset_y", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4332, "realEditorValues": [] },
+								{ "__identifier": "easing_hz", "__type": "Float", "__value": null, "__tile": null, "defUid": 4333, "realEditorValues": [] },
+								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
+							],
+							"__worldX": 86016,
+							"__worldY": 0
+						}
+					]
+				},
+				{
+					"__identifier": "AmbitionLoops",
+					"__type": "Entities",
+					"__cWid": 60,
+					"__cHei": 18,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "2f8dda80-bde0-11f1-9418-b51e38137f0e",
+					"levelId": 8123,
+					"layerDefUid": 6891,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"intGridCsv": [],
+					"autoLayerTiles": [],
+					"seed": 2943972,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
 				}
 			],
-			"__neighbours": []
+			"__neighbours": [{ "levelIid": "breakable_wall_lab_secret-8135", "dir": "e" }]
 		},
 		{
 			"identifier": "breakable_wall_lab_secret",
@@ -72282,14 +72614,14 @@
 			"worldDepth": 0,
 			"pxWid": 640,
 			"pxHei": 288,
-			"__bgColor": "#1c1a22",
-			"bgColor": "#1c1a22",
+			"__bgColor": "#1C1A22",
+			"bgColor": "#1C1A22",
 			"useAutoIdentifier": false,
 			"bgRelPath": null,
 			"bgPos": null,
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
-			"__smartColor": "#FFFFFF",
+			"__smartColor": "#828185",
 			"__bgPos": null,
 			"externalRelPath": null,
 			"fieldInstances": [
@@ -72305,17 +72637,51 @@
 					"id": "V_String",
 					"params": ["tech_bros_disruption"]
 				}] },
+				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
+				{ "__identifier": "ambient_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4174, "realEditorValues": [] },
+				{ "__identifier": "visual_theme", "__type": "String", "__value": null, "__tile": null, "defUid": 4175, "realEditorValues": [] },
+				{ "__identifier": "visual_profile", "__type": "String", "__value": null, "__tile": null, "defUid": 4336, "realEditorValues": [] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "lab", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["lab"]
-				}] }
+				}] },
+				{ "__identifier": "palette", "__type": "String", "__value": null, "__tile": null, "defUid": 4338, "realEditorValues": [] },
+				{ "__identifier": "lighting_hint", "__type": "String", "__value": null, "__tile": null, "defUid": 4339, "realEditorValues": [] },
+				{ "__identifier": "foreground_treatment", "__type": "String", "__value": null, "__tile": null, "defUid": 4340, "realEditorValues": [] },
+				{ "__identifier": "nameplate_full_opacity_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6573, "realEditorValues": [] },
+				{ "__identifier": "nameplate_fade_out_count", "__type": "Int", "__value": null, "__tile": null, "defUid": 6574, "realEditorValues": [] },
+				{ "__identifier": "gallery", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6810, "realEditorValues": [] },
+				{ "__identifier": "fall_out_margin", "__type": "Int", "__value": null, "__tile": null, "defUid": 6848, "realEditorValues": [] },
+				{ "__identifier": "mode", "__type": "String", "__value": null, "__tile": null, "defUid": 6849, "realEditorValues": [] },
+				{ "__identifier": "side_out_margin", "__type": "Int", "__value": null, "__tile": null, "defUid": 6850, "realEditorValues": [] },
+				{ "__identifier": "rise_out_margin", "__type": "Int", "__value": null, "__tile": null, "defUid": 6851, "realEditorValues": [] },
+				{ "__identifier": "enemy_respawn", "__type": "String", "__value": null, "__tile": null, "defUid": 6893, "realEditorValues": [] },
+				{ "__identifier": "entry_cutscene", "__type": "String", "__value": null, "__tile": null, "defUid": 6897, "realEditorValues": [] },
+				{ "__identifier": "while_live", "__type": "String", "__value": null, "__tile": null, "defUid": 6898, "realEditorValues": [] },
+				{ "__identifier": "practice", "__type": "Bool", "__value": false, "__tile": null, "defUid": 6915, "realEditorValues": [] },
+				{ "__identifier": "sky_scroll", "__type": "Int", "__value": null, "__tile": null, "defUid": 6949, "realEditorValues": [] },
+				{ "__identifier": "fall_rescue", "__type": "String", "__value": null, "__tile": null, "defUid": 6950, "realEditorValues": [] },
+				{ "__identifier": "boss_reward_drop", "__type": "String", "__value": null, "__tile": null, "defUid": 6951, "realEditorValues": [] }
 			],
 			"layerInstances": [
 				{
 					"__identifier": "Collision",
 					"__type": "IntGrid",
+					"__cWid": 40,
+					"__cHei": 18,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
 					"iid": "Collision-8136",
+					"levelId": 8135,
 					"layerDefUid": 5024,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -72339,19 +72705,6 @@
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 					],
-					"__cWid": 40,
-					"__cHei": 18,
-					"__gridSize": 16,
-					"__opacity": 1,
-					"__pxTotalOffsetX": 0,
-					"__pxTotalOffsetY": 0,
-					"__tilesetDefUid": null,
-					"__tilesetRelPath": null,
-					"levelId": 8135,
-					"pxOffsetX": 0,
-					"pxOffsetY": 0,
-					"visible": true,
-					"optionalRules": [],
 					"autoLayerTiles": [],
 					"seed": 8135,
 					"overrideTilesetUid": null,
@@ -72359,66 +72712,8 @@
 					"entityInstances": []
 				},
 				{
-					"__identifier": "AmbitionCameras",
-					"__type": "Entities",
-					"iid": "AmbitionCameras-8142",
-					"layerDefUid": 5743,
-					"intGridCsv": [],
-					"__cWid": 40,
-					"__cHei": 18,
-					"__gridSize": 16,
-					"__opacity": 1,
-					"__pxTotalOffsetX": 0,
-					"__pxTotalOffsetY": 0,
-					"__tilesetDefUid": null,
-					"__tilesetRelPath": null,
-					"levelId": 8135,
-					"pxOffsetX": 0,
-					"pxOffsetY": 0,
-					"visible": true,
-					"optionalRules": [],
-					"autoLayerTiles": [],
-					"seed": 8135,
-					"overrideTilesetUid": null,
-					"gridTiles": [],
-					"entityInstances": [
-						{
-							"__identifier": "CameraZone",
-							"__grid": [0,0],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#86A8E7",
-							"__worldX": 86976,
-							"__worldY": 0,
-							"iid": "CameraZone-8139",
-							"width": 640,
-							"height": 288,
-							"defUid": 4002,
-							"px": [0,0],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "breakable_wall_lab_secret_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["breakable_wall_lab_secret_camera"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "breakable_wall_lab_secret_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["breakable_wall_lab_secret_camera"]
-								}] },
-								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["Default"]
-								}] }
-							]
-						}
-					]
-				},
-				{
 					"__identifier": "Ambition",
 					"__type": "Entities",
-					"iid": "Ambition-8137",
-					"layerDefUid": 1070,
-					"intGridCsv": [],
 					"__cWid": 40,
 					"__cHei": 18,
 					"__gridSize": 16,
@@ -72427,11 +72722,14 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
+					"iid": "Ambition-8137",
 					"levelId": 8135,
+					"layerDefUid": 1070,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
+					"intGridCsv": [],
 					"autoLayerTiles": [],
 					"seed": 8135,
 					"overrideTilesetUid": null,
@@ -72442,10 +72740,8 @@
 							"__grid": [31,11],
 							"__pivot": [0,0],
 							"__tags": [],
-							"__tile": null,
+							"__tile": { "tilesetUid": 6852, "x": 0, "y": 0, "w": 256, "h": 256 },
 							"__smartColor": "#41D1FF",
-							"__worldX": 87482,
-							"__worldY": 178,
 							"iid": "PlayerStart-8146",
 							"width": 28,
 							"height": 46,
@@ -72454,7 +72750,9 @@
 							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "breakable_wall_lab_secret_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
 								"id": "V_String",
 								"params": ["breakable_wall_lab_secret_spawn"]
-							}] }]
+							}] }],
+							"__worldX": 87482,
+							"__worldY": 178
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -72463,8 +72761,6 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
-							"__worldX": 86976,
-							"__worldY": 128,
 							"iid": "LoadingZone-8138",
 							"width": 16,
 							"height": 96,
@@ -72492,15 +72788,30 @@
 									"params": ["lab_east"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
-							]
+							],
+							"__worldX": 86976,
+							"__worldY": 128
 						}
 					]
 				},
 				{
-					"__identifier": "Climbable",
+					"__identifier": "Water",
 					"__type": "IntGrid",
-					"iid": "Climbable-8140",
-					"layerDefUid": 4201,
+					"__cWid": 40,
+					"__cHei": 18,
+					"__gridSize": 16,
+					"__opacity": 0.6,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "Water-8141",
+					"levelId": 8135,
+					"layerDefUid": 4140,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -72524,19 +72835,6 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 					],
-					"__cWid": 40,
-					"__cHei": 18,
-					"__gridSize": 16,
-					"__opacity": 1,
-					"__pxTotalOffsetX": 0,
-					"__pxTotalOffsetY": 0,
-					"__tilesetDefUid": null,
-					"__tilesetRelPath": null,
-					"levelId": 8135,
-					"pxOffsetX": 0,
-					"pxOffsetY": 0,
-					"visible": true,
-					"optionalRules": [],
 					"autoLayerTiles": [],
 					"seed": 8135,
 					"overrideTilesetUid": null,
@@ -72544,10 +72842,23 @@
 					"entityInstances": []
 				},
 				{
-					"__identifier": "Water",
+					"__identifier": "Climbable",
 					"__type": "IntGrid",
-					"iid": "Water-8141",
-					"layerDefUid": 4140,
+					"__cWid": 40,
+					"__cHei": 18,
+					"__gridSize": 16,
+					"__opacity": 0.6,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "Climbable-8140",
+					"levelId": 8135,
+					"layerDefUid": 4201,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
 					"intGridCsv": [
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -72571,6 +72882,15 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 					],
+					"autoLayerTiles": [],
+					"seed": 8135,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				},
+				{
+					"__identifier": "AmbitionCameras",
+					"__type": "Entities",
 					"__cWid": 40,
 					"__cHei": 18,
 					"__gridSize": 16,
@@ -72579,19 +72899,84 @@
 					"__pxTotalOffsetY": 0,
 					"__tilesetDefUid": null,
 					"__tilesetRelPath": null,
+					"iid": "AmbitionCameras-8142",
 					"levelId": 8135,
+					"layerDefUid": 5743,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
+					"intGridCsv": [],
 					"autoLayerTiles": [],
 					"seed": 8135,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"iid": "CameraZone-8139",
+							"width": 640,
+							"height": 288,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "breakable_wall_lab_secret_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["breakable_wall_lab_secret_camera"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "breakable_wall_lab_secret_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["breakable_wall_lab_secret_camera"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] },
+								{ "__identifier": "priority", "__type": "Int", "__value": 0, "__tile": null, "defUid": 4329, "realEditorValues": [] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": null, "__tile": null, "defUid": 4330, "realEditorValues": [] },
+								{ "__identifier": "target_offset_x", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4331, "realEditorValues": [] },
+								{ "__identifier": "target_offset_y", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4332, "realEditorValues": [] },
+								{ "__identifier": "easing_hz", "__type": "Float", "__value": null, "__tile": null, "defUid": 4333, "realEditorValues": [] },
+								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
+							],
+							"__worldX": 86976,
+							"__worldY": 0
+						}
+					]
+				},
+				{
+					"__identifier": "AmbitionLoops",
+					"__type": "Entities",
+					"__cWid": 40,
+					"__cHei": 18,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "2f8e0190-bde0-11f1-9418-1fab628df7f2",
+					"levelId": 8135,
+					"layerDefUid": 6891,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"intGridCsv": [],
+					"autoLayerTiles": [],
+					"seed": 4632359,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []
 				}
 			],
-			"__neighbours": []
+			"__neighbours": [{ "levelIid": "breakable_wall_lab-8123", "dir": "w" }]
 		}
 	],
 	"worlds": [],
