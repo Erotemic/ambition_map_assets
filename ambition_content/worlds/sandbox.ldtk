@@ -13012,7 +13012,10 @@
 							"defUid": 2002,
 							"px": [592,720],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "", "__tile": null, "defUid": 3002, "realEditorValues": [] },
+								{ "__identifier": "id", "__type": "String", "__value": "scroll_lab_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["scroll_lab_door"]
+								}] },
 								{ "__identifier": "name", "__type": "String", "__value": "Loading Zone", "__tile": null, "defUid": 3003, "realEditorValues": [] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "", "__tile": null, "defUid": 3005, "realEditorValues": [] },
