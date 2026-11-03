@@ -35605,18 +35605,18 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [60,44],
+							"__grid": [25,44],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
-							"__worldX": 11200,
+							"__worldX": 10640,
 							"__worldY": -1844,
 							"iid": "EnemySpawn-410755",
 							"width": 44,
 							"height": 44,
 							"defUid": 2008,
-							"px": [960,716],
+							"px": [400,716],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "gnu_ton_works_approach_gravity_apple_3", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
