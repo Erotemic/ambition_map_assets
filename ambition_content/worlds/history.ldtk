@@ -8290,9 +8290,9 @@
 					"id": "V_String",
 					"params": ["history_savanna"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "a_possible_morning", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_africa_first_footsteps", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["a_possible_morning"]
+					"params": ["history_africa_first_footsteps"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_savanna", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -10133,9 +10133,9 @@
 					"id": "V_String",
 					"params": ["history_savanna"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "morning_on_the_eaves", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_africa_first_footsteps", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["morning_on_the_eaves"]
+					"params": ["history_africa_first_footsteps"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_savanna", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -11766,9 +11766,9 @@
 					"id": "V_String",
 					"params": ["history_green_sahara"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "the_sun_is_a_group_project", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_africa_first_footsteps", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["the_sun_is_a_group_project"]
+					"params": ["history_africa_first_footsteps"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_green_sahara", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -13384,9 +13384,9 @@
 					"id": "V_String",
 					"params": ["history_nile"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "salt_steel_and_starlight", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_africa_first_footsteps", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["salt_steel_and_starlight"]
+					"params": ["history_africa_first_footsteps"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_nile", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -16133,9 +16133,9 @@
 					"id": "V_String",
 					"params": ["history_nile"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "salt_steel_and_starlight", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_africa_first_footsteps", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["salt_steel_and_starlight"]
+					"params": ["history_africa_first_footsteps"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_nile", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -17799,9 +17799,9 @@
 					"id": "V_String",
 					"params": ["history_monsoon"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "pulse_drift_voyage", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_africa_first_footsteps", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["pulse_drift_voyage"]
+					"params": ["history_africa_first_footsteps"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_monsoon", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -19606,9 +19606,9 @@
 					"id": "V_String",
 					"params": ["history_monsoon"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "the_last_lantern", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_africa_first_footsteps", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["the_last_lantern"]
+					"params": ["history_africa_first_footsteps"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_monsoon", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -20413,9 +20413,9 @@
 					"id": "V_String",
 					"params": ["history_crescent"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "a_possible_morning", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_crescent_between_the_rivers", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["a_possible_morning"]
+					"params": ["history_crescent_between_the_rivers"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_crescent", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -21971,9 +21971,9 @@
 					"id": "V_String",
 					"params": ["history_crescent"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "the_sun_is_a_group_project", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_crescent_between_the_rivers", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["the_sun_is_a_group_project"]
+					"params": ["history_crescent_between_the_rivers"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_crescent", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -23991,9 +23991,9 @@
 					"id": "V_String",
 					"params": ["history_crescent"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "carry_the_one", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_crescent_between_the_rivers", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["carry_the_one"]
+					"params": ["history_crescent_between_the_rivers"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_crescent", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -24823,9 +24823,9 @@
 					"id": "V_String",
 					"params": ["history_crescent"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "carry_the_one", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_crescent_between_the_rivers", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["carry_the_one"]
+					"params": ["history_crescent_between_the_rivers"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_crescent", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -26528,9 +26528,9 @@
 					"id": "V_String",
 					"params": ["history_classical"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "standing_on_shoulders", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_crescent_between_the_rivers", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["standing_on_shoulders"]
+					"params": ["history_crescent_between_the_rivers"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_classical", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -29382,9 +29382,9 @@
 					"id": "V_String",
 					"params": ["history_ice_age"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "the_last_lantern", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_europe_solstice_stones", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["the_last_lantern"]
+					"params": ["history_europe_solstice_stones"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_ice_age", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -31777,9 +31777,9 @@
 					"id": "V_String",
 					"params": ["history_megalith"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "cedar_light_guitar_study", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_europe_solstice_stones", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["cedar_light_guitar_study"]
+					"params": ["history_europe_solstice_stones"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_megalith", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -33359,9 +33359,9 @@
 					"id": "V_String",
 					"params": ["history_megalith"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "cedar_light_many_rooms", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_europe_solstice_stones", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["cedar_light_many_rooms"]
+					"params": ["history_europe_solstice_stones"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_megalith", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -35058,9 +35058,9 @@
 					"id": "V_String",
 					"params": ["history_northwoods"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "fighters_guild_oath_of_steel", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_europe_solstice_stones", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["fighters_guild_oath_of_steel"]
+					"params": ["history_europe_solstice_stones"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_northwoods", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -36640,9 +36640,9 @@
 					"id": "V_String",
 					"params": ["history_northwoods"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "ten_fathoms_and_a_grudge", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_europe_solstice_stones", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["ten_fathoms_and_a_grudge"]
+					"params": ["history_europe_solstice_stones"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_northwoods", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -42714,9 +42714,9 @@
 					"id": "V_String",
 					"params": ["history_indus"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "pulse_drift_voyage", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_south_asia_monsoon_road", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["pulse_drift_voyage"]
+					"params": ["history_south_asia_monsoon_road"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_indus", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -44272,9 +44272,9 @@
 					"id": "V_String",
 					"params": ["history_indus"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "carry_the_one", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_south_asia_monsoon_road", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["carry_the_one"]
+					"params": ["history_south_asia_monsoon_road"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_indus", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -45841,9 +45841,9 @@
 					"id": "V_String",
 					"params": ["history_indus"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "salt_steel_and_starlight", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_south_asia_monsoon_road", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["salt_steel_and_starlight"]
+					"params": ["history_south_asia_monsoon_road"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_indus", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -47414,9 +47414,9 @@
 					"id": "V_String",
 					"params": ["history_sahul"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "long_lofi_drift", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_oceania_sahul", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["long_lofi_drift"]
+					"params": ["history_oceania_sahul"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_sahul", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -49050,9 +49050,9 @@
 					"id": "V_String",
 					"params": ["history_highlands"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "birds_in_the_rafters", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_oceania_sahul", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["birds_in_the_rafters"]
+					"params": ["history_oceania_sahul"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_highlands", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -50556,9 +50556,9 @@
 					"id": "V_String",
 					"params": ["history_ice_age"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "hawks_of_the_high_aerie", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_east_asia_yellow_earth", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["hawks_of_the_high_aerie"]
+					"params": ["history_east_asia_yellow_earth"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_ice_age", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -52114,9 +52114,9 @@
 					"id": "V_String",
 					"params": ["history_yellow_river"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "shoulders_at_rest", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_east_asia_yellow_earth", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["shoulders_at_rest"]
+					"params": ["history_east_asia_yellow_earth"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_yellow_river", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -53726,9 +53726,9 @@
 					"id": "V_String",
 					"params": ["history_yellow_river"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "tritone_decree", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_east_asia_yellow_earth", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["tritone_decree"]
+					"params": ["history_east_asia_yellow_earth"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_yellow_river", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -55336,9 +55336,9 @@
 					"id": "V_String",
 					"params": ["history_silk"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "spaghetti_western", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_east_asia_yellow_earth", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["spaghetti_western"]
+					"params": ["history_east_asia_yellow_earth"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_silk", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -57094,9 +57094,9 @@
 					"id": "V_String",
 					"params": ["history_steppe"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "hawks_of_the_high_aerie", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_east_asia_yellow_earth", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["hawks_of_the_high_aerie"]
+					"params": ["history_east_asia_yellow_earth"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_steppe", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -58972,9 +58972,9 @@
 					"id": "V_String",
 					"params": ["history_steppe"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "hawks_of_the_high_aerie", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_east_asia_yellow_earth", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["hawks_of_the_high_aerie"]
+					"params": ["history_east_asia_yellow_earth"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_steppe", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -59754,9 +59754,9 @@
 					"id": "V_String",
 					"params": ["history_ice_age"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "the_last_lantern", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_americas_land_bridge", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["the_last_lantern"]
+					"params": ["history_americas_land_bridge"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_ice_age", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
@@ -61274,9 +61274,9 @@
 					"id": "V_String",
 					"params": ["history_maize"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "the_sun_is_a_group_project", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "history_americas_land_bridge", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["the_sun_is_a_group_project"]
+					"params": ["history_americas_land_bridge"]
 				}] },
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "history_maize", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
