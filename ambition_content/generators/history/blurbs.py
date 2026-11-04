@@ -90,6 +90,15 @@ BLURB = {
     "history_dong_son": (
         "WHERE: the Red River valley, northern Vietnam. WHEN: about 600 BCE-43 CE.",
         "FACT: in 40 CE the Trưng sisters led a rising against Han China and ruled until 43 CE."),
+    "history_srivijaya": (
+        "WHERE: Palembang, Sumatra (Indonesia), on the Strait of Malacca. WHEN: about 650-1290 CE.",
+        "FACT: the Kedukan Bukit stone of 682 CE, found at Palembang, is the oldest known writing in the Malay language."),
+    "history_borobudur": (
+        "WHERE: the Kedu plain, central Java (Indonesia). WHEN: built about 780-830 CE.",
+        "FACT: Borobudur has 2,672 relief panels and 504 statues; it is the largest Buddhist monument in the world."),
+    "history_angkor": (
+        "WHERE: Angkor, north-west Cambodia. WHEN: 802-1431 CE; this room about 1150-1200 CE.",
+        "FACT: Greater Angkor covered about 1,000 square km: by area, the largest city in the world before industry."),
     # ---- Oceania ----
     "history_sahul": (
         "WHERE: Sahul: Australia, New Guinea and Tasmania, one land when the sea was low. WHEN: 65,000-45,000 years ago.",

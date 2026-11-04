@@ -86,6 +86,8 @@ GRID = {
     (1, 2.5): "history_sulawesi",
     (2, 2.5): "history_austronesian_islands",
     (3, 2.5): "history_dong_son",
+    (4, 2.5): "history_srivijaya",
+    (5, 2.5): "history_angkor",
     (1, 3): "history_southern_route",
     (1, 4): "history_ice_age_europe",
     (1, 5): "history_levant",
@@ -231,7 +233,8 @@ GER = "history_great_ger"
 LIBRARY = "history_timbuktu_library"
 MILL = "history_cotton_mill"
 CAVE = "history_painted_cave"
-BUILDINGS = (GRANARY, TOMB, COLOSSEUM, GER, LIBRARY, MILL, CAVE)
+BOROBUDUR = "history_borobudur"
+BUILDINGS = (GRANARY, TOMB, COLOSSEUM, GER, LIBRARY, MILL, CAVE, BOROBUDUR)
 
 BG = "#3A2A1C"
 #: A room of the grid (`W`, `H`, at the top of the file); the floor has 64 of
@@ -246,6 +249,8 @@ for _rid in CELLS:
     _c0, _c1, _rows = span(_rid)
     ROOMS_AT[_rid] = ((_c0 * W, ROW_Y[_rows[0]]), ((_c1 - _c0 + 1) * W, len(_rows) * H))
 ROOMS_AT.update({rid: ((n * 1792, len(ROW_ORDER) * H + 400), (1600, 640)) for n, rid in enumerate(BUILDINGS)})
+#: Borobudur is climbed: nine terraces, two rows high.
+ROOMS_AT[BOROBUDUR] = (ROOMS_AT[BOROBUDUR][0], (1600, 2 * H))
 
 #: One cue for each floor (region), so the music stays with the player who
 #: walks east through the ages. A building takes the cue of its region,
@@ -290,6 +295,9 @@ MUSIC = {
     "history_sulawesi": SE_ASIA,
     "history_austronesian_islands": SE_ASIA,
     "history_dong_son": SE_ASIA,
+    "history_srivijaya": SE_ASIA,
+    "history_angkor": SE_ASIA,
+    BOROBUDUR: SE_ASIA,
     "history_new_guinea_highlands": OCEANIA,
     "history_mammoth_steppe": EAST_ASIA,
     "history_yellow_river": EAST_ASIA,
@@ -335,6 +343,7 @@ BIOME = {
     "history_sahul": "history_sahul",
     "history_sulawesi": "history_wallacea", "history_austronesian_islands": "history_austronesia",
     "history_dong_son": "history_red_river",
+    "history_srivijaya": "history_strait", BOROBUDUR: "history_borobudur", "history_angkor": "history_angkor",
     "history_new_guinea_highlands": "history_highlands",
     "history_yellow_river": "history_yellow_river", "history_shang_court": "history_yellow_river",
     "history_silk_road": "history_silk",
@@ -374,6 +383,7 @@ BOX = {
     "andean_condor": (80, 40),
     # Wave C: Southeast Asia.
     "sulawesi_warty_pig": (64, 40), "saltwater_crocodile": (120, 32),
+    "water_monitor": (96, 24), "king_cobra": (48, 48),
 }
 
 DOOR_W, DOOR_H = 48, 192
@@ -1328,6 +1338,152 @@ def dong_son():
     return grid_room(rid, "DONG SON", e, gaps=[g1, g2])
 
 
+def srivijaya():
+    """Srivijaya, about 670-1025 CE: Palembang on the Musi river in
+    Sumatra. Whoever held the Strait of Malacca held the sea road between
+    India and China, and Srivijaya held it for centuries. A jong carries you
+    over the river; then the low covered wharf of the warehouses, with a
+    way over their roofs. A door goes to Java, to Borobudur: the Sailendra
+    kings who raised it later ruled Srivijaya too."""
+    rid = "history_srivijaya"
+    stuff, gap = crossing(rid, "the Musi river (monitor lizards)", (900, 1560), "history_jong", w=224)
+    roof_y = FLOOR - 200
+    e = [
+        *stuff,
+        start(rid, 160, FLOOR),
+        npc("history_yijing", 360, FLOOR, 65),
+        sign("srivijaya_sign_yijing", 420, FLOOR - 300, "671 CE: Yijing stopped here to learn Sanskrit, with a thousand monks. He stayed years.", 790),
+        door("srivijaya_borobudur_door", "to Java: Borobudur", 620, FLOOR, BOROBUDUR, f"{BOROBUDUR}_door"),
+        sign("srivijaya_sign_java", 644, FLOOR - DOOR_H - 40, "TO JAVA: the Sailendra kings raised Borobudur, then ruled here too", 600),
+        sign("srivijaya_sign_strait", 1230, FLOOR - 290, "THE STRAIT: every ship from India to China passes here. Pay the toll.", 636),
+        enemy(rid, 1, "water_monitor", 1700, FLOOR),
+        # The warehouses: a low covered wharf, and a way over the roofs.
+        ledge("roof_step_a", 1680, FLOOR - 80, 120),
+        ledge("roof_step_b", 1790, FLOOR - 150, 100),
+        solid("warehouse_roof", 1900, roof_y, 760, 24),
+        prop_at("goods_1", "history_trade_goods", 2000, FLOOR, 80, 48),
+        npc("history_harbour_master", 2160, FLOOR, 64),
+        enemy(rid, 2, "water_monitor", 2420, FLOOR),
+        prop_at("goods_2", "history_trade_goods", 2560, FLOOR, 80, 48),
+        sign("srivijaya_sign_wharf", 2280, FLOOR - 130, "CLOVES, CAMPHOR, GOLD, CHINESE JARS: weighed here", 450),
+        chest("the Kedukan Bukit stone (a rubbing)", 2300, roof_y, "currency:120"),
+        sign("srivijaya_sign_stone", 2280, roof_y - 80, "682 CE: the Kedukan Bukit stone, the oldest writing in Malay, was carved here", 711),
+        sign("srivijaya_sign", 1400, 140, "SRIVIJAYA: who holds the strait holds the sea road, 650-1290 CE", 580),
+    ]
+    return grid_room(rid, "SRIVIJAYA", e, gaps=[gap])
+
+
+#: Borobudur's galleries: six square terraces, one over the next, each a
+#: walk past its relief panels, joined by stairs at alternate ends (the
+#: pilgrim walks every gallery before going up); then three round terraces
+#: of stupas. A gallery is `GALLERY_RISE` over the one under it: two steps.
+GALLERY_RISE = 136
+STAIR_W = 128
+
+
+def borobudur():
+    """Borobudur, about 825 CE: the largest Buddhist monument in the world,
+    on a hill in the Kedu plain of central Java. You climb it gallery by
+    gallery, past the relief panels (2,672 of them; one shows a ship that
+    was built again in 2003 and sailed to Ghana) to the round terraces of
+    the latticed bell stupas. No images of the Buddha are shown: the stupas
+    are closed and the reliefs are of daily life."""
+    rid = BOROBUDUR
+    w, h = ROOMS_AT[rid][1]
+    g = h - 64
+    e = [
+        solid("floor", 0, g, w, h - g),
+        solid("ceiling", 0, 0, w, CEILING),
+        solid("west_wall", 0, CEILING, WALL, g - CEILING),
+        solid("east_wall", w - WALL, CEILING, WALL, g - CEILING),
+        door(f"{rid}_door", "back to Srivijaya", 40, g, "history_srivijaya", "srivijaya_borobudur_door"),
+        start(rid, 140, g),
+        *blurb(rid, w // 2),
+        sign("borobudur_sign", 800, 124, "BOROBUDUR: two million blocks of stone, no mortar, no roof. You walk it.", 670),
+        prop_at("hidden_foot", "history_ship_relief", 360, g, 128, 64),
+        sign("borobudur_sign_foot", 360, g - 100, "THE HIDDEN FOOT: 160 panels of daily life, walled over, found in 1885", 621),
+    ]
+    below = g
+    for k in range(6):
+        y = below - GALLERY_RISE
+        # The stair up to this gallery: east for the first, then west, then east...
+        if k % 2 == 0:
+            hole = (w - WALL - STAIR_W, w - WALL)
+        else:
+            hole = (WALL, WALL + STAIR_W)
+        if k % 2 == 0:
+            e.append(solid(f"gallery_{k}", WALL, y, hole[0] - WALL, 24))
+        else:
+            e.append(solid(f"gallery_{k}", hole[1], y, w - WALL - hole[1], 24))
+        e.append(ledge(f"stair_{k}", hole[0] + 16, below - GALLERY_RISE // 2, STAIR_W - 32))
+        if k < 5:
+            e.append(prop_at(f"relief_{k}_a", "history_ship_relief", 520, y, 128, 64))
+            e.append(prop_at(f"relief_{k}_b", "history_ship_relief", 1080, y, 128, 64))
+        below = y
+    top = below
+    # The round terraces, each a step up and in from the last.
+    for r, (a, b) in enumerate(((480, 1120), (560, 1040), (640, 960))):
+        e.append(solid(f"round_terrace_{r}", a, top - (r + 1) * 68, b - a, 68))
+    e += [
+        prop_at("stupa_0_w", "history_bell_stupa", 520, top - 68, 64, 80),
+        prop_at("stupa_0_e", "history_bell_stupa", 1080, top - 68, 64, 80),
+        prop_at("stupa_1_w", "history_bell_stupa", 600, top - 136, 64, 80),
+        prop_at("stupa_1_e", "history_bell_stupa", 1000, top - 136, 64, 80),
+        prop_at("stupa_2_w", "history_bell_stupa", 690, top - 204, 64, 80),
+        prop_at("great_stupa", "history_bell_stupa", 800, top - 204, 64, 80),
+        prop_at("stupa_2_e", "history_bell_stupa", 910, top - 204, 64, 80),
+        npc("history_relief_carver", 760, g - 2 * GALLERY_RISE, 63),
+        sign("borobudur_sign_ship", 900, g - 3 * GALLERY_RISE - 100, "THE SHIP: carved about 800 CE. In 2003 a copy was built from it and sailed to Ghana.", 765),
+        sign("borobudur_sign_1814", 800, g - 4 * GALLERY_RISE - 100, "1814: under volcanic ash and forest. The people nearby had never forgotten it.", 711),
+        sign("borobudur_sign_round", 300, top - 60, "THE ROUND TERRACES: 72 latticed stupas around the great one", 540),
+        chest("a rubbing of the ship", 300, g - 5 * GALLERY_RISE, "currency:150"),
+    ]
+    at, size = ROOMS_AT[rid]
+    return rid, room(rid, e, at=at, size=size, biome=BIOME[rid], music=MUSIC[rid], bg=BG, title="BOROBUDUR",
+                     generator=GENERATOR)
+
+
+def angkor():
+    """Angkor, about 1150-1200 CE: the Khmer capital, a city of water. By
+    area the largest city before industry: reservoirs (barays) dug by hand,
+    canals that floated the sandstone down from the Kulen hills, and the
+    moat of Angkor Wat, crossed by its causeway. Zhou Daguan came from China
+    in 1296 and wrote the only eyewitness account of daily life here."""
+    rid = "history_angkor"
+    moat = (1060, 1640)
+    e = [
+        start(rid, 160, FLOOR),
+        # The West Baray's dike: a raised bank of earth.
+        ledge("dike_a", 300, FLOOR - 72, 220),
+        ledge("dike_b", 440, FLOOR - 144, 260),
+        npc("history_baray_engineer", 560, FLOOR - 144, 61),
+        sign("angkor_sign_baray", 560, FLOOR - 380, "THE WEST BARAY: 8 km by 2 km of water, dug by hand about 1050 CE", 600),
+        prop_at("blocks", "history_sandstone_blocks", 820, FLOOR, 80, 40),
+        sign("angkor_sign_stone", 820, FLOOR - 130, "SANDSTONE: floated down canals from the Kulen hills. See the peg holes?", 654),
+        prop_at("cart", "history_ox_cart", 960, FLOOR, 96, 64),
+        # The moat, and the causeway over it.
+        solid("moat_bed", moat[0], FLOOR + 48, moat[1] - moat[0], H - FLOOR - 48),
+        water(f"{rid}_moat", moat[0], FLOOR + 8, moat[1] - moat[0], 40),
+        solid("causeway", moat[0], FLOOR - 16, moat[1] - moat[0], 24),
+        enemy(rid, 1, "saltwater_crocodile", 1300, FLOOR + 48),
+        enemy(rid, 1, "king_cobra", 1240, FLOOR - 16),
+        enemy(rid, 2, "king_cobra", 1520, FLOOR - 16),
+        sign("angkor_sign_moat", 1350, FLOOR - 240, "THE MOAT: 190 metres wide. Zhou Daguan saw crocodiles in the great lake.", 700),
+        # Angkor Wat: three tiers, each higher than the last.
+        solid("wat_tier_1", 1760, FLOOR - 72, 880, 72),
+        solid("wat_tier_2", 1880, FLOOR - 144, 640, 72),
+        solid("wat_tier_3", 2020, FLOOR - 216, 360, 72),
+        npc("history_zhou_da_guide", 2200, FLOOR - 216, 66),
+        sign("angkor_sign_guide", 2200, FLOOR - 420, "ZHOU DA-GUIDE'S TOURS: the only eyewitness, since 1296", 520),
+        sign("angkor_sign_wat", 2200, FLOOR - 380, "ANGKOR WAT, about 1113-1150 CE. It is on the flag of Cambodia.", 590),
+        chest("a lotus of gilt bronze", 2470, FLOOR - 144, "currency:150"),
+        enemy(rid, 3, "king_cobra", 2700, FLOOR),
+        sign("angkor_sign_area", 1400, 180, "BY AREA THE LARGEST CITY BEFORE INDUSTRY: about 1,000 square km", 610),
+        sign("angkor_sign", 1400, 140, "ANGKOR: a city of water, 802-1431 CE", 360),
+    ]
+    return grid_room(rid, "ANGKOR", e, gaps=[moat])
+
+
 # ---- R3: South Asia ----------------------------------------------------------
 
 
@@ -2014,7 +2170,7 @@ def door_of_no_return():
 
 
 #: The rooms, by floor from the bottom (Africa) to the top.
-ROOMS = (sulawesi, austronesian_islands, dong_son, cradle, southern_coast, green_sahara, nile, tomb, aksum, timbuktu, library, benin_city, door_of_no_return,
+ROOMS = (sulawesi, austronesian_islands, dong_son, srivijaya, borobudur, angkor, cradle, southern_coast, green_sahara, nile, tomb, aksum, timbuktu, library, benin_city, door_of_no_return,
          levant, crescent, granary, uruk, classical, colosseum,
          ice_age_europe, painted_cave, first_farmers_of_europe, megalith_builders, celtic_frontier, viking_north, sail,
          industrial, mill,
