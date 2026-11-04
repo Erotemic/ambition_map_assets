@@ -27,8 +27,8 @@ everyone starts in Africa (`tools/ambition_ldtk_tools/specs/check_flat_map.py hi
              C0       C1            C2              C3           C4          C5          C6     C7
     R0 Americas       beringia ┐    maize           olmecs       maya        taino       haiti
     R½ S. America     beringia ┘    andes           caral
-    R1 East Asia      mammoth st.┐  yellow river    shang        silk road   steppe
-    R1½ E. coasts     mammoth st.┘  jōmon           taiwan       silla
+    R1 East Asia      mammoth st.┐  yellow river    shang        silk road   song        steppe
+    R1½ E. coasts     mammoth st.┘  jōmon           taiwan       silla       joseon      heian
     R2 Oceania        sahul         highlands       lapita       wayfinders  rapa nui
     R2½ SE Asia       sulawesi      austronesians   dong son     srivijaya   angkor
     R3 South Asia     south. route  mehrgarh        indus
@@ -92,6 +92,11 @@ GRID = {
     (2, 1.5): "history_jomon",
     (3, 1.5): "history_taiwan",
     (4, 1.5): "history_silla",
+    # Korea goes on east of Silla: Joseon, under Song China, whose printing
+    # Korea took further; then Heian Japan, the other court that wrote its
+    # own language in its own letters.
+    (5, 1.5): "history_joseon",
+    (6, 1.5): "history_heian",
     # Southeast Asia, a floor between Oceania and South Asia: the dispersal
     # crossed Wallacea by sea, and the Austronesians sailed through it.
     (1, 2.5): "history_sulawesi",
@@ -127,7 +132,9 @@ GRID = {
     (4, 6): "history_aksum_and_kush",
     (5, 0): "history_taino_islands",
     (6, 0): "history_haitian_revolution",
-    (5, 1): "history_mongol_steppe",
+    # Song China, between the Silk Road and the Great Wall.
+    (5, 1): "history_song",
+    (6, 1): "history_mongol_steppe",
     (5, 2): "history_rapa_nui",
     (5, 4): "history_viking_north",
     (5, 6): "history_timbuktu_coast",
@@ -198,6 +205,8 @@ LINKS = {
     (3, 1.5): 1800,
     # Silla's tombs hold glass from the far end of the Silk Road.
     (4, 1): 2460,
+    # Printing: Song China's movable type; Korea's metal type after it.
+    (5, 1): 2080,
     # The first cities: tin from the north to Uruk; Uruk and Egypt trade.
     (3, 4): 2100,
     (3, 5): 176,
@@ -281,6 +290,7 @@ OCEANIA = "history_oceania_sahul"
 #: music is right there.
 NO_RETURN = "history_atlantic_no_return"
 SE_ASIA = "history_southeast_asia_bronze_and_rain"
+COURTS = "history_east_asia_ink_and_silk"
 MUSIC = {
     "history_cradle": AFRICA,
     "history_southern_coast": AFRICA,
@@ -312,6 +322,9 @@ MUSIC = {
     "history_jomon": EAST_ASIA,
     "history_taiwan": EAST_ASIA,
     "history_silla": EAST_ASIA,
+    "history_song": COURTS,
+    "history_joseon": COURTS,
+    "history_heian": COURTS,
     "history_angkor": SE_ASIA,
     BOROBUDUR: SE_ASIA,
     "history_new_guinea_highlands": OCEANIA,
@@ -361,6 +374,7 @@ BIOME = {
     "history_dong_son": "history_red_river",
     "history_srivijaya": "history_strait", BOROBUDUR: "history_borobudur", "history_angkor": "history_angkor",
     "history_jomon": "history_jomon", "history_taiwan": "history_taiwan", "history_silla": "history_gyeongju",
+    "history_song": "history_hangzhou", "history_joseon": "history_hanyang", "history_heian": "history_heian",
     "history_new_guinea_highlands": "history_highlands",
     "history_yellow_river": "history_yellow_river", "history_shang_court": "history_yellow_river",
     "history_silk_road": "history_silk",
@@ -403,6 +417,7 @@ BOX = {
     "water_monitor": (96, 24), "king_cobra": (48, 48),
     # Wave D: East Asia's coasts.
     "asian_black_bear": (72, 56), "japanese_macaque": (40, 40), "clouded_leopard": (80, 40),
+    "tanuki": (48, 32),
 }
 
 DOOR_W, DOOR_H = 48, 192
@@ -1609,6 +1624,121 @@ def silla():
     return grid_room(rid, "SILLA", e)
 
 
+def song():
+    """Hangzhou, about 1200 CE: Lin'an, the Southern Song capital after the
+    Jurchen took Kaifeng in 1127; by some estimates the largest city in the
+    world. The state prints paper money; movable type (Bi Sheng, about 1040)
+    and the compass at sea are a century old. A pleasure boat carries you
+    over West Lake; the Leifeng pagoda to climb; the way down to Korea,
+    where printing went on. West: the Silk Road; east: the Great Wall."""
+    rid = "history_song"
+    down = LINKS[(5, 1)]
+    stuff, gap = crossing(rid, "West Lake", (760, 1440), "history_lake_boat", w=168, speed=70.0)
+    e = [
+        *stuff,
+        start(rid, 160, FLOOR),
+        npc("history_li_qingzhao", 360, FLOOR, 62),
+        sign("song_sign_li", 380, FLOOR - 220, "LI QINGZHAO, the great poet of the Song, fled south when Kaifeng fell (1127)", 760),
+        prop_at("compass", "history_compass_bowl", 600, FLOOR, 32, 24),
+        sign("song_sign_compass", 600, FLOOR - 110, "THE SOUTH-POINTING FISH (1044): a magnetized iron leaf, afloat", 600),
+        sign("song_sign_lake", 1100, FLOOR - 300, "WEST LAKE: Su Shi, poet and governor, piled its mud into a causeway (1090)", 720),
+        enemy(rid, 1, "silk_moth", 1100, FLOOR - 420),
+        npc("history_money_printer", 1620, FLOOR, 64),
+        prop_at("money_press", "history_money_press", 1780, FLOOR, 80, 64),
+        sign("song_sign_money", 1700, FLOOR - 200, "HUIZI: paper money, printed by the state from 1160", 520),
+        enemy(rid, 1, "tiger", 1940, FLOOR),
+        sign("song_sign_down", down + HOLE // 2, FLOOR - 300, "DOWN: Korea, where printing went on: wood, then metal type", 580),
+        # The Leifeng pagoda (975 CE): up its eaves.
+        prop_at("pagoda", "history_pagoda", 2420, FLOOR, 128, 256),
+        ledge("pagoda_eave_a", 2320, FLOOR - 80, 200),
+        ledge("pagoda_eave_b", 2360, FLOOR - 160, 120),
+        chest("a string of 1,000 copper cash", 2420, FLOOR - 160, "currency:120"),
+        sign("song_sign_type", 2420, FLOOR - 330, "MOVABLE TYPE: Bi Sheng made it of baked clay, about 1040", 560),
+        enemy(rid, 2, "silk_moth", 2620, FLOOR - 300),
+        sign("song_sign_restaurants", 2000, FLOOR - 380, "A GUIDE OF 1274 lists the city's restaurants, and hundreds of dishes", 680),
+        sign("song_sign", 1400, 140, "HANGZHOU: perhaps the largest city on Earth, 1127-1279 CE", 580),
+    ]
+    return grid_room(rid, "SONG CHINA", e, gaps=[gap])
+
+
+def joseon():
+    """Hanyang (Seoul), 1446 CE: King Sejong publishes the Hunminjeongeum,
+    "the correct sounds to teach the people": 28 letters, now called
+    Hangul, made so that everyone could read. His engineer Jang Yeong-sil,
+    born a government slave, made the self-striking water clock (1434); the
+    record gives the rain gauge (1441) to the crown prince, and the court
+    sent one to every province. The water clock and the Hall of Worthies to
+    climb. Up: Song China, whose printing Korea took further."""
+    rid = "history_joseon"
+    up = LINKS[(5, 1)]
+    e = [
+        start(rid, 160, FLOOR),
+        npc("history_king_sejong", 440, FLOOR, 67),
+        sign("joseon_sign_letters", 440, FLOOR - 220, "1446: 28 LETTERS, made so that everyone could read", 520),
+        sign("joseon_sign_morning", 480, FLOOR - 330, "'A wise man learns them before the morning is over; a fool, in ten days.'", 720),
+        enemy(rid, 1, "tiger", 780, FLOOR),
+        # The water clock: up its stepped stone stands (the lowest on the
+        # right), then over to the roof of the cabinet of figures.
+        prop_at("water_clock", "history_water_clock", 1200, FLOOR, 128, 128),
+        ledge("clock_stand_low", 1166, FLOOR - 41, 28),
+        ledge("clock_stand_high", 1140, FLOOR - 78, 26),
+        ledge("clock_cabinet", 1212, FLOOR - 110, 52),
+        chest("a page of Gabin type (1434)", 1238, FLOOR - 110, "currency:120"),
+        sign("joseon_sign_clock", 1200, FLOOR - 240, "THE SELF-STRIKING WATER CLOCK (1434): bell, drum and gong, by themselves", 700),
+        npc("history_jang_yeongsil", 1460, FLOOR, 65),
+        prop_at("rain_gauge", "history_rain_gauge", 1560, FLOOR, 32, 56),
+        sign("joseon_sign_gauge", 1500, FLOOR - 200, "THE RAIN GAUGE (1441): one standard cylinder, in every province", 560),
+        sign("joseon_sign_jang", 1500, FLOOR - 310, "JANG YEONG-SIL: born a government slave; the king made him an official", 690),
+        # The Hall of Worthies: its terrace and its eaves.
+        ledge("worthies_terrace", 1700, FLOOR - 72, 220),
+        ledge("worthies_eave", 1740, FLOOR - 144, 140),
+        sign("joseon_sign_worthies", 1810, FLOOR - 400, "THE HALL OF WORTHIES: its scholars wrote the letters' explanation", 640),
+        sign("joseon_sign_up", up + HOLE // 2, FLOOR - 470, "UP: Song China. Its printing came this way.", 440),
+        enemy(rid, 1, "asian_black_bear", 2400, FLOOR),
+        enemy(rid, 2, "tiger", 2640, FLOOR),
+        sign("joseon_sign", 1400, 140, "JOSEON: King Sejong's letters, 1446 CE", 420),
+    ]
+    return grid_room(rid, "JOSEON", e)
+
+
+def heian():
+    """Heian-kyō (Kyoto), about 1000 CE: the court of the Fujiwara regents,
+    where women wrote some of the first great works of prose, in kana:
+    Murasaki Shikibu's The Tale of Genji and Sei Shōnagon's The Pillow
+    Book. They served rival empresses. The street and its ox carriage; the
+    garden pond and its red bridge; a mansion's veranda and roof."""
+    rid = "history_heian"
+    pond = (960, 1140)
+    roof_y = FLOOR - 216
+    e = [
+        start(rid, 160, FLOOR),
+        prop_at("ox_carriage", "history_ox_carriage", 440, FLOOR, 112, 80),
+        sign("heian_sign_carriage", 440, FLOOR - 160, "IN GENJI, two ladies' servants brawl over a place to watch a parade", 660),
+        enemy(rid, 1, "tanuki", 700, FLOOR),
+        # The garden pond, and the red bridge over it.
+        entity("HazardBlock", pond[0], H - 16, pond[1] - pond[0], 16, name="the garden pond"),
+        ledge("bridge_west", 900, FLOOR - 40, 110),
+        ledge("bridge_top", 995, FLOOR - 76, 110),
+        ledge("bridge_east", 1090, FLOOR - 40, 110),
+        npc("history_murasaki_shikibu", 1340, FLOOR, 60),
+        prop_at("screen", "history_byobu_screen", 1480, FLOOR, 96, 64),
+        sign("heian_sign_genji", 1380, FLOOR - 220, "THE TALE OF GENJI, about 1008: 54 chapters, some 400 people", 620),
+        sign("heian_sign_kana", 1380, FLOOR - 330, "KANA: Japan's own letters for its own sounds", 460),
+        enemy(rid, 1, "japanese_macaque", 1640, FLOOR),
+        # The mansion: up the veranda, a step, and over the roof.
+        ledge("veranda", 1800, FLOOR - 56, 600),
+        ledge("roof_step", 1740, FLOOR - 136, 96),
+        ledge("roof", 1840, roof_y, 520),
+        npc("history_sei_shonagon", 2100, FLOOR - 56, 59),
+        sign("heian_sign_pillow", 2100, roof_y - 90, "THE PILLOW BOOK: lists of hateful things, and of splendid ones", 620),
+        sign("heian_sign_rivals", 2100, roof_y - 180, "MURASAKI ON SEI SHŌNAGON: 'dreadfully conceited'", 520),
+        chest("a letter tied to a branch of plum", 2300, roof_y, "currency:120"),
+        enemy(rid, 2, "tanuki", 2560, FLOOR),
+        sign("heian_sign", 1400, 140, "HEIAN-KYŌ: the court that wrote in kana, 794-1185 CE", 540),
+    ]
+    return grid_room(rid, "HEIAN-KYŌ", e, gaps=[pond])
+
+
 # ---- R3: South Asia ----------------------------------------------------------
 
 
@@ -2311,7 +2441,7 @@ def door_of_no_return():
 
 
 #: The rooms, by floor from the bottom (Africa) to the top.
-ROOMS = (jomon, taiwan, silla, sulawesi, austronesian_islands, dong_son, srivijaya, borobudur, angkor, cradle, southern_coast, green_sahara, nile, tomb, aksum, timbuktu, library, benin_city, door_of_no_return,
+ROOMS = (jomon, taiwan, silla, song, joseon, heian, sulawesi, austronesian_islands, dong_son, srivijaya, borobudur, angkor, cradle, southern_coast, green_sahara, nile, tomb, aksum, timbuktu, library, benin_city, door_of_no_return,
          levant, crescent, granary, uruk, classical, colosseum,
          ice_age_europe, painted_cave, first_farmers_of_europe, megalith_builders, celtic_frontier, viking_north, sail,
          industrial, mill,

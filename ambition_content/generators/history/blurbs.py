@@ -90,6 +90,15 @@ BLURB = {
     "history_silla": (
         "WHERE: Gyeongju, South Korea. WHEN: Silla 57 BCE-935 CE; this room about 640 CE.",
         "FACT: Cheomseongdae, built in the reign of Queen Seondeok (632-647), is the oldest standing observatory in East Asia."),
+    "history_song": (
+        "WHERE: Hangzhou (then Lin'an), Zhejiang, China. WHEN: Southern Song 1127-1279 CE; this room about 1200 CE.",
+        "FACT: the Song state printed paper money; the oldest known description of a compass with a needle is Shen Kuo's, of 1088."),
+    "history_joseon": (
+        "WHERE: Hanyang (now Seoul), South Korea. WHEN: Joseon 1392-1897 CE; this room 1446 CE.",
+        "FACT: the Hunminjeongeum of 1446 gave Korean its own alphabet, now called Hangul (in the North, Chosŏn'gŭl)."),
+    "history_heian": (
+        "WHERE: Heian-kyō (now Kyoto), Japan. WHEN: the Heian period 794-1185 CE; this room about 1000 CE.",
+        "FACT: The Tale of Genji (about 1008) and The Pillow Book (about 1002) were written by women of the court, in kana."),
     # ---- Southeast Asia ----
     "history_sulawesi": (
         "WHERE: Maros-Pangkep, Sulawesi (Indonesia), in Wallacea. WHEN: about 51,000-40,000 years ago.",
