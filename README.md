@@ -18,6 +18,22 @@ ambition_demo_sanic/worlds/    -> game/ambition_demo_sanic/assets/worlds/
 The directory name is the crate the world belongs to, so a file's destination is
 derivable from its path here and needs no lookup table.
 
+## Authored level data lives here too
+
+A world that a script lays out keeps that script here, beside the world:
+`ambition_content/generators/<dimension>/` (first: `generators/history/`, the
+History dimension's `make_specs.py` and its room blurbs). The script and the
+`.ldtk` are the two halves of one truth, and both grow with the game, so both
+stay out of the main repo's history. The area specs a script writes are a
+by-product, written to the temp folder and never committed. The shared
+generator code (`district_kit.py`, `check_flat_map.py`) stays with the LDtk
+tools in the main repo.
+
+Each room has one owner. `<world>.generated.json`, beside the world, records
+each room as its script last wrote it; a room edited in LDtk since then is
+not overwritten, and `level ownership adopt <room>` hands it to LDtk for good
+(`docs/planning/game/world-composition.md`, "Contents: one owner per room").
+
 ## How it reaches the game: tracked symlinks
 
 The main repo mounts this at `game/ambition_map_assets` and tracks a **symlink**
