@@ -27,9 +27,10 @@ everyone starts in Africa (`tools/ambition_ldtk_tools/specs/check_flat_map.py hi
              C0       C1            C2              C3           C4          C5          C6     C7
     R0 Americas       beringia ┐    maize           olmecs       maya        taino       haiti
     R½ S. America     beringia ┘    andes           caral
-    R1 East Asia      mammoth st.   yellow river    shang        silk road   steppe
+    R1 East Asia      mammoth st.┐  yellow river    shang        silk road   steppe
+    R1½ E. coasts     mammoth st.┘  jōmon           taiwan       silla
     R2 Oceania        sahul         highlands       lapita       wayfinders  rapa nui
-    R2½ SE Asia       sulawesi      austronesians   dong son
+    R2½ SE Asia       sulawesi      austronesians   dong son     srivijaya   angkor
     R3 South Asia     south. route  mehrgarh        indus
     R4 Europe         ice age       first farmers   megaliths    celts       vikings     sail   industrial
     R5 Med./SW Asia   levant        crescent        uruk         classical
@@ -80,7 +81,17 @@ GRID = {
     # steppe under South America's row.
     (1, 0.5): "history_beringia",
     (1, 1): "history_mammoth_steppe",
+    # The mammoth steppe takes two floors, as Beringia does: its foot is the
+    # peninsula that joined Hokkaido to Siberia, beside the Jōmon. So it also
+    # touches Sahul under the coasts' floor.
+    (1, 1.5): "history_mammoth_steppe",
     (1, 2): "history_sahul",
+    # East Asia's coasts, a floor between East Asia and Oceania: Japan,
+    # Taiwan and Korea. Taiwan is over the Lapita: the Austronesians sailed
+    # from there.
+    (2, 1.5): "history_jomon",
+    (3, 1.5): "history_taiwan",
+    (4, 1.5): "history_silla",
     # Southeast Asia, a floor between Oceania and South Asia: the dispersal
     # crossed Wallacea by sea, and the Austronesians sailed through it.
     (1, 2.5): "history_sulawesi",
@@ -184,7 +195,9 @@ LINKS = {
     # column: here, South America.)
     (2, 0): 2200,
     # The Austronesians: the Lapita's ancestors sailed from Taiwan.
-    (3, 1): 1800,
+    (3, 1.5): 1800,
+    # Silla's tombs hold glass from the far end of the Silk Road.
+    (4, 1): 2460,
     # The first cities: tin from the north to Uruk; Uruk and Egypt trade.
     (3, 4): 2100,
     (3, 5): 176,
@@ -296,6 +309,9 @@ MUSIC = {
     "history_austronesian_islands": SE_ASIA,
     "history_dong_son": SE_ASIA,
     "history_srivijaya": SE_ASIA,
+    "history_jomon": EAST_ASIA,
+    "history_taiwan": EAST_ASIA,
+    "history_silla": EAST_ASIA,
     "history_angkor": SE_ASIA,
     BOROBUDUR: SE_ASIA,
     "history_new_guinea_highlands": OCEANIA,
@@ -344,6 +360,7 @@ BIOME = {
     "history_sulawesi": "history_wallacea", "history_austronesian_islands": "history_austronesia",
     "history_dong_son": "history_red_river",
     "history_srivijaya": "history_strait", BOROBUDUR: "history_borobudur", "history_angkor": "history_angkor",
+    "history_jomon": "history_jomon", "history_taiwan": "history_taiwan", "history_silla": "history_gyeongju",
     "history_new_guinea_highlands": "history_highlands",
     "history_yellow_river": "history_yellow_river", "history_shang_court": "history_yellow_river",
     "history_silk_road": "history_silk",
@@ -384,6 +401,8 @@ BOX = {
     # Wave C: Southeast Asia.
     "sulawesi_warty_pig": (64, 40), "saltwater_crocodile": (120, 32),
     "water_monitor": (96, 24), "king_cobra": (48, 48),
+    # Wave D: East Asia's coasts.
+    "asian_black_bear": (72, 56), "japanese_macaque": (40, 40), "clouded_leopard": (80, 40),
 }
 
 DOOR_W, DOOR_H = 48, 192
@@ -537,7 +556,8 @@ def grid_room(rid, title, entities, gaps=(), blurb_x=None):
     for upper, x in _ups(rid):
         ceiling_gaps.append((x, x + HOLE))
         e.append(vertical_edge(up_zone(rid, upper), "up", x, x + HOLE, 0, upper, down_zone(upper, rid)))
-        e += tower(f"tower_to_{upper}", x, ground, w)
+        # A way up is in the top row: its tower rises from that row's floor.
+        e += tower(f"tower_to_{upper}", x, H - 64, w)
     for lower, x in _downs(rid):
         floor_gaps.append((x, x + HOLE))
         # A hatch over the hole: walk over it, or drop through it.
@@ -1484,6 +1504,111 @@ def angkor():
     return grid_room(rid, "ANGKOR", e, gaps=[moat])
 
 
+# ---- R1.5: East Asia's coasts ------------------------------------------------
+
+
+def jomon():
+    """Jōmon, about 3000 BCE: Sannai-Maruyama in north Japan, a town of
+    foragers who did not farm, yet lived in one place for some 1,500 years:
+    pit houses, tended chestnut groves, the bay's fish and shellfish, and
+    pottery among the oldest in the world. Up the great six-post structure
+    (a tower? a stage?) and over the shell mound."""
+    rid = "history_jomon"
+    e = [
+        start(rid, 160, FLOOR),
+        prop_at("pit_house_1", "history_pit_dwelling", 320, FLOOR, 96, 80),
+        npc("history_flame_potter", 500, FLOOR, 59),
+        prop_at("flame_pot_1", "history_flame_pot", 580, FLOOR, 32, 48),
+        prop_at("flame_pot_2", "history_flame_pot", 620, FLOOR, 32, 48),
+        sign("jomon_sign_pots", 560, FLOOR - 200, "AMONG THE FIRST POTS ON EARTH: Jōmon pottery began about 14,500 BCE", 630),
+        prop_at("pit_house_2", "history_pit_dwelling", 760, FLOOR, 96, 80),
+        enemy(rid, 1, "japanese_macaque", 940, FLOOR),
+        # The six posts: three floors between them, one over the next.
+        prop_at("six_pillars", "history_six_pillars", 1300, FLOOR, 128, 256),
+        ledge("pillars_floor_1", 1240, FLOOR - 70, 120),
+        ledge("pillars_floor_2", 1240, FLOOR - 128, 120),
+        ledge("pillars_floor_3", 1240, FLOOR - 186, 120),
+        chest("a comb of red lacquer", 1300, FLOOR - 186, "currency:120"),
+        sign("jomon_sign_pillars", 1300, FLOOR - 330, "SIX CHESTNUT POSTS, each a metre thick. A tower? A stage? Nobody knows.", 650),
+        npc("history_chestnut_keeper", 1620, FLOOR, 62),
+        sign("jomon_sign_chestnut", 1620, FLOOR - 200, "THE CHESTNUT GROVES: tended for centuries. No farms, no hunger.", 580),
+        enemy(rid, 1, "asian_black_bear", 1880, FLOOR),
+        # The shell mound: centuries of dinners, piled up.
+        ledge("shell_mound_a", 2080, FLOOR - 64, 320),
+        ledge("shell_mound_b", 2160, FLOOR - 128, 160),
+        sign("jomon_sign_mound", 2240, FLOOR - 260, "THE SHELL MOUND: 1,500 years of dinners", 380),
+        enemy(rid, 2, "japanese_macaque", 2240, FLOOR - 128),
+        sign("jomon_sign", 1400, 140, "JŌMON: a town of foragers, 3000 BCE", 380),
+    ]
+    return grid_room(rid, "JŌMON", e)
+
+
+def taiwan():
+    """Taiwan, about 2500 BCE: the homeland of the Austronesian languages:
+    nine of their ten first branches are spoken only here. Millet and rice
+    on the terraces (Nankuanli, with its dogs), Fengtian jade at the
+    workshop, and the way down: south over the sea, island to island, to
+    the Lapita."""
+    rid = "history_taiwan"
+    down = LINKS[(3, 1.5)]
+    e = [
+        start(rid, 160, FLOOR),
+        # The terraces of millet, one over the next.
+        ledge("terrace_a", 380, FLOOR - 72, 240),
+        ledge("terrace_b", 540, FLOOR - 144, 240),
+        ledge("terrace_c", 700, FLOOR - 216, 240),
+        npc("history_nankuanli_farmer", 820, FLOOR - 216, 64),
+        sign("taiwan_sign_farm", 660, FLOOR - 340, "NANKUANLI, about 2800 BCE: rice and millet, and dogs buried with care", 650),
+        npc("history_jade_carver", 1100, FLOOR, 60),
+        prop_at("jade", "history_jade_workshop", 1220, FLOOR, 80, 40),
+        sign("taiwan_sign_jade", 1160, FLOOR - 200, "FENGTIAN JADE: worked here, found from the Philippines to Vietnam", 600),
+        enemy(rid, 1, "clouded_leopard", 1500, FLOOR),
+        sign("taiwan_sign_down", down + HOLE // 2, FLOOR - 260, "DOWN: south over the sea, island to island, to the Lapita", 530),
+        sign("taiwan_sign_branches", 2140, FLOOR - 340, "9 OF THE 10 FIRST BRANCHES of the Austronesian languages are spoken only here", 730),
+        enemy(rid, 1, "coral_crab", 2200, FLOOR),
+        sign("taiwan_sign_now", 2400, FLOOR - 200, "TODAY: Taiwan recognizes 16 Indigenous peoples: Amis, Atayal, Paiwan, Bunun...", 730),
+        enemy(rid, 2, "clouded_leopard", 2600, FLOOR),
+        sign("taiwan_sign", 1400, 140, "TAIWAN: the homeland of the Austronesian languages, 3000 BCE", 560),
+    ]
+    return grid_room(rid, "TAIWAN", e)
+
+
+def silla():
+    """Silla, about 640 CE: Gyeongju, the golden capital: the grass mounds of
+    the royal tombs, which held gold crowns like trees and antlers and glass
+    from as far as Rome; Cheomseongdae, the observatory of Queen Seondeok's
+    reign, to climb. The way up is the Silk Road, which brought the glass."""
+    rid = "history_silla"
+    up = LINKS[(4, 1)]
+    e = [
+        start(rid, 160, FLOOR),
+        prop_at("tumulus_1", "history_royal_tumulus", 520, FLOOR, 192, 80),
+        ledge("tumulus_1_low", 440, FLOOR - 40, 160),
+        ledge("tumulus_1_top", 470, FLOOR - 76, 100),
+        # Cheomseongdae: the wall beside it, its window, a ladder inside, and
+        # the frame of beams at its top.
+        ledge("observatory_wall", 960, FLOOR - 60, 96),
+        ledge("observatory_window", 1068, FLOOR - 104, 64),
+        ledge("observatory_ladder", 1076, FLOOR - 160, 48),
+        ledge("observatory_top", 1052, FLOOR - 216, 96),
+        prop_at("observatory", "history_cheomseongdae", 1100, FLOOR, 96, 224),
+        npc("history_star_watcher", 1100, FLOOR - 216, 65),
+        sign("silla_sign_observatory", 1100, FLOOR - 330, "CHEOMSEONGDAE, about 640 CE: the oldest standing observatory in East Asia", 690),
+        npc("history_queen_seondeok", 1460, FLOOR, 61),
+        sign("silla_sign_queen", 1460, FLOOR - 200, "QUEEN SEONDEOK, 632-647: the first of Silla's three queens", 560),
+        prop_at("crown", "history_gold_crown", 1680, FLOOR, 48, 56),
+        sign("silla_sign_crown", 1680, FLOOR - 140, "GOLD CROWNS like trees and antlers, and glass from as far as Rome", 600),
+        enemy(rid, 1, "tiger", 1900, FLOOR),
+        prop_at("tumulus_2", "history_royal_tumulus", 2140, FLOOR, 192, 80),
+        ledge("tumulus_2_low", 2060, FLOOR - 40, 160),
+        ledge("tumulus_2_top", 2090, FLOOR - 76, 100),
+        enemy(rid, 1, "asian_black_bear", 2300, FLOOR),
+        sign("silla_sign_up", up + HOLE // 2, FLOOR - 300, "UP: the Silk Road. Silla's glass came this way.", 450),
+        sign("silla_sign", 1400, 140, "SILLA: the golden kingdom, 57 BCE-935 CE", 400),
+    ]
+    return grid_room(rid, "SILLA", e)
+
+
 # ---- R3: South Asia ----------------------------------------------------------
 
 
@@ -1613,7 +1738,7 @@ def lapita_voyagers():
     remote Pacific. Their ancestors came from Taiwan: the way up is the
     way back to East Asia. An outrigger canoe crosses the lagoon."""
     rid = "history_lapita_voyagers"
-    up = LINKS[(3, 1)]
+    up = LINKS[(3, 1.5)]
     stuff, gap = crossing(rid, "the lagoon", (1000, 1600), "history_outrigger_canoe", w=176)
     e = [
         *stuff,
@@ -1624,7 +1749,7 @@ def lapita_voyagers():
         sign("lapita_sign_pot", 700, FLOOR - 200, "LAPITA POTS: stamped with a toothed comb. Find one, and you know who came by.", 700),
         prop_at("palm_1", "history_coconut_palm", 880, FLOOR, 96, 192),
         sign("lapita_sign_lagoon", 1300, FLOOR - 260, "THE LAGOON: houses on stilts, canoes to the reef", 440),
-        sign("lapita_sign_up", up + HOLE // 2, FLOOR - 300, "UP: the Shang court, by the atlas's road (the ancestors came from Taiwan)", 681),
+        sign("lapita_sign_up", up + HOLE // 2, FLOOR - 300, "UP: Taiwan, the homeland. Our grandmothers' grandmothers sailed from there.", 690),
         sign("lapita_sign", 1400, 140, "THE LAPITA VOYAGERS: out of sight of land, into the open Pacific, 1,500 BCE", 720),
         enemy(rid, 1, "coconut_crab", 2050, FLOOR),
         prop_at("palm_2", "history_coconut_palm", 2200, FLOOR, 96, 192),
@@ -1698,22 +1823,39 @@ def rapa_nui():
 
 
 def mammoth_steppe():
-    """The mammoth steppe, 40,000 years ago: Denisovans, mammoths and the
-    road north-east. Ways up to Beringia and down to Sahul."""
+    """The mammoth steppe, 40,000 to 20,000 years ago, in two floors. On top:
+    Denisovans, mammoths and the road north-east, up to Beringia, and east
+    to the Yellow River. Down the bluff: the peninsula that joined Hokkaido
+    to Siberia when the sea was low, where the mammoths walked, and east of
+    it the Jōmon. The way down to Sahul is at its foot."""
     rid = "history_mammoth_steppe"
     up, down = LINKS[(1, 0)], LINKS[(1, 1)]
+    g = FLOOR + H
+    # The top floor is a shelf with a gap; a one-way bridge over the gap, and
+    # a zig-zag of ledges up to it from the foot.
+    gap0, gap1 = 1560, 2000
     e = [
         start(rid, 200, FLOOR),
+        solid("steppe_shelf_west", 0, FLOOR, gap0, 48),
+        solid("steppe_shelf_east", gap1, FLOOR, W - gap1, 48),
+        ledge("bluff_bridge", gap0, FLOOR, gap1 - gap0),
+        *[ledge(f"bluff_{n}", 1600 if n % 2 else 1780, g - 72 * (n + 1), 176) for n in range(8)],
         sign("mammoth_sign_up", up + HOLE // 2, FLOOR - 260, "UP: Beringia, the land bridge", 340),
         npc("history_denny_denisovan", 900, FLOOR, 65),
         prop_at("hut", "history_mammoth_bone_hut", 1080, FLOOR, 160, 128),
         enemy(rid, 1, "woolly_mammoth", 1400, FLOOR),
-        ledge("drift_a", 1560, FLOOR - 80, 192),
-        ledge("drift_b", 1780, FLOOR - 160, 192),
-        enemy(rid, 1, "cave_bear", 1800, FLOOR),
         sign("mammoth_sign", 1400, 140, "THE MAMMOTH STEPPE: grass and ice from Spain to Alaska", 540),
-        sign("mammoth_sign_down", down + HOLE // 2, FLOOR - 260, "DOWN: Sahul, by the atlas's road", 312),
+        sign("mammoth_sign_bluff", 1780, FLOOR - 200, "DOWN THE BLUFF: Hokkaido, when it was Siberia", 460),
         enemy(rid, 1, "steppe_wolf", 2400, FLOOR),
+        # The foot: the peninsula.
+        sign("mammoth_sign_peninsula", 700, g - 300, "30,000 YEARS AGO the sea was low: Hokkaido was joined to Siberia.", 640),
+        sign("mammoth_sign_walked", 700, g - 272, "The mammoths walked there. So did people.", 420),
+        enemy(rid, 2, "woolly_mammoth", 900, g),
+        enemy(rid, 1, "cave_bear", 1300, g),
+        sign("mammoth_sign_obsidian", 2440, g - 300, "38,000 YEARS AGO: obsidian from Kozushima island is found on Honshu.", 680),
+        sign("mammoth_sign_boats", 2440, g - 272, "Someone went to an island by boat, and came back.", 500),
+        sign("mammoth_sign_down", down + HOLE // 2, g - 200, "DOWN: Sahul, by the atlas's road", 312),
+        enemy(rid, 2, "steppe_wolf", 2500, g),
     ]
     return grid_room(rid, "THE MAMMOTH STEPPE", e)
 
@@ -1756,7 +1898,6 @@ def shang_court():
         sign("shang_sign_oracle", 1300, FLOOR - 200, "ASK THE ANCESTORS: will the gate open? (crack and see)", 520),
         *gate("history_bronze_gate", "the bronze gate", gate_x, f"world.switch_on {ORACLE}", "history_bronze_gate"),
         sign("shang_sign", 1400, 140, "THE SHANG COURT: bronze, bones and the first Chinese writing", 560),
-        sign("shang_sign_down", LINKS[(3, 1)] + HOLE // 2, FLOOR - 260, "DOWN: the Lapita, by the atlas's road. Their ancestors sailed from Taiwan.", 690),
         enemy(rid, 2, "taotie_spirit", 1900, FLOOR - 300),
         ledge("hall_a", 2000, FLOOR - 80, 192),
         ledge("hall_b", 2220, FLOOR - 160, 192),
@@ -2170,7 +2311,7 @@ def door_of_no_return():
 
 
 #: The rooms, by floor from the bottom (Africa) to the top.
-ROOMS = (sulawesi, austronesian_islands, dong_son, srivijaya, borobudur, angkor, cradle, southern_coast, green_sahara, nile, tomb, aksum, timbuktu, library, benin_city, door_of_no_return,
+ROOMS = (jomon, taiwan, silla, sulawesi, austronesian_islands, dong_son, srivijaya, borobudur, angkor, cradle, southern_coast, green_sahara, nile, tomb, aksum, timbuktu, library, benin_city, door_of_no_return,
          levant, crescent, granary, uruk, classical, colosseum,
          ice_age_europe, painted_cave, first_farmers_of_europe, megalith_builders, celtic_frontier, viking_north, sail,
          industrial, mill,

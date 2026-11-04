@@ -80,6 +80,16 @@ BLURB = {
     "history_indus_cities": (
         "WHERE: the Indus valley (Pakistan, north-west India): Harappa, Mohenjo-daro. WHEN: about 2600-1900 BCE.",
         "FACT: the cities had planned streets and covered drains, and their script is still not read."),
+    # ---- East Asia's coasts ----
+    "history_jomon": (
+        "WHERE: Sannai-Maruyama, Aomori, north Japan. WHEN: about 3900-2200 BCE.",
+        "FACT: Jōmon pottery began about 14,500 BCE, among the oldest anywhere, made by people who did not farm."),
+    "history_taiwan": (
+        "WHERE: Taiwan. WHEN: about 4000-1500 BCE.",
+        "FACT: of the ten first branches of the Austronesian language family, nine are spoken only on Taiwan."),
+    "history_silla": (
+        "WHERE: Gyeongju, South Korea. WHEN: Silla 57 BCE-935 CE; this room about 640 CE.",
+        "FACT: Cheomseongdae, built in the reign of Queen Seondeok (632-647), is the oldest standing observatory in East Asia."),
     # ---- Southeast Asia ----
     "history_sulawesi": (
         "WHERE: Maros-Pangkep, Sulawesi (Indonesia), in Wallacea. WHEN: about 51,000-40,000 years ago.",
