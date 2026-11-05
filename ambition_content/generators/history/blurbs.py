@@ -80,6 +80,15 @@ BLURB = {
     "history_indus_cities": (
         "WHERE: the Indus valley (Pakistan, north-west India): Harappa, Mohenjo-daro. WHEN: about 2600-1900 BCE.",
         "FACT: the cities had planned streets and covered drains, and their script is still not read."),
+    "history_dhaka_muslin": (
+        "WHERE: Dhaka, on the Buriganga river, Bangladesh. WHEN: Mughal Bengal 1576-1757 CE; this room about 1700 CE.",
+        "FACT: the finest Dhaka muslin was spun from phuti karpas, a cotton of the Meghna's banks that was lost in the 1800s."),
+    "history_company_raj": (
+        "WHERE: Calcutta (Kolkata), on the Hooghly, India. WHEN: Company rule in Bengal 1757-1858 CE.",
+        "FACT: after the rising of 1857, the Government of India Act (1858) took India from the East India Company and gave it to the Crown."),
+    "history_ekushey": (
+        "WHERE: Dhaka, Bangladesh. WHEN: 1905-1971 CE; 21 February 1952.",
+        "FACT: since 2000, 21 February, the day of 1952 (Ekushey, 'twenty-one'), is International Mother Language Day."),
     # ---- East Asia's coasts ----
     "history_jomon": (
         "WHERE: Sannai-Maruyama, Aomori, north Japan. WHEN: about 3900-2200 BCE.",

@@ -24,14 +24,14 @@ then. There are no ladders: Jon (2026-11-04) asked for platforms and rooms
 in levels, and a ladder is slow. The gate (DYNASTIC, `data/gate_network.ron`) is in the Cradle, at the bottom left:
 everyone starts in Africa (`tools/ambition_ldtk_tools/specs/check_flat_map.py history.ldtk`).
 
-             C0       C1            C2              C3           C4          C5          C6     C7
+             C0       C1            C2              C3           C4          C5          C6     C7          C8
     R0 Americas       beringia ┐    maize           olmecs       maya        taino       haiti
     R½ S. America     beringia ┘    andes           caral
     R1 East Asia      mammoth st.┐  yellow river    shang        silk road   song        steppe
     R1½ E. coasts     mammoth st.┘  jōmon           taiwan       silla       joseon      heian
     R2 Oceania        sahul         highlands       lapita       wayfinders  rapa nui
     R2½ SE Asia       sulawesi      austronesians   dong son     srivijaya   angkor
-    R3 South Asia     south. route  mehrgarh        indus
+    R3 South Asia     south. route  mehrgarh        indus                                muslin company     ekushey
     R4 Europe         ice age       first farmers   megaliths    celts       vikings     sail   industrial
     R5 Med./SW Asia   levant        crescent        uruk         classical
     R6 Africa cradle  south. coast  green sahara    nile         aksum       timbuktu    benin  the fort
@@ -141,6 +141,12 @@ GRID = {
     (6, 6): "history_benin_city",
     (7, 6): "history_door_of_no_return",
     (6, 4): "history_age_of_sail",
+    # Bengal, on South Asia's floor over the Age of Sail and the Industrial
+    # Age: the muslin the Company's ships carried; the Company and 1857, over
+    # the mills that undercut Bengal's looms; Dhaka in 1952 and 1971.
+    (6, 3): "history_dhaka_muslin",
+    (7, 3): "history_company_raj",
+    (8, 3): "history_ekushey",
     (7, 4): "history_industrial_age",
 }
 
@@ -207,6 +213,9 @@ LINKS = {
     (4, 1): 2460,
     # Printing: Song China's movable type; Korea's metal type after it.
     (5, 1): 2080,
+    # Bengal's muslin went to Europe by sea; Lancashire's cloth came back.
+    (6, 3): 2400,
+    (7, 3): 600,
     # The first cities: tin from the north to Uruk; Uruk and Egypt trade.
     (3, 4): 2100,
     (3, 5): 176,
@@ -325,6 +334,9 @@ MUSIC = {
     "history_song": COURTS,
     "history_joseon": COURTS,
     "history_heian": COURTS,
+    "history_dhaka_muslin": SOUTH_ASIA,
+    "history_company_raj": SOUTH_ASIA,
+    "history_ekushey": SOUTH_ASIA,
     "history_angkor": SE_ASIA,
     BOROBUDUR: SE_ASIA,
     "history_new_guinea_highlands": OCEANIA,
@@ -375,6 +387,8 @@ BIOME = {
     "history_srivijaya": "history_strait", BOROBUDUR: "history_borobudur", "history_angkor": "history_angkor",
     "history_jomon": "history_jomon", "history_taiwan": "history_taiwan", "history_silla": "history_gyeongju",
     "history_song": "history_hangzhou", "history_joseon": "history_hanyang", "history_heian": "history_heian",
+    "history_dhaka_muslin": "history_dhaka_river", "history_company_raj": "history_calcutta",
+    "history_ekushey": "history_dhaka_spring",
     "history_new_guinea_highlands": "history_highlands",
     "history_yellow_river": "history_yellow_river", "history_shang_court": "history_yellow_river",
     "history_silk_road": "history_silk",
@@ -418,6 +432,8 @@ BOX = {
     # Wave D: East Asia's coasts.
     "asian_black_bear": (72, 56), "japanese_macaque": (40, 40), "clouded_leopard": (80, 40),
     "tanuki": (48, 32),
+    # Wave E: Bengal.
+    "gharial": (120, 28), "rhesus_macaque": (36, 36),
 }
 
 DOOR_W, DOOR_H = 48, 192
@@ -1056,6 +1072,112 @@ def colosseum():
                  ])
 
 
+# ---- R3: Bengal ---------------------------------------------------------------
+
+
+def dhaka_muslin():
+    """Dhaka, about 1700: Mughal Bengal, the richest province of the empire,
+    and its muslin, "woven air": thread spun by women from the phuti karpas
+    cotton of the Meghna, so fine that a length could pass through a ring.
+    A country boat over the Buriganga; the weaver's loom; the unfinished
+    walls of Lalbagh fort to climb. The way down is the sea: the Company's
+    ships carried the cloth to Europe."""
+    rid = "history_dhaka_muslin"
+    down = LINKS[(6, 3)]
+    stuff, gap = crossing(rid, "the Buriganga", (640, 1200), "history_country_boat", w=162, speed=70.0)
+    e = [
+        *stuff,
+        start(rid, 160, FLOOR),
+        npc("history_cotton_spinner", 300, FLOOR, 59),
+        sign("dhaka_sign_thread", 420, FLOOR - 200, "THE THREAD: spun by women at dawn, from the cotton of the Meghna", 640),
+        prop_at("muslin", "history_muslin_bolts", 480, FLOOR, 48, 32),
+        sign("dhaka_sign_river", 920, FLOOR - 300, "THE BURIGANGA: boats for Delhi, for Persia, for Europe", 520),
+        enemy(rid, 1, "gharial", 1340, FLOOR),
+        prop_at("loom", "history_pit_loom", 1500, FLOOR, 96, 64),
+        npc("history_muslin_weaver", 1640, FLOOR, 63),
+        sign("dhaka_sign_air", 1580, FLOOR - 200, "WOVEN AIR: a length of Dhaka muslin could pass through a ring", 600),
+        # Lalbagh fort: its walls, one over the next.
+        ledge("fort_wall_a", 1800, FLOOR - 80, 200),
+        ledge("fort_wall_b", 1880, FLOOR - 160, 200),
+        ledge("fort_top", 1960, FLOOR - 240, 240),
+        chest("a length of muslin (it fits through a ring)", 2080, FLOOR - 240, "currency:120"),
+        sign("dhaka_sign_fort", 2080, FLOOR - 380, "LALBAGH FORT (1678): left unfinished when the governor's daughter died", 660),
+        enemy(rid, 1, "rhesus_macaque", 2000, FLOOR - 240),
+        sign("dhaka_sign_down", down + HOLE // 2, FLOOR - 160, "DOWN: the sea. The Company's ships carried the muslin to Europe.", 620),
+        enemy(rid, 2, "rhesus_macaque", 2660, FLOOR),
+        sign("dhaka_sign", 1400, 140, "DHAKA: the richest province of the Mughal empire, about 1700", 600),
+    ]
+    return grid_room(rid, "DHAKA MUSLIN", e, gaps=[gap])
+
+
+def company_raj():
+    """Calcutta, 1757-1858: after Plassey the East India Company rules
+    Bengal; the famine of 1770; Ram Mohan Roy's newspapers and the end of
+    sati (1829); Lancashire's machine cloth undercuts Bengal's weavers (the
+    way down); the rising of 1857, Rani Lakshmibai, and the end of the
+    Company. A sober room with plain signs; the jokes are the creatures'."""
+    rid = "history_company_raj"
+    down = LINKS[(7, 3)]
+    e = [
+        start(rid, 160, FLOOR),
+        npc("history_ram_mohan_roy", 340, FLOOR, 68),
+        prop_at("press", "history_serampore_press", 460, FLOOR, 64, 80),
+        sign("raj_sign_roy", 400, FLOOR - 200, "RAM MOHAN ROY: newspapers in Bengali and Persian, and the campaign that ended sati (1829)", 800),
+        sign("raj_sign_down", down + HOLE // 2, FLOOR - 420, "DOWN: Lancashire. Its machine cloth undercut Bengal's weavers.", 600),
+        prop_at("bales", "history_company_bales", 860, FLOOR, 64, 48),
+        sign("raj_sign_plassey", 860, FLOOR - 140, "PLASSEY, 1757: the Company won Bengal with a battle and a bribe", 600),
+        # The ghat: steps down to the river, climbed here.
+        ledge("ghat_a", 1080, FLOOR - 64, 240),
+        ledge("ghat_b", 1160, FLOOR - 128, 240),
+        sign("raj_sign_famine", 1280, FLOOR - 300, "1770: FAMINE. Perhaps a third of Bengal died. The Company kept collecting the tax.", 760),
+        enemy(rid, 1, "gharial", 1560, FLOOR),
+        npc("history_rani_lakshmibai", 1880, FLOOR, 62),
+        sign("raj_sign_1857", 1880, FLOOR - 200, "1857: soldiers, princes and peasants rose against the Company", 600),
+        sign("raj_sign_names", 1880, FLOOR - 400, "The British called it a mutiny; many in India call it the First War of Independence.", 780),
+        # Fort William: its rampart, climbed from the glacis.
+        ledge("rampart_a", 2200, FLOOR - 80, 200),
+        ledge("rampart_b", 2300, FLOOR - 160, 240),
+        chest("a Company rupee", 2420, FLOOR - 160, "currency:120"),
+        sign("raj_sign_crown", 2420, FLOOR - 300, "1858: the Crown takes India from the Company", 460),
+        enemy(rid, 1, "rhesus_macaque", 2620, FLOOR),
+        sign("raj_sign", 1400, 140, "CALCUTTA: the Company's capital, 1757-1858", 460),
+    ]
+    return grid_room(rid, "THE COMPANY", e)
+
+
+def ekushey():
+    """Dhaka, 1905-1971: Rabindranath Tagore and Begum Rokeya; the air-car of
+    "Sultana's Dream" (1905) over a dream's long drop; 21 February 1952,
+    when students died for the Bengali language (Ekushey, "twenty-one");
+    and 1971. The second half is sober: no creatures near the memorial."""
+    rid = "history_ekushey"
+    stuff, gap = crossing(rid, "a dream's long drop", (1100, 1600), "history_air_car", w=136, speed=80.0)
+    e = [
+        *stuff,
+        start(rid, 160, FLOOR),
+        npc("history_rabindranath_tagore", 320, FLOOR, 70),
+        sign("ekushey_sign_tagore", 340, FLOOR - 200, "1913: TAGORE, the first Nobel laureate from outside Europe", 600),
+        sign("ekushey_sign_anthems", 340, FLOOR - 300, "He wrote the national anthems of Bangladesh and of India", 560),
+        npc("history_begum_rokeya", 620, FLOOR, 60),
+        sign("ekushey_sign_sultana", 640, FLOOR - 400, "SULTANA'S DREAM (1905): a land run by women. They fly air-cars.", 640),
+        # Curzon Hall: its arches and its roof.
+        ledge("arch_a", 800, FLOOR - 72, 200),
+        ledge("arch_b", 860, FLOOR - 144, 160),
+        chest("Gitanjali (1910)", 940, FLOOR - 144, "currency:120"),
+        enemy(rid, 1, "rhesus_macaque", 960, FLOOR),
+        npc("history_language_student", 1760, FLOOR, 65),
+        sign("ekushey_sign_1952", 1900, FLOOR - 260, "21 FEBRUARY 1952: police fired on students marching for Bengali. Students died.", 760),
+        prop_at("minar", "history_shaheed_minar", 2060, FLOOR, 128, 96),
+        sign("ekushey_sign_unesco", 2060, FLOOR - 160, "21 FEBRUARY: International Mother Language Day", 480),
+        npc("history_freedom_fighter_poet", 2360, FLOOR, 66),
+        prop_at("radio", "history_radio_1971", 2460, FLOOR, 32, 24),
+        sign("ekushey_sign_1971", 2400, FLOOR - 220, "1971: nine months of war. Hundreds of thousands were killed, perhaps far more.", 760),
+        sign("ekushey_sign_free", 2400, FLOOR - 300, "16 DECEMBER 1971: Bangladesh is free", 420),
+        sign("ekushey_sign", 1400, 140, "DHAKA: a language, and a country, 1905-1971", 460),
+    ]
+    return grid_room(rid, "EKUSHEY", e, gaps=[gap])
+
+
 # ---- R4: Europe --------------------------------------------------------------
 
 
@@ -1219,6 +1341,7 @@ def sail():
         npc("history_captain_cookbook", 2300, FLOOR, 68),
         enemy(rid, 2, "privateer", 2440, FLOOR),
         prop_at("lighthouse", "history_lighthouse", 2600, FLOOR, 96, 256),
+        sign("sail_sign_up", LINKS[(6, 3)] + HOLE // 2, FLOOR - 470, "UP: Bengal. The Company's ships came for its muslin.", 520),
     ]
     return grid_room(rid, "THE AGE OF SAIL", e, gaps=[(h0, h1)])
 
@@ -1251,6 +1374,7 @@ def industrial():
         prop_at("engine", "history_steam_engine", 2480, FLOOR, 160, 160),
         chest("the twentieth century (some assembly required)", 2660, FLOOR, "currency:200"),
         sign("industrial_sign_end", 2480, FLOOR - 260, "TO BE CONTINUED: the twentieth century is under construction", 560),
+        sign("industrial_sign_up", LINKS[(7, 3)] + HOLE // 2, FLOOR - 470, "UP: Bengal, whose weavers these mills undercut", 480),
     ]
     return grid_room(rid, "THE INDUSTRIAL AGE", e, gaps=[gap])
 
@@ -2441,7 +2565,7 @@ def door_of_no_return():
 
 
 #: The rooms, by floor from the bottom (Africa) to the top.
-ROOMS = (jomon, taiwan, silla, song, joseon, heian, sulawesi, austronesian_islands, dong_son, srivijaya, borobudur, angkor, cradle, southern_coast, green_sahara, nile, tomb, aksum, timbuktu, library, benin_city, door_of_no_return,
+ROOMS = (jomon, taiwan, silla, song, joseon, heian, dhaka_muslin, company_raj, ekushey, sulawesi, austronesian_islands, dong_son, srivijaya, borobudur, angkor, cradle, southern_coast, green_sahara, nile, tomb, aksum, timbuktu, library, benin_city, door_of_no_return,
          levant, crescent, granary, uruk, classical, colosseum,
          ice_age_europe, painted_cave, first_farmers_of_europe, megalith_builders, celtic_frontier, viking_north, sail,
          industrial, mill,
