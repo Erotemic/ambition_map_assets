@@ -164,6 +164,24 @@ BLURB = {
     "history_rapa_nui": (
         "WHERE: Rapa Nui (Easter Island). WHEN: about 1200-1862 CE.",
         "FACT: newer studies find no collapse before 1722; in 1862 slave raiders from Peru took about 1,500 people."),
+    "history_tonga_samoa": (
+        "WHERE: Tongatapu (Tonga) and Samoa. WHEN: the Tuʻi Tonga, about 950-1865 CE; this room about 1200.",
+        "FACT: Tonga was never colonised; it is the only kingdom in the Pacific that never lost its independence."),
+    "history_aotearoa": (
+        "WHERE: Aotearoa (New Zealand), the North Island. WHEN: about 1280-1769 CE.",
+        "FACT: Aotearoa was one of the last large lands on Earth that people settled; Cook arrived in 1769."),
+    "history_waitangi": (
+        "WHERE: Waitangi, Bay of Islands, New Zealand. WHEN: 6 February 1840 CE.",
+        "FACT: more than 500 chiefs signed copies of the Treaty in 1840, almost all of them the Māori text."),
+    "history_lake_mungo": (
+        "WHERE: Lake Mungo, the Willandra Lakes, New South Wales, Australia. WHEN: about 42,000-20,000 years ago.",
+        "FACT: the Willandra Lakes are the land of the Paakantyi, Mutthi Mutthi and Ngiyampaa, and a World Heritage site since 1981."),
+    "history_budj_bim": (
+        "WHERE: Budj Bim, Gunditjmara country, south-west Victoria, Australia. WHEN: about 4600 BCE-1840s CE.",
+        "FACT: the kooyang (short-finned eel) swims about 3,000 km to the Coral Sea to spawn; its young swim all the way back."),
+    "history_sydney_cove": (
+        "WHERE: Warrane (Sydney Cove), the land of the Eora, Australia. WHEN: 1788-1802 CE.",
+        "FACT: people have lived in Australia for at least 65,000 years; 1788 is less than half of one percent of that time ago."),
     # ---- East Asia ----
     "history_mammoth_steppe": (
         "WHERE: the mammoth steppe of northern Eurasia. WHEN: about 40,000-15,000 years ago.",

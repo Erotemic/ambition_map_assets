@@ -146,6 +146,16 @@ GRID = {
     (5, 1): "history_song",
     (6, 1): "history_mongol_steppe",
     (5, 2): "history_rapa_nui",
+    # Polynesia goes on east: Tonga and Samoa, Aotearoa, Waitangi.
+    (6, 2): "history_tonga_samoa",
+    (7, 2): "history_aotearoa",
+    (8, 2): "history_waitangi",
+    # Australia, a row under Oceania, only where it cuts no way down to
+    # Southeast Asia: Lake Mungo between Sahul and Sulawesi, Sydney Cove
+    # under Waitangi.
+    (1, 2.25): "history_lake_mungo",
+    (2, 2.25): "history_budj_bim",
+    (8, 2.25): "history_sydney_cove",
     (5, 4): "history_viking_north",
     (5, 6): "history_timbuktu_coast",
     (6, 6): "history_benin_city",
@@ -207,7 +217,13 @@ LINKS = {
     # land mass.
     (1, 0): 600,   # Beringia and the mammoth steppe: across the land bridge
     (1, 1): 2100,  # the mammoth steppe and Sahul: down the east of Asia
-    (1, 2): 600,   # Sahul and Sulawesi: by sea, island to island
+    (1, 2): 600,   # Sahul and Lake Mungo: the first Australians
+    (1, 2.25): 2620,  # Lake Mungo and Sulawesi: by sea, island to island
+    # Budj Bim and the Austronesian islands never met: the atlas joins them
+    # (Budj Bim's sign says so) so that New Guinea still has a way down.
+    (2, 2.25): 2400,
+    # New Zealand was ruled from New South Wales until 1841.
+    (8, 2): 2400,
     (1, 2.5): 2400,  # Sulawesi and the southern route: along the coasts
     (1, 3): 2100,  # the southern route and Ice Age Europe: north and west
     (1, 4): 600,   # Ice Age Europe and the Levant
@@ -295,6 +311,16 @@ G_PROP = {
     "history_baobab": (288, 288), "history_luanda_chair": (112, 88), "history_kilombo_gate": (128, 160),
     "history_rubber_vine": (80, 144), "history_magic_lantern": (80, 72),
 }
+#: Budj Bim's props, each placed at half its frame, and its residents' heights.
+B_PROP = {"history_eel_weir": (96, 48), "history_stone_house": (128, 80), "history_smoking_tree": (96, 160)}
+B_H = {"history_kooyang_farmer": 67, "history_basket_weaver": 63}
+#: Wave L1's props, each placed at half its frame (the art's frame pixels).
+L1_PROP = {
+    "history_mungo_footprints": (144, 32), "history_shell_midden": (80, 32), "history_rua_pit": (96, 64),
+    "history_pounamu_adze": (64, 32), "history_haamonga": (288, 224), "history_ngatu_board": (144, 32),
+    "history_samoan_fale": (160, 128), "history_kava_bowl": (64, 36), "history_treaty_house": (160, 112),
+    "history_treaty_table": (80, 56), "history_flagstaff": (80, 224), "history_first_fleet_ship": (256, 256),
+}
 BUILDINGS = (GRANARY, TOMB, COLOSSEUM, GER, LIBRARY, MILL, CAVE, BOROBUDUR)
 
 BG = "#3A2A1C"
@@ -344,6 +370,8 @@ ROBBERS = "history_tomb_robbery_papyri"
 OCHRE = "history_painted_cave_hands_on_the_wall"
 #: Edo and Meiji: city pop, the floating world's own.
 FLOATING = "history_japan_floating_world"
+#: Polynesia after Rapa Nui: island reggae, the Pacific's own pop.
+PACIFIC = "history_pacific_island_reggae"
 #: Kongo and Ndongo: Congolese rumba, its guitars' 'sebene'.
 SEBENE = "history_central_africa_sebene"
 MUSIC = {
@@ -412,6 +440,12 @@ MUSIC = {
     "history_lapita_voyagers": OCEANIA,
     "history_wayfinders": OCEANIA,
     "history_rapa_nui": OCEANIA,
+    "history_tonga_samoa": PACIFIC,
+    "history_aotearoa": PACIFIC,
+    "history_waitangi": PACIFIC,
+    "history_lake_mungo": OCEANIA,
+    "history_budj_bim": OCEANIA,
+    "history_sydney_cove": OCEANIA,
     GRANARY: CRESCENT,
     TOMB: ROBBERS,
     COLOSSEUM: ARENA,
@@ -462,6 +496,8 @@ BIOME = {
     "history_haitian_revolution": "history_saint_domingue",
     "history_lapita_voyagers": "history_lapita", "history_wayfinders": "history_open_ocean",
     "history_rapa_nui": "history_rapa_nui",
+    "history_tonga_samoa": "history_tonga", "history_aotearoa": "history_aotearoa", "history_waitangi": "history_waitangi",
+    "history_lake_mungo": "history_willandra", "history_budj_bim": "history_budj_bim", "history_sydney_cove": "history_sydney_cove",
     CAVE: "history_painted_cave",
 }
 
@@ -480,7 +516,7 @@ BOX = {
     "woolly_mammoth": (130, 110), "cave_bear": (80, 64), "viking_raider": (34, 62),
     "tiger": (84, 48), "indus_unicorn": (64, 52), "taotie_spirit": (48, 48),
     "smilodon": (80, 50), "jaguar": (72, 42), "llama": (52, 64),
-    "diprotodon": (110, 70), "megalania": (120, 40), "cassowary_history": (44, 70),
+    "diprotodon": (110, 70), "megalania": (120, 40), "cassowary_history": (44, 70), "kiwi": (30, 26), "emu": (48, 84), "kooyang": (72, 20), "black_swan": (40, 50),
     # The third pass.
     "howler_monkey": (40, 44), "green_iguana": (72, 32), "coconut_crab": (64, 40),
     "frigatebird": (64, 40), "pacific_rat": (32, 20),
@@ -492,7 +528,7 @@ BOX = {
     "sulawesi_warty_pig": (64, 40), "saltwater_crocodile": (120, 32),
     "water_monitor": (96, 24), "king_cobra": (48, 48),
     # Wave D: East Asia's coasts.
-    "asian_black_bear": (72, 56), "japanese_macaque": (40, 40), "npc_ninja_shadow_duelist_eye_band": (32, 66), "giant_sable": (100, 70), "african_grey_parrot": (44, 36), "portuguese_arquebusier": (34, 64), "clouded_leopard": (80, 40),
+    "asian_black_bear": (72, 56), "japanese_macaque": (40, 40), "npc_ninja_shadow_duelist_eye_band": (32, 66), "giant_sable": (100, 70), "african_grey_parrot": (44, 36), "portuguese_arquebusier": (34, 64), "moa": (80, 136), "haast_eagle": (72, 48), "clouded_leopard": (80, 40),
     "tanuki": (48, 32),
     # Wave E: Bengal.
     "gharial": (120, 28), "rhesus_macaque": (36, 36),
@@ -1606,14 +1642,14 @@ def sulawesi():
     """Sulawesi, about 51,000 years ago: the limestone karst of Maros-Pangkep,
     where the oldest known painted story is (a pig and three hunters, at
     least 51,200 years old). Wallacea was never joined to Asia or to Sahul,
-    so everyone here came by sea. The way up from the southern route comes
-    in at the east; the way on to Sahul is up a tower at the west."""
+    so everyone here came by sea. The way down to the southern route is at
+    the east, and the way on to Sahul (Lake Mungo) is up a tower beside it."""
     rid = "history_sulawesi"
-    up, down = LINKS[(1, 2)], LINKS[(1, 2.5)]
+    up, down = LINKS[(1, 2.25)], LINKS[(1, 2.5)]
     e = [
-        start(rid, 2600, FLOOR),
+        start(rid, 2250, FLOOR),
         sign("sulawesi_sign_down", down + HOLE // 2, FLOOR - 260, "DOWN: the southern route", 240),
-        sign("sulawesi_sign_up", up + HOLE // 2, FLOOR - 300, "UP: Sahul, across more sea", 258),
+        sign("sulawesi_sign_up", up + HOLE // 2 - 100, FLOOR - 470, "UP: Sahul (Australia), across more sea", 400),
         enemy(rid, 1, "sulawesi_warty_pig", 2000, FLOOR),
         # The karst: a tower of limestone, climbed by its shelves.
         ledge("karst_shelf_a", 1400, FLOOR - 72, 140),
@@ -1652,7 +1688,7 @@ def austronesian_islands():
         enemy(rid, 1, "saltwater_crocodile", 1620, FLOOR),
         prop_at("stilt_house_2", "history_bamboo_stilt_house", 1820, FLOOR, 96, 112),
         ledge("house_floor", 1772, FLOOR - 64, 96),
-        sign("austronesia_sign_up", LINKS[(2, 2)] + HOLE // 2, FLOOR - 300, "UP: New Guinea. Their grandchildren will be the Lapita.", 519),
+        sign("austronesia_sign_up", LINKS[(2, 2.25)] + HOLE // 2, FLOOR - 300, "UP: Budj Bim, and New Guinea above it", 400),
         enemy(rid, 1, "coral_crab", 2300, FLOOR),
         prop_at("pots_2", "history_red_slip_pots", 2560, FLOOR, 48, 32),
         sign("austronesia_sign", 1400, 140, "THE AUSTRONESIANS: out of Taiwan, to half the world, 2000 BCE", 600),
@@ -2269,7 +2305,7 @@ def sahul():
     e = [
         *stuff,
         start(rid, 200, FLOOR),
-        sign("sahul_sign_down", down + HOLE // 2, FLOOR - 260, "DOWN: Sulawesi, the island before this one", 402),
+        sign("sahul_sign_down", down + HOLE // 2, FLOOR - 260, "DOWN: Lake Mungo, and Sulawesi beyond it", 402),
         npc("history_raft_builder", 860, FLOOR, 66),
         sign("sahul_sign_strait", 1350, FLOOR - 240, "THE STRAIT: out of sight of land, 65,000 years ago", 500),
         sign("sahul_sign", 1400, 140, "SAHUL: the first great sea crossing", 400),
@@ -2301,7 +2337,7 @@ def new_guinea_highlands():
         sign("guinea_sign_kuk", 560, FLOOR - 200, "KUK SWAMP: drained by hand, gardened ever since", 440),
         prop_at("fern_3", "history_tree_fern", 2300, FLOOR, 96, 192),
         enemy(rid, 3, "cassowary_history", 2500, FLOOR),
-        sign("guinea_sign_down", LINKS[(2, 2)] + HOLE // 2, FLOOR - 260, "DOWN: the Austronesians, who came by sea from Taiwan", 492),
+        sign("guinea_sign_down", LINKS[(2, 2)] + HOLE // 2, FLOOR - 260, "DOWN: Budj Bim, where people farmed eels", 440),
     ]
     return grid_room(rid, "THE NEW GUINEA HIGHLANDS", e)
 
@@ -2394,6 +2430,221 @@ def rapa_nui():
 
 
 # ---- R1: East Asia and the steppe ---------------------------------------------
+
+def tonga_samoa():
+    """Tonga and Samoa, about 1200: the Tuʻi Tonga, whose power reached by
+    sea across West Polynesia; the trilithon Haʻamonga ʻa Maui, built for
+    Tuʻitātui; ngatu (bark cloth); a voyaging canoe over the lagoon to
+    Samoa, its fale and its tatau, which gave English the word 'tattoo'."""
+    rid = "history_tonga_samoa"
+    stuff, gap = crossing(rid, "the lagoon (sharks)", (1500, 2100), "history_voyaging_canoe", w=208, speed=100.0)
+    # The top of the lintel (the art's HAAMONGA_SPAN and HAAMONGA_TOP, at half size).
+    lintel = (1100 - 144 + 20, FLOOR - 224 + 29, 248)
+    e = [
+        *stuff,
+        start(rid, 160, FLOOR),
+        npc("history_ngatu_maker", 360, FLOOR, 63),
+        prop_at("ngatu", "history_ngatu_board", 520, FLOOR, *L1_PROP["history_ngatu_board"]),
+        sign("tonga_sign_ngatu", 440, FLOOR - 200, "NGATU: bark cloth, beaten thin and printed; some are tens of metres long", 700),
+        enemy(rid, 1, "coconut_crab", 760, FLOOR),
+        prop_at("haamonga", "history_haamonga", 1100, FLOOR, *L1_PROP["history_haamonga"]),
+        ledge("haamonga_step", 780, FLOOR - 68, 90),
+        ledge("haamonga_step_b", 860, FLOOR - 132, 90),
+        ledge("haamonga_lintel", *lintel),
+        npc("history_tuitatui", 1300, FLOOR, 69),
+        sign("tonga_sign_trilithon", 1100, FLOOR - 400, "HAʻAMONGA ʻA MAUI, about 1200: three slabs of coral stone, 30 to 40 tonnes each", 760),
+        sign("tonga_sign_solstice", 1100, FLOOR - 372, "Marks on the lintel may point to the sunrise of the solstice.", 600),
+        sign("tonga_sign_reach", 1800, FLOOR - 300, "THE TUʻI TONGA: a power that reached by sea to Samoa, Fiji and beyond", 700),
+        enemy(rid, 1, "frigatebird", 1800, FLOOR - 380),
+        prop_at("fale", "history_samoan_fale", 2300, FLOOR, *L1_PROP["history_samoan_fale"]),
+        prop_at("kava", "history_kava_bowl", 2420, FLOOR, *L1_PROP["history_kava_bowl"]),
+        npc("history_tufuga_tatau", 2540, FLOOR, 66),
+        sign("tonga_sign_tatau", 2460, FLOOR - 260, "TATAU: the Polynesian word gave English 'tattoo'", 500),
+        sign("tonga_sign_pea", 2460, FLOOR - 160, "THE PEʻA: waist to knee, by hand, over days", 440),
+        enemy(rid, 2, "coconut_crab", 2700, FLOOR),
+        sign("tonga_sign", 1400, 140, "TONGA AND SAMOA: the Tuʻi Tonga and the open sea, about 950-1500 CE", 660),
+    ]
+    return grid_room(rid, "TONGA AND SAMOA", e, gaps=[gap])
+
+
+def aotearoa():
+    """Aotearoa, about 1280-1500: the last great land that people reached,
+    by voyaging canoe. Moa, and Haast's eagle that hunted them, gone within
+    a few lifetimes; kūmara from South America; a pā of terraces and
+    palisades; pounamu. Rapa Nui, Hawaiʻi and Aotearoa are the corners of
+    the Polynesian Triangle."""
+    rid = "history_aotearoa"
+    e = [
+        start(rid, 160, FLOOR),
+        prop_at("waka", "history_voyaging_canoe", 330, FLOOR, 208, 104),
+        sign("aotearoa_sign_arrival", 360, FLOOR - 300, "ABOUT 1280: the last great land that people found", 500),
+        sign("aotearoa_sign_triangle", 360, FLOOR - 400, "THE POLYNESIAN TRIANGLE: Hawaiʻi, Rapa Nui and Aotearoa, all by canoe", 700),
+        npc("history_moa_hunter", 560, FLOOR, 67),
+        enemy(rid, 1, "moa", 800, FLOOR),
+        sign("aotearoa_sign_moa", 800, FLOOR - 260, "MOA: nine kinds, the tallest 3.6 metres. In about 150 years all were gone.", 720),
+        enemy(rid, 1, "haast_eagle", 1100, FLOOR - 340),
+        sign("aotearoa_sign_eagle", 1150, FLOOR - 160, "HAAST'S EAGLE hunted moa. When the moa went, it went.", 540),
+        prop_at("rua", "history_rua_pit", 1300, FLOOR, *L1_PROP["history_rua_pit"]),
+        sign("aotearoa_sign_kumara", 1300, FLOOR - 220, "KŪMARA: a sweet potato from South America. Polynesians got there first.", 700),
+        # The pā: up its terraces to the palisade.
+        ledge("pa_terrace_a", 1480, FLOOR - 80, 200),
+        ledge("pa_terrace_b", 1600, FLOOR - 160, 200),
+        ledge("pa_terrace_c", 1720, FLOOR - 240, 220),
+        prop_at("palisade", "history_palisade", 1830, FLOOR - 240, 96, 64),
+        chest("a kūmara from the rua", 1760, FLOOR - 240, "currency:120"),
+        sign("aotearoa_sign_pa", 1700, FLOOR - 400, "THE PĀ: hill forts of terraces and palisades. There are thousands.", 640),
+        npc("history_pounamu_carver", 2100, FLOOR, 63),
+        prop_at("adze", "history_pounamu_adze", 2230, FLOOR, *L1_PROP["history_pounamu_adze"]),
+        sign("aotearoa_sign_pounamu", 2160, FLOOR - 220, "POUNAMU: greenstone, so tough that one adze takes weeks", 560),
+        enemy(rid, 1, "kiwi", 2450, FLOOR),
+        sign("aotearoa_sign", 1400, 140, "AOTEAROA: the last land that people found, about 1280-1769 CE", 600),
+    ]
+    return grid_room(rid, "AOTEAROA", e)
+
+
+def waitangi():
+    """Waitangi, 6 February 1840: the Treaty, in two texts that do not say
+    the same thing. Henry Williams translated it overnight; Ana Hamu was one
+    of the few women who signed; Hōne Heke signed, and in 1844-45 cut down
+    the British flagstaff at Kororāreka four times. Down: Sydney, which
+    ruled New Zealand until 1841."""
+    rid = "history_waitangi"
+    down = LINKS[(8, 2)]
+    e = [
+        start(rid, 160, FLOOR),
+        npc("history_henry_williams", 380, FLOOR, 67),
+        prop_at("table", "history_treaty_table", 520, FLOOR, *L1_PROP["history_treaty_table"]),
+        sign("waitangi_sign_night", 450, FLOOR - 200, "4 FEBRUARY 1840: Henry Williams and his son translated it overnight", 680),
+        sign("waitangi_sign_english", 760, FLOOR - 400, "THE ENGLISH TEXT: the chiefs cede 'sovereignty'.", 500),
+        sign("waitangi_sign_maori", 760, FLOOR - 372, "THE MĀORI TEXT: they give 'kāwanatanga', governance,", 540),
+        sign("waitangi_sign_maori_b", 760, FLOOR - 344, "and keep 'tino rangatiratanga', their full chieftainship.", 560),
+        sign("waitangi_sign_which", 760, FLOOR - 316, "Which one did they sign? New Zealand still asks.", 500),
+        prop_at("house", "history_treaty_house", 900, FLOOR, *L1_PROP["history_treaty_house"]),
+        npc("history_ana_hamu", 1180, FLOOR, 63),
+        sign("waitangi_sign_women", 1180, FLOOR - 200, "ANA HAMU: one of the few women who signed. Others were turned away.", 660),
+        enemy(rid, 1, "kiwi", 1400, FLOOR),
+        npc("history_hone_heke", 1700, FLOOR, 68),
+        prop_at("flagstaff", "history_flagstaff", 1860, FLOOR, *L1_PROP["history_flagstaff"]),
+        sign("waitangi_sign_heke", 1700, FLOOR - 300, "HŌNE HEKE signed first. In 1844-45 he cut down the British flagstaff", 680),
+        sign("waitangi_sign_heke_b", 1700, FLOOR - 272, "at Kororāreka four times. The fourth was sheathed in iron.", 600),
+        enemy(rid, 2, "kiwi", 2100, FLOOR),
+        sign("waitangi_sign_day", 2100, FLOOR - 200, "6 FEBRUARY: Waitangi Day, New Zealand's national day", 520),
+        sign("waitangi_sign_down", down + HOLE // 2, FLOOR - 120, "DOWN: Sydney, which ruled New Zealand until 1841", 500),
+        sign("waitangi_sign", 1400, 140, "WAITANGI, 1840: one treaty, two texts", 400),
+    ]
+    return grid_room(rid, "WAITANGI", e)
+
+
+# ---- R2¼: Australia ------------------------------------------------------------
+
+
+def lake_mungo():
+    """Lake Mungo, in the Willandra Lakes: about 42,000 years ago people
+    fished and lived on its shores, and buried Mungo Lady and Mungo Man,
+    among the oldest known ritual burials. 20,000 years ago people
+    left their footprints in the clay. The Paakantyi, Mutthi Mutthi and
+    Ngiyampaa are its owners today; Mungo Man came home in 2017. The room
+    shows the burials only in words. Up: Sahul; down: Sulawesi."""
+    rid = "history_lake_mungo"
+    up, down = LINKS[(1, 2)], LINKS[(1, 2.25)]
+    e = [
+        start(rid, 1100, FLOOR),
+        sign("mungo_sign_up", up + HOLE // 2 + 160, FLOOR - 400, "UP: Sahul, the first crossing", 360),
+        enemy(rid, 1, "diprotodon", 300, FLOOR),
+        npc("history_mungo_fisher", 920, FLOOR, 61),
+        prop_at("midden", "history_shell_midden", 1040, FLOOR, *L1_PROP["history_shell_midden"]),
+        sign("mungo_sign_lake", 980, FLOOR - 220, "42,000 YEARS AGO this was a full lake: fish, mussels, yabbies", 620),
+        # The Walls of China: up the dune's shelves.
+        ledge("lunette_a", 1300, FLOOR - 80, 180),
+        ledge("lunette_b", 1420, FLOOR - 160, 180),
+        ledge("lunette_c", 1560, FLOOR - 240, 160),
+        chest("a freshwater mussel shell", 1620, FLOOR - 240, "currency:100"),
+        sign("mungo_sign_walls", 1500, FLOOR - 400, "THE WALLS OF CHINA: a dune that the wind keeps carving", 540),
+        sign("mungo_sign_burials", 1500, FLOOR - 372, "Here lay Mungo Lady and Mungo Man, among the oldest ritual burials known.", 720),
+        prop_at("footprints", "history_mungo_footprints", 1900, FLOOR, *L1_PROP["history_mungo_footprints"]),
+        sign("mungo_sign_footprints", 1900, FLOOR - 160, "FOOTPRINTS, 20,000 years old: a child, a runner, someone on one leg", 660),
+        npc("history_mungo_ranger", 2150, FLOOR, 64),
+        sign("mungo_sign_home", 2150, FLOOR - 260, "2017: Mungo Man came home to country, 43 years after he was dug up", 660),
+        enemy(rid, 1, "emu", 2380, FLOOR),
+        sign("mungo_sign_down", down + HOLE // 2 - 60, FLOOR - 120, "DOWN: Sulawesi, by sea", 260),
+        sign("mungo_sign", 1400, 140, "LAKE MUNGO: 42,000 years on one shore", 400),
+    ]
+    return grid_room(rid, "LAKE MUNGO", e)
+
+
+def budj_bim():
+    """Budj Bim, in Gunditjmara country (south-west Victoria): for at least
+    6,600 years people cut channels, weirs and ponds in the lava of the
+    volcano Budj Bim to trap and keep kooyang (short-finned eels), and built
+    houses of stone beside them. One of the oldest aquaculture systems in the
+    world; on UNESCO's World Heritage list since 2019. Then the Eumeralla
+    wars (1830s-40s), and the lake drained in the 1950s and filled again in
+    2010. Up: New Guinea, the other early farmers of Sahul. Down: the
+    Austronesians, a way of the atlas, not of history."""
+    rid = "history_budj_bim"
+    up, down = LINKS[(2, 2)], LINKS[(2, 2.25)]
+    c1, g1 = paddy(rid, 1, 640, 880)
+    c2, g2 = paddy(rid, 2, 1180, 1420)
+    e = [
+        *c1, *c2,
+        start(rid, 160, FLOOR),
+        npc("history_kooyang_farmer", 420, FLOOR, B_H["history_kooyang_farmer"]),
+        prop_at("weir_1", "history_eel_weir", 760, FLOOR, *B_PROP["history_eel_weir"]),
+        sign("budj_sign_channels", 760, FLOOR - 260, "6,600 YEARS AGO: channels cut in the lava to farm kooyang, the eel", 640),
+        sign("budj_sign_farm", 760, FLOOR - 232, "Among the oldest fish farms in the world", 420),
+        enemy(rid, 1, "kooyang", 1300, FLOOR + 30),
+        prop_at("weir_2", "history_eel_weir", 1300, FLOOR, *B_PROP["history_eel_weir"]),
+        # The stony rises: shelves of old lava up to the house.
+        ledge("rise_a", 1500, FLOOR - 72, 160),
+        ledge("rise_b", 1620, FLOOR - 144, 160),
+        prop_at("house", "history_stone_house", 1760, FLOOR - 144, *B_PROP["history_stone_house"]),
+        ledge("rise_c", 1660, FLOOR - 144, 260),
+        chest("smoked kooyang", 1880, FLOOR - 144, "currency:120"),
+        sign("budj_sign_houses", 1700, FLOOR - 320, "HOUSES OF STONE: rings of basalt walls, once roofed with branches and turf", 720),
+        npc("history_basket_weaver", 2150, FLOOR, B_H["history_basket_weaver"]),
+        prop_at("smoking_tree", "history_smoking_tree", 2260, FLOOR, *B_PROP["history_smoking_tree"]),
+        sign("budj_sign_smoke", 2180, FLOOR - 260, "Eels were smoked in hollow trees and traded far inland", 560),
+        enemy(rid, 1, "black_swan", 1000, FLOOR),
+        enemy(rid, 1, "emu", 2500, FLOOR),
+        sign("budj_sign_wars", 1300, FLOOR - 400, "THE EUMERALLA WARS, 1830s-40s: the Gunditjmara fought for this country", 700),
+        sign("budj_sign_heritage", 1300, FLOOR - 372, "2019: World Heritage. The Gunditjmara manage it today.", 560),
+        sign("budj_sign_up", up + HOLE // 2, FLOOR - 470 + 64, "UP: New Guinea, the other early farmers of old Sahul", 540),
+        sign("budj_sign_down", down + HOLE // 2, FLOOR - 120, "DOWN: the Austronesian islands. This way is the atlas's, not history's.", 640),
+        sign("budj_sign", 1400, 140, "BUDJ BIM: eel farms in the lava, 6,600 years old", 520),
+    ]
+    return grid_room(rid, "BUDJ BIM", e, gaps=[g1, g2])
+
+
+def sydney_cove():
+    """Warrane (Sydney Cove), 1788-1802, sober: the First Fleet lands on
+    26 January 1788 on the land of the Eora, and claims it as no one's.
+    Smallpox in 1789. Barangaroo, Bennelong and Pemulwuy; the Eora women
+    fishing from bark canoes with fires in them. No creatures. Up:
+    Waitangi, ruled from Sydney until 1841."""
+    rid = "history_sydney_cove"
+    up = LINKS[(8, 2)]
+    stuff, gap = crossing(rid, "the cove", (600, 1200), "history_nawi", w=132, speed=60.0)
+    e = [
+        *stuff,
+        start(rid, 160, FLOOR),
+        sign("cove_sign_nawi", 900, FLOOR - 300, "THE EORA WOMEN fished from bark canoes, a small fire burning in each", 680),
+        npc("history_barangaroo", 1350, FLOOR, 62),
+        sign("cove_sign_barangaroo", 1300, FLOOR - 200, "BARANGAROO, Cammeraygal fisher: she wanted none of the newcomers' ways", 700),
+        npc("history_bennelong", 1640, FLOOR, 67),
+        sign("cove_sign_bennelong", 1640, FLOOR - 300, "BENNELONG: seized in 1789 to teach the colony his language; he sailed to England and back", 780),
+        # At anchor in the cove, behind the nawi; its own water meets the floor line.
+        prop_at("ship", "history_first_fleet_ship", 980, FLOOR + 20, *L1_PROP["history_first_fleet_ship"]),
+        sign("cove_sign_landing", 1400, FLOOR - 372, "26 JANUARY 1788: the First Fleet landed at Warrane. Australia Day; to many, Invasion Day.", 800),
+        sign("cove_sign_smallpox", 2000, FLOOR - 160, "1789: smallpox killed perhaps half the Eora of the harbour", 560),
+        npc("history_pemulwuy", 2280, FLOOR, 69),
+        sign("cove_sign_pemulwuy", 2300, FLOOR - 260, "PEMULWUY led the Bidjigal resistance, 1790-1802", 480),
+        sign("cove_sign_terra", 1400, FLOOR - 400, "TERRA NULLIUS: Britain called the land no one's. In 1992 Australia's High Court said it never was.", 800),
+        sign("cove_sign_frontier", 2330, FLOOR - 340, "THE FRONTIER WARS went on across the continent into the 1920s", 600),
+        sign("cove_sign_up", up + HOLE // 2, FLOOR - 120, "UP: Waitangi", 160),
+        sign("cove_sign", 1400, 140, "WARRANE (SYDNEY COVE), 1788: the First Fleet and the Eora", 560),
+    ]
+    return grid_room(rid, "WARRANE, 1788", e, gaps=[gap])
+
 
 
 def mammoth_steppe():
@@ -3000,7 +3251,8 @@ ROOMS = (jomon, taiwan, silla, song, joseon, heian, kamakura, edo, meiji, ishang
          ice_age_europe, painted_cave, first_farmers_of_europe, megalith_builders, celtic_frontier, viking_north, sail,
          industrial, mill,
          southern_route, mehrgarh, indus_cities,
-         sahul, new_guinea_highlands, lapita_voyagers, wayfinders, rapa_nui,
+         sahul, new_guinea_highlands, lapita_voyagers, wayfinders, rapa_nui, tonga_samoa, aotearoa, waitangi, lake_mungo,
+         budj_bim, sydney_cove,
          mammoth_steppe, yellow_river, shang_court, silk, steppe, great_ger,
          beringia, first_maize, olmec_heartland, maya_city, taino_islands, haitian_revolution,
          andean_highlands, caral)
