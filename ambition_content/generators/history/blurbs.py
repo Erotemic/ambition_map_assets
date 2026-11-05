@@ -32,6 +32,18 @@ BLURB = {
     "history_benin_city": (
         "WHERE: Benin City, in today's Nigeria (not the country of Benin). WHEN: about 1200-1897 CE.",
         "FACT: in 1897 a British force burned the city and took thousands of brasses. Since 2022 a few have come back."),
+    "history_ishango": (
+        "WHERE: Ishango, on the Semliki river at Lake Edward, DR Congo. WHEN: about 20,000 years ago.",
+        "FACT: the Ishango bone was dug up in 1950 by Jean de Heinzelin. People still argue over what its notches count."),
+    "history_kongo": (
+        "WHERE: Mbanza Kongo, now in northern Angola. WHEN: the kingdom of Kongo, about 1390-1665 CE; this room about 1526.",
+        "FACT: Kongo's kings wrote to Lisbon and Rome for 150 years; dozens of their letters survive, in Portuguese."),
+    "history_ndongo": (
+        "WHERE: Ndongo and Matamba, the valley of the Kwanza, Angola. WHEN: Queen Nzinga's reign, 1624-1663 CE.",
+        "FACT: Nzinga died in 1663, aged about 80, a queen still; Portugal had not beaten her."),
+    "history_congo_free_state": (
+        "WHERE: the Congo river, DR Congo. WHEN: the Congo Free State, 1885-1908 CE; this room about 1904.",
+        "FACT: the campaign against Leopold's Congo was one of the first great human rights campaigns: photographs, lantern shows, petitions."),
     "history_door_of_no_return": (
         "WHERE: a castle of the Gold Coast (Ghana): a composite of forts such as Cape Coast and Elmina. WHEN: the 1700s CE.",
         "FACT: from about 1500 to 1866 CE about 12.5 million Africans were forced onto slave ships; about 10.7 million lived."),

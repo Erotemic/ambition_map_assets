@@ -35,6 +35,7 @@ everyone starts in Africa (`tools/ambition_ldtk_tools/specs/check_flat_map.py hi
     R4 Europe         ice age       first farmers   megaliths    celts       vikings     sail   industrial
     R5 Med./SW Asia   levant        crescent        uruk         classical
     R6 Africa cradle  south. coast  green sahara    nile         aksum       timbuktu    benin  the fort
+    R6½ C. Africa     ishango                                                            kongo  ndongo      free state
 
 The ways through, room by room, are in each room's function. Buildings are
 under the grid, reached by doors. The art is the sprite tools'
@@ -148,6 +149,11 @@ GRID = {
     (5, 4): "history_viking_north",
     (5, 6): "history_timbuktu_coast",
     (6, 6): "history_benin_city",
+    # Central Africa, the floor under Africa.
+    (1, 6.5): "history_ishango",
+    (6, 6.5): "history_kongo",
+    (7, 6.5): "history_ndongo",
+    (8, 6.5): "history_congo_free_state",
     (7, 6): "history_door_of_no_return",
     (6, 4): "history_age_of_sail",
     # Bengal, on South Asia's floor over the Age of Sail and the Industrial
@@ -226,6 +232,10 @@ LINKS = {
     (6, 0): 2660,
     # Japan: from the Mongol wars down to Edo, five centuries on.
     (7, 1): 2600,
+    # Two early marks of the mind: Blombos's ochre, Ishango's bone.
+    (1, 6): 2200,
+    # Benin and Kongo both met the Portuguese in the 1480s.
+    (6, 6): 1260,
     # Bengal's muslin went to Europe by sea; Lancashire's cloth came back.
     (6, 3): 2400,
     (7, 3): 600,
@@ -278,6 +288,13 @@ LIBRARY = "history_timbuktu_library"
 MILL = "history_cotton_mill"
 CAVE = "history_painted_cave"
 BOROBUDUR = "history_borobudur"
+#: Wave G's props, each placed at half its frame (the art's frame pixels).
+G_PROP = {
+    "history_bone_harpoons": (80, 80), "history_ishango_bone": (88, 40), "history_kongo_house": (128, 112),
+    "history_raffia_loom": (72, 88), "history_nzimbu_basket": (56, 36), "history_afonso_letter": (64, 56),
+    "history_baobab": (288, 288), "history_luanda_chair": (112, 88), "history_kilombo_gate": (128, 160),
+    "history_rubber_vine": (80, 144), "history_magic_lantern": (80, 72),
+}
 BUILDINGS = (GRANARY, TOMB, COLOSSEUM, GER, LIBRARY, MILL, CAVE, BOROBUDUR)
 
 BG = "#3A2A1C"
@@ -327,6 +344,8 @@ ROBBERS = "history_tomb_robbery_papyri"
 OCHRE = "history_painted_cave_hands_on_the_wall"
 #: Edo and Meiji: city pop, the floating world's own.
 FLOATING = "history_japan_floating_world"
+#: Kongo and Ndongo: Congolese rumba, its guitars' 'sebene'.
+SEBENE = "history_central_africa_sebene"
 MUSIC = {
     "history_cradle": AFRICA,
     "history_southern_coast": AFRICA,
@@ -336,6 +355,10 @@ MUSIC = {
     "history_timbuktu_coast": AFRICA,
     "history_benin_city": AFRICA,
     "history_door_of_no_return": NO_RETURN,
+    "history_ishango": AFRICA,
+    "history_kongo": SEBENE,
+    "history_ndongo": SEBENE,
+    "history_congo_free_state": NO_RETURN,
     "history_levant": CRESCENT,
     "history_fertile_crescent": CRESCENT,
     "history_uruk": CRESCENT,
@@ -406,6 +429,8 @@ BIOME = {
     "history_timbuktu_coast": "history_monsoon", LIBRARY: "history_monsoon",
     "history_benin_city": "history_benin",
     "history_door_of_no_return": "history_gold_coast",
+    "history_ishango": "history_ishango", "history_kongo": "history_mbanza_kongo", "history_ndongo": "history_matamba",
+    "history_congo_free_state": "history_congo_river_1900",
     "history_levant": "history_crescent", "history_fertile_crescent": "history_crescent", GRANARY: "history_crescent",
     "history_uruk": "history_crescent",
     "history_classical_shore": "history_classical", COLOSSEUM: "history_classical",
@@ -467,7 +492,7 @@ BOX = {
     "sulawesi_warty_pig": (64, 40), "saltwater_crocodile": (120, 32),
     "water_monitor": (96, 24), "king_cobra": (48, 48),
     # Wave D: East Asia's coasts.
-    "asian_black_bear": (72, 56), "japanese_macaque": (40, 40), "npc_ninja_shadow_duelist_eye_band": (32, 66), "clouded_leopard": (80, 40),
+    "asian_black_bear": (72, 56), "japanese_macaque": (40, 40), "npc_ninja_shadow_duelist_eye_band": (32, 66), "giant_sable": (100, 70), "african_grey_parrot": (44, 36), "portuguese_arquebusier": (34, 64), "clouded_leopard": (80, 40),
     "tanuki": (48, 32),
     # Wave E: Bengal.
     "gharial": (120, 28), "rhesus_macaque": (36, 36),
@@ -952,6 +977,147 @@ def benin_city():
              "thousands of works. They fill museums in Europe and America. A few have come home.", 750),
     ]
     return grid_room(rid, "BENIN CITY", e)
+
+
+# ---- R6½: Central Africa -------------------------------------------------------
+
+
+def ishango():
+    """Ishango, where the Semliki river leaves Lake Edward, about 20,000
+    years ago: fishers and hunters, and the Ishango bone, with columns of
+    notches that may be counting. Down the river, at Katanda, barbed bone
+    harpoons perhaps 90,000 years old. Up: Blombos and the southern coast."""
+    rid = "history_ishango"
+    up = LINKS[(1, 6)]
+    river = (1100, 1500)
+    e = [
+        start(rid, 160, FLOOR),
+        npc("history_katanda_fisher", 400, FLOOR, 66),
+        prop_at("harpoons", "history_bone_harpoons", 560, FLOOR, *G_PROP["history_bone_harpoons"]),
+        sign("ishango_sign_harpoons", 480, FLOOR - 220, "KATANDA, down this river: barbed bone harpoons, perhaps 90,000 years old", 700),
+        enemy(rid, 1, "hippo", 900, FLOOR),
+        # The Semliki's shallows: stepping stones, and hippos in the water.
+        entity("HazardBlock", river[0], H - 16, river[1] - river[0], 16, name="the Semliki river (hippos)"),
+        ledge("stone_a", 1080, FLOOR - 40, 96),
+        ledge("stone_b", 1230, FLOOR - 56, 96),
+        ledge("stone_c", 1400, FLOOR - 40, 120),
+        sign("ishango_sign_river", 1300, FLOOR - 200, "THE SEMLIKI: step on the stones, not on the hippos", 500),
+        npc("history_ishango_carver", 1720, FLOOR, 63),
+        prop_at("bone", "history_ishango_bone", 1860, FLOOR, *G_PROP["history_ishango_bone"]),
+        sign("ishango_sign_bone", 1800, FLOOR - 400, "THE ISHANGO BONE, about 20,000 years old: three columns of notches", 640),
+        sign("ishango_sign_primes", 1800, FLOOR - 300, "ONE COLUMN: 11, 13, 17, 19, the primes between 10 and 20. Maybe.", 640),
+        sign("ishango_sign_moon", 1800, FLOOR - 272, "Or the days of the moon. Or a good grip on a tool.", 520),
+        sign("ishango_sign_brussels", 1800, FLOOR - 180, "IT LIVES IN BRUSSELS NOW", 280),
+        prop_at("campfire", "history_campfire", 2000, FLOOR, 64, 64),
+        sign("ishango_sign_up", up + HOLE // 2, FLOOR - 470, "UP: Blombos, and the first patterns in ochre", 440),
+        enemy(rid, 1, "hyena", 2450, FLOOR),
+        sign("ishango_sign", 1400, 140, "ISHANGO: the counting bone, 20,000 years ago", 460),
+    ]
+    return grid_room(rid, "ISHANGO", e, gaps=[river])
+
+
+def kongo():
+    """Mbanza Kongo, capital of the kingdom of Kongo, about 1520: raffia
+    cloth so fine that Europeans called it velvet, and nzimbu shells for
+    money. King Afonso I took the Portuguese faith and its learning, and
+    in 1526 wrote to Lisbon against the slave trade. In 1608 Kongo's
+    ambassador reached Rome. Up: Benin, which met the Portuguese in the
+    same decade (the 1480s)."""
+    rid = "history_kongo"
+    up = LINKS[(6, 6)]
+    e = [
+        start(rid, 160, FLOOR),
+        prop_at("house", "history_kongo_house", 380, FLOOR, *G_PROP["history_kongo_house"]),
+        npc("history_raffia_weaver", 600, FLOOR, 62),
+        prop_at("loom", "history_raffia_loom", 730, FLOOR, *G_PROP["history_raffia_loom"]),
+        sign("kongo_sign_raffia", 640, FLOOR - 230, "KONGO CLOTH: raffia so fine that Europeans called it velvet", 600),
+        prop_at("nzimbu", "history_nzimbu_basket", 900, FLOOR, *G_PROP["history_nzimbu_basket"]),
+        sign("kongo_sign_nzimbu", 900, FLOOR - 140, "NZIMBU: shell money, gathered only for the king", 480),
+        enemy(rid, 1, "driver_ants", 1080, FLOOR),
+        sign("kongo_sign_up", up + HOLE // 2, FLOOR - 400, "UP: Benin, which met the Portuguese in the same decade", 560),
+        enemy(rid, 1, "african_grey_parrot", 1480, FLOOR - 220),
+        # The king's enclosure: up the walls of woven palm.
+        ledge("enclosure_a", 1520, FLOOR - 80, 160),
+        ledge("enclosure_b", 1620, FLOOR - 160, 160),
+        chest("a square of Kongo velvet", 1700, FLOOR - 160, "currency:120"),
+        npc("history_afonso_i", 1860, FLOOR, 66),
+        prop_at("letter", "history_afonso_letter", 1990, FLOOR, *G_PROP["history_afonso_letter"]),
+        sign("kongo_sign_letter", 1900, FLOOR - 300, "1526: AFONSO I wrote to Portugal: 'each day the traders take our people'", 720),
+        sign("kongo_sign_letter_b", 1900, FLOOR - 272, "Portugal did not stop it.", 300),
+        npc("history_ne_vunda", 2250, FLOOR, 66),
+        sign("kongo_sign_vunda", 2250, FLOOR - 180, "1608: KONGO'S AMBASSADOR reached Rome, and died there days after", 640),
+        enemy(rid, 2, "driver_ants", 2480, FLOOR),
+        sign("kongo_sign", 1400, 140, "MBANZA KONGO: the kingdom of Kongo, about 1390-1665 CE", 560),
+    ]
+    return grid_room(rid, "KONGO", e)
+
+
+def ndongo():
+    """Ndongo and Matamba (Angola), 1622-1663: Queen Nzinga Mbande, who
+    made the governor of Luanda treat with her as an equal in 1622, then
+    fought Portugal for thirty years, with the Dutch for a time, from the
+    war camps (kilombo) of Matamba. Her sister Kifunji spied for her from
+    inside Luanda. The Kwanza by dugout; arquebusiers; a plain sign for
+    the trade that took Ndongo's people to Brazil and to Virginia."""
+    rid = "history_ndongo"
+    stuff, gap = crossing(rid, "the Kwanza (crocodiles)", (1400, 2000), "history_dugout_canoe", w=176)
+    e = [
+        *stuff,
+        start(rid, 160, FLOOR),
+        enemy(rid, 1, "giant_sable", 480, FLOOR),
+        prop_at("baobab", "history_baobab", 760, FLOOR, *G_PROP["history_baobab"]),
+        ledge("baobab_low", 660, FLOOR - 112, 120),
+        ledge("baobab_high", 792, FLOOR - 216, 90),
+        chest("water kept in a hollow baobab", 840, FLOOR - 216, "currency:120"),
+        prop_at("chair", "history_luanda_chair", 1060, FLOOR, *G_PROP["history_luanda_chair"]),
+        npc("history_nzinga", 1200, FLOOR, 64),
+        sign("ndongo_sign_chair_a", 1120, FLOOR - 330, "LUANDA, 1622: the governor sat in a chair and gave her a mat on the floor.", 700),
+        sign("ndongo_sign_chair_b", 1120, FLOOR - 302, "Nzinga's servant knelt, and Nzinga sat on her, eye to eye with him.", 660),
+        sign("ndongo_sign_kwanza", 1700, FLOOR - 260, "THE KWANZA: the river the slave traders followed inland", 520),
+        sign("ndongo_sign_1619", 1700, FLOOR - 400, "1619: the first Africans in English Virginia were taken from Ndongo", 660),
+        npc("history_funji", 2140, FLOOR, 62),
+        sign("ndongo_sign_funji", 2140, FLOOR - 200, "KIFUNJI, her sister, spied on the Portuguese from inside Luanda", 620),
+        enemy(rid, 1, "portuguese_arquebusier", 2320, FLOOR),
+        enemy(rid, 2, "portuguese_arquebusier", 2520, FLOOR),
+        prop_at("kilombo", "history_kilombo_gate", 2640, FLOOR, *G_PROP["history_kilombo_gate"]),
+        sign("ndongo_sign_kilombo", 2420, FLOOR - 330, "KILOMBO: a war camp. In Brazil a free town is a quilombo.", 580),
+        sign("ndongo_sign", 1400, 140, "NDONGO AND MATAMBA: Queen Nzinga's thirty years' war, 1624-1663 CE", 660),
+    ]
+    return grid_room(rid, "NDONGO AND MATAMBA", e, gaps=[gap])
+
+
+def congo_free_state():
+    """The Congo Free State, 1885-1908: the private property of King
+    Leopold II of Belgium, who never went there. Wild rubber for the
+    world's new tyres, taken by quota and terror. A sober room: no
+    creatures, and the people in it are witnesses. George Washington
+    Williams (1890), William Sheppard (1899), Alice Seeley Harris (1904)
+    and a rubber gatherer. A steamer like the one Conrad captained."""
+    rid = "history_congo_free_state"
+    stuff, gap = crossing(rid, "the Congo river", (1100, 1800), "history_congo_steamer", w=179, speed=60.0)
+    e = [
+        *stuff,
+        start(rid, 160, FLOOR),
+        sign("free_state_sign_leopold", 400, FLOOR - 420, "LEOPOLD II owned the Congo himself, 1885-1908. He never went there.", 660),
+        npc("history_george_washington_williams", 420, FLOOR, 68),
+        sign("free_state_sign_williams", 420, FLOOR - 240, "1890: GEORGE WASHINGTON WILLIAMS came to see, and wrote to the king.", 660),
+        sign("free_state_sign_williams_b", 420, FLOOR - 212, "To Washington he wrote: 'crimes against humanity'.", 520),
+        prop_at("vine", "history_rubber_vine", 720, FLOOR, *G_PROP["history_rubber_vine"]),
+        npc("history_rubber_gatherer", 860, FLOOR, 65),
+        sign("free_state_sign_rubber", 780, FLOOR - 340, "WILD RUBBER, for the world's new tyres. Each village had a quota,", 640),
+        sign("free_state_sign_rubber_b", 780, FLOOR - 312, "and soldiers to make it pay. They took hostages, and they killed.", 640),
+        sign("free_state_sign_conrad", 1450, FLOOR - 260, "1890: JOSEPH CONRAD took a steamer up this river. He wrote Heart of Darkness.", 740),
+        npc("history_william_sheppard", 1960, FLOOR, 68),
+        sign("free_state_sign_sheppard", 1960, FLOOR - 200, "1899: WILLIAM SHEPPARD found the dead of a raid, counted them, and told the world", 760),
+        npc("history_alice_seeley_harris", 2280, FLOOR, 62),
+        prop_at("lantern", "history_magic_lantern", 2420, FLOOR, *G_PROP["history_magic_lantern"]),
+        sign("free_state_sign_harris", 2300, FLOOR - 300, "1904: ALICE SEELEY HARRIS photographed it. Her lantern shows", 600),
+        sign("free_state_sign_harris_b", 2300, FLOOR - 272, "in Britain and America turned the world against the king.", 600),
+        sign("free_state_sign_dead", 1400, FLOOR - 380, "MILLIONS DIED, by killing, hunger and disease. No one counted.", 620),
+        sign("free_state_sign_1908", 2300, FLOOR - 420, "1908: Belgium took the colony from its king. 1960: independence.", 640),
+        sign("free_state_sign", 1400, 140, "THE CONGO FREE STATE: one king's property, 1885-1908 CE", 560),
+    ]
+    return grid_room(rid, "THE CONGO FREE STATE", e, gaps=[gap])
 
 
 # ---- R5: the Mediterranean and Southwest Asia ------------------------------
@@ -2829,7 +2995,7 @@ def door_of_no_return():
 
 
 #: The rooms, by floor from the bottom (Africa) to the top.
-ROOMS = (jomon, taiwan, silla, song, joseon, heian, kamakura, edo, meiji, dhaka_muslin, company_raj, ekushey, amazonia, palmares, rio_1888, sulawesi, austronesian_islands, dong_son, srivijaya, borobudur, angkor, cradle, southern_coast, green_sahara, nile, tomb, aksum, timbuktu, library, benin_city, door_of_no_return,
+ROOMS = (jomon, taiwan, silla, song, joseon, heian, kamakura, edo, meiji, ishango, kongo, ndongo, congo_free_state, dhaka_muslin, company_raj, ekushey, amazonia, palmares, rio_1888, sulawesi, austronesian_islands, dong_son, srivijaya, borobudur, angkor, cradle, southern_coast, green_sahara, nile, tomb, aksum, timbuktu, library, benin_city, door_of_no_return,
          levant, crescent, granary, uruk, classical, colosseum,
          ice_age_europe, painted_cave, first_farmers_of_europe, megalith_builders, celtic_frontier, viking_north, sail,
          industrial, mill,
