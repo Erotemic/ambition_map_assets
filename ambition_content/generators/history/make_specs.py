@@ -27,8 +27,8 @@ everyone starts in Africa (`tools/ambition_ldtk_tools/specs/check_flat_map.py hi
              C0       C1            C2              C3           C4          C5          C6     C7          C8
     R0 Americas       beringia ┐    maize           olmecs       maya        taino       haiti
     R½ S. America     beringia ┘    andes           caral        amazonia    palmares    rio 1888
-    R1 East Asia      mammoth st.┐  yellow river    shang        silk road   song        steppe
-    R1½ E. coasts     mammoth st.┘  jōmon           taiwan       silla       joseon      heian
+    R1 East Asia      mammoth st.┐  yellow river    shang        silk road   song        steppe kamakura
+    R1½ E. coasts     mammoth st.┘  jōmon           taiwan       silla       joseon      heian  edo         meiji
     R2 Oceania        sahul         highlands       lapita       wayfinders  rapa nui
     R2½ SE Asia       sulawesi      austronesians   dong son     srivijaya   angkor
     R3 South Asia     south. route  mehrgarh        indus                                muslin company     ekushey
@@ -97,6 +97,9 @@ GRID = {
     # own language in its own letters.
     (5, 1.5): "history_joseon",
     (6, 1.5): "history_heian",
+    (7, 1): "history_kamakura",
+    (7, 1.5): "history_edo",
+    (8, 1.5): "history_meiji",
     # Southeast Asia, a floor between Oceania and South Asia: the dispersal
     # crossed Wallacea by sea, and the Austronesians sailed through it.
     (1, 2.5): "history_sulawesi",
@@ -221,6 +224,8 @@ LINKS = {
     (5, 1): 2080,
     # Haiti's revolution haunted Brazil's slaveholders until 1888.
     (6, 0): 2660,
+    # Japan: from the Mongol wars down to Edo, five centuries on.
+    (7, 1): 2600,
     # Bengal's muslin went to Europe by sea; Lancashire's cloth came back.
     (6, 3): 2400,
     (7, 3): 600,
@@ -320,6 +325,8 @@ ARENA = "history_colosseum_bread_and_circuses"
 LOOMS = "history_cotton_mill_spinning_jenny"
 ROBBERS = "history_tomb_robbery_papyri"
 OCHRE = "history_painted_cave_hands_on_the_wall"
+#: Edo and Meiji: city pop, the floating world's own.
+FLOATING = "history_japan_floating_world"
 MUSIC = {
     "history_cradle": AFRICA,
     "history_southern_coast": AFRICA,
@@ -354,6 +361,9 @@ MUSIC = {
     "history_song": COURTS,
     "history_joseon": COURTS,
     "history_heian": COURTS,
+    "history_kamakura": COURTS,
+    "history_edo": FLOATING,
+    "history_meiji": FLOATING,
     "history_dhaka_muslin": SOUTH_ASIA,
     "history_company_raj": SOUTH_ASIA,
     "history_ekushey": SOUTH_ASIA,
@@ -414,6 +424,7 @@ BIOME = {
     "history_song": "history_hangzhou", "history_joseon": "history_hanyang", "history_heian": "history_heian",
     "history_dhaka_muslin": "history_dhaka_river", "history_company_raj": "history_calcutta",
     "history_ekushey": "history_dhaka_spring",
+    "history_kamakura": "history_kamakura", "history_edo": "ninja_village", "history_meiji": "history_meiji",
     "history_amazonia": "history_marajo", "history_palmares": "history_palmares", "history_rio_1888": "history_rio_1888",
     "history_new_guinea_highlands": "history_highlands",
     "history_yellow_river": "history_yellow_river", "history_shang_court": "history_yellow_river",
@@ -456,7 +467,7 @@ BOX = {
     "sulawesi_warty_pig": (64, 40), "saltwater_crocodile": (120, 32),
     "water_monitor": (96, 24), "king_cobra": (48, 48),
     # Wave D: East Asia's coasts.
-    "asian_black_bear": (72, 56), "japanese_macaque": (40, 40), "clouded_leopard": (80, 40),
+    "asian_black_bear": (72, 56), "japanese_macaque": (40, 40), "npc_ninja_shadow_duelist_eye_band": (32, 66), "clouded_leopard": (80, 40),
     "tanuki": (48, 32),
     # Wave E: Bengal.
     "gharial": (120, 28), "rhesus_macaque": (36, 36),
@@ -1891,6 +1902,121 @@ def heian():
     return grid_room(rid, "HEIAN-KYŌ", e, gaps=[pond])
 
 
+def kamakura():
+    """Hakata Bay, 1281: the second Mongol invasion of Japan. After the
+    first (1274) the Kamakura shogunate built a stone wall along the bay,
+    and in 1281 the fleet could not land; a typhoon wrecked it. Takezaki
+    Suenaga fought in both, and paid for a scroll of his own deeds. The
+    regent Hōjō Tokimune, eighteen in 1268, did not answer Kublai Khan's
+    letters. The hatch at the east end goes down to Edo."""
+    rid = "history_kamakura"
+    down = LINKS[(7, 1)]
+    wall = (980, 1380)
+    wall_h = 80
+    e = [
+        start(rid, 160, FLOOR),
+        npc("history_hojo_tokimune", 380, FLOOR, 62),
+        sign("kamakura_sign_letters", 420, FLOOR - 200, "1268: KUBLAI KHAN wrote to 'the king of Japan'", 500),
+        sign("kamakura_sign_unread", 420, FLOOR - 172, "The regent Hōjō Tokimune, 18, did not answer.", 480),
+        npc("history_takezaki_suenaga", 680, FLOOR, 62),
+        prop_at("scroll", "history_suenaga_scroll", 800, FLOOR, 96, 48),
+        sign("kamakura_sign_suenaga", 720, FLOOR - 300, "TAKEZAKI SUENAGA fought in 1274, rode to Kamakura for his reward,", 680),
+        sign("kamakura_sign_scroll", 720, FLOOR - 272, "and then paid for a scroll to prove he had earned it.", 560),
+        # The stone wall of 1276: on top of it, the bay is below you.
+        solid("genko_wall", wall[0], FLOOR - wall_h, wall[1] - wall[0], wall_h),
+        ledge("wall_step", wall[0] - 120, FLOOR - 44, 96),
+        sign("kamakura_sign_wall", (wall[0] + wall[1]) // 2, FLOOR - 200, "THE STONE WALL, 1276: 20 km along Hakata Bay. In 1281 the fleet could not land.", 760),
+        chest("an arrow of 1281, still in the wall", wall[1] - 60, FLOOR - wall_h, "currency:120"),
+        enemy(rid, 1, "horse_archer", 1560, FLOOR),
+        prop_at("wreck", "history_mongol_wreck", 1820, FLOOR, 160, 80),
+        prop_at("tetsuhau", "history_tetsuhau", 2010, FLOOR, 56, 32),
+        sign("kamakura_sign_takashima", 1900, FLOOR - 260, "OFF TAKASHIMA the divers found the fleet's ships, and its bombs: the tetsuhau.", 740),
+        enemy(rid, 1, "japanese_macaque", 2150, FLOOR),
+        enemy(rid, 2, "horse_archer", 2300, FLOOR),
+        sign("kamakura_sign_typhoon", 2200, FLOOR - 340, "AUGUST 1281: a typhoon sank the fleet. Later it was called kamikaze, the divine wind.", 780),
+        sign("kamakura_sign_down", down + HOLE // 2 - 80, FLOOR - 120, "DOWN: Edo, five hundred years on", 340),
+        sign("kamakura_sign", 1400, 140, "HAKATA BAY: the Mongol fleets of 1274 and 1281 CE", 520),
+    ]
+    return grid_room(rid, "KAMAKURA JAPAN", e)
+
+
+def edo():
+    """Edo (Tokyo), about 1830: a city of a million, and Nihonbashi, the
+    bridge that every road of Japan was measured from. Dressed with the
+    ninja village's houses, tea house, bridge and storehouse, as a post
+    town of the Tōkaidō at the city's edge. Bashō (who walked north in
+    1689), Hokusai and his daughter Ōi; one ninja, who admits that his
+    black suit came from the theatre. Up: Kamakura."""
+    rid = "history_edo"
+    river = (1060, 1380)
+    e = [
+        start(rid, 160, FLOOR),
+        prop_at("tea_house", "village_tea_house", 470, FLOOR, 360, 172),
+        npc("history_matsuo_basho", 700, FLOOR, 61),
+        sign("edo_sign_basho", 600, FLOOR - 240, "MATSUO BASHŌ, 1689: 2,400 km on foot for The Narrow Road to the Deep North", 740),
+        sign("edo_sign_frog", 600, FLOOR - 340, "'An old pond. A frog jumps in. The sound of water.' That is the whole poem.", 720),
+        npc("history_edo_tea_keeper", 330, FLOOR, 61),
+        enemy(rid, 1, "tanuki", 880, FLOOR),
+        # Nihonbashi: the bridge over the river, and the drawn bridge behind it.
+        prop_at("nihonbashi", "pass_bridge", 1220, FLOOR + 8, 412, 135),
+        entity("HazardBlock", river[0], H - 16, river[1] - river[0], 16, name="the Nihonbashi river"),
+        ledge("bridge_west", 1020, FLOOR - 40, 120),
+        ledge("bridge_top", 1160, FLOOR - 76, 120),
+        ledge("bridge_east", 1300, FLOOR - 40, 120),
+        sign("edo_sign_bridge", 1220, FLOOR - 290, "NIHONBASHI, 1603: every road in Japan was measured from this bridge", 680),
+        npc("history_edo_fishmonger", 1480, FLOOR, 64),
+        sign("edo_sign_fish", 1500, FLOOR - 160, "THE FISH MARKET fed a city of a million, 1720", 460),
+        prop_at("prints", "history_ukiyoe_stall", 1700, FLOOR, 112, 96),
+        npc("history_hokusai", 1820, FLOOR, 60),
+        npc("history_katsushika_oi", 1940, FLOOR, 58),
+        sign("edo_sign_wave", 1760, FLOOR - 230, "THE GREAT WAVE, about 1831: sold for the price of a double bowl of noodles", 720),
+        sign("edo_sign_hokusai", 1820, FLOOR - 330, "HOKUSAI moved house 93 times and changed his name more than 30 times", 680),
+        sign("edo_sign_oi", 1940, FLOOR - 130, "ŌI, his daughter: he said she painted women better than he did", 620),
+        enemy(rid, 1, "japanese_macaque", 2100, FLOOR),
+        prop_at("storehouse", "village_storehouse", 2290, FLOOR, 264, 214),
+        prop_at("rice", "history_rice_sheaf", 2110, FLOOR, 48, 64),
+        sign("edo_sign_rice", 2240, FLOOR - 270, "1730, OSAKA: the Dōjima rice exchange traded rice not yet grown", 620),
+        enemy(rid, 1, "npc_ninja_shadow_duelist_eye_band", 2480, FLOOR),
+        sign("edo_sign_ninja", 2200, FLOOR - 400, "THE BLACK SUIT is from the theatre: kabuki stagehands wore black", 640),
+        sign("edo_sign_ninja_b", 2200, FLOOR - 372, "so the audience would agree not to see them. So would you.", 580),
+        sign("edo_sign_up", LINKS[(7, 1)] + HOLE // 2 - 60, FLOOR - 470, "UP: Kamakura and the Mongol fleets", 360),
+        sign("edo_sign", 1400, 140, "EDO: the city of a million, 1603-1868 CE", 440),
+    ]
+    return grid_room(rid, "EDO", e, gaps=[river])
+
+
+def meiji():
+    """Tokyo, 1872: the Meiji state copies the West at speed. The first
+    railway (Shimbashi to Yokohama) ran on an embankment over the sea at
+    Takanawa, because the army would not give up its land. Fukuzawa
+    Yukichi; Tsuda Umeko, sent to America at six; Kusumoto Ine, the first
+    Japanese woman doctor of Western medicine. And the new empire."""
+    rid = "history_meiji"
+    stuff, gap = crossing(rid, "the sea at Takanawa", (1500, 2160), "history_meiji_train", w=234, speed=80.0)
+    e = [
+        *stuff,
+        start(rid, 160, FLOOR),
+        npc("history_fukuzawa_yukichi", 360, FLOOR, 67),
+        sign("meiji_sign_fukuzawa", 400, FLOOR - 200, "FUKUZAWA YUKICHI, 1872: 'Heaven does not make one person above another'", 700),
+        sign("meiji_sign_note", 400, FLOOR - 300, "He was on the 10,000 yen note from 1984 to 2024.", 500),
+        npc("history_tsuda_umeko", 700, FLOOR, 56),
+        sign("meiji_sign_umeko", 760, FLOOR - 400, "TSUDA UMEKO went to America in 1871, aged six, and came home at seventeen", 720),
+        sign("meiji_sign_umeko_b", 760, FLOOR - 372, "having forgotten her Japanese. In 1900 she founded a college for women.", 700),
+        prop_at("rickshaw", "history_jinrikisha", 940, FLOOR, 72, 56),
+        npc("history_kusumoto_ine", 1160, FLOOR, 60),
+        sign("meiji_sign_ine", 1120, FLOOR - 200, "KUSUMOTO INE: Japan's first woman doctor of Western medicine", 620),
+        prop_at("lamp_a", "history_gas_lamp", 1340, FLOOR, 32, 160),
+        sign("meiji_sign_rail", 1830, FLOOR - 300, "1872: JAPAN'S FIRST RAILWAY. The army kept its land, so the line went over the sea.", 780),
+        enemy(rid, 1, "tanuki", 2250, FLOOR),
+        prop_at("ginza", "history_ginza_brick", 2470, FLOOR, 128, 128),
+        prop_at("lamp_b", "history_gas_lamp", 2640, FLOOR, 32, 160),
+        sign("meiji_sign_ginza", 2440, FLOOR - 250, "GINZA, 1872: rebuilt in brick after a fire. People found it damp.", 620),
+        sign("meiji_sign_empire", 1500, FLOOR - 360, "AND AN EMPIRE: Ainu Mosir (1869), Ryukyu (1879), Taiwan (1895), Korea (1910)", 760),
+        sign("meiji_sign", 1400, 140, "MEIJI TOKYO: Japan rebuilt in a generation, 1868-1912 CE", 540),
+    ]
+    return grid_room(rid, "MEIJI TOKYO", e, gaps=[gap])
+
+
 # ---- R3: South Asia ----------------------------------------------------------
 
 
@@ -2703,7 +2829,7 @@ def door_of_no_return():
 
 
 #: The rooms, by floor from the bottom (Africa) to the top.
-ROOMS = (jomon, taiwan, silla, song, joseon, heian, dhaka_muslin, company_raj, ekushey, amazonia, palmares, rio_1888, sulawesi, austronesian_islands, dong_son, srivijaya, borobudur, angkor, cradle, southern_coast, green_sahara, nile, tomb, aksum, timbuktu, library, benin_city, door_of_no_return,
+ROOMS = (jomon, taiwan, silla, song, joseon, heian, kamakura, edo, meiji, dhaka_muslin, company_raj, ekushey, amazonia, palmares, rio_1888, sulawesi, austronesian_islands, dong_son, srivijaya, borobudur, angkor, cradle, southern_coast, green_sahara, nile, tomb, aksum, timbuktu, library, benin_city, door_of_no_return,
          levant, crescent, granary, uruk, classical, colosseum,
          ice_age_europe, painted_cave, first_farmers_of_europe, megalith_builders, celtic_frontier, viking_north, sail,
          industrial, mill,

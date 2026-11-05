@@ -108,6 +108,15 @@ BLURB = {
     "history_heian": (
         "WHERE: Heian-kyō (now Kyoto), Japan. WHEN: the Heian period 794-1185 CE; this room about 1000 CE.",
         "FACT: The Tale of Genji (about 1008) and The Pillow Book (about 1002) were written by women of the court, in kana."),
+    "history_kamakura": (
+        "WHERE: Hakata Bay, Kyushu, Japan. WHEN: the Kamakura shogunate 1185-1333 CE; the invasions of 1274 and 1281.",
+        "FACT: the fleet of 1281 was one of the largest before modern times: about 4,000 ships, from Korea and from south China."),
+    "history_edo": (
+        "WHERE: Edo (today's Tokyo), Japan. WHEN: the Tokugawa shogunate 1603-1868 CE; this room about 1830.",
+        "FACT: for two centuries Japan let in almost no foreign ships; the Dutch could trade only from a small island at Nagasaki."),
+    "history_meiji": (
+        "WHERE: Tokyo, Japan. WHEN: the Meiji era 1868-1912 CE; this room 1872.",
+        "FACT: in 1872 Japan changed to the Western calendar at a month's notice: 3 December became 1 January 1873."),
     # ---- Southeast Asia ----
     "history_sulawesi": (
         "WHERE: Maros-Pangkep, Sulawesi (Indonesia), in Wallacea. WHEN: about 51,000-40,000 years ago.",
