@@ -26,7 +26,7 @@ everyone starts in Africa (`tools/ambition_ldtk_tools/specs/check_flat_map.py hi
 
              C0       C1            C2              C3           C4          C5          C6     C7          C8
     R0 Americas       beringia ┐    maize           olmecs       maya        taino       haiti
-    R½ S. America     beringia ┘    andes           caral
+    R½ S. America     beringia ┘    andes           caral        amazonia    palmares    rio 1888
     R1 East Asia      mammoth st.┐  yellow river    shang        silk road   song        steppe
     R1½ E. coasts     mammoth st.┘  jōmon           taiwan       silla       joseon      heian
     R2 Oceania        sahul         highlands       lapita       wayfinders  rapa nui
@@ -132,6 +132,12 @@ GRID = {
     (4, 6): "history_aksum_and_kush",
     (5, 0): "history_taino_islands",
     (6, 0): "history_haitian_revolution",
+    # Brazil and Amazonia, east of Caral on South America's floor: the garden
+    # cities of the forest, Palmares, and Rio in 1888 (under Haiti: Brazil's
+    # slaveholders feared another Haiti).
+    (4, 0.5): "history_amazonia",
+    (5, 0.5): "history_palmares",
+    (6, 0.5): "history_rio_1888",
     # Song China, between the Silk Road and the Great Wall.
     (5, 1): "history_song",
     (6, 1): "history_mongol_steppe",
@@ -213,6 +219,8 @@ LINKS = {
     (4, 1): 2460,
     # Printing: Song China's movable type; Korea's metal type after it.
     (5, 1): 2080,
+    # Haiti's revolution haunted Brazil's slaveholders until 1888.
+    (6, 0): 2660,
     # Bengal's muslin went to Europe by sea; Lancashire's cloth came back.
     (6, 3): 2400,
     (7, 3): 600,
@@ -287,7 +295,9 @@ ROOMS_AT[BOROBUDUR] = (ROOMS_AT[BOROBUDUR][0], (1600, 2 * H))
 #: walks east through the ages. A building takes the cue of its region,
 #: except where its own place has its own mood (the tomb, the arena, the
 #: mill, the cave). The Age of Sail and the Industrial Age are not one
-#: region's music any more; they keep the cues of their eras.
+#: region's music; each has its own cue. Every cue here is a History cue
+#: (`history_*`): a cue of another dimension belongs to its own place (see
+#: "Rules for new cues" in docs/planning/game/history-dimension.md).
 AFRICA = "history_africa_first_footsteps"
 CRESCENT = "history_crescent_between_the_rivers"
 EUROPE = "history_europe_solstice_stones"
@@ -300,6 +310,16 @@ OCEANIA = "history_oceania_sahul"
 NO_RETURN = "history_atlantic_no_return"
 SE_ASIA = "history_southeast_asia_bronze_and_rain"
 COURTS = "history_east_asia_ink_and_silk"
+#: The cues of the Age of Sail, the Industrial Age and four buildings. Ska
+#: for the empires at sea, electro-swing for the factory age, arena rock
+#: for the arena, machine funk for the mill, trip-hop for the robbed tomb,
+#: lo-fi for the painted cave.
+SAIL = "history_age_of_sail_trade_winds"
+INDUSTRY = "history_industrial_coal_and_swagger"
+ARENA = "history_colosseum_bread_and_circuses"
+LOOMS = "history_cotton_mill_spinning_jenny"
+ROBBERS = "history_tomb_robbery_papyri"
+OCHRE = "history_painted_cave_hands_on_the_wall"
 MUSIC = {
     "history_cradle": AFRICA,
     "history_southern_coast": AFRICA,
@@ -318,8 +338,8 @@ MUSIC = {
     "history_megalith_builders": EUROPE,
     "history_celtic_frontier": EUROPE,
     "history_viking_north": EUROPE,
-    "history_age_of_sail": "pirates_guild_black_flag_jig",
-    "history_industrial_age": "galvanic_march",
+    "history_age_of_sail": SAIL,
+    "history_industrial_age": INDUSTRY,
     "history_southern_route": SOUTH_ASIA,
     "history_mehrgarh": SOUTH_ASIA,
     "history_indus_cities": SOUTH_ASIA,
@@ -337,6 +357,9 @@ MUSIC = {
     "history_dhaka_muslin": SOUTH_ASIA,
     "history_company_raj": SOUTH_ASIA,
     "history_ekushey": SOUTH_ASIA,
+    "history_amazonia": AMERICAS,
+    "history_palmares": AMERICAS,
+    "history_rio_1888": AMERICAS,
     "history_angkor": SE_ASIA,
     BOROBUDUR: SE_ASIA,
     "history_new_guinea_highlands": OCEANIA,
@@ -357,13 +380,15 @@ MUSIC = {
     "history_wayfinders": OCEANIA,
     "history_rapa_nui": OCEANIA,
     GRANARY: CRESCENT,
-    TOMB: "vault_in_the_dark",
-    COLOSSEUM: "fighters_guild_oath_of_steel",
+    TOMB: ROBBERS,
+    COLOSSEUM: ARENA,
     GER: EAST_ASIA,
     LIBRARY: AFRICA,
-    MILL: "luddites_guild_loom_and_liberty",
-    CAVE: "vault_in_the_dark",
+    MILL: LOOMS,
+    CAVE: OCHRE,
 }
+_foreign = sorted(cue for cue in set(MUSIC.values()) if not cue.startswith("history_"))
+assert not _foreign, f"History rooms play only History cues: {_foreign}"
 BIOME = {
     "history_cradle": "history_savanna", "history_southern_coast": "history_savanna",
     "history_green_sahara": "history_green_sahara",
@@ -389,6 +414,7 @@ BIOME = {
     "history_song": "history_hangzhou", "history_joseon": "history_hanyang", "history_heian": "history_heian",
     "history_dhaka_muslin": "history_dhaka_river", "history_company_raj": "history_calcutta",
     "history_ekushey": "history_dhaka_spring",
+    "history_amazonia": "history_marajo", "history_palmares": "history_palmares", "history_rio_1888": "history_rio_1888",
     "history_new_guinea_highlands": "history_highlands",
     "history_yellow_river": "history_yellow_river", "history_shang_court": "history_yellow_river",
     "history_silk_road": "history_silk",
@@ -434,6 +460,8 @@ BOX = {
     "tanuki": (48, 32),
     # Wave E: Bengal.
     "gharial": (120, 28), "rhesus_macaque": (36, 36),
+    # Wave F: Brazil and Amazonia.
+    "black_caiman": (112, 28), "capybara": (56, 36),
 }
 
 DOOR_W, DOOR_H = 48, 192
@@ -2250,6 +2278,115 @@ def great_ger():
     return building(GER, "history_mongol_steppe", "steppe_ger_door", "THE GREAT GER", extra)
 
 
+# ---- R½: Brazil and Amazonia --------------------------------------------------
+
+
+def amazonia():
+    """Marajó and the Amazon floodplain, about 1000 CE: the forest was a
+    garden. The Marajoara raised their houses on earth mounds (tesos) over
+    the flood and painted their pottery; across the Amazon, people made terra
+    preta, dark earth, that is still fertile; under the forest, lidar finds
+    towns and causeways. A Victoria lily leaf over the flooded forest; up a
+    samaúma tree."""
+    rid = "history_amazonia"
+    stuff, gap = crossing(rid, "the flooded forest", (800, 1300), "history_victoria_lily", w=80, speed=55.0)
+    e = [
+        *stuff,
+        start(rid, 160, FLOOR),
+        prop_at("teso_house", "history_teso_house", 380, FLOOR, 96, 80),
+        npc("history_marajoara_potter", 560, FLOOR, 60),
+        prop_at("pots", "history_marajoara_pots", 660, FLOOR, 64, 48),
+        sign("amazonia_sign_pots", 600, FLOOR - 200, "MARAJOARA POTTERY, 400-1400 CE: painted in red, black and white", 620),
+        sign("amazonia_sign_flood", 1050, FLOOR - 300, "THE FLOOD comes every year. The houses stand on mounds above it.", 640),
+        enemy(rid, 1, "black_caiman", 1420, FLOOR),
+        npc("history_dark_earth_gardener", 1640, FLOOR, 64),
+        sign("amazonia_sign_dark_earth", 1640, FLOOR - 200, "TERRA PRETA: charcoal, pottery and waste made dark earth. It is still fertile.", 720),
+        enemy(rid, 1, "capybara", 1880, FLOOR),
+        # The samaúma: up its buttress roots and branches.
+        ledge("samauma_a", 2080, FLOOR - 80, 160),
+        ledge("samauma_b", 2200, FLOOR - 160, 160),
+        ledge("samauma_c", 2100, FLOOR - 240, 180),
+        chest("a painted bowl of Marajó", 2190, FLOOR - 240, "currency:120"),
+        enemy(rid, 1, "howler_monkey", 2260, FLOOR - 160),
+        sign("amazonia_sign_lidar", 2190, FLOOR - 380, "UNDER THE FOREST: towns, causeways and reservoirs, found by lidar", 640),
+        enemy(rid, 1, "jaguar", 2580, FLOOR),
+        sign("amazonia_sign", 1400, 140, "THE AMAZON: the forest was a garden, 500 BCE-1500 CE", 560),
+    ]
+    return grid_room(rid, "THE GARDEN CITIES OF THE AMAZON", e, gaps=[gap])
+
+
+def palmares():
+    """Palmares, about 1680: on the Serra da Barriga in Alagoas, a free state
+    of people who had escaped slavery, for nearly a century (1605-1694):
+    villages (mocambos), fields, forges, and a palisade that beat off
+    expedition after expedition. Dandara, the smith, and Zumbi, its last
+    leader, who died on 20 November 1695: Brazil's Black Consciousness Day.
+    Up the palisade and the tiers of the hill."""
+    rid = "history_palmares"
+    e = [
+        start(rid, 160, FLOOR),
+        prop_at("mocambo", "history_mocambo_hut", 340, FLOOR, 80, 64),
+        npc("history_dandara", 520, FLOOR, 64),
+        sign("palmares_sign_dandara", 520, FLOOR - 200, "DANDARA: farmer and fighter, as Palmares remembers her", 520),
+        npc("history_palmares_smith", 760, FLOOR, 67),
+        prop_at("forge", "history_village_forge", 880, FLOOR, 64, 48),
+        sign("palmares_sign_forge", 820, FLOOR - 300, "THE FORGES: smiths who knew Central Africa's ironwork made Palmares' tools", 720),
+        enemy(rid, 1, "capybara", 1060, FLOOR),
+        # The palisade: up its posts and along its walk.
+        ledge("palisade_post", 1200, FLOOR - 80, 120),
+        ledge("palisade_walk", 1280, FLOOR - 160, 320),
+        sign("palmares_sign_palisade", 1440, FLOOR - 360, "THE PALISADE: for nearly a century, expedition after expedition was beaten off", 760),
+        enemy(rid, 1, "jaguar", 1720, FLOOR),
+        npc("history_zumbi", 1920, FLOOR, 69),
+        sign("palmares_sign_zumbi", 1920, FLOOR - 200, "ZUMBI died on 20 November 1695: Black Consciousness Day", 560),
+        # The serra: its tiers, one over the next.
+        ledge("serra_a", 2150, FLOOR - 72, 420),
+        ledge("serra_b", 2250, FLOOR - 144, 320),
+        ledge("serra_c", 2350, FLOOR - 216, 200),
+        chest("a hoe from the forge", 2450, FLOOR - 216, "currency:120"),
+        enemy(rid, 1, "howler_monkey", 2300, FLOOR - 144),
+        sign("palmares_sign_view", 2450, FLOOR - 360, "FROM THE SERRA: the sugar plantations, far below", 500),
+        sign("palmares_sign", 1400, 140, "PALMARES: a free state in the hills, 1605-1694", 480),
+    ]
+    return grid_room(rid, "PALMARES", e)
+
+
+def rio_1888():
+    """Rio de Janeiro, 1888: on 13 May the Golden Law ended slavery in
+    Brazil, the last country in the Americas to do so. The abolitionists:
+    Luís Gama, sold into slavery as a boy, who freed hundreds as a lawyer;
+    André Rebouças, engineer; the jangadeiros of Ceará, who in 1881 would not
+    carry enslaved people, led by the Dragon of the Sea, whose jangada was
+    cheered through Rio in 1884. Up: Haiti, which Brazil's slaveholders
+    feared."""
+    rid = "history_rio_1888"
+    up = LINKS[(6, 0)]
+    stuff, gap = crossing(rid, "Guanabara Bay", (1560, 2160), "history_jangada", w=170, speed=70.0)
+    e = [
+        *stuff,
+        start(rid, 160, FLOOR),
+        npc("history_luis_gama", 340, FLOOR, 66),
+        sign("rio_sign_gama", 380, FLOOR - 200, "LUÍS GAMA: sold into slavery at ten; as a lawyer he freed hundreds", 640),
+        npc("history_andre_reboucas", 640, FLOOR, 70),
+        sign("rio_sign_reboucas", 660, FLOOR - 300, "ANDRÉ REBOUÇAS: engineer of docks and railways, and abolitionist", 640),
+        prop_at("bonde", "history_bonde", 900, FLOOR, 128, 80),
+        # The balconies over the street.
+        ledge("balcony_a", 1060, FLOOR - 96, 140),
+        ledge("balcony_b", 1200, FLOOR - 176, 140),
+        chest("a flower thrown on 13 May", 1270, FLOOR - 176, "currency:120"),
+        prop_at("lei_aurea", "history_lei_aurea", 1420, FLOOR, 48, 64),
+        sign("rio_sign_law", 1300, FLOOR - 330, "13 MAY 1888: the Golden Law. Brazil was the last in the Americas to end slavery.", 760),
+        enemy(rid, 1, "capybara", 1400, FLOOR - 176),
+        sign("rio_sign_jangada", 1860, FLOOR - 300, "1884: the Dragon of the Sea's jangada was cheered through Rio", 600),
+        npc("history_dragao_do_mar", 2300, FLOOR, 67),
+        sign("rio_sign_ceara", 2300, FLOOR - 200, "1881: CEARÁ'S RAFTSMEN would not carry the enslaved. Ceará was free in 1884.", 740),
+        enemy(rid, 2, "capybara", 2480, FLOOR),
+        sign("rio_sign_up", 2500, FLOOR - 470, "UP: Haiti. Brazil's slaveholders feared another Haiti.", 520),
+        sign("rio_sign", 1400, 140, "RIO DE JANEIRO: the last abolition in the Americas, 1888", 560),
+    ]
+    return grid_room(rid, "RIO, 1888", e, gaps=[gap])
+
+
 # ---- R0: the Americas ----------------------------------------------------------
 
 
@@ -2522,6 +2659,7 @@ def haitian_revolution():
         # far side of the Atlantic.
         *gates.as_ron(gates.terminal("Ayiti Gate", "history_ayiti_terminal", 2396, FLOOR)),
         *gates.as_ron(gates.ring("Ayiti Gate", "history_ayiti_gate", 2470, FLOOR, "the gate")),
+        sign("haiti_sign_down", 2560, FLOOR - 300, "DOWN: Brazil, where slaveholders feared another Haiti", 400),
     ]
     return grid_room(rid, "HAITI", e)
 
@@ -2565,7 +2703,7 @@ def door_of_no_return():
 
 
 #: The rooms, by floor from the bottom (Africa) to the top.
-ROOMS = (jomon, taiwan, silla, song, joseon, heian, dhaka_muslin, company_raj, ekushey, sulawesi, austronesian_islands, dong_son, srivijaya, borobudur, angkor, cradle, southern_coast, green_sahara, nile, tomb, aksum, timbuktu, library, benin_city, door_of_no_return,
+ROOMS = (jomon, taiwan, silla, song, joseon, heian, dhaka_muslin, company_raj, ekushey, amazonia, palmares, rio_1888, sulawesi, austronesian_islands, dong_son, srivijaya, borobudur, angkor, cradle, southern_coast, green_sahara, nile, tomb, aksum, timbuktu, library, benin_city, door_of_no_return,
          levant, crescent, granary, uruk, classical, colosseum,
          ice_age_europe, painted_cave, first_farmers_of_europe, megalith_builders, celtic_frontier, viking_north, sail,
          industrial, mill,

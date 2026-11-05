@@ -172,6 +172,15 @@ BLURB = {
     "history_caral": (
         "WHERE: Caral, in the Supe valley, Peru. WHEN: about 3000-1800 BCE.",
         "FACT: Caral built pyramids in the same centuries as Egypt, and no signs of war have been found there."),
+    "history_amazonia": (
+        "WHERE: Marajó island and the Amazon basin, Brazil. WHEN: Marajoara culture about 400-1400 CE; this room about 1000 CE.",
+        "FACT: lidar has found towns of platform mounds, causeways and reservoirs under the forest of Llanos de Mojos, Bolivia, from 500-1400 CE."),
+    "history_palmares": (
+        "WHERE: Serra da Barriga, Alagoas, Brazil. WHEN: the Quilombo dos Palmares 1605-1694 CE; this room about 1680 CE.",
+        "FACT: since 2024, 20 November, the day Zumbi was killed in 1695, is a national holiday in Brazil: Black Consciousness Day."),
+    "history_rio_1888": (
+        "WHERE: Rio de Janeiro, Brazil. WHEN: 1881-1888 CE; the Golden Law, 13 May 1888.",
+        "FACT: some four to five million enslaved Africans were brought to Brazil, more than to any other country in the Americas."),
     "history_olmec_heartland": (
         "WHERE: the Gulf coast of Mexico: San Lorenzo, La Venta. WHEN: about 1500-400 BCE.",
         "FACT: the Olmec carved at least 17 colossal heads of basalt, and made rubber balls from latex and morning glory."),
