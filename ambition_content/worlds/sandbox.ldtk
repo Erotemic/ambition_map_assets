@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 8152,
+	"nextUid": 8158,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -49146,6 +49146,180 @@
 							],
 							"__worldX": 5295,
 							"__worldY": -4475
+						},
+						{
+							"__identifier": "Portal",
+							"__grid": [41,50],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#A06CFF",
+							"__worldX": 3263,
+							"__worldY": -3942,
+							"iid": "Portal-8152",
+							"width": 18,
+							"height": 80,
+							"defUid": 6138,
+							"px": [671,810],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "contact_k_entry", "__tile": null, "defUid": 6134, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["contact_k_entry"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "K shot entry", "__tile": null, "defUid": 6135, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["K shot entry"]
+								}] },
+								{ "__identifier": "color", "__type": "String", "__value": "cyan", "__tile": null, "defUid": 6136, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["cyan"]
+								}] },
+								{ "__identifier": "normal", "__type": "String", "__value": "left", "__tile": null, "defUid": 6137, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["left"]
+								}] },
+								{ "__identifier": "link", "__type": "String", "__value": "portal_lab_k_contact", "__tile": null, "defUid": 6154, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_k_contact"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Portal",
+							"__grid": [61,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#A06CFF",
+							"__worldX": 3583,
+							"__worldY": -4092,
+							"iid": "Portal-8153",
+							"width": 18,
+							"height": 80,
+							"defUid": 6138,
+							"px": [991,660],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "contact_k_exit", "__tile": null, "defUid": 6134, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["contact_k_exit"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "K shot exit", "__tile": null, "defUid": 6135, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["K shot exit"]
+								}] },
+								{ "__identifier": "color", "__type": "String", "__value": "rose", "__tile": null, "defUid": 6136, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["rose"]
+								}] },
+								{ "__identifier": "normal", "__type": "String", "__value": "right", "__tile": null, "defUid": 6137, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["right"]
+								}] },
+								{ "__identifier": "link", "__type": "String", "__value": "portal_lab_k_contact", "__tile": null, "defUid": 6154, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_k_contact"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Solid",
+							"__grid": [62,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#6B7280",
+							"__worldX": 3594,
+							"__worldY": -4068,
+							"iid": "Solid-8154",
+							"width": 32,
+							"height": 32,
+							"defUid": 2001,
+							"px": [1002,684],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "K far-side target", "__tile": null, "defUid": 3001, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["K far-side target"]
+							}] }]
+						},
+						{
+							"__identifier": "GroundItem",
+							"__grid": [31,55],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7FE3C0",
+							"__worldX": 3092,
+							"__worldY": -3870,
+							"iid": "GroundItem-8155",
+							"width": 28,
+							"height": 14,
+							"defUid": 5943,
+							"px": [500,882],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "portal_lab_contact_gun_sword", "__tile": null, "defUid": 5940, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_contact_gun_sword"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "gun sword", "__tile": null, "defUid": 5941, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gun sword"]
+								}] },
+								{ "__identifier": "held_item", "__type": "String", "__value": "gun_sword", "__tile": null, "defUid": 5942, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gun_sword"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [33,47],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 3132,
+							"__worldY": -4000,
+							"iid": "DebugLabel-8156",
+							"width": 440,
+							"height": 36,
+							"defUid": 2007,
+							"px": [540,752],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lab_sign_k_entry", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lab_sign_k_entry"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "K: fire a shot right into this opening.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["K: fire a shot right into this opening."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [46,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 3342,
+							"__worldY": -4160,
+							"iid": "DebugLabel-8157",
+							"width": 420,
+							"height": 48,
+							"defUid": 2007,
+							"px": [750,592],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lab_sign_k_exit", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lab_sign_k_exit"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "The shot hits the far target before its centre crosses.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["The shot hits the far target before its centre crosses."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
 						}
 					]
 				},
