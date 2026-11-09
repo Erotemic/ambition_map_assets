@@ -48856,9 +48856,9 @@
 									"id": "V_String",
 									"params": ["lab_sign_f"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "F: swinging plank <-> floor", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "F: cross a moving opening.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["F: swinging plank <-> floor"]
+									"params": ["F: cross a moving opening."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
@@ -48993,9 +48993,9 @@
 									"id": "V_String",
 									"params": ["lab_sign_g"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "G: spinning plank <-> shelf", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "G: a spin can take a still body.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["G: spinning plank <-> shelf"]
+									"params": ["G: a spin can take a still body."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
