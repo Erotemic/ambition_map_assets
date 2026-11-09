@@ -173,6 +173,24 @@ BLURB = {
     "history_waitangi": (
         "WHERE: Waitangi, Bay of Islands, New Zealand. WHEN: 6 February 1840 CE.",
         "FACT: more than 500 chiefs signed copies of the Treaty in 1840, almost all of them the Māori text."),
+    "history_marianas": (
+        "WHERE: Guåhan (Guam) and the Mariana Islands. WHEN: about 1500 BCE-1700 CE.",
+        "FACT: CHamoru is still spoken on Guam and in the Northern Marianas, beside English."),
+    "history_nan_madol": (
+        "WHERE: Nan Madol, Pohnpei, Federated States of Micronesia. WHEN: about 1180-1628 CE.",
+        "FACT: Nan Madol is often called the only ancient city built on a coral reef."),
+    "history_marshalls": (
+        "WHERE: the Marshall Islands. WHEN: about 1500-1900 CE.",
+        "FACT: Marshallese navigators sailed between atolls hundreds of kilometres apart with no instruments at all."),
+    "history_yap": (
+        "WHERE: Yap, Federated States of Micronesia, and Palau. WHEN: about 1500-1900 CE.",
+        "FACT: rai still change hands on Yap at weddings and in settlements, though the US dollar is used in shops."),
+    "history_nauru": (
+        "WHERE: Nauru, the central Pacific. WHEN: 1906-1968 CE.",
+        "FACT: Nauru is 21 km² and the world's smallest republic."),
+    "history_bikini": (
+        "WHERE: Bikini Atoll, the Marshall Islands. WHEN: 1946 CE.",
+        "FACT: a swimsuit was named after the atoll four days after the first test."),
     "history_lake_mungo": (
         "WHERE: Lake Mungo, the Willandra Lakes, New South Wales, Australia. WHEN: about 42,000-20,000 years ago.",
         "FACT: the Willandra Lakes are the land of the Paakantyi, Mutthi Mutthi and Ngiyampaa, and a World Heritage site since 1981."),

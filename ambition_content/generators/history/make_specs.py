@@ -29,7 +29,9 @@ everyone starts in Africa (`tools/ambition_ldtk_tools/specs/check_flat_map.py hi
     R½ S. America     beringia ┘    andes           caral        amazonia    palmares    rio 1888
     R1 East Asia      mammoth st.┐  yellow river    shang        silk road   song        steppe kamakura
     R1½ E. coasts     mammoth st.┘  jōmon           taiwan       silla       joseon      heian  edo         meiji
-    R2 Oceania        sahul         highlands       lapita       wayfinders  rapa nui
+    R1¾ Micronesia                                  marianas     nan madol   marshalls   yap    nauru       bikini
+    R2 Oceania        sahul         highlands       lapita       wayfinders  rapa nui    tonga  aotearoa    waitangi
+    R2¼ Australia     lake mungo    budj bim                                                                sydney cove
     R2½ SE Asia       sulawesi      austronesians   dong son     srivijaya   angkor
     R3 South Asia     south. route  mehrgarh        indus                                muslin company     ekushey
     R4 Europe         ice age       first farmers   megaliths    celts       vikings     sail   industrial
@@ -153,6 +155,12 @@ GRID = {
     # Australia, a row under Oceania, only where it cuts no way down to
     # Southeast Asia: Lake Mungo between Sahul and Sulawesi, Sydney Cove
     # under Waitangi.
+    (3, 1.75): "history_marianas",
+    (4, 1.75): "history_nan_madol",
+    (5, 1.75): "history_marshalls",
+    (6, 1.75): "history_yap",
+    (7, 1.75): "history_nauru",
+    (8, 1.75): "history_bikini",
     (1, 2.25): "history_lake_mungo",
     (2, 2.25): "history_budj_bim",
     (8, 2.25): "history_sydney_cove",
@@ -238,8 +246,10 @@ LINKS = {
     # farmed. (The way goes to the next floor down with a room in the
     # column: here, South America.)
     (2, 0): 2200,
-    # The Austronesians: the Lapita's ancestors sailed from Taiwan.
+    # The Austronesians: the Chamorro sailed from island Southeast Asia to the
+    # Marianas about 1500 BCE; the Lapita's ancestors sailed from Taiwan too.
     (3, 1.5): 1800,
+    (3, 1.75): 2400,
     # Silla's tombs hold glass from the far end of the Silk Road.
     (4, 1): 2460,
     # Printing: Song China's movable type; Korea's metal type after it.
@@ -310,6 +320,23 @@ G_PROP = {
     "history_raffia_loom": (72, 88), "history_nzimbu_basket": (56, 36), "history_afonso_letter": (64, 56),
     "history_baobab": (288, 288), "history_luanda_chair": (112, 88), "history_kilombo_gate": (128, 160),
     "history_rubber_vine": (80, 144), "history_magic_lantern": (80, 72),
+}
+#: Wave L2a's props (Micronesia), each placed at half its frame, its residents'
+#: heights, and the walk lines of the props you stand on (the art's frame px).
+L2_PROP = {
+    "history_latte_house": (208, 224), "history_lusong": (64, 40), "history_sakman": (224, 176), "history_stick_chart": (64, 80),
+    "history_basalt_wall": (224, 176), "history_sakau_stone": (72, 36), "history_rai_big": (144, 144), "history_rai_small": (80, 48),
+    "history_faluw": (224, 192), "history_phosphate_cantilever": (288, 176), "history_pinnacles": (144, 136),
+    "history_target_ship": (256, 96), "history_empty_house": (128, 104),
+}
+L2_H = {
+    "history_latte_builder": 61, "history_hurao": 65, "history_basalt_hauler": 66, "history_isokelekel": 67, "history_ri_meto": 64,
+    "history_pandanus_weaver": 60, "history_rai_owner": 65, "history_palau_quarrier": 65, "history_phosphate_digger": 64,
+    "history_hammer_deroburt": 66, "history_juda": 64, "history_bikini_elder": 60,
+}
+L2_WALK = {
+    "history_latte_house": (24, 392, 258), "history_sakman": (52, 396, 276), "history_basalt_wall": (24, 376, 40),
+    "history_phosphate_cantilever": (136, 548, 122),
 }
 #: Budj Bim's props, each placed at half its frame, and its residents' heights.
 B_PROP = {"history_eel_weir": (96, 48), "history_stone_house": (128, 80), "history_smoking_tree": (96, 160)}
@@ -445,6 +472,12 @@ MUSIC = {
     "history_waitangi": PACIFIC,
     "history_lake_mungo": OCEANIA,
     "history_budj_bim": OCEANIA,
+    "history_marianas": PACIFIC,
+    "history_nan_madol": OCEANIA,
+    "history_marshalls": PACIFIC,
+    "history_yap": OCEANIA,
+    "history_nauru": OCEANIA,
+    "history_bikini": NO_RETURN,
     "history_sydney_cove": OCEANIA,
     GRANARY: CRESCENT,
     TOMB: ROBBERS,
@@ -497,7 +530,9 @@ BIOME = {
     "history_lapita_voyagers": "history_lapita", "history_wayfinders": "history_open_ocean",
     "history_rapa_nui": "history_rapa_nui",
     "history_tonga_samoa": "history_tonga", "history_aotearoa": "history_aotearoa", "history_waitangi": "history_waitangi",
-    "history_lake_mungo": "history_willandra", "history_budj_bim": "history_budj_bim", "history_sydney_cove": "history_sydney_cove",
+    "history_lake_mungo": "history_willandra", "history_budj_bim": "history_budj_bim", "history_marianas": "history_marianas", "history_nan_madol": "history_nan_madol",
+    "history_marshalls": "history_marshalls", "history_yap": "history_yap", "history_nauru": "history_nauru", "history_bikini": "history_bikini",
+    "history_sydney_cove": "history_sydney_cove",
     CAVE: "history_painted_cave",
 }
 
@@ -516,7 +551,7 @@ BOX = {
     "woolly_mammoth": (130, 110), "cave_bear": (80, 64), "viking_raider": (34, 62),
     "tiger": (84, 48), "indus_unicorn": (64, 52), "taotie_spirit": (48, 48),
     "smilodon": (80, 50), "jaguar": (72, 42), "llama": (52, 64),
-    "diprotodon": (110, 70), "megalania": (120, 40), "cassowary_history": (44, 70), "kiwi": (30, 26), "emu": (48, 84), "kooyang": (72, 20), "black_swan": (40, 50),
+    "diprotodon": (110, 70), "megalania": (120, 40), "cassowary_history": (44, 70), "kiwi": (30, 26), "emu": (48, 84), "kooyang": (72, 20), "black_swan": (40, 50), "fanihi": (44, 28),
     # The third pass.
     "howler_monkey": (40, 44), "green_iguana": (72, 32), "coconut_crab": (64, 40),
     "frigatebird": (64, 40), "pacific_rat": (32, 20),
@@ -1943,7 +1978,7 @@ def taiwan():
         prop_at("jade", "history_jade_workshop", 1220, FLOOR, 80, 40),
         sign("taiwan_sign_jade", 1160, FLOOR - 200, "FENGTIAN JADE: worked here, found from the Philippines to Vietnam", 600),
         enemy(rid, 1, "clouded_leopard", 1500, FLOOR),
-        sign("taiwan_sign_down", down + HOLE // 2, FLOOR - 260, "DOWN: south over the sea, island to island, to the Lapita", 530),
+        sign("taiwan_sign_down", down + HOLE // 2, FLOOR - 260, "DOWN: the Marianas, and on to the Lapita, island to island", 560),
         sign("taiwan_sign_branches", 2140, FLOOR - 340, "9 OF THE 10 FIRST BRANCHES of the Austronesian languages are spoken only here", 730),
         enemy(rid, 1, "coral_crab", 2200, FLOOR),
         sign("taiwan_sign_now", 2400, FLOOR - 200, "TODAY: Taiwan recognizes 16 Indigenous peoples: Amis, Atayal, Paiwan, Bunun...", 730),
@@ -2348,7 +2383,7 @@ def lapita_voyagers():
     remote Pacific. Their ancestors came from Taiwan: the way up is the
     way back to East Asia. An outrigger canoe crosses the lagoon."""
     rid = "history_lapita_voyagers"
-    up = LINKS[(3, 1.5)]
+    up = LINKS[(3, 1.75)]
     stuff, gap = crossing(rid, "the lagoon", (1000, 1600), "history_outrigger_canoe", w=176)
     e = [
         *stuff,
@@ -2359,12 +2394,12 @@ def lapita_voyagers():
         sign("lapita_sign_pot", 700, FLOOR - 200, "LAPITA POTS: stamped with a toothed comb. Find one, and you know who came by.", 700),
         prop_at("palm_1", "history_coconut_palm", 880, FLOOR, 96, 192),
         sign("lapita_sign_lagoon", 1300, FLOOR - 260, "THE LAGOON: houses on stilts, canoes to the reef", 440),
-        sign("lapita_sign_up", up + HOLE // 2, FLOOR - 300, "UP: Taiwan, the homeland. Our grandmothers' grandmothers sailed from there.", 690),
+        sign("lapita_sign_up", up + HOLE // 2, FLOOR - 300, "UP: the Marianas, and Taiwan, the homeland, beyond them", 560),
         sign("lapita_sign", 1400, 140, "THE LAPITA VOYAGERS: out of sight of land, into the open Pacific, 1,500 BCE", 720),
         enemy(rid, 1, "coconut_crab", 2050, FLOOR),
         prop_at("palm_2", "history_coconut_palm", 2200, FLOOR, 96, 192),
-        enemy(rid, 1, "coral_crab", 2350, FLOOR),
-        enemy(rid, 2, "coconut_crab", 2560, FLOOR),
+        enemy(rid, 1, "coral_crab", 1800, FLOOR),
+        enemy(rid, 2, "coconut_crab", 2660, FLOOR),
     ]
     return grid_room(rid, "THE LAPITA VOYAGERS", e, gaps=[gap])
 
@@ -2533,6 +2568,223 @@ def waitangi():
         sign("waitangi_sign", 1400, 140, "WAITANGI, 1840: one treaty, two texts", 400),
     ]
     return grid_room(rid, "WAITANGI", e)
+
+
+# ---- R1¾: Micronesia -----------------------------------------------------------
+
+
+def walk_top(name, kind, x, floor=FLOOR):
+    """The ledge on the level top of the prop `kind` placed by `prop_at` at
+    `x` on `floor`: its walk line from the art (`L2_WALK`, frame px), at half
+    size. Returns the ledge and the y of its top."""
+    w, h = L2_PROP[kind]
+    x0, x1, top = L2_WALK[kind]
+    y = floor - h + top // 2
+    return ledge(name, x - w // 2 + x0 // 2, y, (x1 - x0) // 2), y
+
+
+def steps_to(name, x_right, top, rise=64, w=90, floor=FLOOR):
+    """Ledges that climb from `floor` to the height `top`, each `rise` above
+    the last, the highest one ending at `x_right`, each lower one further to
+    the left. The last jump is from the highest ledge onto `top`."""
+    ys = list(range(floor - rise, top + rise // 2, -rise))
+    return [ledge(f"{name}_{n}", x_right - w - (len(ys) - 1 - n) * (w - 24), y, w) for n, y in enumerate(ys)]
+
+
+def marianas():
+    """Guåhan (Guam) and the Marianas: the Chamorro (CHamoru) sailed here
+    from island Southeast Asia about 1500 BCE, one of the longest sea
+    crossings of its time. Houses on latte stones; the sakman, the flying
+    proa. Magellan came in 1521; the Spanish took the islands in the wars of
+    1668-1695, and most of the people died. Up: Taiwan; down: the Lapita."""
+    rid = "history_marianas"
+    up, down = LINKS[(3, 1.5)], LINKS[(3, 1.75)]
+    stuff, gap = crossing(rid, "the reef", (560, 1060), "history_sakman", w=(L2_WALK["history_sakman"][1] - L2_WALK["history_sakman"][0]) // 2, speed=120.0)
+    latte, latte_y = walk_top("latte_floor", "history_latte_house", 1360)
+    e = [
+        *stuff,
+        start(rid, 160, FLOOR),
+        npc("history_latte_builder", 300, FLOOR, L2_H["history_latte_builder"]),
+        prop_at("lusong", "history_lusong", 420, FLOOR, *L2_PROP["history_lusong"]),
+        sign("marianas_sign_crossing", 800, FLOOR - 300, "1500 BCE: about 2,000 km of open sea from the Philippines. One of the longest crossings of its time.", 820),
+        enemy(rid, 1, "fanihi", 900, FLOOR - 320),
+        prop_at("latte", "history_latte_house", 1360, FLOOR, *L2_PROP["history_latte_house"]),
+        *steps_to("latte_step", 1360 - L2_PROP["history_latte_house"][0] // 2 + L2_WALK["history_latte_house"][0] // 2, latte_y),
+        latte,
+        chest("a shell adze", 1360, latte_y, "currency:120"),
+        sign("marianas_sign_latte", 1360, FLOOR - 400, "LATTE: stone pillars and capstones that held houses up. Some stand 5 m tall.", 720),
+        sign("marianas_sign_magellan", 2120, FLOOR - 400, "1521: Magellan's crew came for water and food, and called the islands 'of thieves'.", 760),
+        sign("marianas_sign_wars", 2120, FLOOR - 372, "1668-1695: the Spanish-Chamorro wars. Disease and war killed most of the people.", 760),
+        npc("history_hurao", 2160, FLOOR, L2_H["history_hurao"]),
+        sign("marianas_sign_hurao", 2160, FLOOR - 220, "HURAO, 1671: he called on the CHamoru to drive the Spanish out", 600),
+        enemy(rid, 1, "coconut_crab", 2660, FLOOR),
+        sign("marianas_sign_up", up + HOLE // 2, FLOOR - 300, "UP: Taiwan, where the Austronesian languages began", 520),
+        sign("marianas_sign_down", down + HOLE // 2, FLOOR - 120, "DOWN: the Lapita, the other voyagers", 380),
+        sign("marianas_sign", 1400, 140, "THE MARIANAS: the CHamoru and their latte, 1500 BCE-1700 CE", 560),
+    ]
+    return grid_room(rid, "THE MARIANAS", e, gaps=[gap])
+
+
+def nan_madol():
+    """Nan Madol, off Pohnpei, about 1180-1628: the seat of the Saudeleur
+    dynasty, nearly a hundred islets built on the reef of basalt columns
+    laid like a log cabin, with canals between. Isokelekel ended the
+    Saudeleur rule; the Nahnmwarki chiefs he founded still have their
+    titles. Wade the canals; walk the tops of the walls."""
+    rid = "history_nan_madol"
+    c1, g1 = paddy(rid, 1, 860, 1060)
+    c2, g2 = paddy(rid, 2, 1560, 1760)
+    wall_1, wall_1_y = walk_top("wall_1_top", "history_basalt_wall", 700)
+    wall_2, wall_2_y = walk_top("wall_2_top", "history_basalt_wall", 1300)
+    wall_3, wall_3_y = walk_top("wall_3_top", "history_basalt_wall", 1960)
+    half = L2_PROP["history_basalt_wall"][0] // 2
+    e = [
+        *c1, *c2,
+        start(rid, 160, FLOOR),
+        npc("history_basalt_hauler", 360, FLOOR, L2_H["history_basalt_hauler"]),
+        sign("nan_madol_sign_basalt", 380, FLOOR - 220, "BASALT: about 750,000 tonnes, in columns. How they moved them, nobody knows.", 720),
+        prop_at("wall_1", "history_basalt_wall", 700, FLOOR, *L2_PROP["history_basalt_wall"]),
+        *steps_to("wall_1_step", 700 - half + L2_WALK["history_basalt_wall"][0] // 2, wall_1_y),
+        wall_1,
+        enemy(rid, 1, "coral_crab", 960, FLOOR + 30),
+        prop_at("wall_2", "history_basalt_wall", 1300, FLOOR, *L2_PROP["history_basalt_wall"]),
+        *steps_to("wall_2_step", 1300 - half + L2_WALK["history_basalt_wall"][0] // 2, wall_2_y),
+        wall_2,
+        chest("a shell-money belt", 1300, wall_2_y, "currency:120"),
+        sign("nan_madol_sign_islets", 1300, FLOOR - 400, "ABOUT 1180-1628: nearly 100 islets on the reef, with canals between", 640),
+        prop_at("sakau", "history_sakau_stone", 1440, FLOOR, *L2_PROP["history_sakau_stone"]),
+        prop_at("wall_3", "history_basalt_wall", 1960, FLOOR, *L2_PROP["history_basalt_wall"]),
+        *steps_to("wall_3_step", 1960 - half + L2_WALK["history_basalt_wall"][0] // 2, wall_3_y),
+        wall_3,
+        enemy(rid, 2, "coral_crab", 1660, FLOOR + 30),
+        npc("history_isokelekel", 2340, FLOOR, L2_H["history_isokelekel"]),
+        sign("nan_madol_sign_saudeleur", 2340, FLOOR - 260, "THE SAUDELEUR ruled Pohnpei from here, until Isokelekel ended it", 640),
+        sign("nan_madol_sign_today", 2340, FLOOR - 232, "His Nahnmwarki titles go on today. A World Heritage site since 2016.", 680),
+        sign("nan_madol_sign", 1400, 140, "NAN MADOL: a city of basalt on the reef, 1180-1628", 520),
+    ]
+    return grid_room(rid, "NAN MADOL", e, gaps=[g1, g2])
+
+
+def marshalls():
+    """The Marshall Islands, about 1500-1900: low coral atolls and the long
+    swells of the open ocean. Navigators learned the swells, and how islands
+    bend them, from charts of sticks and shells; at sea they read the swells
+    with their bodies. A canoe crosses the pass in the reef."""
+    rid = "history_marshalls"
+    stuff, gap = crossing(rid, "the pass in the reef", (900, 1500), "history_outrigger_canoe", w=176, speed=110.0)
+    e = [
+        *stuff,
+        start(rid, 160, FLOOR),
+        npc("history_ri_meto", 420, FLOOR, L2_H["history_ri_meto"]),
+        prop_at("chart", "history_stick_chart", 580, FLOOR, *L2_PROP["history_stick_chart"]),
+        sign("marshalls_sign_chart", 520, FLOOR - 220, "STICK CHARTS: curved sticks for the swells, shells for the islands", 620),
+        sign("marshalls_sign_body", 520, FLOOR - 192, "They stayed on land. At sea the navigator felt the swells.", 560),
+        prop_at("palm_1", "history_coconut_palm", 780, FLOOR, 96, 192),
+        enemy(rid, 1, "frigatebird", 1200, FLOOR - 380),
+        sign("marshalls_sign_pass", 1200, FLOOR - 260, "THE PASS: where the lagoon meets the open ocean", 460),
+        prop_at("palm_2", "history_coconut_palm", 1640, FLOOR, 96, 192),
+        npc("history_pandanus_weaver", 1900, FLOOR, L2_H["history_pandanus_weaver"]),
+        sign("marshalls_sign_atolls", 1900, FLOOR - 220, "29 ATOLLS AND 5 ISLANDS, most no more than 2 m above the sea", 600),
+        enemy(rid, 1, "coconut_crab", 2300, FLOOR),
+        prop_at("palm_3", "history_coconut_palm", 2520, FLOOR, 96, 192),
+        sign("marshalls_sign", 1400, 140, "THE MARSHALL ISLANDS: the navigators of the swells, 1500-1900", 600),
+    ]
+    return grid_room(rid, "THE MARSHALL ISLANDS", e, gaps=[gap])
+
+
+def yap():
+    """Yap, about 1500-1900: rai, the stone money, quarried in Palau and
+    carried 400 km home by canoe and raft. A stone's worth is its story:
+    who made it, how hard the voyage was. Big stones never move; their
+    owners change. One stone sank on the way home and is still owned. After
+    1871 David O'Keefe brought rai on his ship with iron tools; they were
+    worth less."""
+    rid = "history_yap"
+    stuff, gap = crossing(rid, "the reef channel", (1180, 1580), "history_outrigger_canoe", w=176, speed=100.0)
+    e = [
+        *stuff,
+        start(rid, 160, FLOOR),
+        prop_at("rai_1", "history_rai_big", 480, FLOOR, *L2_PROP["history_rai_big"]),
+        npc("history_rai_owner", 700, FLOOR, L2_H["history_rai_owner"]),
+        prop_at("rai_small", "history_rai_small", 820, FLOOR, *L2_PROP["history_rai_small"]),
+        sign("yap_sign_rai", 600, FLOOR - 300, "RAI: stone money, up to 3.6 m across. The big ones never move. Their owners change.", 800),
+        sign("yap_sign_story", 600, FLOOR - 272, "A stone is worth its story: who carved it, and how hard the voyage was.", 680),
+        sign("yap_sign_palau", 1380, FLOOR - 300, "QUARRIED IN PALAU, 400 km away, and brought home by canoe and raft", 640),
+        npc("history_palau_quarrier", 1760, FLOOR, L2_H["history_palau_quarrier"]),
+        sign("yap_sign_sunk", 1760, FLOOR - 220, "One stone sank on the way home. Everyone agreed it still counted.", 620),
+        prop_at("rai_2", "history_rai_big", 2000, FLOOR, *L2_PROP["history_rai_big"]),
+        prop_at("faluw", "history_faluw", 2400, FLOOR, *L2_PROP["history_faluw"]),
+        sign("yap_sign_okeefe", 2200, FLOOR - 400, "1871: David O'Keefe brought rai cut with iron tools on his ship. Easy stones were worth less.", 820),
+        sign("yap_sign_friedman", 2200, FLOOR - 372, "Economists still argue about Yap: is money a thing, or a record of who owes whom?", 780),
+        enemy(rid, 1, "coconut_crab", 2660, FLOOR),
+        sign("yap_sign", 1400, 140, "YAP: the stone money, 1500-1900", 360),
+    ]
+    return grid_room(rid, "YAP", e, gaps=[gap])
+
+
+def nauru():
+    """Nauru, about 1920-1968: an island mined for phosphate since 1906;
+    'topside' is a field of coral pinnacles where the phosphate was dug out
+    between them. Japan occupied it in 1942 and in 1943 sent 1,200 Nauruans
+    to Chuuk; many did not come back. Independent in 1968 under Hammer
+    DeRoburt; in 1989 it took Australia to the International Court for the
+    land that was mined, and settled in 1993. Half sober."""
+    rid = "history_nauru"
+    cant, cant_y = walk_top("cantilever_arm", "history_phosphate_cantilever", 2340)
+    pw, ph = L2_PROP["history_pinnacles"]
+    e = [
+        start(rid, 160, FLOOR),
+        npc("history_phosphate_digger", 380, FLOOR, L2_H["history_phosphate_digger"]),
+        sign("nauru_sign_dug", 400, FLOOR - 220, "PHOSPHATE: bird droppings, turned to rock over ages, dug for farm fertiliser", 720),
+        # Topside: over the pinnacles, from top to top.
+        prop_at("pinnacles_1", "history_pinnacles", 700, FLOOR, pw, ph),
+        ledge("pinnacles_1_top", 700 - pw // 4, FLOOR - ph + 8, pw // 2),
+        prop_at("pinnacles_2", "history_pinnacles", 900, FLOOR, pw, ph),
+        ledge("pinnacles_2_top", 900 - pw // 4, FLOOR - ph + 8, pw // 2),
+        prop_at("pinnacles_3", "history_pinnacles", 1100, FLOOR, pw, ph),
+        ledge("pinnacles_3_top", 1100 - pw // 4, FLOOR - ph + 8, pw // 2),
+        sign("nauru_sign_topside", 900, FLOOR - 400, "TOPSIDE: four fifths of the island were dug away, down to the coral", 660),
+        enemy(rid, 1, "frigatebird", 1300, FLOOR - 380),
+        sign("nauru_sign_birds", 1300, FLOOR - 300, "Nauruans tamed frigatebirds and flew them in contests", 520),
+        sign("nauru_sign_1942", 1560, FLOOR - 200, "1942: Japan occupied Nauru. In 1943 it sent 1,200 Nauruans to Chuuk; many did not come back.", 820),
+        npc("history_hammer_deroburt", 1880, FLOOR, L2_H["history_hammer_deroburt"]),
+        sign("nauru_sign_1968", 1880, FLOOR - 300, "31 JANUARY 1968: independence, with Hammer DeRoburt at its head", 600),
+        sign("nauru_sign_court", 1880, FLOOR - 272, "1989: Nauru took Australia to the International Court for its land. Settled 1993.", 760),
+        prop_at("cantilever", "history_phosphate_cantilever", 2340, FLOOR, *L2_PROP["history_phosphate_cantilever"]),
+        *steps_to("cantilever_step", 2340 - L2_PROP["history_phosphate_cantilever"][0] // 2 + L2_WALK["history_phosphate_cantilever"][0] // 2, cant_y),
+        cant,
+        chest("a frigatebird feather", 2500, cant_y, "currency:120"),
+        sign("nauru_sign", 1400, 140, "NAURU: an island shipped away, 1906-1968", 440),
+    ]
+    return grid_room(rid, "NAURU", e)
+
+
+def bikini():
+    """Bikini Atoll, 1946, sober: the 167 people of Bikini were moved away in
+    March 1946 so that the United States could test atomic bombs there,
+    'for the good of mankind'. 23 tests at Bikini, 67 in the Marshall
+    Islands; Bravo, 1954, poisoned Rongelap. Bikini is still not safe to
+    live on. No creatures; no cloud is shown."""
+    rid = "history_bikini"
+    c1, g1 = paddy(rid, 1, 1680, 2420)
+    e = [
+        *c1,
+        start(rid, 160, FLOOR),
+        prop_at("house_1", "history_empty_house", 480, FLOOR, *L2_PROP["history_empty_house"]),
+        npc("history_juda", 760, FLOOR, L2_H["history_juda"]),
+        sign("bikini_sign_ask", 760, FLOOR - 260, "MARCH 1946: a US commodore asked the people to leave 'for the good of mankind'", 760),
+        sign("bikini_sign_juda", 760, FLOOR - 232, "Their leader, Juda Kessibuki, said they would go.", 500),
+        prop_at("house_2", "history_empty_house", 1100, FLOOR, *L2_PROP["history_empty_house"]),
+        npc("history_bikini_elder", 1340, FLOOR, L2_H["history_bikini_elder"]),
+        sign("bikini_sign_rongerik", 1400, FLOOR - 220, "Rongerik, where they were sent, could not feed them. They nearly starved.", 700),
+        prop_at("ship", "history_target_ship", 2050, FLOOR + 24, *L2_PROP["history_target_ship"]),
+        sign("bikini_sign_tests", 2050, FLOOR - 400, "1946-1958: 23 tests at Bikini, 67 in the Marshall Islands", 560),
+        sign("bikini_sign_bravo", 2050, FLOOR - 372, "1954, BRAVO: its fallout fell on the people of Rongelap", 540),
+        sign("bikini_sign_moruroa", 2050, FLOOR - 344, "France tested 193 bombs in French Polynesia, at Moruroa and Fangataufa, until 1996", 780),
+        sign("bikini_sign_now", 2560, FLOOR - 220, "TODAY: Bikini is still not safe to live on", 420),
+        sign("bikini_sign", 1400, 140, "BIKINI, 1946: the people who were moved", 440),
+    ]
+    return grid_room(rid, "BIKINI, 1946", e, gaps=[g1])
 
 
 # ---- R2¼: Australia ------------------------------------------------------------
@@ -3252,7 +3504,7 @@ ROOMS = (jomon, taiwan, silla, song, joseon, heian, kamakura, edo, meiji, ishang
          industrial, mill,
          southern_route, mehrgarh, indus_cities,
          sahul, new_guinea_highlands, lapita_voyagers, wayfinders, rapa_nui, tonga_samoa, aotearoa, waitangi, lake_mungo,
-         budj_bim, sydney_cove,
+         budj_bim, sydney_cove, marianas, nan_madol, marshalls, yap, nauru, bikini,
          mammoth_steppe, yellow_river, shang_court, silk, steppe, great_ger,
          beringia, first_maize, olmec_heartland, maya_city, taino_islands, haitian_revolution,
          andean_highlands, caral)
