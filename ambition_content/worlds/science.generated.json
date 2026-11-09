@@ -1,0 +1,18 @@
+{
+  "schema": "ambition.ldtk_generated_record.v1",
+  "generated": {
+    "eureka_coil_lab": "71ed5ebdd79b168a",
+    "eureka_collider": "1eea4a1f21661e4c",
+    "eureka_elevator_climb": "6a8758cbfb1c78d1",
+    "eureka_elevator_station": "f5dc606ff77391a6",
+    "eureka_first_lab": "95bd215e4bc0ba80",
+    "eureka_gate_court": "38a7ffb44cf97613",
+    "eureka_observatory": "cb0b9758c1cb93cb",
+    "eureka_patent_office": "e6197907263ef327",
+    "eureka_quad": "5627c2f558d08abf",
+    "eureka_steam_plant": "87a553809e3cc663",
+    "eureka_test_range": "2271339da698fabf",
+    "orbital_station_tether_terminus": "030e31a58d1e1487"
+  },
+  "ldtk_owned": []
+}
