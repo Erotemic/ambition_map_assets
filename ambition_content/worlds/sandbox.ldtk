@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 8167,
+	"nextUid": 8174,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -49567,6 +49567,198 @@
 								{ "__identifier": "text", "__type": "String", "__value": "The moving exit carries the shot past the target. Time each shot.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["The moving exit carries the shot past the target. Time each shot."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Solid",
+							"__grid": [119,48],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#6B7280",
+							"__worldX": 4496,
+							"__worldY": -3984,
+							"iid": "Solid-8167",
+							"width": 16,
+							"height": 128,
+							"defUid": 2001,
+							"px": [1904,768],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "similarity_h_large_host", "__tile": null, "defUid": 3001, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["similarity_h_large_host"]
+							}] }]
+						},
+						{
+							"__identifier": "Solid",
+							"__grid": [153,51],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#6B7280",
+							"__worldX": 5040,
+							"__worldY": -3936,
+							"iid": "Solid-8168",
+							"width": 16,
+							"height": 80,
+							"defUid": 2001,
+							"px": [2448,816],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "similarity_h_small_host", "__tile": null, "defUid": 3001, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["similarity_h_small_host"]
+							}] }]
+						},
+						{
+							"__identifier": "Portal",
+							"__grid": [118,51],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#A06CFF",
+							"__worldX": 4487,
+							"__worldY": -3936,
+							"iid": "Portal-8169",
+							"width": 18,
+							"height": 80,
+							"defUid": 6138,
+							"px": [1895,816],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "similarity_h_large", "__tile": null, "defUid": 6134, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["similarity_h_large"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "H 80 to 40", "__tile": null, "defUid": 6135, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["H 80 to 40"]
+								}] },
+								{ "__identifier": "color", "__type": "String", "__value": "purple", "__tile": null, "defUid": 6136, "realEditorValues": [] },
+								{ "__identifier": "normal", "__type": "String", "__value": "left", "__tile": null, "defUid": 6137, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["left"]
+								}] },
+								{ "__identifier": "link", "__type": "String", "__value": "portal_lab_h_similarity", "__tile": null, "defUid": 6154, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_h_similarity"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Portal",
+							"__grid": [152,53],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#A06CFF",
+							"__worldX": 5031,
+							"__worldY": -3896,
+							"iid": "Portal-8170",
+							"width": 18,
+							"height": 40,
+							"defUid": 6138,
+							"px": [2439,856],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "similarity_h_small", "__tile": null, "defUid": 6134, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["similarity_h_small"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "H 40 to 80", "__tile": null, "defUid": 6135, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["H 40 to 80"]
+								}] },
+								{ "__identifier": "color", "__type": "String", "__value": "yellow", "__tile": null, "defUid": 6136, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["yellow"]
+								}] },
+								{ "__identifier": "normal", "__type": "String", "__value": "left", "__tile": null, "defUid": 6137, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["left"]
+								}] },
+								{ "__identifier": "link", "__type": "String", "__value": "portal_lab_h_similarity", "__tile": null, "defUid": 6154, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_h_similarity"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "GroundItem",
+							"__grid": [115,54],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7FE3C0",
+							"__worldX": 4432,
+							"__worldY": -3874,
+							"iid": "GroundItem-8171",
+							"width": 20,
+							"height": 14,
+							"defUid": 5943,
+							"px": [1840,878],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "portal_lab_asymmetric_javelin", "__tile": null, "defUid": 5940, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_asymmetric_javelin"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "javelin", "__tile": null, "defUid": 5941, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["javelin"]
+								}] },
+								{ "__identifier": "held_item", "__type": "String", "__value": "javelin", "__tile": null, "defUid": 5942, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["javelin"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [112,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 4384,
+							"__worldY": -4060,
+							"iid": "DebugLabel-8172",
+							"width": 390,
+							"height": 48,
+							"defUid": 2007,
+							"px": [1792,692],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lab_sign_h", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lab_sign_h"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "H: 80 / 40. Walk right to shrink. Select Reflection in F3 to mirror the body.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["H: 80 / 40. Walk right to shrink. Select Reflection in F3 to mirror the body."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [140,46],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 4832,
+							"__worldY": -4004,
+							"iid": "DebugLabel-8173",
+							"width": 370,
+							"height": 48,
+							"defUid": 2007,
+							"px": [2240,748],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lab_sign_h_return", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lab_sign_h_return"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Release movement, then walk right into the 40 opening to restore size and handedness.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": [
+										"Release movement, then walk right into the 40 opening to restore size and handedness."
+									]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
