@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 8174,
+	"nextUid": 8199,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -49762,6 +49762,643 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [75,41],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 3802,
+							"__worldY": -4092,
+							"iid": "DebugLabel-8174",
+							"width": 400,
+							"height": 36,
+							"defUid": 2007,
+							"px": [1210,660],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lab_sign_i", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lab_sign_i"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "I: In Reflection mode, carry the javelin through the wall pair twice.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["I: In Reflection mode, carry the javelin through the wall pair twice."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Portal",
+							"__grid": [146,46],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#A06CFF",
+							"__worldX": 4943,
+							"__worldY": -4016,
+							"iid": "Portal-8175",
+							"width": 18,
+							"height": 160,
+							"defUid": 6138,
+							"px": [2351,736],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "similarity_j_a_in", "__tile": null, "defUid": 6134, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["similarity_j_a_in"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "J first cut", "__tile": null, "defUid": 6135, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["J first cut"]
+								}] },
+								{ "__identifier": "color", "__type": "String", "__value": "purple", "__tile": null, "defUid": 6136, "realEditorValues": [] },
+								{ "__identifier": "normal", "__type": "String", "__value": "left", "__tile": null, "defUid": 6137, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["left"]
+								}] },
+								{ "__identifier": "link", "__type": "String", "__value": "portal_lab_j_first", "__tile": null, "defUid": 6154, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_j_first"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Portal",
+							"__grid": [149,48],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#A06CFF",
+							"__worldX": 4983,
+							"__worldY": -3976,
+							"iid": "Portal-8176",
+							"width": 18,
+							"height": 80,
+							"defUid": 6138,
+							"px": [2391,776],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "similarity_j_a_out", "__tile": null, "defUid": 6134, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["similarity_j_a_out"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "J first cut", "__tile": null, "defUid": 6135, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["J first cut"]
+								}] },
+								{ "__identifier": "color", "__type": "String", "__value": "purple", "__tile": null, "defUid": 6136, "realEditorValues": [] },
+								{ "__identifier": "normal", "__type": "String", "__value": "left", "__tile": null, "defUid": 6137, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["left"]
+								}] },
+								{ "__identifier": "link", "__type": "String", "__value": "portal_lab_j_first", "__tile": null, "defUid": 6154, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_j_first"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Portal",
+							"__grid": [149,48],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#A06CFF",
+							"__worldX": 4979,
+							"__worldY": -3976,
+							"iid": "Portal-8177",
+							"width": 18,
+							"height": 80,
+							"defUid": 6138,
+							"px": [2387,776],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "similarity_j_b_in", "__tile": null, "defUid": 6134, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["similarity_j_b_in"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "J second cut", "__tile": null, "defUid": 6135, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["J second cut"]
+								}] },
+								{ "__identifier": "color", "__type": "String", "__value": "purple", "__tile": null, "defUid": 6136, "realEditorValues": [] },
+								{ "__identifier": "normal", "__type": "String", "__value": "right", "__tile": null, "defUid": 6137, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["right"]
+								}] },
+								{ "__identifier": "link", "__type": "String", "__value": "portal_lab_j_second", "__tile": null, "defUid": 6154, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_j_second"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Portal",
+							"__grid": [166,48],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#A06CFF",
+							"__worldX": 5252,
+							"__worldY": -3981,
+							"iid": "Portal-8178",
+							"width": 80,
+							"height": 18,
+							"defUid": 6138,
+							"px": [2660,771],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "similarity_j_b_out", "__tile": null, "defUid": 6134, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["similarity_j_b_out"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "J second cut", "__tile": null, "defUid": 6135, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["J second cut"]
+								}] },
+								{ "__identifier": "color", "__type": "String", "__value": "purple", "__tile": null, "defUid": 6136, "realEditorValues": [] },
+								{ "__identifier": "normal", "__type": "String", "__value": "up", "__tile": null, "defUid": 6137, "realEditorValues": [] },
+								{ "__identifier": "link", "__type": "String", "__value": "portal_lab_j_second", "__tile": null, "defUid": 6154, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_j_second"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Portal",
+							"__grid": [166,47],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#A06CFF",
+							"__worldX": 5252,
+							"__worldY": -3985,
+							"iid": "Portal-8179",
+							"width": 80,
+							"height": 18,
+							"defUid": 6138,
+							"px": [2660,767],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "similarity_j_c_in", "__tile": null, "defUid": 6134, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["similarity_j_c_in"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "J third cut", "__tile": null, "defUid": 6135, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["J third cut"]
+								}] },
+								{ "__identifier": "color", "__type": "String", "__value": "purple", "__tile": null, "defUid": 6136, "realEditorValues": [] },
+								{ "__identifier": "normal", "__type": "String", "__value": "down", "__tile": null, "defUid": 6137, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["down"]
+								}] },
+								{ "__identifier": "link", "__type": "String", "__value": "portal_lab_j_third", "__tile": null, "defUid": 6154, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_j_third"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Portal",
+							"__grid": [164,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#A06CFF",
+							"__worldX": 5223,
+							"__worldY": -4052,
+							"iid": "Portal-8180",
+							"width": 18,
+							"height": 40,
+							"defUid": 6138,
+							"px": [2631,700],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "similarity_j_c_out", "__tile": null, "defUid": 6134, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["similarity_j_c_out"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "J third cut", "__tile": null, "defUid": 6135, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["J third cut"]
+								}] },
+								{ "__identifier": "color", "__type": "String", "__value": "purple", "__tile": null, "defUid": 6136, "realEditorValues": [] },
+								{ "__identifier": "normal", "__type": "String", "__value": "right", "__tile": null, "defUid": 6137, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["right"]
+								}] },
+								{ "__identifier": "link", "__type": "String", "__value": "portal_lab_j_third", "__tile": null, "defUid": 6154, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_j_third"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Portal",
+							"__grid": [145,54],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#A06CFF",
+							"__worldX": 4912,
+							"__worldY": -3877,
+							"iid": "Portal-8181",
+							"width": 80,
+							"height": 18,
+							"defUid": 6138,
+							"px": [2320,875],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "similarity_j_d_in", "__tile": null, "defUid": 6134, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["similarity_j_d_in"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "J simultaneous cut", "__tile": null, "defUid": 6135, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["J simultaneous cut"]
+								}] },
+								{ "__identifier": "color", "__type": "String", "__value": "purple", "__tile": null, "defUid": 6136, "realEditorValues": [] },
+								{ "__identifier": "normal", "__type": "String", "__value": "up", "__tile": null, "defUid": 6137, "realEditorValues": [] },
+								{ "__identifier": "link", "__type": "String", "__value": "portal_lab_j_other", "__tile": null, "defUid": 6154, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_j_other"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Portal",
+							"__grid": [130,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#A06CFF",
+							"__worldX": 4672,
+							"__worldY": -4111,
+							"iid": "Portal-8182",
+							"width": 80,
+							"height": 18,
+							"defUid": 6138,
+							"px": [2080,641],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "similarity_j_d_out", "__tile": null, "defUid": 6134, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["similarity_j_d_out"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "J simultaneous cut", "__tile": null, "defUid": 6135, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["J simultaneous cut"]
+								}] },
+								{ "__identifier": "color", "__type": "String", "__value": "purple", "__tile": null, "defUid": 6136, "realEditorValues": [] },
+								{ "__identifier": "normal", "__type": "String", "__value": "up", "__tile": null, "defUid": 6137, "realEditorValues": [] },
+								{ "__identifier": "link", "__type": "String", "__value": "portal_lab_j_other", "__tile": null, "defUid": 6154, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_j_other"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [140,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 4832,
+							"__worldY": -4160,
+							"iid": "DebugLabel-8183",
+							"width": 490,
+							"height": 48,
+							"defUid": 2007,
+							"px": [2240,592],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lab_sign_j", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lab_sign_j"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "J: F3: Reflection, Composed, 3 or more hops. Pick up the axe. Try 2 hops to refuse the swing.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": [
+										"J: F3: Reflection, Composed, 3 or more hops. Pick up the axe. Try 2 hops to refuse the swing."
+									]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [162,35],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 5192,
+							"__worldY": -4192,
+							"iid": "DebugLabel-8184",
+							"width": 480,
+							"height": 48,
+							"defUid": 2007,
+							"px": [2600,560],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lab_sign_j_chain", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lab_sign_j_chain"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "The swing crosses three pairs and reaches the target at 1/4 scale.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["The swing crosses three pairs and reaches the target at 1/4 scale."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [140,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 4832,
+							"__worldY": -4112,
+							"iid": "DebugLabel-8185",
+							"width": 490,
+							"height": 36,
+							"defUid": 2007,
+							"px": [2240,640],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lab_sign_j_feet", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lab_sign_j_feet"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Stand with one foot over the floor opening. Swing right.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Stand with one foot over the floor opening. Swing right."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "GroundItem",
+							"__grid": [143,54],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7FE3C0",
+							"__worldX": 4886,
+							"__worldY": -3874,
+							"iid": "GroundItem-8186",
+							"width": 20,
+							"height": 14,
+							"defUid": 5943,
+							"px": [2294,878],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "portal_lab_chain_axe", "__tile": null, "defUid": 5940, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["portal_lab_chain_axe"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "axe", "__tile": null, "defUid": 5941, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["axe"]
+								}] },
+								{ "__identifier": "held_item", "__type": "String", "__value": "axe", "__tile": null, "defUid": 5942, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["axe"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Solid",
+							"__grid": [165,46],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#6B7280",
+							"__worldX": 5232,
+							"__worldY": -4008,
+							"iid": "Solid-8187",
+							"width": 64,
+							"height": 16,
+							"defUid": 2001,
+							"px": [2640,744],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "J target shelf", "__tile": null, "defUid": 3001, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["J target shelf"]
+							}] }]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [165,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 5232,
+							"__worldY": -4056,
+							"iid": "EnemySpawn-8188",
+							"width": 32,
+							"height": 48,
+							"defUid": 2008,
+							"px": [2640,696],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "J far target", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["J far target"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "Passive", "__tile": null, "defUid": 3019, "realEditorValues": [] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "sandbag_infinite", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["sandbag_infinite"]
+								}] },
+								{ "__identifier": "disposition", "__type": "String", "__value": "Hostile", "__tile": null, "defUid": 6857, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Hostile"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Solid",
+							"__grid": [147,45],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#6B7280",
+							"__worldX": 4952,
+							"__worldY": -4024,
+							"iid": "Solid-8189",
+							"width": 16,
+							"height": 176,
+							"defUid": 2001,
+							"px": [2360,728],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "J first entry backing", "__tile": null, "defUid": 3001, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["J first entry backing"]
+							}] }]
+						},
+						{
+							"__identifier": "Solid",
+							"__grid": [150,48],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#6B7280",
+							"__worldX": 4992,
+							"__worldY": -3984,
+							"iid": "Solid-8190",
+							"width": 16,
+							"height": 96,
+							"defUid": 2001,
+							"px": [2400,768],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "J first exit backing", "__tile": null, "defUid": 3001, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["J first exit backing"]
+							}] }]
+						},
+						{
+							"__identifier": "Solid",
+							"__grid": [148,48],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#6B7280",
+							"__worldX": 4972,
+							"__worldY": -3984,
+							"iid": "Solid-8191",
+							"width": 16,
+							"height": 96,
+							"defUid": 2001,
+							"px": [2380,768],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "J second entry backing", "__tile": null, "defUid": 3001, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["J second entry backing"]
+							}] }]
+						},
+						{
+							"__identifier": "Solid",
+							"__grid": [165,48],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#6B7280",
+							"__worldX": 5244,
+							"__worldY": -3972,
+							"iid": "Solid-8192",
+							"width": 96,
+							"height": 16,
+							"defUid": 2001,
+							"px": [2652,780],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "J second exit backing", "__tile": null, "defUid": 3001, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["J second exit backing"]
+							}] }]
+						},
+						{
+							"__identifier": "Solid",
+							"__grid": [165,47],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#6B7280",
+							"__worldX": 5244,
+							"__worldY": -3992,
+							"iid": "Solid-8193",
+							"width": 96,
+							"height": 16,
+							"defUid": 2001,
+							"px": [2652,760],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "J third entry backing", "__tile": null, "defUid": 3001, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["J third entry backing"]
+							}] }]
+						},
+						{
+							"__identifier": "Solid",
+							"__grid": [164,43],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#6B7280",
+							"__worldX": 5216,
+							"__worldY": -4060,
+							"iid": "Solid-8194",
+							"width": 16,
+							"height": 56,
+							"defUid": 2001,
+							"px": [2624,692],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "J third exit backing", "__tile": null, "defUid": 3001, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["J third exit backing"]
+							}] }]
+						},
+						{
+							"__identifier": "Solid",
+							"__grid": [145,55],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#6B7280",
+							"__worldX": 4912,
+							"__worldY": -3868,
+							"iid": "Solid-8195",
+							"width": 80,
+							"height": 12,
+							"defUid": 2001,
+							"px": [2320,884],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "J foot entry backing", "__tile": null, "defUid": 3001, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["J foot entry backing"]
+							}] }]
+						},
+						{
+							"__identifier": "Solid",
+							"__grid": [129,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#6B7280",
+							"__worldX": 4664,
+							"__worldY": -4102,
+							"iid": "Solid-8196",
+							"width": 96,
+							"height": 16,
+							"defUid": 2001,
+							"px": [2072,650],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "J foot exit backing", "__tile": null, "defUid": 3001, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["J foot exit backing"]
+							}] }]
+						},
+						{
+							"__identifier": "Solid",
+							"__grid": [42,50],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#6B7280",
+							"__worldX": 3272,
+							"__worldY": -3950,
+							"iid": "Solid-8197",
+							"width": 16,
+							"height": 96,
+							"defUid": 2001,
+							"px": [680,802],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "K entry backing", "__tile": null, "defUid": 3001, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["K entry backing"]
+							}] }]
+						},
+						{
+							"__identifier": "Solid",
+							"__grid": [61,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#6B7280",
+							"__worldX": 3576,
+							"__worldY": -4100,
+							"iid": "Solid-8198",
+							"width": 16,
+							"height": 96,
+							"defUid": 2001,
+							"px": [984,652],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "K exit backing", "__tile": null, "defUid": 3001, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["K exit backing"]
+							}] }]
 						}
 					]
 				},
