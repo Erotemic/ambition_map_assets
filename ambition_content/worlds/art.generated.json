@@ -1,0 +1,22 @@
+{
+  "schema": "ambition.ldtk_generated_record.v1",
+  "generated": {
+    "art_amphitheatre": "f7359b711106b9bd",
+    "art_backstage": "258d70acf9255d02",
+    "art_concert_hall": "fa2c3392cb0ddfd6",
+    "art_curators_studio": "db04c069d540da24",
+    "art_gallery_unfinished": "4399ea0e3ab64ca5",
+    "art_inkfall_caverns": "348b36616443453c",
+    "art_library_of_endings": "320a24165242e9e0",
+    "art_loom_hall": "e07c714b5b395054",
+    "art_picture_palace": "add6203063084d31",
+    "art_resonant_reach": "e7cf81137c0c9943",
+    "art_sculpture_garden": "67489ea7861ded0f",
+    "art_sketchbook_cliffs": "2fba63e6d4075afe",
+    "art_story_stacks": "0ada6a5ff3bc6c55",
+    "art_workshop_deeps": "0927f38756b1efbf"
+  },
+  "ldtk_owned": [
+    "art_painters_plaza"
+  ]
+}

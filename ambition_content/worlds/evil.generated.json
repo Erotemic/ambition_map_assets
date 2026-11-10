@@ -1,0 +1,29 @@
+{
+  "schema": "ambition.ldtk_generated_record.v1",
+  "generated": {
+    "castle_godwin_barracks": "7f4ab6eb599811a3",
+    "castle_godwin_cells": "36acd8e1768b94b9",
+    "castle_godwin_complaints": "b66c007c98650228",
+    "castle_godwin_gatehouse": "b3a518d341caa394",
+    "castle_godwin_great_hall": "1fcca700757a9344",
+    "castle_godwin_guild_room": "949397496a7d7395",
+    "castle_godwin_kitchens": "7a652e07dcdd6be3",
+    "castle_godwin_throne": "c11053941ef8ae03",
+    "castle_godwin_tower": "8e497b9cd4827f2d",
+    "castle_godwin_workshop": "cbd891cb3f9d4c46",
+    "evil_castle_allotments": "f7b5c6d7ca528ed5",
+    "evil_catacombs": "c611a7096d9f0b2a",
+    "evil_crooked_lantern": "af06953298d43eae",
+    "evil_crumbs_bakery": "fe0a732edf01b0fd",
+    "evil_founders_crypt": "a12b9d6d38c7cc0d",
+    "evil_gallows_hill": "7d8e31a9a7f4d3f5",
+    "evil_lower_godwin": "9105394d1e8f18d7",
+    "evil_other_founders": "3c6df6fbdd30d141",
+    "evil_searchlight_moor": "a3d917d7005e1dd9",
+    "evil_searchlight_ridge": "e7d1c0b70909124e"
+  },
+  "ldtk_owned": [
+    "evil_gate_forest",
+    "hall_wolfenstein_arena"
+  ]
+}

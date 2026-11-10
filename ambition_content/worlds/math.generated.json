@@ -1,0 +1,33 @@
+{
+  "schema": "ambition.ldtk_generated_record.v1",
+  "generated": {
+    "math_cafe": "21e6afffcbf145e0",
+    "math_conjectures": "b71ea473f625ef98",
+    "math_fibonacci_meadow": "2709d6d44160a62d",
+    "math_fractal_roots": "3284e98269c658b9",
+    "math_fractal_woods": "547cfe80be686942",
+    "math_hotel_ballroom": "6afd4a92c5f243c9",
+    "math_hotel_corridor": "e79ace523d9e1430",
+    "math_hotel_door_1": "2e77dfb3a298ec43",
+    "math_hotel_door_2": "97ce757bebb8050f",
+    "math_hotel_door_3": "c462930ae64db4ed",
+    "math_hotel_eigen_gallery": "a0b879d43c36bd50",
+    "math_hotel_gram_reaper": "bcef3fdfe3527112",
+    "math_hotel_lift": "93f870c19258b0b9",
+    "math_hotel_lobby": "64fa581a76586bd6",
+    "math_hotel_service_landing": "996a736e8a63aee7",
+    "math_hotel_shifted_suites": "c5cb4949322196e0",
+    "math_hotel_spectral_gap": "282ec302204d87ec",
+    "math_hotel_spectral_landing": "f953bda0515ce22c",
+    "math_hotel_spectral_treasury": "c0c89f5378c3cf5f",
+    "math_mobius_mine": "fa6f29a457868d52",
+    "math_observatory": "d6b934416414478a",
+    "math_surveyors_office": "938170cde3bfc834",
+    "math_tower_of_hanoi": "3b8ab76b83eee191",
+    "math_town_street": "0fb6ef55237315af",
+    "math_zeno_aqueduct": "3f24c4704fa94c86"
+  },
+  "ldtk_owned": [
+    "math_gate_hall"
+  ]
+}

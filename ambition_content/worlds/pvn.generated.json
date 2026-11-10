@@ -1,0 +1,29 @@
+{
+  "schema": "ambition.ldtk_generated_record.v1",
+  "generated": {
+    "ninja_bamboo_pass": "9595b670834518ea",
+    "ninja_village_dojo": "2ee0b85816b86994",
+    "ninja_village_forest": "be51ffbcc8cd5895",
+    "ninja_village_hidden_way": "8b764fe4486c875e",
+    "ninja_village_street": "796f17ad84115bb2",
+    "ninja_village_tea_room": "3f001f4d3efcb250",
+    "pirate_customs_cellars": "6d6f91d40be96ca7",
+    "pirate_lighthouse_point": "7735b1e3c830c934",
+    "pirate_port_docks": "71e9de78f8c99652",
+    "pirate_port_tavern": "75879a669ba86eea",
+    "pirate_port_waterfront": "4e2d967761ff1f5c",
+    "pirate_sail_loft": "7dcd8c8a4fe1e8c8",
+    "pirate_smugglers_hoard": "84bec0bad1df8fbf",
+    "pirate_smugglers_tunnel": "df7888946a50847c",
+    "pirate_wreckers_reef": "9c36dc772c8808cf"
+  },
+  "ldtk_owned": [
+    "mockingbird_arena",
+    "mockingbird_sky",
+    "ninja_dojo",
+    "ninja_village_gate_shrine",
+    "pirate_cove",
+    "pirate_port_gate_plaza",
+    "pirate_sky_lookout"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "ambition.ldtk_generated_record.v1",
+  "generated": {},
+  "ldtk_owned": [
+    "noodly_belfry",
+    "noodly_cistern",
+    "noodly_narthex",
+    "noodly_nave",
+    "noodly_reliquary",
+    "noodly_sanctum",
+    "noodly_scullery"
+  ]
+}

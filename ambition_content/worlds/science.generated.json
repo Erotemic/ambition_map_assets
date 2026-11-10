@@ -6,13 +6,27 @@
     "eureka_elevator_climb": "6a8758cbfb1c78d1",
     "eureka_elevator_station": "f5dc606ff77391a6",
     "eureka_first_lab": "95bd215e4bc0ba80",
-    "eureka_gate_court": "38a7ffb44cf97613",
     "eureka_observatory": "cb0b9758c1cb93cb",
     "eureka_patent_office": "e6197907263ef327",
     "eureka_quad": "5627c2f558d08abf",
     "eureka_steam_plant": "87a553809e3cc663",
     "eureka_test_range": "2271339da698fabf",
+    "gnu_ton_conservation_hall": "0671cbd2194cc463",
+    "gnu_ton_inversion_gallery": "92a0a1439638928a",
+    "gnu_ton_vector_well": "324ac51ba71b7b27",
+    "orbital_station_docking_bay": "26c3fb26735b206c",
+    "orbital_station_habitation": "46989abab2cc571e",
     "orbital_station_tether_terminus": "030e31a58d1e1487"
   },
-  "ldtk_owned": []
+  "ldtk_owned": [
+    "eureka_gate_court",
+    "gnu_ton_orchard",
+    "gnu_ton_shoulders",
+    "gnu_ton_works_approach",
+    "orbital_station_damaged_spur",
+    "orbital_station_gate_dock",
+    "orbital_station_observation_deck",
+    "orbital_station_service_deck",
+    "orbital_station_spoke"
+  ]
 }

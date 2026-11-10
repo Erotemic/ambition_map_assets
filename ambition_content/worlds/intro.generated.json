@@ -1,0 +1,17 @@
+{
+  "schema": "ambition.ldtk_generated_record.v1",
+  "generated": {},
+  "ldtk_owned": [
+    "alice_relay",
+    "bob_relay",
+    "combat_calibration_lab",
+    "drain_alley",
+    "first_system_boss",
+    "gate_stack_lower",
+    "intro_escape_shaft",
+    "intro_raid_corridor",
+    "intro_wake_room",
+    "pirate_sky_arena",
+    "under_town_pipes"
+  ]
+}
