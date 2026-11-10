@@ -1,0 +1,18 @@
+{
+  "schema": "ambition.ldtk_generated_record.v1",
+  "generated": {},
+  "ldtk_owned": [
+    "primeval_amber_vault",
+    "primeval_canopy",
+    "primeval_fossil_beds",
+    "primeval_ranger_station",
+    "primeval_ridge",
+    "primeval_rookery",
+    "primeval_run",
+    "primeval_smoking_mountain",
+    "primeval_tar_pits",
+    "primeval_trailhead",
+    "primeval_treetops",
+    "primeval_tyrant_hall"
+  ]
+}
