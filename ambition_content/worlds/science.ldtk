@@ -9251,9 +9251,9 @@
 									"id": "V_String",
 									"params": ["eureka_coulomba"]
 								}] },
-								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
+								{ "__identifier": "brain_override", "__type": "String", "__value": "keeps_to_its_tasks", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["stand_still"]
+									"params": ["keeps_to_its_tasks"]
 								}] }
 							]
 						},
