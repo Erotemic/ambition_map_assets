@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 105003,
+	"nextUid": 105005,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -690,6 +690,46 @@
 					"allowedRefsEntityUid": null,
 					"allowedRefTags": [],
 					"tilesetUid": null
+				},
+				{
+					"identifier": "presentation",
+					"doc": null,
+					"__type": "LocalEnum.LoadingZonePresentation",
+					"uid": 105004,
+					"type": "F_Enum(105003)",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": {
+						"id": "V_String",
+						"params": ["Default"]
+					},
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
 				}
 			]
 		},
@@ -3673,7 +3713,7 @@
 					"uid": 4334,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "NameAndValue",
@@ -5013,7 +5053,7 @@
 					"uid": 104974,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
@@ -6142,7 +6182,7 @@
 					"uid": 104960,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
@@ -6447,7 +6487,10 @@
 			"tileGridSize": 256,
 			"uid": 104928
 		}
-	], "enums": [{ "identifier": "BreakablePlatformCollision", "uid": 5002, "values": [ { "id": "Solid", "tileRect": null, "color": 14180189 }, { "id": "OneWayUp", "tileRect": null, "color": 10802479 } ], "iconTilesetUid": null, "externalRelPath": null, "externalFileChecksum": null, "tags": [] }], "externalEnums": [], "levelFields": [
+	], "enums": [
+		{ "identifier": "BreakablePlatformCollision", "uid": 5002, "values": [ { "id": "Solid", "tileRect": null, "color": 14180189 }, { "id": "OneWayUp", "tileRect": null, "color": 10802479 } ], "iconTilesetUid": null, "externalRelPath": null, "externalFileChecksum": null, "tags": [] },
+		{ "identifier": "LoadingZonePresentation", "uid": 105003, "values": [ { "id": "Default", "tileRect": null, "color": 0 }, { "id": "SceneArt", "tileRect": null, "color": 0 } ], "iconTilesetUid": null, "externalRelPath": null, "externalFileChecksum": null, "tags": [] }
+	], "externalEnums": [], "levelFields": [
 		{
 			"identifier": "activeArea",
 			"doc": "Ambition active-area id. LDtk levels with the same activeArea are stitched into one runtime room.",
@@ -7013,7 +7056,7 @@
 			"uid": 104927,
 			"type": "F_Bool",
 			"isArray": false,
-			"canBeNull": true,
+			"canBeNull": false,
 			"arrayMinLength": null,
 			"arrayMaxLength": null,
 			"editorDisplayMode": "NameAndValue",
@@ -7033,7 +7076,10 @@
 			"max": null,
 			"regex": null,
 			"acceptFileTypes": null,
-			"defaultOverride": null,
+			"defaultOverride": {
+				"id": "V_Bool",
+				"params": [ false ]
+			},
 			"textLanguageMode": null,
 			"symmetricalRef": false,
 			"autoChainRef": false,
@@ -7339,6 +7385,10 @@
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ false ]
+								}] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 105004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
 								}] }
 							],
 							"__worldX": 112,
@@ -15309,6 +15359,10 @@
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ false ]
+								}] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 105004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
 								}] }
 							],
 							"__worldX": 5572,
@@ -15860,6 +15914,10 @@
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ false ]
+								}] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 105004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
 								}] }
 							]
 						},

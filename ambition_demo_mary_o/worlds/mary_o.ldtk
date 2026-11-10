@@ -11,7 +11,7 @@
 	"iid": "ambition-mary-o-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 109886,
+	"nextUid": 109888,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -1671,6 +1671,46 @@
 					"allowedRefsEntityUid": null,
 					"allowedRefTags": [],
 					"tilesetUid": null
+				},
+				{
+					"identifier": "presentation",
+					"doc": null,
+					"__type": "LocalEnum.LoadingZonePresentation",
+					"uid": 109887,
+					"type": "F_Enum(109886)",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": {
+						"id": "V_String",
+						"params": ["Default"]
+					},
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
 				}
 			]
 		},
@@ -4617,7 +4657,7 @@
 					"uid": 4334,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "NameAndValue",
@@ -6031,7 +6071,7 @@
 					"uid": 107270,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
@@ -7154,7 +7194,7 @@
 					"uid": 6813,
 					"type": "F_Bool",
 					"isArray": false,
-					"canBeNull": true,
+					"canBeNull": false,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "RefLinkBetweenCenters",
@@ -7670,7 +7710,8 @@
 			{ "id": "mary_o_void_lizard", "tileRect": { "tilesetUid": 106934, "x": 0, "y": 672, "w": 184, "h": 134 }, "color": 0 },
 			{ "id": "mary_o_void_star", "tileRect": { "tilesetUid": 106934, "x": 192, "y": 672, "w": 80, "h": 72 }, "color": 0 }
 		], "iconTilesetUid": 106934, "externalRelPath": null, "externalFileChecksum": null, "tags": [] },
-		{ "identifier": "SpawnFacing", "uid": 107227, "values": [ { "id": "Left", "tileRect": null, "color": 0 }, { "id": "Right", "tileRect": null, "color": 0 } ], "iconTilesetUid": null, "externalRelPath": null, "externalFileChecksum": null, "tags": [] }
+		{ "identifier": "SpawnFacing", "uid": 107227, "values": [ { "id": "Left", "tileRect": null, "color": 0 }, { "id": "Right", "tileRect": null, "color": 0 } ], "iconTilesetUid": null, "externalRelPath": null, "externalFileChecksum": null, "tags": [] },
+		{ "identifier": "LoadingZonePresentation", "uid": 109886, "values": [ { "id": "Default", "tileRect": null, "color": 0 }, { "id": "SceneArt", "tileRect": null, "color": 0 } ], "iconTilesetUid": null, "externalRelPath": null, "externalFileChecksum": null, "tags": [] }
 	], "externalEnums": [], "levelFields": [
 		{
 			"identifier": "activeArea",
@@ -11070,6 +11111,10 @@
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ false ]
+								}] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 109887, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
 								}] }
 							]
 						}
@@ -70885,6 +70930,10 @@
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ false ]
+								}] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 109887, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
 								}] }
 							]
 						},
