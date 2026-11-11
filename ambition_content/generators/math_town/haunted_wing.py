@@ -32,15 +32,18 @@ def builders(kit):
         return (f'( type: "Prop", px: [{x}, {y}], size: [{w}, {h}], '
                 f'fields: ( name: "{name}", kind: "{kind}" ) ),')
 
-    def marble(name, x, y, w, *, one_way=False):
-        # Each native tile is a still platform. Its art and its contact face agree.
+    def marble(name, x, y, w):
+        # A floor: each native tile is a still platform. Its art and its
+        # contact face agree.
         return [(f'( type: "MovingPlatform", px: [{px}, {y}], size: [{min(128, x + w - px)}, 32], '
                  f'fields: ( id: "{name}_{i}", name: "{name}_{i}", speed: 0.0, '
-                 f'visual: "hylbert_floor_strip", one_way: {str(one_way).lower()} ) ),')
+                 f'visual: "hylbert_floor_strip", one_way: false ) ),')
                 for i, px in enumerate(range(x, x + w, 128))]
 
     def platform(name, x, y, w):
-        return marble(name, x, y, w, one_way=True)
+        # A ledge of the wing's marble: the skin (`math_haunted`) faces it,
+        # holds it up on corbels and curls its ends (`terrain/hotel_roles.py`).
+        return [kit.ledge(name, x, y, w)]
 
     def painted_door(zone, name, x, floor, to_room, to_zone):
         return [prop(f"{zone}_art", "hylbert_room_door", x - 12, floor - 126, 72, 126),
@@ -87,7 +90,7 @@ def builders(kit):
                         other, f"{other}_{opposite}")
 
     def finish(rid, e, title):
-        return rid, kit.room(rid, e, title, theme="math_interior",
+        return rid, kit.room(rid, e, title, theme="math_haunted",
                              bg="#20142B", music="math_town_night")
 
     def landing():

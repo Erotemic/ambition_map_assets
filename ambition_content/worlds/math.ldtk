@@ -31516,17 +31516,17 @@
 					"id": "V_String",
 					"params": ["math_hotel_eigen_gallery"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "math_haunted", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["math_interior"]
+					"params": ["math_haunted"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "math_town_night", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["math_town_night"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_haunted", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["math_interior"]
+					"params": ["math_haunted"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 210023, "realEditorValues": [{
 					"id": "V_Bool",
@@ -31624,13 +31624,13 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -31650,7 +31650,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -31670,8 +31670,8 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,
+						2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -32615,278 +32615,6 @@
 							]
 						},
 						{
-							"__identifier": "MovingPlatform",
-							"__grid": [17,38],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 10060,
-							"__worldY": 5008,
-							"iid": "MovingPlatform-210486",
-							"width": 128,
-							"height": 32,
-							"defUid": 4251,
-							"px": [280,608],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "gallery_ledge_0_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gallery_ledge_0_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gallery_ledge_0_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gallery_ledge_0_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [25,38],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 10188,
-							"__worldY": 5008,
-							"iid": "MovingPlatform-210487",
-							"width": 32,
-							"height": 32,
-							"defUid": 4251,
-							"px": [408,608],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "gallery_ledge_0_1", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gallery_ledge_0_1"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gallery_ledge_0_1", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gallery_ledge_0_1"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [31,32],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 10280,
-							"__worldY": 4912,
-							"iid": "MovingPlatform-210488",
-							"width": 128,
-							"height": 32,
-							"defUid": 4251,
-							"px": [500,512],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "gallery_ledge_1_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gallery_ledge_1_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gallery_ledge_1_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gallery_ledge_1_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [39,32],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 10408,
-							"__worldY": 4912,
-							"iid": "MovingPlatform-210489",
-							"width": 32,
-							"height": 32,
-							"defUid": 4251,
-							"px": [628,512],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "gallery_ledge_1_1", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gallery_ledge_1_1"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gallery_ledge_1_1", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gallery_ledge_1_1"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [45,26],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 10500,
-							"__worldY": 4816,
-							"iid": "MovingPlatform-210490",
-							"width": 128,
-							"height": 32,
-							"defUid": 4251,
-							"px": [720,416],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "gallery_ledge_2_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gallery_ledge_2_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gallery_ledge_2_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gallery_ledge_2_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [53,26],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 10628,
-							"__worldY": 4816,
-							"iid": "MovingPlatform-210491",
-							"width": 32,
-							"height": 32,
-							"defUid": 4251,
-							"px": [848,416],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "gallery_ledge_2_1", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gallery_ledge_2_1"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gallery_ledge_2_1", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gallery_ledge_2_1"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [60,24],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 10740,
-							"__worldY": 4784,
-							"iid": "MovingPlatform-210492",
-							"width": 128,
-							"height": 32,
-							"defUid": 4251,
-							"px": [960,384],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "gallery_ledge_3_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gallery_ledge_3_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gallery_ledge_3_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gallery_ledge_3_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [68,24],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 10868,
-							"__worldY": 4784,
-							"iid": "MovingPlatform-210493",
-							"width": 64,
-							"height": 32,
-							"defUid": 4251,
-							"px": [1088,384],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "gallery_ledge_3_1", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gallery_ledge_3_1"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gallery_ledge_3_1", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gallery_ledge_3_1"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
 							"__identifier": "EnemySpawn",
 							"__grid": [35,39],
 							"__pivot": [0,0],
@@ -33509,17 +33237,17 @@
 					"id": "V_String",
 					"params": ["math_hotel_shifted_suites"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "math_haunted", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["math_interior"]
+					"params": ["math_haunted"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "math_town_night", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["math_town_night"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_haunted", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["math_interior"]
+					"params": ["math_haunted"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 210023, "realEditorValues": [{
 					"id": "V_Bool",
@@ -33634,7 +33362,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -33643,16 +33371,16 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,
+						2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,
+						2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -33663,8 +33391,8 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,
+						2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -34733,278 +34461,6 @@
 							]
 						},
 						{
-							"__identifier": "MovingPlatform",
-							"__grid": [20,38],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 13620,
-							"__worldY": 5008,
-							"iid": "MovingPlatform-210585",
-							"width": 128,
-							"height": 32,
-							"defUid": 4251,
-							"px": [320,608],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "suite_balcony_0_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["suite_balcony_0_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "suite_balcony_0_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["suite_balcony_0_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [28,38],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 13748,
-							"__worldY": 5008,
-							"iid": "MovingPlatform-210586",
-							"width": 32,
-							"height": 32,
-							"defUid": 4251,
-							"px": [448,608],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "suite_balcony_0_1", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["suite_balcony_0_1"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "suite_balcony_0_1", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["suite_balcony_0_1"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [35,32],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 13860,
-							"__worldY": 4912,
-							"iid": "MovingPlatform-210587",
-							"width": 128,
-							"height": 32,
-							"defUid": 4251,
-							"px": [560,512],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "suite_balcony_1_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["suite_balcony_1_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "suite_balcony_1_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["suite_balcony_1_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [43,32],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 13988,
-							"__worldY": 4912,
-							"iid": "MovingPlatform-210588",
-							"width": 64,
-							"height": 32,
-							"defUid": 4251,
-							"px": [688,512],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "suite_balcony_1_1", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["suite_balcony_1_1"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "suite_balcony_1_1", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["suite_balcony_1_1"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [55,29],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 14180,
-							"__worldY": 4864,
-							"iid": "MovingPlatform-210589",
-							"width": 128,
-							"height": 32,
-							"defUid": 4251,
-							"px": [880,464],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "suite_balcony_2_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["suite_balcony_2_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "suite_balcony_2_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["suite_balcony_2_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [63,29],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 14308,
-							"__worldY": 4864,
-							"iid": "MovingPlatform-210590",
-							"width": 64,
-							"height": 32,
-							"defUid": 4251,
-							"px": [1008,464],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "suite_balcony_2_1", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["suite_balcony_2_1"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "suite_balcony_2_1", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["suite_balcony_2_1"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [75,34],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 14500,
-							"__worldY": 4944,
-							"iid": "MovingPlatform-210591",
-							"width": 128,
-							"height": 32,
-							"defUid": 4251,
-							"px": [1200,544],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "suite_balcony_3_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["suite_balcony_3_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "suite_balcony_3_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["suite_balcony_3_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [83,34],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 14628,
-							"__worldY": 4944,
-							"iid": "MovingPlatform-210592",
-							"width": 64,
-							"height": 32,
-							"defUid": 4251,
-							"px": [1328,544],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "suite_balcony_3_1", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["suite_balcony_3_1"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "suite_balcony_3_1", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["suite_balcony_3_1"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
 							"__identifier": "EnemySpawn",
 							"__grid": [30,39],
 							"__pivot": [0,0],
@@ -35656,17 +35112,17 @@
 					"id": "V_String",
 					"params": ["math_hotel_service_landing"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "math_haunted", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["math_interior"]
+					"params": ["math_haunted"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "math_town_night", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["math_town_night"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_haunted", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["math_interior"]
+					"params": ["math_haunted"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 210023, "realEditorValues": [{
 					"id": "V_Bool",
@@ -36824,17 +36280,17 @@
 					"id": "V_String",
 					"params": ["math_hotel_spectral_treasury"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "math_haunted", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["math_interior"]
+					"params": ["math_haunted"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "math_town_night", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["math_town_night"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_haunted", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["math_interior"]
+					"params": ["math_haunted"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 210023, "realEditorValues": [{
 					"id": "V_Bool",
@@ -37744,17 +37200,17 @@
 					"id": "V_String",
 					"params": ["math_hotel_spectral_landing"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "math_haunted", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["math_interior"]
+					"params": ["math_haunted"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "math_town_night", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["math_town_night"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_haunted", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["math_interior"]
+					"params": ["math_haunted"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 210023, "realEditorValues": [{
 					"id": "V_Bool",
@@ -37828,7 +37284,7 @@
 						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
@@ -37839,7 +37295,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -38609,74 +38065,6 @@
 							]
 						},
 						{
-							"__identifier": "MovingPlatform",
-							"__grid": [14,31],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 8724,
-							"__worldY": 5024,
-							"iid": "MovingPlatform-210728",
-							"width": 112,
-							"height": 32,
-							"defUid": 4251,
-							"px": [224,496],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "service_lift_step_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["service_lift_step_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "service_lift_step_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["service_lift_step_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [21,26],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 8840,
-							"__worldY": 4944,
-							"iid": "MovingPlatform-210729",
-							"width": 112,
-							"height": 32,
-							"defUid": 4251,
-							"px": [340,416],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "service_lift_landing_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["service_lift_landing_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "service_lift_landing_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["service_lift_landing_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
 							"__identifier": "LockWall",
 							"__grid": [21,18],
 							"__pivot": [0,0],
@@ -39122,17 +38510,17 @@
 					"id": "V_String",
 					"params": ["math_hotel_spectral_gap"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "math_haunted", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["math_interior"]
+					"params": ["math_haunted"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "math_town_night", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["math_town_night"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_haunted", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["math_interior"]
+					"params": ["math_haunted"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 210023, "realEditorValues": [{
 					"id": "V_Bool",
@@ -39253,7 +38641,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -39261,6 +38649,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -39269,8 +38658,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -39284,7 +38672,7 @@
 						1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,
+						1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,
@@ -39298,7 +38686,7 @@
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -40216,176 +39604,6 @@
 							]
 						},
 						{
-							"__identifier": "MovingPlatform",
-							"__grid": [40,40],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 12348,
-							"__worldY": 5040,
-							"iid": "MovingPlatform-210534",
-							"width": 112,
-							"height": 32,
-							"defUid": 4251,
-							"px": [648,640],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "gap_step_0_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gap_step_0_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gap_step_0_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gap_step_0_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [51,37],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 12524,
-							"__worldY": 4992,
-							"iid": "MovingPlatform-210535",
-							"width": 112,
-							"height": 32,
-							"defUid": 4251,
-							"px": [824,592],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "gap_step_1_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gap_step_1_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gap_step_1_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gap_step_1_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [39,53],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 12324,
-							"__worldY": 5248,
-							"iid": "MovingPlatform-210536",
-							"width": 112,
-							"height": 32,
-							"defUid": 4251,
-							"px": [624,848],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "gap_step_2_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gap_step_2_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gap_step_2_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gap_step_2_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [47,48],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 12452,
-							"__worldY": 5168,
-							"iid": "MovingPlatform-210537",
-							"width": 112,
-							"height": 32,
-							"defUid": 4251,
-							"px": [752,768],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "gap_step_3_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gap_step_3_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gap_step_3_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gap_step_3_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [54,43],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 12572,
-							"__worldY": 5088,
-							"iid": "MovingPlatform-210538",
-							"width": 112,
-							"height": 32,
-							"defUid": 4251,
-							"px": [872,688],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "gap_step_4_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gap_step_4_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "gap_step_4_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["gap_step_4_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
 							"__identifier": "EnemySpawn",
 							"__grid": [38,29],
 							"__pivot": [0,0],
@@ -40986,17 +40204,17 @@
 					"id": "V_String",
 					"params": ["math_hotel_gram_reaper"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "math_haunted", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["math_interior"]
+					"params": ["math_haunted"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "math_town_night", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["math_town_night"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_interior", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "math_haunted", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["math_interior"]
+					"params": ["math_haunted"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 210023, "realEditorValues": [{
 					"id": "V_Bool",
@@ -41118,9 +40336,9 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,
+						2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -42029,142 +41247,6 @@
 								{ "__identifier": "encounter_id", "__type": "String", "__value": "hylbert_hotel.gram_reaper", "__tile": null, "defUid": 6863, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["hylbert_hotel.gram_reaper"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [14,38],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 16564,
-							"__worldY": 5008,
-							"iid": "MovingPlatform-210667",
-							"width": 128,
-							"height": 32,
-							"defUid": 4251,
-							"px": [224,608],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "reaper_ledge_0_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["reaper_ledge_0_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "reaper_ledge_0_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["reaper_ledge_0_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [22,38],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 16692,
-							"__worldY": 5008,
-							"iid": "MovingPlatform-210668",
-							"width": 32,
-							"height": 32,
-							"defUid": 4251,
-							"px": [352,608],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "reaper_ledge_0_1", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["reaper_ledge_0_1"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "reaper_ledge_0_1", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["reaper_ledge_0_1"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [74,38],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 17524,
-							"__worldY": 5008,
-							"iid": "MovingPlatform-210669",
-							"width": 128,
-							"height": 32,
-							"defUid": 4251,
-							"px": [1184,608],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "reaper_ledge_1_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["reaper_ledge_1_0"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "reaper_ledge_1_0", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["reaper_ledge_1_0"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
-								}] }
-							]
-						},
-						{
-							"__identifier": "MovingPlatform",
-							"__grid": [82,38],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#5BA1FF",
-							"__worldX": 17652,
-							"__worldY": 5008,
-							"iid": "MovingPlatform-210670",
-							"width": 32,
-							"height": 32,
-							"defUid": 4251,
-							"px": [1312,608],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "reaper_ledge_1_1", "__tile": null, "defUid": 6853, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["reaper_ledge_1_1"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "reaper_ledge_1_1", "__tile": null, "defUid": 4248, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["reaper_ledge_1_1"]
-								}] },
-								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
-								{ "__identifier": "visual", "__type": "String", "__value": "hylbert_floor_strip", "__tile": null, "defUid": 6956, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hylbert_floor_strip"]
-								}] },
-								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
-									"id": "V_Bool",
-									"params": [ true ]
 								}] }
 							]
 						},
