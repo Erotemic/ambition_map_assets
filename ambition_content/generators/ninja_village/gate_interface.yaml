@@ -30,7 +30,7 @@ entities:
     size: [64, 56]
     fields:
       name: "Village Gate (Shrine) Dialer"
-      kind: "gate_dialer"
+      kind: "gate_dialer_triangle"
   - type: Switch
     px: [432, 660]
     size: [24, 32]

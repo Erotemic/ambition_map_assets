@@ -17571,9 +17571,9 @@
 									"id": "V_String",
 									"params": ["Port Gate (Plaza) Dialer"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer_triangle", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_dialer"]
+									"params": ["gate_dialer_triangle"]
 								}] }
 							]
 						},
@@ -27193,9 +27193,9 @@
 									"id": "V_String",
 									"params": ["Village Gate (Shrine) Dialer"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer_triangle", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_dialer"]
+									"params": ["gate_dialer_triangle"]
 								}] }
 							]
 						},

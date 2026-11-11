@@ -41,7 +41,7 @@ entities:
     size: [64, 56]
     fields:
       name: "Ring 7 (Home) Dialer"
-      kind: "gate_dialer"
+      kind: "gate_dialer_triangle"
   - type: Switch
     px: [1450, 692]
     size: [24, 32]
