@@ -1,7 +1,7 @@
 {
   "schema": "ambition.ldtk_generated_record.v1",
-  "generated": {},
-  "ldtk_owned": [
-    "hall_of_characters"
-  ]
+  "generated": {
+    "hall_of_characters": "0cb775ccd18be44a"
+  },
+  "ldtk_owned": []
 }
