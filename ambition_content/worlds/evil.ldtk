@@ -11,7 +11,7 @@
 	"iid": "ambition-evil-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 310249,
+	"nextUid": 310294,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -26068,26 +26068,26 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [410,40],
+							"__grid": [409,49],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 8565,
-							"__worldY": 2498,
-							"iid": "Prop-308587",
-							"width": 150,
-							"height": 190,
+							"__worldX": 8553,
+							"__worldY": 2650,
+							"iid": "Prop-310255",
+							"width": 174,
+							"height": 38,
 							"defUid": 4351,
-							"px": [6565,642],
+							"px": [6553,794],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "iron_throne", "__tile": null, "defUid": 4349, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "wolfenstein_bench", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["iron_throne"]
+									"params": ["wolfenstein_bench"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "castle_iron_throne", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "wolfenstein_bench", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["castle_iron_throne"]
+									"params": ["wolfenstein_bench"]
 								}] }
 							]
 						},

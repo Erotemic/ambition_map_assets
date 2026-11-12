@@ -245,10 +245,16 @@ def body_box(kind):
     return published_body_box(kind)
 
 
-def throne_middle(x):
-    """The middle of the iron throne's art, its frame's left at `x`."""
-    bx, _, bw, _ = body_box("castle_iron_throne")
+def middle_of(kind, x):
+    """The middle of prop `kind`'s art, its frame's left at `x`."""
+    bx, _, bw, _ = body_box(kind)
     return round(x + (bx + bw / 2) / PROP_PX)
+
+
+def standing_about(name, kind, middle, floor):
+    """Prop `kind` with its art's bottom middle at `middle` on `floor`."""
+    bx, _, bw, _ = body_box(kind)
+    return standing(name, kind, round(middle - (bx + bw / 2) / PROP_PX), floor)
 
 
 def standing(name, kind, x, floor):
@@ -562,8 +568,9 @@ def great_hall():
 #: The throne room's music while he sleeps: the regime's dread.
 THRONE_MUSIC = "oppressive_crush"
 
-#: The throne stands near the door you come in by (Jon, 2026-10-18): the
-#: left of its frame, and the coils at its sides, from the arena's left.
+#: His slab stands near the door you come in by (Jon, 2026-10-18), where his
+#: throne stood: the left of the throne's frame (the slab is set about its
+#: middle), and the coils at its sides, from the arena's left.
 THRONE_X = 560
 COIL_WEST_X, COIL_EAST_X = 460, 760
 
@@ -660,6 +667,7 @@ def throne():
     bw, bh = BOSS_BOX
     sill = 40
     ax = lambda x: arena_x + x  # noqa: E731
+    slab = middle_of("castle_iron_throne", ax(THRONE_X))
     e = [
         f'( type: "PlayerStart", px: [{ax(128)}, {lo - 46}], size: [28, 46], fields: ( name: "{rid}_spawn" ) ),',
         # ── The throne room ──
@@ -671,14 +679,15 @@ def throne():
         ledge("gallery_east", ax(THRONE_W - 480), lo - 160, 256),
         ledge("high_gallery", ax(1240), lo - 320, 320),
         standing("coil_throne_west", "castle_tesla_coil", ax(COIL_WEST_X), lo),
-        standing("iron_throne", "castle_iron_throne", ax(THRONE_X), lo),
+        # He starts on a slab under a sheet, asleep, waiting (Jon,
+        # 2026-11-11): his box stands on the floor about its middle, and his
+        # rows lie and sit on its top (`wolfenstein_bench`).
+        standing_about("wolfenstein_bench", "wolfenstein_bench", slab, lo),
         standing("coil_throne_east", "castle_tesla_coil", ax(COIL_EAST_X), lo),
-        # He starts on his throne, dead: his box on the floor in front of
-        # its middle; his conductor lifts him into the seat.
-        (f'( type: "BossSpawn", ref: "wolfenstein", px: [{throne_middle(ax(THRONE_X)) - bw // 2}, {lo - bh}], size: [{bw}, {bh}], '
+        (f'( type: "BossSpawn", ref: "wolfenstein", px: [{slab - bw // 2}, {lo - bh}], size: [{bw}, {bh}], '
          f'fields: ( name: "{BOSS_NAME}", brain: "{BOSS_BRAIN}", encounter_id: "{BOSS_ENCOUNTER}" ) ),'),
         # His head, which rises from him when he falls.
-        (f'( type: "BossSpawn", px: [{throne_middle(ax(THRONE_X)) - INUGAMI_BOX[0] // 2}, {lo - bh - INUGAMI_BOX[1] - 40}], '
+        (f'( type: "BossSpawn", px: [{slab - INUGAMI_BOX[0] // 2}, {lo - bh - INUGAMI_BOX[1] - 40}], '
          f'size: [{INUGAMI_BOX[0]}, {INUGAMI_BOX[1]}], fields: ( name: "{INUGAMI_NAME}", brain: "{INUGAMI_BRAIN}", '
          f'encounter_id: "{INUGAMI_ENCOUNTER}", wakes_after: "wolfenstein" ) ),'),
         # The east end of the throne room: a sill (his fight measures it as
@@ -823,15 +832,29 @@ def main(argv):
         # that each room was written. The last check is the one that must pass.
         # A room stays where the editor has it unless `--relayout`.
         keep = [] if "--relayout" in argv else ["--keep-position"]
+        # A room an author took over in LDtk is the LDtk file's (`level
+        # ownership adopt`): this script leaves it alone, and records what it
+        # made, so an edit made later in LDtk is not lost to the next apply.
+        from ambition_ldtk_tools import generated_record
+        owned = set(generated_record.load(EVIL_LDTK)["ldtk_owned"])
+        applied = []
         for path in made:
+            rid = path.name.removesuffix("_area.ron")
+            if rid in owned:
+                print(f"{rid}: LDtk-owned, left alone")
+                continue
             code, out = run("area", "create", str(path), "--ldtk", str(EVIL_LDTK), "--replace-existing", *keep)
             if code != 0 and "wrote new level" not in out and "replaced level" not in out:
                 return code
+            applied.append(rid)
         for room_id, layer, value, x, y, w, h in PAINT:
+            if room_id in owned:
+                continue
             code, _ = run("intgrid", "paint", "--ldtk", str(EVIL_LDTK), "--level", room_id, "--layer", layer,
                           "--value", str(value), "--px", f"{x},{y}", "--size", f"{w},{h}")
             if code != 0:
                 return code
+        generated_record.record(EVIL_LDTK, applied)
         for world in (EVIL_LDTK, SANDBOX_LDTK):
             code, _ = run("validate", str(world))
             if code != 0:
