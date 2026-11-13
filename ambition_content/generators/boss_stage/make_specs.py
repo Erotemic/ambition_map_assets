@@ -71,10 +71,11 @@ HALL_PLACEMENT = "hall.bossofthegame"
 #: way to the green room (`boss.cleared <id>`).
 PLACEMENT = "boss_stage.bossofthegame"
 
-#: The dark red hall of the boss lair: the dimension's look until it has a
-#: stage of its own.
-BIOME = "boss"
-BG = "#1A0A10"
+#: The show: a stadium at night, its light rig, the crowd and the LED wall
+#: of the tour (the renderer's `backgrounds/boss_stage.py`, and the biome's
+#: skin, decor, door and confetti in `terrain/`).
+BIOME = "boss_stage"
+BG = "#0C0818"
 LOBBY_MUSIC = "scaling_laws"
 GREEN_MUSIC = "a_possible_morning"
 
@@ -101,6 +102,8 @@ TIER = 128
 #: Full Stack's body box (its feet on the floor, its middle at the stage's
 #: middle). The catalog row `npc_full_stack` has the same size.
 STACK_W, STACK_H = 400, 480
+#: Where the Boss stands on its top, right of its middle (the catalog's saddle).
+SADDLE_X = 140
 
 
 def lobby():
@@ -157,6 +160,9 @@ def stage_floor_plan(rid, placement, *, entry, home_room, home_zone):
         solid("west_wall", 0, 32, WALL, floor - 32),
         door(entry, "back", 48, floor, home_room, home_zone),
         start(rid, 176, floor),
+        # The tour's name over the show. It is a sign and not part of the
+        # backdrop, which some rooms draw mirrored.
+        sign(f"{rid}_tour_banner", w // 2, 120, "THE BOSSOFTHEGAME  -  FINAL TOUR", 720),
         # The risers, west: low by the robot, high by the wall, each a double
         # jump over the one under it; the truss over them reaches the height
         # of the robot's top.
@@ -170,11 +176,11 @@ def stage_floor_plan(rid, placement, *, entry, home_room, home_zone):
         ledge("riser_east_high", 2176, high, 240),
         ledge("truss_east", 1560, truss, 640),
         # Full Stack at the middle of the stage, behind the playable plane,
-        # and the Boss on its top (the catalog's saddle, 60 right of its
-        # middle).
+        # and the Boss on its right shoulder (the catalog's saddle, 140 right
+        # of its middle, beside its robot's head).
         placed("EnemySpawn", stack_x, floor - STACK_H, STACK_W, STACK_H, mount, name="Full Stack", brain="stand_still",
                character_id="npc_full_stack", disposition="Peaceful", respawn="OnRoomReenter", depth_plane="Behind"),
-        entity("BossSpawn", w // 2 + 60 - 27, floor - STACK_H - 96, 54, 96, name="the bossofthegame",
+        entity("BossSpawn", w // 2 + SADDLE_X - 27, floor - STACK_H - 96, 54, 96, name="the bossofthegame",
                brain="PhaseScript:bossofthegame", mounted_on=mount, encounter_id=placement),
     ]
 

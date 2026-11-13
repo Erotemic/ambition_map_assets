@@ -11,7 +11,7 @@
 	"iid": "ambition-boss-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1408363,
+	"nextUid": 1408391,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -8391,8 +8391,8 @@
 			"worldDepth": 0,
 			"pxWid": 1600,
 			"pxHei": 768,
-			"__bgColor": "#1A0A10",
-			"bgColor": "#1A0A10",
+			"__bgColor": "#0C0818",
+			"bgColor": "#0C0818",
 			"useAutoIdentifier": false,
 			"bgRelPath": null,
 			"bgPos": null,
@@ -8406,17 +8406,17 @@
 					"id": "V_String",
 					"params": ["boss_lobby"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "boss", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "boss_stage", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["boss"]
+					"params": ["boss_stage"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "scaling_laws", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["scaling_laws"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "boss", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "boss_stage", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["boss"]
+					"params": ["boss_stage"]
 				}] }
 			],
 			"layerInstances": [
@@ -9388,8 +9388,8 @@
 			"worldDepth": 0,
 			"pxWid": 2560,
 			"pxHei": 1152,
-			"__bgColor": "#1A0A10",
-			"bgColor": "#1A0A10",
+			"__bgColor": "#0C0818",
+			"bgColor": "#0C0818",
 			"useAutoIdentifier": false,
 			"bgRelPath": null,
 			"bgPos": null,
@@ -9403,17 +9403,17 @@
 					"id": "V_String",
 					"params": ["boss_main_stage"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "boss", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "boss_stage", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["boss"]
+					"params": ["boss_stage"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "scaling_laws", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["scaling_laws"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "boss", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "boss_stage", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["boss"]
+					"params": ["boss_stage"]
 				}] },
 				{ "__identifier": "entry_cutscene", "__type": "String", "__value": "boss_vibe_kill", "__tile": null, "defUid": 6897, "realEditorValues": [{
 					"id": "V_String",
@@ -9916,6 +9916,32 @@
 							}] }]
 						},
 						{
+							"__identifier": "DebugLabel",
+							"__grid": [57,7],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 2920,
+							"__worldY": -264,
+							"iid": "DebugLabel-1408368",
+							"width": 720,
+							"height": 24,
+							"defUid": 2007,
+							"px": [920,120],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "boss_main_stage_tour_banner", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["boss_main_stage_tour_banner"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "THE BOSSOFTHEGAME  -  FINAL TOUR", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["THE BOSSOFTHEGAME  -  FINAL TOUR"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
 							"__identifier": "EnemySpawn",
 							"__grid": [67,38],
 							"__pivot": [0,0],
@@ -9958,18 +9984,18 @@
 						},
 						{
 							"__identifier": "BossSpawn",
-							"__grid": [82,32],
+							"__grid": [87,32],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#C77DFF",
-							"__worldX": 3313,
+							"__worldX": 3393,
 							"__worldY": 128,
-							"iid": "BossSpawn-1408302",
+							"iid": "BossSpawn-1408370",
 							"width": 54,
 							"height": 96,
 							"defUid": 2013,
-							"px": [1313,512],
+							"px": [1393,512],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "the bossofthegame", "__tile": null, "defUid": 3033, "realEditorValues": [{
 									"id": "V_String",
@@ -10809,8 +10835,8 @@
 			"worldDepth": 0,
 			"pxWid": 1280,
 			"pxHei": 640,
-			"__bgColor": "#1A0A10",
-			"bgColor": "#1A0A10",
+			"__bgColor": "#0C0818",
+			"bgColor": "#0C0818",
 			"useAutoIdentifier": false,
 			"bgRelPath": null,
 			"bgPos": null,
@@ -10824,17 +10850,17 @@
 					"id": "V_String",
 					"params": ["boss_green_room"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "boss", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "boss_stage", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["boss"]
+					"params": ["boss_stage"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "a_possible_morning", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["a_possible_morning"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "boss", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "boss_stage", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["boss"]
+					"params": ["boss_stage"]
 				}] }
 			],
 			"layerInstances": [
@@ -11448,8 +11474,8 @@
 			"worldDepth": 0,
 			"pxWid": 2560,
 			"pxHei": 1152,
-			"__bgColor": "#1A0A10",
-			"bgColor": "#1A0A10",
+			"__bgColor": "#0C0818",
+			"bgColor": "#0C0818",
 			"useAutoIdentifier": false,
 			"bgRelPath": null,
 			"bgPos": null,
@@ -11463,17 +11489,17 @@
 					"id": "V_String",
 					"params": ["hall_bossofthegame_stage"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "boss", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "boss_stage", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["boss"]
+					"params": ["boss_stage"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "scaling_laws", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["scaling_laws"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "boss", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "boss_stage", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["boss"]
+					"params": ["boss_stage"]
 				}] },
 				{ "__identifier": "practice", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6915, "realEditorValues": [{
 					"id": "V_Bool",
@@ -11976,6 +12002,32 @@
 							}] }]
 						},
 						{
+							"__identifier": "DebugLabel",
+							"__grid": [57,7],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 920,
+							"__worldY": 2168,
+							"iid": "DebugLabel-1408383",
+							"width": 720,
+							"height": 24,
+							"defUid": 2007,
+							"px": [920,120],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hall_bossofthegame_stage_tour_banner", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_bossofthegame_stage_tour_banner"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "THE BOSSOFTHEGAME  -  FINAL TOUR", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["THE BOSSOFTHEGAME  -  FINAL TOUR"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
 							"__identifier": "EnemySpawn",
 							"__grid": [67,38],
 							"__pivot": [0,0],
@@ -12018,18 +12070,18 @@
 						},
 						{
 							"__identifier": "BossSpawn",
-							"__grid": [82,32],
+							"__grid": [87,32],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#C77DFF",
-							"__worldX": 1313,
+							"__worldX": 1393,
 							"__worldY": 2560,
-							"iid": "BossSpawn-1408329",
+							"iid": "BossSpawn-1408385",
 							"width": 54,
 							"height": 96,
 							"defUid": 2013,
-							"px": [1313,512],
+							"px": [1393,512],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "the bossofthegame", "__tile": null, "defUid": 3033, "realEditorValues": [{
 									"id": "V_String",
