@@ -9832,7 +9832,7 @@
 									"id": "V_String",
 									"params": ["Default"]
 								}] },
-								{ "__identifier": "zoom", "__type": "Float", "__value": 2.6, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [2.6] }] }
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.4, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.4] }] }
 							]
 						}
 					]
@@ -11943,7 +11943,7 @@
 									"id": "V_String",
 									"params": ["Default"]
 								}] },
-								{ "__identifier": "zoom", "__type": "Float", "__value": 2.6, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [2.6] }] }
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.4, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.4] }] }
 							]
 						}
 					]

@@ -92,11 +92,11 @@ STAGE_FLOOR = 1088
 ALCOVE_X = 2432
 ALCOVE_TOP = STAGE_FLOOR - 160
 #: How far the stage's view opens (the room's own camera zone, clamped to the
-#: room). The floor to the top of the Boss is about 670 world units. The view
-#: is about 305 units high at scale 1 and grows with the zoom: 2.6 makes it
-#: about 790, which holds the floor, the risers, the Boss and his barks at
-#: once, from either end of the stage. (4.0 showed past the room's floor.)
-STAGE_ZOOM = 2.6
+#: room). The view is about 305 units high at scale 1 and grows with the
+#: zoom. 1.4 makes it about 430: the fight at the player's level, and from
+#: the risers Full Stack's top and the Boss. (2.6 held the whole hall at once
+#: and was far too wide: Jon, 2026-11-13.)
+STAGE_ZOOM = 1.4
 #: Each tier is a double jump over the one under it.
 TIER = 128
 #: Full Stack's body box (its feet on the floor, its middle at the stage's
