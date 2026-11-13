@@ -4,6 +4,7 @@
 
     uv run --project tools/ambition_ldtk_tools python game/ambition_map_assets/ambition_content/generators/boss_stage/make_specs.py          # writes the specs
     uv run --project tools/ambition_ldtk_tools python game/ambition_map_assets/ambition_content/generators/boss_stage/make_specs.py --apply  # and makes the rooms
+    uv run --project tools/ambition_ldtk_tools python game/ambition_map_assets/ambition_content/generators/boss_stage/make_specs.py --apply --hall  # and the hall's door
 
 Run it from the repository root. Change the script, not the rooms.
 
@@ -22,7 +23,10 @@ from the stage. The world file is `boss.ldtk`. The rooms join by doors:
   side (low, middle, high) and a lighting truss over each side reach the
   height of its top. The way on to the green room is in an alcove past the
   east wall, behind a grille that his retirement opens.
-- `boss_green_room`: where he retires; a door home to the lobby.
+- `boss_green_room`: where he retires (a `CutsceneTrigger`,
+  `boss_retirement`); a door home to the lobby.
+- `hall_bossofthegame_stage`: the Hall of Bosses' practice copy of the stage
+  (placement `hall.bossofthegame`), by a door on the hall's lower floor.
 
 The robot's numbers (`platformer_defaults.ron`): a jump rises 83 px, a jump
 and a double jump 139 px; the body is 30 x 48. Each tier here is 128 over
@@ -44,7 +48,7 @@ SPEC_OUT.mkdir(exist_ok=True)
 sys.path.insert(0, str(TOOL_SPECS))
 sys.path.insert(0, str(TOOL_SPECS / "gate_network"))
 
-from district_kit import WALL, WORLDS, door, ensure_world, entity, ledge, make_rooms, pad, room, run, sign, solid, start  # noqa: E402
+from district_kit import SANDBOX_LDTK, WALL, WORLDS, add_entities, door, ensure_world, entity, ledge, make_rooms, pad, room, run, sign, solid, start  # noqa: E402
 
 import gates  # noqa: E402
 
@@ -55,6 +59,13 @@ UID_OFFSET = 1400000
 LOBBY = "boss_lobby"
 STAGE = "boss_main_stage"
 GREEN = "boss_green_room"
+#: The Hall of Bosses' practice copy of the stage, behind a door of the hall.
+HALL_STAGE = "hall_bossofthegame_stage"
+HALL_STAGE_ENTRY = "hall_bossofthegame_stage_entry"
+HALL = "hall_of_bosses"
+HALL_DOOR = "hall_to_bossofthegame_portal"
+HALL_SWITCH = "hall_bossofthegame_life_switch"
+HALL_PLACEMENT = "hall.bossofthegame"
 
 #: The Boss's placement. His defeat is saved under this id, and it opens the
 #: way to the green room (`boss.cleared <id>`).
@@ -72,6 +83,7 @@ ROOMS_AT = {
     LOBBY: ((0, 0), (1600, 768)),
     STAGE: ((2000, -384), (2560, 1152)),
     GREEN: ((4992, 0), (1280, 640)),
+    HALL_STAGE: ((0, 2048), (2560, 1152)),
 }
 
 #: The stage: its floor, and the alcove of the way on past the east wall.
@@ -117,19 +129,27 @@ def lobby():
                      generator=GENERATOR)
 
 
-def stage():
-    rid = STAGE
+def placed(etype, x, y, w, h, ref, **fields) -> str:
+    """An entity another entity names by `ref` (a mount its rider rides)."""
+    return entity(etype, x, y, w, h, **fields).replace(f'( type: "{etype}", ', f'( type: "{etype}", ref: "{ref}", ', 1)
+
+
+def stage_floor_plan(rid, placement, *, entry, home_room, home_zone):
+    """The stage: the risers, the truss, Full Stack and the Boss on it. The
+    main game's and the hall's copy share it."""
     w, h = ROOMS_AT[rid][1]
     floor = STAGE_FLOOR
     # The low riser is a double jump off the floor; each tier over it is
     # another; the truss is at the height of the robot's top.
     truss = floor - STACK_H
     high, mid, low = truss + TIER, truss + 2 * TIER, truss + 3 * TIER
-    e = [
+    mount = f"{rid}_full_stack"
+    stack_x = w // 2 - STACK_W // 2
+    return [
         solid("stage_floor", 0, floor, w, h - floor),
         solid("ceiling", 0, 0, w, 32),
         solid("west_wall", 0, 32, WALL, floor - 32),
-        door("boss_stage_entry", "back to the lobby", 48, floor, LOBBY, "boss_lobby_stage_door"),
+        door(entry, "back", 48, floor, home_room, home_zone),
         start(rid, 176, floor),
         # The risers, west: low by the robot, high by the wall, each a double
         # jump over the one under it; the truss over them reaches the height
@@ -143,6 +163,21 @@ def stage():
         ledge("riser_east_mid", 2000, mid, 240),
         ledge("riser_east_high", 2176, high, 240),
         ledge("truss_east", 1560, truss, 640),
+        # Full Stack at the middle of the stage, behind the playable plane,
+        # and the Boss on its top (the catalog's saddle, 60 right of its
+        # middle).
+        placed("EnemySpawn", stack_x, floor - STACK_H, STACK_W, STACK_H, mount, name="Full Stack", brain="stand_still",
+               character_id="npc_full_stack", disposition="Peaceful", respawn="OnRoomReenter", depth_plane="Behind"),
+        entity("BossSpawn", w // 2 + 60 - 27, floor - STACK_H - 96, 54, 96, name="the bossofthegame",
+               brain="PhaseScript:bossofthegame", mounted_on=mount, encounter_id=placement),
+    ]
+
+
+def stage():
+    rid = STAGE
+    w, h = ROOMS_AT[rid][1]
+    floor = STAGE_FLOOR
+    e = stage_floor_plan(rid, PLACEMENT, entry="boss_stage_entry", home_room=LOBBY, home_zone="boss_lobby_stage_door") + [
         # The way on: an alcove past the east wall, behind a grille that the
         # Boss's retirement opens.
         solid("east_wall", ALCOVE_X, 32, WALL, ALCOVE_TOP - 32),
@@ -153,8 +188,21 @@ def stage():
         door("boss_stage_green_door", "to the green room", ALCOVE_X + 48, floor, GREEN, "boss_green_stage_door"),
     ]
     at = ROOMS_AT[rid][0]
-    return rid, room(rid, e, at=at, size=(w, h), biome=BIOME, music=LOBBY_MUSIC, bg=BG,
-                     title="THE MAIN STAGE", generator=GENERATOR, dangerous=True)
+    return rid, room(rid, e, at=at, size=(w, h), biome=BIOME, music=LOBBY_MUSIC, bg=BG, title="THE MAIN STAGE",
+                     generator=GENERATOR, dangerous=True, extra='\n    entry_cutscene: "boss_vibe_kill",')
+
+
+def hall_stage():
+    """The Hall of Bosses' copy of the stage: a practice boss of its own
+    (`hall.bossofthegame`), its door back to the hall and no way on."""
+    rid = HALL_STAGE
+    w, h = ROOMS_AT[rid][1]
+    e = stage_floor_plan(rid, HALL_PLACEMENT, entry=HALL_STAGE_ENTRY, home_room=HALL, home_zone=HALL_DOOR) + [
+        solid("east_wall", w - WALL, 32, WALL, STAGE_FLOOR - 32),
+    ]
+    at = ROOMS_AT[rid][0]
+    return rid, room(rid, e, at=at, size=(w, h), biome=BIOME, music=LOBBY_MUSIC, bg=BG, title="THE BOSSOFTHEGAME (PRACTICE)",
+                     generator=GENERATOR, dangerous=True, extra="\n    practice: true,")
 
 
 def green_room():
@@ -171,6 +219,8 @@ def green_room():
         # A low dais at the far end, where he sits down.
         solid("dais", 760, floor - 48, w - WALL - 760, 48),
         sign("green_sign", 640, 120, "GREEN ROOM: PERFORMERS ONLY", 420),
+        # He retires here: the scene plays once, as the player comes in.
+        entity("CutsceneTrigger", 240, floor - 160, 160, 160, cutscene="boss_retirement"),
         door("boss_green_lobby_door", "home to the lobby", w - 112, floor - 48, LOBBY, "boss_lobby_green_arrival",
              bidirectional=False),
     ]
@@ -179,7 +229,7 @@ def green_room():
                      generator=GENERATOR)
 
 
-ROOMS = (lobby, stage, green_room)
+ROOMS = (lobby, stage, green_room, hall_stage)
 
 #: The sandbox's defs have no `CutsceneTrigger` (the intro's world has it):
 #: the green room's retirement is one.
@@ -201,6 +251,34 @@ def ensure_cutscene_trigger_def() -> int:
     spec.write_text(CUTSCENE_TRIGGER_DEF)
     code, _ = run("def", "register-entity", str(spec), "--ldtk", str(WORLD), "--in-place", "--no-source-patch")
     return code
+
+
+#: The hall's door to its copy and the copy's life switch, on the hall's lower
+#: floor east of the Overflow's door (`hall_of_bosses`, `sandbox.ldtk`).
+HALL_DOOR_YAML = f"""# The Hall of Bosses' door to its copy of the final boss's stage. Written by
+# {GENERATOR}.
+level_id: {HALL}
+entities:
+  - type: LoadingZone
+    px: [1616, 384]
+    size: [48, 96]
+    fields:
+      id: {HALL_DOOR}
+      name: "to the bossofthegame"
+      activation: Door
+      target_room: {HALL_STAGE}
+      target_zone: {HALL_STAGE_ENTRY}
+      bidirectional: true
+  - type: Switch
+    px: [1676, 448]
+    size: [24, 32]
+    fields:
+      id: {HALL_SWITCH}
+      name: "bossofthegame life switch"
+      prompt: "Revive or defeat the bossofthegame"
+      target_encounter: {HALL_PLACEMENT}
+      action: BossLife
+"""
 
 
 def main(argv):
@@ -225,6 +303,12 @@ def main(argv):
         return code
     if code := make_rooms(WORLD, paths, keep_position="--relayout" not in argv):
         return code
+    if "--hall" in argv:
+        if code := add_entities(HALL_DOOR_YAML, SANDBOX_LDTK, SPEC_OUT / "hall_door.yaml", unless=HALL_DOOR):
+            return code
+        code, _ = run("validate", str(SANDBOX_LDTK))
+        if code:
+            return code
     code, _ = run("validate", str(WORLD))
     return code
 
