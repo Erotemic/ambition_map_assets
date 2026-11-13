@@ -11,7 +11,7 @@
 	"iid": "ambition-boss-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1408335,
+	"nextUid": 1408363,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -9831,7 +9831,8 @@
 								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Default"]
-								}] }
+								}] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": 2.6, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [2.6] }] }
 							]
 						}
 					]
@@ -11890,7 +11891,8 @@
 								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Default"]
-								}] }
+								}] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": 2.6, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [2.6] }] }
 							]
 						}
 					]

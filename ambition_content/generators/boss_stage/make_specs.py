@@ -90,6 +90,12 @@ ROOMS_AT = {
 STAGE_FLOOR = 1088
 ALCOVE_X = 2432
 ALCOVE_TOP = STAGE_FLOOR - 160
+#: How far the stage's view opens (the room's own camera zone, clamped to the
+#: room). The floor to the top of the Boss is about 670 world units. The view
+#: is about 305 units high at scale 1 and grows with the zoom: 2.6 makes it
+#: about 790, which holds the floor, the risers, the Boss and his barks at
+#: once, from either end of the stage. (4.0 showed past the room's floor.)
+STAGE_ZOOM = 2.6
 #: Each tier is a double jump over the one under it.
 TIER = 128
 #: Full Stack's body box (its feet on the floor, its middle at the stage's
@@ -189,7 +195,7 @@ def stage():
     ]
     at = ROOMS_AT[rid][0]
     return rid, room(rid, e, at=at, size=(w, h), biome=BIOME, music=LOBBY_MUSIC, bg=BG, title="THE MAIN STAGE",
-                     generator=GENERATOR, dangerous=True, extra='\n    entry_cutscene: "boss_vibe_kill",')
+                     generator=GENERATOR, zoom=STAGE_ZOOM, dangerous=True, extra='\n    entry_cutscene: "boss_vibe_kill",')
 
 
 def hall_stage():
@@ -202,7 +208,7 @@ def hall_stage():
     ]
     at = ROOMS_AT[rid][0]
     return rid, room(rid, e, at=at, size=(w, h), biome=BIOME, music=LOBBY_MUSIC, bg=BG, title="THE BOSSOFTHEGAME (PRACTICE)",
-                     generator=GENERATOR, dangerous=True, extra="\n    practice: true,")
+                     generator=GENERATOR, zoom=STAGE_ZOOM, dangerous=True, extra="\n    practice: true,")
 
 
 def green_room():
