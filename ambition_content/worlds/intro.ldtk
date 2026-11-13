@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 105009,
+	"nextUid": 105010,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -13977,7 +13977,7 @@
 						},
 						{
 							"__identifier": "NpcSpawn",
-							"__grid": [20,35],
+							"__grid": [45,35],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -13986,7 +13986,7 @@
 							"width": 32,
 							"height": 48,
 							"defUid": 2006,
-							"px": [320,560],
+							"px": [720,560],
 							"fieldInstances": [
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_oiler", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
@@ -14001,9 +14001,13 @@
 									"params": ["oiler_intro"]
 								}] },
 								{ "__identifier": "patrol_radius", "__type": "Float", "__value": 0, "__tile": null, "defUid": 4123, "realEditorValues": [] },
-								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4343, "realEditorValues": [] }
+								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4343, "realEditorValues": [] },
+								{ "__identifier": "brain_override", "__type": "String", "__value": "meets_the_player", "__tile": null, "defUid": 104917, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["meets_the_player"]
+								}] }
 							],
-							"__worldX": 4224,
+							"__worldX": 4624,
 							"__worldY": 560
 						},
 						{
@@ -14526,6 +14530,25 @@
 							],
 							"__worldX": 4480,
 							"__worldY": 800
+						},
+						{
+							"__identifier": "CutsceneTrigger",
+							"__grid": [36,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#B07AFF",
+							"__worldX": 4480,
+							"__worldY": 432,
+							"iid": "CutsceneTrigger-105009",
+							"width": 288,
+							"height": 176,
+							"defUid": 105006,
+							"px": [576,432],
+							"fieldInstances": [{ "__identifier": "cutscene", "__type": "String", "__value": "oiler_notices", "__tile": null, "defUid": 105005, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["oiler_notices"]
+							}] }]
 						}
 					]
 				},
