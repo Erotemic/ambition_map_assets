@@ -194,6 +194,10 @@ PROPS = {
     # the vault), and the heap on the real floor where every mistake ends.
     WELL: (("well_east_study", 1074, 1080), ("well_west_parlour", 320, 600), ("well_vault_table", 360, 48),
            ("well_mistakes", 270, 1466)),
+    # `targets/props/gnu_ton_shoulders_props.py`: the space apple trees his
+    # apple rain falls from, each on a rock moored to the ceiling.
+    ARENA: (("shoulders_apple_tree_west", 550, 16), ("shoulders_apple_tree_middle", 992, 16),
+            ("shoulders_apple_tree_east", 1436, 16)),
 }
 
 #: A line of writing in a hall, by its room: (name, x, y, text, width).
@@ -592,7 +596,7 @@ def shoulders():
                mounted_on="giant_gnu_mount", encounter_id=GNU_TON_PLACEMENT),
     ]
     world_x, world_y, _, _ = ROOMS_AT[rid]
-    body = "\n        ".join(e + [
+    body = "\n        ".join(e + dressing(rid) + [
         camera(rid, w, h, 1.25),
         label(f"{rid}_title", 128, 1216, "GNU-TON: STAND ON THE SHOULDERS OF A GIANT; STRIKE A FIST WHILE IT IS STUCK", 1536),
     ])

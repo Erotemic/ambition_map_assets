@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 411048,
+	"nextUid": 411051,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -30268,6 +30268,81 @@
 									"params": ["GNU-TON: STAND ON THE SHOULDERS OF A GIANT; STRIKE A FIST WHILE IT IS STUCK"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [36,1],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 10828,
+							"__worldY": -1008,
+							"iid": "Prop-411048",
+							"width": 232,
+							"height": 399,
+							"defUid": 4351,
+							"px": [588,16],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "shoulders_apple_tree_west", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["shoulders_apple_tree_west"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "shoulders_apple_tree_west", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["shoulders_apple_tree_west"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [65,1],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 11282,
+							"__worldY": -1008,
+							"iid": "Prop-411049",
+							"width": 246,
+							"height": 378,
+							"defUid": 4351,
+							"px": [1042,16],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "shoulders_apple_tree_middle", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["shoulders_apple_tree_middle"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "shoulders_apple_tree_middle", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["shoulders_apple_tree_middle"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [91,1],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 11710,
+							"__worldY": -1008,
+							"iid": "Prop-411050",
+							"width": 214,
+							"height": 407,
+							"defUid": 4351,
+							"px": [1470,16],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "shoulders_apple_tree_east", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["shoulders_apple_tree_east"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "shoulders_apple_tree_east", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["shoulders_apple_tree_east"]
+								}] }
 							]
 						}
 					]
