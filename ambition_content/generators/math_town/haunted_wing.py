@@ -1,5 +1,7 @@
 """The haunted wing of Hylbert's Hotel. Use the Math-town generator to apply it."""
 
+import math
+
 LANDING = "math_hotel_spectral_landing"
 GALLERY = "math_hotel_eigen_gallery"
 GAP = "math_hotel_spectral_gap"
@@ -32,13 +34,20 @@ def builders(kit):
         return (f'( type: "Prop", px: [{x}, {y}], size: [{w}, {h}], '
                 f'fields: ( name: "{name}", kind: "{kind}" ) ),')
 
+    def even_cuts(x, w, size):
+        # `w` cut into equal pieces as near `size` as divide it: a strip of
+        # tiles drawn to their boxes, none squeezed narrower than the rest.
+        n = max(1, round(w / size))
+        cuts = [x + round(k * w / n) for k in range(n + 1)]
+        return list(zip(cuts, cuts[1:]))
+
     def marble(name, x, y, w):
         # A floor: each native tile is a still platform. Its art and its
         # contact face agree.
-        return [(f'( type: "MovingPlatform", px: [{px}, {y}], size: [{min(128, x + w - px)}, 32], '
+        return [(f'( type: "MovingPlatform", px: [{left}, {y}], size: [{right - left}, 32], '
                  f'fields: ( id: "{name}_{i}", name: "{name}_{i}", speed: 0.0, '
                  f'visual: "hylbert_floor_strip", one_way: false ) ),')
-                for i, px in enumerate(range(x, x + w, 128))]
+                for i, (left, right) in enumerate(even_cuts(x, w, 128))]
 
     def platform(name, x, y, w):
         # A ledge of the wing's marble: the skin (`math_haunted`) faces it,
@@ -66,10 +75,23 @@ def builders(kit):
         _, w, h = ROOMS_AT[rid]
         floor = FLOORS[rid]
         wall_height = floor - 32
-        panel_width = wall_height * 3 // 4
-        e = [prop(f"{rid}_wall_{i}", "hylbert_wallpaper_panel", x, 32,
-                  min(panel_width, w - x), wall_height)
-             for i, x in enumerate(range(0, w, panel_width))]
+        # The wallpaper. A prop is drawn at its art's shape (3:4 here), so
+        # each panel's box is 3:4, as wide as cuts the room into whole
+        # quarter panels: a last panel that does not fit lies over the one
+        # before it by whole quarters, where the art repeats
+        # (`hylbert_wallpaper_panel`), and the paper runs on with no seam. A
+        # panel taller than the wall reaches up behind the ceiling, then down
+        # behind the floor.
+        # Every box is one whole pixel width rounded up, so neighbours meet
+        # with no sliver between them.
+        quarters = int(4 * w // (wall_height * 3 / 4))
+        panel_w = 4 * w / quarters
+        box_w = math.ceil(panel_w)
+        panel_h = round(box_w * 4 / 3)
+        top = 32 - min(panel_h - wall_height, 32)
+        lefts = [k * panel_w for k in range(quarters // 4)] + ([w - panel_w] if quarters % 4 else [])
+        e = [prop(f"{rid}_wall_{i}", "hylbert_wallpaper_panel", min(round(x), w - box_w), top, box_w, panel_h)
+             for i, x in enumerate(lefts)]
         e += [kit.solid("ceiling", 0, 0, w, 32),
               kit.solid("west_wall", 0, 32, 16, floor - 128),
               kit.solid("east_wall", w - 16, 32, 16, floor - 128)]
@@ -103,8 +125,10 @@ def builders(kit):
         e += platform("service_lift_step", 224, floor - 80, 112)
         e += platform("service_lift_landing", 340, floor - 160, 112)
         e += [kit.solid("landing_west_wall", 0, floor - 96, 16, 96),
-              kit.lock_wall(f"{rid}_lift_lock", "the service lift doors", 348, floor - 286, 72, 126,
-                            f"world.switch_on {SHORTCUT}", "hylbert_room_door"),
+              # The lift's gate, shut over its door until the breaker below
+              # is thrown: the barrier is drawn as what it is.
+              kit.lock_wall(f"{rid}_lift_lock", "the service lift gate", 348, floor - 286, 72, 126,
+                            f"world.switch_on {SHORTCUT}", "hylbert_lift_gate"),
               prop("abandoned_luggage", "hylbert_luggage_cart", 560, floor - 120, 128, 120),
               enemy(rid, 1, "eigenghost", 900, floor - 48, 48, 60),
               join(rid, "east", GALLERY),
@@ -129,8 +153,6 @@ def builders(kit):
         rid, floor = GAP, FLOORS[GAP]
         e = shell(rid, [(0, 608), (992, 1600)])
         e += [join(rid, "west", GALLERY), join(rid, "east", SUITES),
-              prop("gap_back_west", "hylbert_wallpaper_panel", 608, floor, 192, 256),
-              prop("gap_back_east", "hylbert_wallpaper_panel", 800, floor, 192, 256),
               prop("the_spectral_gap", "hylbert_spectral_gap", 608, floor, 384, 216),
               *marble("gap_bottom", 608, 928, 384)]
         # The upper path crosses the gap. The lower steps let a fallen body return.
@@ -180,8 +202,10 @@ def builders(kit):
         e = shell(rid)
         e += [join(rid, "west", SERVICE), join(rid, "east", VAULT),
               kit.solid("treasury_lintel", 1408, 32, 72, floor - 158),
+              # The treasury's grille and its seal, under the lintel: a
+              # barrier, not a door, until the reaper falls.
               kit.lock_wall("hylbert_reaper_treasury_seal", "the treasury seal", 1408, floor - 126, 72, 126,
-                            f"boss.cleared {BOSS}", "hylbert_room_door"),
+                            f"boss.cleared {BOSS}", "hylbert_treasury_seal"),
               (f'( type: "BossSpawn", px: [{955 - boss_w // 2}, {floor - 14 - boss_h}], size: [{boss_w}, {boss_h}], '
                f'fields: ( name: "Gram Reaper", brain: "PhaseScript:gram_reaper_boss", encounter_id: "{BOSS}" ) ),')]
         for i, (x, y, w) in enumerate([(224, 608, 160), (1184, 608, 160)]):
