@@ -11,7 +11,7 @@
 	"iid": "ambition-boss-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1408421,
+	"nextUid": 1408449,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -11141,6 +11141,39 @@
 							}] }]
 						},
 						{
+							"__identifier": "EnemySpawn",
+							"__grid": [52,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 5832,
+							"__worldY": 432,
+							"iid": "EnemySpawn-1408440",
+							"width": 54,
+							"height": 96,
+							"defUid": 2008,
+							"px": [840,432],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the bossofthegame, retired", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the bossofthegame, retired"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stand_still"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_bossofthegame_retired", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_bossofthegame_retired"]
+								}] },
+								{ "__identifier": "disposition", "__type": "String", "__value": "Peaceful", "__tile": null, "defUid": 6857, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Peaceful"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
 							"__grid": [26,7],
 							"__pivot": [0,0],
@@ -11187,18 +11220,18 @@
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [73,27],
+							"__grid": [63,27],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
-							"__worldX": 6160,
+							"__worldX": 6012,
 							"__worldY": 432,
-							"iid": "LoadingZone-1408288",
+							"iid": "LoadingZone-1408443",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [1168,432],
+							"px": [1020,432],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "boss_green_lobby_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",

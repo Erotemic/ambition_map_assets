@@ -239,10 +239,15 @@ def green_room():
         start(rid, 160, floor),
         # A low dais at the far end, where he sits down.
         solid("dais", 760, floor - 48, w - WALL - 760, 48),
+        # And he is on it: the voice of the retirement is in the room.
+        entity("EnemySpawn", 840, floor - 48 - 96, 54, 96, name="the bossofthegame, retired", brain="stand_still",
+               character_id="npc_bossofthegame_retired", disposition="Peaceful"),
         sign("green_sign", 640, 120, "GREEN ROOM: PERFORMERS ONLY", 420),
         # He retires here: the scene plays once, as the player comes in.
         entity("CutsceneTrigger", 240, floor - 160, 160, 160, cutscene="boss_retirement"),
-        door("boss_green_lobby_door", "home to the lobby", w - 112, floor - 48, LOBBY, "boss_lobby_green_arrival",
+        # Far enough from the wall that its one-way warning, centred over
+        # it, stays in the room.
+        door("boss_green_lobby_door", "home to the lobby", w - 260, floor - 48, LOBBY, "boss_lobby_green_arrival",
              bidirectional=False),
     ]
     at = ROOMS_AT[rid][0]
