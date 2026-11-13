@@ -104,6 +104,12 @@ TIER = 128
 STACK_W, STACK_H = 400, 480
 #: Where the Boss stands on its top, right of its middle (the catalog's saddle).
 SADDLE_X = 140
+#: Clause's drum kit on the east truss, this far east of the stage's middle:
+#: the band's drummer sits at it as the show opens
+#: (`ambition_content_modules::bossofthegame::BAND`; change the two together).
+DRUMS_X = 760
+#: The kit's box (its art is 288 x 208, a little wider than a body is tall).
+DRUMS_W, DRUMS_H = 104, 75
 
 
 def lobby():
@@ -175,6 +181,9 @@ def stage_floor_plan(rid, placement, *, entry, home_room, home_zone):
         ledge("riser_east_mid", 2000, mid, 240),
         ledge("riser_east_high", 2176, high, 240),
         ledge("truss_east", 1560, truss, 640),
+        # The band's drum kit, where Clause plays it until the Boss calls him.
+        entity("Prop", w // 2 + DRUMS_X - DRUMS_W // 2, truss - DRUMS_H, DRUMS_W, DRUMS_H, name="the drum kit",
+               kind="band_drum_kit"),
         # Full Stack at the middle of the stage, behind the playable plane,
         # and the Boss on its right shoulder (the catalog's saddle, 140 right
         # of its middle, beside its robot's head).

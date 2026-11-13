@@ -11,7 +11,7 @@
 	"iid": "ambition-boss-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1408391,
+	"nextUid": 1408421,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -9942,6 +9942,31 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [124,33],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3988,
+							"__worldY": 149,
+							"iid": "Prop-1408397",
+							"width": 104,
+							"height": 75,
+							"defUid": 4351,
+							"px": [1988,533],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the drum kit", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the drum kit"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "band_drum_kit", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["band_drum_kit"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "EnemySpawn",
 							"__grid": [67,38],
 							"__pivot": [0,0],
@@ -12025,6 +12050,31 @@
 									"params": ["THE BOSSOFTHEGAME  -  FINAL TOUR"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [124,33],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1988,
+							"__worldY": 2581,
+							"iid": "Prop-1408413",
+							"width": 104,
+							"height": 75,
+							"defUid": 4351,
+							"px": [1988,533],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the drum kit", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the drum kit"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "band_drum_kit", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["band_drum_kit"]
+								}] }
 							]
 						},
 						{
