@@ -31649,9 +31649,9 @@
 					"id": "V_String",
 					"params": ["boss"]
 				}] },
-				{ "__identifier": "music_track", "__type": "String", "__value": "pulse_drift_voyage", "__tile": null, "defUid": 4173, "realEditorValues": [{
+				{ "__identifier": "music_track", "__type": "String", "__value": "standing_on_shoulders_v2_surge_xt", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["pulse_drift_voyage"]
+					"params": ["standing_on_shoulders_v2_surge_xt"]
 				}] },
 				{ "__identifier": "fight_music_track", "__type": "String", "__value": null, "__tile": null, "defUid": 6894, "realEditorValues": [] },
 				{ "__identifier": "ambient_profile", "__type": "String", "__value": "hum", "__tile": null, "defUid": 4174, "realEditorValues": [{
