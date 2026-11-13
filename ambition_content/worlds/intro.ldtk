@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 105010,
+	"nextUid": 105011,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -8325,6 +8325,25 @@
 							"fieldInstances": [{ "__identifier": "cutscene", "__type": "String", "__value": "intro_raid", "__tile": null, "defUid": 105005, "realEditorValues": [{
 								"id": "V_String",
 								"params": ["intro_raid"]
+							}] }]
+						},
+						{
+							"__identifier": "CutsceneTrigger",
+							"__grid": [87,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#B07AFF",
+							"__worldX": 2416,
+							"__worldY": 0,
+							"iid": "CutsceneTrigger-105010",
+							"width": 160,
+							"height": 480,
+							"defUid": 105006,
+							"px": [1392,0],
+							"fieldInstances": [{ "__identifier": "cutscene", "__type": "String", "__value": "creator_final_fragment", "__tile": null, "defUid": 105005, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["creator_final_fragment"]
 							}] }]
 						}
 					]
