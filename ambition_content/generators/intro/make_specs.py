@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Write the rooms of level 1, Hobford: the Creator's workshop and the hill
+r"""Write the rooms of level 1, Hobford: the Creator's workshop and the hill
 country round the village, and the two town rooms under the gate stack that
 this script also owns.
 
@@ -8,11 +8,14 @@ this script also owns.
 
 Run it from the repository root. Design: `docs/planning/game/level-1.md`.
 
-    [workshop]--[Hobford Lane]==========[the high meadow]=========[the gate clearing]
-                    | bank path              | hill path               | siding stair
-              [the millstream]------------[Hobford]-------------[the woods]------[the freight siding]
+    [workshop]--[Hobford Lane]                                  [the high meadow]--[the gate clearing]
+                       \ the bank path down             the hill path up /                   \ the freight track down
+                        [the millstream]--[Hobford]--[the woods]                              [the freight siding]
 
-    (== is the ridge path as well as the road: two edges, high and low.)
+    One line of rooms, west to east: the barn on the west hill, the valley,
+    the gate on the east hill. Each room joins the next by an edge at one
+    height; a hill room (the lane, the meadow, the clearing) holds both
+    heights and climbs between them on slopes.
 
 THE KIT. Every required way is made for run, ONE jump, drop through a
 one-way floor and the strike, and each level-1 room withholds the rest of a
@@ -22,9 +25,9 @@ less is safe at a run (270 px/s). `check_reach` refuses a required step up of
 more than 64 px; it compares heights only, so each required way is also
 walked by `walked_route_census` under the level's kit.
 
-NO ROUTE WAITS ON A STORY FACT. A wall here is a barrier on a lever, a door
-the raid breaks, or a survey line that comes down when the survey is over;
-each place it closes off can be reached another way.
+NO ROUTE WAITS ON A STORY FACT. A wall here is a barrier on a lever beside
+it, a door the raid breaks, or a survey line pegged across the lane, low
+enough to step over, that comes up when the survey is over.
 
 Where a room is in the world is its LDtk editor's: `--apply` regenerates each
 room where it stands (`area create --keep-position`), and `ROOMS_AT` places
@@ -93,32 +96,47 @@ MARKET_W = 1408
 #: the dialogue's are in `dialogue/sandbox/names.yarn`. Ids never carry them.
 VILLAGE_NAME = "Hobford"
 
-#: The level is in a band of its own below the town. The upper row's ground
-#: (the workshop's floor, the lane, the meadow, the clearing) is at world y
-#: 2720; the lower row's (the millstream, Hobford, the woods, the siding) at
-#: 3328.
+#: The level is in a band of its own below the town: the hilltops' ground
+#: (the workshop's floor, the top of the lane, the meadow and the clearing)
+#: is at world y 2720, the valley's (the millstream, Hobford, the woods, the
+#: siding) at 3328. A valley room is the lower band; a hill room spans both.
 UPPER_Y, LOWER_Y = 2048, 2816
-COUNTRY_W, COUNTRY_H, COUNTRY_FLOOR = 2400, 768, 672
+COUNTRY_W, COUNTRY_FLOOR = 2400, 672
 LOW_H, LOW_FLOOR = 640, 512
 WORKSHOP_W, WORKSHOP_H, WORKSHOP_FLOOR = 1920, 448, 352
-#: The ridge path: the top tier of the upper row, from the lane to the
-#: clearing. It is the second way to the clearing's lever.
-RIDGE = 224
+#: A hill room: from the top of the upper band to the bottom of the lower.
+#: Its hilltop floor is `COUNTRY_FLOOR`, its valley floor `VALLEY_FLOOR`.
+HILL_H = LOWER_Y + LOW_H - UPPER_Y
+VALLEY_FLOOR = LOWER_Y + LOW_FLOOR - UPPER_Y
+LANE_W, MEADOW_W, CLEARING_W, SIDING_W = 3328, 3104, 4368, 1920
 
 #: Where the country's rooms begin in the world: the lane's west edge. The
 #: workshop is west of it, ending there.
 COUNTRY_X = 1600
 
+
+def _line(*rooms):
+    """Each room of the line: its top left in the world and its size, from
+    the west, each one's west side at the last one's east side."""
+    out, x = {}, COUNTRY_X
+    for rid, y, size in rooms:
+        out[rid] = ((x, y), size)
+        x += size[0]
+    return out
+
+
 #: Each room: where it is in the world (its top left), and its size.
 ROOMS_AT = {
     WORKSHOP: ((COUNTRY_X - WORKSHOP_W, UPPER_Y + COUNTRY_FLOOR - WORKSHOP_FLOOR), (WORKSHOP_W, WORKSHOP_H)),
-    LANE: ((COUNTRY_X, UPPER_Y), (COUNTRY_W, COUNTRY_H)),
-    MEADOW: ((COUNTRY_X + COUNTRY_W, UPPER_Y), (COUNTRY_W, COUNTRY_H)),
-    CLEARING: ((COUNTRY_X + 2 * COUNTRY_W, UPPER_Y), (COUNTRY_W, COUNTRY_H)),
-    MILLSTREAM: ((COUNTRY_X, LOWER_Y), (COUNTRY_W, LOW_H)),
-    VILLAGE: ((COUNTRY_X + COUNTRY_W, LOWER_Y), (COUNTRY_W, LOW_H)),
-    WOODS: ((COUNTRY_X + 2 * COUNTRY_W, LOWER_Y), (COUNTRY_W, LOW_H)),
-    SIDING: ((COUNTRY_X + 3 * COUNTRY_W, LOWER_Y), (1920, LOW_H)),
+    **_line(
+        (LANE, UPPER_Y, (LANE_W, HILL_H)),
+        (MILLSTREAM, LOWER_Y, (COUNTRY_W, LOW_H)),
+        (VILLAGE, LOWER_Y, (COUNTRY_W, LOW_H)),
+        (WOODS, LOWER_Y, (COUNTRY_W, LOW_H)),
+        (MEADOW, UPPER_Y, (MEADOW_W, HILL_H)),
+        (CLEARING, UPPER_Y, (CLEARING_W, HILL_H)),
+        (SIDING, LOWER_Y, (SIDING_W, LOW_H)),
+    ),
     # The town under the gate stack (not level 1).
     MARKET: ((GATE_STACK_WEST - MARKET_W, STREET_WORLD_Y - 608), (MARKET_W, 768)),
     UNDER_TOWN: ((GATE_STACK_WEST - MARKET_W, 896), (1600, 640)),
@@ -143,9 +161,37 @@ def edge(zone, name, x, floor, to_room, to_zone, h=96):
                   target_room=to_room, target_zone=to_zone, bidirectional=True)
 
 
-def door(zone, name, x, floor, to_room, to_zone):
-    return entity("LoadingZone", x, floor - 96, 48, 96, id=zone, name=name, activation="Door",
-                  target_room=to_room, target_zone=to_zone, bidirectional=True)
+#: The steepest a path may climb (about 23°): a walker stands on 50°, but a
+#: path is walked, not scrambled, and steeper pitches (28°, 30°) snagged a
+#: walker on the corner where the slope meets the block at its top.
+MAX_SLOPE = 0.42
+#: Each slope runs on flat this far over the block top at each end, so a
+#: body crossing the join stands exactly at the block's height.
+SLOPE_STUB = 32
+
+
+def slope(name, x0, y0, x1, y1):
+    """A path that climbs or falls: the top of the ground from (x0, y0) to
+    (x1, y1), west to east, drawn as the hill it is (the earth under it is
+    filled). Each end meets the flat top of a block, where a walker, and the
+    navigation graph, steps on and off it; the line goes on `SLOPE_STUB` along
+    each block top."""
+    if x1 <= x0 or abs(y1 - y0) > MAX_SLOPE * (x1 - x0):
+        raise SystemExit(f"{name}: ({x0},{y0}) to ({x1},{y1}) is steeper than {MAX_SLOPE} or not west to east")
+    # The blocks a slope joins are IntGrid cells, so their ends are on the
+    # 16 px grid. An end off it leaves a block corner standing out of the
+    # slope (2992..3424 under a line from 3418): a step a climber walks into.
+    if any(v % 16 for v in (x0, y0, x1, y1)):
+        raise SystemExit(f"{name}: ({x0},{y0}) to ({x1},{y1}) has an end off the 16 px grid")
+    points = f"{x0 - SLOPE_STUB},{y0}; {x0},{y0}; {x1},{y1}; {x1 + SLOPE_STUB},{y1}"
+    return entity("SurfaceChain", x0, min(y0, y1) - 16, 16, 16, name=name, points=points, fill=True)
+
+
+def hill_walls(w, west, east):
+    """The side walls of a hill room over the floor each side's edge stands
+    on (the ground under each floor is the room's)."""
+    return [solid(f"{side}_wall", x, 0, WALL, floor - 96)
+            for side, x, floor in (("west", 0, west), ("east", w - WALL, east))]
 
 
 def npc(character, dialogue, prompt, x, floor, brain=None, w=32, h=48):
@@ -317,8 +363,10 @@ def workshop():
         # up the yard unseen and are first seen in the doorway.
         entity("CameraZone", 0, 0, front, h, id="intro_barn_camera", name="the barn", mode="Default",
                clamp_mode="zone_bounds"),
-        # Out in the yard, once the fight is over: his last words.
-        entity("CutsceneTrigger", front, 32, 96, g - 32, cutscene="creator_final_fragment", after_encounter=RAID),
+        # His last words, the moment the fight is won, wherever in the barn
+        # or the yard Scout is: a fight carries Scout out into the yard, and a
+        # strip at the door was already behind him.
+        entity("CutsceneTrigger", WALL, 32, w - 2 * WALL, g - 32, cutscene="creator_final_fragment", after_encounter=RAID),
         entity("LockWall", YARD_GATE_X, g - 96, 24, 96, id="intro_yard_gate", name="the yard gate"),
         edge("workshop_to_lane", "out into the lane", w - WALL, g, LANE, "lane_from_workshop"),
     ]
@@ -330,89 +378,85 @@ def workshop():
 
 # ------------------------------------------------------------- the lane
 
-#: The survey line across the ridge path above Alice's station: it is taken
-#: down when Bob's end of the survey is closed (`bob_field_survey_received`).
-#: The ridge east of it is reached from the meadow as well.
+#: Alice's survey line, pegged across the lane west of her station: a step
+#: over, and Scout is asked not to tread on it. It comes up when Bob's end
+#: of the survey is closed (`bob_field_survey_received`).
 SURVEY_LINE = "alice_survey_line"
-SURVEY_LINE_X = 760
-#: The terraces up the slope west of Alice's station: one-way boards, each
-#: 64 above the last, alternating west and east so each jump is straight up.
-TERRACES = [(560, 608), (400, 544), (560, 480), (400, 416), (560, 352), (400, 288)]
-TERRACE_W = 192
+SURVEY_LINE_X = 700
 ALICE_X = 940
+#: The bank path down from the barn's level to the stream's: two pitches,
+#: and a landing between them where the mill's sign stands.
+BANK_TOP = 1200
+BANK_LANDING = (1952, 2368, COUNTRY_FLOOR + 304)
+BANK_FOOT = 3120
 
 
 def lane():
-    """HOBFORD LANE. The first open air: the lane outside the barn, a hedge
-    bank, the bank path down to the millstream, the cart track east. Above
-    the lane the slope goes up in shored terraces to the ridge path; Alice's
-    survey line crosses the ridge above her station."""
+    """HOBFORD LANE. The first open air: the lane outside the barn, high on
+    the west hill, with the valley below it (the village roofs, the mill) and
+    the gate far off on the east hill. Alice's station is beside the lane and
+    her survey line is pegged across it. Past her the bank path goes down to
+    the mill in two pitches."""
     rid = LANE
-    w, h, g = COUNTRY_W, COUNTRY_H, COUNTRY_FLOOR
-    check_reach(rid, [("lane", g), *[(f"terrace {n}", top) for n, (_, top) in enumerate(TERRACES)], ("ridge", RIDGE)])
-    check_reach(rid, [("lane", g), ("hedge bank", g - 48), ("lane", g)])
+    w, h, hi, lo = LANE_W, HILL_H, COUNTRY_FLOOR, VALLEY_FLOOR
+    l0, l1, ly = BANK_LANDING
     e = [
-        *walls(w, g, west=[g], east=[g, RIDGE]),
-        solid("ground", 0, g, w, h - g),
-        edge("lane_from_workshop", "into the workshop", 0, g, WORKSHOP, "workshop_to_lane"),
-        *[ledge(f"terrace_{n}", x, top, TERRACE_W) for n, (x, top) in enumerate(TERRACES)],
-        ledge("ridge_path", 300, RIDGE, w - WALL - 300),
-        entity("LockWall", SURVEY_LINE_X, 32, 16, RIDGE - 32, id=SURVEY_LINE, name="the survey line",
+        *hill_walls(w, hi, lo),
+        solid("barn_level", 0, hi, BANK_TOP, h - hi),
+        edge("lane_from_workshop", "into the workshop", 0, hi, WORKSHOP, "workshop_to_lane"),
+        hen(rid, 1, 260, hi),
+        hen(rid, 2, 420, hi),
+        entity("LockWall", SURVEY_LINE_X, hi - 24, 16, 24, id=SURVEY_LINE, name="the survey line",
                gated_by="bob_field_survey_received"),
-        sign("lane_sign_line", SURVEY_LINE_X, RIDGE - 110, "SURVEY LINE. PLEASE DON'T STEP ON IT.", 380),
+        sign("lane_sign_line", SURVEY_LINE_X, hi - 110, "SURVEY LINE. PLEASE DON'T STEP ON IT.", 380),
         piece("hill_survey_station", 960, 560),
-        npc("npc_alice", "alice_lane", "Talk to Alice", ALICE_X, g, brain="meets_the_player"),
-        sign("lane_sign_station", ALICE_X + 120, g - 150, "SURVEY STATION. MIND THE TRIPOD.", 340),
-        hen(rid, 1, 260, g),
-        hen(rid, 2, 420, g),
-        solid("hedge_bank", 1360, g - 48, 112, 48),
-        door("lane_to_millstream", "the bank path down to the mill", 1640, g, MILLSTREAM, "millstream_from_lane"),
-        sign("lane_sign_mill", 1664, g - 140, "MILL", 120),
-        sign("lane_sign_track", 2200, g - 160, "TRACK TO THE GATE", 260),
-        edge("lane_to_meadow", "up the cart track", w - WALL, g, MEADOW, "meadow_from_lane"),
-        edge("lane_to_meadow_high", "along the ridge", w - WALL, RIDGE, MEADOW, "meadow_from_lane_high"),
-        start(rid, 120, g),
+        npc("npc_alice", "alice_lane", "Talk to Alice", ALICE_X, hi, brain="meets_the_player"),
+        sign("lane_sign_station", ALICE_X + 120, hi - 150, "SURVEY STATION. MIND THE TRIPOD.", 340),
+        slope("bank_path_upper", BANK_TOP, hi, l0, ly),
+        solid("bank_landing", l0, ly, l1 - l0, h - ly),
+        sign("lane_sign_mill", (l0 + l1) // 2, ly - 140, f"MILL. {VILLAGE_NAME.upper()}", 260),
+        slope("bank_path_lower", l1, ly, BANK_FOOT, lo),
+        solid("valley_floor", BANK_FOOT, lo, w - BANK_FOOT, h - lo),
+        edge("lane_to_millstream", "down to the mill", w - WALL, lo, MILLSTREAM, "millstream_from_lane"),
+        start(rid, 120, hi),
     ]
     return build(rid, e, f"{VILLAGE_NAME.upper()} LANE", COUNTRY_MUSIC, dangerous=True)
 
 
 # ----------------------------------------------------------- the meadow
 
-#: The way up from the meadow to the ridge: the shepherd's hut (a step of
-#: 64) and the limbs of the oak beside it.
-HUT = (1000, 1200, COUNTRY_FLOOR - 64)
-OAK_LIMBS = [(1080, 544), (920, 480), (1080, 416), (920, 352), (1080, 288)]
-LIMB_W = 140
+#: The hill path from the woods up to the hilltop: two pitches, and the
+#: shepherd's terrace between them with his hut (a step of 64) on it.
+HILL_FOOT, HILL_TOP = 400, 2512
+TERRACE = (1152, 1760, VALLEY_FLOOR - 304)
+HUT = (1400, 1560, VALLEY_FLOOR - 304 - 64)
 
 
 def meadow():
-    """THE HIGH MEADOW. Pasture on the hill: dry-stone walls to hop, a turf
-    bank, the shepherd's hut and the oak whose limbs go up to the ridge path,
-    the hill path down to Hobford. East is the gate clearing."""
+    """THE HIGH MEADOW. The hill path climbs out of the woods to the pasture
+    on the east hill: the shepherd's terrace halfway up, with his hut, the
+    oak and the dog; at the top a dry-stone wall to hop, and the road on to
+    the gate."""
     rid = MEADOW
-    w, h, g = COUNTRY_W, COUNTRY_H, COUNTRY_FLOOR
-    check_reach(rid, [("meadow", g), ("hut roof", HUT[2]), *[(f"limb {n}", y) for n, (_, y) in enumerate(OAK_LIMBS)],
-                      ("ridge", RIDGE)])
-    check_reach(rid, [("meadow", g), ("wall", g - 48), ("meadow", g), ("bank", g - 64), ("meadow", g)])
+    w, h, hi, lo = MEADOW_W, HILL_H, COUNTRY_FLOOR, VALLEY_FLOOR
+    t0, t1, ty = TERRACE
+    check_reach(rid, [("terrace", ty), ("hut roof", HUT[2]), ("terrace", ty)])
+    check_reach(rid, [("hilltop", hi), ("wall", hi - 48), ("hilltop", hi)])
     e = [
-        *walls(w, g, west=[g, RIDGE], east=[g, RIDGE]),
-        solid("ground", 0, g, w, h - g),
-        edge("meadow_from_lane", "down the cart track", 0, g, LANE, "lane_to_meadow"),
-        edge("meadow_from_lane_high", "along the ridge", 0, RIDGE, LANE, "lane_to_meadow_high"),
-        ledge("ridge_path", WALL, RIDGE, w - 2 * WALL),
-        solid("stone_wall_1", 600, g - 48, 32, 48),
-        piece("hill_meadow_oak", 880, 200),
-        solid("shepherds_hut", HUT[0], HUT[2], HUT[1] - HUT[0], g - HUT[2]),
-        *[ledge(f"oak_limb_{n}", x, y, LIMB_W) for n, (x, y) in enumerate(OAK_LIMBS)],
-        door("meadow_to_hobford", f"the hill path down to {VILLAGE_NAME}", 1420, g, VILLAGE, "hobford_from_meadow"),
-        sign("meadow_sign_hobford", 1444, g - 140, VILLAGE_NAME.upper(), 140),
-        solid("stone_wall_2", 1600, g - 48, 32, 48),
-        solid("turf_bank", 1800, g - 64, 320, 64),
-        npc("npc_companion_dog", "hobford_dog", "Greet the dog", 1900, g - 64, brain="companion_dog_roam", w=64, h=64),
-        sign("meadow_sign_ring", 2240, g - 160, "THE GATE", 160),
-        edge("meadow_to_clearing", "on to the gate", w - WALL, g, CLEARING, "clearing_from_meadow"),
-        edge("meadow_to_clearing_high", "along the ridge", w - WALL, RIDGE, CLEARING, "clearing_from_meadow_high"),
-        start(rid, 120, g),
+        *hill_walls(w, lo, hi),
+        solid("valley_floor", 0, lo, HILL_FOOT, h - lo),
+        edge("meadow_from_woods", "back down into the woods", 0, lo, WOODS, "woods_to_meadow"),
+        slope("hill_path_lower", HILL_FOOT, lo, t0, ty),
+        solid("shepherds_terrace", t0, ty, t1 - t0, h - ty),
+        piece("hill_meadow_oak", 1180, ty - 472),
+        solid("shepherds_hut", HUT[0], HUT[2], HUT[1] - HUT[0], ty - HUT[2]),
+        npc("npc_companion_dog", "hobford_dog", "Greet the dog", 1680, ty, brain="companion_dog_roam", w=64, h=64),
+        slope("hill_path_upper", t1, ty, HILL_TOP, hi),
+        solid("hilltop", HILL_TOP, hi, w - HILL_TOP, h - hi),
+        solid("stone_wall", 2720, hi - 48, 32, 48),
+        sign("meadow_sign_gate", 2950, hi - 160, "THE GATE", 160),
+        edge("meadow_to_clearing", "on to the gate", w - WALL, hi, CLEARING, "clearing_from_meadow"),
+        start(rid, 120, lo),
     ]
     return build(rid, e, "THE HIGH MEADOW", COUNTRY_MUSIC, dangerous=True)
 
@@ -420,11 +464,13 @@ def meadow():
 # ------------------------------------------------------ the gate clearing
 
 #: The boom across the road beside the guard post: too high to jump, and
-#: lifted by the lever in the post's yard. The post's roof is reached from
-#: the ridge path; the siding's back stair comes up in the yard as well.
+#: lifted by the lever beside it on the road's side.
 BARRIER_X = 1560
 BARRIER_H = 176
-POST_ROOF = (1380, BARRIER_X, COUNTRY_FLOOR - 192)
+#: The freight track from the gate down to the siding: two pitches, and a
+#: landing between them where the signal post stands.
+FREIGHT_TOP, FREIGHT_FOOT = 2256, 4176
+FREIGHT_LANDING = (3008, 3424, COUNTRY_FLOOR + 304)
 BARRIER_LEVER = "hobford_barrier_lever"
 #: Set by the lever, and never cleared: the barrier stays up once lifted, so
 #: a second pull cannot shut a body out on either side of it.
@@ -434,44 +480,45 @@ GATE_TERMINAL = "hobford_gate_terminal"
 
 
 def clearing():
-    """THE GATE CLEARING. The old ring in its ruin of standing stones, with
-    new steel on it: the guard post, the boom across the road, the freight
-    rail's stair down to the siding. The ring is behind the boom."""
+    """THE GATE CLEARING. The hilltop: the old ring in its ruin of standing
+    stones, with new steel on it, the guard post and the boom across the
+    road. Past the ring the freight track goes down the hill to the siding."""
     rid = CLEARING
-    w, h, g = COUNTRY_W, COUNTRY_H, COUNTRY_FLOOR
-    check_reach(rid, [("clearing", g), ("stone", g - 48), ("clearing", g)])
+    w, h, hi, lo = CLEARING_W, HILL_H, COUNTRY_FLOOR, VALLEY_FLOOR
+    check_reach(rid, [("clearing", hi), ("stone", hi - 48), ("clearing", hi)])
     ring_x = 1780
     e = [
-        *walls(w, g, west=[g, RIDGE]),
-        solid("ground", 0, g, w, h - g),
-        edge("clearing_from_meadow", "back down the track", 0, g, MEADOW, "meadow_to_clearing"),
-        edge("clearing_from_meadow_high", "along the ridge", 0, RIDGE, MEADOW, "meadow_to_clearing_high"),
-        # The ridge path ends over the guard post: a drop from its end lands
-        # on the roof, and the roof's east end is over the boom.
-        ledge("ridge_path", WALL, RIDGE, 1600 - WALL),
-        solid("standing_stone_1", 560, g - 48, 48, 48),
-        solid("standing_stone_2", 880, g - 48, 48, 48),
-        door("clearing_to_siding", "the stair down to the freight siding", 1180, g, SIDING, "siding_from_clearing"),
-        sign("clearing_sign_siding", 1204, g - 140, "FREIGHT SIDING", 220),
+        *hill_walls(w, hi, lo),
+        solid("road", 0, hi, FREIGHT_TOP, h - hi),
+        edge("clearing_from_meadow", "back down the hill path", 0, hi, MEADOW, "meadow_to_clearing"),
+        solid("standing_stone_1", 560, hi - 48, 48, 48),
+        solid("standing_stone_2", 880, hi - 48, 48, 48),
         piece("hill_gate_office", 1370, 460),
-        ledge("guard_post_roof", POST_ROOF[0], POST_ROOF[2], POST_ROOF[1] - POST_ROOF[0]),
-        sign("clearing_sign_post", 1470, POST_ROOF[2] - 60, "GATE OFFICE. PERSONS BY APPOINTMENT.", 360),
-        entity("LockWall", BARRIER_X, g - BARRIER_H, 24, BARRIER_H, id="hobford_barrier", name="the barrier",
+        sign("clearing_sign_post", 1470, hi - 252, "GATE OFFICE. PERSONS BY APPOINTMENT.", 360),
+        entity("LockWall", BARRIER_X, hi - BARRIER_H, 24, BARRIER_H, id="hobford_barrier", name="the barrier",
                gated_by=f"world.flag_set {BARRIER_LIFTED}"),
-        entity("Switch", 1630, g - 32, 24, 32, id=BARRIER_LEVER, name="the barrier lever", prompt="Lift the barrier",
-               action="ToggleFlag", on_activate=f"world.set_flag {BARRIER_LIFTED} true"),
+        entity("Switch", BARRIER_X - 56, hi - 32, 24, 32, id=BARRIER_LEVER, name="the barrier lever",
+               prompt="Lift the barrier", action="ToggleFlag", on_activate=f"world.set_flag {BARRIER_LIFTED} true"),
         # The ring: a dialed ring of the gate network (`gate_network.ron`,
         # `gate_portals.ron`), the props it is drawn with, and its terminal.
-        entity("Prop", ring_x, g - 288, 288, 288, name="Clearing Gate Ring", kind="triangle_gate_ring"),
-        entity("Prop", ring_x, g - 288, 288, 288, name="Clearing Gate Portal", kind="triangle_gate_portal"),
-        entity("LoadingZone", ring_x + 72, g - 288, 144, 288, id=GATE_ZONE, name="the gate", activation="Door",
+        entity("Prop", ring_x, hi - 288, 288, 288, name="Clearing Gate Ring", kind="triangle_gate_ring"),
+        entity("Prop", ring_x, hi - 288, 288, 288, name="Clearing Gate Portal", kind="triangle_gate_portal"),
+        entity("LoadingZone", ring_x + 72, hi - 288, 144, 288, id=GATE_ZONE, name="the gate", activation="Door",
                presentation="SceneArt"),
-        entity("Prop", 1690, g - 56, 64, 56, name="Clearing Gate Dialer", kind="gate_dialer_triangle"),
-        entity("Switch", 1710, g - 44, 24, 32, id=GATE_TERMINAL, name=f"{VILLAGE_NAME} gate terminal", prompt="Dial the gate",
+        entity("Prop", 1690, hi - 56, 64, 56, name="Clearing Gate Dialer", kind="gate_dialer_triangle"),
+        entity("Switch", 1710, hi - 44, 24, 32, id=GATE_TERMINAL, name=f"{VILLAGE_NAME} gate terminal", prompt="Dial the gate",
                action="GateTerminal"),
-        sign("clearing_sign_ring", ring_x + 144, g - 340, f"{VILLAGE_NAME.upper()} GATE. FREIGHT WINDOW ON THE BOARD.", 420),
-        door("clearing_post_yard_door", "the back stair down to the siding", 2200, g, SIDING, "siding_to_post_yard"),
-        start(rid, 120, g),
+        sign("clearing_sign_ring", ring_x + 144, hi - 340, f"{VILLAGE_NAME.upper()} GATE. FREIGHT WINDOW ON THE BOARD.", 420),
+        sign("clearing_sign_siding", FREIGHT_TOP - 40, hi - 140, "FREIGHT SIDING", 220),
+        slope("freight_track_upper", FREIGHT_TOP, hi, FREIGHT_LANDING[0], FREIGHT_LANDING[2]),
+        solid("freight_landing", FREIGHT_LANDING[0], FREIGHT_LANDING[2], FREIGHT_LANDING[1] - FREIGHT_LANDING[0],
+              h - FREIGHT_LANDING[2]),
+        sign("clearing_sign_signal", (FREIGHT_LANDING[0] + FREIGHT_LANDING[1]) // 2, FREIGHT_LANDING[2] - 140,
+             "FREIGHT ONLY. WALK ON THE LEFT.", 320),
+        slope("freight_track_lower", FREIGHT_LANDING[1], FREIGHT_LANDING[2], FREIGHT_FOOT, lo),
+        solid("siding_bank_foot", FREIGHT_FOOT, lo, w - FREIGHT_FOOT, h - lo),
+        edge("clearing_to_siding", "down the freight track to the siding", w - WALL, lo, SIDING, "siding_from_clearing"),
+        start(rid, 120, hi),
     ]
     return build(rid, e, "THE GATE CLEARING", COUNTRY_MUSIC, dangerous=True, extra=GATESIDE)
 
@@ -486,7 +533,8 @@ PALLETS = [("pallets_a", 820, 980, LOW_FLOOR - 112), ("pallets_b", 1360, 1520, L
 
 
 def siding():
-    """THE FREIGHT SIDING. The new platform under the clearing, where the
+    """THE FREIGHT SIDING. The new platform at the foot of the freight track
+    below the gate, where the
     goblins wait for the freight window with their handcart and the crate
     from the barn. The fight starts on the platform; its bell keeps it won
     (an encounter with no linked switch starts again whenever a player walks
@@ -498,8 +546,7 @@ def siding():
     e = [
         *walls(w, g, west=[g]),
         solid("platform", 0, g, w, h - g),
-        edge("siding_from_woods", "back along the trail", 0, g, WOODS, "woods_to_siding"),
-        door("siding_from_clearing", "up the stair to the clearing", 120, g, CLEARING, "clearing_to_siding"),
+        edge("siding_from_clearing", "up the freight track to the gate", 0, g, CLEARING, "clearing_to_siding"),
         entity("CutsceneTrigger", 300, 32, 64, g - 32, cutscene="foreman_siding"),
         entity("EncounterTrigger", 440, 32, 64, g - 32, id=YARD_FIGHT, name=f"{YARD_FIGHT}_trigger"),
         *[solid(n, x0, top, x1 - x0, g - top) for n, x0, x1, top in FREIGHT],
@@ -510,7 +557,6 @@ def siding():
         sign("siding_sign_crate", 1598, g - 120, "1 LAB OF RESEARCH. PAID.", 280),
         entity("Switch", 1700, g - 32, 24, 32, id=f"{YARD_FIGHT}_again", name="the platform bell",
                prompt="Ring the platform bell", target_encounter=YARD_FIGHT, action="ResetEncounter"),
-        door("siding_to_post_yard", "the back stair up to the gate office", 1800, g, CLEARING, "clearing_post_yard_door"),
         start(rid, 200, g),
     ]
     return build(rid, e, "THE FREIGHT SIDING", GOBLIN_MUSIC, dangerous=True, extra=GATESIDE)
@@ -535,8 +581,8 @@ def millstream():
     check_reach(rid, [("bed", s_bed), ("rock", s_bed - 48), ("bank", g)])
     check_reach(rid, [("bank", g), ("porch", g - 48), ("upper floor", g - 112), ("loft window", g - 176)])
     e = [
-        *walls(w, g, east=[g]),
-        door("millstream_from_lane", "the bank path up to the lane", 120, g, LANE, "lane_to_millstream"),
+        *walls(w, g, west=[g], east=[g]),
+        edge("millstream_from_lane", "up the bank path to the lane", 0, g, LANE, "lane_to_millstream"),
         # The west bank, with a dry hollow under it behind a cracked wall.
         solid("west_bank", 0, g, 420, h - g),
         solid("hollow_roof", 420, g, s0 - 420, 16),
@@ -571,8 +617,8 @@ HOUSES = [("cottage", 260, 300, 540), ("smithy", 860, 900, 1160), ("inn", 1460, 
 
 def village():
     """HOBFORD. A short street: cottages, the old smithy that sells gate
-    goods now, the well, the inn, the notice board. The hill path goes up to
-    the meadow; east the road goes into the woods."""
+    goods now, the well, the inn, the notice board. West is the mill; east
+    the road goes into the woods."""
     rid = VILLAGE
     w, h, g = COUNTRY_W, LOW_H, LOW_FLOOR
     check_reach(rid, [("street", g), ("porch", g - 48), ("roof", g - 112), ("loft", g - 176)])
@@ -597,7 +643,6 @@ def village():
         sign("hobford_board_1", 2000, g - 200, "FREIGHT WINDOW: TOMORROW, NOON.", 360),
         sign("hobford_board_2", 2000, g - 170, "LOST: ONE SPECKLED HEN. ASK AT THE PLOUGH.", 420),
         sign("hobford_board_3", 2000, g - 140, "STRANGERS AT THE GATE: SEE THE GATE OFFICE.", 440),
-        door("hobford_from_meadow", "the hill path up to the meadow", 2160, g, MEADOW, "meadow_to_hobford"),
         edge("hobford_to_woods", "the road into the woods", w - WALL, g, WOODS, "woods_from_hobford"),
         start(rid, 120, g),
     ]
@@ -613,8 +658,8 @@ HOLLOW = [(1700, LOW_FLOOR - 64), (1600, LOW_FLOOR - 128), (1700, LOW_FLOOR - 19
 
 def woods():
     """HOBFORD WOODS. Roots and a fallen trunk, Bob's survey camp in a
-    clearing, a hollow oak, and the goblins' trail east to the siding, where
-    one goblin keeps a lookout."""
+    clearing, a hollow oak, and at the east end the goblins' trail out of the
+    trees and up the hill, where one goblin keeps a lookout."""
     rid = WOODS
     w, h, g = COUNTRY_W, LOW_H, LOW_FLOOR
     check_reach(rid, [("floor", g), ("root", g - 48), ("floor", g), ("trunk", g - 64), ("floor", g)])
@@ -632,7 +677,7 @@ def woods():
         entity("PickupSpawn", 1740, HOLLOW[-1][1] - 28, 24, 24, name="a can of oil", kind="health:2"),
         hen(rid, 1, 1880, g, dialogue="hobford_lost_hen"),
         raider(rid, 1, 2160, g),
-        edge("woods_to_siding", "along the goblins' trail", w - WALL, g, SIDING, "siding_from_woods"),
+        edge("woods_to_meadow", "up the hill path to the gate", w - WALL, g, MEADOW, "meadow_from_woods"),
         start(rid, 120, g),
     ]
     return build(rid, e, f"{VILLAGE_NAME.upper()} WOODS", COUNTRY_MUSIC, look=WOODS_LOOK, dangerous=True)
@@ -741,7 +786,9 @@ def culvert():
     return undertown(rid, e, "THE CULVERT", dangerous=True)
 
 
-ROOMS = (workshop, lane, meadow, clearing, siding, millstream, village, woods, market, culvert)
+#: East to west: a relayout moves the rooms east, and each one's new place
+#: is free once the rooms east of it have moved.
+ROOMS = (siding, clearing, meadow, woods, village, millstream, lane, workshop, market, culvert)
 
 
 def main(argv):
