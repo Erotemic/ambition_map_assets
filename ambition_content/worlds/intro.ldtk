@@ -7400,10 +7400,10 @@
 					"id": "V_Bool",
 					"params": [ true ]
 				}] },
-				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph", "__tile": null, "defUid": 105338, "realEditorValues": [{
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged", "__tile": null, "defUid": 105338, "realEditorValues": [{
 					"id": "V_String",
 					"params": [
-						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph"
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged"
 					]
 				}] }
 			],
@@ -15071,10 +15071,10 @@
 					"id": "V_Bool",
 					"params": [ true ]
 				}] },
-				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph", "__tile": null, "defUid": 105338, "realEditorValues": [{
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged", "__tile": null, "defUid": 105338, "realEditorValues": [{
 					"id": "V_String",
 					"params": [
-						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph"
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged"
 					]
 				}] }
 			],
@@ -16022,10 +16022,10 @@
 					"id": "V_Bool",
 					"params": [ true ]
 				}] },
-				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph", "__tile": null, "defUid": 105338, "realEditorValues": [{
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged", "__tile": null, "defUid": 105338, "realEditorValues": [{
 					"id": "V_String",
 					"params": [
-						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph"
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged"
 					]
 				}] }
 			],
@@ -17276,10 +17276,10 @@
 					"id": "V_Bool",
 					"params": [ true ]
 				}] },
-				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph", "__tile": null, "defUid": 105338, "realEditorValues": [{
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged", "__tile": null, "defUid": 105338, "realEditorValues": [{
 					"id": "V_String",
 					"params": [
-						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph"
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged"
 					]
 				}] }
 			],
@@ -18421,10 +18421,10 @@
 					"id": "V_Bool",
 					"params": [ true ]
 				}] },
-				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph", "__tile": null, "defUid": 105338, "realEditorValues": [{
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged", "__tile": null, "defUid": 105338, "realEditorValues": [{
 					"id": "V_String",
 					"params": [
-						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph"
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged"
 					]
 				}] }
 			],
@@ -19718,10 +19718,10 @@
 					"id": "V_Bool",
 					"params": [ true ]
 				}] },
-				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph", "__tile": null, "defUid": 105338, "realEditorValues": [{
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged", "__tile": null, "defUid": 105338, "realEditorValues": [{
 					"id": "V_String",
 					"params": [
-						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph"
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged"
 					]
 				}] }
 			],
@@ -20691,10 +20691,10 @@
 					"id": "V_String",
 					"params": ["hobford"]
 				}] },
-				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph", "__tile": null, "defUid": 105338, "realEditorValues": [{
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged", "__tile": null, "defUid": 105338, "realEditorValues": [{
 					"id": "V_String",
 					"params": [
-						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph"
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged"
 					]
 				}] }
 			],
@@ -21728,10 +21728,10 @@
 					"id": "V_Bool",
 					"params": [ true ]
 				}] },
-				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph", "__tile": null, "defUid": 105338, "realEditorValues": [{
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged", "__tile": null, "defUid": 105338, "realEditorValues": [{
 					"id": "V_String",
 					"params": [
-						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph"
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged"
 					]
 				}] }
 			],

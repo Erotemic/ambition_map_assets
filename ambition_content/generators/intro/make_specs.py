@@ -175,11 +175,12 @@ def walls(w, floor_h, *, west=(), east=(), top=0):
 
 #: What level 1 withholds from a player's kit (`RoomMetadata::withheld_verbs`):
 #: everything past run, one jump, drop through and the strike. Pogo is held
-#: back too; the level teaches the plain strike first.
+#: back too; the level teaches the plain strike first. The shot (`ranged`) is
+#: held back: level 1 is melee only.
 SMALL_KIT_WITHHELD = (
     "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge "
     "fly fly_toggle glide blink precision_blink blink_through_soft_walls "
-    "blink_through_hard_walls pogo directional_special shield grab morph"
+    "blink_through_hard_walls pogo directional_special shield grab morph ranged"
 )
 KIT = f'\n    withheld_verbs: "{SMALL_KIT_WITHHELD}",'
 
