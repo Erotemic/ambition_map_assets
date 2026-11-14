@@ -7380,17 +7380,17 @@
 					"id": "V_String",
 					"params": ["intro_wake_room"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "lab", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "creator_workshop", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["lab"]
+					"params": ["creator_workshop"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "something_worth_building", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["something_worth_building"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "lab", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "creator_workshop", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["lab"]
+					"params": ["creator_workshop"]
 				}] },
 				{ "__identifier": "entry_cutscene", "__type": "String", "__value": "intro_wake", "__tile": null, "defUid": 104970, "realEditorValues": [{
 					"id": "V_String",
@@ -15055,17 +15055,17 @@
 					"id": "V_String",
 					"params": ["intro_freight_yard"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "forest", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "hobford", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["forest"]
+					"params": ["hobford"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "first_goblin_tune_v2_radio", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["first_goblin_tune_v2_radio"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "forest", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "hobford", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["forest"]
+					"params": ["hobford"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
@@ -16006,17 +16006,17 @@
 					"id": "V_String",
 					"params": ["intro_hobford_lane"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "forest", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "hobford", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["forest"]
+					"params": ["hobford"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "a_possible_morning", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["a_possible_morning"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "forest", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "hobford", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["forest"]
+					"params": ["hobford"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
@@ -17260,17 +17260,17 @@
 					"id": "V_String",
 					"params": ["intro_high_meadow"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "forest", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "hobford", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["forest"]
+					"params": ["hobford"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "a_possible_morning", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["a_possible_morning"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "forest", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "hobford", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["forest"]
+					"params": ["hobford"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
@@ -18405,17 +18405,17 @@
 					"id": "V_String",
 					"params": ["intro_gate_clearing"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "forest", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "hobford", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["forest"]
+					"params": ["hobford"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "a_possible_morning", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["a_possible_morning"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "forest", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "hobford", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["forest"]
+					"params": ["hobford"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
@@ -19702,17 +19702,17 @@
 					"id": "V_String",
 					"params": ["intro_millstream"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "forest", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "hobford", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["forest"]
+					"params": ["hobford"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "a_possible_morning", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["a_possible_morning"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "forest", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "hobford", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["forest"]
+					"params": ["hobford"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
@@ -20679,17 +20679,17 @@
 					"id": "V_String",
 					"params": ["intro_hobford"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "forest", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "hobford", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["forest"]
+					"params": ["hobford"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "doves_of_the_commons", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["doves_of_the_commons"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "forest", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "hobford", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["forest"]
+					"params": ["hobford"]
 				}] },
 				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph", "__tile": null, "defUid": 105338, "realEditorValues": [{
 					"id": "V_String",
@@ -21712,17 +21712,17 @@
 					"id": "V_String",
 					"params": ["intro_woods"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "forest", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "biome", "__type": "String", "__value": "hobford_woods", "__tile": null, "defUid": 4172, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["forest"]
+					"params": ["hobford_woods"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "a_possible_morning", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["a_possible_morning"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "forest", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "hobford_woods", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["forest"]
+					"params": ["hobford_woods"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",

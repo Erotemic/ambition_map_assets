@@ -67,12 +67,11 @@ GATE_STACK = "gate_stack_lower"
 
 BG = "#14161C"
 COUNTRY_BG = "#9CC3E4"
-#: The looks of the level until its own are published (`hobford`,
-#: `hobford_woods`, `creator_workshop`): the barn is drawn as the lab, the
-#: country as the forest.
-WORKSHOP_LOOK = "lab"
-COUNTRY_LOOK = "forest"
-WOODS_LOOK = "forest"
+#: The level's looks (`tools/ambition_sprite2d_renderer`: the scenes in
+#: `backgrounds/hobford.py`, a skin, motes, a door and decor for each).
+WORKSHOP_LOOK = "creator_workshop"
+COUNTRY_LOOK = "hobford"
+WOODS_LOOK = "hobford_woods"
 WORKSHOP_MUSIC = "something_worth_building"
 COUNTRY_MUSIC = "a_possible_morning"
 VILLAGE_MUSIC = "doves_of_the_commons"
