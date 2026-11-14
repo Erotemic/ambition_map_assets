@@ -11,7 +11,7 @@
 	"iid": "ambition-magical-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1009276,
+	"nextUid": 1009376,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -14538,6 +14538,147 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [132,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 9928,
+							"__worldY": 352,
+							"iid": "Prop-1009312",
+							"width": 288,
+							"height": 288,
+							"defUid": 4351,
+							"px": [2120,352],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Keep Arch Ring", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Keep Arch Ring"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_ring"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [132,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 9928,
+							"__worldY": 352,
+							"iid": "Prop-1009313",
+							"width": 288,
+							"height": 288,
+							"defUid": 4351,
+							"px": [2120,352],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Keep Arch Portal", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Keep Arch Portal"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_portal"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [137,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 10000,
+							"__worldY": 352,
+							"iid": "LoadingZone-1009314",
+							"width": 144,
+							"height": 288,
+							"defUid": 2002,
+							"px": [2192,352],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "magical_keep_arch", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["magical_keep_arch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the keep's arch", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the keep's arch"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "", "__tile": null, "defUid": 3005, "realEditorValues": [] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "", "__tile": null, "defUid": 3006, "realEditorValues": [] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [151,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 10228,
+							"__worldY": 584,
+							"iid": "Prop-1009315",
+							"width": 64,
+							"height": 56,
+							"defUid": 4351,
+							"px": [2420,584],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Keep Arch Dialer", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Keep Arch Dialer"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_dialer"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [152,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 10248,
+							"__worldY": 596,
+							"iid": "Switch-1009316",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [2440,596],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "magical_keep_arch_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["magical_keep_arch_terminal"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Keep Arch terminal", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Keep Arch terminal"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Dial the gate", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Dial the gate"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "", "__tile": null, "defUid": 4049, "realEditorValues": [] },
+								{ "__identifier": "action", "__type": "String", "__value": "GateTerminal", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["GateTerminal"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "NpcSpawn",
 							"__grid": [61,37],
 							"__pivot": [0,0],
@@ -14599,18 +14740,18 @@
 						},
 						{
 							"__identifier": "NpcSpawn",
-							"__grid": [142,37],
+							"__grid": [86,37],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF9EEA",
-							"__worldX": 10092,
+							"__worldX": 9192,
 							"__worldY": 592,
-							"iid": "NpcSpawn-1008426",
+							"iid": "NpcSpawn-1009370",
 							"width": 32,
 							"height": 48,
 							"defUid": 2006,
-							"px": [2284,592],
+							"px": [1384,592],
 							"fieldInstances": [
 								{ "__identifier": "character_id", "__type": "String", "__value": "void_star", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
@@ -19770,6 +19911,147 @@
 									"params": ["THE HEART OF THE VOID: the first star that went out. Shh."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [40,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 11008,
+							"__worldY": 2336,
+							"iid": "Prop-1009335",
+							"width": 288,
+							"height": 288,
+							"defUid": 4351,
+							"px": [640,288],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Heart Arch Ring", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Heart Arch Ring"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_ring"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [40,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 11008,
+							"__worldY": 2336,
+							"iid": "Prop-1009336",
+							"width": 288,
+							"height": 288,
+							"defUid": 4351,
+							"px": [640,288],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Heart Arch Portal", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Heart Arch Portal"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_portal"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [44,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 11080,
+							"__worldY": 2336,
+							"iid": "LoadingZone-1009337",
+							"width": 144,
+							"height": 288,
+							"defUid": 2002,
+							"px": [712,288],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "magical_heart_arch", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["magical_heart_arch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the heart's arch", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the heart's arch"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "", "__tile": null, "defUid": 3005, "realEditorValues": [] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "", "__tile": null, "defUid": 3006, "realEditorValues": [] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [34,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 10912,
+							"__worldY": 2568,
+							"iid": "Prop-1009338",
+							"width": 64,
+							"height": 56,
+							"defUid": 4351,
+							"px": [544,520],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Heart Arch Dialer", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Heart Arch Dialer"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_dialer"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [35,33],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 10932,
+							"__worldY": 2580,
+							"iid": "Switch-1009339",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [564,532],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "magical_heart_arch_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["magical_heart_arch_terminal"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Heart Arch terminal", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Heart Arch terminal"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Dial the gate", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Dial the gate"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "", "__tile": null, "defUid": 4049, "realEditorValues": [] },
+								{ "__identifier": "action", "__type": "String", "__value": "GateTerminal", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["GateTerminal"]
+								}] }
 							]
 						},
 						{
@@ -25536,6 +25818,147 @@
 									"params": ["road_cloud_gap"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [12,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2248,
+							"__worldY": -416,
+							"iid": "Prop-1009284",
+							"width": 288,
+							"height": 288,
+							"defUid": 4351,
+							"px": [200,352],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Heights Arch Ring", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Heights Arch Ring"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_ring"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [12,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2248,
+							"__worldY": -416,
+							"iid": "Prop-1009285",
+							"width": 288,
+							"height": 288,
+							"defUid": 4351,
+							"px": [200,352],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Heights Arch Portal", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Heights Arch Portal"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_portal"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [17,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 2320,
+							"__worldY": -416,
+							"iid": "LoadingZone-1009286",
+							"width": 144,
+							"height": 288,
+							"defUid": 2002,
+							"px": [272,352],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "magical_heights_arch", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["magical_heights_arch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the heights arch", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the heights arch"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "", "__tile": null, "defUid": 3005, "realEditorValues": [] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "", "__tile": null, "defUid": 3006, "realEditorValues": [] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [32,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2568,
+							"__worldY": -184,
+							"iid": "Prop-1009287",
+							"width": 64,
+							"height": 56,
+							"defUid": 4351,
+							"px": [520,584],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Heights Arch Dialer", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Heights Arch Dialer"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_dialer"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [33,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 2588,
+							"__worldY": -172,
+							"iid": "Switch-1009288",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [540,596],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "magical_heights_arch_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["magical_heights_arch_terminal"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Heights Arch terminal", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Heights Arch terminal"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Dial the gate", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Dial the gate"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "", "__tile": null, "defUid": 4049, "realEditorValues": [] },
+								{ "__identifier": "action", "__type": "String", "__value": "GateTerminal", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["GateTerminal"]
+								}] }
 							]
 						},
 						{
