@@ -24,6 +24,11 @@ One region, not a string of rooms (`docs/planning/game/world-composition.md`):
   loop.
 - `magical_stardune_road`: east of the square by a side exit, out of town,
   toward the castle; more AI Slop.
+- `magical_starlight_heights`: the clouds over the square and the road's
+  west end, the region's high route. Up the beanstalk beside the square's
+  well (a climb, both ways); up off the star spring on the road and down
+  through a gap in the clouds east of it (a throw up, a drop down). With the
+  square-to-road side exit it is a loop.
 - `magical_void_keep`: east of the road by a side exit, the castle the void
   took. Mary-O is here, at a truce. Void stars loiter; not friends, not foes
   (Jon, 2026-10-30: "he and the void stars are not quite peaceful, but at
@@ -96,6 +101,7 @@ NURSERY = "magical_void_nursery"
 LEDGES = "magical_void_ledges"
 COLISEUM = "magical_void_coliseum"
 WASTES = "magical_void_wastes"
+HEIGHTS = "magical_starlight_heights"
 
 FLOOR = 640
 H = 768
@@ -108,6 +114,20 @@ HOLLOW_FLOOR, HOLLOW_ROOF = 576, 64
 #: ground over a shaft of the hollow (room x).
 HATCH = (1376, 1440)
 WELL = (1600, 1664)
+#: The Starlight Heights: the clouds over the square and the road's west end.
+#: Up from the square by the beanstalk beside its well; up from the road off
+#: a rebound pad, and back down to the road through a gap in the clouds east
+#: of the pad (room x: the square's for the beanstalk, the road's for the
+#: rest; the heights share the square's left edge).
+HEIGHTS_AT, HEIGHTS_W = (SQUARE_AT[0], -H), SQUARE_W + 1280
+BEANSTALK = (1768, 1832)
+PAD = (880, 976)
+CLOUD_GAP = (1088, 1152)
+#: The pad hangs over the road at this height, so the road runs on under it
+#: and only a body that jumps onto it is thrown; its throw carries a body up
+#: the rest of the road's height and through the clouds' floor.
+PAD_TOP = FLOOR - 128
+PAD_IMPULSE = -2000
 #: The Void Castle: the keep east of the road, its bridge under it; the two
 #: stairs down from the keep's ground (both rooms' x: they share a left edge).
 KEEP_AT, KEEP_W = (ROAD_AT[0] + ROAD_W, 0), 2560
@@ -247,6 +267,11 @@ def square():
         ledge("square_balcony", 1900, 448, 288),
         *hole("square_well", *WELL, HOLLOW, "hollow_well_shaft", "square_well", "down the old well"),
         sign("square_well_sign", WELL[0] + 32, 540, "THE OLD WELL: wishes not refunded", 340),
+        # The beanstalk up to the heights: a magic bean, dropped in a wish
+        # that came true the wrong way up.
+        entity("LoadingZone", BEANSTALK[0], 0, BEANSTALK[1] - BEANSTALK[0], 16, id="square_beanstalk", name="up the beanstalk",
+               activation="EdgeExit", target_room=HEIGHTS, target_zone="heights_beanstalk", bidirectional=True),
+        sign("square_beanstalk_sign", BEANSTALK[0] + 32, 380, "BEANSTALK (a wish, the wrong way up)", 340),
         resident("npc_magical_celeste", "magical_celeste", 1160, FLOOR),
         resident("npc_magical_lumen", "magical_lumen", 2060, FLOOR),
         # Mary-O's own Solid Snake, off duty in town (it wanders, as it does
@@ -317,6 +342,14 @@ def road():
         resident("laden_swallow", "magical_laden_swallow", 600, FLOOR - 24, h=40, w=54),
         sign("road_sign", 700, 360, "<- STARLIGHT SQUARE      THE CASTLE ->", 460),
         sign("road_castle", w - 520, 320, "THE CASTLE: taken by the void. Mary-O is on it. (She has a plan.)", 620),
+        # The pad that throws a body up into the clouds, and the gap in
+        # the clouds east of it that lets one down again.
+        entity("ReboundPad", PAD[0], PAD_TOP, PAD[1] - PAD[0], 16, name="the star spring", impulseX=0, impulseY=PAD_IMPULSE),
+        sign("road_pad_sign", (PAD[0] + PAD[1]) // 2, FLOOR - 200, "STAR SPRING: jump on, up to the heights (the way down is the gap)", 600),
+        entity("LoadingZone", PAD[0], 0, PAD[1] - PAD[0], 16, id="road_pad_shaft", name="up off the star spring",
+               activation="EdgeExit", target_room=HEIGHTS, target_zone="heights_pad_hole", bidirectional=True),
+        entity("LoadingZone", CLOUD_GAP[0], 0, CLOUD_GAP[1] - CLOUD_GAP[0], 16, id="road_cloud_gap", name="up through the cloud gap",
+               activation="EdgeExit", target_room=HEIGHTS, target_zone="heights_cloud_gap", bidirectional=True),
         ledge("dune_a", 1200, 528, 192),
         ledge("dune_b", 1500, 448, 192),
         ledge("dune_c", 2200, 512, 256),
@@ -326,6 +359,35 @@ def road():
     ]
     return rid, room(rid, e, at=ROAD_AT, size=(w, H), biome="stardune", music="sparse_theme", bg="#3A2850",
                      title="THE DUNE ROAD", generator=GENERATOR, dangerous=True)
+
+
+def heights():
+    """The clouds over the square and the road: a walk on the cloud bank
+    between the beanstalk and the star spring, with higher clouds to climb."""
+    rid, w = HEIGHTS, HEIGHTS_W
+    pad = (PAD[0] + SQUARE_W, PAD[1] + SQUARE_W)
+    gap = (CLOUD_GAP[0] + SQUARE_W, CLOUD_GAP[1] + SQUARE_W)
+    e = [
+        *ground(0, w, (BEANSTALK, pad, gap)),
+        solid("west_wall", 0, 0, WALL, FLOOR),
+        solid("east_wall", w - WALL, 0, WALL, FLOOR),
+        start(rid, BEANSTALK[0] + 160, FLOOR),
+        sign("heights_sign", 1400, 120, "THE STARLIGHT HEIGHTS: where the stars are hung out to dry", 600),
+        *hole("heights_beanstalk", *BEANSTALK, SQUARE, "square_beanstalk", "heights_beanstalk", "down the beanstalk"),
+        *hole("heights_pad", *pad, ROAD, "road_pad_shaft", "heights_pad_hole", "down onto the star spring"),
+        *hole("heights_gap", *gap, ROAD, "road_cloud_gap", "heights_cloud_gap", "down through the cloud gap"),
+        sign("heights_gap_sign", gap[0] - 120, 540, "GAP IN THE CLOUDS (down to the road)", 360),
+        # Higher clouds, a stair west to east, and a star left out at the top.
+        ledge("cloud_a", 2160, 528, 224),
+        ledge("cloud_b", 2440, 432, 192),
+        ledge("cloud_c", 2700, 336, 224),
+        ledge("cloud_d", 2990, 432, 192),
+        entity("ChestSpawn", 2774, 336 - 58, 76, 58, name="a star hung out to dry", reward="currency:120"),
+        ledge("cloud_e", 600, 512, 256),
+        ledge("cloud_f", 960, 416, 192),
+    ]
+    return rid, room(rid, e, at=HEIGHTS_AT, size=(w, H), biome="starlight", music="support_theme", bg="#CFE3F7",
+                     title="THE STARLIGHT HEIGHTS", generator=GENERATOR)
 
 
 def void_star(n: int, x: int, floor: int) -> str:
@@ -682,7 +744,7 @@ def wastes():
     return void_room(rid, e, WASTES_AT, (w, h), "THE WASTES", "sparse_theme", dangerous=True)
 
 
-ROOMS = (garden, square, hollow, road, keep, bridge, rift, gallery, falls, heart, nursery, ledges, coliseum, wastes)
+ROOMS = (garden, square, hollow, road, heights, keep, bridge, rift, gallery, falls, heart, nursery, ledges, coliseum, wastes)
 
 
 def main(argv):
@@ -703,6 +765,8 @@ def main(argv):
     hatch0 = in_hollow(HATCH[0], GARDEN_AT)
     well0 = in_hollow(WELL[0], SQUARE_AT)
     for args in ((GARDEN, "Climbable", 1, HATCH[0] + 16, FLOOR - 64, 32, H - FLOOR + 64),
+                 (SQUARE, "Climbable", 1, BEANSTALK[0] + 16, 0, 32, FLOOR),
+                 (HEIGHTS, "Climbable", 1, BEANSTALK[0] + 16, FLOOR - 64, 32, H - FLOOR + 64),
                  (SQUARE, "Climbable", 1, WELL[0] + 16, FLOOR - 64, 32, H - FLOOR + 64),
                  (HOLLOW, "Climbable", 1, hatch0 + 16, 0, 32, HOLLOW_FLOOR),
                  (HOLLOW, "Climbable", 1, well0 + 16, 0, 32, HOLLOW_FLOOR),
