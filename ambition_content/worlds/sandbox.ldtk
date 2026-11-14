@@ -49990,9 +49990,9 @@
 									"id": "V_String",
 									"params": ["portal_lab_chain_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "portal_lab_chain_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to the portal chain lab", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["portal_lab_chain_door"]
+									"params": ["to the portal chain lab"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "portal_chain_lab", "__tile": null, "defUid": 3005, "realEditorValues": [{
@@ -74674,9 +74674,9 @@
 									"id": "V_String",
 									"params": ["portal_chain_lab_scale_door"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "portal_chain_lab_scale_door", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "to the portal scale lab", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["portal_chain_lab_scale_door"]
+									"params": ["to the portal scale lab"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "portal_scale_lab", "__tile": null, "defUid": 3005, "realEditorValues": [{
