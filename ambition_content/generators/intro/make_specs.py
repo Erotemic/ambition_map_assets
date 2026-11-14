@@ -12,7 +12,8 @@ Run it from the repository root. Design: `docs/planning/game/level-1.md`.
                                                 [the culvert]--[Alice's station]--[Bob's end]
 
 THE KIT. Every required way is made for run, ONE jump, drop through a
-one-way floor and the strike. A jump rises about 88 px (jump 630 px/s,
+one-way floor and the strike, and each room withholds the rest of a player's
+kit (`SMALL_KIT_WITHHELD`, the level field `withheld_verbs`). A jump rises about 88 px (jump 630 px/s,
 gravity 2250); a level gap of 112 px or less is safe at a run (270 px/s).
 `check_reach` refuses a required step up of more than 64 px. The robot's
 shipped kit is larger (air jump, wall jump, dash, flight); the level does not
@@ -112,10 +113,21 @@ def slug(rid, n, x, floor):
                   character_id="npc_puppy_slug", disposition="Peaceful", respawn="OnRoomReenter")
 
 
-def build(rid, entities, title, music, *, dangerous=False, extra=""):
+#: What level 1 withholds from a player's kit (`RoomMetadata::withheld_verbs`):
+#: everything past run, one jump, drop through and the strike. Pogo is held
+#: back too; the level teaches the plain strike first.
+SMALL_KIT_WITHHELD = (
+    "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge "
+    "fly fly_toggle glide blink precision_blink blink_through_soft_walls "
+    "blink_through_hard_walls pogo directional_special shield grab morph"
+)
+KIT = f'\n    withheld_verbs: "{SMALL_KIT_WITHHELD}",'
+
+
+def build(rid, entities, title, music, *, dangerous=False, extra="", kit=True):
     at, size = ROOMS_AT[rid]
     return rid, room(rid, entities, at=at, size=size, biome="lab", music=music, bg=BG, title=title,
-                     generator=GENERATOR, dangerous=dangerous, extra=extra)
+                     generator=GENERATOR, dangerous=dangerous, extra=(KIT if kit else "") + extra)
 
 
 def undertown(rid, entities, title, *, dangerous=False, extra=""):
@@ -123,7 +135,7 @@ def undertown(rid, entities, title, *, dangerous=False, extra=""):
     behind with the under-town backdrop."""
     at, size = ROOMS_AT[rid]
     text = room(rid, entities, at=at, size=size, biome="cave", music=LAB_MUSIC, bg=BG, title=title,
-                generator=GENERATOR, dangerous=dangerous, extra=extra)
+                generator=GENERATOR, dangerous=dangerous, extra=KIT + extra)
     return rid, text.replace('parallax_theme: "cave"', 'parallax_theme: "undertown"')
 
 
@@ -202,8 +214,11 @@ def lab():
         sign("bay_sign_stair", BAY_DOOR_X + 56, g - 160, "STAIR UP", 140),
         edge("raid_to_escape", "to the service stair", w - WALL, g, STAIR, "escape_from_raid"),
     ]
+    # The lab keeps the whole kit until the rural opening replaces it: under
+    # the small kit the playthrough's fight carries the player back over the
+    # raid's trigger, the raid starts again and the bay door shuts.
     return build(rid, e, "THE BASEMENT LAB", LAB_MUSIC, dangerous=True,
-                 extra='\n    entry_cutscene: "intro_wake",')
+                 extra='\n    entry_cutscene: "intro_wake",', kit=False)
 
 
 # ---------------------------------------------------- 3. the service stair
@@ -227,10 +242,14 @@ def stair():
     p0, p1, p_bed = PIT
     l0, l1 = LANDING_HOLE
     gg0, gg1 = GIRDER_GAP
-    # Flight A climbs from the bottom floor at the east wall, westward, onto
-    # the middle landing; flight B climbs from the landing's west end onto
-    # the girders; two crates lift the girders to the top landing.
-    flight_a = [(1216, 1264, g - 48), (1168, 1216, g - 96), (1120, 1168, g - 144)]
+    # Flight A climbs east from the bottom floor to the east wall, and a jump
+    # west from its top lands on the middle landing, which reaches over the
+    # flight's first step; flight B climbs from the landing's west end onto
+    # the girders; two crates lift the girders to the top landing. (Flight A
+    # rose westward from the wall until 2026-11-14: its tallest step faced
+    # the floor as a wall 144 px high, which one jump cannot climb.)
+    flight_a = [(1120, 1168, g - 48), (1168, 1216, g - 96), (1216, 1264, g - 144)]
+    landing_east_end = flight_a[1][0]
     flight_b = [(352, 400, TIER_2 - 48), (304, 352, TIER_2 - 96), (256, 304, TIER_2 - 144)]
     top_crate = (1000, 1064, TIER_3 - 64)
     check_reach(rid, [("floor", g), ("rubble", g - 48), ("floor", g), *[("flight A", t) for *_, t in flight_a],
@@ -249,10 +268,12 @@ def stair():
         *[solid(f"flight_a_{n}", a, top, b - a, g - top) for n, (a, b, top) in enumerate(flight_a)],
         # The middle landing, with the hole in it.
         solid("landing_west", 400, TIER_2, l0 - 400, 32),
-        solid("landing_east", l1, TIER_2, 1120 - l1, 32),
+        solid("landing_east", l1, TIER_2, landing_east_end - l1, 32),
         *[solid(f"flight_b_{n}", a, top, b - a, TIER_2 - top) for n, (a, b, top) in enumerate(flight_b)],
         # The girders: one-way, so a body on flight B comes up through them.
-        ledge("girder_west", 160, TIER_3, gg0 - 160),
+        # It starts east of flight B's top step: over that step it would
+        # leave a body's height exactly, and a body cannot stand there.
+        ledge("girder_west", flight_b[-1][1], TIER_3, gg0 - flight_b[-1][1]),
         ledge("girder_east", gg1, TIER_3, top_crate[0] - gg1),
         solid("top_crate", top_crate[0], top_crate[2], top_crate[1] - top_crate[0], 32),
         solid("top_landing", top_crate[1], STAIR_TOP, w - top_crate[1], 32),

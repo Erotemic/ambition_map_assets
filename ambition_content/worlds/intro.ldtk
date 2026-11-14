@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 105338,
+	"nextUid": 105339,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -7316,6 +7316,43 @@
 			"allowedRefsEntityUid": null,
 			"allowedRefTags": [],
 			"tilesetUid": null
+		},
+		{
+			"identifier": "withheld_verbs",
+			"doc": "The verbs a player's body does without in this room: AbilitySet field names split by commas or spaces (RoomMetadata::withheld_verbs).",
+			"__type": "String",
+			"uid": 105338,
+			"type": "F_String",
+			"isArray": false,
+			"canBeNull": true,
+			"arrayMinLength": null,
+			"arrayMaxLength": null,
+			"editorDisplayMode": "NameAndValue",
+			"editorDisplayScale": 1,
+			"editorDisplayPos": "Above",
+			"editorLinkStyle": "ZigZag",
+			"editorDisplayColor": null,
+			"editorAlwaysShow": true,
+			"editorShowInWorld": false,
+			"editorCutLongValues": true,
+			"editorTextSuffix": null,
+			"editorTextPrefix": null,
+			"useForSmartColor": false,
+			"exportToToc": false,
+			"searchable": true,
+			"min": null,
+			"max": null,
+			"regex": null,
+			"acceptFileTypes": null,
+			"defaultOverride": null,
+			"textLanguageMode": null,
+			"symmetricalRef": false,
+			"autoChainRef": false,
+			"allowOutOfLevelRef": false,
+			"allowedRefs": "Any",
+			"allowedRefsEntityUid": null,
+			"allowedRefTags": [],
+			"tilesetUid": null
 		}
 	] },
 	"levels": [
@@ -9892,6 +9929,12 @@
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
 					"params": [ true ]
+				}] },
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph", "__tile": null, "defUid": 105338, "realEditorValues": [{
+					"id": "V_String",
+					"params": [
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph"
+					]
 				}] }
 			],
 			"layerInstances": [
@@ -9947,7 +9990,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
-						2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,2,2,2,2,
+						0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,2,2,2,2,
 						2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -9976,25 +10019,25 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,
-						1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,
+						1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,1,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,
@@ -11610,6 +11653,12 @@
 				{ "__identifier": "entry_cutscene", "__type": "String", "__value": "drain_market_arrival", "__tile": null, "defUid": 104970, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["drain_market_arrival"]
+				}] },
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph", "__tile": null, "defUid": 105338, "realEditorValues": [{
+					"id": "V_String",
+					"params": [
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph"
+					]
 				}] }
 			],
 			"layerInstances": [
@@ -12728,7 +12777,13 @@
 				}] },
 				{ "__identifier": "palette", "__type": "String", "__value": null, "__tile": null, "defUid": 4338, "realEditorValues": [] },
 				{ "__identifier": "lighting_hint", "__type": "String", "__value": null, "__tile": null, "defUid": 4339, "realEditorValues": [] },
-				{ "__identifier": "foreground_treatment", "__type": "String", "__value": null, "__tile": null, "defUid": 4340, "realEditorValues": [] }
+				{ "__identifier": "foreground_treatment", "__type": "String", "__value": null, "__tile": null, "defUid": 4340, "realEditorValues": [] },
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph", "__tile": null, "defUid": 105338, "realEditorValues": [{
+					"id": "V_String",
+					"params": [
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph"
+					]
+				}] }
 			],
 			"layerInstances": [
 				{
@@ -15397,6 +15452,12 @@
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
 					"params": [ true ]
+				}] },
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph", "__tile": null, "defUid": 105338, "realEditorValues": [{
+					"id": "V_String",
+					"params": [
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph"
+					]
 				}] }
 			],
 			"layerInstances": [
@@ -16330,6 +16391,12 @@
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
 					"params": [ true ]
+				}] },
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph", "__tile": null, "defUid": 105338, "realEditorValues": [{
+					"id": "V_String",
+					"params": [
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph"
+					]
 				}] }
 			],
 			"layerInstances": [
@@ -17026,6 +17093,12 @@
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
 					"params": [ true ]
+				}] },
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph", "__tile": null, "defUid": 105338, "realEditorValues": [{
+					"id": "V_String",
+					"params": [
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph"
+					]
 				}] }
 			],
 			"layerInstances": [
@@ -17799,6 +17872,12 @@
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
 					"params": [ true ]
+				}] },
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph", "__tile": null, "defUid": 105338, "realEditorValues": [{
+					"id": "V_String",
+					"params": [
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph"
+					]
 				}] }
 			],
 			"layerInstances": [

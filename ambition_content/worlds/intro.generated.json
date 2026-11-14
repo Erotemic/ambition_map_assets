@@ -1,13 +1,13 @@
 {
   "schema": "ambition.ldtk_generated_record.v1",
   "generated": {
-    "alice_relay": "638fafcf4b1f17a0",
-    "bob_relay": "85548cf22aa5f123",
-    "drain_alley": "20c4404e127406cd",
-    "intro_escape_shaft": "6d474f565326e208",
-    "intro_freight_yard": "0806c962e4122dce",
+    "alice_relay": "9805b9de04539c32",
+    "bob_relay": "5bc0700421f10b73",
+    "drain_alley": "585ab8dd4c7e3ed5",
+    "intro_escape_shaft": "3d0a194e0a6e5aaf",
+    "intro_freight_yard": "0021cc5151eb8453",
     "intro_wake_room": "a69c301e8656bc6c",
-    "under_town_pipes": "d2fa7607ee0f8031"
+    "under_town_pipes": "52592f6846bdfa07"
   },
   "ldtk_owned": [
     "combat_calibration_lab",
