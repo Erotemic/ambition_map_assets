@@ -391,6 +391,11 @@ BANK_LANDING = (1952, 2368, COUNTRY_FLOOR + 304)
 BANK_FOOT = 3120
 
 
+#: How far up the camera looks on a hilltop (world px, negative is up): the
+#: lane, the meadow's top and the clearing's road each have a lookout zone.
+LOOKOUT_LIFT = -180
+
+
 def lane():
     """HOBFORD LANE. The first open air: the lane outside the barn, high on
     the west hill, with the valley below it (the village roofs, the mill) and
@@ -419,6 +424,12 @@ def lane():
         solid("valley_floor", BANK_FOOT, lo, w - BANK_FOOT, h - lo),
         edge("lane_to_millstream", "down to the mill", w - WALL, lo, MILLSTREAM, "millstream_from_lane"),
         start(rid, 120, hi),
+        # The first view outside: on the hilltop the camera looks out, not
+        # down. Framed on Scout, the hill's earth filled the lower half and
+        # hid the valley, the village and the gate in the background; lifted,
+        # the ground is low in the frame and the world is above it.
+        entity("CameraZone", 0, 0, l0, h, id="intro_lane_lookout", name="the lookout", mode="Default",
+               target_offset_y=LOOKOUT_LIFT),
     ]
     return build(rid, e, f"{VILLAGE_NAME.upper()} LANE", COUNTRY_MUSIC, dangerous=True)
 
@@ -456,6 +467,8 @@ def meadow():
         solid("stone_wall", 2720, hi - 48, 32, 48),
         sign("meadow_sign_gate", 2950, hi - 160, "THE GATE", 160),
         edge("meadow_to_clearing", "on to the gate", w - WALL, hi, CLEARING, "clearing_from_meadow"),
+        entity("CameraZone", HILL_TOP, 0, w - HILL_TOP, h, id="intro_meadow_lookout", name="the hilltop",
+               mode="Default", target_offset_y=LOOKOUT_LIFT),
         start(rid, 120, lo),
     ]
     return build(rid, e, "THE HIGH MEADOW", COUNTRY_MUSIC, dangerous=True)
@@ -490,6 +503,8 @@ def clearing():
     e = [
         *hill_walls(w, hi, lo),
         solid("road", 0, hi, FREIGHT_TOP, h - hi),
+        entity("CameraZone", 0, 0, FREIGHT_TOP, h, id="intro_clearing_lookout", name="the hilltop",
+               mode="Default", target_offset_y=LOOKOUT_LIFT),
         edge("clearing_from_meadow", "back down the hill path", 0, hi, MEADOW, "meadow_to_clearing"),
         solid("standing_stone_1", 560, hi - 48, 48, 48),
         solid("standing_stone_2", 880, hi - 48, 48, 48),

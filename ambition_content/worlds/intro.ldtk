@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 106030,
+	"nextUid": 106095,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -16840,6 +16840,36 @@
 							"__worldX": 1600,
 							"__worldY": 2048,
 							"iid": "CameraZone-105380",
+							"width": 1952,
+							"height": 1408,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_lane_lookout", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_lane_lookout"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the lookout", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the lookout"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] },
+								{ "__identifier": "target_offset_y", "__type": "Float", "__value": -180.0, "__tile": null, "defUid": 4332, "realEditorValues": [{ "id": "V_Float", "params": [-180.0] }] }
+							]
+						},
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 1600,
+							"__worldY": 2048,
+							"iid": "CameraZone-106047",
 							"width": 3328,
 							"height": 1408,
 							"defUid": 4002,
@@ -18984,6 +19014,36 @@
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": [
+						{
+							"__identifier": "CameraZone",
+							"__grid": [157,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 14640,
+							"__worldY": 2048,
+							"iid": "CameraZone-106088",
+							"width": 592,
+							"height": 1408,
+							"defUid": 4002,
+							"px": [2512,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_meadow_lookout", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_meadow_lookout"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the hilltop", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the hilltop"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] },
+								{ "__identifier": "target_offset_y", "__type": "Float", "__value": -180.0, "__tile": null, "defUid": 4332, "realEditorValues": [{ "id": "V_Float", "params": [-180.0] }] }
+							]
+						},
 						{
 							"__identifier": "CameraZone",
 							"__grid": [0,0],
@@ -21134,6 +21194,36 @@
 							"__worldX": 15232,
 							"__worldY": 2048,
 							"iid": "CameraZone-105420",
+							"width": 2256,
+							"height": 1408,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_clearing_lookout", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_clearing_lookout"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the hilltop", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the hilltop"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] },
+								{ "__identifier": "target_offset_y", "__type": "Float", "__value": -180.0, "__tile": null, "defUid": 4332, "realEditorValues": [{ "id": "V_Float", "params": [-180.0] }] }
+							]
+						},
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 15232,
+							"__worldY": 2048,
+							"iid": "CameraZone-106073",
 							"width": 4368,
 							"height": 1408,
 							"defUid": 4002,
