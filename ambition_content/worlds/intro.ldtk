@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 105766,
+	"nextUid": 105767,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -7399,6 +7399,43 @@
 			"doc": "A condition line (`world.flag_set X`) that holds the room's `while_live` line back: it is asked for only while the question answers yes.",
 			"__type": "String",
 			"uid": 105708,
+			"type": "F_String",
+			"isArray": false,
+			"canBeNull": true,
+			"arrayMinLength": null,
+			"arrayMaxLength": null,
+			"editorDisplayMode": "NameAndValue",
+			"editorDisplayScale": 1,
+			"editorDisplayPos": "Above",
+			"editorLinkStyle": "ZigZag",
+			"editorDisplayColor": null,
+			"editorAlwaysShow": true,
+			"editorShowInWorld": false,
+			"editorCutLongValues": true,
+			"editorTextSuffix": null,
+			"editorTextPrefix": null,
+			"useForSmartColor": false,
+			"exportToToc": false,
+			"searchable": true,
+			"min": null,
+			"max": null,
+			"regex": null,
+			"acceptFileTypes": null,
+			"defaultOverride": null,
+			"textLanguageMode": null,
+			"symmetricalRef": false,
+			"autoChainRef": false,
+			"allowOutOfLevelRef": false,
+			"allowedRefs": "Any",
+			"allowedRefsEntityUid": null,
+			"allowedRefTags": [],
+			"tilesetUid": null
+		},
+		{
+			"identifier": "backdrop",
+			"doc": "The theme of the background alone, when it is not the room's own (parallax_theme): the room where a landmark stands in the play draws its region's background without it. The skin, dressing and doors stay parallax_theme's.",
+			"__type": "String",
+			"uid": 105766,
 			"type": "F_String",
 			"isArray": false,
 			"canBeNull": true,
@@ -15283,6 +15320,10 @@
 					"id": "V_String",
 					"params": ["hobford"]
 				}] },
+				{ "__identifier": "backdrop", "__type": "String", "__value": "hobford_gateside", "__tile": null, "defUid": 105766, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["hobford_gateside"]
+				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
 					"params": [ true ]
@@ -18682,6 +18723,10 @@
 				{ "__identifier": "parallax_theme", "__type": "String", "__value": "hobford", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["hobford"]
+				}] },
+				{ "__identifier": "backdrop", "__type": "String", "__value": "hobford_gateside", "__tile": null, "defUid": 105766, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["hobford_gateside"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",

@@ -73,6 +73,9 @@ COUNTRY_BG = "#9CC3E4"
 WORKSHOP_LOOK = "creator_workshop"
 COUNTRY_LOOK = "hobford"
 WOODS_LOOK = "hobford_woods"
+#: The country without the gate, behind the rooms where the gate itself
+#: stands in the play (level field `backdrop`; the skin stays the country's).
+GATESIDE = '\n    backdrop: "hobford_gateside",'
 WORKSHOP_MUSIC = "something_worth_building"
 COUNTRY_MUSIC = "a_possible_morning"
 VILLAGE_MUSIC = "doves_of_the_commons"
@@ -470,7 +473,7 @@ def clearing():
         door("clearing_post_yard_door", "the back stair down to the siding", 2200, g, SIDING, "siding_to_post_yard"),
         start(rid, 120, g),
     ]
-    return build(rid, e, "THE GATE CLEARING", COUNTRY_MUSIC, dangerous=True)
+    return build(rid, e, "THE GATE CLEARING", COUNTRY_MUSIC, dangerous=True, extra=GATESIDE)
 
 
 # ------------------------------------------------------ the freight siding
@@ -510,7 +513,7 @@ def siding():
         door("siding_to_post_yard", "the back stair up to the gate office", 1800, g, CLEARING, "clearing_post_yard_door"),
         start(rid, 200, g),
     ]
-    return build(rid, e, "THE FREIGHT SIDING", GOBLIN_MUSIC, dangerous=True)
+    return build(rid, e, "THE FREIGHT SIDING", GOBLIN_MUSIC, dangerous=True, extra=GATESIDE)
 
 
 # ------------------------------------------------------- the millstream
