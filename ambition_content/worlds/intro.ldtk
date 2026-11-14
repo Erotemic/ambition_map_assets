@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 105290,
+	"nextUid": 105338,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -8017,6 +8017,40 @@
 									"params": ["DELIVERIES: NONE EXPECTED"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [125,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 2000,
+							"__worldY": 1216,
+							"iid": "Switch-105309",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [2000,320],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_bay_raid_again", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_bay_raid_again"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the raiders' whistle", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the raiders' whistle"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Blow the whistle", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Blow the whistle"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "intro_bay_raid", "__tile": null, "defUid": 4049, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_bay_raid"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "ResetEncounter", "__tile": null, "defUid": 4050, "realEditorValues": [] }
 							]
 						},
 						{
@@ -18161,6 +18195,40 @@
 									"params": ["NO ENTRY. GOBLINS AT WORK."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [90,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 8608,
+							"__worldY": 1344,
+							"iid": "Switch-105328",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [1440,448],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_freight_yard_fight_again", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_freight_yard_fight_again"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the yard bell", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the yard bell"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Ring the yard bell", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Ring the yard bell"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "intro_freight_yard_fight", "__tile": null, "defUid": 4049, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_freight_yard_fight"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "ResetEncounter", "__tile": null, "defUid": 4050, "realEditorValues": [] }
 							]
 						},
 						{

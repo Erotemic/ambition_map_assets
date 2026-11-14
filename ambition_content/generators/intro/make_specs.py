@@ -191,6 +191,11 @@ def lab():
         solid("crate_stack", 1680, g - 48, 64, 48),
         ledge("crates_high", 1840, g - 112, 128),
         sign("bay_sign_deliveries", 1560, 120, "DELIVERIES: NONE EXPECTED", 320),
+        # An encounter with no linked switch starts again whenever the player
+        # walks back into its trigger; its clear greens a linked switch, which
+        # disarms it. A blow on the whistle calls the raid again.
+        entity("Switch", 2000, g - 32, 24, 32, id=f"{RAID_FIGHT}_again", name="the raiders' whistle",
+               prompt="Blow the whistle", target_encounter=RAID_FIGHT, action="ResetEncounter"),
         entity("LockWall", BAY_DOOR_X, 32, 32, g - 32, id="intro_bay_door", name="the bay door",
                gated_by=f"encounter.cleared {RAID_FIGHT}"),
         entity("CutsceneTrigger", BAY_DOOR_X + 40, 32, 72, g - 32, cutscene="creator_final_fragment"),
@@ -486,6 +491,10 @@ def yard():
         *[solid(n, x0, top, x1 - x0, g - top) for n, x0, x1, top in crates],
         *[ledge(n, x0, top, x1 - x0) for n, x0, x1, top in ledges],
         sign("yard_sign_camp", 900, 120, "NO ENTRY. GOBLINS AT WORK.", 360),
+        # The yard's fight stays won (its clear greens this switch); the bell
+        # calls it again.
+        entity("Switch", 1440, g - 32, 24, 32, id=f"{YARD_FIGHT}_again", name="the yard bell",
+               prompt="Ring the yard bell", target_encounter=YARD_FIGHT, action="ResetEncounter"),
         entity("LockWall", 1504, 32, 32, g - 32, id="intro_yard_inner_gate", name="the inner gate",
                gated_by=f"encounter.cleared {YARD_FIGHT}"),
         entity("CutsceneTrigger", 1584, 32, 96, g - 32, cutscene="creator_notebooks"),
