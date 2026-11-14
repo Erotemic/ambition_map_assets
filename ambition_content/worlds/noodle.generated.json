@@ -1,6 +1,15 @@
 {
   "schema": "ambition.ldtk_generated_record.v1",
-  "generated": {},
+  "generated": {
+    "noodle_durum_terraces": "7cb923d8abc58beb",
+    "noodle_fizzuvius_caldera": "fb4327d7db8aca44",
+    "noodle_fizzuvius_slopes": "33f1c589c075563f",
+    "noodle_fizzy_flats": "1892e44343481c9e",
+    "noodle_temple_stair": "9734140c83fcb775",
+    "noodle_village_curry_house": "46b82128ddbc78ab",
+    "noodle_village_market": "07e85c476e47f0c6",
+    "noodle_village_square": "2c63a1c62f6e766a"
+  },
   "ldtk_owned": [
     "noodly_belfry",
     "noodly_cistern",

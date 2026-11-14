@@ -10,11 +10,12 @@ The temple of the Flying Spaghetti Monster: seven rooms round one hall, in
 the `noodly` biome. The monster is in the last room. The way to it is shut by
 doors, and each door has a key.
 
-    central hub -> narthex -> nave -+-> scullery   (open)        the Marinara Key
-                                    +-> cistern    (red door)    the Pesto Key
-                                    +-> belfry     (red door)    the Parmesan Key
-                                    +-> reliquary  (green door, gold door)  the Colander Key
-                                    +-> sanctum    (colander door)   the monster
+    Brothlehem's temple stair -+
+    central hub ---------------+-> narthex -> nave -+-> scullery   (open)        the Marinara Key
+                                                    +-> cistern    (red door)    the Pesto Key
+                                                    +-> belfry     (red door)    the Parmesan Key
+                                                    +-> reliquary  (green door, gold door)  the Colander Key
+                                                    +-> sanctum    (colander door)   the monster
 
 A key is a `PickupSpawn` that sets a flag for good (`kind: "flag:..."`,
 `respawn: "Never"`). A door is a `LockWall` that stands until its flag is set
@@ -73,9 +74,6 @@ if str(TOOLS) not in sys.path:
     sys.path.insert(0, str(TOOLS))
 
 from ambition_ldtk_tools.ldtk.paths import default_sandbox_ldtk, default_worlds_dir  # noqa: E402
-
-sys.path.insert(0, str(TOOL_SPECS / "gate_network"))
-import gates  # noqa: E402
 
 #: The noodle dimension's world file: the rooms of the temple.
 LDTK = default_worlds_dir() / "noodle.ldtk"
@@ -257,7 +255,8 @@ def room(rid, entities, label, connect=(), music=MUSIC, title_at=(240, 32)):
 
 #: Where the door of the level is in the central hub: the hub's developer
 #: wing (`specs/gate_network/make_gates.py`). The public way in is the
-#: temple's own ring in the narthex (ALDENTE, `data/gate_network.ron`).
+#: Pilgrims' Way from Brothlehem, whose square holds the dimension's ring
+#: (ALDENTE, `data/gate_network.ron`).
 HUB_LEVEL = "central_hub_dev_wing"
 HUB_DOOR = (948, 368)
 #: What the player reads at that door.
@@ -272,9 +271,10 @@ def narthex():
     e += [
         f'( type: "PlayerStart", px: [110, {floor - 46}], size: [28, 46], fields: ( name: "{rid}_spawn" ) ),',
         door(f"{rid}_to_hub", "to the central hub", 32, floor, "central_hub_complex", HUB_DOOR_ID),
-        # The temple's ring and its terminal: the way to the Noodle dimension.
-        *gates.as_ron(gates.ring("Noodly Gate (Narthex)", "noodly_narthex_gate", 80, floor, "the gate")),
-        *gates.as_ron(gates.terminal("Noodly Gate (Narthex)", "noodly_gate_terminal", 380, floor)),
+        # The front door: out to the top of the Pilgrims' Way, the stair up
+        # from Brothlehem (`generators/noodle_village/make_specs.py`). The
+        # dimension's ring (ALDENTE) is in the village's square.
+        door(f"{rid}_to_stair", "out to the Pilgrims' Way", 200, floor, "noodle_temple_stair", "noodle_temple_stair_door"),
         door(f"{rid}_east", "to the nave", w - WALL - 80, floor, "noodly_nave", "noodly_nave_west"),
         # Ramen-nujan says what the temple is (Jon, 2026-10-12: he is the one
         # at the door, not a sexton).

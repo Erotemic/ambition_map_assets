@@ -22,8 +22,9 @@ It reads the rooms from the map and walks them as a model of the game:
 
 It fails when the monster can not be reached from the door of the central
 hub, when a key or a room can not be reached, and when the player can be in
-a place from which the door of the central hub can not be reached again (a
-trap), with each set of keys he can have there.
+a place from which no way out of the temple (the door of the central hub, or
+the front door to the Pilgrims' Way) can be reached again (a trap), with each
+set of keys he can have there.
 
 It prints the order the keys are found in, and the least number of turns of
 a wheel before the key of the cistern.
@@ -53,6 +54,9 @@ BODY_W, BODY_H = 2, 3
 ROOMS = ("noodly_narthex", "noodly_nave", "noodly_scullery", "noodly_cistern", "noodly_belfry", "noodly_reliquary",
          "noodly_sanctum")
 HUB = "central_hub_complex"
+#: The ways out of the temple: the door to the central hub, and the front
+#: door to the top of the Pilgrims' Way (Brothlehem's temple stair).
+EXITS = (HUB, "noodle_temple_stair")
 START = ("noodly_narthex", "noodly_narthex_to_hub")
 
 
@@ -199,7 +203,7 @@ def main():
                             nexts.append(((room_id, cell, flipped), 1, fields["id"]))
                 elif kind == "LoadingZone":
                     target = fields.get("target_room")
-                    if target == HUB:
+                    if target in EXITS:
                         exits.add(state)
                     elif target in rooms:
                         there = arrival(rooms[target], fields["target_zone"], shut(target, on))
