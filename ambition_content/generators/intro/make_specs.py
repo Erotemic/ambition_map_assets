@@ -1,23 +1,30 @@
 #!/usr/bin/env python3
-"""Write the rooms of level 1: the creator's basement, the service stair, the
-Drain Market and the drains under it.
+"""Write the rooms of level 1, Hobford: the Creator's workshop and the hill
+country round the village, and the two town rooms under the gate stack that
+this script also owns.
 
     uv run --project tools/ambition_ldtk_tools python game/ambition_map_assets/ambition_content/generators/intro/make_specs.py          # writes the specs
     uv run --project tools/ambition_ldtk_tools python game/ambition_map_assets/ambition_content/generators/intro/make_specs.py --apply  # and makes the rooms
 
 Run it from the repository root. Design: `docs/planning/game/level-1.md`.
 
-    [basement lab | loading bay]--[service stair]--[Drain Market]--(gate stack)
-                                                    | manhole
-                                                [the culvert]--[Alice's station]--[Bob's end]
+    [workshop]--[Hobford Lane]==========[the high meadow]=========[the gate clearing]
+                    | bank path              | hill path               | siding stair
+              [the millstream]------------[Hobford]-------------[the woods]------[the freight siding]
+
+    (== is the ridge path as well as the road: two edges, high and low.)
 
 THE KIT. Every required way is made for run, ONE jump, drop through a
-one-way floor and the strike, and each room withholds the rest of a player's
-kit (`SMALL_KIT_WITHHELD`, the level field `withheld_verbs`). A jump rises about 88 px (jump 630 px/s,
-gravity 2250); a level gap of 112 px or less is safe at a run (270 px/s).
-`check_reach` refuses a required step up of more than 64 px. The robot's
-shipped kit is larger (air jump, wall jump, dash, flight); the level does not
-need it.
+one-way floor and the strike, and each level-1 room withholds the rest of a
+player's kit (`SMALL_KIT_WITHHELD`, the level field `withheld_verbs`). A jump
+rises about 88 px (jump 630 px/s, gravity 2250); a level gap of 112 px or
+less is safe at a run (270 px/s). `check_reach` refuses a required step up of
+more than 64 px; it compares heights only, so each required way is also
+walked by `walked_route_census` under the level's kit.
+
+NO ROUTE WAITS ON A STORY FACT. A wall here is a barrier on a lever, a door
+the raid breaks, or a survey line that comes down when the survey is over;
+each place it closes off can be reached another way.
 
 Where a room is in the world is its LDtk editor's: `--apply` regenerates each
 room where it stands (`area create --keep-position`), and `ROOMS_AT` places
@@ -40,40 +47,69 @@ SPEC_OUT.mkdir(exist_ok=True)
 sys.path.insert(0, str(TOOL_SPECS))
 
 from district_kit import (  # noqa: E402
-    WALL, WORLDS, entity, ledge, make_rooms, paint, room, run, sign, solid, start,
+    WALL, WORLDS, entity, ledge, make_rooms, paint, room, run, sign, solid, start, water,
 )
 
 WORLD_LDTK = WORLDS / "intro.ldtk"
 GENERATOR = "game/ambition_map_assets/ambition_content/generators/intro/make_specs.py"
 
-LAB = "intro_wake_room"
-STAIR = "intro_escape_shaft"
+WORKSHOP = "intro_wake_room"
+LANE = "intro_hobford_lane"
+MEADOW = "intro_high_meadow"
+CLEARING = "intro_gate_clearing"
+SIDING = "intro_freight_yard"
+MILLSTREAM = "intro_millstream"
+VILLAGE = "intro_hobford"
+WOODS = "intro_woods"
 MARKET = "drain_alley"
+UNDER_TOWN = "under_town_pipes"
 GATE_STACK = "gate_stack_lower"
 
 BG = "#14161C"
+COUNTRY_BG = "#9CC3E4"
+#: The looks of the level until its own are published (`hobford`,
+#: `hobford_woods`, `creator_workshop`): the barn is drawn as the lab, the
+#: country as the forest.
+WORKSHOP_LOOK = "lab"
+COUNTRY_LOOK = "forest"
+WOODS_LOOK = "forest"
+WORKSHOP_MUSIC = "something_worth_building"
+COUNTRY_MUSIC = "a_possible_morning"
+VILLAGE_MUSIC = "doves_of_the_commons"
+GOBLIN_MUSIC = "first_goblin_tune_v2_radio"
 LAB_MUSIC = "tech_bros_disruption"
 
 #: The gate stack is LDtk-owned: its floor is at y 736 in the world, and its
-#: west side at x 4928. The market's street is level with it, and each room
-#: west of the market is placed from there.
+#: west side at x 4928. The market's street is level with it.
 GATE_STACK_WEST = 4928
 STREET_WORLD_Y = 736
-
-LAB_W, LAB_H, LAB_FLOOR = 2240, 448, 352
-STAIR_W, STAIR_H, STAIR_FLOOR, STAIR_TOP = 1280, 768, 704, 192
 MARKET_W = 1408
+
+#: The level is in a band of its own below the town. The upper row's ground
+#: (the workshop's floor, the lane, the meadow, the clearing) is at world y
+#: 2720; the lower row's (the millstream, Hobford, the woods, the siding) at
+#: 3328.
+UPPER_Y, LOWER_Y = 2048, 2816
+COUNTRY_W, COUNTRY_H, COUNTRY_FLOOR = 2400, 768, 672
+LOW_H, LOW_FLOOR = 640, 512
+WORKSHOP_W, WORKSHOP_H, WORKSHOP_FLOOR = 1600, 448, 352
+#: The ridge path: the top tier of the upper row, from the lane to the
+#: clearing. It is the second way to the clearing's lever.
+RIDGE = 224
 
 #: Each room: where it is in the world (its top left), and its size.
 ROOMS_AT = {
-    LAB: ((0, STREET_WORLD_Y - STAIR_TOP + STAIR_FLOOR - LAB_FLOOR), (LAB_W, LAB_H)),
-    STAIR: ((LAB_W, STREET_WORLD_Y - STAIR_TOP), (STAIR_W, STAIR_H)),
+    WORKSHOP: ((0, UPPER_Y + COUNTRY_FLOOR - WORKSHOP_FLOOR), (WORKSHOP_W, WORKSHOP_H)),
+    LANE: ((WORKSHOP_W, UPPER_Y), (COUNTRY_W, COUNTRY_H)),
+    MEADOW: ((WORKSHOP_W + COUNTRY_W, UPPER_Y), (COUNTRY_W, COUNTRY_H)),
+    CLEARING: ((WORKSHOP_W + 2 * COUNTRY_W, UPPER_Y), (COUNTRY_W, COUNTRY_H)),
+    MILLSTREAM: ((WORKSHOP_W, LOWER_Y), (COUNTRY_W, LOW_H)),
+    VILLAGE: ((WORKSHOP_W + COUNTRY_W, LOWER_Y), (COUNTRY_W, LOW_H)),
+    WOODS: ((WORKSHOP_W + 2 * COUNTRY_W, LOWER_Y), (COUNTRY_W, LOW_H)),
+    SIDING: ((WORKSHOP_W + 3 * COUNTRY_W, LOWER_Y), (1920, LOW_H)),
+    # The town under the gate stack (not level 1).
     MARKET: ((GATE_STACK_WEST - MARKET_W, STREET_WORLD_Y - 608), (MARKET_W, 768)),
-    # The drains under the market, west to east.
-    "under_town_pipes": ((GATE_STACK_WEST - MARKET_W, 896), (1600, 640)),
-    "alice_relay": ((GATE_STACK_WEST - MARKET_W + 1600, 896), (1024, 640)),
-    "bob_relay": ((GATE_STACK_WEST - MARKET_W + 2624, 896), (1024, 640)),
-    "intro_freight_yard": ((GATE_STACK_WEST - MARKET_W + 3648, 896), (1920, 640)),
+    UNDER_TOWN: ((GATE_STACK_WEST - MARKET_W, 896), (1600, 640)),
 }
 
 #: The highest step up that a required way may ask (one jump rises ~88).
@@ -95,6 +131,11 @@ def edge(zone, name, x, floor, to_room, to_zone, h=96):
                   target_room=to_room, target_zone=to_zone, bidirectional=True)
 
 
+def door(zone, name, x, floor, to_room, to_zone):
+    return entity("LoadingZone", x, floor - 96, 48, 96, id=zone, name=name, activation="Door",
+                  target_room=to_room, target_zone=to_zone, bidirectional=True)
+
+
 def npc(character, dialogue, prompt, x, floor, brain=None, w=32, h=48):
     fields = dict(character_id=character, prompt=prompt, dialogue_id=dialogue)
     if brain:
@@ -108,9 +149,29 @@ def raider(rid, n, x, floor, character="npc_lab_raider"):
 
 
 def slug(rid, n, x, floor):
-    """Vermin of the rubble. They do not fight."""
+    """Vermin of the drains. They do not fight."""
     return entity("EnemySpawn", x - 24, floor - 22, 48, 22, name=f"{rid}_slug_{n}", brain="puppy_slug",
                   character_id="npc_puppy_slug", disposition="Peaceful", respawn="OnRoomReenter")
+
+
+def hen(rid, n, x, floor, dialogue="hobford_hen"):
+    """A hen of the farm. She walks about and pays the player no mind."""
+    return npc("chicken_hen", dialogue, "Look at the hen", x, floor, brain="townsfolk_roam", w=32, h=44)
+
+
+def walls(w, floor_h, *, west=(), east=(), top=0):
+    """The side walls of an open-air room, each with a 96-high opening above
+    each floor in `west` and `east` (the edges go in the openings)."""
+    out = []
+    for side, x, opens in (("west", 0, west), ("east", w - WALL, east)):
+        y = top
+        for n, floor in enumerate(sorted(opens)):
+            if floor - 96 > y:
+                out.append(solid(f"{side}_wall_{n}", x, y, WALL, floor - 96 - y))
+            y = floor + 16
+        if floor_h > y:
+            out.append(solid(f"{side}_wall_end", x, y, WALL, floor_h - y))
+    return out
 
 
 #: What level 1 withholds from a player's kit (`RoomMetadata::withheld_verbs`):
@@ -124,61 +185,63 @@ SMALL_KIT_WITHHELD = (
 KIT = f'\n    withheld_verbs: "{SMALL_KIT_WITHHELD}",'
 
 
-def build(rid, entities, title, music, *, dangerous=False, extra="", kit=True):
+def build(rid, entities, title, music, *, look=COUNTRY_LOOK, bg=COUNTRY_BG, dangerous=False, extra=""):
+    """A room of level 1: it withholds the large kit."""
     at, size = ROOMS_AT[rid]
-    return rid, room(rid, entities, at=at, size=size, biome="lab", music=music, bg=BG, title=title,
-                     generator=GENERATOR, dangerous=dangerous, extra=(KIT if kit else "") + extra)
+    return rid, room(rid, entities, at=at, size=size, biome=look, music=music, bg=bg, title=title,
+                     generator=GENERATOR, dangerous=dangerous, extra=KIT + extra)
 
 
 def undertown(rid, entities, title, *, dangerous=False, extra=""):
-    """A room of the town under the gate stack: the cave biome, drawn
-    behind with the under-town backdrop."""
+    """A room of the town under the gate stack: the cave biome, drawn behind
+    with the under-town backdrop. The town is past level 1, so it keeps the
+    whole kit."""
     at, size = ROOMS_AT[rid]
     text = room(rid, entities, at=at, size=size, biome="cave", music=LAB_MUSIC, bg=BG, title=title,
-                generator=GENERATOR, dangerous=dangerous, extra=KIT + extra)
+                generator=GENERATOR, dangerous=dangerous, extra=extra)
     return rid, text.replace('parallax_theme: "cave"', 'parallax_theme: "undertown"')
 
 
-# ------------------------------------------------- 1-2. the lab and the bay
+# ------------------------------------------------------------ the workshop
 
-#: The diagnostic cart the robot wakes on (`the_cart_of_the_wake_room`
-#: measures it): its bed, and the ramp let down from its back end.
+#: The charging cart Scout wakes on (`the_cart_of_the_wake_room` measures
+#: it): its bed, and the ramp let down from its back end.
 CART_BED = (48, 224, 294)
 CART_RAMP_FOOT = 326
-#: The first jump: the creator's workbench, a step of 48.
-BENCH = (544, 672, LAB_FLOOR - 48)
-#: The first gap: a cable trench, 96 wide and 48 deep. A fall costs a jump.
-TRENCH = (864, 960, LAB_FLOOR + 48)
-#: The lab ends and the loading bay begins at this x.
-BAY_X = 1040
-#: The bay door: it stands until the raid is beaten.
-BAY_DOOR_X = 2096
-RAID_FIGHT = "intro_bay_raid"
+#: The test plinth: the first jump, a step of 48.
+PLINTH = (440, 520, WORKSHOP_FLOOR - 48)
+#: Up to the loft: a crate (48), then the loft boards (64 more).
+LOFT_CRATE = (600, 664, WORKSHOP_FLOOR - 48)
+LOFT = (640, 940, WORKSHOP_FLOOR - 112)
+#: The bench, and the Creator at it. The raid comes in at the barn door
+#: beside him, so the raiders are in earshot of the conversation they break.
+BENCH = (1080, 1200, WORKSHOP_FLOOR - 48)
+CREATOR_X = 1240
+BARN_DOOR_X = 1320
+RAID = "intro_workshop_raid"
 
 
-def lab():
-    """THE BASEMENT LAB and THE LOADING BAY. One floor, so the creator keeps
-    beside the robot from the cart to the bay door. The raid starts where the
-    lab opens on the bay; the bay door is shut until the last raider falls,
-    and the creator's last words play in its doorway."""
-    rid = LAB
-    w, h, g = LAB_W, LAB_H, LAB_FLOOR
+def workshop():
+    """THE WORKSHOP. The Creator's barn outside Hobford: the charging cart,
+    the test plinth, the parts loft, his bench, the barn door. The raid
+    starts in his conversation (`encounter.start`, at the node it breaks), or
+    when Scout goes to the barn door without talking to him (the trigger in
+    front of the door): the goblins are coming either way. The barn door is
+    barred for the test and is broken in the raid."""
+    rid = WORKSHOP
+    w, h, g = WORKSHOP_W, WORKSHOP_H, WORKSHOP_FLOOR
     x0, x1, bed = CART_BED
-    t0, t1, t_bed = TRENCH
-    b0, b1, b_top = BENCH
-    check_reach(rid, [("floor", g), ("bench", b_top), ("floor", g), ("trench", t_bed), ("floor", g)])
+    check_reach(rid, [("floor", g), ("plinth", PLINTH[2]), ("floor", g), ("crate", LOFT_CRATE[2]), ("loft", LOFT[2]),
+                      ("floor", g), ("bench", BENCH[2]), ("floor", g)])
     e = [
-        solid("ceiling", 0, 0, w, 32),
+        solid("roof", 0, 0, w, 32),
         solid("west_wall", 0, 32, WALL, g - 32),
         solid("east_wall", w - WALL, 32, WALL, g - 96 - 32),
-        solid("floor_lab", 0, g, t0, h - g),
-        solid("trench_bed", t0, t_bed, t1 - t0, h - t_bed),
-        solid("floor_bay", t1, g, w - t1, h - g),
-        solid("bench", b0, b_top, b1 - b0, g - b_top),
-        # The cart: its bed is a platform that stands still, and its back end
-        # is let down as a ramp to the floor.
-        # A platform that stands still: `speed: 0` (with no speed it moves).
-        entity("MovingPlatform", x0, bed, x1 - x0, 12, id="intro_cart", name="Diagnostic Cart", speed=0.0,
+        solid("floor", 0, g, w, h - g),
+        # The cart: its bed is a platform that stands still (`speed: 0`; a
+        # moving platform with no speed moves), and its back end is let down
+        # as a ramp to the floor.
+        entity("MovingPlatform", x0, bed, x1 - x0, 12, id="intro_cart", name="the charging cart", speed=0.0,
                visual="intro_cart", one_way=True),
         entity("MovingPlatform", x1, bed + 4, 7, 54, id="intro_cart_ramp_step_01", name="Cart ramp step 1", speed=0.0,
                visual="intro_cart_ramp", one_way=True),
@@ -188,113 +251,335 @@ def lab():
         # The hub's door comes out here (one way: nothing leads back).
         entity("LoadingZone", 112, 198, 48, 96, id="wake_room_arrival", name="wake room arrival", activation="Door",
                presentation="SceneArt"),
-        npc("npc_creator", "creator_intro", "Talk to the Creator", 456, g, brain="follows_closely"),
-        entity("Prop", 336, 224, 128, 128, name="Neural Console", kind="lab_neural_console"),
-        entity("Prop", 704, 224, 128, 128, name="Genesis Vat", kind="lab_genesis_vat"),
-        entity("Prop", 1840, 224, 128, 128, name="Power Core", kind="lab_power_core"),
-        sign("lab_sign_cart", 176, 120, "DO NOT SWITCH ON UNTIL FINISHED", 300),
-        sign("lab_sign_bench", 608, 176, "MY BENCH. MY TOOLS. ASK FIRST.", 300),
-        # The bay.
-        entity("CutsceneTrigger", BAY_X + 48, 32, 64, g - 32, cutscene="intro_raid"),
-        entity("EncounterTrigger", BAY_X + 176, 32, 64, g - 32, id=RAID_FIGHT, name=f"{RAID_FIGHT}_trigger"),
-        raider(rid, 1, 1520, g),
-        raider(rid, 2, 1600, g),
-        ledge("crates_low", 1360, g - 64, 128),
-        solid("crate_stack", 1680, g - 48, 64, 48),
-        ledge("crates_high", 1840, g - 112, 128),
-        sign("bay_sign_deliveries", 1560, 120, "DELIVERIES: NONE EXPECTED", 320),
-        # An encounter with no linked switch starts again whenever the player
-        # walks back into its trigger; its clear greens a linked switch, which
-        # disarms it. A blow on the whistle calls the raid again.
-        entity("Switch", 2000, g - 32, 24, 32, id=f"{RAID_FIGHT}_again", name="the raiders' whistle",
-               prompt="Blow the whistle", target_encounter=RAID_FIGHT, action="ResetEncounter"),
-        entity("LockWall", BAY_DOOR_X, 32, 32, g - 32, id="intro_bay_door", name="the bay door",
-               gated_by=f"encounter.cleared {RAID_FIGHT}"),
-        entity("CutsceneTrigger", BAY_DOOR_X + 40, 32, 72, g - 32, cutscene="creator_final_fragment"),
-        sign("bay_sign_stair", BAY_DOOR_X + 56, g - 160, "STAIR UP", 140),
-        edge("raid_to_escape", "to the service stair", w - WALL, g, STAIR, "escape_from_raid"),
+        sign("workshop_sign_cart", 176, 120, "DO NOT SWITCH ON UNTIL FINISHED", 300),
+        solid("test_plinth", PLINTH[0], PLINTH[2], PLINTH[1] - PLINTH[0], g - PLINTH[2]),
+        sign("workshop_sign_plinth", 480, PLINTH[2] - 60, "LOAD TEST", 140),
+        solid("loft_crate", LOFT_CRATE[0], LOFT_CRATE[2], LOFT_CRATE[1] - LOFT_CRATE[0], g - LOFT_CRATE[2]),
+        ledge("parts_loft", LOFT[0], LOFT[2], LOFT[1] - LOFT[0]),
+        # On the loft: the torque gauge he sends Scout for, and an oil can at
+        # the far end of the boards.
+        entity("PickupSpawn", 892, LOFT[2] - 28, 24, 24, name="the torque gauge", kind="flag:intro_torque_gauge_found"),
+        entity("PickupSpawn", 664, LOFT[2] - 28, 24, 24, name="a can of oil", kind="health:2"),
+        sign("workshop_sign_loft", 790, LOFT[2] - 60, "GAUGES GO BACK ON THE SHELF", 300),
+        solid("bench", BENCH[0], BENCH[2], BENCH[1] - BENCH[0], g - BENCH[2]),
+        sign("workshop_sign_bench", 1140, BENCH[2] - 60, "LOGS. DO NOT TIDY.", 220),
+        npc("npc_creator", "creator_intro", "Talk to the Creator", CREATOR_X, g),
+        entity("EncounterTrigger", CREATOR_X + 32, 32, BARN_DOOR_X - CREATOR_X - 32, g - 32, id=RAID,
+               name=f"{RAID}_trigger"),
+        # The raid stays won: its clear greens this switch, which disarms the
+        # trigger the fight carries bodies back over. A blow on the whistle a
+        # raider dropped calls the raid again.
+        entity("Switch", 1000, g - 32, 24, 32, id=f"{RAID}_again", name="a raider's whistle",
+               prompt="Blow the whistle", target_encounter=RAID, action="ResetEncounter"),
+        entity("LockWall", BARN_DOOR_X, 32, 24, g - 32, id="intro_barn_door", name="the barn door",
+               gated_by=f"encounter.cleared {RAID}"),
+        sign("workshop_sign_door", BARN_DOOR_X + 12, 140, "TEST IN PROGRESS. DOOR BARRED.", 320),
+        entity("CutsceneTrigger", BARN_DOOR_X + 24, 32, 80, g - 32, cutscene="creator_final_fragment"),
+        edge("workshop_to_lane", "out into the lane", w - WALL, g, LANE, "lane_from_workshop"),
     ]
-    # The lab keeps the whole kit until the rural opening replaces it: under
-    # the small kit the playthrough's fight carries the player back over the
-    # raid's trigger, the raid starts again and the bay door shuts.
-    return build(rid, e, "THE BASEMENT LAB", LAB_MUSIC, dangerous=True,
-                 extra='\n    entry_cutscene: "intro_wake",', kit=False)
+    return build(rid, e, "THE WORKSHOP", WORKSHOP_MUSIC, look=WORKSHOP_LOOK, bg=BG, dangerous=True,
+                 extra='\n    entry_cutscene: "intro_wake",')
 
 
-# ---------------------------------------------------- 3. the service stair
+# ------------------------------------------------------------- the lane
 
-#: The three tiers of the wrecked stair, bottom to top.
-TIER_2 = 512
-TIER_3 = 320
-#: The holes in the stair: a pit in the bottom floor, a hole in the middle
-#: landing (a fall goes back down a tier), and the gap where a girder fell.
-PIT = (736, 832, STAIR_FLOOR + 64)
-LANDING_HOLE = (640, 736)
-GIRDER_GAP = (560, 656)
+#: The survey line across the ridge path above Alice's station: it is taken
+#: down when Bob's end of the survey is closed (`bob_field_survey_received`).
+#: The ridge east of it is reached from the meadow as well.
+SURVEY_LINE = "alice_survey_line"
+SURVEY_LINE_X = 760
+#: The terraces up the slope west of Alice's station: one-way boards, each
+#: 64 above the last, alternating west and east so each jump is straight up.
+TERRACES = [(560, 608), (400, 544), (560, 480), (400, 416), (560, 352), (400, 288)]
+TERRACE_W = 192
+ALICE_X = 940
 
 
-def stair():
-    """THE SERVICE STAIR. The raiders came down it and blew its door; half
-    the flights are gone. Three tiers: east along the bottom, west along the
-    middle landing, east along the fallen girders to the street."""
-    rid = STAIR
-    w, h, g = STAIR_W, STAIR_H, STAIR_FLOOR
-    p0, p1, p_bed = PIT
-    l0, l1 = LANDING_HOLE
-    gg0, gg1 = GIRDER_GAP
-    # Flight A climbs east from the bottom floor to the east wall, and a jump
-    # west from its top lands on the middle landing, which reaches over the
-    # flight's first step; flight B climbs from the landing's west end onto
-    # the girders; two crates lift the girders to the top landing. (Flight A
-    # rose westward from the wall until 2026-11-14: its tallest step faced
-    # the floor as a wall 144 px high, which one jump cannot climb.)
-    flight_a = [(1120, 1168, g - 48), (1168, 1216, g - 96), (1216, 1264, g - 144)]
-    landing_east_end = flight_a[1][0]
-    flight_b = [(352, 400, TIER_2 - 48), (304, 352, TIER_2 - 96), (256, 304, TIER_2 - 144)]
-    top_crate = (1000, 1064, TIER_3 - 64)
-    check_reach(rid, [("floor", g), ("rubble", g - 48), ("floor", g), *[("flight A", t) for *_, t in flight_a],
-                      ("landing", TIER_2), *[("flight B", t) for *_, t in flight_b], ("girders", TIER_3),
-                      ("crate", top_crate[2]), ("top landing", STAIR_TOP)])
+def lane():
+    """HOBFORD LANE. The first open air: the lane outside the barn, a hedge
+    bank, the bank path down to the millstream, the cart track east. Above
+    the lane the slope goes up in shored terraces to the ridge path; Alice's
+    survey line crosses the ridge above her station."""
+    rid = LANE
+    w, h, g = COUNTRY_W, COUNTRY_H, COUNTRY_FLOOR
+    check_reach(rid, [("lane", g), *[(f"terrace {n}", top) for n, (_, top) in enumerate(TERRACES)], ("ridge", RIDGE)])
+    check_reach(rid, [("lane", g), ("hedge bank", g - 48), ("lane", g)])
     e = [
-        solid("ceiling", 0, 0, w, 32),
-        solid("west_wall", 0, 32, WALL, g - 96 - 32),
-        solid("east_wall", w - WALL, STAIR_TOP + 16, WALL, g - STAIR_TOP - 16),
-        solid("east_wall_top", w - WALL, 32, WALL, STAIR_TOP - 96 - 32),
-        # The bottom: rubble to jump, a pit to cross (a fall costs a jump).
-        solid("floor_west", 0, g, p0, h - g),
-        solid("pit_bed", p0, p_bed, p1 - p0, h - p_bed),
-        solid("floor_east", p1, g, w - p1, h - g),
-        solid("rubble", 448, g - 48, 64, 48),
-        *[solid(f"flight_a_{n}", a, top, b - a, g - top) for n, (a, b, top) in enumerate(flight_a)],
-        # The middle landing, with the hole in it.
-        solid("landing_west", 400, TIER_2, l0 - 400, 32),
-        solid("landing_east", l1, TIER_2, landing_east_end - l1, 32),
-        *[solid(f"flight_b_{n}", a, top, b - a, TIER_2 - top) for n, (a, b, top) in enumerate(flight_b)],
-        # The girders: one-way, so a body on flight B comes up through them.
-        # It starts east of flight B's top step: over that step it would
-        # leave a body's height exactly, and a body cannot stand there.
-        ledge("girder_west", flight_b[-1][1], TIER_3, gg0 - flight_b[-1][1]),
-        ledge("girder_east", gg1, TIER_3, top_crate[0] - gg1),
-        solid("top_crate", top_crate[0], top_crate[2], top_crate[1] - top_crate[0], 32),
-        solid("top_landing", top_crate[1], STAIR_TOP, w - top_crate[1], 32),
-        edge("escape_from_raid", "down to the loading bay", 0, g, LAB, "raid_to_escape"),
-        edge("escape_to_drain", "up to the street", w - WALL, STAIR_TOP, MARKET, "drain_from_escape"),
-        start(rid, 160, g),
-        raider(rid, 1, 880, TIER_2),
-        slug(rid, 1, 300, g),
-        slug(rid, 2, 980, g),
-        slug(rid, 3, 760, TIER_3),
-        sign("stair_sign_up", 1180, STAIR_TOP - 120, "STREET LEVEL", 200),
-        sign("stair_sign_door", 150, g - 150, "14 CULVERT LANE. PRIVATE.", 280),
+        *walls(w, g, west=[g], east=[g, RIDGE]),
+        solid("ground", 0, g, w, h - g),
+        edge("lane_from_workshop", "into the workshop", 0, g, WORKSHOP, "workshop_to_lane"),
+        *[ledge(f"terrace_{n}", x, top, TERRACE_W) for n, (x, top) in enumerate(TERRACES)],
+        ledge("ridge_path", 300, RIDGE, w - WALL - 300),
+        entity("LockWall", SURVEY_LINE_X, 32, 16, RIDGE - 32, id=SURVEY_LINE, name="the survey line",
+               gated_by="bob_field_survey_received"),
+        sign("lane_sign_line", SURVEY_LINE_X, RIDGE - 110, "SURVEY LINE. PLEASE DON'T STEP ON IT.", 380),
+        npc("npc_alice", "alice_lane", "Talk to Alice", ALICE_X, g, brain="meets_the_player"),
+        sign("lane_sign_station", ALICE_X + 120, g - 150, "SURVEY STATION. MIND THE TRIPOD.", 340),
+        hen(rid, 1, 260, g),
+        hen(rid, 2, 420, g),
+        solid("hedge_bank", 1360, g - 48, 112, 48),
+        door("lane_to_millstream", "the bank path down to the mill", 1640, g, MILLSTREAM, "millstream_from_lane"),
+        sign("lane_sign_mill", 1664, g - 140, "MILL", 120),
+        sign("lane_sign_track", 2200, g - 160, "TRACK TO THE RING", 260),
+        edge("lane_to_meadow", "up the cart track", w - WALL, g, MEADOW, "meadow_from_lane"),
+        edge("lane_to_meadow_high", "along the ridge", w - WALL, RIDGE, MEADOW, "meadow_from_lane_high"),
+        start(rid, 120, g),
     ]
-    return build(rid, e, "THE SERVICE STAIR", LAB_MUSIC, dangerous=True)
+    return build(rid, e, "HOBFORD LANE", COUNTRY_MUSIC, dangerous=True)
 
 
-# ------------------------------------------------------ 4. the Drain Market
+# ----------------------------------------------------------- the meadow
+
+#: The way up from the meadow to the ridge: the shepherd's hut (a step of
+#: 64) and the limbs of the oak beside it.
+HUT = (1000, 1200, COUNTRY_FLOOR - 64)
+OAK_LIMBS = [(1080, 544), (920, 480), (1080, 416), (920, 352), (1080, 288)]
+LIMB_W = 140
+
+
+def meadow():
+    """THE HIGH MEADOW. Pasture on the hill: dry-stone walls to hop, a turf
+    bank, the shepherd's hut and the oak whose limbs go up to the ridge path,
+    the hill path down to Hobford. East is the gate clearing."""
+    rid = MEADOW
+    w, h, g = COUNTRY_W, COUNTRY_H, COUNTRY_FLOOR
+    check_reach(rid, [("meadow", g), ("hut roof", HUT[2]), *[(f"limb {n}", y) for n, (_, y) in enumerate(OAK_LIMBS)],
+                      ("ridge", RIDGE)])
+    check_reach(rid, [("meadow", g), ("wall", g - 48), ("meadow", g), ("bank", g - 64), ("meadow", g)])
+    e = [
+        *walls(w, g, west=[g, RIDGE], east=[g, RIDGE]),
+        solid("ground", 0, g, w, h - g),
+        edge("meadow_from_lane", "down the cart track", 0, g, LANE, "lane_to_meadow"),
+        edge("meadow_from_lane_high", "along the ridge", 0, RIDGE, LANE, "lane_to_meadow_high"),
+        ledge("ridge_path", WALL, RIDGE, w - 2 * WALL),
+        solid("stone_wall_1", 600, g - 48, 32, 48),
+        solid("shepherds_hut", HUT[0], HUT[2], HUT[1] - HUT[0], g - HUT[2]),
+        *[ledge(f"oak_limb_{n}", x, y, LIMB_W) for n, (x, y) in enumerate(OAK_LIMBS)],
+        door("meadow_to_hobford", "the hill path down to Hobford", 1420, g, VILLAGE, "hobford_from_meadow"),
+        sign("meadow_sign_hobford", 1444, g - 140, "HOBFORD", 140),
+        solid("stone_wall_2", 1600, g - 48, 32, 48),
+        solid("turf_bank", 1800, g - 64, 320, 64),
+        npc("npc_companion_dog", "hobford_dog", "Greet the dog", 1900, g - 64, brain="companion_dog_roam", w=64, h=64),
+        sign("meadow_sign_ring", 2240, g - 160, "THE RING", 160),
+        edge("meadow_to_clearing", "on to the ring", w - WALL, g, CLEARING, "clearing_from_meadow"),
+        edge("meadow_to_clearing_high", "along the ridge", w - WALL, RIDGE, CLEARING, "clearing_from_meadow_high"),
+        start(rid, 120, g),
+    ]
+    return build(rid, e, "THE HIGH MEADOW", COUNTRY_MUSIC, dangerous=True)
+
+
+# ------------------------------------------------------ the gate clearing
+
+#: The boom across the road beside the guard post: too high to jump, and
+#: lifted by the lever in the post's yard. The post's roof is reached from
+#: the ridge path; the siding's back stair comes up in the yard as well.
+BARRIER_X = 1560
+BARRIER_H = 176
+POST_ROOF = (1380, BARRIER_X, COUNTRY_FLOOR - 192)
+BARRIER_LEVER = "hobford_barrier_lever"
+GATE_ZONE = "hobford_gate_zone"
+GATE_TERMINAL = "hobford_gate_terminal"
+
+
+def clearing():
+    """THE GATE CLEARING. The old ring in its ruin of standing stones, with
+    new steel on it: the guard post, the boom across the road, the freight
+    rail's stair down to the siding. The ring is behind the boom."""
+    rid = CLEARING
+    w, h, g = COUNTRY_W, COUNTRY_H, COUNTRY_FLOOR
+    check_reach(rid, [("clearing", g), ("stone", g - 48), ("clearing", g)])
+    ring_x = 1780
+    e = [
+        *walls(w, g, west=[g, RIDGE]),
+        solid("ground", 0, g, w, h - g),
+        edge("clearing_from_meadow", "back down the track", 0, g, MEADOW, "meadow_to_clearing"),
+        edge("clearing_from_meadow_high", "along the ridge", 0, RIDGE, MEADOW, "meadow_to_clearing_high"),
+        # The ridge path ends over the guard post: a drop from its end lands
+        # on the roof, and the roof's east end is over the boom.
+        ledge("ridge_path", WALL, RIDGE, 1600 - WALL),
+        solid("standing_stone_1", 560, g - 48, 48, 48),
+        solid("standing_stone_2", 880, g - 48, 48, 48),
+        door("clearing_to_siding", "the stair down to the freight siding", 1180, g, SIDING, "siding_from_clearing"),
+        sign("clearing_sign_siding", 1204, g - 140, "FREIGHT SIDING", 220),
+        ledge("guard_post_roof", POST_ROOF[0], POST_ROOF[2], POST_ROOF[1] - POST_ROOF[0]),
+        sign("clearing_sign_post", 1470, POST_ROOF[2] - 60, "GATE OFFICE. PERSONS BY APPOINTMENT.", 360),
+        entity("LockWall", BARRIER_X, g - BARRIER_H, 24, BARRIER_H, id="hobford_barrier", name="the barrier",
+               gated_by=f"world.switch_on {BARRIER_LEVER}"),
+        entity("Switch", 1630, g - 32, 24, 32, id=BARRIER_LEVER, name="the barrier lever", prompt="Lift the barrier",
+               action="ToggleFlag"),
+        # The ring: a dialed ring of the gate network (`gate_network.ron`,
+        # `gate_portals.ron`), the props it is drawn with, and its terminal.
+        entity("Prop", ring_x, g - 288, 288, 288, name="Hobford Ring", kind="triangle_gate_ring"),
+        entity("Prop", ring_x, g - 288, 288, 288, name="Hobford Portal", kind="triangle_gate_portal"),
+        entity("LoadingZone", ring_x + 72, g - 288, 144, 288, id=GATE_ZONE, name="the ring", activation="Door",
+               presentation="SceneArt"),
+        entity("Prop", 1690, g - 56, 64, 56, name="Hobford Dialer", kind="gate_dialer_triangle"),
+        entity("Switch", 1710, g - 44, 24, 32, id=GATE_TERMINAL, name="Hobford Ring terminal", prompt="Dial the gate",
+               action="GateTerminal"),
+        sign("clearing_sign_ring", ring_x + 144, g - 340, "HOBFORD RING. FREIGHT WINDOW ON THE BOARD.", 420),
+        door("clearing_post_yard_door", "the back stair down to the siding", 2200, g, SIDING, "siding_to_post_yard"),
+        start(rid, 120, g),
+    ]
+    return build(rid, e, "THE GATE CLEARING", COUNTRY_MUSIC, dangerous=True)
+
+
+# ------------------------------------------------------ the freight siding
+
+YARD_FIGHT = "intro_freight_yard_fight"
+#: The freight stacked on the platform: (name, x0, x1, top). Solid crates on
+#: the floor and one-way pallets over them.
+FREIGHT = [("crate_a", 700, 796, LOW_FLOOR - 48), ("crate_b", 1240, 1336, LOW_FLOOR - 48)]
+PALLETS = [("pallets_a", 820, 980, LOW_FLOOR - 112), ("pallets_b", 1360, 1520, LOW_FLOOR - 112)]
+
+
+def siding():
+    """THE FREIGHT SIDING. The new platform under the clearing, where the
+    goblins wait for the freight window with their handcart and the crate
+    from the barn. The fight starts on the platform; its bell keeps it won
+    (an encounter with no linked switch starts again whenever a player walks
+    back into its trigger)."""
+    rid = SIDING
+    _, (w, h) = ROOMS_AT[rid]
+    g = LOW_FLOOR
+    check_reach(rid, [("platform", g), ("crate a", FREIGHT[0][3]), ("pallets a", PALLETS[0][3])])
+    e = [
+        *walls(w, g, west=[g]),
+        solid("platform", 0, g, w, h - g),
+        edge("siding_from_woods", "back along the trail", 0, g, WOODS, "woods_to_siding"),
+        door("siding_from_clearing", "up the stair to the clearing", 120, g, CLEARING, "clearing_to_siding"),
+        entity("CutsceneTrigger", 300, 32, 64, g - 32, cutscene="foreman_siding"),
+        entity("EncounterTrigger", 440, 32, 64, g - 32, id=YARD_FIGHT, name=f"{YARD_FIGHT}_trigger"),
+        *[solid(n, x0, top, x1 - x0, g - top) for n, x0, x1, top in FREIGHT],
+        *[ledge(n, x0, top, x1 - x0) for n, x0, x1, top in PALLETS],
+        sign("siding_sign_platform", 960, 120, "FREIGHT ONLY. NO PERSONS ON THE PLATFORM.", 420),
+        entity("CutsceneTrigger", 1480, 32, 64, g - 32, cutscene="work_order"),
+        entity("ChestSpawn", 1560, g - 58, 76, 58, name="the goblins' crate", reward="flag:intro_creator_notes_recovered"),
+        sign("siding_sign_crate", 1598, g - 120, "1 LAB OF RESEARCH. PAID.", 280),
+        entity("Switch", 1700, g - 32, 24, 32, id=f"{YARD_FIGHT}_again", name="the platform bell",
+               prompt="Ring the platform bell", target_encounter=YARD_FIGHT, action="ResetEncounter"),
+        door("siding_to_post_yard", "the back stair up to the gate office", 1800, g, CLEARING, "clearing_post_yard_door"),
+        start(rid, 200, g),
+    ]
+    return build(rid, e, "THE FREIGHT SIDING", GOBLIN_MUSIC, dangerous=True)
+
+
+# ------------------------------------------------------- the millstream
+
+#: The stream: its banks are level with the ground, its bed is 96 down, and
+#: stepping stones cross it flush with the banks. Rocks in the bed at each
+#: bank are the way out of the water.
+STREAM = (500, 1300, LOW_FLOOR + 96)
+STONES = [(600, 664), (760, 824), (920, 984), (1080, 1144), (1220, 1270)]
+
+
+def millstream():
+    """THE MILLSTREAM. The bank path comes down from the lane; stepping
+    stones cross the stream; past it the mill, whose porch and upper floor
+    are a climb. Under the west bank a cracked wall faces the water."""
+    rid = MILLSTREAM
+    w, h, g = COUNTRY_W, LOW_H, LOW_FLOOR
+    s0, s1, s_bed = STREAM
+    check_reach(rid, [("bed", s_bed), ("rock", s_bed - 48), ("bank", g)])
+    check_reach(rid, [("bank", g), ("porch", g - 48), ("upper floor", g - 112), ("loft window", g - 176)])
+    e = [
+        *walls(w, g, east=[g]),
+        door("millstream_from_lane", "the bank path up to the lane", 120, g, LANE, "lane_to_millstream"),
+        # The west bank, with a dry hollow under it behind a cracked wall.
+        solid("west_bank", 0, g, 420, h - g),
+        solid("hollow_roof", 420, g, s0 - 420, 16),
+        solid("hollow_floor", 420, s_bed, s0 - 420, h - s_bed),
+        entity("BreakablePlatform", s0 - 16, g + 16, 16, s_bed - g - 16, id="millstream_cracked_wall",
+               name="a cracked wall", max_hp=3.0, respawn="Persistent", collision="Solid", trigger="OnHit"),
+        entity("PickupSpawn", 440, s_bed - 28, 24, 24, name="a jar of coins", kind="currency:25"),
+        solid("stream_bed", s0, s_bed, s1 - s0, h - s_bed),
+        water(f"{rid}_stream", s0, g + 8, s1 - s0, s_bed - g - 8),
+        solid("rock_west", s0, s_bed - 48, 48, 48),
+        solid("rock_east", s1 - 48, s_bed - 48, 48, 48),
+        *[solid(f"stone_{n}", x0, g, x1 - x0, s_bed - g) for n, (x0, x1) in enumerate(STONES)],
+        solid("east_bank", s1, g, w - s1, h - g),
+        ledge("mill_porch", 1520, g - 48, 160),
+        ledge("mill_upper_floor", 1600, g - 112, 220),
+        ledge("mill_loft_window", 1720, g - 176, 120),
+        entity("PickupSpawn", 1800, g - 176 - 28, 24, 24, name="a few coins", kind="currency:10"),
+        sign("millstream_sign_mill", 1700, g - 260, "HOBFORD MILL. FLOUR, FEED, NO CREDIT.", 380),
+        edge("millstream_to_hobford", "on into Hobford", w - WALL, g, VILLAGE, "hobford_from_millstream"),
+        start(rid, 240, g),
+    ]
+    return build(rid, e, "THE MILLSTREAM", COUNTRY_MUSIC, dangerous=True)
+
+
+# --------------------------------------------------------------- Hobford
+
+#: The houses of the street: (name, porch x, roof x0, roof x1). A porch is 48
+#: over the street and a roof 64 over its porch.
+HOUSES = [("cottage", 260, 300, 540), ("smithy", 860, 900, 1160), ("inn", 1460, 1500, 1800)]
+
+
+def village():
+    """HOBFORD. A short street: cottages, the old smithy that sells gate
+    goods now, the well, the inn, the notice board. The hill path goes up to
+    the meadow; east the road goes into the woods."""
+    rid = VILLAGE
+    w, h, g = COUNTRY_W, LOW_H, LOW_FLOOR
+    check_reach(rid, [("street", g), ("porch", g - 48), ("roof", g - 112), ("loft", g - 176)])
+    e = [
+        *walls(w, g, west=[g], east=[g]),
+        solid("street", 0, g, w, h - g),
+        edge("hobford_from_millstream", "back to the millstream", 0, g, MILLSTREAM, "millstream_to_hobford"),
+        *[ledge(f"{n}_porch", px, g - 48, 80) for n, px, _, _ in HOUSES],
+        *[ledge(f"{n}_roof", x0, g - 112, x1 - x0) for n, _, x0, x1 in HOUSES],
+        ledge("smithy_loft", 1000, g - 176, 120),
+        entity("PickupSpawn", 1060, g - 176 - 28, 24, 24, name="a dropped purse", kind="currency:20"),
+        solid("well", 1250, g - 48, 64, 48),
+        sign("hobford_sign_smithy", 1030, g - 150, "GATE GOODS: LAMP OIL, SALT, BATTERIES", 380),
+        sign("hobford_sign_inn", 1650, g - 150, "THE PLOUGH", 160),
+        sign("hobford_board_1", 2000, g - 200, "FREIGHT WINDOW: TOMORROW, NOON.", 360),
+        sign("hobford_board_2", 2000, g - 170, "LOST: ONE SPECKLED HEN. ASK AT THE PLOUGH.", 420),
+        sign("hobford_board_3", 2000, g - 140, "STRANGERS AT THE RING: SEE THE GATE OFFICE.", 440),
+        door("hobford_from_meadow", "the hill path up to the meadow", 2160, g, MEADOW, "meadow_to_hobford"),
+        edge("hobford_to_woods", "the road into the woods", w - WALL, g, WOODS, "woods_from_hobford"),
+        start(rid, 120, g),
+    ]
+    return build(rid, e, "HOBFORD", VILLAGE_MUSIC)
+
+
+# ------------------------------------------------------------ the woods
+
+BOB_X = 1240
+#: The hollow oak: a climb up inside its trunk to a nook (a secret).
+HOLLOW = [(1700, LOW_FLOOR - 64), (1600, LOW_FLOOR - 128), (1700, LOW_FLOOR - 192)]
+
+
+def woods():
+    """HOBFORD WOODS. Roots and a fallen trunk, Bob's survey camp in a
+    clearing, a hollow oak, and the goblins' trail east to the siding, where
+    one goblin keeps a lookout."""
+    rid = WOODS
+    w, h, g = COUNTRY_W, LOW_H, LOW_FLOOR
+    check_reach(rid, [("floor", g), ("root", g - 48), ("floor", g), ("trunk", g - 64), ("floor", g)])
+    check_reach(rid, [("floor", g), *[(f"hollow {n}", y) for n, (_, y) in enumerate(HOLLOW)]])
+    e = [
+        *walls(w, g, west=[g], east=[g]),
+        solid("floor", 0, g, w, h - g),
+        edge("woods_from_hobford", "back to Hobford", 0, g, VILLAGE, "hobford_to_woods"),
+        solid("root_1", 420, g - 48, 64, 48),
+        ledge("fallen_trunk", 640, g - 64, 240),
+        solid("root_2", 1000, g - 48, 64, 48),
+        npc("npc_bob", "bob_woods", "Talk to Bob", BOB_X, g),
+        sign("woods_sign_camp", BOB_X + 100, g - 150, "SURVEY CAMP. DON'T TOUCH THE STAFF.", 360),
+        *[ledge(f"hollow_oak_{n}", x, y, 96) for n, (x, y) in enumerate(HOLLOW)],
+        entity("PickupSpawn", 1740, HOLLOW[-1][1] - 28, 24, 24, name="a can of oil", kind="health:2"),
+        hen(rid, 1, 1880, g, dialogue="hobford_lost_hen"),
+        raider(rid, 1, 2160, g),
+        edge("woods_to_siding", "along the goblins' trail", w - WALL, g, SIDING, "siding_from_woods"),
+        start(rid, 120, g),
+    ]
+    return build(rid, e, "HOBFORD WOODS", COUNTRY_MUSIC, look=WOODS_LOOK, dangerous=True)
+
+
+# ------------------------------------------- the town under the gate stack
 
 STREET = 608
-UNDER_TOWN = "under_town_pipes"
-BOB = "bob_relay"
 BOSS = "first_system_boss"
 #: Oiler's post: he stands at his workshop, and the volume round it starts
 #: his line when a player comes up to him.
@@ -302,9 +587,9 @@ OILER_X = 1100
 
 
 def market():
-    """THE DRAIN MARKET. A street under the gate stack: stalls with awnings
-    over it, Oiler's workshop, the news board, the drain covers down to the
-    culvert. East is the gate stack."""
+    """THE DRAIN MARKET. A street under the gate stack, in the town past
+    level 1: stalls with awnings over it, Oiler's workshop, the news board,
+    the drain cover down to the culvert. East is the gate stack."""
     rid = MARKET
     _, (w, h) = ROOMS_AT[rid]
     g = STREET
@@ -316,9 +601,8 @@ def market():
     e = [
         solid("ceiling", 0, 0, w, 32),
         solid("street", 0, g, w, h - g),
-        solid("west_wall", 0, 32, WALL, g - 96 - 32),
+        solid("west_wall", 0, 32, WALL, g - 32),
         solid("east_wall", w - WALL, 32, WALL, g - 96 - 32),
-        edge("drain_from_escape", "down the service stair", 0, g, STAIR, "escape_to_drain"),
         edge("drain_to_gate_stack", "to the gate stack", w - WALL, g, GATE_STACK, "gate_stack_from_drain"),
         start(rid, 120, g),
         npc("npc_news_board", "news_board_lab_incident", "Read the news board", 300, g),
@@ -329,16 +613,12 @@ def market():
         ledge(*gantry[:1], gantry[1], gantry[3], gantry[2] - gantry[1]),
         sign("market_sign_soup", 712, g - 40, "SOUP", 100),
         entity("ChestSpawn", 880, awnings[2][3] - 58, 76, 58, name="a purse on the awning", reward="currency:30"),
-        entity("LoadingZone", 900, g - 96, 48, 96, id="drain_from_bob_return", name="down the other drain cover",
-               activation="Door", target_room=BOB, target_zone="bob_return_to_drain", bidirectional=True),
         npc("npc_oiler", "oiler_intro", "Talk to Oiler", OILER_X, g, brain="meets_the_player"),
         entity("ShrineSpawn", OILER_X + 80, g - 80, 44, 80, id="drain_alley_oiler_bench", name="Oiler's bench"),
         entity("CutsceneTrigger", OILER_X - 140, g - 176, 288, 176, cutscene="oiler_notices"),
         sign("market_sign_oiler", OILER_X + 40, g - 200, "OILER: REPAIRS. KNEES, PIPES, DOORS. NO SHARKS.", 420),
         entity("LoadingZone", 1300, g - 96, 48, 96, id="drain_from_boss_return", name="the service door", activation="Door",
                target_room=BOSS, target_zone="boss_return_to_drain", bidirectional=True),
-        entity("LoadingZone", 176, g - 96, 48, 96, id="drain_from_alice", name="Alice's hatch", activation="Door",
-               target_room=ALICE, target_zone="alice_hatch", bidirectional=True),
         sign("market_sign_food", 300, g - 230, "No swordguns inside the food court", 380),
         sign("market_sign_ripples", 1180, 120, "Report unstable ripples to platform staff", 420),
         sign("market_sign_gates", 1330, g - 160, "GATES", 120),
@@ -346,10 +626,7 @@ def market():
     return undertown(rid, e, "THE DRAIN MARKET", extra='\n    entry_cutscene: "drain_market_arrival",')
 
 
-# ------------------------------------------------- 5. the culvert
-
-ALICE = "alice_relay"
-#: The walk out of the drains into Alice's station and on to Bob's end.
+#: The culvert's far walk.
 DRAIN_WALK = 480
 #: The sump: (room, x0, y0, x1, y1) of each pit of drain water, painted
 #: murky after the rooms are made. It stings (a `DamageVolume`).
@@ -364,8 +641,8 @@ def sump(rid, n, x0, y0, x1, y1):
 def culvert():
     """THE CULVERT. The storm drain under the market. From the drain cover
     the upper walk drops to the middle walk; past it the sump runs the rest
-    of the way, crossed on stepping stones and, at its widest, on a raft. A
-    goblin lookout stands on the far walk, listening."""
+    of the way, crossed on stepping stones and, at its widest, on a raft, to
+    a dead end where a goblin lookout listens."""
     rid = UNDER_TOWN
     _, (w, h) = ROOMS_AT[rid]
     upper, mid, stone, bed = 256, 416, 448, 624
@@ -376,7 +653,7 @@ def culvert():
     e = [
         solid("ceiling", 0, 0, w, 32),
         solid("west_wall", 0, 32, WALL, h - 32),
-        solid("east_wall", w - WALL, 32, WALL, DRAIN_WALK - 96 - 32),
+        solid("east_wall", w - WALL, 32, WALL, h - 32),
         solid("upper_walk", WALL, upper, 400 - WALL, 32),
         entity("LoadingZone", 96, upper - 96, 48, 96, id="under_town_from_drain", name="up to the market",
                activation="Door", target_room=MARKET, target_zone="under_town_to_drain", bidirectional=True),
@@ -393,7 +670,6 @@ def culvert():
         entity("MovingPlatform", 1056, stone, 96, 16, id=f"{rid}_raft", name="a raft of crates", sweep_dx=144.0,
                speed=60.0, one_way=True),
         solid("east_walk", 1360, DRAIN_WALK, w - 1360, h - DRAIN_WALK),
-        edge("under_town_to_alice", "along the drain", w - WALL, DRAIN_WALK, ALICE, "alice_from_under_town"),
         start(rid, 140, upper),
         slug(rid, 1, 420, mid),
         slug(rid, 2, 600, mid),
@@ -404,129 +680,7 @@ def culvert():
     return undertown(rid, e, "THE CULVERT", dangerous=True)
 
 
-# ------------------------------------------------- 6-7. Alice and Bob
-
-BOB_ROOM = "bob_relay"
-#: The survey line across Alice's high walk: it is taken down when Bob has
-#: the last reading (`bob_field_survey_received`).
-SURVEY_LINE = "alice_survey_line"
-
-
-def alice():
-    """ALICE'S STATION. Alice at her instrument, mid-traverse: she does not
-    leave it. The low walk goes on to Bob; the high walk goes to her hatch up
-    into the market, across the survey line."""
-    rid = ALICE
-    _, (w, h) = ROOMS_AT[rid]
-    g, high = DRAIN_WALK, 224
-    climb = [("ledge_1", 320, 432, g - 64), ("ledge_2", 400, 512, g - 128), ("ledge_3", 480, 576, g - 192)]
-    check_reach(rid, [("walk", g), *[(n, top) for n, _, _, top in climb], ("high walk", high)])
-    e = [
-        solid("ceiling", 0, 0, w, 32),
-        solid("walk", 0, g, w, h - g),
-        solid("west_wall", 0, 32, WALL, g - 96 - 32),
-        solid("east_wall", w - WALL, 32, WALL, g - 96 - 32),
-        edge("alice_from_under_town", "back along the drain", 0, g, UNDER_TOWN, "under_town_to_alice"),
-        edge("alice_to_bob", "on to Bob's end", w - WALL, g, BOB_ROOM, "bob_from_alice"),
-        start(rid, 120, g),
-        npc("npc_alice", "alice_station", "Talk to Alice", 220, g, brain="stand_still"),
-        sign("alice_sign_station", 220, g - 150, "SURVEY STATION A", 240),
-        *[ledge(n, x0, top, x1 - x0) for n, x0, x1, top in climb],
-        solid("high_walk", 560, high, w - WALL - 560, 32),
-        entity("LockWall", 656, 32, 16, high - 32, id=SURVEY_LINE, name="the survey line",
-               gated_by="bob_field_survey_received"),
-        sign("alice_sign_line", 760, high - 130, "SURVEY LINE. DO NOT CROSS.", 300),
-        entity("LoadingZone", 900, high - 96, 48, 96, id="alice_hatch", name="up through Alice's hatch",
-               activation="Door", target_room=MARKET, target_zone="drain_from_alice", bidirectional=True),
-    ]
-    return undertown(rid, e, "ALICE'S STATION", dangerous=True)
-
-
-def bob():
-    """BOB'S END. Bob holds the staff at the far end of the traverse. On
-    the way to him the drain floor is broken into the sump; Eve sits by a
-    pipe in the middle, listening to it."""
-    rid = BOB_ROOM
-    _, (w, h) = ROOMS_AT[rid]
-    g, bed = DRAIN_WALK, 576
-    pits = [(256, 352), (544, 640)]
-    e = [
-        solid("ceiling", 0, 0, w, 32),
-        solid("west_wall", 0, 32, WALL, g - 96 - 32),
-        solid("east_wall", w - WALL, 32, WALL, g - 96 - 32),
-    ]
-    x = 0
-    for n, (x0, x1) in enumerate(pits):
-        e += [solid(f"walk_{n}", x, g, x0 - x, h - g), solid(f"pit_{n}_bed", x0, bed, x1 - x0, h - bed),
-              sump(rid, n, x0, bed - 48, x1, bed)]
-        x = x1
-    e += [
-        solid(f"walk_{len(pits)}", x, g, w - x, h - g),
-        edge("bob_from_alice", "back to Alice's station", 0, g, ALICE, "alice_to_bob"),
-        entity("LoadingZone", 940, g - 96, 48, 96, id="bob_return_to_drain", name="up the drain cover", activation="Door",
-               target_room=MARKET, target_zone="drain_from_bob_return", bidirectional=True),
-        start(rid, 120, g),
-        npc("npc_eve", "eve_drain_pipe", "Talk to Eve", 450, g, brain="stand_still"),
-        npc("npc_bob", "bob_station", "Talk to Bob", 820, g, brain="stand_still"),
-        sign("bob_sign_station", 820, g - 150, "SURVEY STATION B", 240),
-        sign("bob_sign_cover", 940, g - 140, "MARKET", 140),
-        # Bob's grate: the survey crew keeps the key, and he opens it when the
-        # traverse is closed. Past it the drain runs under the checkpoint.
-        entity("LockWall", w - 48, 32, 16, g - 32, id="bob_grate", name="Bob's grate",
-               gated_by="bob_field_survey_received"),
-        edge("bob_to_yard", "on under the checkpoint", w - WALL, g, YARD, "yard_from_bob"),
-    ]
-    return undertown(rid, e, "BOB'S END", dangerous=True)
-
-
-# ------------------------------------------------- 9. the freight yard
-
-YARD = "intro_freight_yard"
-YARD_FIGHT = "intro_freight_yard_fight"
-#: The door of the yard comes out in the gate stack behind its checkpoint.
-GATE_STACK_FROM_YARD = "gate_stack_from_yard"
-
-
-def yard():
-    """THE FREIGHT YARD. The goblins' camp behind the gate stack, where the
-    crate waits for a gate. The fight shuts the yard (its seal); after it the
-    inner gate is open, and behind it are the crate and the door up into the
-    gate stack, behind the checkpoint."""
-    rid = YARD
-    _, (w, h) = ROOMS_AT[rid]
-    g = DRAIN_WALK
-    crates = [("crate_a", 560, 624, g - 48), ("crate_b", 1000, 1096, g - 48)]
-    ledges = [("crate_stack_a", 700, 860, g - 112), ("crate_stack_b", 1160, 1320, g - 112)]
-    check_reach(rid, [("yard", g), ("crate_a", crates[0][3]), ("stack_a", ledges[0][3])])
-    e = [
-        solid("ceiling", 0, 0, w, 32),
-        solid("yard", 0, g, w, h - g),
-        solid("west_wall", 0, 32, WALL, g - 96 - 32),
-        solid("east_wall", w - WALL, 32, WALL, g - 32),
-        edge("yard_from_bob", "back along the drain", 0, g, BOB_ROOM, "bob_to_yard"),
-        start(rid, 80, g),
-        entity("CutsceneTrigger", 200, 32, 64, g - 32, cutscene="salvage_lead_yard"),
-        # The fight's seal (an encounter wall: no `gated_by`) and its strip.
-        entity("LockWall", 136, 32, 16, g - 32, id="intro_freight_yard_seal", name="the yard gate"),
-        entity("EncounterTrigger", 320, 32, 64, g - 32, id=YARD_FIGHT, name=f"{YARD_FIGHT}_trigger"),
-        *[solid(n, x0, top, x1 - x0, g - top) for n, x0, x1, top in crates],
-        *[ledge(n, x0, top, x1 - x0) for n, x0, x1, top in ledges],
-        sign("yard_sign_camp", 900, 120, "NO ENTRY. GOBLINS AT WORK.", 360),
-        # The yard's fight stays won (its clear greens this switch); the bell
-        # calls it again.
-        entity("Switch", 1440, g - 32, 24, 32, id=f"{YARD_FIGHT}_again", name="the yard bell",
-               prompt="Ring the yard bell", target_encounter=YARD_FIGHT, action="ResetEncounter"),
-        entity("LockWall", 1504, 32, 32, g - 32, id="intro_yard_inner_gate", name="the inner gate",
-               gated_by=f"encounter.cleared {YARD_FIGHT}"),
-        entity("CutsceneTrigger", 1584, 32, 96, g - 32, cutscene="creator_notebooks"),
-        sign("yard_sign_crate", 1632, g - 120, "ONE LAB OF RESEARCH. PAID.", 300),
-        entity("LoadingZone", 1800, g - 96, 48, 96, id="yard_to_gate_stack", name="up into the gate stack",
-               activation="Door", target_room=GATE_STACK, target_zone=GATE_STACK_FROM_YARD, bidirectional=True),
-    ]
-    return undertown(rid, e, "THE FREIGHT YARD", dangerous=True)
-
-
-ROOMS = (lab, stair, market, culvert, alice, bob, yard)
+ROOMS = (workshop, lane, meadow, clearing, siding, millstream, village, woods, market, culvert)
 
 
 def main(argv):
