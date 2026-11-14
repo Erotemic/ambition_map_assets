@@ -1,17 +1,19 @@
 {
   "schema": "ambition.ldtk_generated_record.v1",
-  "generated": {},
+  "generated": {
+    "alice_relay": "638fafcf4b1f17a0",
+    "bob_relay": "85548cf22aa5f123",
+    "drain_alley": "20c4404e127406cd",
+    "intro_escape_shaft": "6d474f565326e208",
+    "intro_freight_yard": "06771b4d352cca05",
+    "intro_wake_room": "e1792b7dad295dd3",
+    "under_town_pipes": "d2fa7607ee0f8031"
+  },
   "ldtk_owned": [
-    "alice_relay",
-    "bob_relay",
     "combat_calibration_lab",
-    "drain_alley",
     "first_system_boss",
     "gate_stack_lower",
-    "intro_escape_shaft",
     "intro_raid_corridor",
-    "intro_wake_room",
-    "pirate_sky_arena",
-    "under_town_pipes"
+    "pirate_sky_arena"
   ]
 }
