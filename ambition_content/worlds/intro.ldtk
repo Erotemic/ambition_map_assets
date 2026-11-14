@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 105552,
+	"nextUid": 105766,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -6488,7 +6488,7 @@
 			"tags": [],
 			"exportToToc": false,
 			"allowOutOfBounds": true,
-			"doc": "Starts a cutscene when a player body is inside the rectangle, in this level's room. `cutscene` is the id of a script in the cutscene library; the script must have a seen flag, so it plays once. A level's `entry_cutscene` starts a scene on arrival; this starts one HERE, where its people are.",
+			"doc": "Starts a cutscene when a player body is inside the rectangle, in this level's room. `cutscene` is the id of a script in the cutscene library; the script must have a seen flag, so it plays once. `after_encounter`, when set, holds the scene until that encounter is cleared. A level's `entry_cutscene` starts a scene on arrival; this starts one HERE, where its people are.",
 			"tileOpacity": 1.0,
 			"lineOpacity": 1.0,
 			"fillOpacity": 0.08,
@@ -6522,6 +6522,46 @@
 					"doc": null,
 					"__type": "String",
 					"uid": 105005,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": {
+						"id": "V_String",
+						"params": [""]
+					},
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "after_encounter",
+					"doc": null,
+					"__type": "String",
+					"uid": 105552,
 					"type": "F_String",
 					"isArray": false,
 					"canBeNull": true,
@@ -7353,6 +7393,43 @@
 			"allowedRefsEntityUid": null,
 			"allowedRefTags": [],
 			"tilesetUid": null
+		},
+		{
+			"identifier": "while_live_when",
+			"doc": "A condition line (`world.flag_set X`) that holds the room's `while_live` line back: it is asked for only while the question answers yes.",
+			"__type": "String",
+			"uid": 105708,
+			"type": "F_String",
+			"isArray": false,
+			"canBeNull": true,
+			"arrayMinLength": null,
+			"arrayMaxLength": null,
+			"editorDisplayMode": "NameAndValue",
+			"editorDisplayScale": 1,
+			"editorDisplayPos": "Above",
+			"editorLinkStyle": "ZigZag",
+			"editorDisplayColor": null,
+			"editorAlwaysShow": true,
+			"editorShowInWorld": false,
+			"editorCutLongValues": true,
+			"editorTextSuffix": null,
+			"editorTextPrefix": null,
+			"useForSmartColor": false,
+			"exportToToc": false,
+			"searchable": true,
+			"min": null,
+			"max": null,
+			"regex": null,
+			"acceptFileTypes": null,
+			"defaultOverride": null,
+			"textLanguageMode": null,
+			"symmetricalRef": false,
+			"autoChainRef": false,
+			"allowOutOfLevelRef": false,
+			"allowedRefs": "Any",
+			"allowedRefsEntityUid": null,
+			"allowedRefTags": [],
+			"tilesetUid": null
 		}
 	] },
 	"levels": [
@@ -7360,10 +7437,10 @@
 			"identifier": "intro_wake_room",
 			"iid": "intro_wake_room-104349",
 			"uid": 104349,
-			"worldX": 0,
+			"worldX": -320,
 			"worldY": 2368,
 			"worldDepth": 0,
-			"pxWid": 1600,
+			"pxWid": 1920,
 			"pxHei": 448,
 			"__bgColor": "#14161C",
 			"bgColor": "#14161C",
@@ -7396,6 +7473,14 @@
 					"id": "V_String",
 					"params": ["intro_wake"]
 				}] },
+				{ "__identifier": "while_live", "__type": "String", "__value": "encounter.start encounter:intro_workshop_raid", "__tile": null, "defUid": 104971, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["encounter.start encounter:intro_workshop_raid"]
+				}] },
+				{ "__identifier": "while_live_when", "__type": "String", "__value": "world.flag_set intro_raiders_coming", "__tile": null, "defUid": 105708, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["world.flag_set intro_raiders_coming"]
+				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
 					"params": [ true ]
@@ -7416,67 +7501,83 @@
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
-						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,
+						2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,
-						1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,
-						0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,
-						1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,
+						0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,1,1,
+						1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -7496,7 +7597,7 @@
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 						
 					],
-					"__cWid": 100,
+					"__cWid": 120,
 					"__cHei": 28,
 					"__gridSize": 16,
 					"__opacity": 1,
@@ -7521,7 +7622,7 @@
 					"iid": "AmbitionCameras-104889",
 					"layerDefUid": 104888,
 					"intGridCsv": [],
-					"__cWid": 100,
+					"__cWid": 120,
 					"__cHei": 28,
 					"__gridSize": 16,
 					"__opacity": 1,
@@ -7546,10 +7647,43 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#86A8E7",
-							"__worldX": 0,
+							"__worldX": -320,
 							"__worldY": 2368,
 							"iid": "CameraZone-104360",
-							"width": 1600,
+							"width": 1344,
+							"height": 448,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_barn_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barn_camera"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the barn", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the barn"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "zone_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["zone_bounds"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": -320,
+							"__worldY": 2368,
+							"iid": "CameraZone-105761",
+							"width": 1920,
 							"height": 448,
 							"defUid": 4002,
 							"px": [0,0],
@@ -7576,7 +7710,7 @@
 					"iid": "Ambition-104351",
 					"layerDefUid": 1070,
 					"intGridCsv": [],
-					"__cWid": 100,
+					"__cWid": 120,
 					"__cHei": 28,
 					"__gridSize": 16,
 					"__opacity": 1,
@@ -7596,18 +7730,18 @@
 					"entityInstances": [
 						{
 							"__identifier": "MovingPlatform",
-							"__grid": [3,18],
+							"__grid": [45,18],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#5BA1FF",
-							"__worldX": 48,
+							"__worldX": 400,
 							"__worldY": 2662,
-							"iid": "MovingPlatform-104975",
+							"iid": "MovingPlatform-105556",
 							"width": 176,
 							"height": 12,
 							"defUid": 4251,
-							"px": [48,294],
+							"px": [720,294],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "intro_cart", "__tile": null, "defUid": 104929, "realEditorValues": [{
 									"id": "V_String",
@@ -7627,18 +7761,18 @@
 						},
 						{
 							"__identifier": "MovingPlatform",
-							"__grid": [14,18],
+							"__grid": [56,18],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#5BA1FF",
-							"__worldX": 224,
+							"__worldX": 576,
 							"__worldY": 2666,
-							"iid": "MovingPlatform-104976",
+							"iid": "MovingPlatform-105557",
 							"width": 7,
 							"height": 54,
 							"defUid": 4251,
-							"px": [224,298],
+							"px": [896,298],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "intro_cart_ramp_step_01", "__tile": null, "defUid": 104929, "realEditorValues": [{
 									"id": "V_String",
@@ -7658,26 +7792,26 @@
 						},
 						{
 							"__identifier": "SurfaceChain",
-							"__grid": [14,17],
+							"__grid": [56,17],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#7ED957",
-							"__worldX": 224,
+							"__worldX": 576,
 							"__worldY": 2646,
-							"iid": "SurfaceChain-104997",
+							"iid": "SurfaceChain-105558",
 							"width": 16,
 							"height": 16,
 							"defUid": 104961,
-							"px": [224,278],
+							"px": [896,278],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Cart ramp", "__tile": null, "defUid": 104958, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Cart ramp"]
 								}] },
-								{ "__identifier": "points", "__type": "String", "__value": "224,294; 326,352", "__tile": null, "defUid": 104959, "realEditorValues": [{
+								{ "__identifier": "points", "__type": "String", "__value": "896,294; 998,352", "__tile": null, "defUid": 104959, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["224,294; 326,352"]
+									"params": ["896,294; 998,352"]
 								}] },
 								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 104995, "realEditorValues": [{
 									"id": "V_String",
@@ -7687,18 +7821,18 @@
 						},
 						{
 							"__identifier": "PlayerStart",
-							"__grid": [7,15],
+							"__grid": [49,15],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#41D1FF",
-							"__worldX": 122,
+							"__worldX": 474,
 							"__worldY": 2616,
-							"iid": "PlayerStart-104353",
+							"iid": "PlayerStart-105559",
 							"width": 28,
 							"height": 46,
 							"defUid": 2000,
-							"px": [122,248],
+							"px": [794,248],
 							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "wake_room_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
 								"id": "V_String",
 								"params": ["wake_room_spawn"]
@@ -7706,18 +7840,18 @@
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [7,12],
+							"__grid": [49,12],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
-							"__worldX": 112,
+							"__worldX": 464,
 							"__worldY": 2566,
-							"iid": "LoadingZone-104358",
+							"iid": "LoadingZone-105560",
 							"width": 48,
 							"height": 96,
 							"defUid": 2002,
-							"px": [112,198],
+							"px": [784,198],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "wake_room_arrival", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -7736,18 +7870,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [1,7],
+							"__grid": [43,7],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 26,
+							"__worldX": 378,
 							"__worldY": 2488,
-							"iid": "DebugLabel-105067",
+							"iid": "DebugLabel-105561",
 							"width": 300,
 							"height": 24,
 							"defUid": 2007,
-							"px": [26,120],
+							"px": [698,120],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_cart", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -7762,18 +7896,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [25,15],
+							"__grid": [31,15],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 410,
+							"__worldX": 190,
 							"__worldY": 2612,
-							"iid": "DebugLabel-105348",
+							"iid": "DebugLabel-105562",
 							"width": 140,
 							"height": 24,
 							"defUid": 2007,
-							"px": [410,244],
+							"px": [510,244],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_plinth", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -7788,18 +7922,18 @@
 						},
 						{
 							"__identifier": "PickupSpawn",
-							"__grid": [55,13],
+							"__grid": [9,13],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#8AFF80",
-							"__worldX": 892,
+							"__worldX": -172,
 							"__worldY": 2580,
-							"iid": "PickupSpawn-105349",
+							"iid": "PickupSpawn-105563",
 							"width": 24,
 							"height": 24,
 							"defUid": 2015,
-							"px": [892,212],
+							"px": [148,212],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "the torque gauge", "__tile": null, "defUid": 3039, "realEditorValues": [{
 									"id": "V_String",
@@ -7813,18 +7947,18 @@
 						},
 						{
 							"__identifier": "PickupSpawn",
-							"__grid": [41,13],
+							"__grid": [23,13],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#8AFF80",
-							"__worldX": 664,
+							"__worldX": 52,
 							"__worldY": 2580,
-							"iid": "PickupSpawn-105350",
+							"iid": "PickupSpawn-105564",
 							"width": 24,
 							"height": 24,
 							"defUid": 2015,
-							"px": [664,212],
+							"px": [372,212],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "a can of oil", "__tile": null, "defUid": 3039, "realEditorValues": [{
 									"id": "V_String",
@@ -7838,18 +7972,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [40,11],
+							"__grid": [7,11],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 640,
+							"__worldX": -200,
 							"__worldY": 2548,
-							"iid": "DebugLabel-105351",
+							"iid": "DebugLabel-105565",
 							"width": 300,
 							"height": 24,
 							"defUid": 2007,
-							"px": [640,180],
+							"px": [120,180],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_loft", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -7863,45 +7997,19 @@
 							]
 						},
 						{
-							"__identifier": "DebugLabel",
-							"__grid": [64,15],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 1030,
-							"__worldY": 2612,
-							"iid": "DebugLabel-105352",
-							"width": 220,
-							"height": 24,
-							"defUid": 2007,
-							"px": [1030,244],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_bench", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["workshop_sign_bench"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "LOGS. DO NOT TIDY.", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["LOGS. DO NOT TIDY."]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							]
-						},
-						{
 							"__identifier": "NpcSpawn",
-							"__grid": [76,19],
+							"__grid": [65,19],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF9EEA",
-							"__worldX": 1224,
+							"__worldX": 724,
 							"__worldY": 2672,
-							"iid": "NpcSpawn-105353",
+							"iid": "NpcSpawn-105566",
 							"width": 32,
 							"height": 48,
 							"defUid": 2006,
-							"px": [1224,304],
+							"px": [1044,304],
 							"fieldInstances": [
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_creator", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
@@ -7918,19 +8026,45 @@
 							]
 						},
 						{
+							"__identifier": "DebugLabel",
+							"__grid": [65,15],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 730,
+							"__worldY": 2612,
+							"iid": "DebugLabel-105567",
+							"width": 220,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1050,244],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_bench", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_sign_bench"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "LOGS. DO NOT TIDY.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["LOGS. DO NOT TIDY."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
 							"__identifier": "EncounterTrigger",
-							"__grid": [79,2],
+							"__grid": [4,0],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF7AB6",
-							"__worldX": 1272,
-							"__worldY": 2400,
-							"iid": "EncounterTrigger-105550",
-							"width": 48,
-							"height": 320,
+							"__worldX": -256,
+							"__worldY": 2368,
+							"iid": "EncounterTrigger-105724",
+							"width": 32,
+							"height": 32,
 							"defUid": 4045,
-							"px": [1272,32],
+							"px": [64,0],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "intro_workshop_raid", "__tile": null, "defUid": 4042, "realEditorValues": [{
 									"id": "V_String",
@@ -7943,19 +8077,38 @@
 							]
 						},
 						{
+							"__identifier": "CutsceneTrigger",
+							"__grid": [77,2],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#B07AFF",
+							"__worldX": 924,
+							"__worldY": 2400,
+							"iid": "CutsceneTrigger-105569",
+							"width": 76,
+							"height": 320,
+							"defUid": 105006,
+							"px": [1244,32],
+							"fieldInstances": [{ "__identifier": "cutscene", "__type": "String", "__value": "intro_raid_at_the_door", "__tile": null, "defUid": 105005, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["intro_raid_at_the_door"]
+							}] }]
+						},
+						{
 							"__identifier": "Switch",
-							"__grid": [62,20],
+							"__grid": [42,20],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFC857",
-							"__worldX": 1000,
+							"__worldX": 360,
 							"__worldY": 2688,
-							"iid": "Switch-105551",
+							"iid": "Switch-105570",
 							"width": 24,
 							"height": 32,
 							"defUid": 4051,
-							"px": [1000,320],
+							"px": [680,320],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "intro_workshop_raid_again", "__tile": null, "defUid": 4046, "realEditorValues": [{
 									"id": "V_String",
@@ -7978,18 +8131,18 @@
 						},
 						{
 							"__identifier": "LockWall",
-							"__grid": [82,2],
+							"__grid": [82,15],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9E9E9E",
-							"__worldX": 1320,
-							"__worldY": 2400,
-							"iid": "LockWall-105355",
+							"__worldX": 1000,
+							"__worldY": 2608,
+							"iid": "LockWall-105571",
 							"width": 24,
-							"height": 320,
+							"height": 112,
 							"defUid": 4084,
-							"px": [1320,32],
+							"px": [1320,240],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "intro_barn_door", "__tile": null, "defUid": 4082, "realEditorValues": [{
 									"id": "V_String",
@@ -7999,26 +8152,26 @@
 									"id": "V_String",
 									"params": ["the barn door"]
 								}] },
-								{ "__identifier": "gated_by", "__type": "String", "__value": "encounter.cleared intro_workshop_raid", "__tile": null, "defUid": 104934, "realEditorValues": [{
+								{ "__identifier": "gated_by", "__type": "String", "__value": "world.flag_set intro_barn_door_broken", "__tile": null, "defUid": 104934, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["encounter.cleared intro_workshop_raid"]
+									"params": ["world.flag_set intro_barn_door_broken"]
 								}] }
 							]
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [73,8],
+							"__grid": [63,7],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 1172,
-							"__worldY": 2508,
-							"iid": "DebugLabel-105356",
+							"__worldX": 690,
+							"__worldY": 2488,
+							"iid": "DebugLabel-105572",
 							"width": 320,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1172,140],
+							"px": [1010,120],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_door", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -8038,32 +8191,63 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#B07AFF",
-							"__worldX": 1344,
+							"__worldX": 1024,
 							"__worldY": 2400,
 							"iid": "CutsceneTrigger-105357",
-							"width": 80,
+							"width": 96,
 							"height": 320,
 							"defUid": 105006,
 							"px": [1344,32],
-							"fieldInstances": [{ "__identifier": "cutscene", "__type": "String", "__value": "creator_final_fragment", "__tile": null, "defUid": 105005, "realEditorValues": [{
-								"id": "V_String",
-								"params": ["creator_final_fragment"]
-							}] }]
+							"fieldInstances": [
+								{ "__identifier": "cutscene", "__type": "String", "__value": "creator_final_fragment", "__tile": null, "defUid": 105005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["creator_final_fragment"]
+								}] },
+								{ "__identifier": "after_encounter", "__type": "String", "__value": "intro_workshop_raid", "__tile": null, "defUid": 105552, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_workshop_raid"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LockWall",
+							"__grid": [115,16],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9E9E9E",
+							"__worldX": 1520,
+							"__worldY": 2624,
+							"iid": "LockWall-105574",
+							"width": 24,
+							"height": 96,
+							"defUid": 4084,
+							"px": [1840,256],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_yard_gate", "__tile": null, "defUid": 4082, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_yard_gate"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the yard gate", "__tile": null, "defUid": 4083, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the yard gate"]
+								}] }
+							]
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [99,16],
+							"__grid": [119,16],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"__worldX": 1584,
 							"__worldY": 2624,
-							"iid": "LoadingZone-105358",
+							"iid": "LoadingZone-105575",
 							"width": 16,
 							"height": 96,
 							"defUid": 2002,
-							"px": [1584,256],
+							"px": [1904,256],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "workshop_to_lane", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -8090,18 +8274,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [21,2],
+							"__grid": [31,2],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 350,
+							"__worldX": 190,
 							"__worldY": 2408,
-							"iid": "DebugLabel-105360",
+							"iid": "DebugLabel-105577",
 							"width": 900,
 							"height": 24,
 							"defUid": 2007,
-							"px": [350,40],
+							"px": [510,40],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "intro_wake_room_title", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -8201,10 +8385,26 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 						
 					],
-					"__cWid": 100,
+					"__cWid": 120,
 					"__cHei": 28,
 					"__gridSize": 16,
 					"__opacity": 1,
@@ -8308,10 +8508,26 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 						
 					],
-					"__cWid": 100,
+					"__cWid": 120,
 					"__cHei": 28,
 					"__gridSize": 16,
 					"__opacity": 1,
@@ -16435,6 +16651,31 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [60,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2575,
+							"__worldY": 2630,
+							"iid": "Prop-105587",
+							"width": 205,
+							"height": 90,
+							"defUid": 104426,
+							"px": [975,582],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hill_survey_station", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_survey_station"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_survey_station", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_survey_station"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "NpcSpawn",
 							"__grid": [57,39],
 							"__pivot": [0,0],
@@ -16639,9 +16880,9 @@
 									"id": "V_String",
 									"params": ["lane_sign_track"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "TRACK TO THE RING", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "TRACK TO THE GATE", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["TRACK TO THE RING"]
+									"params": ["TRACK TO THE GATE"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -17672,6 +17913,31 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [55,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 4893,
+							"__worldY": 2248,
+							"iid": "Prop-105608",
+							"width": 362,
+							"height": 472,
+							"defUid": 104426,
+							"px": [893,200],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hill_meadow_oak", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_meadow_oak"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_meadow_oak", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_meadow_oak"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [88,36],
 							"__pivot": [0,0],
@@ -17784,9 +18050,9 @@
 									"id": "V_String",
 									"params": ["meadow_sign_ring"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "THE RING", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "THE GATE", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["THE RING"]
+									"params": ["THE GATE"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -17810,9 +18076,9 @@
 									"id": "V_String",
 									"params": ["meadow_to_clearing"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "on to the ring", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "on to the gate", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["on to the ring"]
+									"params": ["on to the gate"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -18878,6 +19144,31 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [86,30],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 7780,
+							"__worldY": 2528,
+							"iid": "Prop-105628",
+							"width": 180,
+							"height": 192,
+							"defUid": 104426,
+							"px": [1380,480],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hill_gate_office", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_gate_office"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_gate_office", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_gate_office"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
 							"__grid": [80,26],
 							"__pivot": [0,0],
@@ -18926,9 +19217,9 @@
 									"id": "V_String",
 									"params": ["the barrier"]
 								}] },
-								{ "__identifier": "gated_by", "__type": "String", "__value": "world.switch_on hobford_barrier_lever", "__tile": null, "defUid": 104934, "realEditorValues": [{
+								{ "__identifier": "gated_by", "__type": "String", "__value": "world.flag_set hobford_barrier_lifted", "__tile": null, "defUid": 104934, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["world.switch_on hobford_barrier_lever"]
+									"params": ["world.flag_set hobford_barrier_lifted"]
 								}] }
 							]
 						},
@@ -18962,6 +19253,10 @@
 								{ "__identifier": "action", "__type": "String", "__value": "ToggleFlag", "__tile": null, "defUid": 4050, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["ToggleFlag"]
+								}] },
+								{ "__identifier": "on_activate", "__type": "String", "__value": "world.set_flag hobford_barrier_lifted true", "__tile": null, "defUid": 104935, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["world.set_flag hobford_barrier_lifted true"]
 								}] }
 							]
 						},
@@ -18980,9 +19275,9 @@
 							"defUid": 104426,
 							"px": [1780,384],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "Hobford Ring", "__tile": null, "defUid": 104424, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "Clearing Gate Ring", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["Hobford Ring"]
+									"params": ["Clearing Gate Ring"]
 								}] },
 								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_ring", "__tile": null, "defUid": 104425, "realEditorValues": [{
 									"id": "V_String",
@@ -19005,9 +19300,9 @@
 							"defUid": 104426,
 							"px": [1780,384],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "Hobford Portal", "__tile": null, "defUid": 104424, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "Clearing Gate Portal", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["Hobford Portal"]
+									"params": ["Clearing Gate Portal"]
 								}] },
 								{ "__identifier": "kind", "__type": "String", "__value": "triangle_gate_portal", "__tile": null, "defUid": 104425, "realEditorValues": [{
 									"id": "V_String",
@@ -19034,9 +19329,9 @@
 									"id": "V_String",
 									"params": ["hobford_gate_zone"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "the ring", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "the gate", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["the ring"]
+									"params": ["the gate"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
 								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 105004, "realEditorValues": [{
@@ -19060,9 +19355,9 @@
 							"defUid": 104426,
 							"px": [1690,616],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "Hobford Dialer", "__tile": null, "defUid": 104424, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "Clearing Gate Dialer", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["Hobford Dialer"]
+									"params": ["Clearing Gate Dialer"]
 								}] },
 								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer_triangle", "__tile": null, "defUid": 104425, "realEditorValues": [{
 									"id": "V_String",
@@ -19089,9 +19384,9 @@
 									"id": "V_String",
 									"params": ["hobford_gate_terminal"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "Hobford Ring terminal", "__tile": null, "defUid": 4047, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "Hobford gate terminal", "__tile": null, "defUid": 4047, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["Hobford Ring terminal"]
+									"params": ["Hobford gate terminal"]
 								}] },
 								{ "__identifier": "prompt", "__type": "String", "__value": "Dial the gate", "__tile": null, "defUid": 4048, "realEditorValues": [{
 									"id": "V_String",
@@ -19122,9 +19417,9 @@
 									"id": "V_String",
 									"params": ["clearing_sign_ring"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "HOBFORD RING. FREIGHT WINDOW ON THE BOARD.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "HOBFORD GATE. FREIGHT WINDOW ON THE BOARD.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["HOBFORD RING. FREIGHT WINDOW ON THE BOARD."]
+									"params": ["HOBFORD GATE. FREIGHT WINDOW ON THE BOARD."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -20121,6 +20416,31 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [94,15],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3114,
+							"__worldY": 3059,
+							"iid": "Prop-105652",
+							"width": 546,
+							"height": 269,
+							"defUid": 104426,
+							"px": [1514,243],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hill_village_mill", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_village_mill"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_village_mill", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_village_mill"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "PickupSpawn",
 							"__grid": [112,19],
 							"__pivot": [0,0],
@@ -20977,6 +21297,131 @@
 					"gridTiles": [],
 					"entityInstances": [
 						{
+							"__identifier": "Prop",
+							"__grid": [15,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 4254,
+							"__worldY": 3144,
+							"iid": "Prop-105665",
+							"width": 300,
+							"height": 184,
+							"defUid": 104426,
+							"px": [254,328],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hill_village_cottage", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_village_cottage"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_village_cottage", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_village_cottage"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [53,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 4854,
+							"__worldY": 3105,
+							"iid": "Prop-105666",
+							"width": 320,
+							"height": 223,
+							"defUid": 104426,
+							"px": [854,289],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hill_village_smithy", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_village_smithy"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_village_smithy", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_village_smithy"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [90,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5454,
+							"__worldY": 3124,
+							"iid": "Prop-105667",
+							"width": 356,
+							"height": 204,
+							"defUid": 104426,
+							"px": [1454,308],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hill_village_inn", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_village_inn"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_village_inn", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_village_inn"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [77,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5240,
+							"__worldY": 3194,
+							"iid": "Prop-105668",
+							"width": 84,
+							"height": 87,
+							"defUid": 104426,
+							"px": [1240,378],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hill_village_well", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_village_well"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_village_well", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_village_well"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [110,17],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5760,
+							"__worldY": 3102,
+							"iid": "Prop-105692",
+							"width": 480,
+							"height": 226,
+							"defUid": 104426,
+							"px": [1760,286],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hill_village_notice_board", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_village_notice_board"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_village_notice_board", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_village_notice_board"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [0,26],
 							"__pivot": [0,0],
@@ -21162,9 +21607,9 @@
 									"id": "V_String",
 									"params": ["hobford_board_3"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "STRANGERS AT THE RING: SEE THE GATE OFFICE.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "STRANGERS AT THE GATE: SEE THE GATE OFFICE.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["STRANGERS AT THE RING: SEE THE GATE OFFICE."]
+									"params": ["STRANGERS AT THE GATE: SEE THE GATE OFFICE."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]

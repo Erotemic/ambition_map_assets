@@ -49,6 +49,7 @@ sys.path.insert(0, str(TOOL_SPECS))
 from district_kit import (  # noqa: E402
     WALL, WORLDS, entity, ledge, make_rooms, paint, room, run, sign, solid, start, water,
 )
+from district_scenery import piece  # noqa: E402
 
 WORLD_LDTK = WORLDS / "intro.ldtk"
 GENERATOR = "game/ambition_map_assets/ambition_content/generators/intro/make_specs.py"
@@ -84,6 +85,11 @@ GATE_STACK_WEST = 4928
 STREET_WORLD_Y = 736
 MARKET_W = 1408
 
+#: THE NAMES TABLE. Level 1's place names are placeholders (Jon,
+#: 2026-11-14), so every sign, room title and zone name says them from here;
+#: the dialogue's are in `dialogue/sandbox/names.yarn`. Ids never carry them.
+VILLAGE_NAME = "Hobford"
+
 #: The level is in a band of its own below the town. The upper row's ground
 #: (the workshop's floor, the lane, the meadow, the clearing) is at world y
 #: 2720; the lower row's (the millstream, Hobford, the woods, the siding) at
@@ -91,21 +97,25 @@ MARKET_W = 1408
 UPPER_Y, LOWER_Y = 2048, 2816
 COUNTRY_W, COUNTRY_H, COUNTRY_FLOOR = 2400, 768, 672
 LOW_H, LOW_FLOOR = 640, 512
-WORKSHOP_W, WORKSHOP_H, WORKSHOP_FLOOR = 1600, 448, 352
+WORKSHOP_W, WORKSHOP_H, WORKSHOP_FLOOR = 1920, 448, 352
 #: The ridge path: the top tier of the upper row, from the lane to the
 #: clearing. It is the second way to the clearing's lever.
 RIDGE = 224
 
+#: Where the country's rooms begin in the world: the lane's west edge. The
+#: workshop is west of it, ending there.
+COUNTRY_X = 1600
+
 #: Each room: where it is in the world (its top left), and its size.
 ROOMS_AT = {
-    WORKSHOP: ((0, UPPER_Y + COUNTRY_FLOOR - WORKSHOP_FLOOR), (WORKSHOP_W, WORKSHOP_H)),
-    LANE: ((WORKSHOP_W, UPPER_Y), (COUNTRY_W, COUNTRY_H)),
-    MEADOW: ((WORKSHOP_W + COUNTRY_W, UPPER_Y), (COUNTRY_W, COUNTRY_H)),
-    CLEARING: ((WORKSHOP_W + 2 * COUNTRY_W, UPPER_Y), (COUNTRY_W, COUNTRY_H)),
-    MILLSTREAM: ((WORKSHOP_W, LOWER_Y), (COUNTRY_W, LOW_H)),
-    VILLAGE: ((WORKSHOP_W + COUNTRY_W, LOWER_Y), (COUNTRY_W, LOW_H)),
-    WOODS: ((WORKSHOP_W + 2 * COUNTRY_W, LOWER_Y), (COUNTRY_W, LOW_H)),
-    SIDING: ((WORKSHOP_W + 3 * COUNTRY_W, LOWER_Y), (1920, LOW_H)),
+    WORKSHOP: ((COUNTRY_X - WORKSHOP_W, UPPER_Y + COUNTRY_FLOOR - WORKSHOP_FLOOR), (WORKSHOP_W, WORKSHOP_H)),
+    LANE: ((COUNTRY_X, UPPER_Y), (COUNTRY_W, COUNTRY_H)),
+    MEADOW: ((COUNTRY_X + COUNTRY_W, UPPER_Y), (COUNTRY_W, COUNTRY_H)),
+    CLEARING: ((COUNTRY_X + 2 * COUNTRY_W, UPPER_Y), (COUNTRY_W, COUNTRY_H)),
+    MILLSTREAM: ((COUNTRY_X, LOWER_Y), (COUNTRY_W, LOW_H)),
+    VILLAGE: ((COUNTRY_X + COUNTRY_W, LOWER_Y), (COUNTRY_W, LOW_H)),
+    WOODS: ((COUNTRY_X + 2 * COUNTRY_W, LOWER_Y), (COUNTRY_W, LOW_H)),
+    SIDING: ((COUNTRY_X + 3 * COUNTRY_W, LOWER_Y), (1920, LOW_H)),
     # The town under the gate stack (not level 1).
     MARKET: ((GATE_STACK_WEST - MARKET_W, STREET_WORLD_Y - 608), (MARKET_W, 768)),
     UNDER_TOWN: ((GATE_STACK_WEST - MARKET_W, 896), (1600, 640)),
@@ -205,38 +215,57 @@ def undertown(rid, entities, title, *, dangerous=False, extra=""):
 # ------------------------------------------------------------ the workshop
 
 #: The charging cart Scout wakes on (`the_cart_of_the_wake_room` measures
-#: it): its bed, and the ramp let down from its back end.
-CART_BED = (48, 224, 294)
-CART_RAMP_FOOT = 326
-#: The test plinth: the first jump, a step of 48.
-PLINTH = (440, 520, WORKSHOP_FLOOR - 48)
-#: Up to the loft: a crate (48), then the loft boards (64 more).
-LOFT_CRATE = (600, 664, WORKSHOP_FLOOR - 48)
-LOFT = (640, 940, WORKSHOP_FLOOR - 112)
-#: The bench, and the Creator at it. The raid comes in at the barn door
-#: beside him, so the raiders are in earshot of the conversation they break.
-BENCH = (1080, 1200, WORKSHOP_FLOOR - 48)
-CREATOR_X = 1240
+#: it): its bed, and the ramp let down from its back end. It stands beside
+#: the Creator, so the first view holds Scout waking and him at his bench.
+CART_BED = (720, 896, 294)
+CART_RAMP_FOOT = 998
+#: The test plinth: the first jump, a step of 48, west of the cart.
+PLINTH = (540, 620, WORKSHOP_FLOOR - 48)
+#: Up to the loft at the west end: a crate (48), then the loft boards (64
+#: more). The gauge is at the far end of the boards.
+LOFT_CRATE = (396, 460, WORKSHOP_FLOOR - 48)
+LOFT = (120, 420, WORKSHOP_FLOOR - 112)
+#: The Creator, and his bench between him and the barn door.
+CREATOR_X = 1060
+BENCH = (1100, 1220, WORKSHOP_FLOOR - 48)
+#: The barn door, and the yard outside it. The raiders come up the yard, out
+#: of shot while Scout is in the barn (its camera zone ends at the door), and
+#: walk in at the door when it breaks: the camera already holds the door.
 BARN_DOOR_X = 1320
+DOOR_H = 112
+#: The yard's gate: the raid's own wall (no `gated_by`), standing only while
+#: the fight is on, so no one leaves the yard mid-fight.
+YARD_GATE_X = 1840
 RAID = "intro_workshop_raid"
+#: The story calls the raid: the Creator hears the cart (his talk), or Scout
+#: goes to the barn door without talking to him (`intro_raid_at_the_door`).
+#: The room starts the raid while this is set (`while_live_when`); a won raid
+#: spawns finished, so it does not start again.
+RAIDERS_COMING = "intro_raiders_coming"
+#: The raiders break the barn door's bar, a beat after they are called, so
+#: the door is down when they reach it.
+DOOR_BROKEN = "intro_barn_door_broken"
 
 
 def workshop():
-    """THE WORKSHOP. The Creator's barn outside Hobford: the charging cart,
-    the test plinth, the parts loft, his bench, the barn door. The raid
-    starts in his conversation (`encounter.start`, at the node it breaks), or
-    when Scout goes to the barn door without talking to him (the trigger in
-    front of the door): the goblins are coming either way. The barn door is
-    barred for the test and is broken in the raid."""
+    """THE WORKSHOP. The Creator's barn outside Hobford: the loft, the test
+    plinth, the charging cart, his bench, the barred barn door, and the yard
+    outside. The raid is called in his conversation, at the end of his
+    questions, or when Scout goes to the barn door without talking to him
+    (the cutscene in front of it); the room's line starts it then. The
+    goblins come up the yard either way and break the door's bar."""
     rid = WORKSHOP
     w, h, g = WORKSHOP_W, WORKSHOP_H, WORKSHOP_FLOOR
     x0, x1, bed = CART_BED
     check_reach(rid, [("floor", g), ("plinth", PLINTH[2]), ("floor", g), ("crate", LOFT_CRATE[2]), ("loft", LOFT[2]),
                       ("floor", g), ("bench", BENCH[2]), ("floor", g)])
+    front = BARN_DOOR_X + 24
     e = [
-        solid("roof", 0, 0, w, 32),
+        # The barn: its roof ends at its front wall; the yard is open.
+        solid("roof", 0, 0, front, 32),
         solid("west_wall", 0, 32, WALL, g - 32),
-        solid("east_wall", w - WALL, 32, WALL, g - 96 - 32),
+        solid("barn_front", BARN_DOOR_X, 32, 24, g - DOOR_H - 32),
+        solid("yard_east_wall", w - WALL, 0, WALL, g - 96),
         solid("floor", 0, g, w, h - g),
         # The cart: its bed is a platform that stands still (`speed: 0`; a
         # moving platform with no speed moves), and its back end is let down
@@ -247,38 +276,53 @@ def workshop():
                visual="intro_cart_ramp", one_way=True),
         entity("SurfaceChain", x1, bed - 16, 16, 16, name="Cart ramp", points=f"{x1},{bed}; {CART_RAMP_FOOT},{g}",
                visual="none"),
-        entity("PlayerStart", 122, 248, 28, 46, name="wake_room_spawn"),
+        entity("PlayerStart", x0 + 74, 248, 28, 46, name="wake_room_spawn"),
         # The hub's door comes out here (one way: nothing leads back).
-        entity("LoadingZone", 112, 198, 48, 96, id="wake_room_arrival", name="wake room arrival", activation="Door",
+        entity("LoadingZone", x0 + 64, 198, 48, 96, id="wake_room_arrival", name="wake room arrival", activation="Door",
                presentation="SceneArt"),
-        sign("workshop_sign_cart", 176, 120, "DO NOT SWITCH ON UNTIL FINISHED", 300),
+        sign("workshop_sign_cart", x0 + 128, 120, "DO NOT SWITCH ON UNTIL FINISHED", 300),
         solid("test_plinth", PLINTH[0], PLINTH[2], PLINTH[1] - PLINTH[0], g - PLINTH[2]),
-        sign("workshop_sign_plinth", 480, PLINTH[2] - 60, "LOAD TEST", 140),
+        sign("workshop_sign_plinth", 580, PLINTH[2] - 60, "LOAD TEST", 140),
         solid("loft_crate", LOFT_CRATE[0], LOFT_CRATE[2], LOFT_CRATE[1] - LOFT_CRATE[0], g - LOFT_CRATE[2]),
         ledge("parts_loft", LOFT[0], LOFT[2], LOFT[1] - LOFT[0]),
-        # On the loft: the torque gauge he sends Scout for, and an oil can at
-        # the far end of the boards.
-        entity("PickupSpawn", 892, LOFT[2] - 28, 24, 24, name="the torque gauge", kind="flag:intro_torque_gauge_found"),
-        entity("PickupSpawn", 664, LOFT[2] - 28, 24, 24, name="a can of oil", kind="health:2"),
-        sign("workshop_sign_loft", 790, LOFT[2] - 60, "GAUGES GO BACK ON THE SHELF", 300),
-        solid("bench", BENCH[0], BENCH[2], BENCH[1] - BENCH[0], g - BENCH[2]),
-        sign("workshop_sign_bench", 1140, BENCH[2] - 60, "LOGS. DO NOT TIDY.", 220),
+        # On the loft: the torque gauge he sends Scout for, at the far end of
+        # the boards, and an oil can by the crate.
+        entity("PickupSpawn", 148, LOFT[2] - 28, 24, 24, name="the torque gauge", kind="flag:intro_torque_gauge_found"),
+        entity("PickupSpawn", 372, LOFT[2] - 28, 24, 24, name="a can of oil", kind="health:2"),
+        sign("workshop_sign_loft", 270, LOFT[2] - 60, "GAUGES GO BACK ON THE SHELF", 300),
         npc("npc_creator", "creator_intro", "Talk to the Creator", CREATOR_X, g),
-        entity("EncounterTrigger", CREATOR_X + 32, 32, BARN_DOOR_X - CREATOR_X - 32, g - 32, id=RAID,
-               name=f"{RAID}_trigger"),
-        # The raid stays won: its clear greens this switch, which disarms the
-        # trigger the fight carries bodies back over. A blow on the whistle a
-        # raider dropped calls the raid again.
-        entity("Switch", 1000, g - 32, 24, 32, id=f"{RAID}_again", name="a raider's whistle",
+        # The bench top is a board on trestles: bodies go under it, so it
+        # stands between the Creator and the door without barring the way.
+        ledge("bench", BENCH[0], BENCH[2], BENCH[1] - BENCH[0]),
+        sign("workshop_sign_bench", 1160, BENCH[2] - 60, "LOGS. DO NOT TIDY.", 220),
+        # The raid: its trigger is in the roof, where no body goes, so only
+        # the room's line starts it (`while_live`, when the story calls it).
+        entity("EncounterTrigger", 64, 0, 32, 32, id=RAID, name=f"{RAID}_trigger"),
+        # Scout at the door without having talked to him: the raid is called
+        # there, and the bar breaks.
+        entity("CutsceneTrigger", BENCH[1] + 24, 32, BARN_DOOR_X - BENCH[1] - 24, g - 32,
+               cutscene="intro_raid_at_the_door"),
+        # A blow on the whistle a raider dropped calls the raid again: the
+        # reset puts it back to the start, and the room's line starts it.
+        entity("Switch", 680, g - 32, 24, 32, id=f"{RAID}_again", name="a raider's whistle",
                prompt="Blow the whistle", target_encounter=RAID, action="ResetEncounter"),
-        entity("LockWall", BARN_DOOR_X, 32, 24, g - 32, id="intro_barn_door", name="the barn door",
-               gated_by=f"encounter.cleared {RAID}"),
-        sign("workshop_sign_door", BARN_DOOR_X + 12, 140, "TEST IN PROGRESS. DOOR BARRED.", 320),
-        entity("CutsceneTrigger", BARN_DOOR_X + 24, 32, 80, g - 32, cutscene="creator_final_fragment"),
+        entity("LockWall", BARN_DOOR_X, g - DOOR_H, 24, DOOR_H, id="intro_barn_door", name="the barn door",
+               gated_by=f"world.flag_set {DOOR_BROKEN}"),
+        sign("workshop_sign_door", BARN_DOOR_X - 150, 120, "TEST IN PROGRESS. DOOR BARRED.", 320),
+        # Inside the barn the camera stops at the barn's front wall, so the
+        # yard is out of shot until Scout goes out into it: the raiders come
+        # up the yard unseen and are first seen in the doorway.
+        entity("CameraZone", 0, 0, front, h, id="intro_barn_camera", name="the barn", mode="Default",
+               clamp_mode="zone_bounds"),
+        # Out in the yard, once the fight is over: his last words.
+        entity("CutsceneTrigger", front, 32, 96, g - 32, cutscene="creator_final_fragment", after_encounter=RAID),
+        entity("LockWall", YARD_GATE_X, g - 96, 24, 96, id="intro_yard_gate", name="the yard gate"),
         edge("workshop_to_lane", "out into the lane", w - WALL, g, LANE, "lane_from_workshop"),
     ]
     return build(rid, e, "THE WORKSHOP", WORKSHOP_MUSIC, look=WORKSHOP_LOOK, bg=BG, dangerous=True,
-                 extra='\n    entry_cutscene: "intro_wake",')
+                 extra=('\n    entry_cutscene: "intro_wake",'
+                        f'\n    while_live: "encounter.start encounter:{RAID}",'
+                        f'\n    while_live_when: "world.flag_set {RAIDERS_COMING}",'))
 
 
 # ------------------------------------------------------------- the lane
@@ -313,6 +357,7 @@ def lane():
         entity("LockWall", SURVEY_LINE_X, 32, 16, RIDGE - 32, id=SURVEY_LINE, name="the survey line",
                gated_by="bob_field_survey_received"),
         sign("lane_sign_line", SURVEY_LINE_X, RIDGE - 110, "SURVEY LINE. PLEASE DON'T STEP ON IT.", 380),
+        piece("hill_survey_station", 960, 560),
         npc("npc_alice", "alice_lane", "Talk to Alice", ALICE_X, g, brain="meets_the_player"),
         sign("lane_sign_station", ALICE_X + 120, g - 150, "SURVEY STATION. MIND THE TRIPOD.", 340),
         hen(rid, 1, 260, g),
@@ -320,12 +365,12 @@ def lane():
         solid("hedge_bank", 1360, g - 48, 112, 48),
         door("lane_to_millstream", "the bank path down to the mill", 1640, g, MILLSTREAM, "millstream_from_lane"),
         sign("lane_sign_mill", 1664, g - 140, "MILL", 120),
-        sign("lane_sign_track", 2200, g - 160, "TRACK TO THE RING", 260),
+        sign("lane_sign_track", 2200, g - 160, "TRACK TO THE GATE", 260),
         edge("lane_to_meadow", "up the cart track", w - WALL, g, MEADOW, "meadow_from_lane"),
         edge("lane_to_meadow_high", "along the ridge", w - WALL, RIDGE, MEADOW, "meadow_from_lane_high"),
         start(rid, 120, g),
     ]
-    return build(rid, e, "HOBFORD LANE", COUNTRY_MUSIC, dangerous=True)
+    return build(rid, e, f"{VILLAGE_NAME.upper()} LANE", COUNTRY_MUSIC, dangerous=True)
 
 
 # ----------------------------------------------------------- the meadow
@@ -353,15 +398,16 @@ def meadow():
         edge("meadow_from_lane_high", "along the ridge", 0, RIDGE, LANE, "lane_to_meadow_high"),
         ledge("ridge_path", WALL, RIDGE, w - 2 * WALL),
         solid("stone_wall_1", 600, g - 48, 32, 48),
+        piece("hill_meadow_oak", 880, 200),
         solid("shepherds_hut", HUT[0], HUT[2], HUT[1] - HUT[0], g - HUT[2]),
         *[ledge(f"oak_limb_{n}", x, y, LIMB_W) for n, (x, y) in enumerate(OAK_LIMBS)],
-        door("meadow_to_hobford", "the hill path down to Hobford", 1420, g, VILLAGE, "hobford_from_meadow"),
-        sign("meadow_sign_hobford", 1444, g - 140, "HOBFORD", 140),
+        door("meadow_to_hobford", f"the hill path down to {VILLAGE_NAME}", 1420, g, VILLAGE, "hobford_from_meadow"),
+        sign("meadow_sign_hobford", 1444, g - 140, VILLAGE_NAME.upper(), 140),
         solid("stone_wall_2", 1600, g - 48, 32, 48),
         solid("turf_bank", 1800, g - 64, 320, 64),
         npc("npc_companion_dog", "hobford_dog", "Greet the dog", 1900, g - 64, brain="companion_dog_roam", w=64, h=64),
-        sign("meadow_sign_ring", 2240, g - 160, "THE RING", 160),
-        edge("meadow_to_clearing", "on to the ring", w - WALL, g, CLEARING, "clearing_from_meadow"),
+        sign("meadow_sign_ring", 2240, g - 160, "THE GATE", 160),
+        edge("meadow_to_clearing", "on to the gate", w - WALL, g, CLEARING, "clearing_from_meadow"),
         edge("meadow_to_clearing_high", "along the ridge", w - WALL, RIDGE, CLEARING, "clearing_from_meadow_high"),
         start(rid, 120, g),
     ]
@@ -377,6 +423,9 @@ BARRIER_X = 1560
 BARRIER_H = 176
 POST_ROOF = (1380, BARRIER_X, COUNTRY_FLOOR - 192)
 BARRIER_LEVER = "hobford_barrier_lever"
+#: Set by the lever, and never cleared: the barrier stays up once lifted, so
+#: a second pull cannot shut a body out on either side of it.
+BARRIER_LIFTED = "hobford_barrier_lifted"
 GATE_ZONE = "hobford_gate_zone"
 GATE_TERMINAL = "hobford_gate_terminal"
 
@@ -401,22 +450,23 @@ def clearing():
         solid("standing_stone_2", 880, g - 48, 48, 48),
         door("clearing_to_siding", "the stair down to the freight siding", 1180, g, SIDING, "siding_from_clearing"),
         sign("clearing_sign_siding", 1204, g - 140, "FREIGHT SIDING", 220),
+        piece("hill_gate_office", 1370, 460),
         ledge("guard_post_roof", POST_ROOF[0], POST_ROOF[2], POST_ROOF[1] - POST_ROOF[0]),
         sign("clearing_sign_post", 1470, POST_ROOF[2] - 60, "GATE OFFICE. PERSONS BY APPOINTMENT.", 360),
         entity("LockWall", BARRIER_X, g - BARRIER_H, 24, BARRIER_H, id="hobford_barrier", name="the barrier",
-               gated_by=f"world.switch_on {BARRIER_LEVER}"),
+               gated_by=f"world.flag_set {BARRIER_LIFTED}"),
         entity("Switch", 1630, g - 32, 24, 32, id=BARRIER_LEVER, name="the barrier lever", prompt="Lift the barrier",
-               action="ToggleFlag"),
+               action="ToggleFlag", on_activate=f"world.set_flag {BARRIER_LIFTED} true"),
         # The ring: a dialed ring of the gate network (`gate_network.ron`,
         # `gate_portals.ron`), the props it is drawn with, and its terminal.
-        entity("Prop", ring_x, g - 288, 288, 288, name="Hobford Ring", kind="triangle_gate_ring"),
-        entity("Prop", ring_x, g - 288, 288, 288, name="Hobford Portal", kind="triangle_gate_portal"),
-        entity("LoadingZone", ring_x + 72, g - 288, 144, 288, id=GATE_ZONE, name="the ring", activation="Door",
+        entity("Prop", ring_x, g - 288, 288, 288, name="Clearing Gate Ring", kind="triangle_gate_ring"),
+        entity("Prop", ring_x, g - 288, 288, 288, name="Clearing Gate Portal", kind="triangle_gate_portal"),
+        entity("LoadingZone", ring_x + 72, g - 288, 144, 288, id=GATE_ZONE, name="the gate", activation="Door",
                presentation="SceneArt"),
-        entity("Prop", 1690, g - 56, 64, 56, name="Hobford Dialer", kind="gate_dialer_triangle"),
-        entity("Switch", 1710, g - 44, 24, 32, id=GATE_TERMINAL, name="Hobford Ring terminal", prompt="Dial the gate",
+        entity("Prop", 1690, g - 56, 64, 56, name="Clearing Gate Dialer", kind="gate_dialer_triangle"),
+        entity("Switch", 1710, g - 44, 24, 32, id=GATE_TERMINAL, name=f"{VILLAGE_NAME} gate terminal", prompt="Dial the gate",
                action="GateTerminal"),
-        sign("clearing_sign_ring", ring_x + 144, g - 340, "HOBFORD RING. FREIGHT WINDOW ON THE BOARD.", 420),
+        sign("clearing_sign_ring", ring_x + 144, g - 340, f"{VILLAGE_NAME.upper()} GATE. FREIGHT WINDOW ON THE BOARD.", 420),
         door("clearing_post_yard_door", "the back stair down to the siding", 2200, g, SIDING, "siding_to_post_yard"),
         start(rid, 120, g),
     ]
@@ -497,12 +547,13 @@ def millstream():
         solid("rock_east", s1 - 48, s_bed - 48, 48, 48),
         *[solid(f"stone_{n}", x0, g, x1 - x0, s_bed - g) for n, (x0, x1) in enumerate(STONES)],
         solid("east_bank", s1, g, w - s1, h - g),
+        piece("hill_village_mill", 1500, 220),
         ledge("mill_porch", 1520, g - 48, 160),
         ledge("mill_upper_floor", 1600, g - 112, 220),
         ledge("mill_loft_window", 1720, g - 176, 120),
         entity("PickupSpawn", 1800, g - 176 - 28, 24, 24, name="a few coins", kind="currency:10"),
-        sign("millstream_sign_mill", 1700, g - 260, "HOBFORD MILL. FLOUR, FEED, NO CREDIT.", 380),
-        edge("millstream_to_hobford", "on into Hobford", w - WALL, g, VILLAGE, "hobford_from_millstream"),
+        sign("millstream_sign_mill", 1700, g - 260, f"{VILLAGE_NAME.upper()} MILL. FLOUR, FEED, NO CREDIT.", 380),
+        edge("millstream_to_hobford", f"on into {VILLAGE_NAME}", w - WALL, g, VILLAGE, "hobford_from_millstream"),
         start(rid, 240, g),
     ]
     return build(rid, e, "THE MILLSTREAM", COUNTRY_MUSIC, dangerous=True)
@@ -525,6 +576,13 @@ def village():
     e = [
         *walls(w, g, west=[g], east=[g]),
         solid("street", 0, g, w, h - g),
+        # The houses, the well and the board, drawn on the room's boards
+        # (`hobford_props.py` in the sprite renderer).
+        piece("hill_village_cottage", 240, 300),
+        piece("hill_village_smithy", 840, 270),
+        piece("hill_village_inn", 1440, 300),
+        piece("hill_village_well", 1236, 370),
+        piece("hill_village_notice_board", 1750, 280),
         edge("hobford_from_millstream", "back to the millstream", 0, g, MILLSTREAM, "millstream_to_hobford"),
         *[ledge(f"{n}_porch", px, g - 48, 80) for n, px, _, _ in HOUSES],
         *[ledge(f"{n}_roof", x0, g - 112, x1 - x0) for n, _, x0, x1 in HOUSES],
@@ -535,12 +593,12 @@ def village():
         sign("hobford_sign_inn", 1650, g - 150, "THE PLOUGH", 160),
         sign("hobford_board_1", 2000, g - 200, "FREIGHT WINDOW: TOMORROW, NOON.", 360),
         sign("hobford_board_2", 2000, g - 170, "LOST: ONE SPECKLED HEN. ASK AT THE PLOUGH.", 420),
-        sign("hobford_board_3", 2000, g - 140, "STRANGERS AT THE RING: SEE THE GATE OFFICE.", 440),
+        sign("hobford_board_3", 2000, g - 140, "STRANGERS AT THE GATE: SEE THE GATE OFFICE.", 440),
         door("hobford_from_meadow", "the hill path up to the meadow", 2160, g, MEADOW, "meadow_to_hobford"),
         edge("hobford_to_woods", "the road into the woods", w - WALL, g, WOODS, "woods_from_hobford"),
         start(rid, 120, g),
     ]
-    return build(rid, e, "HOBFORD", VILLAGE_MUSIC)
+    return build(rid, e, VILLAGE_NAME.upper(), VILLAGE_MUSIC)
 
 
 # ------------------------------------------------------------ the woods
@@ -561,7 +619,7 @@ def woods():
     e = [
         *walls(w, g, west=[g], east=[g]),
         solid("floor", 0, g, w, h - g),
-        edge("woods_from_hobford", "back to Hobford", 0, g, VILLAGE, "hobford_to_woods"),
+        edge("woods_from_hobford", f"back to {VILLAGE_NAME}", 0, g, VILLAGE, "hobford_to_woods"),
         solid("root_1", 420, g - 48, 64, 48),
         ledge("fallen_trunk", 640, g - 64, 240),
         solid("root_2", 1000, g - 48, 64, 48),
@@ -574,7 +632,7 @@ def woods():
         edge("woods_to_siding", "along the goblins' trail", w - WALL, g, SIDING, "siding_from_woods"),
         start(rid, 120, g),
     ]
-    return build(rid, e, "HOBFORD WOODS", COUNTRY_MUSIC, look=WOODS_LOOK, dangerous=True)
+    return build(rid, e, f"{VILLAGE_NAME.upper()} WOODS", COUNTRY_MUSIC, look=WOODS_LOOK, dangerous=True)
 
 
 # ------------------------------------------- the town under the gate stack
