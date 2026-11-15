@@ -8308,6 +8308,10 @@
 								{ "__identifier": "name", "__type": "String", "__value": "the yard gate", "__tile": null, "defUid": 4083, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["the yard gate"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "world.flag_set intro_case_taken", "__tile": null, "defUid": 104934, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["world.flag_set intro_case_taken"]
 								}] }
 							]
 						},

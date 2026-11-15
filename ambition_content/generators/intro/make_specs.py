@@ -282,9 +282,12 @@ BENCH = (1100, 1220, WORKSHOP_FLOOR - 48)
 #: walk in at the door when it breaks: the camera already holds the door.
 BARN_DOOR_X = 1320
 DOOR_H = 112
-#: The yard's gate: the raid's own wall (no `gated_by`), standing only while
-#: the fight is on, so no one leaves the yard mid-fight.
+#: The yard's gate stands until the raid's last raider has run out through it
+#: with the case (`intro_raider_runs_with_the_case`, when the other two have
+#: fallen, opens it first), so no one leaves the yard mid-fight. The Creator's last words
+#: open it too, for a raid whose last two fell together.
 YARD_GATE_X = 1840
+CASE_TAKEN = "intro_case_taken"
 RAID = "intro_workshop_raid"
 #: The story calls the raid: the Creator hears the cart (his talk), or Scout
 #: goes to the barn door without talking to him (`intro_raid_at_the_door`).
@@ -367,7 +370,8 @@ def workshop():
         # or the yard Scout is: a fight carries Scout out into the yard, and a
         # strip at the door was already behind him.
         entity("CutsceneTrigger", WALL, 32, w - 2 * WALL, g - 32, cutscene="creator_final_fragment", after_encounter=RAID),
-        entity("LockWall", YARD_GATE_X, g - 96, 24, 96, id="intro_yard_gate", name="the yard gate"),
+        entity("LockWall", YARD_GATE_X, g - 96, 24, 96, id="intro_yard_gate", name="the yard gate",
+               gated_by=f"world.flag_set {CASE_TAKEN}"),
         edge("workshop_to_lane", "out into the lane", w - WALL, g, LANE, "lane_from_workshop"),
     ]
     return build(rid, e, "THE WORKSHOP", WORKSHOP_MUSIC, look=WORKSHOP_LOOK, bg=BG, dangerous=True,
