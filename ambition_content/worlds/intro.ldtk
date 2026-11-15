@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 106095,
+	"nextUid": 106164,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -21363,6 +21363,35 @@
 							]
 						},
 						{
+							"__identifier": "NpcSpawn",
+							"__grid": [87,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 16636,
+							"__worldY": 2672,
+							"iid": "NpcSpawn-106102",
+							"width": 32,
+							"height": 48,
+							"defUid": 2006,
+							"px": [1404,624],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_valley_gatekeeper", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_valley_gatekeeper"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk to the gatekeeper", "__tile": null, "defUid": 3013, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Talk to the gatekeeper"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "valley_gatekeeper", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["valley_gatekeeper"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LockWall",
 							"__grid": [97,31],
 							"__pivot": [0,0],
@@ -23687,6 +23716,35 @@
 							]
 						},
 						{
+							"__identifier": "NpcSpawn",
+							"__grid": [89,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 6352,
+							"__worldY": 3280,
+							"iid": "NpcSpawn-106154",
+							"width": 32,
+							"height": 48,
+							"defUid": 2006,
+							"px": [1424,464],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_valley_miller", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_valley_miller"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk to the miller", "__tile": null, "defUid": 3013, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Talk to the miller"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "valley_miller", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["valley_miller"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "PickupSpawn",
 							"__grid": [112,19],
 							"__pivot": [0,0],
@@ -24727,6 +24785,64 @@
 								{ "__identifier": "kind", "__type": "String", "__value": "currency:20", "__tile": null, "defUid": 3040, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["currency:20"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [61,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 8312,
+							"__worldY": 3280,
+							"iid": "NpcSpawn-106132",
+							"width": 32,
+							"height": 48,
+							"defUid": 2006,
+							"px": [984,464],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_valley_trader", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_valley_trader"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk to the trader", "__tile": null, "defUid": 3013, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Talk to the trader"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "valley_trader", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["valley_trader"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "NpcSpawn",
+							"__grid": [97,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 8892,
+							"__worldY": 3280,
+							"iid": "NpcSpawn-106133",
+							"width": 32,
+							"height": 48,
+							"defUid": 2006,
+							"px": [1564,464],
+							"fieldInstances": [
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_valley_innkeeper", "__tile": null, "defUid": 3012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["npc_valley_innkeeper"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk to the innkeeper", "__tile": null, "defUid": 3013, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Talk to the innkeeper"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "valley_innkeeper", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["valley_innkeeper"]
 								}] }
 							]
 						},

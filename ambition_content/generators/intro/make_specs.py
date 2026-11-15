@@ -514,6 +514,8 @@ def clearing():
         solid("standing_stone_2", 880, hi - 48, 48, 48),
         piece("hill_gate_office", 1370, 460),
         sign("clearing_sign_post", 1470, hi - 252, "GATE OFFICE. PERSONS BY APPOINTMENT.", 360),
+        # The gatekeeper, at the office door on the road's side of the barrier.
+        npc("npc_valley_gatekeeper", "valley_gatekeeper", "Talk to the gatekeeper", 1420, hi),
         entity("LockWall", BARRIER_X, hi - BARRIER_H, 24, BARRIER_H, id="hobford_barrier", name="the barrier",
                gated_by=f"world.flag_set {BARRIER_LIFTED}"),
         entity("Switch", BARRIER_X - 56, hi - 32, 24, 32, id=BARRIER_LEVER, name="the barrier lever",
@@ -616,6 +618,8 @@ def millstream():
         *[solid(f"stone_{n}", x0, g, x1 - x0, s_bed - g) for n, (x0, x1) in enumerate(STONES)],
         solid("east_bank", s1, g, w - s1, h - g),
         piece("hill_village_mill", 1500, 220),
+        # The miller, on the bank by his door.
+        npc("npc_valley_miller", "valley_miller", "Talk to the miller", 1440, g),
         ledge("mill_porch", 1520, g - 48, 160),
         ledge("mill_upper_floor", 1600, g - 112, 220),
         ledge("mill_loft_window", 1720, g - 176, 120),
@@ -637,7 +641,8 @@ HOUSES = [("cottage", 260, 300, 540), ("smithy", 860, 900, 1160), ("inn", 1460, 
 def village():
     """HOBFORD. A short street: cottages, the old smithy that sells gate
     goods now, the well, the inn, the notice board. West is the mill; east
-    the road goes into the woods."""
+    the road goes into the woods. The trader keeps the smithy and the
+    innkeeper the Plough."""
     rid = VILLAGE
     w, h, g = COUNTRY_W, LOW_H, LOW_FLOOR
     check_reach(rid, [("street", g), ("porch", g - 48), ("roof", g - 112), ("loft", g - 176)])
@@ -657,6 +662,10 @@ def village():
         ledge("smithy_loft", 1000, g - 176, 120),
         entity("PickupSpawn", 1060, g - 176 - 28, 24, 24, name="a dropped purse", kind="currency:20"),
         solid("well", 1250, g - 48, 64, 48),
+        # The smith who sells gate goods, at his door; the innkeeper at the
+        # Plough's, where the board sends people about lost things.
+        npc("npc_valley_trader", "valley_trader", "Talk to the trader", 1000, g),
+        npc("npc_valley_innkeeper", "valley_innkeeper", "Talk to the innkeeper", 1580, g),
         sign("hobford_sign_smithy", 1030, g - 150, "GATE GOODS: LAMP OIL, SALT, BATTERIES", 380),
         sign("hobford_sign_inn", 1650, g - 150, "THE PLOUGH", 160),
         sign("hobford_board_1", 2000, g - 200, "FREIGHT WINDOW: TOMORROW, NOON.", 360),
