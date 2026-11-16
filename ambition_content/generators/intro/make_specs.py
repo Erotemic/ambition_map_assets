@@ -455,7 +455,7 @@ def lane():
 #: shepherd's terrace between them with his hut (a step of 64) on it.
 HILL_FOOT, HILL_TOP = 400, 2512
 TERRACE = (1152, 1760, VALLEY_FLOOR - 304)
-HUT = (1400, 1560, VALLEY_FLOOR - 304 - 64)
+HUT = (1392, 1568, VALLEY_FLOOR - 304 - 64)
 
 
 def meadow():
@@ -476,10 +476,12 @@ def meadow():
         solid("shepherds_terrace", t0, ty, t1 - t0, h - ty),
         piece("hill_meadow_oak", 1180, ty - 472),
         solid("shepherds_hut", HUT[0], HUT[2], HUT[1] - HUT[0], ty - HUT[2]),
+        piece("hill_meadow_hut", HUT[0], HUT[2]),
         npc("npc_companion_dog", "hobford_dog", "Greet the dog", 1680, ty, brain="companion_dog_roam", w=64, h=64),
         slope("hill_path_upper", t1, ty, HILL_TOP, hi),
         solid("hilltop", HILL_TOP, hi, w - HILL_TOP, h - hi),
         solid("stone_wall", 2720, hi - 48, 32, 48),
+        piece("hill_meadow_wall", 2720, hi - 48),
         sign("meadow_sign_gate", 2950, hi - 160, "THE GATE", 160),
         edge("meadow_to_clearing", "on to the gate", w - WALL, hi, CLEARING, "clearing_from_meadow"),
         entity("CameraZone", HILL_TOP, 0, w - HILL_TOP, h, id="intro_meadow_lookout", name="the hilltop",
@@ -523,6 +525,7 @@ def clearing():
         edge("clearing_from_meadow", "back down the hill path", 0, hi, MEADOW, "meadow_to_clearing"),
         solid("standing_stone_1", 560, hi - 48, 48, 48),
         solid("standing_stone_2", 880, hi - 48, 48, 48),
+        *[piece("hill_standing_stone", x, hi - 48, name=f"standing stone {n}") for n, x in enumerate((560, 880), start=1)],
         piece("hill_gate_office", 1370, 460),
         sign("clearing_sign_post", 1470, hi - 252, "GATE OFFICE. PERSONS BY APPOINTMENT.", 360),
         # The gatekeeper, at the office door on the road's side of the barrier.
@@ -602,7 +605,8 @@ def siding():
 #: stepping stones cross it flush with the banks. Rocks in the bed at each
 #: bank are the way out of the water.
 STREAM = (500, 1300, LOW_FLOOR + 96)
-STONES = [(600, 664), (760, 824), (920, 984), (1080, 1144), (1220, 1270)]
+#: The stepping stones, on the 16 px grid as the blocks they are.
+STONES = [(592, 672), (752, 832), (912, 992), (1072, 1152), (1216, 1280)]
 
 
 def millstream():
@@ -626,9 +630,12 @@ def millstream():
         entity("PickupSpawn", 440, s_bed - 28, 24, 24, name="a jar of coins", kind="currency:25"),
         solid("stream_bed", s0, s_bed, s1 - s0, h - s_bed),
         water(f"{rid}_stream", s0, g + 8, s1 - s0, s_bed - g - 8),
-        solid("rock_west", s0, s_bed - 48, 48, 48),
+        solid("rock_west", 496, s_bed - 48, 64, 48),
+        piece("hill_stream_rock", 496, s_bed - 48),
         solid("rock_east", s1 - 48, s_bed - 48, 48, 48),
         *[solid(f"stone_{n}", x0, g, x1 - x0, s_bed - g) for n, (x0, x1) in enumerate(STONES)],
+        *[piece("hill_stepping_stone" if x1 - x0 == 80 else "hill_stepping_stone_narrow", x0, g, name=f"stepping stone {n}")
+          for n, (x0, x1) in enumerate(STONES)],
         solid("east_bank", s1, g, w - s1, h - g),
         piece("hill_village_mill", 1500, 220),
         # The miller, on the bank by his door.
@@ -668,22 +675,22 @@ def village():
         piece("hill_village_smithy", 840, 270),
         piece("hill_village_inn", 1440, 300),
         piece("hill_village_well", 1236, 370),
-        piece("hill_village_notice_board", 1750, 280),
+        piece("hill_village_notice_board", 1840, 280),
         edge("hobford_from_millstream", "back to the millstream", 0, g, MILLSTREAM, "millstream_to_hobford"),
         *[ledge(f"{n}_porch", px, g - 48, 80) for n, px, _, _ in HOUSES],
         *[ledge(f"{n}_roof", x0, g - 112, x1 - x0) for n, _, x0, x1 in HOUSES],
         ledge("smithy_loft", 1000, g - 176, 120),
         entity("PickupSpawn", 1060, g - 176 - 28, 24, 24, name="a dropped purse", kind="currency:20"),
-        solid("well", 1250, g - 48, 64, 48),
+        solid("well", 1248, g - 48, 64, 48),
         # The smith who sells gate goods, at his door; the innkeeper at the
         # Plough's, where the board sends people about lost things.
         npc("npc_valley_trader", "valley_trader", "Talk to the trader", 1000, g),
         npc("npc_valley_innkeeper", "valley_innkeeper", "Talk to the innkeeper", 1580, g),
         sign("hobford_sign_smithy", 1030, g - 150, "GATE GOODS: LAMP OIL, SALT, BATTERIES", 380),
         sign("hobford_sign_inn", 1650, g - 150, "THE PLOUGH", 160),
-        sign("hobford_board_1", 2000, g - 200, "FREIGHT WINDOW: TOMORROW, NOON.", 360),
-        sign("hobford_board_2", 2000, g - 170, "LOST: ONE SPECKLED HEN. ASK AT THE PLOUGH.", 420),
-        sign("hobford_board_3", 2000, g - 140, "STRANGERS AT THE GATE: SEE THE GATE OFFICE.", 440),
+        sign("hobford_board_1", 2090, g - 200, "FREIGHT WINDOW: TOMORROW, NOON.", 360),
+        sign("hobford_board_2", 2090, g - 170, "LOST: ONE SPECKLED HEN. ASK AT THE PLOUGH.", 420),
+        sign("hobford_board_3", 2090, g - 140, "STRANGERS AT THE GATE: SEE THE GATE OFFICE.", 440),
         edge("hobford_to_woods", "the road into the woods", w - WALL, g, WOODS, "woods_from_hobford"),
         start(rid, 120, g),
     ]
@@ -709,9 +716,11 @@ def woods():
         *walls(w, g, west=[g], east=[g]),
         solid("floor", 0, g, w, h - g),
         edge("woods_from_hobford", f"back to {VILLAGE_NAME}", 0, g, VILLAGE, "hobford_to_woods"),
-        solid("root_1", 420, g - 48, 64, 48),
+        solid("root_1", 416, g - 48, 80, 48),
+        piece("hill_woods_root", 416, g - 48, name="root 1"),
         ledge("fallen_trunk", 640, g - 64, 240),
-        solid("root_2", 1000, g - 48, 64, 48),
+        solid("root_2", 992, g - 48, 80, 48),
+        piece("hill_woods_root", 992, g - 48, name="root 2"),
         npc("npc_bob", "bob_woods", "Talk to Bob", BOB_X, g),
         sign("woods_sign_camp", BOB_X + 100, g - 150, "SURVEY CAMP. DON'T TOUCH THE STAFF.", 360),
         *[ledge(f"hollow_oak_{n}", x, y, 96) for n, (x, y) in enumerate(HOLLOW)],

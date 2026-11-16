@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 106267,
+	"nextUid": 106405,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -19236,18 +19236,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [74,31],
+							"__grid": [73,31],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 13321,
+							"__worldX": 13308,
 							"__worldY": 2552,
-							"iid": "Prop-105873",
-							"width": 362,
+							"iid": "Prop-106325",
+							"width": 380,
 							"height": 472,
 							"defUid": 104426,
-							"px": [1193,504],
+							"px": [1180,504],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hill_meadow_oak", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
@@ -19256,6 +19256,31 @@
 								{ "__identifier": "kind", "__type": "String", "__value": "hill_meadow_oak", "__tile": null, "defUid": 104425, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["hill_meadow_oak"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [87,57],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 13520,
+							"__worldY": 2960,
+							"iid": "Prop-106326",
+							"width": 176,
+							"height": 64,
+							"defUid": 104426,
+							"px": [1392,912],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hill_meadow_hut", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_meadow_hut"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_meadow_hut", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_meadow_hut"]
 								}] }
 							]
 						},
@@ -19318,6 +19343,31 @@
 								{ "__identifier": "fill", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105767, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [170,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 14848,
+							"__worldY": 2672,
+							"iid": "Prop-106329",
+							"width": 32,
+							"height": 48,
+							"defUid": 104426,
+							"px": [2720,624],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hill_meadow_wall", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_meadow_wall"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_meadow_wall", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_meadow_wall"]
 								}] }
 							]
 						},
@@ -21373,6 +21423,56 @@
 									"params": ["meadow_to_clearing"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [35,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 15792,
+							"__worldY": 2672,
+							"iid": "Prop-106296",
+							"width": 48,
+							"height": 48,
+							"defUid": 104426,
+							"px": [560,624],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "standing stone 1", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["standing stone 1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_standing_stone", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_standing_stone"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [55,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 16112,
+							"__worldY": 2672,
+							"iid": "Prop-106297",
+							"width": 48,
+							"height": 48,
+							"defUid": 104426,
+							"px": [880,624],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "standing stone 2", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["standing stone 2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_standing_stone", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_standing_stone"]
+								}] }
 							]
 						},
 						{
@@ -23756,6 +23856,156 @@
 						},
 						{
 							"__identifier": "Prop",
+							"__grid": [31,35],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5424,
+							"__worldY": 3376,
+							"iid": "Prop-106388",
+							"width": 64,
+							"height": 48,
+							"defUid": 104426,
+							"px": [496,560],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hill_stream_rock", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_stream_rock"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_stream_rock", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_stream_rock"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [37,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5520,
+							"__worldY": 3328,
+							"iid": "Prop-106389",
+							"width": 80,
+							"height": 96,
+							"defUid": 104426,
+							"px": [592,512],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "stepping stone 0", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stepping stone 0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_stepping_stone", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_stepping_stone"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [47,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5680,
+							"__worldY": 3328,
+							"iid": "Prop-106390",
+							"width": 80,
+							"height": 96,
+							"defUid": 104426,
+							"px": [752,512],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "stepping stone 1", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stepping stone 1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_stepping_stone", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_stepping_stone"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [57,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5840,
+							"__worldY": 3328,
+							"iid": "Prop-106391",
+							"width": 80,
+							"height": 96,
+							"defUid": 104426,
+							"px": [912,512],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "stepping stone 2", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stepping stone 2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_stepping_stone", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_stepping_stone"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [67,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6000,
+							"__worldY": 3328,
+							"iid": "Prop-106392",
+							"width": 80,
+							"height": 96,
+							"defUid": 104426,
+							"px": [1072,512],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "stepping stone 3", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stepping stone 3"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_stepping_stone", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_stepping_stone"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [76,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6144,
+							"__worldY": 3328,
+							"iid": "Prop-106393",
+							"width": 64,
+							"height": 96,
+							"defUid": 104426,
+							"px": [1216,512],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "stepping stone 4", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["stepping stone 4"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_stepping_stone_narrow", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_stepping_stone_narrow"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
 							"__grid": [94,15],
 							"__pivot": [0,0],
 							"__tags": [],
@@ -24519,16 +24769,16 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,2,2,2,2,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,2,2,2,2,
 						2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -24746,13 +24996,13 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 8568,
+							"__worldX": 8566,
 							"__worldY": 3194,
-							"iid": "Prop-105668",
+							"iid": "Prop-106363",
 							"width": 84,
-							"height": 87,
+							"height": 134,
 							"defUid": 104426,
-							"px": [1240,378],
+							"px": [1238,378],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hill_village_well", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
@@ -24766,18 +25016,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [110,17],
+							"__grid": [115,17],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 9088,
+							"__worldX": 9178,
 							"__worldY": 3102,
-							"iid": "Prop-105692",
+							"iid": "Prop-106274",
 							"width": 480,
 							"height": 226,
 							"defUid": 104426,
-							"px": [1760,286],
+							"px": [1850,286],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hill_village_notice_board", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
@@ -24964,18 +25214,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [113,19],
+							"__grid": [119,19],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 9148,
+							"__worldX": 9238,
 							"__worldY": 3128,
-							"iid": "DebugLabel-105466",
+							"iid": "DebugLabel-106281",
 							"width": 360,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1820,312],
+							"px": [1910,312],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hobford_board_1", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -24990,18 +25240,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [111,21],
+							"__grid": [117,21],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 9118,
+							"__worldX": 9208,
 							"__worldY": 3158,
-							"iid": "DebugLabel-105467",
+							"iid": "DebugLabel-106282",
 							"width": 420,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1790,342],
+							"px": [1880,342],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hobford_board_2", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -25016,18 +25266,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [111,23],
+							"__grid": [116,23],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 9108,
+							"__worldX": 9198,
 							"__worldY": 3188,
-							"iid": "DebugLabel-105468",
+							"iid": "DebugLabel-106283",
 							"width": 440,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1780,372],
+							"px": [1870,372],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hobford_board_3", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -25885,6 +26135,56 @@
 									"params": ["hobford_to_woods"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [26,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 10144,
+							"__worldY": 3280,
+							"iid": "Prop-106343",
+							"width": 80,
+							"height": 48,
+							"defUid": 104426,
+							"px": [416,464],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "root 1", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["root 1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_woods_root", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_woods_root"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [62,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 10720,
+							"__worldY": 3280,
+							"iid": "Prop-106344",
+							"width": 80,
+							"height": 48,
+							"defUid": 104426,
+							"px": [992,464],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "root 2", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["root 2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_woods_root", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_woods_root"]
+								}] }
 							]
 						},
 						{
