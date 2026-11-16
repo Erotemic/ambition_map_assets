@@ -1326,6 +1326,8 @@ def classical():
         npc("history_julius_sneezer", 2200, FLOOR, 68),
         prop_at("bust_2", "history_bust", 2320, FLOOR, 48, 96),
         enemy(rid, 2, "hoplite", 2420, FLOOR),
+        # The colosseum is a building: its outside stands round its door.
+        prop_at("colosseum_facade", "history_colosseum_facade", 2564, FLOOR, 192, 224),
         door("classical_colosseum_door", "into the colosseum", 2540, FLOOR, COLOSSEUM, f"{COLOSSEUM}_door"),
         sign("classical_sign_fall", 2320, FLOOR - 260, "ROME: did not fall in a day either", 340),
         sign("classical_sign_guests", 900, FLOOR - 380, "CLIO'S GUESTS: the famous here lived centuries apart. They meet only in the atlas.", 762),
