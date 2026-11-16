@@ -531,7 +531,7 @@ def clearing():
         # The gatekeeper, at the office door on the road's side of the barrier.
         npc("npc_valley_gatekeeper", "valley_gatekeeper", "Talk to the gatekeeper", 1420, hi),
         entity("LockWall", BARRIER_X, hi - BARRIER_H, 24, BARRIER_H, id="hobford_barrier", name="the barrier",
-               gated_by=f"world.flag_set {BARRIER_LIFTED}"),
+               gated_by=f"world.flag_set {BARRIER_LIFTED}", look="hill_gate_barrier"),
         entity("Switch", BARRIER_X - 56, hi - 32, 24, 32, id=BARRIER_LEVER, name="the barrier lever",
                prompt="Lift the barrier", action="ToggleFlag", on_activate=f"world.set_flag {BARRIER_LIFTED} true"),
         # The ring: a dialed ring of the gate network (`gate_network.ron`,
