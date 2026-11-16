@@ -82,6 +82,10 @@ CRYPT_SHAFT = (CRYPT_STAIR[0] - 800, CRYPT_STAIR[1] - 800)
 #: Under the allotments and the moor's west half, from the crypt west to the
 #: shaft up under Crabbe's plot (13): the allotments' x 280..344.
 CATACOMBS = "evil_catacombs"
+#: Under the moor no daylight reaches: the catacombs and the ossuary behind
+#: them are dark (level fields `darkness`, percent, and `ambient`; DR1 in
+#: `docs/planning/engine/dark-rooms-and-tunnels.md`).
+UNDERGROUND_DARK = '\n    darkness: 70,\n    ambient: "#0c0a10",'
 CATACOMBS_AT, CATACOMBS_W = (-4160, 784), 2560
 PLOT_13 = (280, 344)
 #: West of the catacombs, behind the cracked wall the castle bricked over
@@ -439,7 +443,7 @@ def catacombs():
         enemy(33, "npc_evil_spectral_wolf", 2100, g, 56, 56),
     ]
     return CATACOMBS, room(CATACOMBS, e, at=CATACOMBS_AT, size=(w, h), biome="castle_godwin", music="vault_in_the_dark",
-                           bg="#141012", title="THE CATACOMBS", generator=GENERATOR)
+                           bg="#141012", title="THE CATACOMBS", generator=GENERATOR, extra=UNDERGROUND_DARK)
 
 
 def ossuary():
@@ -459,7 +463,7 @@ def ossuary():
         sign("ossuary_sign", 320, 60, "FOUNDERS 1 TO 6 (we do not speak of them)", 400),
     ]
     return OSSUARY, room(OSSUARY, e, at=OSSUARY_AT, size=(w, h), biome="castle_godwin", music="vault_in_the_dark",
-                         bg="#141012", title="THE OTHER FOUNDERS", generator=GENERATOR)
+                         bg="#141012", title="THE OTHER FOUNDERS", generator=GENERATOR, extra=UNDERGROUND_DARK)
 
 
 FOREST_EDGE_YAML = f"""# The gate forest's way west to the moor. Written by {GENERATOR}.
