@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 106201,
+	"nextUid": 106233,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -27820,6 +27820,356 @@
 								"id": "V_String",
 								"params": ["intro_fell_spawn"]
 							}] }]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [16,126],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 21790,
+							"__worldY": 3298,
+							"iid": "Prop-106214",
+							"width": 119,
+							"height": 32,
+							"defUid": 104426,
+							"px": [270,2018],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell rocks 1", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell rocks 1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_rocks", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_rocks"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [32,122],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 22041,
+							"__worldY": 3232,
+							"iid": "Prop-106215",
+							"width": 78,
+							"height": 40,
+							"defUid": 104426,
+							"px": [521,1952],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell gorse_slope 0", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell gorse_slope 0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_gorse_slope", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_gorse_slope"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [47,115],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 22280,
+							"__worldY": 3130,
+							"iid": "Prop-106216",
+							"width": 119,
+							"height": 57,
+							"defUid": 104426,
+							"px": [760,1850],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell rocks_slope 1", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell rocks_slope 1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_rocks_slope", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_rocks_slope"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [66,109],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 22582,
+							"__worldY": 3036,
+							"iid": "Prop-106217",
+							"width": 54,
+							"height": 36,
+							"defUid": 104426,
+							"px": [1062,1756],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell sheep 1", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell sheep 1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_sheep", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_sheep"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [70,109],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 22654,
+							"__worldY": 3039,
+							"iid": "Prop-106218",
+							"width": 54,
+							"height": 34,
+							"defUid": 104426,
+							"px": [1134,1759],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell sheep_grazing 2", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell sheep_grazing 2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_sheep_grazing", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_sheep_grazing"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [85,109],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 22894,
+							"__worldY": 3039,
+							"iid": "Prop-106219",
+							"width": 54,
+							"height": 34,
+							"defUid": 104426,
+							"px": [1374,1759],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell sheep_grazing 3", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell sheep_grazing 3"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_sheep_grazing", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_sheep_grazing"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [97,106],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 23081,
+							"__worldY": 2976,
+							"iid": "Prop-106220",
+							"width": 78,
+							"height": 40,
+							"defUid": 104426,
+							"px": [1561,1696],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell gorse_slope 3", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell gorse_slope 3"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_gorse_slope", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_gorse_slope"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [115,98],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 23360,
+							"__worldY": 2858,
+							"iid": "Prop-106221",
+							"width": 119,
+							"height": 57,
+							"defUid": 104426,
+							"px": [1840,1578],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell rocks_slope 4", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell rocks_slope 4"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_rocks_slope", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_rocks_slope"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [133,94],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 23660,
+							"__worldY": 2786,
+							"iid": "Prop-106222",
+							"width": 119,
+							"height": 32,
+							"defUid": 104426,
+							"px": [2140,1506],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell rocks 5", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell rocks 5"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_rocks", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_rocks"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [143,93],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 23812,
+							"__worldY": 2778,
+							"iid": "Prop-106223",
+							"width": 87,
+							"height": 40,
+							"defUid": 104426,
+							"px": [2292,1498],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell gorse 6", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell gorse 6"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_gorse", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_gorse"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [175,82],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 24331,
+							"__worldY": 2604,
+							"iid": "Prop-106224",
+							"width": 78,
+							"height": 40,
+							"defUid": 104426,
+							"px": [2811,1324],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell gorse_slope 7", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell gorse_slope 7"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_gorse_slope", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_gorse_slope"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [188,77],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 24540,
+							"__worldY": 2514,
+							"iid": "Prop-106225",
+							"width": 119,
+							"height": 57,
+							"defUid": 104426,
+							"px": [3020,1234],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell rocks_slope 8", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell rocks_slope 8"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_rocks_slope", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_rocks_slope"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [204,73],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 24792,
+							"__worldY": 2460,
+							"iid": "Prop-106226",
+							"width": 54,
+							"height": 36,
+							"defUid": 104426,
+							"px": [3272,1180],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell sheep 4", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell sheep 4"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_sheep", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_sheep"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [217,73],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 24994,
+							"__worldY": 2463,
+							"iid": "Prop-106227",
+							"width": 54,
+							"height": 34,
+							"defUid": 104426,
+							"px": [3474,1183],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell sheep_grazing 5", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell sheep_grazing 5"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_sheep_grazing", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_sheep_grazing"]
+								}] }
+							]
 						},
 						{
 							"__identifier": "DebugLabel",

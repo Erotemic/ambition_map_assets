@@ -735,6 +735,25 @@ SCREE = (2080, 2400, FELL_FLOOR - 512)
 CRAGS = [(2400, 2560, FELL_FLOOR - 576), (2560, 2720, FELL_FLOOR - 640)]
 SUMMIT = (3200, FELL_W, FELL_FLOOR - 832)
 CAIRN = (3380, 3428)
+#: The fell's dressing (`hill_village_props.py`): each piece's width and
+#: where the ground under its middle is in its frame. A `_slope` piece's
+#: foot rises east with the drove road (0.4).
+DRESSING = {
+    "hill_fell_rocks": (128, 52), "hill_fell_rocks_slope": (128, 52),
+    "hill_fell_gorse": (96, 52), "hill_fell_gorse_slope": (96, 52),
+    "hill_fell_sheep": (64, 38), "hill_fell_sheep_grazing": (64, 38),
+}
+
+
+def dress(kind, x, ground, n):
+    """Dressing piece `kind` whose middle stands at `x` on `ground`."""
+    width, foot = DRESSING[kind]
+    return piece(kind, x - width // 2, ground - foot, name=f"fell {kind.removeprefix('hill_fell_')} {n}")
+
+
+def drove_road(x0, y0, x1, y1, x):
+    """The ground on a slope from (x0, y0) to (x1, y1) at `x`."""
+    return y0 + (y1 - y0) * (x - x0) / (x1 - x0)
 
 
 def fell():
@@ -776,6 +795,22 @@ def fell():
         entity("CameraZone", CRAGS[-1][1], 0, w - CRAGS[-1][1], h, id="intro_fell_lookout", name="the top",
                mode="Default", target_offset_y=LOOKOUT_LIFT),
         start(rid, 120, fy),
+        # The hillside: gorse and rocks along the road, the flock in the fold
+        # and on the top, boulders on the scree.
+        dress("hill_fell_rocks", 330, fy, 1),
+        *[dress(kind, x, drove_road(f1, fy, d0, dy, x), n)
+          for n, (kind, x) in enumerate([("hill_fell_gorse_slope", 560), ("hill_fell_rocks_slope", 820)])],
+        dress("hill_fell_sheep", 1090, dy, 1),
+        dress("hill_fell_sheep_grazing", 1160, dy, 2),
+        dress("hill_fell_sheep_grazing", 1400, dy, 3),
+        *[dress(kind, x, drove_road(d1, dy, s0, sy, x), n)
+          for n, (kind, x) in enumerate([("hill_fell_gorse_slope", 1600), ("hill_fell_rocks_slope", 1900)], start=3)],
+        dress("hill_fell_rocks", 2200, sy, 5),
+        dress("hill_fell_gorse", 2340, sy, 6),
+        *[dress(kind, x, drove_road(CRAGS[-1][1], CRAGS[-1][2], t0, ty, x), n)
+          for n, (kind, x) in enumerate([("hill_fell_gorse_slope", 2850), ("hill_fell_rocks_slope", 3080)], start=7)],
+        dress("hill_fell_sheep", 3300, ty, 4),
+        dress("hill_fell_sheep_grazing", 3500, ty, 5),
     ]
     return build(rid, e, "THE FELL", COUNTRY_MUSIC)
 
