@@ -69,6 +69,7 @@ FELL = "intro_fell"
 MILLSTREAM = "intro_millstream"
 VILLAGE = "intro_hobford"
 WOODS = "intro_woods"
+SALT_RUN = "intro_salt_run"
 MARKET = "drain_alley"
 UNDER_TOWN = "under_town_pipes"
 GATE_STACK = "gate_stack_lower"
@@ -124,6 +125,12 @@ FELL_FLOOR = LOWER_Y + LOW_FLOOR - FELL_Y
 #: workshop is west of it, ending there.
 COUNTRY_X = 1600
 
+#: The salt run, under the valley: its west end under the millstream's
+#: hollow (400 into the millstream), its east end under the woods' hollow
+#: oak. Its top is the valley rooms' bottom.
+SALT_RUN_X = COUNTRY_X + LANE_W + 400
+SALT_RUN_W = 3 * COUNTRY_W - 400 - (COUNTRY_W - 1840)
+
 
 def _line(*rooms):
     """Each room of the line: its top left in the world and its size, from
@@ -148,6 +155,9 @@ ROOMS_AT = {
         (SIDING, LOWER_Y, (SIDING_W, LOW_H)),
         (FELL, FELL_Y, (FELL_W, FELL_H)),
     ),
+    # The salt run: under the valley, from behind the mill wheel to the
+    # woods' hollow oak.
+    SALT_RUN: ((SALT_RUN_X, LOWER_Y + LOW_H), (SALT_RUN_W, LOW_H)),
     # The town under the gate stack (not level 1).
     MARKET: ((GATE_STACK_WEST - MARKET_W, STREET_WORLD_Y - 608), (MARKET_W, 768)),
     UNDER_TOWN: ((GATE_STACK_WEST - MARKET_W, 896), (1600, 640)),
@@ -628,6 +638,11 @@ def millstream():
         entity("BreakablePlatform", s0 - 16, g + 16, 16, s_bed - g - 16, id="millstream_cracked_wall",
                name="a cracked wall", max_hp=3.0, respawn="Persistent", collision="Solid", trigger="OnHit"),
         entity("PickupSpawn", 440, s_bed - 28, 24, 24, name="a jar of coins", kind="currency:25"),
+        # At the back of the hollow, a hatch: the salt run under the valley.
+        entity("LoadingZone", 424, s_bed - 80, 48, 80, id="millstream_to_salt_run", name="down the hatch",
+               activation="Door", target_room=SALT_RUN, target_zone="salt_run_from_millstream", bidirectional=True,
+               presentation="SceneArt"),
+        piece("hill_salt_run_hatch", 424, s_bed - 2),
         solid("stream_bed", s0, s_bed, s1 - s0, h - s_bed),
         water(f"{rid}_stream", s0, g + 8, s1 - s0, s_bed - g - 8),
         solid("rock_west", 496, s_bed - 48, 64, 48),
@@ -724,6 +739,11 @@ def woods():
         npc("npc_bob", "bob_woods", "Talk to Bob", BOB_X, g),
         sign("woods_sign_camp", BOB_X + 100, g - 150, "SURVEY CAMP. DON'T TOUCH THE STAFF.", 360),
         *[ledge(f"hollow_oak_{n}", x, y, 96) for n, (x, y) in enumerate(HOLLOW)],
+        # Between the oak's roots, a gap a body fits down: the salt run.
+        entity("LoadingZone", 1640, g - 96, 48, 96, id="woods_to_salt_run", name="down among the roots",
+               activation="Door", target_room=SALT_RUN, target_zone="salt_run_from_woods", bidirectional=True,
+               presentation="SceneArt"),
+        piece("hill_woods_hollow_oak", 1440, 20),
         entity("PickupSpawn", 1740, HOLLOW[-1][1] - 28, 24, 24, name="a can of oil", kind="health:2"),
         hen(rid, 1, 1880, g, dialogue="hobford_lost_hen"),
         raider(rid, 1, 2160, g),
@@ -731,6 +751,85 @@ def woods():
         start(rid, 120, g),
     ]
     return build(rid, e, f"{VILLAGE_NAME.upper()} WOODS", COUNTRY_MUSIC, look=WOODS_LOOK, dangerous=True)
+
+
+# --------------------------------------------------------- the salt run
+
+#: The run's floor, west to east: (x0, x1, top). From the hatch the old mill
+#: race steps down to the channel, climbs out under the village, passes the
+#: foot of the well, and runs on to the oak's roots, which climb to a shelf
+#: under the oak. Each step is a walk down or one jump up, both ways.
+RUN_FLOOR = [
+    (0, 320, 192), (320, 480, 240), (480, 640, 288), (640, 800, 336),
+    (800, 1504, 400),
+    (1504, 1696, 352), (1696, 2400, 352), (2400, 3104, 400), (3104, 3456, 448), (3456, 4096, 400),
+    (4096, 4544, 400), (4544, 4880, 400),
+    (4880, SALT_RUN_W, 192),
+]
+#: Headroom over the run's floor: a jump and a body under the roof.
+RUN_HEADROOM = 192
+#: The channel's water: ankle deep.
+RACE = (800, 1504, 32)
+#: The foot of the well, under the village's well (its x in the world, less
+#: the run's): the shaft opens in the roof over a puddle.
+WELL_FOOT = 7328 + 1248 - SALT_RUN_X
+#: Up to the shelf under the oak: boards the smugglers wedged between the
+#: roots, (x0, x1, top).
+ROOTS = [(4704, 4832, 336), (4560, 4688, 272), (4704, 4832, 208)]
+#: The run is dark: it is under the hill (dark rooms, DR1).
+UNDERGROUND_DARK = '\n    darkness: 75,\n    ambient: "#0a0806",'
+
+
+def salt_run():
+    """THE SALT RUN. An old smugglers' passage under the valley, from a
+    hatch behind the mill wheel to the hollow oak in the woods: salt came
+    this way and not through the gate's toll. The mill race steps down to
+    its channel; under the village the run passes the foot of the well; at
+    the east end boards between the oak's roots climb to a shelf and the
+    way up."""
+    rid = SALT_RUN
+    _, (w, h) = ROOMS_AT[rid]
+    floors = [("hatch", RUN_FLOOR[0][2])] + [(f"floor {n}", top) for n, (_, _, top) in enumerate(RUN_FLOOR[1:-1])]
+    check_reach(rid, floors + [(f"root {n}", top) for n, (_, _, top) in enumerate(ROOTS)] + [("shelf", RUN_FLOOR[-1][2])])
+    # And back: west from the channel up the race's steps to the hatch.
+    check_reach(rid, [(n, top) for n, top in reversed(floors[:6])])
+    e = [solid("west_end", 0, 0, WALL, h), solid("east_end", w - WALL, 0, WALL, h)]
+    for n, (x0, x1, top) in enumerate(RUN_FLOOR):
+        e.append(solid(f"floor_{n}", x0, top, x1 - x0, h - top))
+        roof = top - RUN_HEADROOM
+        # The root chamber and the shelf are open to the oak.
+        if x0 >= ROOTS[1][0] - 16:
+            continue
+        if x0 <= WELL_FOOT < x1:
+            # The well's shaft: an opening in the roof, straight up.
+            e.append(solid(f"roof_{n}_west", x0, 0, WELL_FOOT - x0, roof))
+            e.append(solid(f"roof_{n}_east", WELL_FOOT + 64, 0, x1 - WELL_FOOT - 64, roof))
+        elif roof > 0:
+            e.append(solid(f"roof_{n}", x0, 0, x1 - x0, roof))
+    x0, x1, depth = RACE
+    race_top = next(top for a, _, top in RUN_FLOOR if a == x0)
+    e += [
+        entity("LoadingZone", 64, RUN_FLOOR[0][2] - 96, 48, 96, id="salt_run_from_millstream", name="up the hatch",
+               activation="Door", target_room=MILLSTREAM, target_zone="millstream_to_salt_run", bidirectional=True),
+        sign("salt_run_sign_hatch", 300, 40, "SALT RUN. MILL TO OAK. NO LIGHTS PAST THE WELL.", 480),
+        water(f"{rid}_race", x0, race_top - depth, x1 - x0, depth),
+        slug(rid, 1, 1000, race_top),
+        slug(rid, 2, 1300, race_top),
+        # Under the inn, the smugglers' tally on the wall.
+        sign("salt_run_sign_tally", 2100, 352 - 150, "IN CHALK: 112 SACKS. 0 TOLLS.", 360),
+        # The foot of the well: what fell down it.
+        entity("PickupSpawn", WELL_FOOT + 20, 448 - 28, 24, 24, name="a bucket of coins", kind="currency:30"),
+        sign("salt_run_sign_well", WELL_FOOT + 32, 448 - 150, "SOMEBODY UP THERE THREW A WISH DOWN HERE", 440),
+        *[ledge(f"root_board_{n}", a, top, b - a) for n, (a, b, top) in enumerate(ROOTS)],
+        sign("salt_run_sign_note", 4400, 400 - 160,
+             "A NOTE: IF YOU CAN READ THIS, YOU ARE NOT WORTH YOUR SALT. TURN BACK.", 560),
+        entity("LoadingZone", w - WALL - 112, RUN_FLOOR[-1][2] - 96, 48, 96, id="salt_run_from_woods",
+               name="up through the roots", activation="Door", target_room=WOODS, target_zone="woods_to_salt_run",
+               bidirectional=True),
+        start(rid, 160, RUN_FLOOR[0][2]),
+    ]
+    return build(rid, e, "THE SALT RUN", "vault_in_the_dark", look="cave", bg="#0c0a08", dangerous=True,
+                 extra=UNDERGROUND_DARK)
 
 
 # -------------------------------------------------------------- the fell
@@ -934,7 +1033,7 @@ def culvert():
 
 #: East to west: a relayout moves the rooms east, and each one's new place
 #: is free once the rooms east of it have moved.
-ROOMS = (fell, siding, clearing, meadow, woods, village, millstream, lane, workshop, market, culvert)
+ROOMS = (fell, siding, clearing, meadow, woods, village, millstream, lane, workshop, market, culvert, salt_run)
 
 
 def main(argv):
