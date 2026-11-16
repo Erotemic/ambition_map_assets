@@ -11155,17 +11155,17 @@
 							"defUid": 2008,
 							"px": [840,432],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "the bossofthegame, retired", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "the bossofthegame", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["the bossofthegame, retired"]
+									"params": ["the bossofthegame"]
 								}] },
 								{ "__identifier": "brain", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["stand_still"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_bossofthegame_retired", "__tile": null, "defUid": 6854, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_bossofthegame", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_bossofthegame_retired"]
+									"params": ["npc_bossofthegame"]
 								}] },
 								{ "__identifier": "disposition", "__type": "String", "__value": "Peaceful", "__tile": null, "defUid": 6857, "realEditorValues": [{
 									"id": "V_String",

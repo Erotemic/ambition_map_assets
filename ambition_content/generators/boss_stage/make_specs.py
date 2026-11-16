@@ -239,9 +239,11 @@ def green_room():
         start(rid, 160, floor),
         # A low dais at the far end, where he sits down.
         solid("dais", 760, floor - 48, w - WALL - 760, 48),
-        # And he is on it: the voice of the retirement is in the room.
-        entity("EnemySpawn", 840, floor - 48 - 96, 54, 96, name="the bossofthegame, retired", brain="stand_still",
-               character_id="npc_bossofthegame_retired", disposition="Peaceful"),
+        # And he is on it: the voice of the retirement is in the room. He is
+        # the bossofthegame himself (one body, one actor): retired is the
+        # world's fact `bossofthegame_retired`, not a second character.
+        entity("EnemySpawn", 840, floor - 48 - 96, 54, 96, name="the bossofthegame", brain="stand_still",
+               character_id="npc_bossofthegame", disposition="Peaceful"),
         sign("green_sign", 640, 120, "GREEN ROOM: PERFORMERS ONLY", 420),
         # He retires here: the scene plays once, as the player comes in.
         entity("CutsceneTrigger", 240, floor - 160, 160, 160, cutscene="boss_retirement"),

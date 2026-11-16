@@ -8,12 +8,15 @@ this script also owns.
 
 Run it from the repository root. Design: `docs/planning/game/level-1.md`.
 
-    [workshop]--[Hobford Lane]                                  [the high meadow]--[the gate clearing]
+                                                                                                                   [the fell's top]
+                                                                                                    the drove road up /
+    [workshop]--[Hobford Lane]                                  [the high meadow]--[the gate clearing]              /
                        \ the bank path down             the hill path up /                   \ the freight track down
-                        [the millstream]--[Hobford]--[the woods]                              [the freight siding]
+                        [the millstream]--[Hobford]--[the woods]                              [the freight siding]--[the fell]
 
     One line of rooms, west to east: the barn on the west hill, the valley,
-    the gate on the east hill. Each room joins the next by an edge at one
+    the gate on the east hill, and past the siding the fell, the mountain
+    beside the gate's hill. Each room joins the next by an edge at one
     height; a hill room (the lane, the meadow, the clearing) holds both
     heights and climbs between them on slopes.
 
@@ -62,6 +65,7 @@ LANE = "intro_hobford_lane"
 MEADOW = "intro_high_meadow"
 CLEARING = "intro_gate_clearing"
 SIDING = "intro_freight_yard"
+FELL = "intro_fell"
 MILLSTREAM = "intro_millstream"
 VILLAGE = "intro_hobford"
 WOODS = "intro_woods"
@@ -109,6 +113,12 @@ WORKSHOP_W, WORKSHOP_H, WORKSHOP_FLOOR = 1920, 448, 352
 HILL_H = LOWER_Y + LOW_H - UPPER_Y
 VALLEY_FLOOR = LOWER_Y + LOW_FLOOR - UPPER_Y
 LANE_W, MEADOW_W, CLEARING_W, SIDING_W = 3328, 3104, 4368, 1920
+#: The fell: the mountain east of the siding. It rises 768 over the upper
+#: band, so its summit stands well above the gate's hill; its valley floor is
+#: the siding's.
+FELL_W, FELL_Y = 3600, UPPER_Y - 768
+FELL_H = LOWER_Y + LOW_H - FELL_Y
+FELL_FLOOR = LOWER_Y + LOW_FLOOR - FELL_Y
 
 #: Where the country's rooms begin in the world: the lane's west edge. The
 #: workshop is west of it, ending there.
@@ -136,6 +146,7 @@ ROOMS_AT = {
         (MEADOW, UPPER_Y, (MEADOW_W, HILL_H)),
         (CLEARING, UPPER_Y, (CLEARING_W, HILL_H)),
         (SIDING, LOWER_Y, (SIDING_W, LOW_H)),
+        (FELL, FELL_Y, (FELL_W, FELL_H)),
     ),
     # The town under the gate stack (not level 1).
     MARKET: ((GATE_STACK_WEST - MARKET_W, STREET_WORLD_Y - 608), (MARKET_W, 768)),
@@ -565,7 +576,7 @@ def siding():
     g = LOW_FLOOR
     check_reach(rid, [("platform", g), ("crate a", FREIGHT[0][3]), ("pallets a", PALLETS[0][3])])
     e = [
-        *walls(w, g, west=[g]),
+        *walls(w, g, west=[g], east=[g]),
         solid("platform", 0, g, w, h - g),
         edge("siding_from_clearing", "up the freight track to the gate", 0, g, CLEARING, "clearing_to_siding"),
         entity("CutsceneTrigger", 300, 32, 64, g - 32, cutscene="foreman_siding"),
@@ -578,6 +589,8 @@ def siding():
         sign("siding_sign_crate", 1598, g - 120, "1 LAB OF RESEARCH. PAID.", 280),
         entity("Switch", 1700, g - 32, 24, 32, id=f"{YARD_FIGHT}_again", name="the platform bell",
                prompt="Ring the platform bell", target_encounter=YARD_FIGHT, action="ResetEncounter"),
+        sign("siding_sign_fell", w - 160, g - 140, "DROVE ROAD. OVER THE FELL", 260),
+        edge("siding_to_fell", "the drove road up the fell", w - WALL, g, FELL, "fell_from_siding"),
         start(rid, 200, g),
     ]
     return build(rid, e, "THE FREIGHT SIDING", GOBLIN_MUSIC, dangerous=True, extra=GATESIDE)
@@ -711,6 +724,62 @@ def woods():
     return build(rid, e, f"{VILLAGE_NAME.upper()} WOODS", COUNTRY_MUSIC, look=WOODS_LOOK, dangerous=True)
 
 
+# -------------------------------------------------------------- the fell
+
+#: The drove road up the fell, west to east: each flat is (x0, x1, top),
+#: joined by a slope or by one step up. The climb is the ground's: slopes,
+#: a terrace with the sheepfold, a scree ledge and two crags, and the top.
+FELL_FOOT = (0, 400, FELL_FLOOR)
+FOLD = (1040, 1440, FELL_FLOOR - 256)
+SCREE = (2080, 2400, FELL_FLOOR - 512)
+CRAGS = [(2400, 2560, FELL_FLOOR - 576), (2560, 2720, FELL_FLOOR - 640)]
+SUMMIT = (3200, FELL_W, FELL_FLOOR - 832)
+CAIRN = (3380, 3428)
+
+
+def fell():
+    """THE FELL. The mountain beside the gate's hill: the old drove road
+    climbs it from the siding, past the sheepfold where the shepherd keeps
+    the flock in summer, over the scree and two crags, to the top, where
+    the whole valley and the gate are in view. A climb by the ground, not
+    by platforms (Jon's note 8)."""
+    rid = FELL
+    w, h = FELL_W, FELL_H
+    f0, f1, fy = FELL_FOOT
+    d0, d1, dy = FOLD
+    s0, s1, sy = SCREE
+    t0, t1, ty = SUMMIT
+    check_reach(rid, [("fold", dy), ("fold wall", dy - 48), ("fold", dy)])
+    check_reach(rid, [("scree", sy), *[(f"crag {n}", top) for n, (_, _, top) in enumerate(CRAGS)]])
+    check_reach(rid, [("top", ty), ("cairn", ty - 48), ("top", ty)])
+    e = [
+        solid("west_wall", 0, 0, WALL, fy - 96),
+        solid("east_wall", w - WALL, 0, WALL, h),
+        edge("fell_from_siding", "down to the siding", 0, fy, SIDING, "siding_to_fell"),
+        solid("fell_foot", f0, fy, f1 - f0, h - fy),
+        sign("fell_sign_road", 260, fy - 140, "DROVE ROAD. SHUT THE GATES BEHIND YOU", 380),
+        slope("drove_road_lower", f1, fy, d0, dy),
+        solid("sheepfold_terrace", d0, dy, d1 - d0, h - dy),
+        solid("sheepfold_wall", 1220, dy - 48, 32, 48),
+        npc("npc_valley_shepherd", "valley_shepherd", "Talk to the shepherd", 1340, dy),
+        slope("drove_road_middle", d1, dy, s0, sy),
+        solid("scree_ledge", s0, sy, s1 - s0, h - sy),
+        *[solid(f"crag_{n}", x0, top, x1 - x0, h - top) for n, (x0, x1, top) in enumerate(CRAGS)],
+        slope("drove_road_upper", CRAGS[-1][1], CRAGS[-1][2], t0, ty),
+        solid("summit", t0, ty, t1 - WALL - t0, h - ty),
+        solid("cairn", CAIRN[0], ty - 48, CAIRN[1] - CAIRN[0], 48),
+        entity("PickupSpawn", (CAIRN[0] + CAIRN[1]) // 2 - 12, ty - 48 - 28, 24, 24, name="a tin left on the cairn",
+               kind="currency:30"),
+        sign("fell_sign_top", 3260, ty - 150, "THE TOP. THE VIEW IS FREE", 300),
+        # The top is a lookout: framed on Scout, the fell's own rock fills the
+        # frame; lifted, the valley and the gate's hill are in view.
+        entity("CameraZone", CRAGS[-1][1], 0, w - CRAGS[-1][1], h, id="intro_fell_lookout", name="the top",
+               mode="Default", target_offset_y=LOOKOUT_LIFT),
+        start(rid, 120, fy),
+    ]
+    return build(rid, e, "THE FELL", COUNTRY_MUSIC)
+
+
 # ------------------------------------------- the town under the gate stack
 
 STREET = 608
@@ -816,7 +885,7 @@ def culvert():
 
 #: East to west: a relayout moves the rooms east, and each one's new place
 #: is free once the rooms east of it have moved.
-ROOMS = (siding, clearing, meadow, woods, village, millstream, lane, workshop, market, culvert)
+ROOMS = (fell, siding, clearing, meadow, woods, village, millstream, lane, workshop, market, culvert)
 
 
 def main(argv):
