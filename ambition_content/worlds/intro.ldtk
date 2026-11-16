@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 106499,
+	"nextUid": 106533,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -6664,6 +6664,194 @@
 						"id": "V_String",
 						"params": [""]
 					},
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				}
+			]
+		},
+		{
+			"identifier": "LightSource",
+			"uid": 106502,
+			"tags": [],
+			"exportToToc": false,
+			"allowOutOfBounds": true,
+			"doc": "A lamp: what a dark room's light map draws (DR2). radius 0 = the box's larger side; color #rrggbb, empty = a warm lamp; intensity 0..1.",
+			"tileOpacity": 1.0,
+			"lineOpacity": 1.0,
+			"fillOpacity": 0.08,
+			"hollow": false,
+			"color": "#FFD27A",
+			"renderMode": "Rectangle",
+			"showName": true,
+			"tilesetId": null,
+			"tileRenderMode": "FitInside",
+			"tileRect": null,
+			"uiTileRect": null,
+			"nineSliceBorders": [],
+			"maxCount": 0,
+			"limitScope": "PerLevel",
+			"limitBehavior": "MoveLastOne",
+			"pivotX": 0,
+			"pivotY": 0,
+			"tileId": null,
+			"width": 32,
+			"height": 32,
+			"resizableX": true,
+			"resizableY": true,
+			"minWidth": null,
+			"maxWidth": null,
+			"minHeight": null,
+			"maxHeight": null,
+			"keepAspectRatio": false,
+			"fieldDefs": [
+				{
+					"identifier": "radius",
+					"doc": null,
+					"__type": "Float",
+					"uid": 106499,
+					"type": "F_Float",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": { "id": "V_Float", "params": [0.0] },
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "color",
+					"doc": null,
+					"__type": "String",
+					"uid": 106500,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": {
+						"id": "V_String",
+						"params": [""]
+					},
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "intensity",
+					"doc": null,
+					"__type": "Float",
+					"uid": 106501,
+					"type": "F_Float",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": { "id": "V_Float", "params": [1.0] },
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "name",
+					"doc": null,
+					"__type": "String",
+					"uid": 106503,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -31385,6 +31573,241 @@
 									"params": ["IN CHALK: 112 SACKS. 0 TOLLS."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [15,5],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5579,
+							"__worldY": 3550,
+							"iid": "Prop-106531",
+							"width": 22,
+							"height": 34,
+							"defUid": 104426,
+							"px": [251,94],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lantern 0", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lantern 0"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_salt_run_lantern", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_salt_run_lantern"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [15,6],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 5577,
+							"__worldY": 3558,
+							"iid": "LightSource-106532",
+							"width": 32,
+							"height": 32,
+							"defUid": 106502,
+							"px": [249,102],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 260.0, "__tile": null, "defUid": 106499, "realEditorValues": [{ "id": "V_Float", "params": [260.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffc070", "__tile": null, "defUid": 106500, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffc070"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.95, "__tile": null, "defUid": 106501, "realEditorValues": [{ "id": "V_Float", "params": [0.95] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "salt_run_lamp_0", "__tile": null, "defUid": 106503, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["salt_run_lamp_0"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [61,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6309,
+							"__worldY": 3694,
+							"iid": "Prop-106515",
+							"width": 22,
+							"height": 34,
+							"defUid": 104426,
+							"px": [981,238],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lantern 1", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lantern 1"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_salt_run_lantern", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_salt_run_lantern"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [61,15],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 6307,
+							"__worldY": 3702,
+							"iid": "LightSource-106516",
+							"width": 32,
+							"height": 32,
+							"defUid": 106502,
+							"px": [979,246],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 260.0, "__tile": null, "defUid": 106499, "realEditorValues": [{ "id": "V_Float", "params": [260.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffc070", "__tile": null, "defUid": 106500, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffc070"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.95, "__tile": null, "defUid": 106501, "realEditorValues": [{ "id": "V_Float", "params": [0.95] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "salt_run_lamp_1", "__tile": null, "defUid": 106503, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["salt_run_lamp_1"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [85,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6689,
+							"__worldY": 3694,
+							"iid": "Prop-106517",
+							"width": 22,
+							"height": 34,
+							"defUid": 104426,
+							"px": [1361,238],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lantern 2", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lantern 2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_salt_run_lantern", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_salt_run_lantern"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [84,15],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 6687,
+							"__worldY": 3702,
+							"iid": "LightSource-106518",
+							"width": 32,
+							"height": 32,
+							"defUid": 106502,
+							"px": [1359,246],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 260.0, "__tile": null, "defUid": 106499, "realEditorValues": [{ "id": "V_Float", "params": [260.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffc070", "__tile": null, "defUid": 106500, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffc070"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.95, "__tile": null, "defUid": 106501, "realEditorValues": [{ "id": "V_Float", "params": [0.95] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "salt_run_lamp_2", "__tile": null, "defUid": 106503, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["salt_run_lamp_2"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [128,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 7389,
+							"__worldY": 3654,
+							"iid": "Prop-106519",
+							"width": 22,
+							"height": 34,
+							"defUid": 104426,
+							"px": [2061,198],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lantern 3", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lantern 3"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_salt_run_lantern", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_salt_run_lantern"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [128,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 7387,
+							"__worldY": 3662,
+							"iid": "LightSource-106520",
+							"width": 32,
+							"height": 32,
+							"defUid": 106502,
+							"px": [2059,206],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 260.0, "__tile": null, "defUid": 106499, "realEditorValues": [{ "id": "V_Float", "params": [260.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffc070", "__tile": null, "defUid": 106500, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffc070"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.95, "__tile": null, "defUid": 106501, "realEditorValues": [{ "id": "V_Float", "params": [0.95] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "salt_run_lamp_3", "__tile": null, "defUid": 106503, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["salt_run_lamp_3"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [204,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 8592,
+							"__worldY": 3756,
+							"iid": "LightSource-106521",
+							"width": 32,
+							"height": 32,
+							"defUid": 106502,
+							"px": [3264,300],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 220.0, "__tile": null, "defUid": 106499, "realEditorValues": [{ "id": "V_Float", "params": [220.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#cfe0ff", "__tile": null, "defUid": 106500, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#cfe0ff"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 106501, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "salt_run_well_light", "__tile": null, "defUid": 106503, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["salt_run_well_light"]
+								}] }
 							]
 						},
 						{

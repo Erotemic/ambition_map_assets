@@ -776,6 +776,22 @@ WELL_FOOT = 7328 + 1248 - SALT_RUN_X
 #: Up to the shelf under the oak: boards the smugglers wedged between the
 #: roots, (x0, x1, top).
 ROOTS = [(4704, 4832, 336), (4560, 4688, 272), (4704, 4832, 208)]
+#: The smugglers' lamps, west of the well and none past it (the hatch's
+#: sign says so): (x, y of the bracket's top). Each is a lantern on its
+#: bracket and the light it gives (`LightSource`, DR2).
+LAMPS = [(250, 92), (980, 236), (1360, 236), (2060, 196)]
+LAMP_RADIUS = 260
+
+
+def lamp(n, x, y):
+    """A lantern on its bracket at (x, y), and its light at the glass."""
+    return [
+        piece("hill_salt_run_lantern", x, y, name=f"lantern {n}"),
+        entity("LightSource", x + 15 - 16, y + 26 - 16, 32, 32, name=f"salt_run_lamp_{n}", radius=float(LAMP_RADIUS),
+               color="#ffc070", intensity=0.95),
+    ]
+
+
 #: The run is dark: it is under the hill (dark rooms, DR1).
 UNDERGROUND_DARK = '\n    darkness: 75,\n    ambient: "#0a0806",'
 
@@ -817,6 +833,10 @@ def salt_run():
         slug(rid, 2, 1300, race_top),
         # Under the inn, the smugglers' tally on the wall.
         sign("salt_run_sign_tally", 2100, 352 - 150, "IN CHALK: 112 SACKS. 0 TOLLS.", 360),
+        *[part for n, (x, y) in enumerate(LAMPS) for part in lamp(n, x, y)],
+        # Daylight down the well's shaft, faint and cool.
+        entity("LightSource", WELL_FOOT + 16, 300, 32, 32, name="salt_run_well_light", radius=220.0, color="#cfe0ff",
+               intensity=0.7),
         # The foot of the well: what fell down it.
         entity("PickupSpawn", WELL_FOOT + 20, 448 - 28, 24, 24, name="a bucket of coins", kind="currency:30"),
         sign("salt_run_sign_well", WELL_FOOT + 32, 448 - 150, "SOMEBODY UP THERE THREW A WISH DOWN HERE", 440),
