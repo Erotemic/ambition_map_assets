@@ -734,7 +734,10 @@ FOLD = (1040, 1440, FELL_FLOOR - 256)
 SCREE = (2080, 2400, FELL_FLOOR - 512)
 CRAGS = [(2400, 2560, FELL_FLOOR - 576), (2560, 2720, FELL_FLOOR - 640)]
 SUMMIT = (3200, FELL_W, FELL_FLOOR - 832)
-CAIRN = (3380, 3428)
+CAIRN = (3376, 3440)
+#: The sheepfold's wall: a hop on the terrace (x, width), on the 16 px grid
+#: as the block it is.
+FOLD_WALL = (1216, 48)
 #: The fell's dressing (`hill_village_props.py`): each piece's width and
 #: where the ground under its middle is in its frame. A `_slope` piece's
 #: foot rises east with the drove road (0.4).
@@ -779,7 +782,8 @@ def fell():
         sign("fell_sign_road", 260, fy - 140, "DROVE ROAD. SHUT THE GATES BEHIND YOU", 380),
         slope("drove_road_lower", f1, fy, d0, dy),
         solid("sheepfold_terrace", d0, dy, d1 - d0, h - dy),
-        solid("sheepfold_wall", 1220, dy - 48, 32, 48),
+        solid("sheepfold_wall", FOLD_WALL[0], dy - 48, FOLD_WALL[1], 48),
+        piece("hill_fell_fold_wall", FOLD_WALL[0], dy - 48),
         npc("npc_valley_shepherd", "valley_shepherd", "Talk to the shepherd", 1340, dy),
         slope("drove_road_middle", d1, dy, s0, sy),
         solid("scree_ledge", s0, sy, s1 - s0, h - sy),
@@ -787,6 +791,7 @@ def fell():
         slope("drove_road_upper", CRAGS[-1][1], CRAGS[-1][2], t0, ty),
         solid("summit", t0, ty, t1 - WALL - t0, h - ty),
         solid("cairn", CAIRN[0], ty - 48, CAIRN[1] - CAIRN[0], 48),
+        piece("hill_fell_cairn", CAIRN[0], ty - 48),
         entity("PickupSpawn", (CAIRN[0] + CAIRN[1]) // 2 - 12, ty - 48 - 28, 24, 24, name="a tin left on the cairn",
                kind="currency:30"),
         sign("fell_sign_top", 3260, ty - 150, "THE TOP. THE VIEW IS FREE", 300),

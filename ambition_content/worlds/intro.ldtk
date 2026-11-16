@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 106233,
+	"nextUid": 106267,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -27665,6 +27665,31 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [76,109],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 22736,
+							"__worldY": 3024,
+							"iid": "Prop-106239",
+							"width": 48,
+							"height": 48,
+							"defUid": 104426,
+							"px": [1216,1744],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hill_fell_fold_wall", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_fold_wall"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_fold_wall", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_fold_wall"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "NpcSpawn",
 							"__grid": [82,109],
 							"__pivot": [0,0],
@@ -27752,19 +27777,44 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [211,73],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 24896,
+							"__worldY": 2448,
+							"iid": "Prop-106243",
+							"width": 64,
+							"height": 48,
+							"defUid": 104426,
+							"px": [3376,1168],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hill_fell_cairn", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_cairn"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_cairn", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fell_cairn"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "PickupSpawn",
 							"__grid": [212,71],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#8AFF80",
-							"__worldX": 24912,
+							"__worldX": 24916,
 							"__worldY": 2420,
-							"iid": "PickupSpawn-106173",
+							"iid": "PickupSpawn-106244",
 							"width": 24,
 							"height": 24,
 							"defUid": 2015,
-							"px": [3392,1140],
+							"px": [3396,1140],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "a tin left on the cairn", "__tile": null, "defUid": 3039, "realEditorValues": [{
 									"id": "V_String",
@@ -27857,7 +27907,7 @@
 							"__worldY": 3232,
 							"iid": "Prop-106215",
 							"width": 78,
-							"height": 40,
+							"height": 48,
 							"defUid": 104426,
 							"px": [521,1952],
 							"fieldInstances": [
@@ -27982,7 +28032,7 @@
 							"__worldY": 2976,
 							"iid": "Prop-106220",
 							"width": 78,
-							"height": 40,
+							"height": 48,
 							"defUid": 104426,
 							"px": [1561,1696],
 							"fieldInstances": [
@@ -28082,7 +28132,7 @@
 							"__worldY": 2604,
 							"iid": "Prop-106224",
 							"width": 78,
-							"height": 40,
+							"height": 48,
 							"defUid": 104426,
 							"px": [2811,1324],
 							"fieldInstances": [
