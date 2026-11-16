@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 106533,
+	"nextUid": 106564,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -3285,6 +3285,43 @@
 					"allowedRefsEntityUid": null,
 					"allowedRefTags": [],
 					"tilesetUid": null
+				},
+				{
+					"identifier": "respawn",
+					"doc": null,
+					"__type": "String",
+					"uid": 106533,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
 				}
 			]
 		},
@@ -31390,6 +31427,31 @@
 					"gridTiles": [],
 					"entityInstances": [
 						{
+							"__identifier": "Prop",
+							"__grid": [4,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5394,
+							"__worldY": 3456,
+							"iid": "Prop-106543",
+							"width": 46,
+							"height": 192,
+							"defUid": 104426,
+							"px": [66,0],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the hatch ladder", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the hatch ladder"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_salt_run_ladder", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_salt_run_ladder"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [4,6],
 							"__pivot": [0,0],
@@ -31421,7 +31483,11 @@
 									"id": "V_String",
 									"params": ["millstream_to_salt_run"]
 								}] },
-								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 105004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
+								}] }
 							]
 						},
 						{
@@ -31448,6 +31514,35 @@
 									"params": ["SALT RUN. MILL TO OAK. NO LIGHTS PAST THE WELL."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "PickupSpawn",
+							"__grid": [12,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#8AFF80",
+							"__worldX": 5528,
+							"__worldY": 3620,
+							"iid": "PickupSpawn-106539",
+							"width": 24,
+							"height": 24,
+							"defUid": 2015,
+							"px": [200,164],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "a spare lantern", "__tile": null, "defUid": 3039, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["a spare lantern"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "ability:lantern", "__tile": null, "defUid": 3040, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ability:lantern"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "Persistent", "__tile": null, "defUid": 106533, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Persistent"]
+								}] }
 							]
 						},
 						{
@@ -31888,6 +31983,31 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [382,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 11442,
+							"__worldY": 3456,
+							"iid": "Prop-106563",
+							"width": 46,
+							"height": 192,
+							"defUid": 104426,
+							"px": [6114,0],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the roots ladder", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the roots ladder"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_salt_run_ladder", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_salt_run_ladder"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [382,6],
 							"__pivot": [0,0],
@@ -31919,7 +32039,11 @@
 									"id": "V_String",
 									"params": ["woods_to_salt_run"]
 								}] },
-								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 105004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
+								}] }
 							]
 						},
 						{

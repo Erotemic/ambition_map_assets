@@ -825,9 +825,17 @@ def salt_run():
     x0, x1, depth = RACE
     race_top = next(top for a, _, top in RUN_FLOOR if a == x0)
     e += [
+        # The ways out are the smugglers' ladders up to a trapdoor (the scene
+        # draws them; no door in the rock).
+        piece("hill_salt_run_ladder", 64, 0, name="the hatch ladder"),
         entity("LoadingZone", 64, RUN_FLOOR[0][2] - 96, 48, 96, id="salt_run_from_millstream", name="up the hatch",
-               activation="Door", target_room=MILLSTREAM, target_zone="millstream_to_salt_run", bidirectional=True),
+               activation="Door", target_room=MILLSTREAM, target_zone="millstream_to_salt_run", bidirectional=True,
+               presentation="SceneArt"),
         sign("salt_run_sign_hatch", 300, 40, "SALT RUN. MILL TO OAK. NO LIGHTS PAST THE WELL.", 480),
+        # A spare lantern by the hatch (the Lantern, TN3): past the well the
+        # light is the one you carry.
+        entity("PickupSpawn", 200, RUN_FLOOR[0][2] - 28, 24, 24, name="a spare lantern", kind="ability:lantern",
+               respawn="Persistent"),
         water(f"{rid}_race", x0, race_top - depth, x1 - x0, depth),
         slug(rid, 1, 1000, race_top),
         slug(rid, 2, 1300, race_top),
@@ -843,9 +851,10 @@ def salt_run():
         *[ledge(f"root_board_{n}", a, top, b - a) for n, (a, b, top) in enumerate(ROOTS)],
         sign("salt_run_sign_note", 4400, 400 - 160,
              "A NOTE: IF YOU CAN READ THIS, YOU ARE NOT WORTH YOUR SALT. TURN BACK.", 560),
+        piece("hill_salt_run_ladder", w - WALL - 112, 0, name="the roots ladder"),
         entity("LoadingZone", w - WALL - 112, RUN_FLOOR[-1][2] - 96, 48, 96, id="salt_run_from_woods",
                name="up through the roots", activation="Door", target_room=WOODS, target_zone="woods_to_salt_run",
-               bidirectional=True),
+               bidirectional=True, presentation="SceneArt"),
         start(rid, 160, RUN_FLOOR[0][2]),
     ]
     return build(rid, e, "THE SALT RUN", "vault_in_the_dark", look="cave", bg="#0c0a08", dangerous=True,
