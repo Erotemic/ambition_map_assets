@@ -225,8 +225,6 @@ def square():
     _, (w, h) = ROOMS_AT[rid]
     g = SQUARE_FLOOR
     ring = gates.ring(RING_LABEL, RING_ZONE, 128, g, "the gate")
-    # The ring's picture is the scene's (the ring and the portal props).
-    ring = [(t, x, y, ew, eh, dict(f, presentation="SceneArt") if t == "LoadingZone" else f) for t, x, y, ew, eh, f in ring]
     e = [
         ground("street", 0, w, g, h),
         *walls(rid, "west", h, [g]),

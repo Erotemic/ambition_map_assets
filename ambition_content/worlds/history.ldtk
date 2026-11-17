@@ -17355,6 +17355,10 @@
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ false ]
+								}] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 1213149, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
 								}] }
 							]
 						},
@@ -41992,6 +41996,10 @@
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ false ]
+								}] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 1213149, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
 								}] }
 							]
 						},
