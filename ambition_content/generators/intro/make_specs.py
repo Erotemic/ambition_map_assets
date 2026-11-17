@@ -434,6 +434,14 @@ BANK_FOOT = 3120
 LOOKOUT_LIFT = -180
 
 
+def stake_board(name, cx, ground, first, second):
+    """A board on stakes with its middle at `cx`, standing on `ground`, and
+    its two lines of words on it."""
+    return [piece("hill_stake_board", cx - 100, ground - 100, name=name),
+            sign(f"{name}_1", cx, ground - 92, first, 180),
+            sign(f"{name}_2", cx, ground - 68, second, 180)]
+
+
 def lane():
     """HOBFORD LANE. The first open air: the lane outside the barn, high on
     the west hill, with the valley below it (the village roofs, the mill) and
@@ -451,13 +459,15 @@ def lane():
         hen(rid, 2, 420, hi),
         entity("LockWall", SURVEY_LINE_X, hi - 24, 16, 24, id=SURVEY_LINE, name="the survey line",
                gated_by="bob_field_survey_received"),
-        sign("lane_sign_line", SURVEY_LINE_X, hi - 110, "SURVEY LINE. PLEASE DON'T STEP ON IT.", 380),
+        *stake_board("lane_sign_line", SURVEY_LINE_X - 110, hi, "SURVEY LINE", "DON'T STEP ON IT"),
         piece("hill_survey_station", 960, 560),
         npc("npc_alice", "alice_lane", "Talk to Alice", ALICE_X, hi, brain="meets_the_player"),
-        sign("lane_sign_station", ALICE_X + 120, hi - 150, "SURVEY STATION. MIND THE TRIPOD.", 340),
+        *stake_board("lane_sign_station", ALICE_X - 110, hi, "SURVEY STATION", "MIND THE TRIPOD"),
         slope("bank_path_upper", BANK_TOP, hi, l0, ly),
         solid("bank_landing", l0, ly, l1 - l0, h - ly),
-        sign("lane_sign_mill", (l0 + l1) // 2, ly - 140, f"MILL. {VILLAGE_NAME.upper()}", 260),
+        # The way down to the mill, on a fingerpost on the landing.
+        piece("hill_fingerpost", (l0 + l1) // 2 - 75, ly - 120, name="the mill's fingerpost"),
+        sign("lane_sign_mill", (l0 + l1) // 2 + 3, ly - 109, "THE MILL", 90),
         slope("bank_path_lower", l1, ly, BANK_FOOT, lo),
         solid("valley_floor", BANK_FOOT, lo, w - BANK_FOOT, h - lo),
         edge("lane_to_millstream", "down to the mill", w - WALL, lo, MILLSTREAM, "millstream_from_lane"),
@@ -769,7 +779,7 @@ def woods():
         solid("root_2", 992, g - 48, 80, 48),
         piece("hill_woods_root", 992, g - 48, name="root 2"),
         npc("npc_bob", "bob_woods", "Talk to Bob", BOB_X, g),
-        sign("woods_sign_camp", BOB_X + 100, g - 150, "SURVEY CAMP. DON'T TOUCH THE STAFF.", 360),
+        *stake_board("woods_sign_camp", BOB_X + 150, g, "SURVEY CAMP", "HANDS OFF THE STAFF"),
         *[ledge(f"hollow_oak_{n}", x, y, 96) for n, (x, y) in enumerate(HOLLOW)],
         # Between the oak's roots, a gap a body fits down: the salt run.
         entity("LoadingZone", 1640, g - 96, 48, 96, id="woods_to_salt_run", name="down among the roots",

@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 106940,
+	"nextUid": 107063,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -17866,27 +17866,78 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [30,35],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2090,
+							"__worldY": 2620,
+							"iid": "Prop-107020",
+							"width": 200,
+							"height": 100,
+							"defUid": 104426,
+							"px": [490,572],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lane_sign_line", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lane_sign_line"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_stake_board", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_stake_board"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [31,35],
+							"__grid": [31,36],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 2110,
-							"__worldY": 2610,
-							"iid": "DebugLabel-105831",
-							"width": 380,
+							"__worldX": 2100,
+							"__worldY": 2628,
+							"iid": "DebugLabel-107021",
+							"width": 180,
 							"height": 24,
 							"defUid": 2007,
-							"px": [510,562],
+							"px": [500,580],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "lane_sign_line", "__tile": null, "defUid": 3015, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "lane_sign_line_1", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["lane_sign_line"]
+									"params": ["lane_sign_line_1"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "SURVEY LINE. PLEASE DON'T STEP ON IT.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "SURVEY LINE", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["SURVEY LINE. PLEASE DON'T STEP ON IT."]
+									"params": ["SURVEY LINE"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [31,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 2100,
+							"__worldY": 2652,
+							"iid": "DebugLabel-107022",
+							"width": 180,
+							"height": 24,
+							"defUid": 2007,
+							"px": [500,604],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lane_sign_line_2", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lane_sign_line_2"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "DON'T STEP ON IT", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["DON'T STEP ON IT"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -17950,27 +18001,78 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [45,35],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2330,
+							"__worldY": 2620,
+							"iid": "Prop-107025",
+							"width": 200,
+							"height": 100,
+							"defUid": 104426,
+							"px": [730,572],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lane_sign_station", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lane_sign_station"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_stake_board", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_stake_board"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [55,32],
+							"__grid": [46,36],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 2490,
-							"__worldY": 2570,
-							"iid": "DebugLabel-105371",
-							"width": 340,
+							"__worldX": 2340,
+							"__worldY": 2628,
+							"iid": "DebugLabel-107026",
+							"width": 180,
 							"height": 24,
 							"defUid": 2007,
-							"px": [890,522],
+							"px": [740,580],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "lane_sign_station", "__tile": null, "defUid": 3015, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "lane_sign_station_1", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["lane_sign_station"]
+									"params": ["lane_sign_station_1"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "SURVEY STATION. MIND THE TRIPOD.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "SURVEY STATION", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["SURVEY STATION. MIND THE TRIPOD."]
+									"params": ["SURVEY STATION"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [46,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 2340,
+							"__worldY": 2652,
+							"iid": "DebugLabel-107027",
+							"width": 180,
+							"height": 24,
+							"defUid": 2007,
+							"px": [740,604],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "lane_sign_station_2", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["lane_sign_station_2"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "MIND THE TRIPOD", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["MIND THE TRIPOD"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -18005,27 +18107,52 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [130,53],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3695,
+							"__worldY": 2905,
+							"iid": "Prop-106979",
+							"width": 140,
+							"height": 119,
+							"defUid": 104426,
+							"px": [2095,857],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the mill's fingerpost", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the mill's fingerpost"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fingerpost", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fingerpost"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [126,52],
+							"__grid": [132,54],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 3630,
-							"__worldY": 2884,
-							"iid": "DebugLabel-105996",
-							"width": 260,
+							"__worldX": 3718,
+							"__worldY": 2915,
+							"iid": "DebugLabel-106980",
+							"width": 90,
 							"height": 24,
 							"defUid": 2007,
-							"px": [2030,836],
+							"px": [2118,867],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "lane_sign_mill", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["lane_sign_mill"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "MILL. HOBFORD", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "THE MILL", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["MILL. HOBFORD"]
+									"params": ["THE MILL"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -27111,27 +27238,78 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [80,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 11018,
+							"__worldY": 3228,
+							"iid": "Prop-107048",
+							"width": 200,
+							"height": 100,
+							"defUid": 104426,
+							"px": [1290,412],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "woods_sign_camp", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["woods_sign_camp"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_stake_board", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_stake_board"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [72,22],
+							"__grid": [81,26],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 10888,
-							"__worldY": 3178,
-							"iid": "DebugLabel-105482",
-							"width": 360,
+							"__worldX": 11028,
+							"__worldY": 3236,
+							"iid": "DebugLabel-107049",
+							"width": 180,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1160,362],
+							"px": [1300,420],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "woods_sign_camp", "__tile": null, "defUid": 3015, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "woods_sign_camp_1", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["woods_sign_camp"]
+									"params": ["woods_sign_camp_1"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "SURVEY CAMP. DON'T TOUCH THE STAFF.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "SURVEY CAMP", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["SURVEY CAMP. DON'T TOUCH THE STAFF."]
+									"params": ["SURVEY CAMP"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [81,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 11028,
+							"__worldY": 3260,
+							"iid": "DebugLabel-107050",
+							"width": 180,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1300,444],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "woods_sign_camp_2", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["woods_sign_camp_2"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "HANDS OFF THE STAFF", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["HANDS OFF THE STAFF"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
