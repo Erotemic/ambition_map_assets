@@ -296,7 +296,7 @@ PLINTH = (540, 620, WORKSHOP_FLOOR - 48)
 LOFT_CRATE = (396, 460, WORKSHOP_FLOOR - 48)
 LOFT = (120, 420, WORKSHOP_FLOOR - 112)
 #: The Creator, and his bench between him and the barn door.
-CREATOR_X = 1060
+CREATOR_X = 700
 BENCH = (1100, 1220, WORKSHOP_FLOOR - 48)
 #: The barn door, and the yard outside it. The raiders come up the yard, out
 #: of shot while Scout is in the barn (its camera zone ends at the door), and
@@ -356,6 +356,7 @@ def workshop():
         sign("workshop_sign_cart", x0 + 128, 120, "DO NOT SWITCH ON UNTIL FINISHED", 300),
         solid("test_plinth", PLINTH[0], PLINTH[2], PLINTH[1] - PLINTH[0], g - PLINTH[2]),
         sign("workshop_sign_plinth", 580, PLINTH[2] - 60, "LOAD TEST", 140),
+        sign("intro_training_landing", (PLINTH[0] + PLINTH[1]) // 2, PLINTH[2] - 12, "▼", 24),
         solid("loft_crate", LOFT_CRATE[0], LOFT_CRATE[2], LOFT_CRATE[1] - LOFT_CRATE[0], g - LOFT_CRATE[2]),
         ledge("parts_loft", LOFT[0], LOFT[2], LOFT[1] - LOFT[0]),
         # On the loft: the torque gauge he sends Scout for, at the far end of
@@ -364,6 +365,12 @@ def workshop():
         entity("PickupSpawn", 372, LOFT[2] - 28, 24, 24, name="a can of oil", kind="health:2"),
         sign("workshop_sign_loft", 270, LOFT[2] - 60, "GAUGES GO BACK ON THE SHELF", 300),
         npc("npc_creator", "creator_intro", "Talk to the Creator", CREATOR_X, g),
+        sign("intro_practice_station", 700, g - 90, "PRACTICE", 140),
+        entity("EnemySpawn", 463, g - 56, 34, 56, name="workshop_practice_bag",
+               brain="sandbag_infinite", character_id="practice_sandbag", respawn="OnRoomReenter"),
+        sign("workshop_sign_sandbag", 480, g - 100, "STRIKE TEST", 140),
+        sign("intro_bench_station", 1060, g - 90, "TEST NOTES", 160),
+        sign("intro_raider_station", 1260, g - 80, "KEEP CLEAR", 140),
         # The bench top is a board on trestles: bodies go under it, so it
         # stands between the Creator and the door without barring the way.
         ledge("bench", BENCH[0], BENCH[2], BENCH[1] - BENCH[0]),
@@ -371,9 +378,9 @@ def workshop():
         # The raid: its trigger is in the roof, where no body goes, so only
         # the room's line starts it (`while_live`, when the story calls it).
         entity("EncounterTrigger", 64, 0, 32, 32, id=RAID, name=f"{RAID}_trigger"),
-        # Scout at the door without having talked to him: the raid is called
-        # there, and the bar breaks.
-        entity("CutsceneTrigger", BENCH[1] + 24, 32, BARN_DOOR_X - BENCH[1] - 24, g - 32,
+        # Stop an approach before the doorway. The arriving raiders need
+        # space between their mark and Scout when control returns.
+        entity("CutsceneTrigger", BENCH[1] - 64, 32, BARN_DOOR_X - BENCH[1] + 64, g - 32,
                cutscene="intro_raid_at_the_door"),
         # A blow on the whistle a raider dropped calls the raid again: the
         # reset puts it back to the start, and the room's line starts it.

@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 106565,
+	"nextUid": 106669,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -8371,6 +8371,32 @@
 							]
 						},
 						{
+							"__identifier": "DebugLabel",
+							"__grid": [35,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 248,
+							"__worldY": 2660,
+							"iid": "DebugLabel-106609",
+							"width": 24,
+							"height": 24,
+							"defUid": 2007,
+							"px": [568,292],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "intro_training_landing", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_training_landing"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "▼", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["▼"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
 							"__identifier": "PickupSpawn",
 							"__grid": [9,13],
 							"__pivot": [0,0],
@@ -8448,18 +8474,18 @@
 						},
 						{
 							"__identifier": "NpcSpawn",
-							"__grid": [65,19],
+							"__grid": [42,19],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF9EEA",
-							"__worldX": 724,
+							"__worldX": 364,
 							"__worldY": 2672,
 							"iid": "NpcSpawn-105566",
 							"width": 32,
 							"height": 48,
 							"defUid": 2006,
-							"px": [1044,304],
+							"px": [684,304],
 							"fieldInstances": [
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_creator", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
@@ -8473,6 +8499,143 @@
 									"id": "V_String",
 									"params": ["creator_intro"]
 								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [39,16],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 310,
+							"__worldY": 2630,
+							"iid": "DebugLabel-106579",
+							"width": 140,
+							"height": 24,
+							"defUid": 2007,
+							"px": [630,262],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "intro_practice_station", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_practice_station"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "PRACTICE", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["PRACTICE"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [28,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 143,
+							"__worldY": 2664,
+							"iid": "EnemySpawn-106580",
+							"width": 34,
+							"height": 56,
+							"defUid": 2008,
+							"px": [463,296],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "workshop_practice_bag", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_practice_bag"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "sandbag_infinite", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["sandbag_infinite"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "practice_sandbag", "__tile": null, "defUid": 104930, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["practice_sandbag"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 104932, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [25,15],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 90,
+							"__worldY": 2620,
+							"iid": "DebugLabel-106581",
+							"width": 140,
+							"height": 24,
+							"defUid": 2007,
+							"px": [410,252],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_sandbag", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_sign_sandbag"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "STRIKE TEST", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["STRIKE TEST"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [61,16],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 660,
+							"__worldY": 2630,
+							"iid": "DebugLabel-106582",
+							"width": 160,
+							"height": 24,
+							"defUid": 2007,
+							"px": [980,262],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "intro_bench_station", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_bench_station"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "TEST NOTES", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["TEST NOTES"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [74,17],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 870,
+							"__worldY": 2640,
+							"iid": "DebugLabel-106583",
+							"width": 140,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1190,272],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "intro_raider_station", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_raider_station"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "KEEP CLEAR", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["KEEP CLEAR"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
@@ -8528,18 +8691,18 @@
 						},
 						{
 							"__identifier": "CutsceneTrigger",
-							"__grid": [77,2],
+							"__grid": [72,2],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#B07AFF",
-							"__worldX": 924,
+							"__worldX": 836,
 							"__worldY": 2400,
 							"iid": "CutsceneTrigger-105569",
-							"width": 76,
+							"width": 164,
 							"height": 320,
 							"defUid": 105006,
-							"px": [1244,32],
+							"px": [1156,32],
 							"fieldInstances": [{ "__identifier": "cutscene", "__type": "String", "__value": "intro_raid_at_the_door", "__tile": null, "defUid": 105005, "realEditorValues": [{
 								"id": "V_String",
 								"params": ["intro_raid_at_the_door"]
