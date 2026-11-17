@@ -765,6 +765,7 @@ def woods():
         solid("root_1", 416, g - 48, 80, 48),
         piece("hill_woods_root", 416, g - 48, name="root 1"),
         ledge("fallen_trunk", 640, g - 64, 240),
+        piece("hill_woods_fallen_trunk", 640, g - 64, name="the fallen trunk"),
         solid("root_2", 992, g - 48, 80, 48),
         piece("hill_woods_root", 992, g - 48, name="root 2"),
         npc("npc_bob", "bob_woods", "Talk to Bob", BOB_X, g),

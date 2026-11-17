@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 106919,
+	"nextUid": 106940,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -27028,6 +27028,31 @@
 								{ "__identifier": "kind", "__type": "String", "__value": "hill_woods_root", "__tile": null, "defUid": 104425, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["hill_woods_root"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [40,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 10368,
+							"__worldY": 3264,
+							"iid": "Prop-106924",
+							"width": 240,
+							"height": 64,
+							"defUid": 104426,
+							"px": [640,448],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the fallen trunk", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the fallen trunk"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_woods_fallen_trunk", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_woods_fallen_trunk"]
 								}] }
 							]
 						},
