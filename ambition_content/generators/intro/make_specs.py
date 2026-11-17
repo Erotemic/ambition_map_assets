@@ -238,6 +238,12 @@ def hen(rid, n, x, floor, dialogue="hobford_hen"):
     return npc("chicken_hen", dialogue, "Look at the hen", x, floor, brain="townsfolk_roam", w=32, h=44)
 
 
+def sheep(x, floor):
+    """A sheep of the shepherd's flock. It grazes a long while and ambles
+    slowly to another place it can walk to; it cannot jump a wall."""
+    return npc("npc_fell_sheep", "hobford_sheep", "Look at the sheep", x, floor, w=56, h=34)
+
+
 def walls(w, floor_h, *, west=(), east=(), top=0):
     """The side walls of an open-air room, each with a 96-high opening above
     each floor in `west` and `east` (the edges go in the openings)."""
@@ -888,7 +894,6 @@ FOLD_WALL = (1216, 48)
 DRESSING = {
     "hill_fell_rocks": (128, 52), "hill_fell_rocks_slope": (128, 52),
     "hill_fell_gorse": (96, 52), "hill_fell_gorse_slope": (96, 52),
-    "hill_fell_sheep": (64, 38), "hill_fell_sheep_grazing": (64, 38),
 }
 
 
@@ -949,17 +954,14 @@ def fell():
         dress("hill_fell_rocks", 330, fy, 1),
         *[dress(kind, x, drove_road(f1, fy, d0, dy, x), n)
           for n, (kind, x) in enumerate([("hill_fell_gorse_slope", 560), ("hill_fell_rocks_slope", 820)])],
-        dress("hill_fell_sheep", 1090, dy, 1),
-        dress("hill_fell_sheep_grazing", 1160, dy, 2),
-        dress("hill_fell_sheep_grazing", 1400, dy, 3),
+        *[sheep(x, dy) for x in (1090, 1160, 1400)],
         *[dress(kind, x, drove_road(d1, dy, s0, sy, x), n)
           for n, (kind, x) in enumerate([("hill_fell_gorse_slope", 1600), ("hill_fell_rocks_slope", 1900)], start=3)],
         dress("hill_fell_rocks", 2200, sy, 5),
         dress("hill_fell_gorse", 2340, sy, 6),
         *[dress(kind, x, drove_road(CRAGS[-1][1], CRAGS[-1][2], t0, ty, x), n)
           for n, (kind, x) in enumerate([("hill_fell_gorse_slope", 2850), ("hill_fell_rocks_slope", 3080)], start=7)],
-        dress("hill_fell_sheep", 3300, ty, 4),
-        dress("hill_fell_sheep_grazing", 3500, ty, 5),
+        *[sheep(x, ty) for x in (3300, 3500)],
     ]
     return build(rid, e, "THE FELL", COUNTRY_MUSIC)
 

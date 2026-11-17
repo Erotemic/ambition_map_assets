@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 106669,
+	"nextUid": 106703,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -28915,77 +28915,89 @@
 							]
 						},
 						{
-							"__identifier": "Prop",
+							"__identifier": "NpcSpawn",
 							"__grid": [66,109],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#9966CC",
+							"__smartColor": "#FF9EEA",
 							"__worldX": 22582,
-							"__worldY": 3036,
-							"iid": "Prop-106217",
-							"width": 54,
-							"height": 36,
-							"defUid": 104426,
-							"px": [1062,1756],
+							"__worldY": 3038,
+							"iid": "NpcSpawn-106687",
+							"width": 56,
+							"height": 34,
+							"defUid": 2006,
+							"px": [1062,1758],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "fell sheep 1", "__tile": null, "defUid": 104424, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_fell_sheep", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fell sheep 1"]
+									"params": ["npc_fell_sheep"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_sheep", "__tile": null, "defUid": 104425, "realEditorValues": [{
+								{ "__identifier": "prompt", "__type": "String", "__value": "Look at the sheep", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hill_fell_sheep"]
+									"params": ["Look at the sheep"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hobford_sheep", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hobford_sheep"]
 								}] }
 							]
 						},
 						{
-							"__identifier": "Prop",
+							"__identifier": "NpcSpawn",
 							"__grid": [70,109],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#9966CC",
-							"__worldX": 22654,
-							"__worldY": 3039,
-							"iid": "Prop-106218",
-							"width": 54,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 22652,
+							"__worldY": 3038,
+							"iid": "NpcSpawn-106688",
+							"width": 56,
 							"height": 34,
-							"defUid": 104426,
-							"px": [1134,1759],
+							"defUid": 2006,
+							"px": [1132,1758],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "fell sheep_grazing 2", "__tile": null, "defUid": 104424, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_fell_sheep", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fell sheep_grazing 2"]
+									"params": ["npc_fell_sheep"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_sheep_grazing", "__tile": null, "defUid": 104425, "realEditorValues": [{
+								{ "__identifier": "prompt", "__type": "String", "__value": "Look at the sheep", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hill_fell_sheep_grazing"]
+									"params": ["Look at the sheep"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hobford_sheep", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hobford_sheep"]
 								}] }
 							]
 						},
 						{
-							"__identifier": "Prop",
+							"__identifier": "NpcSpawn",
 							"__grid": [85,109],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#9966CC",
-							"__worldX": 22894,
-							"__worldY": 3039,
-							"iid": "Prop-106219",
-							"width": 54,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 22892,
+							"__worldY": 3038,
+							"iid": "NpcSpawn-106689",
+							"width": 56,
 							"height": 34,
-							"defUid": 104426,
-							"px": [1374,1759],
+							"defUid": 2006,
+							"px": [1372,1758],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "fell sheep_grazing 3", "__tile": null, "defUid": 104424, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_fell_sheep", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fell sheep_grazing 3"]
+									"params": ["npc_fell_sheep"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_sheep_grazing", "__tile": null, "defUid": 104425, "realEditorValues": [{
+								{ "__identifier": "prompt", "__type": "String", "__value": "Look at the sheep", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hill_fell_sheep_grazing"]
+									"params": ["Look at the sheep"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hobford_sheep", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hobford_sheep"]
 								}] }
 							]
 						},
@@ -29140,52 +29152,60 @@
 							]
 						},
 						{
-							"__identifier": "Prop",
+							"__identifier": "NpcSpawn",
 							"__grid": [204,73],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#9966CC",
+							"__smartColor": "#FF9EEA",
 							"__worldX": 24792,
-							"__worldY": 2460,
-							"iid": "Prop-106226",
-							"width": 54,
-							"height": 36,
-							"defUid": 104426,
-							"px": [3272,1180],
+							"__worldY": 2462,
+							"iid": "NpcSpawn-106696",
+							"width": 56,
+							"height": 34,
+							"defUid": 2006,
+							"px": [3272,1182],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "fell sheep 4", "__tile": null, "defUid": 104424, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_fell_sheep", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fell sheep 4"]
+									"params": ["npc_fell_sheep"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_sheep", "__tile": null, "defUid": 104425, "realEditorValues": [{
+								{ "__identifier": "prompt", "__type": "String", "__value": "Look at the sheep", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hill_fell_sheep"]
+									"params": ["Look at the sheep"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hobford_sheep", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hobford_sheep"]
 								}] }
 							]
 						},
 						{
-							"__identifier": "Prop",
+							"__identifier": "NpcSpawn",
 							"__grid": [217,73],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#9966CC",
-							"__worldX": 24994,
-							"__worldY": 2463,
-							"iid": "Prop-106227",
-							"width": 54,
+							"__smartColor": "#FF9EEA",
+							"__worldX": 24992,
+							"__worldY": 2462,
+							"iid": "NpcSpawn-106697",
+							"width": 56,
 							"height": 34,
-							"defUid": 104426,
-							"px": [3474,1183],
+							"defUid": 2006,
+							"px": [3472,1182],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "fell sheep_grazing 5", "__tile": null, "defUid": 104424, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_fell_sheep", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fell sheep_grazing 5"]
+									"params": ["npc_fell_sheep"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "hill_fell_sheep_grazing", "__tile": null, "defUid": 104425, "realEditorValues": [{
+								{ "__identifier": "prompt", "__type": "String", "__value": "Look at the sheep", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hill_fell_sheep_grazing"]
+									"params": ["Look at the sheep"]
+								}] },
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hobford_sheep", "__tile": null, "defUid": 3014, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hobford_sheep"]
 								}] }
 							]
 						},
