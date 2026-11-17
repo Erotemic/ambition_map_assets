@@ -359,9 +359,9 @@ def workshop():
         # The hub's door comes out here (one way: nothing leads back).
         entity("LoadingZone", x0 + 64, 198, 48, 96, id="wake_room_arrival", name="wake room arrival", activation="Door",
                presentation="SceneArt"),
-        sign("workshop_sign_cart", x0 + 128, 120, "DO NOT SWITCH ON UNTIL FINISHED", 300),
+        *slate("workshop_sign_cart", x0 + 128, 116, "DO NOT SWITCH ON UNTIL FINISHED", 300),
         solid("test_plinth", PLINTH[0], PLINTH[2], PLINTH[1] - PLINTH[0], g - PLINTH[2]),
-        sign("workshop_sign_plinth", 580, PLINTH[2] - 60, "LOAD TEST", 140),
+        *slate("workshop_sign_plinth", (PLINTH[0] + PLINTH[1]) // 2, PLINTH[2] - 88, "LOAD TEST", 96),
         sign("intro_training_landing", (PLINTH[0] + PLINTH[1]) // 2, PLINTH[2] - 12, "▼", 24),
         solid("loft_crate", LOFT_CRATE[0], LOFT_CRATE[2], LOFT_CRATE[1] - LOFT_CRATE[0], g - LOFT_CRATE[2]),
         ledge("parts_loft", LOFT[0], LOFT[2], LOFT[1] - LOFT[0]),
@@ -369,18 +369,18 @@ def workshop():
         # the boards, and an oil can by the crate.
         entity("PickupSpawn", 148, LOFT[2] - 28, 24, 24, name="the torque gauge", kind="flag:intro_torque_gauge_found"),
         entity("PickupSpawn", 372, LOFT[2] - 28, 24, 24, name="a can of oil", kind="health:2"),
-        sign("workshop_sign_loft", 270, LOFT[2] - 60, "GAUGES GO BACK ON THE SHELF", 300),
+        *slate("workshop_sign_loft", 270, LOFT[2] - 64, "GAUGES GO BACK ON THE SHELF", 260),
         npc("npc_creator", "creator_intro", "Talk to the Creator", CREATOR_X, g),
-        sign("intro_practice_station", 700, g - 90, "PRACTICE", 140),
+        # The stations the Creator walks to are the slates over them.
+        *slate("intro_practice_station", 700, g - 136, "PRACTICE", 120),
         entity("EnemySpawn", 463, g - 56, 34, 56, name="workshop_practice_bag",
                brain="sandbag_infinite", character_id="practice_sandbag", respawn="OnRoomReenter"),
-        sign("workshop_sign_sandbag", 480, g - 100, "STRIKE TEST", 140),
-        sign("intro_bench_station", 1060, g - 90, "TEST NOTES", 160),
-        sign("intro_raider_station", 1260, g - 80, "KEEP CLEAR", 140),
+        *slate("workshop_sign_sandbag", 450, g - 112, "STRIKE TEST", 120),
+        *slate("intro_bench_station", 1060, BENCH[2] - 64, "LOGS. DO NOT TIDY.", 180),
+        *slate("intro_raider_station", 1260, g - 136, "KEEP CLEAR", 120),
         # The bench top is a board on trestles: bodies go under it, so it
         # stands between the Creator and the door without barring the way.
         ledge("bench", BENCH[0], BENCH[2], BENCH[1] - BENCH[0]),
-        sign("workshop_sign_bench", 1160, BENCH[2] - 60, "LOGS. DO NOT TIDY.", 220),
         # The raid: its trigger is in the roof, where no body goes, so only
         # the room's line starts it (`while_live`, when the story calls it).
         entity("EncounterTrigger", 64, 0, 32, 32, id=RAID, name=f"{RAID}_trigger"),
@@ -394,7 +394,7 @@ def workshop():
                prompt="Blow the whistle", target_encounter=RAID, action="ResetEncounter"),
         entity("LockWall", BARN_DOOR_X, g - DOOR_H, 24, DOOR_H, id="intro_barn_door", name="the barn door",
                gated_by=f"world.flag_set {DOOR_BROKEN}"),
-        sign("workshop_sign_door", BARN_DOOR_X - 150, 120, "TEST IN PROGRESS. DOOR BARRED.", 320),
+        *slate("workshop_sign_door", BARN_DOOR_X - 160, 116, "TEST IN PROGRESS. DOOR BARRED.", 300),
         # Inside the barn the camera stops at the barn's front wall, so the
         # yard is out of shot until Scout goes out into it: the raiders come
         # up the yard unseen and are first seen in the doorway.
@@ -432,6 +432,13 @@ BANK_FOOT = 3120
 #: How far up the camera looks on a hilltop (world px, negative is up): the
 #: lane, the meadow's top and the clearing's road each have a lookout zone.
 LOOKOUT_LIFT = -180
+
+
+def slate(name, cx, top, text, width):
+    """A slate `width` wide (a published `workshop_slate_<width>`) with its
+    middle at `cx` and its top at `top`, and its line of chalk on it."""
+    return [piece(f"workshop_slate_{width}", cx - width // 2, top, name=f"{name} slate"),
+            sign(name, cx, top + 4, text, width - 16)]
 
 
 def stake_board(name, cx, ground, first, second):

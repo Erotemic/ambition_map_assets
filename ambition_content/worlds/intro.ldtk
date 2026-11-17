@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 107063,
+	"nextUid": 107147,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -8356,19 +8356,44 @@
 							]
 						},
 						{
-							"__identifier": "DebugLabel",
+							"__identifier": "Prop",
 							"__grid": [43,7],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#FFFFFF",
+							"__smartColor": "#9966CC",
 							"__worldX": 378,
-							"__worldY": 2488,
-							"iid": "DebugLabel-105561",
+							"__worldY": 2484,
+							"iid": "Prop-107071",
 							"width": 300,
+							"height": 32,
+							"defUid": 104426,
+							"px": [698,116],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_cart slate", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_sign_cart slate"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "workshop_slate_300", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_slate_300"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [44,7],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 386,
+							"__worldY": 2488,
+							"iid": "DebugLabel-107072",
+							"width": 284,
 							"height": 24,
 							"defUid": 2007,
-							"px": [698,120],
+							"px": [706,120],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_cart", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -8382,19 +8407,44 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [33,13],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 212,
+							"__worldY": 2584,
+							"iid": "Prop-107115",
+							"width": 96,
+							"height": 32,
+							"defUid": 104426,
+							"px": [532,216],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_plinth slate", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_sign_plinth slate"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "workshop_slate_96", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_slate_96"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [31,15],
+							"__grid": [33,13],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 190,
-							"__worldY": 2612,
-							"iid": "DebugLabel-105562",
-							"width": 140,
+							"__worldX": 220,
+							"__worldY": 2588,
+							"iid": "DebugLabel-107116",
+							"width": 80,
 							"height": 24,
 							"defUid": 2007,
-							"px": [510,244],
+							"px": [540,220],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_plinth", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -8484,19 +8534,44 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [8,11],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -180,
+							"__worldY": 2544,
+							"iid": "Prop-107078",
+							"width": 260,
+							"height": 32,
+							"defUid": 104426,
+							"px": [140,176],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_loft slate", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_sign_loft slate"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "workshop_slate_260", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_slate_260"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [7,11],
+							"__grid": [9,11],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -200,
+							"__worldX": -172,
 							"__worldY": 2548,
-							"iid": "DebugLabel-105565",
-							"width": 300,
+							"iid": "DebugLabel-107079",
+							"width": 244,
 							"height": 24,
 							"defUid": 2007,
-							"px": [120,180],
+							"px": [148,180],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_loft", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -8539,19 +8614,44 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [40,13],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 320,
+							"__worldY": 2584,
+							"iid": "Prop-107081",
+							"width": 120,
+							"height": 32,
+							"defUid": 104426,
+							"px": [640,216],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "intro_practice_station slate", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_practice_station slate"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "workshop_slate_120", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_slate_120"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [39,16],
+							"__grid": [40,13],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 310,
-							"__worldY": 2630,
-							"iid": "DebugLabel-106579",
-							"width": 140,
+							"__worldX": 328,
+							"__worldY": 2588,
+							"iid": "DebugLabel-107082",
+							"width": 104,
 							"height": 24,
 							"defUid": 2007,
-							"px": [630,262],
+							"px": [648,220],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "intro_practice_station", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -8598,19 +8698,44 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [24,15],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 70,
+							"__worldY": 2608,
+							"iid": "Prop-107126",
+							"width": 120,
+							"height": 32,
+							"defUid": 104426,
+							"px": [390,240],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_sandbag slate", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_sign_sandbag slate"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "workshop_slate_120", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_slate_120"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [25,15],
+							"__grid": [24,15],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 90,
-							"__worldY": 2620,
-							"iid": "DebugLabel-106581",
-							"width": 140,
+							"__worldX": 78,
+							"__worldY": 2612,
+							"iid": "DebugLabel-107127",
+							"width": 104,
 							"height": 24,
 							"defUid": 2007,
-							"px": [410,252],
+							"px": [398,244],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_sandbag", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -8624,45 +8749,95 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [60,15],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 650,
+							"__worldY": 2608,
+							"iid": "Prop-107086",
+							"width": 180,
+							"height": 32,
+							"defUid": 104426,
+							"px": [970,240],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "intro_bench_station slate", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_bench_station slate"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "workshop_slate_180", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_slate_180"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [61,16],
+							"__grid": [61,15],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 660,
-							"__worldY": 2630,
-							"iid": "DebugLabel-106582",
-							"width": 160,
+							"__worldX": 658,
+							"__worldY": 2612,
+							"iid": "DebugLabel-107087",
+							"width": 164,
 							"height": 24,
 							"defUid": 2007,
-							"px": [980,262],
+							"px": [978,244],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "intro_bench_station", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["intro_bench_station"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "TEST NOTES", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "LOGS. DO NOT TIDY.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["TEST NOTES"]
+									"params": ["LOGS. DO NOT TIDY."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [75,13],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 880,
+							"__worldY": 2584,
+							"iid": "Prop-107088",
+							"width": 120,
+							"height": 32,
+							"defUid": 104426,
+							"px": [1200,216],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "intro_raider_station slate", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_raider_station slate"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "workshop_slate_120", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_slate_120"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [74,17],
+							"__grid": [75,13],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 870,
-							"__worldY": 2640,
-							"iid": "DebugLabel-106583",
-							"width": 140,
+							"__worldX": 888,
+							"__worldY": 2588,
+							"iid": "DebugLabel-107089",
+							"width": 104,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1190,272],
+							"px": [1208,220],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "intro_raider_station", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -8671,32 +8846,6 @@
 								{ "__identifier": "text", "__type": "String", "__value": "KEEP CLEAR", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["KEEP CLEAR"]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							]
-						},
-						{
-							"__identifier": "DebugLabel",
-							"__grid": [65,15],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 730,
-							"__worldY": 2612,
-							"iid": "DebugLabel-105567",
-							"width": 220,
-							"height": 24,
-							"defUid": 2007,
-							"px": [1050,244],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_bench", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["workshop_sign_bench"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "LOGS. DO NOT TIDY.", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["LOGS. DO NOT TIDY."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -8809,19 +8958,44 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [63,7],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 690,
+							"__worldY": 2484,
+							"iid": "Prop-107094",
+							"width": 300,
+							"height": 32,
+							"defUid": 104426,
+							"px": [1010,116],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_door slate", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_sign_door slate"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "workshop_slate_300", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_slate_300"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
 							"__grid": [63,7],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 690,
+							"__worldX": 698,
 							"__worldY": 2488,
-							"iid": "DebugLabel-105572",
-							"width": 320,
+							"iid": "DebugLabel-107095",
+							"width": 284,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1010,120],
+							"px": [1018,120],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_door", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
