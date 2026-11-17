@@ -550,7 +550,10 @@ def clearing():
         solid("standing_stone_2", 880, hi - 48, 48, 48),
         *[piece("hill_standing_stone", x, hi - 48, name=f"standing stone {n}") for n, x in enumerate((560, 880), start=1)],
         piece("hill_gate_office", 1370, 460),
-        sign("clearing_sign_post", 1470, hi - 252, "GATE OFFICE. PERSONS BY APPOINTMENT.", 360),
+        # On the office's front, between the eaves and the window: a line
+        # does not wrap, so two short ones over the office's middle.
+        sign("clearing_sign_post", 1470, hi - 178, "GATE OFFICE", 100),
+        sign("clearing_sign_hours", 1470, hi - 160, "BY APPOINTMENT", 120),
         # The gatekeeper, at the office door on the road's side of the barrier.
         npc("npc_valley_gatekeeper", "valley_gatekeeper", "Talk to the gatekeeper", 1420, hi),
         entity("LockWall", BARRIER_X, hi - BARRIER_H, 24, BARRIER_H, id="hobford_barrier", name="the barrier",
@@ -714,7 +717,9 @@ def village():
         # Plough's, where the board sends people about lost things.
         npc("npc_valley_trader", "valley_trader", "Talk to the trader", 1000, g),
         npc("npc_valley_innkeeper", "valley_innkeeper", "Talk to the innkeeper", 1580, g),
-        sign("hobford_sign_smithy", 1030, g - 150, "GATE GOODS: LAMP OIL, SALT, BATTERIES", 380),
+        # On the smithy's front under the thatch, in two lines over its door.
+        sign("hobford_sign_smithy", 1077, g - 100, "GATE GOODS", 100),
+        sign("hobford_sign_goods", 1077, g - 82, "OIL, SALT, BATTERIES", 170),
         sign("hobford_sign_inn", 1650, g - 150, "THE PLOUGH", 160),
         sign("hobford_board_1", 2090, g - 200, "FREIGHT WINDOW: TOMORROW, NOON.", 360),
         sign("hobford_board_2", 2090, g - 170, "LOST: ONE SPECKLED HEN. ASK AT THE PLOUGH.", 420),

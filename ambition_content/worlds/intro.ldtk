@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 106704,
+	"nextUid": 106867,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -22075,26 +22075,52 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [80,26],
+							"__grid": [88,30],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 16522,
-							"__worldY": 2468,
-							"iid": "DebugLabel-105500",
-							"width": 360,
+							"__worldX": 16652,
+							"__worldY": 2542,
+							"iid": "DebugLabel-106820",
+							"width": 100,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1290,420],
+							"px": [1420,494],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "clearing_sign_post", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["clearing_sign_post"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "GATE OFFICE. PERSONS BY APPOINTMENT.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "GATE OFFICE", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["GATE OFFICE. PERSONS BY APPOINTMENT."]
+									"params": ["GATE OFFICE"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [88,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 16642,
+							"__worldY": 2560,
+							"iid": "DebugLabel-106821",
+							"width": 120,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1410,512],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "clearing_sign_hours", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["clearing_sign_hours"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "BY APPOINTMENT", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["BY APPOINTMENT"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -25803,26 +25829,52 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [52,22],
+							"__grid": [64,25],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 8168,
-							"__worldY": 3178,
-							"iid": "DebugLabel-105464",
-							"width": 380,
+							"__worldX": 8355,
+							"__worldY": 3228,
+							"iid": "DebugLabel-106854",
+							"width": 100,
 							"height": 24,
 							"defUid": 2007,
-							"px": [840,362],
+							"px": [1027,412],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hobford_sign_smithy", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["hobford_sign_smithy"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "GATE GOODS: LAMP OIL, SALT, BATTERIES", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "GATE GOODS", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["GATE GOODS: LAMP OIL, SALT, BATTERIES"]
+									"params": ["GATE GOODS"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [62,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 8320,
+							"__worldY": 3246,
+							"iid": "DebugLabel-106855",
+							"width": 170,
+							"height": 24,
+							"defUid": 2007,
+							"px": [992,430],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hobford_sign_goods", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hobford_sign_goods"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "OIL, SALT, BATTERIES", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OIL, SALT, BATTERIES"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
