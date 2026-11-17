@@ -643,9 +643,9 @@ def siding():
         sign("siding_sign_platform", 570, g - 106, "FREIGHT ONLY", 120),
         sign("siding_sign_persons", 570, g - 86, "NO PERSONS ON THE PLATFORM", 220),
         entity("CutsceneTrigger", 1480, 32, 64, g - 32, cutscene="work_order"),
-        entity("ChestSpawn", 1560, g - 58, 76, 58, name="the goblins' crate", reward="flag:intro_creator_notes_recovered"),
-        # The label pasted on the crate's lid, clear of the loading stage.
-        sign("siding_sign_crate", 1620, g - 84, "1 LAB OF RESEARCH. PAID.", 200),
+        # The goblins' crate: its consignment label is its name.
+        entity("ChestSpawn", 1560, g - 58, 76, 58, name="1 LAB OF RESEARCH. PAID.", reward="flag:intro_creator_notes_recovered",
+               look="hill_goblins_crate"),
         entity("Switch", 1700, g - 32, 24, 32, id=f"{YARD_FIGHT}_again", name="the platform bell",
                prompt="Ring the platform bell", target_encounter=YARD_FIGHT, action="ResetEncounter"),
         # The drove road's fingerpost, the way on its arm.

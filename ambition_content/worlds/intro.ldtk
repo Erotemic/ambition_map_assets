@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 107267,
+	"nextUid": 107268,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -3368,7 +3368,7 @@
 			"tags": [],
 			"exportToToc": false,
 			"allowOutOfBounds": false,
-			"doc": "Chest spawn point; reward uses PickupSpawn kind strings.",
+			"doc": "Chest spawn point; reward uses PickupSpawn kind strings. `look` names a prop sheet that draws it (a crate, a purse) instead of the generic chest.",
 			"width": 76,
 			"height": 58,
 			"resizableX": true,
@@ -3475,6 +3475,46 @@
 					"allowedRefsEntityUid": null,
 					"allowedRefTags": [],
 					"tilesetUid": null
+				},
+				{
+					"identifier": "look",
+					"doc": null,
+					"__type": "String",
+					"uid": 107267,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": {
+						"id": "V_String",
+						"params": [""]
+					},
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
 				}
 			]
 		},
@@ -16663,40 +16703,18 @@
 							"defUid": 2016,
 							"px": [1560,454],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "the goblins' crate", "__tile": null, "defUid": 3041, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "1 LAB OF RESEARCH. PAID.", "__tile": null, "defUid": 3041, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["the goblins' crate"]
+									"params": ["1 LAB OF RESEARCH. PAID."]
 								}] },
 								{ "__identifier": "reward", "__type": "String", "__value": "flag:intro_creator_notes_recovered", "__tile": null, "defUid": 3042, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["flag:intro_creator_notes_recovered"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "hill_goblins_crate", "__tile": null, "defUid": 107267, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_goblins_crate"]
 								}] }
-							]
-						},
-						{
-							"__identifier": "DebugLabel",
-							"__grid": [95,26],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 21120,
-							"__worldY": 3244,
-							"iid": "DebugLabel-106882",
-							"width": 200,
-							"height": 24,
-							"defUid": 2007,
-							"px": [1520,428],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "siding_sign_crate", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["siding_sign_crate"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "1 LAB OF RESEARCH. PAID.", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["1 LAB OF RESEARCH. PAID."]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
