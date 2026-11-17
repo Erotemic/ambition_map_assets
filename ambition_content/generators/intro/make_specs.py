@@ -589,7 +589,9 @@ def clearing():
 YARD_FIGHT = "intro_freight_yard_fight"
 #: The freight stacked on the platform: (name, x0, x1, top). Solid crates on
 #: the floor and one-way pallets over them.
-FREIGHT = [("crate_a", 700, 796, LOW_FLOOR - 48), ("crate_b", 1240, 1336, LOW_FLOOR - 48)]
+#: The freight crates are solid on whole 16 px cells, so the crates drawn
+#: over them cover the blocks' tiles.
+FREIGHT = [("crate_a", 688, 784, LOW_FLOOR - 48), ("crate_b", 1232, 1328, LOW_FLOOR - 48)]
 PALLETS = [("pallets_a", 820, 980, LOW_FLOOR - 112), ("pallets_b", 1360, 1520, LOW_FLOOR - 112)]
 
 
@@ -610,15 +612,26 @@ def siding():
         edge("siding_from_clearing", "up the freight track to the gate", 0, g, CLEARING, "clearing_to_siding"),
         entity("CutsceneTrigger", 300, 32, 64, g - 32, cutscene="foreman_siding"),
         entity("EncounterTrigger", 440, 32, 64, g - 32, id=YARD_FIGHT, name=f"{YARD_FIGHT}_trigger"),
+        # The freight crates are solid, and drawn as crates; the loading
+        # stages are decks on trestle legs a walker goes under, not boards
+        # in the air.
         *[solid(n, x0, top, x1 - x0, g - top) for n, x0, x1, top in FREIGHT],
+        *[piece("hill_freight_crates", x0, top, name=f"freight {n}") for n, x0, x1, top in FREIGHT],
         *[ledge(n, x0, top, x1 - x0) for n, x0, x1, top in PALLETS],
-        sign("siding_sign_platform", 960, 120, "FREIGHT ONLY. NO PERSONS ON THE PLATFORM.", 420),
+        *[piece("hill_loading_stage", x0, top, name=f"loading stage {n}") for n, x0, x1, top in PALLETS],
+        # The platform's notice, its words on its board.
+        piece("hill_siding_notice", 450, g - 112, name="the platform notice"),
+        sign("siding_sign_platform", 570, g - 106, "FREIGHT ONLY", 120),
+        sign("siding_sign_persons", 570, g - 86, "NO PERSONS ON THE PLATFORM", 220),
         entity("CutsceneTrigger", 1480, 32, 64, g - 32, cutscene="work_order"),
         entity("ChestSpawn", 1560, g - 58, 76, 58, name="the goblins' crate", reward="flag:intro_creator_notes_recovered"),
-        sign("siding_sign_crate", 1598, g - 120, "1 LAB OF RESEARCH. PAID.", 280),
+        # The label pasted on the crate's lid, clear of the loading stage.
+        sign("siding_sign_crate", 1620, g - 84, "1 LAB OF RESEARCH. PAID.", 200),
         entity("Switch", 1700, g - 32, 24, 32, id=f"{YARD_FIGHT}_again", name="the platform bell",
                prompt="Ring the platform bell", target_encounter=YARD_FIGHT, action="ResetEncounter"),
-        sign("siding_sign_fell", w - 160, g - 140, "DROVE ROAD. OVER THE FELL", 260),
+        # The drove road's fingerpost, the way on its arm.
+        piece("hill_fingerpost", w - 190, g - 120, name="the drove road's fingerpost"),
+        sign("siding_sign_fell", w - 112, g - 109, "THE FELL", 90),
         edge("siding_to_fell", "the drove road up the fell", w - WALL, g, FELL, "fell_from_siding"),
         start(rid, 200, g),
     ]

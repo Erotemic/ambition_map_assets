@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 106867,
+	"nextUid": 106919,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -16059,15 +16059,15 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -16279,27 +16279,178 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [43,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 20288,
+							"__worldY": 3280,
+							"iid": "Prop-106899",
+							"width": 95,
+							"height": 48,
+							"defUid": 104426,
+							"px": [688,464],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "freight crate_a", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["freight crate_a"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_freight_crates", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_freight_crates"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [77,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 20832,
+							"__worldY": 3280,
+							"iid": "Prop-106900",
+							"width": 95,
+							"height": 48,
+							"defUid": 104426,
+							"px": [1232,464],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "freight crate_b", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["freight crate_b"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_freight_crates", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_freight_crates"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [51,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 20420,
+							"__worldY": 3216,
+							"iid": "Prop-106875",
+							"width": 160,
+							"height": 112,
+							"defUid": 104426,
+							"px": [820,400],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "loading stage pallets_a", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["loading stage pallets_a"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_loading_stage", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_loading_stage"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [85,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 20960,
+							"__worldY": 3216,
+							"iid": "Prop-106876",
+							"width": 160,
+							"height": 112,
+							"defUid": 104426,
+							"px": [1360,400],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "loading stage pallets_b", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["loading stage pallets_b"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_loading_stage", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_loading_stage"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [28,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 20050,
+							"__worldY": 3216,
+							"iid": "Prop-106877",
+							"width": 240,
+							"height": 112,
+							"defUid": 104426,
+							"px": [450,400],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the platform notice", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the platform notice"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_siding_notice", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_siding_notice"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [46,7],
+							"__grid": [31,25],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 20350,
-							"__worldY": 2936,
-							"iid": "DebugLabel-105432",
-							"width": 420,
+							"__worldX": 20110,
+							"__worldY": 3222,
+							"iid": "DebugLabel-106878",
+							"width": 120,
 							"height": 24,
 							"defUid": 2007,
-							"px": [750,120],
+							"px": [510,406],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "siding_sign_platform", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["siding_sign_platform"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "FREIGHT ONLY. NO PERSONS ON THE PLATFORM.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "FREIGHT ONLY", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["FREIGHT ONLY. NO PERSONS ON THE PLATFORM."]
+									"params": ["FREIGHT ONLY"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [28,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 20060,
+							"__worldY": 3242,
+							"iid": "DebugLabel-106879",
+							"width": 220,
+							"height": 24,
+							"defUid": 2007,
+							"px": [460,426],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "siding_sign_persons", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["siding_sign_persons"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "NO PERSONS ON THE PLATFORM", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["NO PERSONS ON THE PLATFORM"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -16350,18 +16501,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [91,24],
+							"__grid": [95,26],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 21058,
-							"__worldY": 3208,
-							"iid": "DebugLabel-105434",
-							"width": 280,
+							"__worldX": 21120,
+							"__worldY": 3244,
+							"iid": "DebugLabel-106882",
+							"width": 200,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1458,392],
+							"px": [1520,428],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "siding_sign_crate", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -16409,27 +16560,52 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [108,24],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 21340,
+							"__worldY": 3209,
+							"iid": "Prop-106910",
+							"width": 140,
+							"height": 119,
+							"defUid": 104426,
+							"px": [1740,393],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the drove road's fingerpost", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the drove road's fingerpost"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fingerpost", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fingerpost"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [101,23],
+							"__grid": [110,25],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 21230,
-							"__worldY": 3188,
-							"iid": "DebugLabel-106193",
-							"width": 260,
+							"__worldX": 21363,
+							"__worldY": 3219,
+							"iid": "DebugLabel-106911",
+							"width": 90,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1630,372],
+							"px": [1763,403],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "siding_sign_fell", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["siding_sign_fell"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "DROVE ROAD. OVER THE FELL", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "THE FELL", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["DROVE ROAD. OVER THE FELL"]
+									"params": ["THE FELL"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
