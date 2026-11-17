@@ -846,7 +846,7 @@ PRIZE_CASE = (1000, 96, 88)
 PRIZE_CHEST = (1010, 76, 58)
 PRIZE_BASE = 10
 #: A closet: its curtain (x0 to the east wall, floor to ceiling), and where
-#: the goat and the car stand behind it (x, w, h; the art's frames).
+#: the goat and the car stand behind it (x, w, h: their placements).
 CLOSET_CURTAIN_X = 160
 CLOSET_GOAT = (250, 100, 80)
 CLOSET_CAR = (200, 210, 90)
@@ -893,12 +893,21 @@ def hotel_ballroom():
     return rid, room(rid, e, "Hylbert's Hotel: the ballroom. Tonight: three doors.", theme=INTERIOR)
 
 
+def prize(character, dialogue, prompt, x, w, h, floor, flag):
+    """What stands behind a door: an actor in its closet only while the
+    round's `flag` is set (`present_when`, answered when the closet is
+    built)."""
+    return (f'( type: "NpcSpawn", px: [{x}, {floor - h}], size: [{w}, {h}], fields: ( character_id: "{character}", '
+            f'prompt: "{prompt}", dialogue_id: "{dialogue}", present_when: "world.flag_set {flag}" ) ),')
+
+
 def hotel_closet(k):
     """Behind stage door k: a small room, its curtain, and behind the curtain
-    a goat or the car. Each is a `LockWall` drawn with its picture: the
-    curtain stands until the host opens door k, and the goat or the car
-    stands only while the round says it is behind door k. So the closet
-    shows nothing of the round before the door is opened."""
+    a goat or the car. The curtain is a `LockWall` that stands until the
+    host opens door k. The goat and the car are actors (`npc_math_goat`,
+    `npc_math_car`) placed `present_when` the round says they are behind
+    door k, which it says only once the door is open. So the closet shows
+    nothing of the round before the door is opened."""
     def make():
         rid = CLOSETS[k]
         _, w, h = ROOMS_AT[rid]
@@ -915,8 +924,8 @@ def hotel_closet(k):
             f'( type: "PlayerStart", px: [110, {floor - 46}], size: [28, 46], fields: ( name: "{rid}_spawn" ) ),',
             lock_wall(f"{rid}_curtain", f"the curtain of door number {n}", CLOSET_CURTAIN_X, INSIDE_CEILING, w - WALL - CLOSET_CURTAIN_X,
                       floor - INSIDE_CEILING, f"world.flag_set {MONTY_OPEN.format(n)}", "math_closet_curtain"),
-            lock_wall(f"{rid}_goat", "a goat", gx, floor - gh, gw, gh, f"not world.flag_set {MONTY_GOAT.format(n)}", "math_goat"),
-            lock_wall(f"{rid}_car", "the car", cx, floor - ch, cw, ch, f"not world.flag_set {MONTY_CAR.format(n)}", "math_car"),
+            prize("npc_math_goat", "hotel_show_goat", "Look at the goat", gx, gw, gh, floor, MONTY_GOAT.format(n)),
+            prize("npc_math_car", "hotel_show_car", "Look at the car", cx, cw, ch, floor, MONTY_CAR.format(n)),
         ]
         return rid, room(rid, e, f"Behind door number {n}.", theme=INTERIOR)
     return make

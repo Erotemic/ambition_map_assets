@@ -11,7 +11,7 @@
 	"iid": "ambition-math-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 211494,
+	"nextUid": 211534,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -1333,6 +1333,43 @@
 						"id": "V_Bool",
 						"params": [ false ]
 					},
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "present_when",
+					"doc": null,
+					"__type": "String",
+					"uid": 211494,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -19627,68 +19664,68 @@
 							]
 						},
 						{
-							"__identifier": "LockWall",
+							"__identifier": "NpcSpawn",
 							"__grid": [15,11],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#9E9E9E",
+							"__smartColor": "#FF9EEA",
 							"__worldX": 14010,
 							"__worldY": 2576,
-							"iid": "LockWall-209721",
+							"iid": "NpcSpawn-211501",
 							"width": 100,
 							"height": 80,
-							"defUid": 4084,
+							"defUid": 2006,
 							"px": [250,176],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_1_goat", "__tile": null, "defUid": 4082, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_math_goat", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_hotel_door_1_goat"]
+									"params": ["npc_math_goat"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "a goat", "__tile": null, "defUid": 4083, "realEditorValues": [{
+								{ "__identifier": "prompt", "__type": "String", "__value": "Look at the goat", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["a goat"]
+									"params": ["Look at the goat"]
 								}] },
-								{ "__identifier": "gated_by", "__type": "String", "__value": "not world.flag_set monty_goat_1", "__tile": null, "defUid": 6860, "realEditorValues": [{
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hotel_show_goat", "__tile": null, "defUid": 3014, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["not world.flag_set monty_goat_1"]
+									"params": ["hotel_show_goat"]
 								}] },
-								{ "__identifier": "look", "__type": "String", "__value": "math_goat", "__tile": null, "defUid": 7407, "realEditorValues": [{
+								{ "__identifier": "present_when", "__type": "String", "__value": "world.flag_set monty_goat_1", "__tile": null, "defUid": 211494, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_goat"]
+									"params": ["world.flag_set monty_goat_1"]
 								}] }
 							]
 						},
 						{
-							"__identifier": "LockWall",
+							"__identifier": "NpcSpawn",
 							"__grid": [12,10],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#9E9E9E",
+							"__smartColor": "#FF9EEA",
 							"__worldX": 13960,
 							"__worldY": 2566,
-							"iid": "LockWall-209722",
+							"iid": "NpcSpawn-211502",
 							"width": 210,
 							"height": 90,
-							"defUid": 4084,
+							"defUid": 2006,
 							"px": [200,166],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_1_car", "__tile": null, "defUid": 4082, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_math_car", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_hotel_door_1_car"]
+									"params": ["npc_math_car"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "the car", "__tile": null, "defUid": 4083, "realEditorValues": [{
+								{ "__identifier": "prompt", "__type": "String", "__value": "Look at the car", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["the car"]
+									"params": ["Look at the car"]
 								}] },
-								{ "__identifier": "gated_by", "__type": "String", "__value": "not world.flag_set monty_car_1", "__tile": null, "defUid": 6860, "realEditorValues": [{
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hotel_show_car", "__tile": null, "defUid": 3014, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["not world.flag_set monty_car_1"]
+									"params": ["hotel_show_car"]
 								}] },
-								{ "__identifier": "look", "__type": "String", "__value": "math_car", "__tile": null, "defUid": 7407, "realEditorValues": [{
+								{ "__identifier": "present_when", "__type": "String", "__value": "world.flag_set monty_car_1", "__tile": null, "defUid": 211494, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_car"]
+									"params": ["world.flag_set monty_car_1"]
 								}] }
 							]
 						},
@@ -20060,68 +20097,68 @@
 							]
 						},
 						{
-							"__identifier": "LockWall",
+							"__identifier": "NpcSpawn",
 							"__grid": [15,11],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#9E9E9E",
+							"__smartColor": "#FF9EEA",
 							"__worldX": 14570,
 							"__worldY": 2576,
-							"iid": "LockWall-209734",
+							"iid": "NpcSpawn-211514",
 							"width": 100,
 							"height": 80,
-							"defUid": 4084,
+							"defUid": 2006,
 							"px": [250,176],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_2_goat", "__tile": null, "defUid": 4082, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_math_goat", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_hotel_door_2_goat"]
+									"params": ["npc_math_goat"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "a goat", "__tile": null, "defUid": 4083, "realEditorValues": [{
+								{ "__identifier": "prompt", "__type": "String", "__value": "Look at the goat", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["a goat"]
+									"params": ["Look at the goat"]
 								}] },
-								{ "__identifier": "gated_by", "__type": "String", "__value": "not world.flag_set monty_goat_2", "__tile": null, "defUid": 6860, "realEditorValues": [{
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hotel_show_goat", "__tile": null, "defUid": 3014, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["not world.flag_set monty_goat_2"]
+									"params": ["hotel_show_goat"]
 								}] },
-								{ "__identifier": "look", "__type": "String", "__value": "math_goat", "__tile": null, "defUid": 7407, "realEditorValues": [{
+								{ "__identifier": "present_when", "__type": "String", "__value": "world.flag_set monty_goat_2", "__tile": null, "defUid": 211494, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_goat"]
+									"params": ["world.flag_set monty_goat_2"]
 								}] }
 							]
 						},
 						{
-							"__identifier": "LockWall",
+							"__identifier": "NpcSpawn",
 							"__grid": [12,10],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#9E9E9E",
+							"__smartColor": "#FF9EEA",
 							"__worldX": 14520,
 							"__worldY": 2566,
-							"iid": "LockWall-209735",
+							"iid": "NpcSpawn-211515",
 							"width": 210,
 							"height": 90,
-							"defUid": 4084,
+							"defUid": 2006,
 							"px": [200,166],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_2_car", "__tile": null, "defUid": 4082, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_math_car", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_hotel_door_2_car"]
+									"params": ["npc_math_car"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "the car", "__tile": null, "defUid": 4083, "realEditorValues": [{
+								{ "__identifier": "prompt", "__type": "String", "__value": "Look at the car", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["the car"]
+									"params": ["Look at the car"]
 								}] },
-								{ "__identifier": "gated_by", "__type": "String", "__value": "not world.flag_set monty_car_2", "__tile": null, "defUid": 6860, "realEditorValues": [{
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hotel_show_car", "__tile": null, "defUid": 3014, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["not world.flag_set monty_car_2"]
+									"params": ["hotel_show_car"]
 								}] },
-								{ "__identifier": "look", "__type": "String", "__value": "math_car", "__tile": null, "defUid": 7407, "realEditorValues": [{
+								{ "__identifier": "present_when", "__type": "String", "__value": "world.flag_set monty_car_2", "__tile": null, "defUid": 211494, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_car"]
+									"params": ["world.flag_set monty_car_2"]
 								}] }
 							]
 						},
@@ -20493,68 +20530,68 @@
 							]
 						},
 						{
-							"__identifier": "LockWall",
+							"__identifier": "NpcSpawn",
 							"__grid": [15,11],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#9E9E9E",
+							"__smartColor": "#FF9EEA",
 							"__worldX": 15130,
 							"__worldY": 2576,
-							"iid": "LockWall-209747",
+							"iid": "NpcSpawn-211527",
 							"width": 100,
 							"height": 80,
-							"defUid": 4084,
+							"defUid": 2006,
 							"px": [250,176],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_3_goat", "__tile": null, "defUid": 4082, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_math_goat", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_hotel_door_3_goat"]
+									"params": ["npc_math_goat"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "a goat", "__tile": null, "defUid": 4083, "realEditorValues": [{
+								{ "__identifier": "prompt", "__type": "String", "__value": "Look at the goat", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["a goat"]
+									"params": ["Look at the goat"]
 								}] },
-								{ "__identifier": "gated_by", "__type": "String", "__value": "not world.flag_set monty_goat_3", "__tile": null, "defUid": 6860, "realEditorValues": [{
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hotel_show_goat", "__tile": null, "defUid": 3014, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["not world.flag_set monty_goat_3"]
+									"params": ["hotel_show_goat"]
 								}] },
-								{ "__identifier": "look", "__type": "String", "__value": "math_goat", "__tile": null, "defUid": 7407, "realEditorValues": [{
+								{ "__identifier": "present_when", "__type": "String", "__value": "world.flag_set monty_goat_3", "__tile": null, "defUid": 211494, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_goat"]
+									"params": ["world.flag_set monty_goat_3"]
 								}] }
 							]
 						},
 						{
-							"__identifier": "LockWall",
+							"__identifier": "NpcSpawn",
 							"__grid": [12,10],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#9E9E9E",
+							"__smartColor": "#FF9EEA",
 							"__worldX": 15080,
 							"__worldY": 2566,
-							"iid": "LockWall-209748",
+							"iid": "NpcSpawn-211528",
 							"width": 210,
 							"height": 90,
-							"defUid": 4084,
+							"defUid": 2006,
 							"px": [200,166],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "math_hotel_door_3_car", "__tile": null, "defUid": 4082, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_math_car", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_hotel_door_3_car"]
+									"params": ["npc_math_car"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "the car", "__tile": null, "defUid": 4083, "realEditorValues": [{
+								{ "__identifier": "prompt", "__type": "String", "__value": "Look at the car", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["the car"]
+									"params": ["Look at the car"]
 								}] },
-								{ "__identifier": "gated_by", "__type": "String", "__value": "not world.flag_set monty_car_3", "__tile": null, "defUid": 6860, "realEditorValues": [{
+								{ "__identifier": "dialogue_id", "__type": "String", "__value": "hotel_show_car", "__tile": null, "defUid": 3014, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["not world.flag_set monty_car_3"]
+									"params": ["hotel_show_car"]
 								}] },
-								{ "__identifier": "look", "__type": "String", "__value": "math_car", "__tile": null, "defUid": 7407, "realEditorValues": [{
+								{ "__identifier": "present_when", "__type": "String", "__value": "world.flag_set monty_car_3", "__tile": null, "defUid": 211494, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["math_car"]
+									"params": ["world.flag_set monty_car_3"]
 								}] }
 							]
 						},
