@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 107147,
+	"nextUid": 107267,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -20422,19 +20422,44 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [180,34],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 15013,
+							"__worldY": 2601,
+							"iid": "Prop-107230",
+							"width": 140,
+							"height": 119,
+							"defUid": 104426,
+							"px": [2885,553],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the gate's fingerpost", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the gate's fingerpost"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fingerpost", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fingerpost"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [179,32],
+							"__grid": [181,35],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 14998,
-							"__worldY": 2560,
-							"iid": "DebugLabel-105876",
-							"width": 160,
+							"__worldX": 15036,
+							"__worldY": 2611,
+							"iid": "DebugLabel-107231",
+							"width": 90,
 							"height": 24,
 							"defUid": 2007,
-							"px": [2870,512],
+							"px": [2908,563],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "meadow_sign_gate", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -22840,53 +22865,78 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [128,35],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 17292,
+							"__worldY": 2620,
+							"iid": "Prop-107203",
+							"width": 200,
+							"height": 100,
+							"defUid": 104426,
+							"px": [2060,572],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "clearing_sign_ring", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["clearing_sign_ring"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_stake_board", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_stake_board"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [107,20],
+							"__grid": [129,36],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 16946,
-							"__worldY": 2380,
-							"iid": "DebugLabel-105417",
-							"width": 420,
+							"__worldX": 17302,
+							"__worldY": 2628,
+							"iid": "DebugLabel-107204",
+							"width": 180,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1714,332],
+							"px": [2070,580],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "clearing_sign_ring", "__tile": null, "defUid": 3015, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "clearing_sign_ring_1", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["clearing_sign_ring"]
+									"params": ["clearing_sign_ring_1"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "HOBFORD GATE. FREIGHT WINDOW ON THE BOARD.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "HOBFORD GATE", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["HOBFORD GATE. FREIGHT WINDOW ON THE BOARD."]
+									"params": ["HOBFORD GATE"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [131,33],
+							"__grid": [129,37],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 17338,
-							"__worldY": 2580,
-							"iid": "DebugLabel-106019",
-							"width": 220,
+							"__worldX": 17302,
+							"__worldY": 2652,
+							"iid": "DebugLabel-107205",
+							"width": 180,
 							"height": 24,
 							"defUid": 2007,
-							"px": [2106,532],
+							"px": [2070,604],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "clearing_sign_siding", "__tile": null, "defUid": 3015, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "clearing_sign_ring_2", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["clearing_sign_siding"]
+									"params": ["clearing_sign_ring_2"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "FREIGHT SIDING", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "TIMES ON THE BOARD", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["FREIGHT SIDING"]
+									"params": ["TIMES ON THE BOARD"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -22921,27 +22971,129 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [188,54],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 18250,
+							"__worldY": 2924,
+							"iid": "Prop-107207",
+							"width": 200,
+							"height": 100,
+							"defUid": 104426,
+							"px": [3018,876],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "clearing_sign_signal", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["clearing_sign_signal"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_stake_board", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_stake_board"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [191,52],
+							"__grid": [189,55],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 18288,
-							"__worldY": 2884,
-							"iid": "DebugLabel-106021",
-							"width": 320,
+							"__worldX": 18260,
+							"__worldY": 2932,
+							"iid": "DebugLabel-107208",
+							"width": 180,
 							"height": 24,
 							"defUid": 2007,
-							"px": [3056,836],
+							"px": [3028,884],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "clearing_sign_signal", "__tile": null, "defUid": 3015, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "clearing_sign_signal_1", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["clearing_sign_signal"]
+									"params": ["clearing_sign_signal_1"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "FREIGHT ONLY. WALK ON THE LEFT.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "FREIGHT ONLY", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["FREIGHT ONLY. WALK ON THE LEFT."]
+									"params": ["FREIGHT ONLY"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [189,56],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 18260,
+							"__worldY": 2956,
+							"iid": "DebugLabel-107209",
+							"width": 180,
+							"height": 24,
+							"defUid": 2007,
+							"px": [3028,908],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "clearing_sign_signal_2", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["clearing_sign_signal_2"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "WALK ON THE LEFT", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["WALK ON THE LEFT"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [211,53],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 18623,
+							"__worldY": 2905,
+							"iid": "Prop-107210",
+							"width": 140,
+							"height": 119,
+							"defUid": 104426,
+							"px": [3391,857],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the siding's fingerpost", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the siding's fingerpost"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_fingerpost", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_fingerpost"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [213,54],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 18641,
+							"__worldY": 2915,
+							"iid": "DebugLabel-107211",
+							"width": 100,
+							"height": 24,
+							"defUid": 2007,
+							"px": [3409,867],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "clearing_sign_siding", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["clearing_sign_siding"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "THE SIDING", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["THE SIDING"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -25228,27 +25380,52 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [101,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6550,
+							"__worldY": 3156,
+							"iid": "Prop-107258",
+							"width": 260,
+							"height": 32,
+							"defUid": 104426,
+							"px": [1622,340],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "millstream_sign_mill slate", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["millstream_sign_mill slate"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "workshop_slate_260", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["workshop_slate_260"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [94,15],
+							"__grid": [101,21],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 6438,
-							"__worldY": 3068,
-							"iid": "DebugLabel-105451",
-							"width": 380,
+							"__worldX": 6558,
+							"__worldY": 3160,
+							"iid": "DebugLabel-107259",
+							"width": 244,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1510,252],
+							"px": [1630,344],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "millstream_sign_mill", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["millstream_sign_mill"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "HOBFORD MILL. FLOUR, FEED, NO CREDIT.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "FLOUR AND FEED. NO CREDIT.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["HOBFORD MILL. FLOUR, FEED, NO CREDIT."]
+									"params": ["FLOUR AND FEED. NO CREDIT."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -29220,27 +29397,78 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [10,121],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 21680,
+							"__worldY": 3228,
+							"iid": "Prop-107151",
+							"width": 200,
+							"height": 100,
+							"defUid": 104426,
+							"px": [160,1948],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell_sign_road", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell_sign_road"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_stake_board", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_stake_board"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [4,119],
+							"__grid": [10,122],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 21590,
-							"__worldY": 3188,
-							"iid": "DebugLabel-106168",
-							"width": 380,
+							"__worldX": 21690,
+							"__worldY": 3236,
+							"iid": "DebugLabel-107152",
+							"width": 180,
 							"height": 24,
 							"defUid": 2007,
-							"px": [70,1908],
+							"px": [170,1956],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "fell_sign_road", "__tile": null, "defUid": 3015, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "fell_sign_road_1", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fell_sign_road"]
+									"params": ["fell_sign_road_1"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "DROVE ROAD. SHUT THE GATES BEHIND YOU", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "THE DROVE ROAD", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["DROVE ROAD. SHUT THE GATES BEHIND YOU"]
+									"params": ["THE DROVE ROAD"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [10,123],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 21690,
+							"__worldY": 3260,
+							"iid": "DebugLabel-107153",
+							"width": 180,
+							"height": 24,
+							"defUid": 2007,
+							"px": [170,1980],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell_sign_road_2", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell_sign_road_2"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "SHUT THE GATES", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SHUT THE GATES"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -29437,27 +29665,78 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [198,69],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 24695,
+							"__worldY": 2396,
+							"iid": "Prop-107161",
+							"width": 200,
+							"height": 100,
+							"defUid": 104426,
+							"px": [3175,1116],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell_sign_top", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell_sign_top"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hill_stake_board", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_stake_board"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [194,66],
+							"__grid": [199,70],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 24630,
-							"__worldY": 2346,
-							"iid": "DebugLabel-106174",
-							"width": 300,
+							"__worldX": 24705,
+							"__worldY": 2404,
+							"iid": "DebugLabel-107162",
+							"width": 180,
 							"height": 24,
 							"defUid": 2007,
-							"px": [3110,1066],
+							"px": [3185,1124],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "fell_sign_top", "__tile": null, "defUid": 3015, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "fell_sign_top_1", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fell_sign_top"]
+									"params": ["fell_sign_top_1"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "THE TOP. THE VIEW IS FREE", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "THE TOP", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["THE TOP. THE VIEW IS FREE"]
+									"params": ["THE TOP"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [199,71],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 24705,
+							"__worldY": 2428,
+							"iid": "DebugLabel-107163",
+							"width": 180,
+							"height": 24,
+							"defUid": 2007,
+							"px": [3185,1148],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fell_sign_top_2", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fell_sign_top_2"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "THE VIEW IS FREE", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["THE VIEW IS FREE"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
