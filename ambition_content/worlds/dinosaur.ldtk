@@ -11,7 +11,7 @@
 	"iid": "ambition-dinosaur-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 500498,
+	"nextUid": 500499,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -6076,7 +6076,7 @@
 			"tags": [],
 			"exportToToc": false,
 			"allowOutOfBounds": true,
-			"doc": "A held item (gauntlet or weapon) resting on the ground, pick-up-able with Attack while empty-handed. `held_item` is a brain held-item registry id (e.g. meteor, bomb, blink, grapple, gun_sword) resolved at spawn; the box size sets the pickup half-extent. Replaces the debug spawn_debug_ground_items_once table with authored placement.",
+			"doc": "A held item (gauntlet or weapon) resting on the ground, pick-up-able with Attack while empty-handed. `held_item` is a brain held-item registry id (e.g. meteor, bomb, blink, grapple, gun_sword) resolved at spawn; the box size sets the pickup half-extent. Replaces the debug spawn_debug_ground_items_once table with authored placement. `regrow_seconds`, when set, makes the placement a source: once nothing of its kind lies there, a fresh one appears after that many seconds (a palm's coconut).",
 			"width": 28,
 			"height": 28,
 			"resizableX": true,
@@ -6223,6 +6223,43 @@
 					"allowedRefsEntityUid": null,
 					"allowedRefTags": [],
 					"tilesetUid": null
+				},
+				{
+					"identifier": "regrow_seconds",
+					"doc": null,
+					"__type": "Float",
+					"uid": 500498,
+					"type": "F_Float",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
 				}
 			]
 		},
@@ -8763,7 +8800,8 @@
 								{ "__identifier": "held_item", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5942, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["coconut"]
-								}] }
+								}] },
+								{ "__identifier": "regrow_seconds", "__type": "Float", "__value": 30.0, "__tile": null, "defUid": 500498, "realEditorValues": [{ "id": "V_Float", "params": [30.0] }] }
 							],
 							"__worldX": 20472,
 							"__worldY": 469
@@ -8895,7 +8933,8 @@
 								{ "__identifier": "held_item", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5942, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["coconut"]
-								}] }
+								}] },
+								{ "__identifier": "regrow_seconds", "__type": "Float", "__value": 30.0, "__tile": null, "defUid": 500498, "realEditorValues": [{ "id": "V_Float", "params": [30.0] }] }
 							],
 							"__worldX": 20692,
 							"__worldY": 389
@@ -10099,7 +10138,8 @@
 								{ "__identifier": "held_item", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5942, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["coconut"]
-								}] }
+								}] },
+								{ "__identifier": "regrow_seconds", "__type": "Float", "__value": 30.0, "__tile": null, "defUid": 500498, "realEditorValues": [{ "id": "V_Float", "params": [30.0] }] }
 							],
 							"__worldX": 21862,
 							"__worldY": 469
@@ -10334,7 +10374,8 @@
 								{ "__identifier": "held_item", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5942, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["coconut"]
-								}] }
+								}] },
+								{ "__identifier": "regrow_seconds", "__type": "Float", "__value": 30.0, "__tile": null, "defUid": 500498, "realEditorValues": [{ "id": "V_Float", "params": [30.0] }] }
 							],
 							"__worldX": 22682,
 							"__worldY": 357
@@ -11803,7 +11844,8 @@
 								{ "__identifier": "held_item", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5942, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["coconut"]
-								}] }
+								}] },
+								{ "__identifier": "regrow_seconds", "__type": "Float", "__value": 30.0, "__tile": null, "defUid": 500498, "realEditorValues": [{ "id": "V_Float", "params": [30.0] }] }
 							],
 							"__worldX": 25322,
 							"__worldY": 469
@@ -12052,7 +12094,8 @@
 								{ "__identifier": "held_item", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5942, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["coconut"]
-								}] }
+								}] },
+								{ "__identifier": "regrow_seconds", "__type": "Float", "__value": 30.0, "__tile": null, "defUid": 500498, "realEditorValues": [{ "id": "V_Float", "params": [30.0] }] }
 							],
 							"__worldX": 26602,
 							"__worldY": 469
@@ -13413,7 +13456,8 @@
 								{ "__identifier": "held_item", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5942, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["coconut"]
-								}] }
+								}] },
+								{ "__identifier": "regrow_seconds", "__type": "Float", "__value": 30.0, "__tile": null, "defUid": 500498, "realEditorValues": [{ "id": "V_Float", "params": [30.0] }] }
 							],
 							"__worldX": 27700,
 							"__worldY": 469
@@ -13598,7 +13642,8 @@
 								{ "__identifier": "held_item", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5942, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["coconut"]
-								}] }
+								}] },
+								{ "__identifier": "regrow_seconds", "__type": "Float", "__value": 30.0, "__tile": null, "defUid": 500498, "realEditorValues": [{ "id": "V_Float", "params": [30.0] }] }
 							],
 							"__worldX": 28750,
 							"__worldY": 341
@@ -15128,7 +15173,8 @@
 								{ "__identifier": "held_item", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5942, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["coconut"]
-								}] }
+								}] },
+								{ "__identifier": "regrow_seconds", "__type": "Float", "__value": 30.0, "__tile": null, "defUid": 500498, "realEditorValues": [{ "id": "V_Float", "params": [30.0] }] }
 							],
 							"__worldX": 29058,
 							"__worldY": -43
@@ -15377,7 +15423,8 @@
 								{ "__identifier": "held_item", "__type": "String", "__value": "coconut", "__tile": null, "defUid": 5942, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["coconut"]
-								}] }
+								}] },
+								{ "__identifier": "regrow_seconds", "__type": "Float", "__value": 30.0, "__tile": null, "defUid": 500498, "realEditorValues": [{ "id": "V_Float", "params": [30.0] }] }
 							],
 							"__worldX": 29998,
 							"__worldY": -43
