@@ -693,8 +693,12 @@ def millstream():
         piece("hill_salt_run_hatch", 424, s_bed - 2),
         solid("stream_bed", s0, s_bed, s1 - s0, h - s_bed),
         water(f"{rid}_stream", s0, g + 8, s1 - s0, s_bed - g - 8),
-        solid("rock_west", 496, s_bed - 48, 64, 48),
-        piece("hill_stream_rock", 496, s_bed - 48),
+        # The west bank's rock stands off the hollow's mouth: a pit between
+        # them goes down to the bed, so a body that broke the wall drops in and
+        # walks under the bank (the hollow is 80 high; over a rock at the mouth
+        # it was 32, and nobody got in).
+        solid("rock_west", 560, s_bed - 48, 64, 48),
+        piece("hill_stream_rock", 560, s_bed - 48),
         solid("rock_east", s1 - 48, s_bed - 48, 48, 48),
         *[solid(f"stone_{n}", x0, g, x1 - x0, s_bed - g) for n, (x0, x1) in enumerate(STONES)],
         *[piece("hill_stepping_stone" if x1 - x0 == 80 else "hill_stepping_stone_narrow", x0, g, name=f"stepping stone {n}")
