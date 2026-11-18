@@ -309,10 +309,9 @@ BENCH = (1100, 1220, WORKSHOP_FLOOR - 48)
 #: walk in at the door when it breaks: the camera already holds the door.
 BARN_DOOR_X = 1320
 DOOR_H = 112
-#: The yard's gate stands until the raid's last raider has run out through it
-#: with the case (`intro_raider_runs_with_the_case`, when the other two have
-#: fallen, opens it first), so no one leaves the yard mid-fight. The Creator's last words
-#: open it too, for a raid whose last two fell together.
+#: The yard's gate stands until the raid's brute has run out through it with
+#: the case (`intro_brute_takes_the_case`, when he is beaten, opens it first),
+#: so no one leaves the yard mid-fight. The Creator's last words open it too.
 YARD_GATE_X = 1840
 CASE_TAKEN = "intro_case_taken"
 RAID = "intro_workshop_raid"
