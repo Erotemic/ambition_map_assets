@@ -224,6 +224,27 @@ ENEMIES = (
 )
 
 
+#: The apples of the orchard's trees: things of the world, each an `apple`
+#: held item grown in a crown (`orchard_rising_tree`, `orchard_hanging_tree`:
+#: their crowns' centres are (472, 442) and (1232, 316)). Each hangs there a
+#: while, ripening, and drops; the crowns stand in the up fields, so it drops
+#: UP, to the vault, where a body walking the ceiling can pick it up. Each
+#: grows again a while after it fell, and no more while two of its own lie
+#: loose in the room. The waits differ so the trees drop their apples one at
+#: a time. (name, x, y, hang seconds, regrow seconds), x, y the apple's
+#: centre.
+ORCHARD_APPLES = (
+    ("orchard_rising_apple_west", 420, 466, 4.0, 7.0),
+    ("orchard_rising_apple_crown", 492, 414, 9.0, 8.0),
+    ("orchard_rising_apple_east", 530, 474, 14.0, 6.0),
+    ("orchard_hanging_apple_west", 1148, 330, 6.0, 7.0),
+    ("orchard_hanging_apple_low", 1240, 366, 11.0, 6.0),
+    ("orchard_hanging_apple_east", 1318, 318, 16.0, 8.0),
+)
+APPLE_BOX = 16
+APPLES_LOOSE_PER_PLACEMENT = 2
+
+
 def dressing(rid):
     """The props, a sign and the enemies of room `rid`."""
     sys.path.insert(0, str(TOOL_SPECS))
@@ -239,6 +260,12 @@ def dressing(rid):
                               character_id=character, respawn="OnRoomReenter"))
     for name, x, y, text, w in SIGNS.get(rid, ()):
         out.append(label(name, x, y, text, w))
+    if rid == ORCHARD:
+        for name, x, y, hang, regrow in ORCHARD_APPLES:
+            half = APPLE_BOX // 2
+            out.append(entity("GroundItem", x - half, y - half, APPLE_BOX, APPLE_BOX, id=name, name="apple",
+                              held_item="apple", hang_seconds=hang, regrow_seconds=regrow,
+                              regrow_limit=APPLES_LOOSE_PER_PLACEMENT))
     # Who keeps the works: Hortensia Pippin by her crates on the orchard's
     # middle bank (`orbital.yarn` `works_pippin`), out of every field (a
     # body in one falls up).
