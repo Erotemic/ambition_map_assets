@@ -131,8 +131,12 @@ PAD_IMPULSE = -2000
 #: The local arches (portal rings, `kind: Portal` in `gate_network.ron`): one
 #: on the heights' west end, one at the keep's east end, one in the heart.
 #: Each reaches the next; the heights' arch cannot reach the heart (farther
-#: than a portal's reach), so that trip is two hops by way of the keep.
-HEIGHTS_ARCH_X, KEEP_ARCH_X, HEART_ARCH_X = 200, 2120, 640
+#: than a portal's reach), so that trip is two hops by way of the keep. Each
+#: is Magical's starlit arch (`starlit_arch`), stated by its middle (x): it
+#: stands where the round ring it replaced stood, so its zone's middle, and
+#: every reach, is as it was.
+HEIGHTS_ARCH_MID, KEEP_ARCH_MID, HEART_ARCH_MID = 344, 2264, 784
+ARCH_HALF_W = gates.SHAPE_BOXES["starlit_arch"][0][0] // 2
 #: The Void Castle: the keep east of the road, its bridge under it; the two
 #: stairs down from the keep's ground (both rooms' x: they share a left edge).
 KEEP_AT, KEEP_W = (ROAD_AT[0] + ROAD_W, 0), 2560
@@ -381,8 +385,8 @@ def heights():
         *hole("heights_beanstalk", *BEANSTALK, SQUARE, "square_beanstalk", "heights_beanstalk", "down the beanstalk"),
         *hole("heights_pad", *pad, ROAD, "road_pad_shaft", "heights_pad_hole", "down onto the star spring"),
         *hole("heights_gap", *gap, ROAD, "road_cloud_gap", "heights_cloud_gap", "down through the cloud gap"),
-        *gates.as_ron(gates.ring("Heights Arch", "magical_heights_arch", HEIGHTS_ARCH_X, FLOOR, "the heights arch", shape="round")),
-        *gates.as_ron(gates.terminal("Heights Arch", "magical_heights_arch_terminal", HEIGHTS_ARCH_X + 320, FLOOR, shape="round")),
+        *gates.as_ron(gates.ring("Heights Arch", "magical_heights_arch", HEIGHTS_ARCH_MID - ARCH_HALF_W, FLOOR, "the heights arch", shape="starlit_arch")),
+        *gates.as_ron(gates.terminal("Heights Arch", "magical_heights_arch_terminal", HEIGHTS_ARCH_MID + 176, FLOOR, shape="starlit_arch")),
         sign("heights_gap_sign", gap[0] - 120, 540, "GAP IN THE CLOUDS (down to the road)", 360),
         # Higher clouds, a stair west to east, and a star left out at the top.
         ledge("cloud_a", 2160, 528, 224),
@@ -429,8 +433,8 @@ def keep():
         ledge("keep_gallery_top", 1160, 352, 300),
         *hole("keep_west", *STAIR_WEST, BRIDGE, "bridge_west_shaft", "keep_west_stair", "down the west stair"),
         *hole("keep_east", *STAIR_EAST, BRIDGE, "bridge_east_shaft", "keep_east_stair", "down the east stair"),
-        *gates.as_ron(gates.ring("Keep Arch", "magical_keep_arch", KEEP_ARCH_X, FLOOR, "the keep's arch", shape="round")),
-        *gates.as_ron(gates.terminal("Keep Arch", "magical_keep_arch_terminal", KEEP_ARCH_X + 300, FLOOR, shape="round")),
+        *gates.as_ron(gates.ring("Keep Arch", "magical_keep_arch", KEEP_ARCH_MID - ARCH_HALF_W, FLOOR, "the keep's arch", shape="starlit_arch")),
+        *gates.as_ron(gates.terminal("Keep Arch", "magical_keep_arch_terminal", KEEP_ARCH_MID + 156, FLOOR, shape="starlit_arch")),
         void_star(0, 1000, FLOOR),
         void_star(1, 1700, FLOOR),
         void_star(2, 1400, FLOOR),
@@ -620,8 +624,8 @@ def heart():
         edge("heart_east", "back to the falls", w - 16, g, FALLS, "falls_foot"),
         start(rid, w - 200, g),
         sign("heart_sign", 700, 40 + top, "THE HEART OF THE VOID: the first star that went out. Shh.", 600),
-        *gates.as_ron(gates.ring("Heart Arch", "magical_heart_arch", HEART_ARCH_X, g, "the heart's arch", shape="round")),
-        *gates.as_ron(gates.terminal("Heart Arch", "magical_heart_arch_terminal", HEART_ARCH_X - 96, g, shape="round")),
+        *gates.as_ron(gates.ring("Heart Arch", "magical_heart_arch", HEART_ARCH_MID - ARCH_HALF_W, g, "the heart's arch", shape="starlit_arch")),
+        *gates.as_ron(gates.terminal("Heart Arch", "magical_heart_arch_terminal", HEART_ARCH_MID - 240, g, shape="starlit_arch")),
         ledge("heart_point_west", 200, 448, 192),
         ledge("heart_point_east", 1000, 400, 160),
         resident("void_star", "magical_void_elder", 1000, g, brain="stand_still", h=48),

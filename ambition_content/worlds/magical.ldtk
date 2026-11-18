@@ -11,7 +11,7 @@
 	"iid": "ambition-magical-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1009375,
+	"nextUid": 1009446,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -14687,68 +14687,68 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [132,22],
+							"__grid": [137,29],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 9928,
-							"__worldY": 352,
-							"iid": "Prop-1009312",
-							"width": 288,
-							"height": 288,
+							"__worldX": 10006,
+							"__worldY": 466,
+							"iid": "Prop-1009411",
+							"width": 132,
+							"height": 174,
 							"defUid": 4351,
-							"px": [2120,352],
+							"px": [2198,466],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Keep Arch Ring", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Keep Arch Ring"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "starlit_arch_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_ring"]
+									"params": ["starlit_arch_ring"]
 								}] }
 							]
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [132,22],
+							"__grid": [137,29],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 9928,
-							"__worldY": 352,
-							"iid": "Prop-1009313",
-							"width": 288,
-							"height": 288,
+							"__worldX": 10006,
+							"__worldY": 466,
+							"iid": "Prop-1009412",
+							"width": 132,
+							"height": 174,
 							"defUid": 4351,
-							"px": [2120,352],
+							"px": [2198,466],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Keep Arch Portal", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Keep Arch Portal"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "starlit_arch_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_portal"]
+									"params": ["starlit_arch_portal"]
 								}] }
 							]
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [137,22],
+							"__grid": [140,30],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
-							"__worldX": 10000,
-							"__worldY": 352,
-							"iid": "LoadingZone-1009314",
-							"width": 144,
-							"height": 288,
+							"__worldX": 10048,
+							"__worldY": 494,
+							"iid": "LoadingZone-1009413",
+							"width": 48,
+							"height": 146,
 							"defUid": 2002,
-							"px": [2192,352],
+							"px": [2240,494],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "magical_keep_arch", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -14764,6 +14764,10 @@
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ false ]
+								}] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 1009168, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
 								}] }
 							]
 						},
@@ -14786,9 +14790,9 @@
 									"id": "V_String",
 									"params": ["Keep Arch Dialer"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer_triangle", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_dialer"]
+									"params": ["gate_dialer_triangle"]
 								}] }
 							]
 						},
@@ -20063,68 +20067,68 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [40,18],
+							"__grid": [44,25],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 11008,
-							"__worldY": 2336,
-							"iid": "Prop-1009335",
-							"width": 288,
-							"height": 288,
+							"__worldX": 11086,
+							"__worldY": 2450,
+							"iid": "Prop-1009434",
+							"width": 132,
+							"height": 174,
 							"defUid": 4351,
-							"px": [640,288],
+							"px": [718,402],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Heart Arch Ring", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Heart Arch Ring"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "starlit_arch_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_ring"]
+									"params": ["starlit_arch_ring"]
 								}] }
 							]
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [40,18],
+							"__grid": [44,25],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 11008,
-							"__worldY": 2336,
-							"iid": "Prop-1009336",
-							"width": 288,
-							"height": 288,
+							"__worldX": 11086,
+							"__worldY": 2450,
+							"iid": "Prop-1009435",
+							"width": 132,
+							"height": 174,
 							"defUid": 4351,
-							"px": [640,288],
+							"px": [718,402],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Heart Arch Portal", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Heart Arch Portal"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "starlit_arch_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_portal"]
+									"params": ["starlit_arch_portal"]
 								}] }
 							]
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [44,18],
+							"__grid": [47,26],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
-							"__worldX": 11080,
-							"__worldY": 2336,
-							"iid": "LoadingZone-1009337",
-							"width": 144,
-							"height": 288,
+							"__worldX": 11128,
+							"__worldY": 2478,
+							"iid": "LoadingZone-1009436",
+							"width": 48,
+							"height": 146,
 							"defUid": 2002,
-							"px": [712,288],
+							"px": [760,430],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "magical_heart_arch", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -20140,6 +20144,10 @@
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ false ]
+								}] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 1009168, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
 								}] }
 							]
 						},
@@ -20162,9 +20170,9 @@
 									"id": "V_String",
 									"params": ["Heart Arch Dialer"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer_triangle", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_dialer"]
+									"params": ["gate_dialer_triangle"]
 								}] }
 							]
 						},
@@ -25970,68 +25978,68 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [12,22],
+							"__grid": [17,29],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 2248,
-							"__worldY": -416,
-							"iid": "Prop-1009284",
-							"width": 288,
-							"height": 288,
+							"__worldX": 2326,
+							"__worldY": -302,
+							"iid": "Prop-1009383",
+							"width": 132,
+							"height": 174,
 							"defUid": 4351,
-							"px": [200,352],
+							"px": [278,466],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Heights Arch Ring", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Heights Arch Ring"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "starlit_arch_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_ring"]
+									"params": ["starlit_arch_ring"]
 								}] }
 							]
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [12,22],
+							"__grid": [17,29],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 2248,
-							"__worldY": -416,
-							"iid": "Prop-1009285",
-							"width": 288,
-							"height": 288,
+							"__worldX": 2326,
+							"__worldY": -302,
+							"iid": "Prop-1009384",
+							"width": 132,
+							"height": 174,
 							"defUid": 4351,
-							"px": [200,352],
+							"px": [278,466],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Heights Arch Portal", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Heights Arch Portal"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "starlit_arch_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_portal"]
+									"params": ["starlit_arch_portal"]
 								}] }
 							]
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [17,22],
+							"__grid": [20,30],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
-							"__worldX": 2320,
-							"__worldY": -416,
-							"iid": "LoadingZone-1009286",
-							"width": 144,
-							"height": 288,
+							"__worldX": 2368,
+							"__worldY": -274,
+							"iid": "LoadingZone-1009385",
+							"width": 48,
+							"height": 146,
 							"defUid": 2002,
-							"px": [272,352],
+							"px": [320,494],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "magical_heights_arch", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -26047,6 +26055,10 @@
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ false ]
+								}] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 1009168, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
 								}] }
 							]
 						},
@@ -26069,9 +26081,9 @@
 									"id": "V_String",
 									"params": ["Heights Arch Dialer"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer_triangle", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gate_dialer"]
+									"params": ["gate_dialer_triangle"]
 								}] }
 							]
 						},
