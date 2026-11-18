@@ -25,6 +25,7 @@ entities:
       target_room: ""
       target_zone: ""
       bidirectional: false
+      presentation: "SceneArt"
   - type: Prop
     px: [412, 648]
     size: [64, 56]

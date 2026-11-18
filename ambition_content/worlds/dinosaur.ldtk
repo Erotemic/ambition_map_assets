@@ -11,7 +11,7 @@
 	"iid": "ambition-dinosaur-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 500502,
+	"nextUid": 500522,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -9518,6 +9518,151 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [50,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 20800,
+							"__worldY": 306,
+							"iid": "Prop-500502",
+							"width": 144,
+							"height": 174,
+							"defUid": 4351,
+							"px": [800,306],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Trailhead Arch Ring", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Trailhead Arch Ring"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_arch_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_arch_ring"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [50,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 20800,
+							"__worldY": 306,
+							"iid": "Prop-500503",
+							"width": 144,
+							"height": 174,
+							"defUid": 4351,
+							"px": [800,306],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Trailhead Arch Portal", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Trailhead Arch Portal"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_arch_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_arch_portal"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [52,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 20842,
+							"__worldY": 334,
+							"iid": "LoadingZone-500504",
+							"width": 48,
+							"height": 146,
+							"defUid": 2002,
+							"px": [842,334],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "primeval_trailhead_arch", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_trailhead_arch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the trailhead's arch", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the trailhead's arch"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "", "__tile": null, "defUid": 3005, "realEditorValues": [] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "", "__tile": null, "defUid": 3006, "realEditorValues": [] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 500487, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [59,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 20952,
+							"__worldY": 424,
+							"iid": "Prop-500505",
+							"width": 64,
+							"height": 56,
+							"defUid": 4351,
+							"px": [952,424],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Trailhead Arch Dialer", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Trailhead Arch Dialer"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer_triangle", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_dialer_triangle"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [60,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 20972,
+							"__worldY": 436,
+							"iid": "Switch-500506",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [972,436],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "primeval_trailhead_arch_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_trailhead_arch_terminal"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Trailhead Arch terminal", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Trailhead Arch terminal"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Dial the gate", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Dial the gate"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "", "__tile": null, "defUid": 4049, "realEditorValues": [] },
+								{ "__identifier": "action", "__type": "String", "__value": "GateTerminal", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["GateTerminal"]
+								}] }
+							]
 						}
 					]
 				},
@@ -15997,6 +16142,151 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [1,31],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 28840,
+							"__worldY": -206,
+							"iid": "Prop-500512",
+							"width": 144,
+							"height": 174,
+							"defUid": 4351,
+							"px": [24,498],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Canopy Arch Ring", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Canopy Arch Ring"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_arch_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_arch_ring"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [1,31],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 28840,
+							"__worldY": -206,
+							"iid": "Prop-500513",
+							"width": 144,
+							"height": 174,
+							"defUid": 4351,
+							"px": [24,498],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Canopy Arch Portal", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Canopy Arch Portal"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_arch_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_arch_portal"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [4,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 28882,
+							"__worldY": -178,
+							"iid": "LoadingZone-500514",
+							"width": 48,
+							"height": 146,
+							"defUid": 2002,
+							"px": [66,526],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "primeval_canopy_arch", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_canopy_arch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the canopy's arch", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the canopy's arch"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "", "__tile": null, "defUid": 3005, "realEditorValues": [] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "", "__tile": null, "defUid": 3006, "realEditorValues": [] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 500487, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [11,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 28992,
+							"__worldY": -88,
+							"iid": "Prop-500515",
+							"width": 64,
+							"height": 56,
+							"defUid": 4351,
+							"px": [176,616],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Canopy Arch Dialer", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Canopy Arch Dialer"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer_triangle", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_dialer_triangle"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [12,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 29012,
+							"__worldY": -76,
+							"iid": "Switch-500516",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [196,628],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "primeval_canopy_arch_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_canopy_arch_terminal"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Canopy Arch terminal", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Canopy Arch terminal"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Dial the gate", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Dial the gate"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "", "__tile": null, "defUid": 4049, "realEditorValues": [] },
+								{ "__identifier": "action", "__type": "String", "__value": "GateTerminal", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["GateTerminal"]
+								}] }
+							]
 						}
 					]
 				},
@@ -18139,6 +18429,151 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [45,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 23128,
+							"__worldY": -414,
+							"iid": "Prop-500507",
+							"width": 144,
+							"height": 174,
+							"defUid": 4351,
+							"px": [728,162],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Treetops Arch Ring", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Treetops Arch Ring"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_arch_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_arch_ring"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [45,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 23128,
+							"__worldY": -414,
+							"iid": "Prop-500508",
+							"width": 144,
+							"height": 174,
+							"defUid": 4351,
+							"px": [728,162],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Treetops Arch Portal", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Treetops Arch Portal"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_arch_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_arch_portal"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [48,11],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 23170,
+							"__worldY": -386,
+							"iid": "LoadingZone-500509",
+							"width": 48,
+							"height": 146,
+							"defUid": 2002,
+							"px": [770,190],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "primeval_treetops_arch", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_treetops_arch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the treetops' arch", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the treetops' arch"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "", "__tile": null, "defUid": 3005, "realEditorValues": [] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "", "__tile": null, "defUid": 3006, "realEditorValues": [] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 500487, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [55,17],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 23280,
+							"__worldY": -296,
+							"iid": "Prop-500510",
+							"width": 64,
+							"height": 56,
+							"defUid": 4351,
+							"px": [880,280],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Treetops Arch Dialer", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Treetops Arch Dialer"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer_triangle", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_dialer_triangle"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [56,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 23300,
+							"__worldY": -284,
+							"iid": "Switch-500511",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [900,292],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "primeval_treetops_arch_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_treetops_arch_terminal"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Treetops Arch terminal", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Treetops Arch terminal"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Dial the gate", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Dial the gate"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "", "__tile": null, "defUid": 4049, "realEditorValues": [] },
+								{ "__identifier": "action", "__type": "String", "__value": "GateTerminal", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["GateTerminal"]
+								}] }
+							]
 						}
 					]
 				},
@@ -19573,6 +20008,151 @@
 									"params": ["ridge_tar_shaft"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [110,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 31768,
+							"__worldY": 914,
+							"iid": "Prop-500517",
+							"width": 144,
+							"height": 174,
+							"defUid": 4351,
+							"px": [1760,402],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Tar Pits Arch Ring", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Tar Pits Arch Ring"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_arch_ring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_arch_ring"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [110,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 31768,
+							"__worldY": 914,
+							"iid": "Prop-500518",
+							"width": 144,
+							"height": 174,
+							"defUid": 4351,
+							"px": [1760,402],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Tar Pits Arch Portal", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Tar Pits Arch Portal"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_arch_portal", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["jungle_arch_portal"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [112,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 31810,
+							"__worldY": 942,
+							"iid": "LoadingZone-500519",
+							"width": 48,
+							"height": 146,
+							"defUid": 2002,
+							"px": [1802,430],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "primeval_tar_pits_arch", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_tar_pits_arch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the dig camp's arch", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the dig camp's arch"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "", "__tile": null, "defUid": 3005, "realEditorValues": [] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "", "__tile": null, "defUid": 3006, "realEditorValues": [] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": false, "__tile": null, "defUid": 3007, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ false ]
+								}] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 500487, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [119,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 31920,
+							"__worldY": 1032,
+							"iid": "Prop-500520",
+							"width": 64,
+							"height": 56,
+							"defUid": 4351,
+							"px": [1912,520],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Tar Pits Arch Dialer", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Tar Pits Arch Dialer"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "gate_dialer_triangle", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_dialer_triangle"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [120,33],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 31940,
+							"__worldY": 1044,
+							"iid": "Switch-500521",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [1932,532],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "primeval_tar_pits_arch_terminal", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_tar_pits_arch_terminal"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Tar Pits Arch terminal", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Tar Pits Arch terminal"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Dial the gate", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Dial the gate"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "", "__tile": null, "defUid": 4049, "realEditorValues": [] },
+								{ "__identifier": "action", "__type": "String", "__value": "GateTerminal", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["GateTerminal"]
+								}] }
 							]
 						}
 					]
