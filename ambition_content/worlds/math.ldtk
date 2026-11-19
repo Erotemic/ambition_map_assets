@@ -11,7 +11,7 @@
 	"iid": "ambition-math-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 211536,
+	"nextUid": 211660,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -7300,6 +7300,194 @@
 					"searchable": true
 				}
 			]
+		},
+		{
+			"identifier": "LightSource",
+			"uid": 211540,
+			"tags": [],
+			"exportToToc": false,
+			"allowOutOfBounds": true,
+			"doc": "A lamp: what a dark room's light map draws (DR2). radius 0 = the box's larger side; color #rrggbb, empty = a warm lamp; intensity 0..1.",
+			"tileOpacity": 1.0,
+			"lineOpacity": 1.0,
+			"fillOpacity": 0.08,
+			"hollow": false,
+			"color": "#FFD27A",
+			"renderMode": "Rectangle",
+			"showName": true,
+			"tilesetId": null,
+			"tileRenderMode": "FitInside",
+			"tileRect": null,
+			"uiTileRect": null,
+			"nineSliceBorders": [],
+			"maxCount": 0,
+			"limitScope": "PerLevel",
+			"limitBehavior": "MoveLastOne",
+			"pivotX": 0,
+			"pivotY": 0,
+			"tileId": null,
+			"width": 32,
+			"height": 32,
+			"resizableX": true,
+			"resizableY": true,
+			"minWidth": null,
+			"maxWidth": null,
+			"minHeight": null,
+			"maxHeight": null,
+			"keepAspectRatio": false,
+			"fieldDefs": [
+				{
+					"identifier": "radius",
+					"doc": null,
+					"__type": "Float",
+					"uid": 211536,
+					"type": "F_Float",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": { "id": "V_Float", "params": [0.0] },
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "color",
+					"doc": null,
+					"__type": "String",
+					"uid": 211537,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": {
+						"id": "V_String",
+						"params": [""]
+					},
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "intensity",
+					"doc": null,
+					"__type": "Float",
+					"uid": 211538,
+					"type": "F_Float",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": { "id": "V_Float", "params": [1.0] },
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "name",
+					"doc": null,
+					"__type": "String",
+					"uid": 211539,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				}
+			]
 		}
 	], "tilesets": [
 		{
@@ -10794,6 +10982,60 @@
 							]
 						},
 						{
+							"__identifier": "LightSource",
+							"__grid": [114,73],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 3536,
+							"__worldY": 1183,
+							"iid": "LightSource-211568",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [1824,1183],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 150.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [150.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffc070", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffc070"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.9, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.9] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_0_lamp", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_0_lamp"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [116,76],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 3570,
+							"__worldY": 1222,
+							"iid": "LightSource-211569",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [1858,1222],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_0_window", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_0_window"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "Prop",
 							"__grid": [120,74],
 							"__pivot": [0,0],
@@ -10815,6 +11057,60 @@
 								{ "__identifier": "kind", "__type": "String", "__value": "math_tunnel_bay", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["math_tunnel_bay"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [124,73],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 3696,
+							"__worldY": 1183,
+							"iid": "LightSource-211571",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [1984,1183],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 150.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [150.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffc070", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffc070"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.9, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.9] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_1_lamp", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_1_lamp"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [126,76],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 3730,
+							"__worldY": 1222,
+							"iid": "LightSource-211572",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2018,1222],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_1_window", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_1_window"]
 								}] }
 							]
 						},
@@ -10844,6 +11140,33 @@
 							]
 						},
 						{
+							"__identifier": "LightSource",
+							"__grid": [134,73],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 3856,
+							"__worldY": 1183,
+							"iid": "LightSource-211574",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2144,1183],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 150.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [150.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffc070", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffc070"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.9, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.9] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_2_lamp", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_2_lamp"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "Prop",
 							"__grid": [140,74],
 							"__pivot": [0,0],
@@ -10865,6 +11188,60 @@
 								{ "__identifier": "kind", "__type": "String", "__value": "math_tunnel_bay", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["math_tunnel_bay"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [144,73],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4016,
+							"__worldY": 1183,
+							"iid": "LightSource-211576",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2304,1183],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 150.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [150.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffc070", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffc070"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.9, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.9] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_3_lamp", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_3_lamp"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [146,76],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4050,
+							"__worldY": 1222,
+							"iid": "LightSource-211577",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2338,1222],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_3_window", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_3_window"]
 								}] }
 							]
 						},
@@ -10894,6 +11271,60 @@
 							]
 						},
 						{
+							"__identifier": "LightSource",
+							"__grid": [154,73],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4176,
+							"__worldY": 1183,
+							"iid": "LightSource-211579",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2464,1183],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 150.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [150.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffc070", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffc070"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.9, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.9] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_4_lamp", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_4_lamp"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [156,76],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4210,
+							"__worldY": 1222,
+							"iid": "LightSource-211580",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2498,1222],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_4_window", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_4_window"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "Prop",
 							"__grid": [160,74],
 							"__pivot": [0,0],
@@ -10915,6 +11346,60 @@
 								{ "__identifier": "kind", "__type": "String", "__value": "math_tunnel_bay", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["math_tunnel_bay"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [164,73],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4336,
+							"__worldY": 1183,
+							"iid": "LightSource-211582",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2624,1183],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 150.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [150.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffc070", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffc070"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.9, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.9] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_5_lamp", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_5_lamp"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [166,76],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4370,
+							"__worldY": 1222,
+							"iid": "LightSource-211583",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2658,1222],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_5_window", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_5_window"]
 								}] }
 							]
 						},
@@ -10944,6 +11429,60 @@
 							]
 						},
 						{
+							"__identifier": "LightSource",
+							"__grid": [174,73],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4496,
+							"__worldY": 1183,
+							"iid": "LightSource-211585",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2784,1183],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 150.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [150.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffc070", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffc070"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.9, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.9] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_6_lamp", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_6_lamp"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [176,76],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4530,
+							"__worldY": 1222,
+							"iid": "LightSource-211586",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2818,1222],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_6_window", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_6_window"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "Prop",
 							"__grid": [180,74],
 							"__pivot": [0,0],
@@ -10969,6 +11508,60 @@
 							]
 						},
 						{
+							"__identifier": "LightSource",
+							"__grid": [184,73],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4656,
+							"__worldY": 1183,
+							"iid": "LightSource-211588",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2944,1183],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 150.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [150.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffc070", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffc070"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.9, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.9] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_7_lamp", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_7_lamp"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [186,76],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4690,
+							"__worldY": 1222,
+							"iid": "LightSource-211589",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2978,1222],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_7_window", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_7_window"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "Prop",
 							"__grid": [190,74],
 							"__pivot": [0,0],
@@ -10990,6 +11583,60 @@
 								{ "__identifier": "kind", "__type": "String", "__value": "math_tunnel_bay", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["math_tunnel_bay"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [194,73],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4816,
+							"__worldY": 1183,
+							"iid": "LightSource-211591",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [3104,1183],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 150.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [150.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffc070", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffc070"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.9, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.9] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_8_lamp", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_8_lamp"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [196,76],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4850,
+							"__worldY": 1222,
+							"iid": "LightSource-211592",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [3138,1222],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "passage_bay_8_window", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["passage_bay_8_window"]
 								}] }
 							]
 						},
@@ -11155,6 +11802,33 @@
 							]
 						},
 						{
+							"__identifier": "LightSource",
+							"__grid": [126,67],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 3731,
+							"__worldY": 1086,
+							"iid": "LightSource-211599",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2019,1086],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "rock_home_t1_a_window", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["rock_home_t1_a_window"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "Prop",
 							"__grid": [163,66],
 							"__pivot": [0,0],
@@ -11176,6 +11850,33 @@
 								{ "__identifier": "kind", "__type": "String", "__value": "math_cliff_home_narrow", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["math_cliff_home_narrow"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [165,70],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4354,
+							"__worldY": 1130,
+							"iid": "LightSource-211601",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2642,1130],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "rock_home_t1_b_window", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["rock_home_t1_b_window"]
 								}] }
 							]
 						},
@@ -11205,6 +11906,33 @@
 							]
 						},
 						{
+							"__identifier": "LightSource",
+							"__grid": [158,55],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4241,
+							"__worldY": 894,
+							"iid": "LightSource-211603",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2529,894],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "rock_home_t2_a_window", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["rock_home_t2_a_window"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "Prop",
 							"__grid": [188,53],
 							"__pivot": [0,0],
@@ -11230,6 +11958,33 @@
 							]
 						},
 						{
+							"__identifier": "LightSource",
+							"__grid": [189,57],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4744,
+							"__worldY": 926,
+							"iid": "LightSource-211605",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [3032,926],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "rock_home_t2_b_window", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["rock_home_t2_b_window"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "Prop",
 							"__grid": [185,41],
 							"__pivot": [0,0],
@@ -11251,6 +12006,33 @@
 								{ "__identifier": "kind", "__type": "String", "__value": "math_cliff_home_wide", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["math_cliff_home_wide"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [188,42],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4731,
+							"__worldY": 682,
+							"iid": "LightSource-211607",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [3019,682],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "rock_home_summit_window", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["rock_home_summit_window"]
 								}] }
 							]
 						},
@@ -11512,6 +12294,60 @@
 							]
 						},
 						{
+							"__identifier": "LightSource",
+							"__grid": [13,73],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 1931,
+							"__worldY": 1174,
+							"iid": "LightSource-211616",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [219,1174],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "rose_house_window_0", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["rose_house_window_0"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [19,68],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 2021,
+							"__worldY": 1089,
+							"iid": "LightSource-211617",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [309,1089],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "rose_house_window_1", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["rose_house_window_1"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "Prop",
 							"__grid": [27,62],
 							"__pivot": [0,0],
@@ -11567,6 +12403,33 @@
 								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [29,74],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 2184,
+							"__worldY": 1193,
+							"iid": "LightSource-211620",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [472,1193],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "dome_house_window_0", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["dome_house_window_0"]
 								}] }
 							]
 						},
@@ -11630,6 +12493,60 @@
 							]
 						},
 						{
+							"__identifier": "LightSource",
+							"__grid": [47,66],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 2468,
+							"__worldY": 1059,
+							"iid": "LightSource-211623",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [756,1059],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "tower_house_window_0", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tower_house_window_0"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [47,60],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 2468,
+							"__worldY": 969,
+							"iid": "LightSource-211624",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [756,969],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "tower_house_window_1", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tower_house_window_1"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "Prop",
 							"__grid": [57,61],
 							"__pivot": [0,0],
@@ -11655,6 +12572,33 @@
 							]
 						},
 						{
+							"__identifier": "LightSource",
+							"__grid": [60,74],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 2672,
+							"__worldY": 1196,
+							"iid": "LightSource-211626",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [960,1196],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "shop_house_window_0", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["shop_house_window_0"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "Prop",
 							"__grid": [113,49],
 							"__pivot": [0,0],
@@ -11676,6 +12620,87 @@
 								{ "__identifier": "kind", "__type": "String", "__value": "math_house_gable", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["math_house_gable"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [115,59],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 3553,
+							"__worldY": 955,
+							"iid": "LightSource-211628",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [1841,955],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "cafe_house_window_0", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["cafe_house_window_0"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [115,55],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 3553,
+							"__worldY": 882,
+							"iid": "LightSource-211629",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [1841,882],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "cafe_house_window_1", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["cafe_house_window_1"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [120,55],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 3643,
+							"__worldY": 882,
+							"iid": "LightSource-211630",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [1931,882],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "cafe_house_window_2", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["cafe_house_window_2"]
 								}] }
 							]
 						},
@@ -11739,6 +12764,33 @@
 							]
 						},
 						{
+							"__identifier": "LightSource",
+							"__grid": [129,56],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 3789,
+							"__worldY": 902,
+							"iid": "LightSource-211633",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2077,902],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "narrow_house_window_0", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["narrow_house_window_0"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "Prop",
 							"__grid": [153,31],
 							"__pivot": [0,0],
@@ -11764,6 +12816,60 @@
 							]
 						},
 						{
+							"__identifier": "LightSource",
+							"__grid": [158,35],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4247,
+							"__worldY": 575,
+							"iid": "LightSource-211635",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2535,575],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "surveyors_office_window_0", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["surveyors_office_window_0"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [161,35],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4299,
+							"__worldY": 575,
+							"iid": "LightSource-211636",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2587,575],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 64.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [64.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ffcc80", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ffcc80"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.7, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.7] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "surveyors_office_window_1", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["surveyors_office_window_1"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "Prop",
 							"__grid": [183,22],
 							"__pivot": [0,0],
@@ -11785,6 +12891,60 @@
 								{ "__identifier": "kind", "__type": "String", "__value": "math_observatory", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["math_observatory"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [185,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4672,
+							"__worldY": 458,
+							"iid": "LightSource-211638",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [2960,458],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 80.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [80.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ff9a70", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ff9a70"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.5, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.5] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "observatory_window_0", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["observatory_window_0"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [191,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 4782,
+							"__worldY": 458,
+							"iid": "LightSource-211639",
+							"width": 32,
+							"height": 32,
+							"defUid": 211540,
+							"px": [3070,458],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 80.0, "__tile": null, "defUid": 211536, "realEditorValues": [{ "id": "V_Float", "params": [80.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#ff9a70", "__tile": null, "defUid": 211537, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#ff9a70"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.5, "__tile": null, "defUid": 211538, "realEditorValues": [{ "id": "V_Float", "params": [0.5] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "observatory_window_1", "__tile": null, "defUid": 211539, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["observatory_window_1"]
 								}] }
 							]
 						},

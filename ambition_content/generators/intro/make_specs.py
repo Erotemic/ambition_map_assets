@@ -833,8 +833,11 @@ WELL_FOOT = 7328 + 1248 - SALT_RUN_X
 ROOTS = [(4704, 4832, 336), (4560, 4688, 272), (4704, 4832, 208)]
 #: The smugglers' lamps, west of the well and none past it (the hatch's
 #: sign says so): (x, y of the bracket's top). Each is a lantern on its
-#: bracket and the light it gives (`LightSource`, DR2).
-LAMPS = [(250, 92), (980, 236), (1360, 236), (2060, 196)]
+#: bracket and the light it gives (`LightSource`, DR2). Each hangs on the
+#: wall over dry floor, a little over a body's head, where the smugglers
+#: could reach to light it: the two by the race stand at either bank of the
+#: channel, which they light across, not over the water.
+LAMPS = [(250, 92), (680, 186), (1540, 200), (2060, 196)]
 LAMP_RADIUS = 260
 
 

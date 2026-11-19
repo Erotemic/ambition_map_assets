@@ -176,6 +176,19 @@ def ledge(name, x, y, w):
     return f'( type: "OneWayPlatform", px: [{x}, {y}], size: [{w}, 16], fields: ( name: "{name}" ) ),'
 
 
+def light(name, x, y, radius, color, intensity):
+    """A lamp's light centred on (x, y): what a night street's veil draws
+    round it at High and Ultra (`LightSource`; `daylight.rs`)."""
+    return (f'( type: "LightSource", px: [{round(x) - 16}, {round(y) - 16}], size: [32, 32], fields: ( '
+            f'name: "{name}", radius: {float(radius)}, color: "{color}", intensity: {intensity} ) ),')
+
+
+#: A lit window's light, and a vault lamp's: warm, a window's softer and
+#: shorter than a lamp's.
+WINDOW_LIGHT = (64, "#ffcc80", 0.7)
+VAULT_LIGHT = (150, "#ffc070", 0.9)
+
+
 def label(name, x, y, text, w=420):
     return f'( type: "DebugLabel", px: [{x}, {y}], size: [{w}, 24], fields: ( name: "{name}", text: "{text}", category: "Custom" ) ),'
 
@@ -383,6 +396,29 @@ HOUSE_DOORS = {
 DOOR_ASPECT = 126 / 242
 
 
+#: The windows lit at night in each house front, as the middle of the glass
+#: (x, y) in frame units (`math_town_facades.py`, the house's margin
+#: included): the lower floors, where people sit in the evening, the cafe
+#: all lit, and the observatory's dimmed for the telescope. The numbers are
+#: the art's: change them with it.
+HOUSE_LIGHTS = {
+    "math_house_rose": [(64, 270), (154, 185)],
+    "math_house_dome": [(76, 229)],
+    "math_house_tower": [(84, 275), (84, 185)],
+    "math_house_shop": [(80, 252)],
+    "math_house_gable": [(64, 187), (64, 114), (154, 114)],
+    "math_house_flat": [(74, 146)],
+    "math_house_arcade": [(102.8, 107), (155.2, 107)],
+    "math_observatory": [(64, 134), (174, 134)],
+}
+#: The observatory keeps its windows dim: red light, for eyes on the stars.
+OBSERVATORY_LIGHT = (80, "#ff9a70", 0.5)
+#: The lit window of a cliff home (`math_town_terraces._cliff_home`), and a
+#: passage bay's vault lamp and lit window (`_tunnel_bay`), frame units.
+CLIFF_HOME_LIGHTS = {"wide": (75, 38), "narrow": (38, 86)}
+BAY_LAMP, BAY_WINDOW = (80, 15), (114, 54)
+
+
 def painted_door(zone, name, cx, floor, h, to_room, to_zone):
     """A door `h` tall centred on `cx`: the game draws its door as tall as
     the zone, so this one covers the door the house front paints."""
@@ -399,6 +435,9 @@ def house(prefix, kind, x, floor):
     e = [prop]
     for i, (x0, x1, y) in enumerate(HOUSE_WALKS.get(kind, [])):
         e.append(still(f"{prefix}_walk_{i}", round(fx + x0), round(fy + y), round(x1 - x0), 4))
+    glow = OBSERVATORY_LIGHT if kind == "math_observatory" else WINDOW_LIGHT
+    for i, (wx, wy) in enumerate(HOUSE_LIGHTS.get(kind, [])):
+        e.append(light(f"{prefix}_window_{i}", fx + wx, fy + wy, *glow))
     return e
 
 
@@ -465,7 +504,12 @@ def street():
     e.append(still("aqueduct_deck", WALL, DECK, CLIFF3 - WALL, 4))
     # The passage under the first terrace, its mouth and its gate.
     for i in range((w - CLIFF1) // 160):
-        e.append(framed(f"passage_bay_{i}", "math_tunnel_bay", CLIFF1 + i * 160, TUNNEL_TOP))
+        bay_x = CLIFF1 + i * 160
+        e.append(framed(f"passage_bay_{i}", "math_tunnel_bay", bay_x, TUNNEL_TOP))
+        e.append(light(f"passage_bay_{i}_lamp", bay_x + BAY_LAMP[0], TUNNEL_TOP + BAY_LAMP[1], *VAULT_LIGHT))
+        # The hotel's front hides its bay's window.
+        if bay_x != HOTEL_BAY_X:
+            e.append(light(f"passage_bay_{i}_window", bay_x + BAY_WINDOW[0], TUNNEL_TOP + BAY_WINDOW[1], *WINDOW_LIGHT))
     e.append(framed("passage_mouth", "math_tunnel_mouth", CLIFF1 - 16, STREET_Y - 112))
     e.append(framed("passage_gate", "math_tunnel_gate", w - WALL - 48, TUNNEL_TOP))
     # Hylbert's Hotel, in the passage's third bay: its front over the bay, and
@@ -482,6 +526,8 @@ def street():
         ("rock_home_summit", "wide", 2960, SUMMIT + 100),
     ]:
         e.append(framed(name, f"math_cliff_home_{kind}", x, y))
+        wx, wy = CLIFF_HOME_LIGHTS[kind]
+        e.append(light(f"{name}_window", x + wx, y + wy, *WINDOW_LIGHT))
     # The stair: its picture, and two lines: the landing with flight 1 down
     # to the foot of the cliff, and flight 2 up to the terrace. Both are
     # boarded holding up, so the street goes on past the foot of the stair and
