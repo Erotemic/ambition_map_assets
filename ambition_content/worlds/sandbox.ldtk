@@ -22921,9 +22921,9 @@
 									"id": "V_String",
 									"params": ["treasure sign"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "Walk into pickups; press Interact at chests", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "Walk into pickups; press {action:interact} at chests", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["Walk into pickups; press Interact at chests"]
+									"params": ["Walk into pickups; press {action:interact} at chests"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Pickup", "__tile": null, "defUid": 3017, "realEditorValues": [{
 									"id": "V_String",
@@ -23754,10 +23754,10 @@
 									"id": "V_String",
 									"params": ["npc sign"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "Press Interact near NPCs. Dialogue pauses gameplay; choices sketch merchants and story flags.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "Press {action:interact} near NPCs. Dialogue pauses gameplay; choices sketch merchants and story flags.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
 									"params": [
-										"Press Interact near NPCs. Dialogue pauses gameplay; choices sketch merchants and story flags."
+										"Press {action:interact} near NPCs. Dialogue pauses gameplay; choices sketch merchants and story flags."
 									]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Interactable", "__tile": null, "defUid": 3017, "realEditorValues": [{
@@ -43590,9 +43590,9 @@
 									"id": "V_String",
 									"params": ["gap_run_intro"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "Gap Run: leap the two pits (run + jump); a miss respawns you here.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "Gap Run: leap the two pits (run + {action:jump}); a miss respawns you here.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["Gap Run: leap the two pits (run + jump); a miss respawns you here."]
+									"params": ["Gap Run: leap the two pits (run + {action:jump}); a miss respawns you here."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
