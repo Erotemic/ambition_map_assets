@@ -1,6 +1,8 @@
 {
   "schema": "ambition.ldtk_generated_record.v1",
-  "generated": {},
+  "generated": {
+    "dense_melee_pit": "946a842a423ac7ac"
+  },
   "ldtk_owned": [
     "basement_boss",
     "basement_breakables",
