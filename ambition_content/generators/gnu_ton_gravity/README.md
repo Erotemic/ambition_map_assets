@@ -79,8 +79,22 @@ way along the face).
    the top and the pad under you breaks. His placement is
    `gnu_ton_handle.gnu_ton` (the hall's copy is `hall.gnu_ton`). His reward
    and music are the boss's own. The way out is a door home in an alcove past
-   the east wall. A `LockWall` (`gated_by: boss.cleared gnu_ton_handle.gnu_ton`)
-   closes it until his defeat is recorded.
+   the east wall, behind two `LockWall`s: one stands until his defeat is
+   recorded (`boss.cleared gnu_ton_handle.gnu_ton`), the other until GNU2's
+   (`boss.cleared gnu_ton_handle.gnu2`).
+
+   **GNU2's cell (2026-11-19, GNUTON-GNU2-FINALE).** The room is LDtk-owned
+   (`science.generated.json`), so its cell was authored in the LDtk file and
+   `shoulders()` here does not have it. The room is 2048 high: its top 1280
+   is the hall (the camera zone, `clamp_mode: zone_bounds`, so the rest is
+   never seen), its floor is solid down to 1344, and under it is a sealed
+   cell (x 96-960, y 1344-1920). GNU2 (`gnu_ton_handle.gnu2`,
+   `PhaseScript:gnu2`, `wakes_after` GNU-ton) sleeps at the cell's east end,
+   2 px over its floor (it does not fall), until he enrages. Then GNU2 opens
+   a pair of portals, one in the cell's west wall and one in the hall's west
+   wall, and walks into the hall (`ambition_content_modules::gnu2`).
+   The hall's copy (`gnu_ton_arena`, `sandbox.ldtk`) has the same cell, as
+   `hall.gnu2`.
 
 A fall into a hazard starts the room again from its door. The rooms are
 made for a robot that runs and jumps. The robot can also fly, blink and
