@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 8270,
+	"nextUid": 8274,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -28996,6 +28996,126 @@
 							],
 							"__worldX": -2224,
 							"__worldY": 2400
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [17,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": -2032,
+							"__worldY": 2610,
+							"iid": "Switch-8270",
+							"width": 40,
+							"height": 46,
+							"defUid": 4051,
+							"px": [272,306],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "switch_lab_toll", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["switch_lab_toll"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Toll lever", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Toll lever"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Open barrier (3 coins)", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Open barrier (3 coins)"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "", "__tile": null, "defUid": 4049, "realEditorValues": [] },
+								{ "__identifier": "action", "__type": "String", "__value": "Activate", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Activate"]
+								}] },
+								{ "__identifier": "requires_facing", "__type": "Bool", "__value": false, "__tile": null, "defUid": 7040, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "BreakablePlatform",
+							"__grid": [35,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#D8A15D",
+							"__worldX": -1744,
+							"__worldY": 2304,
+							"iid": "BreakablePlatform-8271",
+							"width": 32,
+							"height": 352,
+							"defUid": 5000,
+							"px": [560,0],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Toll barrier", "__tile": null, "defUid": 5010, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Toll barrier"]
+								}] },
+								{ "__identifier": "max_hp", "__type": "Float", "__value": 4.0, "__tile": null, "defUid": 5011, "realEditorValues": [{ "id": "V_Float", "params": [4.0] }] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "AfterSeconds", "__tile": null, "defUid": 5012, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["AfterSeconds"]
+								}] },
+								{ "__identifier": "respawn_seconds", "__type": "Float", "__value": 6.0, "__tile": null, "defUid": 5013, "realEditorValues": [{ "id": "V_Float", "params": [6.0] }] },
+								{ "__identifier": "collision", "__type": "LocalEnum.BreakablePlatformCollision", "__value": "Solid", "__tile": null, "defUid": 5014, "realEditorValues": [] },
+								{ "__identifier": "trigger", "__type": "String", "__value": "OnHit", "__tile": null, "defUid": 5015, "realEditorValues": [] },
+								{ "__identifier": "id", "__type": "String", "__value": "switch_lab_barrier", "__tile": null, "defUid": 8121, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["switch_lab_barrier"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "PickupSpawn",
+							"__grid": [11,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#8AFF80",
+							"__worldX": -2128,
+							"__worldY": 2624,
+							"iid": "PickupSpawn-8272",
+							"width": 24,
+							"height": 24,
+							"defUid": 2015,
+							"px": [176,320],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Toll coins", "__tile": null, "defUid": 3039, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Toll coins"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "currency:9", "__tile": null, "defUid": 3040, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["currency:9"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReload", "__tile": null, "defUid": 6899, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [5,8],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -2224,
+							"__worldY": 2440,
+							"iid": "DebugLabel-8273",
+							"width": 640,
+							"height": 48,
+							"defUid": 2007,
+							"px": [80,136],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "switch_lab_toll_label", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["switch_lab_toll_label"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Toll lever: 3 coins opens the barrier for 6 seconds. It can also be broken.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Toll lever: 3 coins opens the barrier for 6 seconds. It can also be broken."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
 						}
 					]
 				},
