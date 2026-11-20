@@ -112,10 +112,11 @@ TOWN_MUSIC = "leaden_saddle"
 SALOON_MUSIC = TOWN_MUSIC
 REFINERY_MUSIC = TOWN_MUSIC
 #: The first slice's cues: the siding (its platform, the inn, the trestle,
-#: Clinker Flats) and the freight (the cars, the Rustler); `music_cues.ron`
-#: binds each room to its section.
+#: Sprocket Row), the freight (the cars, the Rustler) and Clinker Flats (the
+#: works, the Row); `music_cues.ron` binds each room to its section.
 SIDING_MUSIC = "halfway_siding"
 FREIGHT_MUSIC = "the_rustler"
+FLATS_MUSIC = "clinker_flats"
 #: The freight's backdrop runs west at this speed (world px/s): the train
 #: stands still in its rooms and the gulch goes by.
 FREIGHT_SCROLL = -720
@@ -737,7 +738,7 @@ def clinker_yard():
         sign("yard_sign_name", 300, dock - 300, "CLINKER FLATS. YARD LIMIT.", 320),
         sign("yard_sign_tipple", 1500, 900, "TIPPLE ROAD: TO THE WORKS", 300),
     ]
-    return build(rid, e, "CLINKER FLATS YARD", SIDING_MUSIC, dangerous=True, biome="frontier_works")
+    return build(rid, e, "CLINKER FLATS YARD", FLATS_MUSIC, dangerous=True, biome="frontier_works")
 
 
 def clinker_works():
@@ -762,7 +763,7 @@ def clinker_works():
         sign("works_sign_name", 400, floor - 320, "CLINKER FLATS SMELTER WORKS", 360),
         sign("works_sign_slag", 1100, floor - 300, "HOT SLAG. KEEP OFF THE POTS.", 320),
     ]
-    return build(rid, e, "THE SMELTER WORKS", SIDING_MUSIC, dangerous=True, biome="frontier_works")
+    return build(rid, e, "THE SMELTER WORKS", FLATS_MUSIC, dangerous=True, biome="frontier_works")
 
 
 def clinker_row():
@@ -790,7 +791,7 @@ def clinker_row():
         sign("row_sign_name", 600, floor - 300, "THE ROW", 160),
         sign("row_sign_laundry", 1800, floor - 260, "WASHING DONE. SOOT NOT GUARANTEED OUT.", 420),
     ]
-    return build(rid, e, "THE ROW", SIDING_MUSIC, dangerous=True, biome="frontier_works")
+    return build(rid, e, "THE ROW", FLATS_MUSIC, dangerous=True, biome="frontier_works")
 
 
 def clinker_railhead():
@@ -814,7 +815,7 @@ def clinker_railhead():
         sign("railhead_sign_line", 2200, FLATS_LOW - 200, "DRY DOCK AND THE PADS: EAST", 320),
         sign("railhead_sign_grade", 400, FLATS_HIGH - 120, "OLD TRAMWAY GRADE", 260),
     ]
-    return build(rid, e, "CLINKER FLATS RAILHEAD", SIDING_MUSIC, dangerous=True, biome="frontier_works")
+    return build(rid, e, "CLINKER FLATS RAILHEAD", FLATS_MUSIC, dangerous=True, biome="frontier_works")
 
 
 SLICE_ROOMS = (siding_station, siding_street, lie_down_inn, siding_trestle, sprocket_row, freight_tail, freight_cars,

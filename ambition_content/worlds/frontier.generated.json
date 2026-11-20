@@ -1,10 +1,10 @@
 {
   "schema": "ambition.ldtk_generated_record.v1",
   "generated": {
-    "frontier_clinker_railhead": "7a79c5d85af29228",
-    "frontier_clinker_row": "45cdd38308ee30a6",
-    "frontier_clinker_works": "56e66815826ed58e",
-    "frontier_clinker_yard": "72f26cf91b765522",
+    "frontier_clinker_railhead": "155581d221ed4f56",
+    "frontier_clinker_row": "8da9b306313f1383",
+    "frontier_clinker_works": "dafd6a2b1429d631",
+    "frontier_clinker_yard": "cd06b15a542f4ad9",
     "frontier_freight_cars": "e077847823d1fa72",
     "frontier_freight_tail": "dc3ac5ed4480bece",
     "frontier_landing_pad": "8d59b14d3cc7b770",
