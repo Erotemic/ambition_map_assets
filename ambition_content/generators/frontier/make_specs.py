@@ -83,6 +83,24 @@ HALL_DOOR = "hall_to_marshal_gallus_portal"
 HALL_SWITCH = "hall_marshal_gallus_life_switch"
 HALL_PLACEMENT = "hall.marshal_gallus"
 
+# The first slice west of Dry Dock
+# (`docs/planning/game/techno-western-frontier-first-slice.md`): Halfway
+# Siding, the auxiliary gate town on the gulch rim; the Number 9 ore freight
+# on the gulch floor, robbed by the Rustler; Clinker Flats down the line,
+# which joins Dry Dock's Pad Three by the railhead.
+STATION = "frontier_siding_station"
+SIDING_STREET = "frontier_siding_street"
+INN = "frontier_lie_down_inn"
+TRESTLE = "frontier_siding_trestle"
+SPROCKET = "frontier_sprocket_row"
+TAIL = "frontier_freight_tail"
+CARS = "frontier_freight_cars"
+HEAD = "frontier_rustler_head"
+YARD = "frontier_clinker_yard"
+WORKS = "frontier_clinker_works"
+ROW = "frontier_clinker_row"
+RAILHEAD = "frontier_clinker_railhead"
+
 #: The Marshal's placement. His defeat is saved under this id, and it opens
 #: the corral's grille (`boss.cleared <id>`).
 PLACEMENT = "frontier.marshal_gallus"
@@ -93,6 +111,14 @@ BG = "#3A2418"
 TOWN_MUSIC = "leaden_saddle"
 SALOON_MUSIC = TOWN_MUSIC
 REFINERY_MUSIC = TOWN_MUSIC
+#: The first slice's cues: the siding (its platform, the inn, the trestle,
+#: Clinker Flats) and the freight (the cars, the Rustler); `music_cues.ron`
+#: binds each room to its section.
+SIDING_MUSIC = "halfway_siding"
+FREIGHT_MUSIC = "the_rustler"
+#: The freight's backdrop runs west at this speed (world px/s): the train
+#: stands still in its rooms and the gulch goes by.
+FREIGHT_SCROLL = -720
 
 #: Each room: where it is on the flat map, and its size. The outdoor rooms
 #: are side by side as they are walked, their floors at one height where
@@ -106,6 +132,21 @@ ROOMS_AT = {
     CORRAL: ((7600, -192), (1600, 640)),
     LOOKOUT: ((9200, -192), (1600, 640)),
     HALL_CORRAL: ((0, 1600), (1600, 640)),
+    # The first slice, west of the pad: the siding on the rim, the trestle
+    # down to the gulch floor, the freight under it, Clinker Flats east of
+    # the freight and up to the pad. The tall rooms hold two levels.
+    STATION: ((-18800, -1536), (1600, 768)),
+    SIDING_STREET: ((-17200, -1536), (2400, 768)),
+    INN: ((-17200, -2400), (1280, 576)),
+    TRESTLE: ((-14800, -1536), (2400, 1536)),
+    SPROCKET: ((-12400, -1536), (2000, 768)),
+    TAIL: ((-14800, 0), (2400, 768)),
+    CARS: ((-12400, 0), (2800, 768)),
+    HEAD: ((-9600, 0), (2400, 768)),
+    YARD: ((-7200, -768), (2400, 1536)),
+    WORKS: ((-4800, -768), (2400, 768)),
+    ROW: ((-4800, 0), (2400, 768)),
+    RAILHEAD: ((-2400, -768), (2400, 1536)),
 }
 
 #: The street's floor, and the boardwalk one small step over it.
@@ -165,6 +206,22 @@ def chicken(rid, n, x, floor, hen=False):
                   character_id=character, respawn="OnRoomReenter")
 
 
+def vertical_edge(zone, name, x0, x1, y, to_room, to_zone):
+    """An edge exit across the top (`y` 0) or the bottom of a room."""
+    return entity("LoadingZone", x0, y, x1 - x0, 16, id=zone, name=name, activation="EdgeExit", target_room=to_room,
+                  target_zone=to_zone, bidirectional=True)
+
+
+def ramp(name, x0, y0, x1, y1):
+    """A road on trestles that climbs or falls west to east (not filled under:
+    the street goes on beneath it). A walker on the street steps onto its
+    foot only holding up."""
+    if x1 <= x0 or abs(y1 - y0) > MAX_SLOPE * (x1 - x0):
+        raise SystemExit(f"{name}: ({x0},{y0}) to ({x1},{y1}) is steeper than {MAX_SLOPE} or not west to east")
+    points = f"{x0},{y0}; {x1},{y1}"
+    return entity("SurfaceChain", x0, min(y0, y1) - 16, 16, 16, name=name, points=points, fill=False, boarding="up")
+
+
 def build(rid, e, title, music, dangerous=False, biome="frontier", extra=""):
     at, size = ROOMS_AT[rid]
     text = room(rid, scenery(rid) + e + blurb(rid, size[0] // 2), at=at, size=size, biome=biome, music=music, bg=BG, title=title,
@@ -178,7 +235,8 @@ def landing_pad():
     floor = STREET
     e = [
         solid("apron", 0, floor, w, h - floor),
-        *side_walls(w, h, None, floor),
+        *side_walls(w, h, floor, floor),
+        edge("pad_from_railhead", "west down the line", 0, floor, RAILHEAD, "railhead_to_pad"),
         # The gate (LEADENSADDLE) and its terminal: the way in and the way home.
         *gates.as_ron(gates.ring("Pad Three Gate", "frontier_pad_gate", 96, floor, "the gate")),
         *gates.as_ron(gates.terminal("Pad Three Gate", "frontier_gate_terminal", 400, floor)),
@@ -396,7 +454,373 @@ def saddle_lookout():
     return build(rid, e, "THE MESA TOP", TOWN_MUSIC)
 
 
-ROOMS = (landing_pad, main_street, wet_whistle, livery, refinery, ore_corral, saddle_lookout, hall_corral)
+# ---------------------------------------------------------------------------
+# The first slice: Halfway Siding, the Number 9 freight, Clinker Flats
+# ---------------------------------------------------------------------------
+
+#: The siding's floor, its platform and boardwalks a step over it, the porch
+#: roofs (as Dry Dock's street).
+RIM = STREET
+
+
+def siding_station():
+    """The auxiliary gate (SIDING) and its terminal on the apron at the west
+    end, the rail halt's platform and station house, the agent at her
+    window."""
+    rid = STATION
+    w, h = ROOMS_AT[rid][1]
+    floor = RIM
+    platform = floor - 32
+    e = [
+        solid("apron", 0, floor, w, h - floor),
+        *side_walls(w, h, None, floor),
+        *gates.as_ron(gates.ring("Halfway Siding Gate", "frontier_siding_gate", 96, floor, "the gate")),
+        *gates.as_ron(gates.terminal("Halfway Siding Gate", "frontier_siding_terminal", 420, floor)),
+        start(rid, 560, floor),
+        sign("station_sign_gate", 260, floor - 360, "AUXILIARY GATE TERMINAL", 300),
+        sign("station_sign_rest", 260, floor - 332, "ARRIVALS: REST BEFORE YOU TRAVEL ON", 400),
+        # The halt's platform and its station house; the house's flat roof
+        # is reached off the luggage stacked at its east end.
+        solid("station_platform", 640, platform, 880, floor - platform),
+        ledge("station_roof", 720, platform - 160, 480),
+        ledge("trunks_low", 1240, platform - 48, 80),
+        ledge("trunks_high", 1290, platform - 112, 80),
+        sign("station_sign_name", 960, platform - 216, "HALFWAY SIDING", 260),
+        sign("station_sign_times", 1360, platform - 200, "NO. 9 ORE FREIGHT, DOWN THE GULCH: 9:40", 420),
+        # Augusta Pell, the agent, at the ticket window.
+        resident("npc_frontier_station_agent", "frontier_station_agent", 900, platform),
+        edge("station_to_street", "into town", w - WALL, floor, SIDING_STREET, "street_from_station"),
+    ]
+    return build(rid, e, "HALFWAY SIDING STATION", SIDING_MUSIC, biome="frontier_siding")
+
+
+def siding_street():
+    """The one street: the inn (a door), the mercantile, the windmill and its
+    trough, the telegraph office, the signpost to the trestle."""
+    rid = SIDING_STREET
+    w, h = ROOMS_AT[rid][1]
+    floor = RIM
+    walk = floor - 32
+    porch = walk - 112
+    e = [
+        solid("street", 0, floor, w, h - floor),
+        *side_walls(w, h, floor, floor),
+        edge("street_from_station", "to the station", 0, floor, STATION, "station_to_street"),
+        edge("street_to_trestle", "to the trestle", w - WALL, floor, TRESTLE, "trestle_from_street"),
+        start(rid, 100, floor),
+        solid("boardwalk_west", 160, walk, 920, floor - walk),
+        solid("boardwalk_east", 1440, walk, 720, floor - walk),
+        ledge("porch_inn", 200, porch, 440),
+        ledge("porch_store", 700, porch, 360),
+        ledge("porch_telegraph", 1460, porch, 320),
+        # The windmill's platform over the trough, a jump off the store's porch.
+        ledge("windmill_platform", 1150, porch - 64, 190),
+        chest("a coffee tin of coins on the windmill", "currency:15", 1206, porch - 64),
+        door("street_inn_door", "into The Lie-Down Inn", 396, walk, INN, "inn_door"),
+        sign("street_sign_inn", 420, porch - 32, "THE LIE-DOWN INN", 240),
+        sign("street_sign_store", 880, porch - 32, "HALFWAY MERCANTILE", 240),
+        sign("street_sign_telegraph", 1620, porch - 32, "TELEGRAPH", 160),
+        sign("street_sign_post_1", 2020, floor - 200, "SPROCKET ROW, MECHANICS: OVER THE TRESTLE", 440),
+        sign("street_sign_post_2", 2020, floor - 172, "DRY DOCK: BY RAIL, DOWN THE GULCH", 380),
+    ]
+    return build(rid, e, "HALFWAY SIDING", SIDING_MUSIC, biome="frontier_siding")
+
+
+def lie_down_inn():
+    """The recovery inn: the desk, a row of cots for the gate-sick (Alice and
+    Bob on two of them), the stair to the rooms upstairs."""
+    rid = INN
+    w, h = ROOMS_AT[rid][1]
+    floor = 512
+    e = interior_shell(w, h, floor) + [
+        door("inn_door", "out to the street", 64, floor, SIDING_STREET, "street_inn_door"),
+        start(rid, 150, floor),
+        # Pearl Featherstone at her desk; Alice and Bob, resting.
+        resident("npc_frontier_innkeeper", "frontier_innkeeper", 300, floor),
+        resident("npc_alice", "frontier_inn_alice", 700, floor),
+        resident("npc_bob", "frontier_inn_bob", 820, floor),
+        ledge("inn_stair", 980, floor - 64, 112),
+        ledge("inn_landing", 1092, floor - 128, w - WALL - 1092),
+        sign("inn_sign_rates", 560, 120, "ROOMS BY THE HOUR. A BUCKET WITH EVERY COT.", 520),
+        sign("inn_sign_quiet", 760, 150, "QUIET PLEASE: GUESTS ARE GATE-SICK", 420),
+    ]
+    return build(rid, e, "THE LIE-DOWN INN", SIDING_MUSIC, biome="frontier_interior")
+
+
+#: The trestle's deck, as the street's floor; the loose planks over the hole.
+DECK = RIM
+PLANKS_X0, PLANKS_X1 = 1120, 1280
+
+
+def siding_trestle():
+    """The rail trestle's road deck over the gulch. Its loose planks (a
+    one-way floor: a body that drops through them falls) are over the gulch
+    floor, where the Number 9 freight passes: the bottom of the room is the
+    way down onto it."""
+    rid = TRESTLE
+    w, h = ROOMS_AT[rid][1]
+    e = [
+        solid("deck_west", 0, DECK, PLANKS_X0, 32),
+        solid("deck_east", PLANKS_X1, DECK, w - PLANKS_X1, 32),
+        ledge("loose_planks", PLANKS_X0, DECK, PLANKS_X1 - PLANKS_X0),
+        *side_walls(w, h, DECK, DECK),
+        edge("trestle_from_street", "back to the siding", 0, DECK, SIDING_STREET, "street_to_trestle"),
+        edge("trestle_to_sprocket", "on to Sprocket Row", w - WALL, DECK, SPROCKET, "sprocket_from_trestle"),
+        vertical_edge("trestle_to_freight", "down onto the freight", WALL, w - WALL, h - 16, TAIL, "freight_from_trestle"),
+        start(rid, 120, DECK),
+        sign("trestle_sign_name", 600, DECK - 200, "THE HALFWAY TRESTLE: 300 FEET TO THE GULCH FLOOR", 520),
+        sign("trestle_sign_planks", PLANKS_X0 + 80, DECK - 120, "LOOSE PLANKS. STEP LIGHTLY.", 300),
+        sign("trestle_sign_sprocket", 2100, DECK - 200, "SPROCKET ROW", 200),
+    ]
+    return build(rid, e, "THE HALFWAY TRESTLE", SIDING_MUSIC, biome="frontier_siding")
+
+
+def sprocket_row():
+    """The mechanics' street over the trestle: its arch, Hettie Gimbal's
+    open garage with its hoist, a parts yard and a boiler on blocks, and the
+    workshops' rolling gate, shut."""
+    rid = SPROCKET
+    w, h = ROOMS_AT[rid][1]
+    floor = RIM
+    e = [
+        solid("street", 0, floor, w, h - floor),
+        *side_walls(w, h, floor, None),
+        edge("sprocket_from_trestle", "back over the trestle", 0, floor, TRESTLE, "trestle_to_sprocket"),
+        start(rid, 100, floor),
+        sign("sprocket_sign_arch", 240, floor - 250, "SPROCKET ROW: FITTERS, SMITHS, MECHANICS", 460),
+        # Hettie's garage: the hoist's beam over the bay, off a crate.
+        solid("garage_crate", 940, floor - 64, 80, 64),
+        ledge("hoist_beam", 680, floor - 128, 280),
+        resident("npc_frontier_mechanic", "frontier_mechanic", 760, floor),
+        sign("sprocket_sign_garage", 780, floor - 260, "HETTIE GIMBAL: REPAIRS OF ALL KINDS", 400),
+        # The parts yard: a boiler on blocks, its top off a crate.
+        solid("yard_crate", 1220, floor - 64, 80, 64),
+        solid("boiler", 1320, floor - 112, 160, 112),
+        # The workshops' rolling gate across the street's end.
+        sign("sprocket_sign_gate", 1800, floor - 230, "WORKSHOPS: CLOSED FOR STOCKTAKE", 380),
+    ]
+    return build(rid, e, "SPROCKET ROW", SIDING_MUSIC, biome="frontier_siding")
+
+
+# The freight: every car's underframe ends at UNDERFRAME, its wheels run on
+# the rails under it, and the track bed under the cars puts a body that falls
+# between two cars back at the room's start (a `HazardBlock`).
+UNDERFRAME = 672
+RAILS = 720
+
+
+def car(name, x0, x1, top):
+    """A car's body, from its roof (or deck) down to its underframe."""
+    return solid(name, x0, top, x1 - x0, UNDERFRAME - top)
+
+
+def track_bed(w):
+    """The rails and the ballast under them: the hazard over the ground."""
+    return [entity("HazardBlock", 0, RAILS, w, 32, name="track_bed"), solid("ballast", 0, RAILS + 32, w, 16)]
+
+
+def sliding_crate(rid, n, x, deck, dx, speed=70.0):
+    """A crate loose on a flat car's deck: the shaking slides it `dx` and back."""
+    return entity("MovingPlatform", x, deck - 64, 64, 64, id=f"{rid}_loose_crate_{n}", name=f"a loose crate {n}",
+                  sweep_dx=float(dx), speed=speed, visual="frontier_loose_crate")
+
+
+def build_freight(rid, e, title, music=FREIGHT_MUSIC):
+    return build(rid, e, title, music, dangerous=True, biome="frontier_rails", extra=f"\n    sky_scroll: {FREIGHT_SCROLL},")
+
+
+FLAT = 608
+
+
+def freight_tail():
+    """The caboose and its cupola, two box cars (the trestle's hole is over
+    the second), a flat car of crates that runs on into the next room."""
+    rid = TAIL
+    w, h = ROOMS_AT[rid][1]
+    e = track_bed(w) + [
+        solid("tail_end", 0, 0, WALL, RAILS),
+        vertical_edge("freight_from_trestle", "up to the trestle", WALL, w - WALL, 0, TRESTLE, "trestle_to_freight"),
+        car("caboose", 32, 480, 512),
+        solid("cupola", 160, 448, 140, 64),
+        car("box_car_1", 544, 1024, 480),
+        car("box_car_2", 1088, 1568, 480),
+        car("flat_car_1", 1648, w, FLAT),
+        solid("crates_low", 1760, FLAT - 64, 128, 64),
+        solid("crates_high", 1888, FLAT - 128, 80, 128),
+        sliding_crate(rid, 1, 2080, FLAT, 200),
+        start(rid, 1200, 480),
+        # Hollis Teague, the brakeman, on the caboose's roof.
+        resident("npc_frontier_brakeman", "frontier_brakeman", 380, 512),
+        edge("freight_tail_to_cars", "along the train", w - WALL, FLAT, CARS, "freight_cars_from_tail"),
+    ]
+    return build_freight(rid, e, "THE NUMBER 9 FREIGHT")
+
+
+def freight_cars():
+    """The flat car's other end, a tank car and its dome, an open ore car
+    (down into the ore and up its far end), a box car, a flat car with a
+    loose crate on it."""
+    rid = CARS
+    w, h = ROOMS_AT[rid][1]
+    e = track_bed(w) + [
+        edge("freight_cars_from_tail", "back along the train", 0, FLAT, TAIL, "freight_tail_to_cars"),
+        car("flat_car_1_end", 0, 360, FLAT),
+        car("tank_car", 424, 904, 560),
+        solid("tank_dome", 620, 512, 80, 48),
+        car("ore_car_west", 968, 992, 560),
+        solid("ore_car_bed", 992, 624, 432, UNDERFRAME - 624),
+        solid("ore_car_east", 1424, 560, 24, UNDERFRAME - 560),
+        car("box_car_3", 1512, 1992, 496),
+        car("flat_car_2", 2088, w, FLAT),
+        solid("crates_stack", 2560, FLAT - 64, 128, 64),
+        sliding_crate(rid, 1, 2140, FLAT, 300, 90.0),
+        start(rid, 120, FLAT),
+        edge("freight_cars_to_head", "on to the head of the train", w - WALL, FLAT, HEAD, "rustler_head_from_cars"),
+    ]
+    return build_freight(rid, e, "THE NUMBER 9 FREIGHT")
+
+
+def rustler_head():
+    """The head of the train: the flat car's end, the first box car, then the
+    Rustler (the outlaw engine that has taken the train): its tender, its cab,
+    its boiler and domes, the pilot beam over the rails. Off its front is
+    Clinker Flats' yard."""
+    rid = HEAD
+    w, h = ROOMS_AT[rid][1]
+    e = track_bed(w) + [
+        edge("rustler_head_from_cars", "back along the train", 0, FLAT, CARS, "freight_cars_to_head"),
+        car("flat_car_2_end", 0, 300, FLAT),
+        solid("crate_step", 180, FLAT - 64, 80, 64),
+        car("box_car_4", 364, 844, 480),
+        car("rustler_tender", 908, 1308, 528),
+        ledge("tender_hatch", 1180, 480, 110),
+        car("rustler_cab", 1308, 1548, 432),
+        car("rustler_boiler", 1548, 2160, 512),
+        solid("steam_dome", 1700, 464, 80, 48),
+        solid("sand_dome", 1880, 472, 60, 40),
+        solid("smokestack", 2040, 384, 60, 128),
+        car("rustler_pilot", 2160, w, FLAT),
+        start(rid, 120, FLAT),
+        edge("rustler_head_to_yard", "jump off into the yard", w - WALL, FLAT, YARD, "yard_from_freight"),
+    ]
+    return build_freight(rid, e, "THE RUSTLER")
+
+
+#: Clinker Flats' two levels, in the tall rooms' coordinates: the street (the
+#: Row's, the pad's) and the works' floor, 768 over it.
+FLATS_LOW = 1408
+FLATS_HIGH = 640
+
+
+def clinker_yard():
+    """The freight's way off is the yard's loading dock. Tracks and cars on
+    the ground; the tipple road climbs on trestles west to east to the
+    works' level; the ground goes on under it to the Row."""
+    rid = YARD
+    w, h = ROOMS_AT[rid][1]
+    dock = FLATS_LOW - 32
+    road_x0, road_x1 = 496, 2340
+    e = [
+        solid("ground", 0, FLATS_LOW, w, h - FLATS_LOW),
+        solid("dock", 0, dock, 448, FLATS_LOW - dock),
+        solid("west_wall", 0, 0, WALL, dock - 96),
+        solid("east_wall_mid", w - WALL, FLATS_HIGH + 16, WALL, FLATS_LOW - 96 - FLATS_HIGH - 16),
+        solid("east_wall_top", w - WALL, 0, WALL, FLATS_HIGH - 96),
+        edge("yard_from_freight", "back onto the freight", 0, dock, HEAD, "rustler_head_to_yard"),
+        edge("yard_to_row", "on to the Row", w - WALL, FLATS_LOW, ROW, "row_from_yard"),
+        edge("yard_to_works", "on to the works", w - WALL, FLATS_HIGH, WORKS, "works_from_yard"),
+        start(rid, 200, dock),
+        ramp("tipple_road", road_x0, FLATS_LOW, road_x1, FLATS_HIGH),
+        solid("tipple_floor", road_x1, FLATS_HIGH, w - road_x1, 16),
+        # Lou Shunter, the yardmaster, on the dock.
+        resident("npc_frontier_yardmaster", "frontier_yardmaster", 330, dock),
+        sign("yard_sign_name", 300, dock - 300, "CLINKER FLATS. YARD LIMIT.", 320),
+        sign("yard_sign_tipple", 1500, 900, "TIPPLE ROAD: TO THE WORKS", 300),
+    ]
+    return build(rid, e, "CLINKER FLATS YARD", SIDING_MUSIC, dangerous=True, biome="frontier_works")
+
+
+def clinker_works():
+    """The smelter works on its terrace: the furnace house, the slag pots,
+    the crane's gantry over them (a step up off a pot)."""
+    rid = WORKS
+    w, h = ROOMS_AT[rid][1]
+    floor = FLATS_HIGH
+    e = [
+        solid("works_floor", 0, floor, w, h - floor),
+        *side_walls(w, h, floor, floor),
+        edge("works_from_yard", "back to the yard", 0, floor, YARD, "yard_to_works"),
+        edge("works_to_railhead", "on to the railhead", w - WALL, floor, RAILHEAD, "railhead_from_works"),
+        start(rid, 100, floor),
+        solid("slag_pot_1", 700, floor - 64, 112, 64),
+        solid("slag_pot_2", 1400, floor - 64, 112, 64),
+        ledge("crane_gantry_west", 820, floor - 128, 360),
+        ledge("crane_gantry_east", 1200, floor - 192, 360),
+        chest("a pay packet left on the gantry", "currency:25", 1360, floor - 192),
+        # Magda Ferro, the crane driver, at the foot of her crane.
+        resident("npc_frontier_crane_driver", "frontier_crane_driver", 1700, floor),
+        sign("works_sign_name", 400, floor - 320, "CLINKER FLATS SMELTER WORKS", 360),
+        sign("works_sign_slag", 1100, floor - 300, "HOT SLAG. KEEP OFF THE POTS.", 320),
+    ]
+    return build(rid, e, "THE SMELTER WORKS", SIDING_MUSIC, dangerous=True, biome="frontier_works")
+
+
+def clinker_row():
+    """The shacks under the works: their roofs a jump up, the pump on a hump
+    of cinders in the middle of the Row, washing on lines."""
+    rid = ROW
+    w, h = ROOMS_AT[rid][1]
+    floor = RIM
+    hump = floor - 64
+    e = [
+        solid("row", 0, floor, w, h - floor),
+        *side_walls(w, h, floor, floor),
+        edge("row_from_yard", "back to the yard", 0, floor, YARD, "yard_to_row"),
+        edge("row_to_railhead", "on to the railhead", w - WALL, floor, RAILHEAD, "railhead_from_row"),
+        start(rid, 100, floor),
+        ledge("shack_roof_1", 240, floor - 112, 320),
+        ledge("shack_roof_2", 600, floor - 96, 240),
+        slope("cinders_up", 896, floor, 1104, hump),
+        solid("cinders_top", 1104, hump, 192, floor - hump),
+        slope("cinders_down", 1296, hump, 1504, floor),
+        ledge("shack_roof_3", 1600, floor - 112, 280),
+        ledge("shack_roof_4", 1960, floor - 96, 280),
+        # Ida Soames, who does the Row's washing.
+        resident("npc_frontier_laundress", "frontier_laundress", 1200, hump),
+        sign("row_sign_name", 600, floor - 300, "THE ROW", 160),
+        sign("row_sign_laundry", 1800, floor - 260, "WASHING DONE. SOOT NOT GUARANTEED OUT.", 420),
+    ]
+    return build(rid, e, "THE ROW", SIDING_MUSIC, dangerous=True, biome="frontier_works")
+
+
+def clinker_railhead():
+    """The line east to Dry Dock: the old tramway grade comes down from the
+    works' level on trestles to the street, which goes on under it to Pad
+    Three; a water tower, the line's signal."""
+    rid = RAILHEAD
+    w, h = ROOMS_AT[rid][1]
+    grade_x0, grade_x1 = 288, 2128
+    e = [
+        solid("ground", 0, FLATS_LOW, w, h - FLATS_LOW),
+        solid("west_wall_top", 0, 0, WALL, FLATS_HIGH - 96),
+        solid("west_wall_mid", 0, FLATS_HIGH + 16, WALL, FLATS_LOW - 96 - FLATS_HIGH - 16),
+        solid("east_wall", w - WALL, 0, WALL, FLATS_LOW - 96),
+        edge("railhead_from_works", "back to the works", 0, FLATS_HIGH, WORKS, "works_to_railhead"),
+        edge("railhead_from_row", "back to the Row", 0, FLATS_LOW, ROW, "row_to_railhead"),
+        edge("railhead_to_pad", "east to Dry Dock", w - WALL, FLATS_LOW, PAD, "pad_from_railhead"),
+        start(rid, 100, FLATS_LOW),
+        solid("grade_head", 0, FLATS_HIGH, grade_x0, 16),
+        ramp("tramway_grade", grade_x0, FLATS_HIGH, grade_x1, FLATS_LOW),
+        sign("railhead_sign_line", 2200, FLATS_LOW - 200, "DRY DOCK AND THE PADS: EAST", 320),
+        sign("railhead_sign_grade", 400, FLATS_HIGH - 120, "OLD TRAMWAY GRADE", 260),
+    ]
+    return build(rid, e, "CLINKER FLATS RAILHEAD", SIDING_MUSIC, dangerous=True, biome="frontier_works")
+
+
+SLICE_ROOMS = (siding_station, siding_street, lie_down_inn, siding_trestle, sprocket_row, freight_tail, freight_cars,
+               rustler_head, clinker_yard, clinker_works, clinker_row, clinker_railhead)
+
+ROOMS = (landing_pad, main_street, wet_whistle, livery, refinery, ore_corral, saddle_lookout, hall_corral) + SLICE_ROOMS
 
 #: The hall's door to its copy and the copy's life switch, on the hall's lower
 #: floor between the T-rex's door and the Overflow's (`hall_of_bosses`,
