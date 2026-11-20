@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 8486,
+	"nextUid": 8488,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -33213,6 +33213,78 @@
 								{ "__identifier": "target_encounter", "__type": "String", "__value": "hall.bossofthegame", "__tile": null, "defUid": 4049, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["hall.bossofthegame"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "BossLife", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["BossLife"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [83,24],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 9522,
+							"__worldY": 6560,
+							"iid": "LoadingZone-8486",
+							"width": 48,
+							"height": 96,
+							"defUid": 2002,
+							"px": [1330,384],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "hall_to_marshal_gallus_portal", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_to_marshal_gallus_portal"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "to Marshal Gallus", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["to Marshal Gallus"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "hall_marshal_gallus_corral", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_marshal_gallus_corral"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "hall_marshal_gallus_corral_entry", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_marshal_gallus_corral_entry"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [86,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 9582,
+							"__worldY": 6624,
+							"iid": "Switch-8487",
+							"width": 24,
+							"height": 32,
+							"defUid": 4051,
+							"px": [1390,448],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "hall_marshal_gallus_life_switch", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall_marshal_gallus_life_switch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Marshal Gallus life switch", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Marshal Gallus life switch"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Revive or defeat Marshal Gallus", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Revive or defeat Marshal Gallus"]
+								}] },
+								{ "__identifier": "target_encounter", "__type": "String", "__value": "hall.marshal_gallus", "__tile": null, "defUid": 4049, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hall.marshal_gallus"]
 								}] },
 								{ "__identifier": "action", "__type": "String", "__value": "BossLife", "__tile": null, "defUid": 4050, "realEditorValues": [{
 									"id": "V_String",
