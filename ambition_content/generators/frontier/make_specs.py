@@ -59,7 +59,7 @@ sys.path.insert(0, str(TOOL_SPECS))
 sys.path.insert(0, str(TOOL_SPECS / "gate_network"))
 sys.path.insert(0, str(HERE))
 
-from district_kit import SANDBOX_LDTK, WALL, WORLDS, add_entities, door, edge, ensure_world, entity, ledge, make_rooms, room, run, sign, solid, start  # noqa: E402
+from district_kit import SANDBOX_LDTK, WALL, WORLDS, add_entities, door, edge, ensure_world, entity, ledge, make_rooms, resident, room, run, sign, solid, start  # noqa: E402
 
 import gates  # noqa: E402
 from blurbs import BLURB  # noqa: E402
@@ -188,6 +188,8 @@ def landing_pad():
         # The clerk's booth; its flat roof is a step for the bold.
         ledge("booth_roof", 640, floor - 112, 208),
         sign("pad_sign_booth", 744, floor - 152, "ARRIVALS", 140),
+        # Dolores Pike, the clerk, at the booth's window.
+        resident("npc_frontier_clerk", "frontier_clerk", 700, floor),
         # Cargo containers in a stack (their tops are ledges, so the art
         # draws the boxes): one jump, then one more, up to the freighter's
         # open cargo deck on the next pad.
@@ -257,6 +259,9 @@ def wet_whistle():
     e = interior_shell(w, h, floor) + [
         door("whistle_door", "out to Main Street", 64, floor, MAIN, "street_saloon_door"),
         start(rid, 150, floor),
+        # Mae behind the bar; Elias at a table.
+        resident("npc_frontier_barkeep", "frontier_barkeep", 884, floor),
+        resident("npc_frontier_prospector", "frontier_prospector", 380, floor),
         # The stair to the balcony over the bar: a landing a jump up, then the
         # balcony a jump over it.
         ledge("whistle_stair", 672, floor - 80, 112),
@@ -278,6 +283,8 @@ def livery():
         door("livery_door", "out to Main Street", 64, floor, MAIN, "street_livery_door"),
         start(rid, 150, floor),
         ledge("livery_ladder_rung", 464, floor - 64, 96),
+        # Gus Bell, by the stalls.
+        resident("npc_frontier_liveryman", "frontier_liveryman", 300, floor),
         ledge("livery_hayloft", 560, loft, w - WALL - 560),
         sign("livery_sign_rules", 300, 120, "MULES BY THE DAY. RETURN WITH THE SAME NUMBER OF LEGS.", 560),
     ]
@@ -294,6 +301,8 @@ def refinery():
         edge("refinery_to_corral", "on to the Ore Corral", w - WALL, shelf, CORRAL, "corral_from_refinery"),
         start(rid, 120, west),
         solid("gate_yard", 0, west, 400, h - west),
+        # Ruth Harlan, the night-shift foreman, at the foot of the road.
+        resident("npc_frontier_foreman", "frontier_foreman", 290, west),
         slope("lower_road", 400, west, 800, t1),
         solid("terrace_tanks", 800, t1, 480, h - t1),
         slope("upper_road", 1280, t1, 1600, t2),
@@ -332,7 +341,7 @@ def corral_floor_plan(rid, placement, west_way):
         ledge("west_catwalk", 96, CATWALK, 256),
         ledge("east_catwalk", w - 96 - 256, CATWALK, 256),
         west_way,
-        start(rid, 120, DOCK),
+        start(rid, 200, DOCK),
         entity("BossSpawn", w // 2 - MARSHAL_W // 2, CORRAL_FLOOR - MARSHAL_H, MARSHAL_W, MARSHAL_H, name="Marshal Gallus",
                brain="PhaseScript:marshal_gallus", encounter_id=placement),
     ]

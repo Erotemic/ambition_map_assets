@@ -1,14 +1,14 @@
 {
   "schema": "ambition.ldtk_generated_record.v1",
   "generated": {
-    "frontier_landing_pad": "b9aa5135fdc223ae",
-    "frontier_livery": "c8abea44fcd725e2",
+    "frontier_landing_pad": "936176a931803cb1",
+    "frontier_livery": "eb592fa4480a34b7",
     "frontier_main_street": "6a00d95c48e0918f",
-    "frontier_ore_corral": "37f5abae5877d38e",
-    "frontier_refinery": "1a3d5e01379f96d5",
+    "frontier_ore_corral": "eb34f757caeeadb7",
+    "frontier_refinery": "1738a8067a5d5174",
     "frontier_saddle_lookout": "b49f8b4d854ac3b0",
-    "frontier_wet_whistle": "a691b2812e9e9356",
-    "hall_marshal_gallus_corral": "86288640d75ad8d2"
+    "frontier_wet_whistle": "640aa5fea838c294",
+    "hall_marshal_gallus_corral": "8bf7f23c34ab8f37"
   },
   "ldtk_owned": []
 }
