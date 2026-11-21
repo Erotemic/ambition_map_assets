@@ -1140,6 +1140,11 @@ def fell():
 #: (a dip with standing water in it), the stone row, the barrow's mound
 #: with its door, and the far heather to the valley's edge.
 PEAT_CUT = (880, 1200, MOOR_FLOOR + 64)
+#: The causeway over the peat cut: laid stones flush with the heather, 48
+#: wide, with water showing in 16 px gaps between them, narrower than a
+#: body. A body in the peat water cannot jump the 64 out (its jump reaches
+#: about 28 there), so the cut must not be a place a body can fall into.
+CAUSEWAY = [(896, 944), (960, 1008), (1024, 1072), (1088, 1136), (1152, 1200)]
 MOUND = (1600, 1856, 2112, 2368, MOOR_FLOOR - 96)
 #: The barrow's door stands at the mound's west foot, set into the hill.
 BARROW_DOOR_X = 1552
@@ -1154,8 +1159,8 @@ def scavenger(rid, n, x, floor, character):
 
 
 def moor():
-    """THE MOOR. Past the fell's top, the valley's edge: heather and peat,
-    a row of old stones, and the barrow, a grave older than the village,
+    """THE MOOR. Past the fell's top, the valley's edge: heather and a peat
+    cut crossed on an old causeway, a row of old stones, and the barrow, a grave older than the village,
     in its mound. Goblin scavengers work the moor in pairs, armed with what
     they took off the freight: the most dangerous ground in the valley, and
     where the adventurers want to go."""
@@ -1171,6 +1176,8 @@ def moor():
         solid("heather_west", 0, g, p0, h - g),
         solid("peat_bottom", p0, pb, p1 - p0, h - pb),
         water(f"{rid}_peat_water", p0, g + 24, p1 - p0, pb - g - 24),
+        *[solid(f"causeway_{n}", x0, g, x1 - x0, pb - g) for n, (x0, x1) in enumerate(CAUSEWAY)],
+        *[piece("hill_fell_fold_wall", x0, g, name=f"causeway stone {n}") for n, (x0, _) in enumerate(CAUSEWAY)],
         solid("heather_middle", p1, g, m0 - p1, h - g),
         *stake_board("moor_sign_road", 300, g, "THE MOOR", "TURN BACK, MOSTLY"),
         dress("hill_fell_rocks", 520, g, 1),
