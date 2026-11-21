@@ -700,6 +700,10 @@ def rustler_head():
         car("box_car_4", 364, 844, 480),
         car("rustler_tender", 908, 1308, 528),
         ledge("tender_hatch", 1180, 480, 110),
+        # Peyote Lean, the outlaw who rides with Marshal Gallus, keeps the
+        # tender: he sees anyone who comes up the train, and shoots.
+        entity("EnemySpawn", 1150 - 16, 528 - 48, 32, 48, name=f"{rid}_peyote_lean", brain="combatant",
+               character_id="npc_peyote_lean", respawn="OnRoomReenter"),
         car("rustler_cab", 1308, 1548, 432),
         car("rustler_boiler", 1548, 2160, 512),
         solid("steam_dome", 1700, 464, 80, 48),
