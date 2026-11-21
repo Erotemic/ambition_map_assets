@@ -602,8 +602,8 @@ ARENA_VAULT, ARENA_FLOOR = 48, 832
 ARENA_SLAB = 192
 
 
-def camera(name, x, y, w, h, extra=""):
-    return f'( type: "CameraZone", px: [{x}, {y}], size: [{w}, {h}], fields: ( id: "{name}", name: "{name}", mode: "Default"{extra} ) ),'
+def camera(name, x, y, w, h, extra="", *, blend_width=512.0):
+    return f'( type: "CameraZone", px: [{x}, {y}], size: [{w}, {h}], fields: ( id: "{name}", name: "{name}", mode: "Default", selection: "blend_edge", blend_width: {blend_width}{extra} ) ),'
 
 
 def lock_wall(rid, x, y, w, h, gated_by, name, look="temple_gate_iron"):
