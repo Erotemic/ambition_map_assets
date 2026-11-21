@@ -413,6 +413,11 @@ def ore_corral():
     e = corral_floor_plan(rid, PLACEMENT, edge("corral_from_refinery", "back to the refinery", 0, DOCK, REFINERY,
                                                "refinery_to_corral")) + [
         solid("east_wall", w - WALL, 0, WALL, DOCK - 96),
+        # The way in shuts behind the player while the Marshal fights, so a
+        # knockback cannot carry them out by the west edge; it is open while
+        # he sleeps and again once he falls.
+        entity("LockWall", WALL, DOCK - 112, WALL, 112, id="corral_west_gate", name="the corral's west gate",
+               gated_by=f"boss.at_rest {PLACEMENT}", look="temple_gate_iron"),
         # The corral's gate to the mesa top, shut until the Marshal falls.
         entity("LockWall", grille_x, DOCK - 112, WALL, 112, id="corral_lookout_grille", name="the corral's gate",
                gated_by=f"boss.cleared {PLACEMENT}", look="temple_gate_iron"),
