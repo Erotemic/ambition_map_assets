@@ -1248,7 +1248,7 @@ def barrow():
                                               (1820, "npc_lab_raider")])],
         # The king, who does not like the company he is keeping.
         entity("EnemySpawn", 1980 - 16, BARROW_GRAVE[2] - 48, 32, 48, name="barrow_king", brain="combatant",
-               character_id="decomposing_specter", respawn="OnRoomReenter"),
+               character_id="barrow_king", respawn="OnRoomReenter"),
         entity("ChestSpawn", 2040, gy - 58, 76, 58, name="the king's grave goods", reward="currency:60"),
         *[entity("LightSource", x, y, 32, 32, name=f"barrow_lamp_{n}", radius=260.0, color="#ffc070", intensity=0.9)
           for n, (x, y) in enumerate(BARROW_LAMPS)],

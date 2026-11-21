@@ -36120,9 +36120,9 @@
 									"id": "V_String",
 									"params": ["combatant"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "decomposing_specter", "__tile": null, "defUid": 104930, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "barrow_king", "__tile": null, "defUid": 104930, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["decomposing_specter"]
+									"params": ["barrow_king"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 104932, "realEditorValues": [{
 									"id": "V_String",
