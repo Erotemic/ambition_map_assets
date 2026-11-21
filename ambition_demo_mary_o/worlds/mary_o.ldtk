@@ -11,7 +11,7 @@
 	"iid": "ambition-mary-o-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 109971,
+	"nextUid": 109980,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -12192,6 +12192,38 @@
 									"params": ["SceneArt"]
 								}] }
 							]
+						},
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 0,
+							"__worldY": 0,
+							"iid": "CameraZone-109971",
+							"width": 3328,
+							"height": 768,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "mary_o_1_1_follow", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["mary_o_1_1_follow"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Grounded Follow", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Grounded Follow"]
+								}] },
+								{ "__identifier": "priority", "__type": "Int", "__value": -100, "__tile": null, "defUid": 4329, "realEditorValues": [{ "id": "V_Int", "params": [-100] }] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.0, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.0] }] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] },
+								{ "__identifier": "tracking", "__type": "String", "__value": "grounded", "__tile": null, "defUid": 109948, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["grounded"]
+								}] }
+							]
 						}
 					]
 				},
@@ -19710,6 +19742,38 @@
 								"id": "V_String",
 								"params": ["goal_pole_banner"]
 							}] }]
+						},
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 0,
+							"__worldY": 1600,
+							"iid": "CameraZone-109972",
+							"width": 6656,
+							"height": 768,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "mary_o_1_3_follow", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["mary_o_1_3_follow"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Grounded Follow", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Grounded Follow"]
+								}] },
+								{ "__identifier": "priority", "__type": "Int", "__value": -100, "__tile": null, "defUid": 4329, "realEditorValues": [{ "id": "V_Int", "params": [-100] }] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.0, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.0] }] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] },
+								{ "__identifier": "tracking", "__type": "String", "__value": "grounded", "__tile": null, "defUid": 109948, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["grounded"]
+								}] }
+							]
 						}
 					]
 				},
@@ -36496,6 +36560,38 @@
 								"id": "V_String",
 								"params": ["Brick"]
 							}] }]
+						},
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 0,
+							"__worldY": 2560,
+							"iid": "CameraZone-109973",
+							"width": 7680,
+							"height": 672,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "mary_o_1_2_follow", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["mary_o_1_2_follow"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Grounded Follow", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Grounded Follow"]
+								}] },
+								{ "__identifier": "priority", "__type": "Int", "__value": -100, "__tile": null, "defUid": 4329, "realEditorValues": [{ "id": "V_Int", "params": [-100] }] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.0, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.0] }] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] },
+								{ "__identifier": "tracking", "__type": "String", "__value": "grounded", "__tile": null, "defUid": 109948, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["grounded"]
+								}] }
+							]
 						}
 					]
 				},
@@ -44015,6 +44111,38 @@
 								"id": "V_String",
 								"params": ["goal_gate"]
 							}] }]
+						},
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 0,
+							"__worldY": 3392,
+							"iid": "CameraZone-109974",
+							"width": 5440,
+							"height": 480,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "mary_o_1_4_follow", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["mary_o_1_4_follow"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Grounded Follow", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Grounded Follow"]
+								}] },
+								{ "__identifier": "priority", "__type": "Int", "__value": -100, "__tile": null, "defUid": 4329, "realEditorValues": [{ "id": "V_Int", "params": [-100] }] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.0, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.0] }] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] },
+								{ "__identifier": "tracking", "__type": "String", "__value": "grounded", "__tile": null, "defUid": 109948, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["grounded"]
+								}] }
+							]
 						}
 					]
 				},
@@ -50367,6 +50495,38 @@
 								"id": "V_String",
 								"params": ["goal_pole_banner"]
 							}] }]
+						},
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 0,
+							"__worldY": 4800,
+							"iid": "CameraZone-109975",
+							"width": 6400,
+							"height": 768,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "mary_o_2_1_follow", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["mary_o_2_1_follow"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Grounded Follow", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Grounded Follow"]
+								}] },
+								{ "__identifier": "priority", "__type": "Int", "__value": -100, "__tile": null, "defUid": 4329, "realEditorValues": [{ "id": "V_Int", "params": [-100] }] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.0, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.0] }] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] },
+								{ "__identifier": "tracking", "__type": "String", "__value": "grounded", "__tile": null, "defUid": 109948, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["grounded"]
+								}] }
+							]
 						}
 					]
 				},
@@ -57449,6 +57609,38 @@
 								"id": "V_String",
 								"params": ["goal_pole_banner"]
 							}] }]
+						},
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 0,
+							"__worldY": 5760,
+							"iid": "CameraZone-109976",
+							"width": 5440,
+							"height": 480,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "mary_o_2_2_follow", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["mary_o_2_2_follow"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Grounded Follow", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Grounded Follow"]
+								}] },
+								{ "__identifier": "priority", "__type": "Int", "__value": -100, "__tile": null, "defUid": 4329, "realEditorValues": [{ "id": "V_Int", "params": [-100] }] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.0, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.0] }] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] },
+								{ "__identifier": "tracking", "__type": "String", "__value": "grounded", "__tile": null, "defUid": 109948, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["grounded"]
+								}] }
+							]
 						}
 					]
 				},
@@ -63674,6 +63866,38 @@
 								"id": "V_String",
 								"params": ["goal_pole_banner"]
 							}] }]
+						},
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 0,
+							"__worldY": 6400,
+							"iid": "CameraZone-109977",
+							"width": 6080,
+							"height": 768,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "mary_o_2_3_follow", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["mary_o_2_3_follow"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Grounded Follow", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Grounded Follow"]
+								}] },
+								{ "__identifier": "priority", "__type": "Int", "__value": -100, "__tile": null, "defUid": 4329, "realEditorValues": [{ "id": "V_Int", "params": [-100] }] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.0, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.0] }] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] },
+								{ "__identifier": "tracking", "__type": "String", "__value": "grounded", "__tile": null, "defUid": 109948, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["grounded"]
+								}] }
+							]
 						}
 					]
 				},
@@ -71448,6 +71672,38 @@
 								"id": "V_String",
 								"params": ["goal_gate"]
 							}] }]
+						},
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 0,
+							"__worldY": 7360,
+							"iid": "CameraZone-109978",
+							"width": 5632,
+							"height": 480,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "mary_o_2_4_follow", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["mary_o_2_4_follow"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Grounded Follow", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Grounded Follow"]
+								}] },
+								{ "__identifier": "priority", "__type": "Int", "__value": -100, "__tile": null, "defUid": 4329, "realEditorValues": [{ "id": "V_Int", "params": [-100] }] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.0, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.0] }] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] },
+								{ "__identifier": "tracking", "__type": "String", "__value": "grounded", "__tile": null, "defUid": 109948, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["grounded"]
+								}] }
+							]
 						}
 					]
 				},
@@ -73297,6 +73553,38 @@
 								{ "__identifier": "role", "__type": "LocalEnum.MaryOPipeRole", "__value": "Warp", "__tile": null, "defUid": 106907, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["Warp"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 0,
+							"__worldY": 4096,
+							"iid": "CameraZone-109979",
+							"width": 2144,
+							"height": 480,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "mary_o_warp_follow", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["mary_o_warp_follow"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Grounded Follow", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Grounded Follow"]
+								}] },
+								{ "__identifier": "priority", "__type": "Int", "__value": -100, "__tile": null, "defUid": 4329, "realEditorValues": [{ "id": "V_Int", "params": [-100] }] },
+								{ "__identifier": "zoom", "__type": "Float", "__value": 1.0, "__tile": null, "defUid": 4330, "realEditorValues": [{ "id": "V_Float", "params": [1.0] }] },
+								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] },
+								{ "__identifier": "tracking", "__type": "String", "__value": "grounded", "__tile": null, "defUid": 109948, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["grounded"]
 								}] }
 							]
 						}
