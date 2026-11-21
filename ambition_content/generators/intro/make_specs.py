@@ -70,6 +70,8 @@ MILLSTREAM = "intro_millstream"
 VILLAGE = "intro_hobford"
 WOODS = "intro_woods"
 SALT_RUN = "intro_salt_run"
+MOOR = "intro_moor"
+BARROW = "intro_barrow"
 MARKET = "drain_alley"
 UNDER_TOWN = "under_town_pipes"
 GATE_STACK = "gate_stack_lower"
@@ -142,6 +144,15 @@ def _line(*rooms):
     return out
 
 
+#: The moor, past the fell's top: the outskirts, where the valley is most
+#: dangerous. Its floor is level with the fell's summit, and its west side is
+#: the fell's east side.
+FELL_X = COUNTRY_X + LANE_W + 3 * COUNTRY_W + MEADOW_W + CLEARING_W + SIDING_W
+MOOR_W, MOOR_H, MOOR_FLOOR = 2800, 768, 640
+MOOR_X = FELL_X + FELL_W
+MOOR_Y = FELL_Y + FELL_FLOOR - 832 - MOOR_FLOOR
+BARROW_W, BARROW_H, BARROW_FLOOR = 2240, 640, 512
+
 #: Each room: where it is in the world (its top left), and its size.
 ROOMS_AT = {
     WORKSHOP: ((COUNTRY_X - WORKSHOP_W, UPPER_Y + COUNTRY_FLOOR - WORKSHOP_FLOOR), (WORKSHOP_W, WORKSHOP_H)),
@@ -155,6 +166,10 @@ ROOMS_AT = {
         (SIDING, LOWER_Y, (SIDING_W, LOW_H)),
         (FELL, FELL_Y, (FELL_W, FELL_H)),
     ),
+    # The moor: the outskirts, east of the fell's top and level with it.
+    MOOR: ((MOOR_X, MOOR_Y), (MOOR_W, MOOR_H)),
+    # The barrow: under the moor's east half, entered by its door.
+    BARROW: ((MOOR_X + 1200, MOOR_Y + MOOR_H), (BARROW_W, BARROW_H)),
     # The salt run: under the valley, from behind the mill wheel to the
     # woods' hollow oak.
     SALT_RUN: ((SALT_RUN_X, LOWER_Y + LOW_H), (SALT_RUN_W, LOW_H)),
@@ -517,6 +532,9 @@ def meadow():
         solid("shepherds_hut", HUT[0], HUT[2], HUT[1] - HUT[0], ty - HUT[2]),
         piece("hill_meadow_hut", HUT[0], HUT[2]),
         npc("npc_companion_dog", "hobford_dog", "Greet the dog", 1680, ty, brain="companion_dog_roam", w=64, h=64),
+        # Two of the flock graze the terrace below the fell: cloud sheep
+        # (`rhai/cloud_sheep.rhai`), seen first here, near the village.
+        *[sheep(x, ty) for x in (1230, 1620)],
         slope("hill_path_upper", t1, ty, HILL_TOP, hi),
         solid("hilltop", HILL_TOP, hi, w - HILL_TOP, h - hi),
         solid("stone_wall", 2720, hi - 48, 32, 48),
@@ -753,6 +771,11 @@ def village():
         # Plough's, where the board sends people about lost things.
         npc("npc_valley_trader", "valley_trader", "Talk to the trader", 1000, g),
         npc("npc_valley_innkeeper", "valley_innkeeper", "Talk to the innkeeper", 1580, g),
+        # The valley's adventurers, in fantasy kit with the gate's imports: the
+        # knight with her laser sword reads the board for work; the hedge
+        # wizard with his calculator stands at the cottage door.
+        npc("npc_valley_knight", "valley_knight", "Talk to the knight", 1960, g),
+        npc("npc_valley_wizard", "valley_wizard", "Talk to the wizard", 600, g),
         # On the smithy's front under the thatch, in two lines over its door.
         sign("hobford_sign_smithy", 1077, g - 100, "GATE GOODS", 100),
         sign("hobford_sign_goods", 1077, g - 82, "OIL, SALT, BATTERIES", 170),
@@ -801,6 +824,8 @@ def woods():
         piece("hill_woods_hollow_oak", 1440, 20),
         entity("PickupSpawn", 1740, HOLLOW[-1][1] - 28, 24, 24, name="a can of oil", kind="health:2"),
         hen(rid, 1, 1880, g, dialogue="hobford_lost_hen"),
+        # A ranger on the goblins' trail, short of their lookout.
+        npc("npc_valley_ranger", "valley_ranger", "Talk to the ranger", 1980, g),
         raider(rid, 1, 2160, g),
         edge("woods_to_meadow", "up the hill path to the gate", w - WALL, g, MEADOW, "meadow_from_woods"),
         start(rid, 120, g),
@@ -970,8 +995,9 @@ def fell():
     check_reach(rid, [("top", ty), ("cairn", ty - 48), ("top", ty)])
     e = [
         solid("west_wall", 0, 0, WALL, fy - 96),
-        solid("east_wall", w - WALL, 0, WALL, h),
+        solid("east_wall", w - WALL, 0, WALL, ty - 96),
         edge("fell_from_siding", "down to the siding", 0, fy, SIDING, "siding_to_fell"),
+        edge("fell_to_moor", "on to the moor", w - WALL, ty, MOOR, "moor_from_fell"),
         solid("fell_foot", f0, fy, f1 - f0, h - fy),
         *stake_board("fell_sign_road", 260, fy, "THE DROVE ROAD", "SHUT THE GATES"),
         slope("drove_road_lower", f1, fy, d0, dy),
@@ -983,12 +1009,13 @@ def fell():
         solid("scree_ledge", s0, sy, s1 - s0, h - sy),
         *[solid(f"crag_{n}", x0, top, x1 - x0, h - top) for n, (x0, x1, top) in enumerate(CRAGS)],
         slope("drove_road_upper", CRAGS[-1][1], CRAGS[-1][2], t0, ty),
-        solid("summit", t0, ty, t1 - WALL - t0, h - ty),
+        solid("summit", t0, ty, t1 - t0, h - ty),
         solid("cairn", CAIRN[0], ty - 48, CAIRN[1] - CAIRN[0], 48),
         piece("hill_fell_cairn", CAIRN[0], ty - 48),
         entity("PickupSpawn", (CAIRN[0] + CAIRN[1]) // 2 - 12, ty - 48 - 28, 24, 24, name="a tin left on the cairn",
                kind="currency:30"),
         *stake_board("fell_sign_top", 3275, ty, "THE TOP", "THE VIEW IS FREE"),
+        *stake_board("fell_sign_moor", w - 200, ty, "THE MOOR", "NO SHEEP PAST HERE"),
         # The top is a lookout: framed on Scout, the fell's own rock fills the
         # frame; lifted, the valley and the gate's hill are in view.
         entity("CameraZone", CRAGS[-1][1], 0, w - CRAGS[-1][1], h, id="intro_fell_lookout", name="the top",
@@ -1009,6 +1036,123 @@ def fell():
         *[sheep(x, ty) for x in (3300, 3500)],
     ]
     return build(rid, e, "THE FELL", COUNTRY_MUSIC)
+
+
+# ---------------------------------------------------------- the moor
+
+#: The moor's ground, west to east: the heather from the fell, a peat cut
+#: (a dip with standing water in it), the stone row, the barrow's mound
+#: with its door, and the far heather to the valley's edge.
+PEAT_CUT = (880, 1200, MOOR_FLOOR + 64)
+MOUND = (1600, 1856, 2112, 2368, MOOR_FLOOR - 96)
+#: The barrow's door stands at the mound's west foot, set into the hill.
+BARROW_DOOR_X = 1552
+#: Goblin scavengers in pairs: (x, character).
+SCAVENGERS = [(700, "npc_goblin_scavenger"), (780, "npc_goblin_scavenger"),
+              (2560, "npc_goblin_scavenger"), (2640, "npc_lab_raider")]
+
+
+def scavenger(rid, n, x, floor, character):
+    return entity("EnemySpawn", x - 16, floor - 48, 32, 48, name=f"{rid}_scavenger_{n}", brain="medium_striker",
+                  character_id=character, respawn="OnRoomReenter")
+
+
+def moor():
+    """THE MOOR. Past the fell's top, the valley's edge: heather and peat,
+    a row of old stones, and the barrow, a grave older than the village,
+    in its mound. Goblin scavengers work the moor in pairs, armed with what
+    they took off the freight: the most dangerous ground in the valley, and
+    where the adventurers want to go."""
+    rid = MOOR
+    w, h, g = MOOR_W, MOOR_H, MOOR_FLOOR
+    p0, p1, pb = PEAT_CUT
+    m0, m1, m2, m3, mt = MOUND
+    check_reach(rid, [("peat bottom", pb), ("heather", g)])
+    e = [
+        solid("west_wall", 0, 0, WALL, g - 96),
+        solid("east_wall", w - WALL, 0, WALL, g),
+        edge("moor_from_fell", "back to the fell's top", 0, g, FELL, "fell_to_moor"),
+        solid("heather_west", 0, g, p0, h - g),
+        solid("peat_bottom", p0, pb, p1 - p0, h - pb),
+        water(f"{rid}_peat_water", p0, g + 24, p1 - p0, pb - g - 24),
+        solid("heather_middle", p1, g, m0 - p1, h - g),
+        *stake_board("moor_sign_road", 300, g, "THE MOOR", "TURN BACK, MOSTLY"),
+        dress("hill_fell_rocks", 520, g, 1),
+        dress("hill_fell_gorse", 1300, g, 2),
+        # The stone row: three old stones before the mound, each a hop.
+        *[solid(f"stone_row_{n}", x, g - 48, 48, 48) for n, x in enumerate((1260, 1340))],
+        *[piece("hill_standing_stone", x, g - 48, name=f"row stone {n}") for n, x in enumerate((1260, 1340))],
+        # The barrow's door at the foot of its mound: into the grave.
+        entity("LoadingZone", BARROW_DOOR_X, g - 96, 48, 96, id="moor_to_barrow", name="into the barrow", activation="Door",
+               target_room=BARROW, target_zone="barrow_from_moor", bidirectional=True),
+        *stake_board("moor_sign_barrow", 1120, g, "THE BARROW", "KNOCK. NOBODY WILL."),
+        slope("mound_west", m0, g, m1, mt),
+        solid("mound_top", m1, mt, m2 - m1, h - mt),
+        slope("mound_east", m2, mt, m3, g),
+        solid("heather_east", m3, g, w - m3, h - g),
+        dress("hill_fell_rocks", 2900 - 300, g, 3),
+        *[scavenger(rid, n, x, g, character) for n, (x, character) in enumerate(SCAVENGERS)],
+        start(rid, 120, g),
+    ]
+    return build(rid, e, "THE MOOR", "first_goblin_tune_v2_radio", dangerous=True)
+
+
+# -------------------------------------------------------- the barrow
+
+#: The barrow's floor, west to east: (x0, x1, top). From the door the
+#: passage steps down to the first chamber; a pit with a slab over it; the
+#: grave chamber, lower again, where the scavengers keep what they stole.
+BARROW_STEPS = [(0, 320, 256), (320, 448, 304), (448, 576, 352), (576, 1040, 400)]
+BARROW_PIT = (1040, 1200, 496)
+#: The slab over the pit: (x0, x1, top), a stone laid across it.
+BARROW_SLAB = (1088, 1152, 400)
+BARROW_GRAVE = (1200, BARROW_W, 448)
+BARROW_LAMPS = [(1400, 260), (1900, 260)]
+
+
+def barrow():
+    """THE BARROW. A grave older than the village under the moor: a stone
+    passage down to a chamber of the old dead, a pit across it, and the
+    king's chamber at the end, where goblin scavengers stack the freight
+    they steal from the gate. The hardest fight in level 1."""
+    rid = BARROW
+    w, h = BARROW_W, BARROW_H
+    floors = [(f"step {n}", top) for n, (_, _, top) in enumerate(BARROW_STEPS)]
+    check_reach(rid, list(reversed(floors)))
+    # Out of the pit onto the grave chamber's floor, and back over the slab.
+    check_reach(rid, [("pit", BARROW_PIT[2]), ("grave", BARROW_GRAVE[2]), ("slab", BARROW_SLAB[2]), ("passage", BARROW_STEPS[-1][2])])
+    b0, b1, bb = BARROW_PIT
+    g0, g1, gy = BARROW_GRAVE
+    e = [solid("west_end", 0, 0, WALL, h), solid("east_end", w - WALL, 0, WALL, h), solid("roof", 0, 0, w, 64)]
+    for n, (x0, x1, top) in enumerate(BARROW_STEPS):
+        e.append(solid(f"step_{n}", x0, top, x1 - x0, h - top))
+    e += [
+        entity("LoadingZone", 64, BARROW_STEPS[0][2] - 96, 48, 96, id="barrow_from_moor", name="out to the moor",
+               activation="Door", target_room=MOOR, target_zone="moor_to_barrow", bidirectional=True),
+        sign("barrow_sign_door", 340, 110, "HERE LIES A KING OF THE VALLEY. LET HIM SLEEP.", 520),
+        # The old dead of the first chamber, up and about.
+        *[entity("EnemySpawn", x - 16, BARROW_STEPS[-1][2] - 48, 32, 48, name=f"barrow_dead_{n}", brain="combatant",
+                 character_id="npc_evil_zombie", respawn="OnRoomReenter") for n, x in enumerate((800, 960))],
+        # The pit: a slab across it, a run and a jump wide, and what is at the
+        # bottom of a barrow's pit.
+        solid("pit_bottom", b0, bb, b1 - b0, h - bb),
+        ledge("pit_slab", BARROW_SLAB[0], BARROW_SLAB[2], BARROW_SLAB[1] - BARROW_SLAB[0]),
+        entity("DamageVolume", b0, bb - 32, b1 - b0, 32, name="barrow pit", damage=1.0),
+        solid("grave_floor", g0, gy, g1 - g0, h - gy),
+        sign("barrow_sign_grave", 1700, 150, "ADDED IN CHALK: AND HIS TOASTERS. AND HIS BATTERIES. AND HIS SIXTY PHONE CHARGERS.", 720),
+        *[scavenger(rid, n, x, gy, character)
+          for n, (x, character) in enumerate([(1500, "npc_goblin_scavenger"), (1660, "npc_goblin_scavenger"),
+                                              (1820, "npc_lab_raider")])],
+        # The king, who does not like the company he is keeping.
+        entity("EnemySpawn", 1980 - 16, BARROW_GRAVE[2] - 48, 32, 48, name="barrow_king", brain="combatant",
+               character_id="decomposing_specter", respawn="OnRoomReenter"),
+        entity("ChestSpawn", 2040, gy - 58, 76, 58, name="the king's grave goods", reward="currency:60"),
+        *[entity("LightSource", x, y, 32, 32, name=f"barrow_lamp_{n}", radius=260.0, color="#ffc070", intensity=0.9)
+          for n, (x, y) in enumerate(BARROW_LAMPS)],
+        start(rid, 160, BARROW_STEPS[0][2]),
+    ]
+    return build(rid, e, "THE BARROW", "vault_in_the_dark", look="cave", bg="#0c0a08", dangerous=True,
+                 extra=UNDERGROUND_DARK)
 
 
 # ------------------------------------------- the town under the gate stack
@@ -1116,7 +1260,7 @@ def culvert():
 
 #: East to west: a relayout moves the rooms east, and each one's new place
 #: is free once the rooms east of it have moved.
-ROOMS = (fell, siding, clearing, meadow, woods, village, millstream, lane, workshop, market, culvert, salt_run)
+ROOMS = (barrow, moor, fell, siding, clearing, meadow, woods, village, millstream, lane, workshop, market, culvert, salt_run)
 
 
 def main(argv):
