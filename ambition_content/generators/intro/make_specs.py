@@ -35,7 +35,7 @@ enough to step over, that comes up when the survey is over.
 Where a room is in the world is its LDtk editor's: `--apply` regenerates each
 room where it stands (`area create --keep-position`), and `ROOMS_AT` places
 only a room that is new. `--apply --relayout` puts every room back where
-`ROOMS_AT` says.
+`ROOMS_AT` says; `--apply --relayout=<room>[,<room>]` only those rooms.
 """
 from __future__ import annotations
 
@@ -72,6 +72,7 @@ WOODS = "intro_woods"
 SALT_RUN = "intro_salt_run"
 MOOR = "intro_moor"
 BARROW = "intro_barrow"
+GUILD = "intro_guild_trophy_room"
 MARKET = "drain_alley"
 UNDER_TOWN = "under_town_pipes"
 GATE_STACK = "gate_stack_lower"
@@ -153,13 +154,18 @@ MOOR_X = FELL_X + FELL_W
 MOOR_Y = FELL_Y + FELL_FLOOR - 832 - MOOR_FLOOR
 BARROW_W, BARROW_H, BARROW_FLOOR = 2240, 640, 512
 
+#: The guild's trophy room: an interior through the door on the guild hall's
+#: top gallery. It is put over the village, where nothing else is.
+VILLAGE_X = COUNTRY_X + LANE_W + COUNTRY_W
+GUILD_W, GUILD_H = 1280, 448
+
 #: Each room: where it is in the world (its top left), and its size.
 ROOMS_AT = {
     WORKSHOP: ((COUNTRY_X - WORKSHOP_W, UPPER_Y + COUNTRY_FLOOR - WORKSHOP_FLOOR), (WORKSHOP_W, WORKSHOP_H)),
     **_line(
         (LANE, UPPER_Y, (LANE_W, HILL_H)),
         (MILLSTREAM, LOWER_Y, (COUNTRY_W, LOW_H)),
-        (VILLAGE, LOWER_Y, (COUNTRY_W, LOW_H)),
+        (VILLAGE, UPPER_Y, (COUNTRY_W, HILL_H)),
         (WOODS, LOWER_Y, (COUNTRY_W, LOW_H)),
         (MEADOW, UPPER_Y, (MEADOW_W, HILL_H)),
         (CLEARING, UPPER_Y, (CLEARING_W, HILL_H)),
@@ -170,6 +176,8 @@ ROOMS_AT = {
     MOOR: ((MOOR_X, MOOR_Y), (MOOR_W, MOOR_H)),
     # The barrow: under the moor's east half, entered by its door.
     BARROW: ((MOOR_X + 1200, MOOR_Y + MOOR_H), (BARROW_W, BARROW_H)),
+    # The guild's trophy room: over the village's east half.
+    GUILD: ((VILLAGE_X + 1200, UPPER_Y - GUILD_H - 64), (GUILD_W, GUILD_H)),
     # The salt run: under the valley, from behind the mill wheel to the
     # woods' hollow oak.
     SALT_RUN: ((SALT_RUN_X, LOWER_Y + LOW_H), (SALT_RUN_W, LOW_H)),
@@ -738,35 +746,85 @@ def millstream():
 
 # --------------------------------------------------------------- Hobford
 
-#: The houses of the street: (name, porch x, roof x0, roof x1). A porch is 48
-#: over the street and a roof 64 over its porch.
+#: The houses of the lower street: (name, porch x, roof x0, roof x1). A
+#: porch is 48 over the street and a roof 64 over its porch.
 HOUSES = [("cottage", 260, 300, 540), ("smithy", 860, 900, 1160), ("inn", 1460, 1500, 1800)]
+#: The village is a hill room (Jon, 2026-11-20: towns are vertical as well as
+#: horizontal). Its lower street is the valley floor, where both edges are,
+#: so the line of rooms is unchanged; the art of the lower street was drawn
+#: for a valley room and goes down by the band the room grew upward.
+VILLAGE_DY = VALLEY_FLOOR - LOW_FLOOR
+#: The upper street, along the top of the terrace wall behind the lower one.
+UPPER_STREET = VALLEY_FLOOR - 304
+#: The guild hall's boards (`hill_village_guild_hall`): the stair's west
+#: landing, the first-floor gallery, the east landing, the top gallery. A
+#: board's top is on the 16 px grid (one at 56 over the street stood at 64).
+GUILD_BOARDS = [("guild_west_landing", 1480, 1560, 64), ("guild_first_gallery", 1520, 1840, 112),
+                ("guild_east_landing", 1800, 1880, 176), ("guild_top_gallery", 1520, 1840, 224)]
+#: The watch tower's boards (`hill_village_watch_tower`), from its first step
+#: to the lookout, each 64 over the last.
+TOWER_BOARDS = [("tower_step", 2040, 2120, 64), ("tower_base_top", 2060, 2220, 128),
+                ("tower_landing_1", 2140, 2220, 192), ("tower_landing_2", 2060, 2140, 256),
+                ("tower_landing_3", 2140, 2220, 320), ("tower_landing_4", 2060, 2140, 384),
+                ("tower_lookout", 2040, 2240, 448)]
 
 
 def village():
-    """HOBFORD. A short street: cottages, the old smithy that sells gate
-    goods now, the well, the inn, the notice board. West is the mill; east
-    the road goes into the woods. The trader keeps the smithy and the
-    innkeeper the Plough."""
+    """HOBFORD. A village built up the valley's side. The lower street:
+    cottages, the old smithy that sells gate goods now, the well, the inn,
+    the notice board; west is the mill, east the road goes into the woods.
+    Behind it the terrace wall, and along its top the upper street, reached
+    from the smithy's loft by a stone stair: a cottage with a dish on its
+    thatch, the adventurers' guild three storeys high (its trophy room
+    behind the door on the top gallery), and the old watch tower over all."""
     rid = VILLAGE
-    w, h, g = COUNTRY_W, LOW_H, LOW_FLOOR
-    check_reach(rid, [("street", g), ("porch", g - 48), ("roof", g - 112), ("loft", g - 176)])
+    w, h, g = COUNTRY_W, HILL_H, VALLEY_FLOOR
+    u, dy = UPPER_STREET, VILLAGE_DY
+    check_reach(rid, [("street", g), ("porch", g - 48), ("roof", g - 112), ("loft", g - 176),
+                      ("stair", g - 240), ("upper street", u)])
+    check_reach(rid, [("upper street", u), *[(n, u - rise) for n, _, _, rise in GUILD_BOARDS]])
+    check_reach(rid, [("upper street", u), *[(n, u - rise) for n, _, _, rise in TOWER_BOARDS]])
     e = [
         *walls(w, g, west=[g], east=[g]),
         solid("street", 0, g, w, h - g),
+        # The terrace wall and the bank behind the upper street, first, so
+        # every house draws in front of them.
+        piece("hill_village_terrace_bank", 1100, u - 200),
+        *[piece(f"hill_village_terrace_wall_{n}", x0, u - 8)
+          for n, x0 in enumerate((1100, 1440, 1740, 2040))],
         # The houses, the well and the board, drawn on the room's boards
-        # (`hobford_props.py` in the sprite renderer).
-        piece("hill_village_cottage", 240, 300),
-        piece("hill_village_smithy", 840, 270),
-        piece("hill_village_inn", 1440, 300),
-        piece("hill_village_well", 1236, 370),
-        piece("hill_village_notice_board", 1840, 280),
+        # (`hill_village_props.py` in the sprite renderer).
+        piece("hill_village_cottage", 240, 300 + dy),
+        piece("hill_village_smithy", 840, 270 + dy),
+        piece("hill_village_inn", 1440, 300 + dy),
+        piece("hill_village_well", 1236, 370 + dy),
+        piece("hill_village_notice_board", 1840, 280 + dy),
+        piece("hill_village_upper_cottage", 1220, u - 220),
+        piece("hill_village_guild_hall", 1440, u - 460),
+        piece("hill_village_watch_tower", 2010, u - 620),
         edge("hobford_from_millstream", "back to the millstream", 0, g, MILLSTREAM, "millstream_to_hobford"),
         *[ledge(f"{n}_porch", px, g - 48, 80) for n, px, _, _ in HOUSES],
         *[ledge(f"{n}_roof", x0, g - 112, x1 - x0) for n, _, x0, x1 in HOUSES],
         ledge("smithy_loft", 1000, g - 176, 120),
         entity("PickupSpawn", 1060, g - 176 - 28, 24, 24, name="a dropped purse", kind="currency:20"),
         solid("well", 1248, g - 48, 64, 48),
+        # The way up: the stone stair off the smithy's loft, and the upper
+        # street along the terrace wall's coping. Each is a board, so the
+        # lower street runs on under them and a drop comes down to it.
+        ledge("smithy_stair", 1120, g - 240, 96),
+        ledge("upper_street", 1168, u, w - WALL - 1168),
+        ledge("upper_cottage_porch", 1240, u - 48, 80),
+        ledge("upper_cottage_roof", 1280, u - 112, 160),
+        entity("PickupSpawn", 1420, u - 112 - 28, 24, 24, name="a coin by the dish", kind="currency:10"),
+        *[ledge(n, x0, u - rise, x1 - x0) for n, x0, x1, rise in GUILD_BOARDS],
+        *[ledge(n, x0, u - rise, x1 - x0) for n, x0, x1, rise in TOWER_BOARDS],
+        entity("LoadingZone", 1576, u - 224 - 96, 48, 96, id="hobford_to_guild", name="into the trophy room",
+               activation="Door", target_room=GUILD, target_zone="guild_to_hobford", bidirectional=True,
+               presentation="SceneArt"),
+        # From the tower's lookout the camera draws back over the valley.
+        entity("CameraZone", 1980, 0, w - WALL - 1980, u - 384, id="hobford_tower_lookout", name="the watch tower",
+               mode="Default", zoom=1.4),
+        hen(rid, 1, 1940, u),
         # The smith who sells gate goods, at his door; the innkeeper at the
         # Plough's, where the board sends people about lost things.
         npc("npc_valley_trader", "valley_trader", "Talk to the trader", 1000, g),
@@ -783,10 +841,48 @@ def village():
         sign("hobford_board_1", 2090, g - 200, "FREIGHT WINDOW: TOMORROW, NOON.", 360),
         sign("hobford_board_2", 2090, g - 170, "LOST: ONE SPECKLED HEN. ASK AT THE PLOUGH.", 420),
         sign("hobford_board_3", 2090, g - 140, "STRANGERS AT THE GATE: SEE THE GATE OFFICE.", 440),
+        # On the guild's first floor, the plaster between its windows and
+        # the gallery's rail.
+        sign("hobford_sign_guild", 1680, u - 158, "ADVENTURERS' GUILD", 220),
         edge("hobford_to_woods", "the road into the woods", w - WALL, g, WOODS, "woods_from_hobford"),
         start(rid, 120, g),
     ]
     return build(rid, e, VILLAGE_NAME.upper(), VILLAGE_MUSIC)
+
+
+#: The trophy room's floor and the underside of its ceiling, and where the
+#: plate's field begins (`hill_guild_trophy_room` is drawn on these).
+TROPHY_FLOOR, TROPHY_CEILING, PLATE_X = 384, 64, 480
+
+
+def guild_room():
+    """THE TROPHY ROOM. The guild's top floor, where somebody fitted the
+    gravity plate off the freight upside down. By the door all is as it
+    should be; over the plate down is up, so the guild furnished the ceiling
+    and hung its trophies on the floor. Walk onto the plate and fall to the
+    ceiling; walk off it and drop back by the door. Nothing on the way to
+    anywhere goes through it."""
+    rid = GUILD
+    w, h, f, ceil = GUILD_W, GUILD_H, TROPHY_FLOOR, TROPHY_CEILING
+    e = [
+        solid("ceiling", 0, 0, w, ceil),
+        solid("floor", 0, f, w, h - f),
+        solid("west_wall", 0, ceil, WALL, f - ceil),
+        solid("east_wall", w - WALL, ceil, WALL, f - ceil),
+        piece("hill_guild_trophy_room", 32, ceil),
+        entity("LoadingZone", 64, f - 96, 48, 96, id="guild_to_hobford", name="out onto the gallery",
+               activation="Door", target_room=VILLAGE, target_zone="hobford_to_guild", bidirectional=True),
+        entity("GravityZone", PLATE_X, ceil, w - WALL - PLATE_X, f - ceil, id="guild_upside_down_plate",
+               name="the plate fitted upside down", dir="up", oscillate_amplitude=0.0, oscillate_freq=1.0),
+        # What the guild keeps up there, for whoever walks on its ceiling.
+        entity("PickupSpawn", 860, ceil + 4, 24, 24, name="the guild's float", kind="currency:30"),
+        entity("PickupSpawn", 1120, ceil + 4, 24, 24, name="a lost tip", kind="currency:10"),
+        sign("guild_sign_book", 240, f - 120, "MEMBERS SIGN THE BOOK. CLERK UPSTAIRS.", 360),
+        sign("guild_sign_plate", 640, ceil + 80, "GRAVITY PLATE (IMPORTED). THIS SIDE UP.", 400),
+        sign("guild_sign_trophies", 960, f - 200, "PLEASE DO NOT HANG ON THE TROPHIES.", 360),
+        start(rid, 160, f),
+    ]
+    return build(rid, e, "THE TROPHY ROOM", VILLAGE_MUSIC, look=WORKSHOP_LOOK, bg=BG)
 
 
 # ------------------------------------------------------------ the woods
@@ -1260,7 +1356,8 @@ def culvert():
 
 #: East to west: a relayout moves the rooms east, and each one's new place
 #: is free once the rooms east of it have moved.
-ROOMS = (barrow, moor, fell, siding, clearing, meadow, woods, village, millstream, lane, workshop, market, culvert, salt_run)
+ROOMS = (barrow, moor, fell, siding, clearing, meadow, woods, village, guild_room, millstream, lane, workshop, market,
+         culvert, salt_run)
 
 
 def main(argv):
@@ -1274,8 +1371,23 @@ def main(argv):
         print(path)
     if "--apply" not in argv:
         return 0
-    keep = "--relayout" not in argv
-    if code := make_rooms(WORLD_LDTK, made, keep_position=keep, overwrite_hand_edits="--overwrite-hand-edits" in argv):
+    overwrite = "--overwrite-hand-edits" in argv
+    # `--relayout` puts every room back where `ROOMS_AT` says;
+    # `--relayout=<room>,<room>` only those (a room that changed its size or
+    # band, as the village did when it grew upward), the rest where they stand.
+    moved = {rid for arg in argv if arg.startswith("--relayout=") for rid in arg.split("=", 1)[1].split(",")}
+    if moved:
+        level = {path: path.stem for path in made}
+        unknown = moved - set(level.values())
+        if unknown:
+            raise SystemExit(f"--relayout names no room of this generator: {sorted(unknown)}")
+        if code := make_rooms(WORLD_LDTK, [p for p in made if level[p] in moved], keep_position=False,
+                              overwrite_hand_edits=overwrite):
+            return code
+        if code := make_rooms(WORLD_LDTK, [p for p in made if level[p] not in moved], keep_position=True,
+                              overwrite_hand_edits=overwrite):
+            return code
+    elif code := make_rooms(WORLD_LDTK, made, keep_position="--relayout" not in argv, overwrite_hand_edits=overwrite):
         return code
     # The sump is murky water (2): a body sinks into it, and it hides what is
     # under its surface.
