@@ -11,7 +11,7 @@
 	"iid": "ambition-mary-o-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 109888,
+	"nextUid": 109942,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -34340,6 +34340,1032 @@
 							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "goal_pole_banner", "__tile": null, "defUid": 3008, "realEditorValues": [{
 								"id": "V_String",
 								"params": ["goal_pole_banner"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [458,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7328,
+							"__worldY": 2624,
+							"iid": "MaryOBlock-109888",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7328,64],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [460,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7360,
+							"__worldY": 2624,
+							"iid": "MaryOBlock-109889",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7360,64],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [462,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7392,
+							"__worldY": 2624,
+							"iid": "MaryOBlock-109890",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7392,64],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [464,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7424,
+							"__worldY": 2624,
+							"iid": "MaryOBlock-109891",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7424,64],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [466,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7456,
+							"__worldY": 2624,
+							"iid": "MaryOBlock-109892",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7456,64],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [468,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7488,
+							"__worldY": 2624,
+							"iid": "MaryOBlock-109893",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7488,64],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [470,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7520,
+							"__worldY": 2624,
+							"iid": "MaryOBlock-109894",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7520,64],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [472,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7552,
+							"__worldY": 2624,
+							"iid": "MaryOBlock-109895",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7552,64],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [474,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7584,
+							"__worldY": 2624,
+							"iid": "MaryOBlock-109896",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7584,64],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [458,6],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7328,
+							"__worldY": 2656,
+							"iid": "MaryOBlock-109897",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7328,96],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [460,6],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7360,
+							"__worldY": 2656,
+							"iid": "MaryOBlock-109898",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7360,96],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [462,6],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7392,
+							"__worldY": 2656,
+							"iid": "MaryOBlock-109899",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7392,96],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [464,6],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7424,
+							"__worldY": 2656,
+							"iid": "MaryOBlock-109900",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7424,96],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [466,6],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7456,
+							"__worldY": 2656,
+							"iid": "MaryOBlock-109901",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7456,96],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [468,6],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7488,
+							"__worldY": 2656,
+							"iid": "MaryOBlock-109902",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7488,96],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [470,6],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7520,
+							"__worldY": 2656,
+							"iid": "MaryOBlock-109903",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7520,96],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [472,6],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7552,
+							"__worldY": 2656,
+							"iid": "MaryOBlock-109904",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7552,96],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [474,6],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7584,
+							"__worldY": 2656,
+							"iid": "MaryOBlock-109905",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7584,96],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [458,8],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7328,
+							"__worldY": 2688,
+							"iid": "MaryOBlock-109906",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7328,128],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [460,8],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7360,
+							"__worldY": 2688,
+							"iid": "MaryOBlock-109907",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7360,128],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [462,8],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7392,
+							"__worldY": 2688,
+							"iid": "MaryOBlock-109908",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7392,128],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [464,8],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7424,
+							"__worldY": 2688,
+							"iid": "MaryOBlock-109909",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7424,128],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [466,8],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7456,
+							"__worldY": 2688,
+							"iid": "MaryOBlock-109910",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7456,128],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [468,8],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7488,
+							"__worldY": 2688,
+							"iid": "MaryOBlock-109911",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7488,128],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [470,8],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7520,
+							"__worldY": 2688,
+							"iid": "MaryOBlock-109912",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7520,128],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [472,8],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7552,
+							"__worldY": 2688,
+							"iid": "MaryOBlock-109913",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7552,128],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [474,8],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7584,
+							"__worldY": 2688,
+							"iid": "MaryOBlock-109914",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7584,128],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [458,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7328,
+							"__worldY": 2720,
+							"iid": "MaryOBlock-109915",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7328,160],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [460,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7360,
+							"__worldY": 2720,
+							"iid": "MaryOBlock-109916",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7360,160],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [462,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7392,
+							"__worldY": 2720,
+							"iid": "MaryOBlock-109917",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7392,160],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [464,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7424,
+							"__worldY": 2720,
+							"iid": "MaryOBlock-109918",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7424,160],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [466,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7456,
+							"__worldY": 2720,
+							"iid": "MaryOBlock-109919",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7456,160],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [468,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7488,
+							"__worldY": 2720,
+							"iid": "MaryOBlock-109920",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7488,160],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [470,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7520,
+							"__worldY": 2720,
+							"iid": "MaryOBlock-109921",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7520,160],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [472,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7552,
+							"__worldY": 2720,
+							"iid": "MaryOBlock-109922",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7552,160],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [474,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7584,
+							"__worldY": 2720,
+							"iid": "MaryOBlock-109923",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7584,160],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [458,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7328,
+							"__worldY": 2752,
+							"iid": "MaryOBlock-109924",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7328,192],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [460,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7360,
+							"__worldY": 2752,
+							"iid": "MaryOBlock-109925",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7360,192],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [462,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7392,
+							"__worldY": 2752,
+							"iid": "MaryOBlock-109926",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7392,192],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [464,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7424,
+							"__worldY": 2752,
+							"iid": "MaryOBlock-109927",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7424,192],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [466,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7456,
+							"__worldY": 2752,
+							"iid": "MaryOBlock-109928",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7456,192],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [468,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7488,
+							"__worldY": 2752,
+							"iid": "MaryOBlock-109929",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7488,192],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [470,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7520,
+							"__worldY": 2752,
+							"iid": "MaryOBlock-109930",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7520,192],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [472,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7552,
+							"__worldY": 2752,
+							"iid": "MaryOBlock-109931",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7552,192],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [474,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7584,
+							"__worldY": 2752,
+							"iid": "MaryOBlock-109932",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7584,192],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [458,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7328,
+							"__worldY": 2784,
+							"iid": "MaryOBlock-109933",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7328,224],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [460,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7360,
+							"__worldY": 2784,
+							"iid": "MaryOBlock-109934",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7360,224],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [462,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7392,
+							"__worldY": 2784,
+							"iid": "MaryOBlock-109935",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7392,224],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [464,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7424,
+							"__worldY": 2784,
+							"iid": "MaryOBlock-109936",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7424,224],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [466,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7456,
+							"__worldY": 2784,
+							"iid": "MaryOBlock-109937",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7456,224],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [468,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7488,
+							"__worldY": 2784,
+							"iid": "MaryOBlock-109938",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7488,224],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [470,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7520,
+							"__worldY": 2784,
+							"iid": "MaryOBlock-109939",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7520,224],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [472,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7552,
+							"__worldY": 2784,
+							"iid": "MaryOBlock-109940",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7552,224],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
+							}] }]
+						},
+						{
+							"__identifier": "MaryOBlock",
+							"__grid": [474,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#E8A33D",
+							"__worldX": 7584,
+							"__worldY": 2784,
+							"iid": "MaryOBlock-109941",
+							"width": 32,
+							"height": 32,
+							"defUid": 106884,
+							"px": [7584,224],
+							"fieldInstances": [{ "__identifier": "kind", "__type": "LocalEnum.MaryOBlockKind", "__value": "Brick", "__tile": null, "defUid": 106883, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["Brick"]
 							}] }]
 						}
 					]
