@@ -13403,18 +13403,18 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [943,72],
+							"__grid": [868,71],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
-							"__worldX": 15100,
-							"__worldY": 1152,
+							"__worldX": 13900,
+							"__worldY": 1142,
 							"iid": "EnemySpawn-107357",
 							"width": 28,
 							"height": 32,
 							"defUid": 2008,
-							"px": [15100,1152],
+							"px": [13900,1142],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "Saint Badnik", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
