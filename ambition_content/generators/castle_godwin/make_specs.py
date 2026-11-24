@@ -207,9 +207,12 @@ def wall_with_ways(name, x, top, bottom, floors):
     return out
 
 
-def door(zone, name, x, floor, to_room, to_zone):
+def door(zone, name, x, floor, to_room, to_zone, scene_art=False):
+    """A door 48 by 96 at `x` on `floor`. `scene_art`: the room's art draws
+    the doorway, so no door sprite stands in it."""
+    look = ', presentation: "SceneArt"' if scene_art else ""
     return (f'( type: "LoadingZone", px: [{x}, {floor - 96}], size: [48, 96], fields: ( id: "{zone}", name: "{name}", '
-            f'activation: "Door", target_room: "{to_room}", target_zone: "{to_zone}", bidirectional: true ) ),')
+            f'activation: "Door", target_room: "{to_room}", target_zone: "{to_zone}", bidirectional: true{look} ) ),')
 
 
 def soldier(room, n, x, feet_y, character=SOLDIER):
@@ -344,8 +347,10 @@ def forest():
         standing("thorns_road_b", "evil_thorn_bush", 1180, floor),
         standing("thorns_wall", "evil_thorn_bush", entrance_x - 60, floor),
         standing("castle_godwin_road_sign", "castle_godwin_sign", 1000, floor),
+        # The castle's front draws its open archway: no door stands in it
+        # (Jon, 2026-11-24).
         door(f"{rid}_castle_door", "into Castle Godwin", entrance_x + ENTRANCE_DOOR_X + (ENTRANCE_DOOR_W - 48) // 2, floor,
-             GATEHOUSE, f"{GATEHOUSE}_west"),
+             GATEHOUSE, f"{GATEHOUSE}_west", scene_art=True),
         # The dead of the regime walk the road: the first fight of the
         # dimension, one, then two, then one at the door.
         soldier(rid, 1, 640, floor, ZOMBIE),

@@ -16827,7 +16827,11 @@
 									"id": "V_String",
 									"params": ["castle_godwin_gatehouse_west"]
 								}] },
-								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 310248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
+								}] }
 							]
 						},
 						{
