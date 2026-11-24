@@ -23,6 +23,10 @@ arrives in its gate court.
 - `eureka_patent_office`: the Patent Clerk's office.
 - `eureka_coil_lab`: Tesseract Laboratories, Nikobolt Tesseract's coil hall.
 - `eureka_observatory`: Carl Stargan's dome; ledges up to the telescope.
+- `eureka_qed_studios`: QED-TV, the station on the lecture hall's terrace:
+  the reception, the studio where Will Force, the Science Horse, reads the
+  evening news (the anchor desk, the cameras, the lighting grid up its
+  ladder, the demonstration bench) and the production room.
 - `eureka_elevator_station`: the tether's ground station. Its car rests in the
   floor at the foot of the shaft; stand on it and it carries you up through
   the roof.
@@ -73,6 +77,7 @@ QUAD = "eureka_quad"
 PATENT = "eureka_patent_office"
 LAB = "eureka_coil_lab"
 DOME = "eureka_observatory"
+QED = "eureka_qed_studios"
 STATION = "eureka_elevator_station"
 CLIMB = "eureka_elevator_climb"
 TERMINUS = "orbital_station_tether_terminus"
@@ -134,6 +139,8 @@ ROOMS_AT = {
     PLANT: ((2016, 7712), (2400, 992)),
     FIRST_LAB: ((2016 - 640, 8640 - 512), (640, 576)),
     COLLIDER: ((4416, 8064), (2000, 640)),
+    # Under the Collider, out of its way.
+    QED: ((4480, 9024), (2240, 704)),
     DOME: ((2560, 5792), (1280, 1024)),
     STATION: ((4672, 6240), (1600, 1408)),
     CLIMB: ((5056, 3040), (1280, 3200)),
@@ -251,10 +258,13 @@ def quad():
         ledge("hall_step_1", 1440, street - 64, 96),
         ledge("hall_step_2", 1520, street - 128, 96),
         ledge("hall_terrace", 1600, terrace, 720),
+        # QED-TV on the terrace, west of the observatory (`eureka_qed_props.py`).
+        door("quad_qed_door", "into QED-TV", QED_DOOR_X, terrace, QED, "qed_door"),
+        sign("qed_sign", 1760, 200, "QED-TV: the news, straight from the horse's mouth", 360),
         resident("npc_eureka_halvorsen", "eureka_halvorsen", 1800, terrace),
         door("quad_dome_door", "up to the observatory", 2180, terrace, DOME, "dome_door"),
         sign("dome_sign", 2204, terrace - 140, "OBSERVATORY: visiting hours after dark", 340),
-        sign("hall_sign", 1960, terrace - 260, "THE LECTURE HALL OF THE EUREKA INSTITUTE", 460),
+        sign("hall_sign", 1960, terrace + 16, "THE LECTURE HALL OF THE EUREKA INSTITUTE", 460),
         door("quad_collider_door", "down to the Collider", COLLIDER_DOOR_X, street, COLLIDER, "collider_door"),
         door("quad_lab_door", "into Tesseract Laboratories", 2440, street, LAB, "lab_door"),
         sign("lab_sign", 2464, street - 150, "TESSERACT LABORATORIES: mind the coils", 360),
@@ -576,8 +586,58 @@ def first_lab():
     return build(rid, e, "LAB 0")
 
 
+#: QED-TV's door on the lecture hall's terrace (quad x).
+QED_DOOR_X = 1660
+#: The studio's lighting grid (x0, x1, y) and its ladder (x), in room
+#: coordinates (`eureka_qed_props.py` draws on these).
+QED_GRID = (600, 1580, 340)
+QED_LADDER_X = 600
+
+
+def qed_studios():
+    """QED-TV: a reception, the studio and the production room in one long
+    hall, floor 640. The front desk (y 600) and the couch (y 608); the
+    anchor desk (y 584) and Will Force beside it on his way to the
+    demonstration bench (y 592); the lighting grid (y 340) up a ladder, a
+    box of spare bow ties on it; the vision mixer (y 600) and the weather
+    centre's green wall."""
+    rid = QED
+    _, (w, h) = ROOMS_AT[rid]
+    floor, ceiling = h - 64, 32
+    g0, g1, gy = QED_GRID
+    e = [
+        solid("floor", 0, floor, w, 64),
+        solid("ceiling", 0, 0, w, ceiling),
+        solid("west_wall", 0, ceiling, WALL, floor - ceiling),
+        solid("east_wall", w - WALL, ceiling, WALL, floor - ceiling),
+        door("qed_door", "out to the quad", 40, floor, QUAD, "quad_qed_door"),
+        start(rid, 140, floor),
+        # The reception.
+        ledge("reception_desk", 180, floor - 40, 150),
+        ledge("waiting_couch", 440, floor - 32, 120),
+        resident("npc_eureka_petra_dish", "eureka_petra_dish", 364, floor),
+        sign("qed_sign_reception", 300, 72, "QED-TV: QUOD ERAT DEMONSTRANDUM", 420),
+        sign("qed_sign_sign_in", 255, floor - 120, "Guests sign in. Autographs by appointment.", 380),
+        # The studio.
+        ledge("anchor_desk", 780, floor - 56, 180),
+        resident("npc_will_force", "eureka_will_force", 1000, floor, h=74),
+        walk("lighting_grid", g0, gy, g1 - g0),
+        entity("ChestSpawn", 1120, gy - 58, 76, 58, name="a box of spare bow ties", reward="currency:40"),
+        ledge("demonstration_bench", 1320, floor - 48, 200),
+        sign("qed_sign_demonstration", 1420, floor - 272, "DEMONSTRATION AREA: goggles past this line", 440),
+        sign("qed_sign_excused", 1420, floor - 246, "(The anchor is excused. The hair is insured.)", 440),
+        # The production room.
+        ledge("vision_mixer", 1700, floor - 40, 240),
+        resident("npc_eureka_avery_gadro", "eureka_avery_gadro", 1660, floor),
+        resident("npc_eureka_barry_metric", "eureka_barry_metric", 2090, floor),
+        sign("qed_sign_production", 1810, 72, "PRODUCTION: quiet when the light is red", 420),
+        sign("qed_sign_weather", 2060, 250, "WEATHER CENTRE: the wall is green; the forecast is not", 300),
+    ]
+    return build(rid, e, None, music=LAB_MUSIC)
+
+
 # The buildings first (they move out of the plant's way).
-ROOMS = (patent_office, coil_lab, terminus, elevator_climb, elevator_station, quad, court, test_range, observatory, plant, first_lab,
+ROOMS = (patent_office, coil_lab, qed_studios, terminus, elevator_climb, elevator_station, quad, court, test_range, observatory, plant, first_lab,
          collider)
 
 #: The gate network's ring and terminal in the gate court, if it has written
@@ -597,7 +657,11 @@ def main(argv):
         return 0
     if code := make_rooms(WORLD_LDTK, made):
         return code
-    if GATE_INTERFACE.exists():
+    # An LDtk-owned court is not made again, so it keeps its ring: a second
+    # add would duplicate the arrival zone.
+    from ambition_ldtk_tools import generated_record
+    court_kept = COURT in generated_record.load(WORLD_LDTK)["ldtk_owned"]
+    if GATE_INTERFACE.exists() and not court_kept:
         code, _ = run("entity", "add", str(GATE_INTERFACE), "--ldtk", str(WORLD_LDTK), "--in-place")
         if code:
             return code
@@ -607,6 +671,9 @@ def main(argv):
                  (PLANT, "Climbable", 1, MANHOLE[0] - (ROOMS_AT[PLANT][0][0] - ROOMS_AT[QUAD][0][0]) + 16, 0, 32, PLANT_FLOOR)):
         if code := paint(WORLD_LDTK, *args):
             return code
+    # The ladder up to QED-TV's lighting grid.
+    if code := paint(WORLD_LDTK, QED, "Climbable", 1, QED_LADDER_X, QED_GRID[2] - 16, 32, 704 - 64 - QED_GRID[2] + 16):
+        return code
     # The ladder up to the collider's detector gallery.
     code, _ = run("intgrid", "paint", "--ldtk", str(WORLD_LDTK), "--level", COLLIDER, "--layer", "Climbable", "--value", "1",
                   "--px", f"{COLLIDER_GALLERY[0] - 32},{COLLIDER_GALLERY[2] - 16}", "--size", f"32,{576 - COLLIDER_GALLERY[2] + 16}")

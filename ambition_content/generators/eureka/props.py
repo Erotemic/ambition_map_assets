@@ -24,6 +24,8 @@ SCENERY = {
         ("quad_lab_front", 2330, 300),
         ("eureka_patent_front", 662, 272),
         ("eureka_observatory_front", 2052, 208),
+        # QED-TV on the terrace (`targets/props/eureka_qed_props.py`).
+        ("quad_qed_front", 1600, 10),
         ("quad_cafe", 990, 480),
         ("quad_fountain", 1250, 600),
         # The manhole down to the steam plant (`eureka_plant_props.py`).
@@ -36,6 +38,11 @@ SCENERY = {
     ],
     "eureka_observatory": [
         ("eureka_observatory_room", 0, 0),
+    ],
+    "eureka_qed_studios": [
+        ("qed_reception", 16, 32),
+        ("qed_studio", 600, 32),
+        ("qed_production", 1600, 32),
     ],
     "eureka_coil_lab": [
         ("eureka_lab_room", 16, 32),
