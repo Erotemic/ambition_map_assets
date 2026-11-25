@@ -28,6 +28,10 @@ SCENERY = {
         ("automaton_state_table", 1050, 100),
         ("automaton_tape", 60, 250),
     ],
+    "automaton_arena": [
+        ("automaton_failure_log", 150, 220),
+        ("automaton_arena_ring", 816, 560),
+    ],
 }
 
 

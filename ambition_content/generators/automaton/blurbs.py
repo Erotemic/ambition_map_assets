@@ -18,4 +18,7 @@ BLURB = {
     "automaton_tape_room": (
         "WHERE: the Tape Room, in the clock tower. WHEN: step 47,176,870, the last.",
         "FACT: five states, one tape: the champion runs 47,176,870 steps and halts with 4,098 ones (BB(5), proved 2024)."),
+    "automaton_arena": (
+        "WHERE: the Cell-ular Arena, east of the Life field. WHEN: the next challenger's turn.",
+        "FACT: rule 150 on a ring of sixteen cells, from two eight apart, repeats every four generations; the ring's face shows all four."),
 }

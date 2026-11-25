@@ -8,13 +8,13 @@
 Run it from the repository root. Change the script, not the rooms.
 
 The world file is `automaton.ldtk`. The gate (address CELLS) stands in the
-Works. The Works and the Life field join by an edge; the Tape Room is the
-clock tower's inside, so its way in is a door:
+Works. The Works, the Life field and the Cell-ular Arena join by edges; the
+Tape Room is the clock tower's inside, so its way in is a door:
 
         door
   [the Tape Room]
          |
-  [ the Works ] ==== [ the Life field ]
+  [ the Works ] ==== [ the Life field ] ==== [ the Cell-ular Arena ]
 
 - `automaton_works`: the gate and terminal; the Escapement Cafe; the water
   wheel; Busy Beaver at his stair of blocks (64 a step) up to a chest; the
@@ -25,6 +25,14 @@ clock tower's inside, so its way in is a door:
   Sierpinski panel and a chest. Spaceships fly the field.
 - `automaton_tape_room`: the tape on its spools, the Head on its rail, the
   table of states, the count.
+- `automaton_arena`: the Perfect Cellular Automaton's ring (Jon, 2026-11-25:
+  "PCA needs an arena to challenge people in the automaton dimension"). The
+  edge comes in on a gallery at the Life field's east terrace; the failure
+  log and the Imperfect Cellular Automaton are on the gallery; four steps
+  of 64 go down to the ground, and the ring stands one jump high on it, the
+  PCA in its middle. No ceiling: he flies. Its backdrop is its own
+  (`automaton_arena`: the stands and the glider gun's screen); its terrain
+  is the Life field's.
 
 A glider lift is a `MovingPlatform` on a `KinematicPath` of two points, a
 diagonal at 45 degrees, ping-ponging (a path's points are the platform's
@@ -63,11 +71,12 @@ UID_OFFSET = 2000000
 WORKS = "automaton_works"
 LIFE = "automaton_life"
 TAPE = "automaton_tape_room"
+ARENA = "automaton_arena"
 
 BG = "#B0AAD8"
-MUSIC = "iron_toccata"
-#: The Tape Room is the Busy Beaver's: his song.
-TAPE_MUSIC = "busy_beaver"
+#: The dimension's theme is the Busy Beaver's song (Jon, 2026-11-25). The PCA's
+#: fight is `glider_gun`: its challenge starts it (`automaton.yarn`).
+MUSIC = "busy_beaver"
 
 #: Each room: where it is on the flat map, and its size. The Works and the
 #: Life field are side by side, their floors at one height where they join;
@@ -76,6 +85,7 @@ ROOMS_AT = {
     WORKS: ((0, 0), (2400, 768)),
     LIFE: ((2400, 0), (2400, 1024)),
     TAPE: ((800, -704), (1600, 640)),
+    ARENA: ((4800, 0), (2048, 896)),
 }
 
 #: The Works (`targets/props/automaton_props.py` draws to these).
@@ -95,6 +105,12 @@ LIFT_SIZE = (112, 16)
 LIFT_SPEED = 60.0
 #: The Tape Room.
 ROOM_FLOOR = 512
+#: The Cell-ular Arena: the gallery's end and its top (the Life field's
+#: terrace height), the steps down, the ground, the ring (x0, x1, top).
+GALLERY = (448, 448)
+ARENA_STEPS = ((448, 512, 512), (512, 576, 576), (576, 640, 640), (640, 704, 704))
+ARENA_GROUND = 768
+RING = (832, 1856, 720)
 
 
 def blurb(rid, x):
@@ -130,10 +146,10 @@ def glider_lift(rid, n, low, high):
     ]
 
 
-def build(rid, e, title, biome, dangerous=False, music=MUSIC):
+def build(rid, e, title, biome, dangerous=False, music=MUSIC, extra=""):
     at, size = ROOMS_AT[rid]
     text = room(rid, scenery(rid) + e + blurb(rid, size[0] // 2), at=at, size=size, biome=biome, music=music, bg=BG, title=title,
-                generator=GENERATOR, dangerous=dangerous)
+                generator=GENERATOR, dangerous=dangerous, extra=extra)
     return rid, text
 
 
@@ -187,7 +203,8 @@ def life():
         sign("life_sign_glider", 1040, 470, "GLIDERS: ONE CELL EACH WAY EVERY FOUR GENERATIONS", 480),
         # The east terrace, the panel and the chest.
         solid("east_terrace", t0, ttop, w - t0, h - ttop),
-        solid("east_wall", w - WALL, 0, WALL, ttop),
+        solid("east_wall", w - WALL, 0, WALL, ttop - 96),
+        edge("life_to_arena", "east, to the Cell-ular Arena", w - WALL, ttop, ARENA, "arena_to_life"),
         sign("life_sign_panel", 2220, 56, "RULE 90, FROM ONE LIVE CELL", 300),
         chest("a fixed point", "currency:50", 2290, ttop),
         # Spaceships.
@@ -214,10 +231,37 @@ def tape_room():
         sign("tape_sign_count", 560, 160, "STEPS: 47,176,870. THEN IT HALTS.", 400),
         resident("npc_automaton_head", "automaton_head", 760, g, w=48, h=40),
     ]
-    return build(rid, e, "THE TAPE ROOM", "automaton_tower", music=TAPE_MUSIC)
+    return build(rid, e, "THE TAPE ROOM", "automaton_tower")
 
 
-ROOMS = (works, life, tape_room)
+def arena():
+    rid = ARENA
+    w, h = ROOMS_AT[rid][1]
+    gx, gtop = GALLERY
+    x0, x1, top = RING
+    g = ARENA_GROUND
+    e = [
+        # The gallery at the Life field's terrace, and the steps down.
+        solid("gallery", 0, gtop, gx, h - gtop),
+        solid("west_wall", 0, 0, WALL, gtop - 96),
+        edge("arena_to_life", "west, to the Life field", 0, gtop, LIFE, "life_to_arena"),
+        start(rid, 100, gtop),
+        *[solid(f"step_{n}", a, t, b - a, h - t) for n, (a, b, t) in enumerate(ARENA_STEPS)],
+        solid("ground", ARENA_STEPS[-1][1], g, w - ARENA_STEPS[-1][1], h - g),
+        solid("east_wall", w - WALL, 0, WALL, g),
+        # The failure log and the one who is in it most.
+        sign("arena_sign_log", 260, 196, "THE FAILURE LOG", 240),
+        resident("imperfect_cellular_automaton", "automaton_imperfect", 410, gtop, w=40, h=56),
+        # The ring, and its host in the middle of it.
+        solid("ring", x0, top, x1 - x0, g - top),
+        entity("NpcSpawn", (x0 + x1) // 2 - 16, top - 48, 32, 48, character_id="perfect_cellular_automaton",
+               prompt="Challenge the Perfect Cell-ular Automaton", dialogue_id="automaton_pca", brain_override="stand_still"),
+        sign("arena_sign_rules", (x0 + x1) // 2, 420, "EIGHT NEIGHBOURS. ONE RULE. ONE RING. CHALLENGERS WELCOME.", 620),
+    ]
+    return build(rid, e, "THE CELL-ULAR ARENA", "automaton_life", extra='\n    backdrop: "automaton_arena",')
+
+
+ROOMS = (works, life, tape_room, arena)
 
 
 def main(argv):

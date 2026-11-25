@@ -1,9 +1,10 @@
 {
   "schema": "ambition.ldtk_generated_record.v1",
   "generated": {
-    "automaton_life": "f0d4f54b247db548",
+    "automaton_arena": "17feff4ef4b5c93b",
+    "automaton_life": "b98c5499e20d7c4b",
     "automaton_tape_room": "dd73b6aa8c65bd89",
-    "automaton_works": "f7965f3d48f5902f"
+    "automaton_works": "fca4d699d48bf920"
   },
   "ldtk_owned": []
 }
