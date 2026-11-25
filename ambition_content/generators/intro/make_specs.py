@@ -392,7 +392,7 @@ def workshop():
         entity("PickupSpawn", 148, LOFT[2] - 28, 24, 24, name="the torque gauge", kind="flag:intro_torque_gauge_found"),
         entity("PickupSpawn", 372, LOFT[2] - 28, 24, 24, name="a can of oil", kind="health:2"),
         *slate("workshop_sign_loft", 270, LOFT[2] - 64, "GAUGES GO BACK ON THE SHELF", 260),
-        npc("npc_creator", "creator_intro", "Talk to the Creator", CREATOR_X, g),
+        npc("npc_creator", "creator_intro", "Talk to Dennis", CREATOR_X, g),
         # The stations the Creator walks to are the slates over them.
         *slate("intro_practice_station", 700, g - 136, "PRACTICE", 120),
         entity("EnemySpawn", 463, g - 56, 34, 56, name="workshop_practice_bag",

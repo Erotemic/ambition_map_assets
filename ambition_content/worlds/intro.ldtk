@@ -8717,9 +8717,9 @@
 									"id": "V_String",
 									"params": ["npc_creator"]
 								}] },
-								{ "__identifier": "prompt", "__type": "String", "__value": "Talk to the Creator", "__tile": null, "defUid": 3013, "realEditorValues": [{
+								{ "__identifier": "prompt", "__type": "String", "__value": "Talk to Dennis", "__tile": null, "defUid": 3013, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["Talk to the Creator"]
+									"params": ["Talk to Dennis"]
 								}] },
 								{ "__identifier": "dialogue_id", "__type": "String", "__value": "creator_intro", "__tile": null, "defUid": 3014, "realEditorValues": [{
 									"id": "V_String",
