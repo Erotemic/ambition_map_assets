@@ -22554,7 +22554,7 @@
 									"id": "V_String",
 									"params": ["Default"]
 								}] },
-								{ "__identifier": "target_offset_y", "__type": "Float", "__value": -180.0, "__tile": null, "defUid": 4332, "realEditorValues": [{ "id": "V_Float", "params": [-180.0] }] }
+								{ "__identifier": "target_offset_y", "__type": "Float", "__value": -56.0, "__tile": null, "defUid": 4332, "realEditorValues": [{ "id": "V_Float", "params": [-56.0] }] }
 							]
 						},
 						{

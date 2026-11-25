@@ -573,6 +573,7 @@ BARRIER_LEVER = "hobford_barrier_lever"
 BARRIER_LIFTED = "hobford_barrier_lifted"
 GATE_ZONE = "hobford_gate_zone"
 GATE_TERMINAL = "hobford_gate_terminal"
+GATE_ROAD_CAMERA_LIFT = -56
 
 
 def clearing():
@@ -587,7 +588,7 @@ def clearing():
         *hill_walls(w, hi, lo),
         solid("road", 0, hi, FREIGHT_TOP, h - hi),
         entity("CameraZone", 0, 0, FREIGHT_TOP, h, id="intro_clearing_lookout", name="the hilltop",
-               mode="Default", target_offset_y=LOOKOUT_LIFT),
+               mode="Default", target_offset_y=GATE_ROAD_CAMERA_LIFT),
         edge("clearing_from_meadow", "back down the hill path", 0, hi, MEADOW, "meadow_to_clearing"),
         solid("standing_stone_1", 560, hi - 48, 48, 48),
         solid("standing_stone_2", 880, hi - 48, 48, 48),
