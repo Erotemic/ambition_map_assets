@@ -1,0 +1,10 @@
+{
+  "schema": "ambition.ldtk_generated_record.v1",
+  "generated": {
+    "neural_callosum": "25b2a6a53bfc23f7",
+    "neural_cathedral": "fc331b08ad9d5d2d",
+    "neural_echo_chamber": "1a4d2864641a10b6",
+    "neural_weights": "e8f65b6ed2b2aa29"
+  },
+  "ldtk_owned": []
+}
