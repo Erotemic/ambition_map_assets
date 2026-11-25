@@ -1,0 +1,9 @@
+{
+  "schema": "ambition.ldtk_generated_record.v1",
+  "generated": {
+    "automaton_life": "f0d4f54b247db548",
+    "automaton_tape_room": "dd73b6aa8c65bd89",
+    "automaton_works": "f7965f3d48f5902f"
+  },
+  "ldtk_owned": []
+}
