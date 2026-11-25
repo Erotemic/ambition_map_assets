@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 107703,
+	"nextUid": 107779,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -8078,9 +8078,9 @@
 					"id": "V_String",
 					"params": ["encounter.start encounter:intro_workshop_raid"]
 				}] },
-				{ "__identifier": "while_live_when", "__type": "String", "__value": "world.flag_set intro_raiders_coming", "__tile": null, "defUid": 105708, "realEditorValues": [{
+				{ "__identifier": "while_live_when", "__type": "String", "__value": "workshop.raid_in_progress", "__tile": null, "defUid": 105708, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["world.flag_set intro_raiders_coming"]
+					"params": ["workshop.raid_in_progress"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
@@ -8915,18 +8915,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [75,13],
+							"__grid": [68,13],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 880,
+							"__worldX": 768,
 							"__worldY": 2584,
-							"iid": "Prop-107088",
+							"iid": "Prop-107728",
 							"width": 120,
 							"height": 32,
 							"defUid": 104426,
-							"px": [1200,216],
+							"px": [1088,216],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "intro_raider_station slate", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
@@ -8940,18 +8940,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [75,13],
+							"__grid": [68,13],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 888,
+							"__worldX": 776,
 							"__worldY": 2588,
-							"iid": "DebugLabel-107089",
+							"iid": "DebugLabel-107729",
 							"width": 104,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1208,220],
+							"px": [1096,220],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "intro_raider_station", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -8962,6 +8962,193 @@
 									"params": ["KEEP CLEAR"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [79,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 950,
+							"__worldY": 2688,
+							"iid": "DebugLabel-107730",
+							"width": 1,
+							"height": 1,
+							"defUid": 2007,
+							"px": [1270,320],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "intro_brute_throw", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_brute_throw"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": [""]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [66,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 736,
+							"__worldY": 2685,
+							"iid": "DebugLabel-107731",
+							"width": 1,
+							"height": 1,
+							"defUid": 2007,
+							"px": [1056,317],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "intro_dennis_impact", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_dennis_impact"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": [""]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [83,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 1012,
+							"__worldY": 2664,
+							"iid": "DebugLabel-107732",
+							"width": 1,
+							"height": 1,
+							"defUid": 2007,
+							"px": [1332,296],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "intro_barn_door_aim", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barn_door_aim"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": [""]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [112,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 1484,
+							"__worldY": 2685,
+							"iid": "DebugLabel-107733",
+							"width": 1,
+							"height": 1,
+							"defUid": 2007,
+							"px": [1804,317],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "intro_brute_departure", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_brute_departure"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": [""]
+								}] }
+							]
+						},
+						{
+							"__identifier": "GroundItem",
+							"__grid": [71,17],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7FE3C0",
+							"__worldX": 820,
+							"__worldY": 2652,
+							"iid": "GroundItem-107734",
+							"width": 28,
+							"height": 20,
+							"defUid": 104945,
+							"px": [1140,284],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_bench_case", "__tile": null, "defUid": 104942, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_bench_case"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Dennis's case", "__tile": null, "defUid": 104943, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Dennis's case"]
+								}] },
+								{ "__identifier": "held_item", "__type": "String", "__value": "creator_case", "__tile": null, "defUid": 104944, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["creator_case"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "GroundItem",
+							"__grid": [87,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7FE3C0",
+							"__worldX": 1084,
+							"__worldY": 2700,
+							"iid": "GroundItem-107735",
+							"width": 20,
+							"height": 20,
+							"defUid": 104945,
+							"px": [1404,332],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_breach_bomb", "__tile": null, "defUid": 104942, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_breach_bomb"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the raiders' breach charge", "__tile": null, "defUid": 104943, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the raiders' breach charge"]
+								}] },
+								{ "__identifier": "held_item", "__type": "String", "__value": "bomb", "__tile": null, "defUid": 104944, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["bomb"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "GroundItem",
+							"__grid": [92,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7FE3C0",
+							"__worldX": 1156,
+							"__worldY": 2700,
+							"iid": "GroundItem-107736",
+							"width": 20,
+							"height": 20,
+							"defUid": 104945,
+							"px": [1476,332],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_brute_bomb", "__tile": null, "defUid": 104942, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_brute_bomb"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the spare charge", "__tile": null, "defUid": 104943, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the spare charge"]
+								}] },
+								{ "__identifier": "held_item", "__type": "String", "__value": "bomb", "__tile": null, "defUid": 104944, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["bomb"]
+								}] }
 							]
 						},
 						{
@@ -9009,65 +9196,34 @@
 							}] }]
 						},
 						{
-							"__identifier": "Switch",
-							"__grid": [42,20],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFC857",
-							"__worldX": 360,
-							"__worldY": 2688,
-							"iid": "Switch-105570",
-							"width": 24,
-							"height": 32,
-							"defUid": 4051,
-							"px": [680,320],
-							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "intro_workshop_raid_again", "__tile": null, "defUid": 4046, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["intro_workshop_raid_again"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "a raider's whistle", "__tile": null, "defUid": 4047, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["a raider's whistle"]
-								}] },
-								{ "__identifier": "prompt", "__type": "String", "__value": "Blow the whistle", "__tile": null, "defUid": 4048, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["Blow the whistle"]
-								}] },
-								{ "__identifier": "target_encounter", "__type": "String", "__value": "intro_workshop_raid", "__tile": null, "defUid": 4049, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["intro_workshop_raid"]
-								}] },
-								{ "__identifier": "action", "__type": "String", "__value": "ResetEncounter", "__tile": null, "defUid": 4050, "realEditorValues": [] }
-							]
-						},
-						{
-							"__identifier": "LockWall",
+							"__identifier": "BreakablePlatform",
 							"__grid": [82,15],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#9E9E9E",
+							"__smartColor": "#D8A15D",
 							"__worldX": 1000,
 							"__worldY": 2608,
-							"iid": "LockWall-105571",
+							"iid": "BreakablePlatform-107740",
 							"width": 24,
 							"height": 112,
-							"defUid": 4084,
+							"defUid": 5000,
 							"px": [1320,240],
 							"fieldInstances": [
-								{ "__identifier": "id", "__type": "String", "__value": "intro_barn_door", "__tile": null, "defUid": 4082, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["intro_barn_door"]
-								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "the barn door", "__tile": null, "defUid": 4083, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "the barn door", "__tile": null, "defUid": 5010, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["the barn door"]
 								}] },
-								{ "__identifier": "gated_by", "__type": "String", "__value": "world.flag_set intro_barn_door_broken", "__tile": null, "defUid": 104934, "realEditorValues": [{
+								{ "__identifier": "max_hp", "__type": "Float", "__value": 4.0, "__tile": null, "defUid": 5011, "realEditorValues": [{ "id": "V_Float", "params": [4.0] }] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "Persistent", "__tile": null, "defUid": 5012, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["world.flag_set intro_barn_door_broken"]
+									"params": ["Persistent"]
+								}] },
+								{ "__identifier": "collision", "__type": "LocalEnum.BreakablePlatformCollision", "__value": "Solid", "__tile": null, "defUid": 5014, "realEditorValues": [] },
+								{ "__identifier": "trigger", "__type": "String", "__value": "OnHit", "__tile": null, "defUid": 5015, "realEditorValues": [] },
+								{ "__identifier": "id", "__type": "String", "__value": "intro_barn_door", "__tile": null, "defUid": 105133, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barn_door"]
 								}] }
 							]
 						},
@@ -9170,9 +9326,9 @@
 									"id": "V_String",
 									"params": ["the yard gate"]
 								}] },
-								{ "__identifier": "gated_by", "__type": "String", "__value": "world.flag_set intro_case_taken", "__tile": null, "defUid": 104934, "realEditorValues": [{
+								{ "__identifier": "gated_by", "__type": "String", "__value": "world.flag_set intro_creator_fragment_seen", "__tile": null, "defUid": 104934, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["world.flag_set intro_case_taken"]
+									"params": ["world.flag_set intro_creator_fragment_seen"]
 								}] }
 							]
 						},
@@ -16781,13 +16937,38 @@
 									"id": "V_String",
 									"params": ["1 LAB OF RESEARCH. PAID."]
 								}] },
-								{ "__identifier": "reward", "__type": "String", "__value": "flag:intro_creator_notes_recovered", "__tile": null, "defUid": 3042, "realEditorValues": [{
+								{ "__identifier": "reward", "__type": "String", "__value": "currency:4", "__tile": null, "defUid": 3042, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["flag:intro_creator_notes_recovered"]
+									"params": ["currency:4"]
 								}] },
 								{ "__identifier": "look", "__type": "String", "__value": "hill_goblins_crate", "__tile": null, "defUid": 107267, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["hill_goblins_crate"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [103,31],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 21252,
+							"__worldY": 3316,
+							"iid": "DebugLabel-107768",
+							"width": 1,
+							"height": 1,
+							"defUid": 2007,
+							"px": [1652,500],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "intro_case_recovery", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_case_recovery"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": [""]
 								}] }
 							]
 						},

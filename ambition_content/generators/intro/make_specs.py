@@ -238,6 +238,10 @@ def hill_walls(w, west, east):
             for side, x, floor in (("west", 0, west), ("east", w - WALL, east))]
 
 
+def mark(name, x, y):
+    return entity("DebugLabel", x, y, 1, 1, name=name, text="")
+
+
 def npc(character, dialogue, prompt, x, floor, brain=None, w=32, h=48):
     fields = dict(character_id=character, prompt=prompt, dialogue_id=dialogue)
     if brain:
@@ -332,20 +336,9 @@ BENCH = (1100, 1220, WORKSHOP_FLOOR - 48)
 #: walk in at the door when it breaks: the camera already holds the door.
 BARN_DOOR_X = 1320
 DOOR_H = 112
-#: The yard's gate stands until the raid's brute has run out through it with
-#: the case (`intro_brute_takes_the_case`, when he is beaten, opens it first),
-#: so no one leaves the yard mid-fight. The Creator's last words open it too.
+#: The yard gate opens after Dennis' final words.
 YARD_GATE_X = 1840
-CASE_TAKEN = "intro_case_taken"
 RAID = "intro_workshop_raid"
-#: The story calls the raid: the Creator hears the cart (his talk), or Scout
-#: goes to the barn door without talking to him (`intro_raid_at_the_door`).
-#: The room starts the raid while this is set (`while_live_when`); a won raid
-#: spawns finished, so it does not start again.
-RAIDERS_COMING = "intro_raiders_coming"
-#: The raiders break the barn door's bar, a beat after they are called, so
-#: the door is down when they reach it.
-DOOR_BROKEN = "intro_barn_door_broken"
 
 
 def workshop():
@@ -399,10 +392,20 @@ def workshop():
                brain="sandbag_infinite", character_id="practice_sandbag", respawn="OnRoomReenter"),
         *slate("workshop_sign_sandbag", 450, g - 112, "STRIKE TEST", 120),
         *slate("intro_bench_station", 1060, BENCH[2] - 64, "LOGS. DO NOT TIDY.", 180),
-        *slate("intro_raider_station", 1260, g - 136, "KEEP CLEAR", 120),
+        *slate("intro_raider_station", 1148, g - 136, "KEEP CLEAR", 120),
+        mark("intro_brute_throw", 1270, g - 32),
+        mark("intro_dennis_impact", 1056, g - 35),
+        mark("intro_barn_door_aim", BARN_DOOR_X + 12, g - 56),
+        mark("intro_brute_departure", 1804, g - 35),
         # The bench top is a board on trestles: bodies go under it, so it
         # stands between the Creator and the door without barring the way.
         ledge("bench", BENCH[0], BENCH[2], BENCH[1] - BENCH[0]),
+        entity("GroundItem", 1140, BENCH[2] - 20, 28, 20, id="intro_bench_case",
+               name="Dennis's case", held_item="creator_case"),
+        entity("GroundItem", 1404, g - 20, 20, 20, id="intro_breach_bomb",
+               name="the raiders' breach charge", held_item="bomb"),
+        entity("GroundItem", 1476, g - 20, 20, 20, id="intro_brute_bomb",
+               name="the spare charge", held_item="bomb"),
         # The raid: its trigger is in the roof, where no body goes, so only
         # the room's line starts it (`while_live`, when the story calls it).
         entity("EncounterTrigger", 64, 0, 32, 32, id=RAID, name=f"{RAID}_trigger"),
@@ -410,12 +413,9 @@ def workshop():
         # space between their mark and Scout when control returns.
         entity("CutsceneTrigger", BENCH[1] - 64, 32, BARN_DOOR_X - BENCH[1] + 64, g - 32,
                cutscene="intro_raid_at_the_door"),
-        # A blow on the whistle a raider dropped calls the raid again: the
-        # reset puts it back to the start, and the room's line starts it.
-        entity("Switch", 680, g - 32, 24, 32, id=f"{RAID}_again", name="a raider's whistle",
-               prompt="Blow the whistle", target_encounter=RAID, action="ResetEncounter"),
-        entity("LockWall", BARN_DOOR_X, g - DOOR_H, 24, DOOR_H, id="intro_barn_door", name="the barn door",
-               gated_by=f"world.flag_set {DOOR_BROKEN}"),
+        entity("BreakablePlatform", BARN_DOOR_X, g - DOOR_H, 24, DOOR_H,
+               id="intro_barn_door", name="the barn door", max_hp=4.0, respawn="Persistent",
+               collision="Solid", trigger="OnHit"),
         *slate("workshop_sign_door", BARN_DOOR_X - 160, 116, "TEST IN PROGRESS. DOOR BARRED.", 300),
         # Inside the barn the camera stops at the barn's front wall, so the
         # yard is out of shot until Scout goes out into it: the raiders come
@@ -427,13 +427,13 @@ def workshop():
         # strip at the door was already behind him.
         entity("CutsceneTrigger", WALL, 32, w - 2 * WALL, g - 32, cutscene="creator_final_fragment", after_encounter=RAID),
         entity("LockWall", YARD_GATE_X, g - 96, 24, 96, id="intro_yard_gate", name="the yard gate",
-               gated_by=f"world.flag_set {CASE_TAKEN}"),
+               gated_by="world.flag_set intro_creator_fragment_seen"),
         edge("workshop_to_lane", "out into the lane", w - WALL, g, LANE, "lane_from_workshop"),
     ]
     return build(rid, e, "THE WORKSHOP", WORKSHOP_MUSIC, look=WORKSHOP_LOOK, bg=BG, dangerous=True,
                  extra=('\n    entry_cutscene: "intro_wake",'
                         f'\n    while_live: "encounter.start encounter:{RAID}",'
-                        f'\n    while_live_when: "world.flag_set {RAIDERS_COMING}",'))
+                        '\n    while_live_when: "workshop.raid_in_progress",'))
 
 
 # ------------------------------------------------------------- the lane
@@ -670,8 +670,9 @@ def siding():
         sign("siding_sign_persons", 570, g - 86, "NO PERSONS ON THE PLATFORM", 220),
         entity("CutsceneTrigger", 1480, 32, 64, g - 32, cutscene="work_order"),
         # The goblins' crate: its consignment label is its name.
-        entity("ChestSpawn", 1560, g - 58, 76, 58, name="1 LAB OF RESEARCH. PAID.", reward="flag:intro_creator_notes_recovered",
+        entity("ChestSpawn", 1560, g - 58, 76, 58, name="1 LAB OF RESEARCH. PAID.", reward="currency:4",
                look="hill_goblins_crate"),
+        mark("intro_case_recovery", 1652, g - 12),
         entity("Switch", 1700, g - 32, 24, 32, id=f"{YARD_FIGHT}_again", name="the platform bell",
                prompt="Ring the platform bell", target_encounter=YARD_FIGHT, action="ResetEncounter"),
         # The drove road's fingerpost, the way on its arm.
