@@ -640,16 +640,17 @@ def npc(spec, x, floor, h, catalog=None):
     return resident(catalog or f"npc_{spec}", spec, x, floor, h=h)
 
 
-def crossing(rid, name, span, look, *, w=160, speed=90.0, top=FLOOR - 8):
-    """A hazard at the foot of a gap in the floor from `span[0]` to
-    `span[1]`, and a platform drawn as `look` that sweeps to and fro over it
-    at `top`. Returns the entities and the gap."""
+def crossing(rid, name, span, look, *, w=160, speed=90.0, top=FLOOR - 8, hazard=True):
+    """Place a platform that moves across a gap. Add a hazard if requested."""
     x0, x1 = span
-    return [
-        entity("HazardBlock", x0, H - 16, x1 - x0, 16, name=name),
+    entities = []
+    if hazard:
+        entities.append(entity("HazardBlock", x0, H - 16, x1 - x0, 16, name=name))
+    entities.append(
         entity("MovingPlatform", x0 + 8, top, w, 16, id=f"{rid}_{look}", name=look.replace("history_", "the ").replace("_", " "),
-               speed=speed, sweep_dx=float(x1 - x0 - w - 16), one_way=True, visual=look),
-    ], span
+               speed=speed, sweep_dx=float(x1 - x0 - w - 16), one_way=True, visual=look)
+    )
+    return entities, span
 
 
 def solids_beside(name, gaps, y, h, w=W):
@@ -1575,18 +1576,26 @@ def celtic_frontier():
 
 
 def viking_north():
-    """The Viking north, 900 CE: a fjord that a longship crosses, rune
-    stones, and Leif Errandson, who got to America first and went home."""
+    """Place the longship and two landings on the fjord."""
     rid = "history_viking_north"
-    stuff, gap = crossing(rid, "the fjord", (1100, 1900), "history_longship", w=192, speed=100.0)
+    west, east = 1104, 1888
+    bed = FLOOR + 48
+    stuff, gap = crossing(rid, "the fjord", (west, east), "history_longship", w=192, speed=100.0, hazard=False)
     e = [
         *stuff,
+        water("viking_fjord", west, FLOOR, east - west, bed - FLOOR),
+        entity("SurfaceChain", west, bed, east - west, H - bed, name="fjord_bed",
+               points=f"{west},{bed}; {east},{bed}; {east},{H}; {west},{H}", closed=True, visual="none"),
+        solid("west_shore_step", west, FLOOR + 32, 48, 16),
+        solid("east_shore_step", east - 48, FLOOR + 32, 48, 16),
+        solid("west_landing_step", west, FLOOR + 16, 16, 16),
+        solid("east_landing_step", east - 16, FLOOR + 16, 16, 16),
+        piece("history_fjord_landings", 976, 482),
         start(rid, 160, FLOOR),
         prop_at("rune_1", "history_rune_stone", 340, FLOOR, 48, 96),
         npc("history_leif_errandson", 520, FLOOR, 72),
         prop_at("longhouse", "history_longhouse", 760, FLOOR, 192, 128),
         enemy(rid, 1, "viking_raider", 980, FLOOR),
-        sign("viking_sign_fjord", 1500, FLOOR - 240, "THE FJORD: the longship goes both ways, like the Vikings", 520),
         sign("viking_sign", 1400, 140, "THE VIKING NORTH: raiders, traders, settlers, poets", 500),
         enemy(rid, 2, "viking_raider", 2040, FLOOR),
         sign("viking_sign_helmet", 2200, FLOOR - 200, "NOTE: no horns on the helmets. Ever.", 360),

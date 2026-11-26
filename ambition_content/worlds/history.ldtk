@@ -11,7 +11,7 @@
 	"iid": "ambition-history-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1213220,
+	"nextUid": 1213231,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -65082,19 +65082,19 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,5,
-						5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
-						5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 						
 					],
@@ -65339,13 +65339,13 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#5BA1FF",
-							"__worldX": 15108,
+							"__worldX": 15112,
 							"__worldY": 6328,
-							"iid": "MovingPlatform-1210345",
+							"iid": "MovingPlatform-1213227",
 							"width": 192,
 							"height": 16,
 							"defUid": 4251,
-							"px": [1108,568],
+							"px": [1112,568],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "history_viking_north_history_longship", "__tile": null, "defUid": 6853, "realEditorValues": [{
 									"id": "V_String",
@@ -65355,7 +65355,7 @@
 									"id": "V_String",
 									"params": ["the longship"]
 								}] },
-								{ "__identifier": "sweep_dx", "__type": "Float", "__value": 592.0, "__tile": null, "defUid": 4249, "realEditorValues": [{ "id": "V_Float", "params": [592.0] }] },
+								{ "__identifier": "sweep_dx", "__type": "Float", "__value": 576.0, "__tile": null, "defUid": 4249, "realEditorValues": [{ "id": "V_Float", "params": [576.0] }] },
 								{ "__identifier": "speed", "__type": "Float", "__value": 100.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [100.0] }] },
 								{ "__identifier": "visual", "__type": "String", "__value": "history_longship", "__tile": null, "defUid": 6956, "realEditorValues": [{
 									"id": "V_String",
@@ -65364,6 +65364,89 @@
 								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "WaterVolume",
+							"__grid": [69,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#3DB8E0",
+							"__worldX": 15104,
+							"__worldY": 6336,
+							"iid": "WaterVolume-1213228",
+							"width": 784,
+							"height": 48,
+							"defUid": 4130,
+							"px": [1104,576],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "viking_fjord", "__tile": null, "defUid": 4124, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["viking_fjord"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "viking fjord", "__tile": null, "defUid": 4125, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["viking fjord"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [69,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": 15104,
+							"__worldY": 6384,
+							"iid": "SurfaceChain-1213229",
+							"width": 784,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1104,624],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fjord_bed", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fjord_bed"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "1104,624; 1888,624; 1888,640; 1104,640", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["1104,624; 1888,624; 1888,640; 1104,640"]
+								}] },
+								{ "__identifier": "closed", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6813, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 7681, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [63,30],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 15010,
+							"__worldY": 6250,
+							"iid": "Prop-1213230",
+							"width": 972,
+							"height": 150,
+							"defUid": 4351,
+							"px": [1010,490],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "history_fjord_landings", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["history_fjord_landings"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "history_fjord_landings", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["history_fjord_landings"]
 								}] }
 							]
 						},
@@ -65497,32 +65580,6 @@
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
 								}] }
-							]
-						},
-						{
-							"__identifier": "DebugLabel",
-							"__grid": [77,21],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 15240,
-							"__worldY": 6096,
-							"iid": "DebugLabel-1210351",
-							"width": 520,
-							"height": 24,
-							"defUid": 2007,
-							"px": [1240,336],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "viking_sign_fjord", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["viking_sign_fjord"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "THE FJORD: the longship goes both ways, like the Vikings", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["THE FJORD: the longship goes both ways, like the Vikings"]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
