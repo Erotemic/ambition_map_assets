@@ -596,13 +596,11 @@ def plant():
 
 
 def first_lab():
-    """Behind the steam plant's bricked door: where the institute began. A
-    kitchen table for a bench, a kettle, the first coil in a jam jar, a
-    blackboard of one equation crossed out and written again, a camp bed;
-    DO NOT THROW AWAY."""
+    """The camp bed and the workbench give access to the grant chest."""
     rid = FIRST_LAB
     _, (w, h) = ROOMS_AT[rid]
     g, vault = 512, 48
+    cabinet_top = 416
     e = [
         solid("floor", 0, g, w, h - g),
         solid("vault", 0, 0, w, vault),
@@ -610,8 +608,11 @@ def first_lab():
         solid("east_wall", w - WALL, vault, WALL, g - 112 - vault),
         edge("secret_first_lab_east", "back through the bricked door", w - WALL, g, PLANT, "secret_plant_west"),
         start(rid, w - 120, g),
-        entity("ChestSpawn", 250, g - 58, 76, 58, name="the first grant (unspent)", reward="currency:120"),
-        sign("first_lab_sign", 320, 90, "LAB 0: where it began (please do not tidy)", 420),
+        ledge("camp_bed", 64, 480, 160),
+        ledge("sample_cabinet", 240, cabinet_top, 96),
+        ledge("first_lab_bench", 352, 448, 208),
+        entity("ChestSpawn", 250, cabinet_top - 58, 76, 58, name="the first grant (unspent)", reward="currency:120"),
+        sign("first_lab_sign", 320, 90, "Where it began (please do not tidy)", 420),
     ]
     return build(rid, e, "LAB 0")
 
