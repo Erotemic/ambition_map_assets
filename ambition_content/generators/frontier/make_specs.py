@@ -367,8 +367,8 @@ def refinery():
         slope("upper_road", 1280, t1, 1600, t2),
         solid("terrace_tower", 1600, t2, 560, h - t2),
         solid("corral_shelf", 2160, shelf, w - 2160, h - shelf),
-        # Over the tank terrace, the pipe rack's catwalk.
-        ledge("pipe_rack_walk", 880, t1 - 128, 320),
+        # The walkway crosses from the tanks to the upper road.
+        ledge("pipe_rack_walk", 880, t1 - 128, 720),
         # The cracking tower's platforms over the upper terrace.
         ledge("tower_platform_low", 1696, t2 - 128, 208),
         ledge("tower_platform_high", 1824, t2 - 256, 176),
@@ -382,7 +382,12 @@ def refinery():
         sign("refinery_sign_shift", 1440, t1 - 300, "THE SHIFT STARTS AT THE WHISTLE", 360),
         sign("refinery_sign_corral", 2480, shelf - 200, "ORE CORRAL  -  MARSHAL'S BUSINESS", 360),
     ]
-    return build(rid, e, "THE REFINERY", REFINERY_MUSIC, dangerous=True, biome="frontier_refinery")
+    ladders = f"""
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [912, {t2}], size: [32, {t1 - t2}]),
+        (kind: "Ladder", px: [1840, {t2 - 256}], size: [32, 256]),
+    ]),"""
+    return build(rid, e, "THE REFINERY", REFINERY_MUSIC, dangerous=True, biome="frontier_refinery", extra=ladders)
 
 
 def corral_floor_plan(rid, placement, west_way):
