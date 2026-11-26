@@ -317,6 +317,8 @@ def curry_house():
 #: threshing floor, level with the foot of the stair.
 TERRACES_LOW = [(1536, 1920, 1216), (1152, 1536, 1152), (768, 1152, 1088), (384, 768, 1024), (0, 384, 960)]
 TERRACES_HIGH_EDGE = 256
+TERRACES_LIFT_LEFT, TERRACES_LIFT_BOTTOM, TERRACES_LIFT_DOCK = 864, 1072, 640
+TERRACES_LIFT_TOP = TERRACES_LIFT_DOCK - 32
 #: The fields of the low field that hold a paddy of broth.
 PADDY_FIELDS = (1, 3)
 
@@ -344,6 +346,10 @@ def terraces():
         e.append(ledge(f"terrace_{n}", 32 + 160 * n, 896 - 64 * n, 192))
     e += [
         solid("threshing_floor", 1792, TERRACES_HIGH_EDGE, w - 1792, 32),
+        entity("MovingPlatform", TERRACES_LIFT_LEFT, TERRACES_LIFT_BOTTOM, 96, 16,
+               id=f"{rid}_grain_lift", name="the grain lift", visual="noodle_terraces_grain_car",
+               lift_dy=float(TERRACES_LIFT_TOP - TERRACES_LIFT_BOTTOM), speed=145.0, one_way=True),
+        piece("noodle_terraces_fixtures", 16, 132, px=1.0),
         *walls(rid, "east", h, [low, TERRACES_HIGH_EDGE]),
         solid("west_wall", 0, 0, WALL, TERRACES_LOW[-1][2]),
         edge("terraces_east_low", "down to Brothlehem", w - WALL, low, SQUARE, "square_west"),
@@ -353,7 +359,7 @@ def terraces():
         sign("terraces_sign_wheat", 560, 920, "DURUM WHEAT: hard, like the temple's doors", 420),
         sign("terraces_sign_mill", 1600, 150, "THE THRESHING FLOOR. The semolina mill is closed for prayer.", 440),
         chest("a gleaner's sack", "currency:40", 1810, TERRACES_HIGH_EDGE),
-        noodling(rid, 1, 900, 720),
+        noodling(rid, 1, 764, TERRACES_LIFT_DOCK),
         noodling(rid, 2, 1400, 560),
     ]
     return build(rid, e + [blurb(rid, "The fields of the temple's hill. Pasta begins as wheat; the pilgrims "

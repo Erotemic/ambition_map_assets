@@ -11,7 +11,7 @@
 	"iid": "ambition-noodle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 800241,
+	"nextUid": 800254,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -19398,6 +19398,66 @@
 					"gridTiles": [],
 					"entityInstances": [
 						{
+							"__identifier": "MovingPlatform",
+							"__grid": [54,67],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 64864,
+							"__worldY": 2480,
+							"iid": "MovingPlatform-800244",
+							"width": 96,
+							"height": 16,
+							"defUid": 4251,
+							"px": [864,1072],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "noodle_durum_terraces_grain_lift", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodle_durum_terraces_grain_lift"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the grain lift", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the grain lift"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 145.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [145.0] }] },
+								{ "__identifier": "lift_dy", "__type": "Float", "__value": -464.0, "__tile": null, "defUid": 6955, "realEditorValues": [{ "id": "V_Float", "params": [-464.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "noodle_terraces_grain_car", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodle_terraces_grain_car"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [2,8],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 64032,
+							"__worldY": 1544,
+							"iid": "Prop-800245",
+							"width": 1872,
+							"height": 1081,
+							"defUid": 4351,
+							"px": [32,136],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "noodle_terraces_fixtures", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodle_terraces_fixtures"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "noodle_terraces_fixtures", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodle_terraces_fixtures"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [119,70],
 							"__pivot": [0,0],
@@ -19597,18 +19657,18 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [55,42],
+							"__grid": [46,37],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
-							"__worldX": 64880,
-							"__worldY": 2088,
-							"iid": "EnemySpawn-800075",
+							"__worldX": 64744,
+							"__worldY": 2008,
+							"iid": "EnemySpawn-800253",
 							"width": 40,
 							"height": 40,
 							"defUid": 2008,
-							"px": [880,680],
+							"px": [744,600],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "noodle_durum_terraces_npc_fsm_noodling_1", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
