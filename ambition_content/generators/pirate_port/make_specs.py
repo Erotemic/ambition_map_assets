@@ -423,7 +423,7 @@ def point():
         point_enemy(1, "npc_pirate_cutlass_viper", 1320, g, 32, 68),
         point_enemy(2, "npc_pirate_lookout", 1460, g, 32, 65),
     ]
-    return build(rid, e, "THE LIGHTHOUSE POINT", music=DOCK_MUSIC)
+    return build(rid, e, "THE LIGHTHOUSE POINT", music=DOCK_MUSIC, extra='\n    backdrop: "pirate_headland",')
 
 
 #: The cellars (`pirate_cellars_props.py` draws on these): the floor, the
