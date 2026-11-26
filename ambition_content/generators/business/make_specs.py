@@ -144,6 +144,7 @@ def founders_plaza():
         sign("plaza_sign_cafe", 820, 468, "THE BOTTOM LINE  -  COFFEE, LICENSED CUPS", 420),
         chest("an unclaimed dividend", "currency:25", 1090, BALCONY),
         resident("npc_business_barista", "business_barista", 900, floor),
+        resident("npc_quison", "quison", 1060, floor, h=66),
         # Dirk on his call, by the fountain.
         resident("npc_business_dirk_quarterly", "business_dirk", 1220, floor),
         # The Founder's fountain: its rim a step, his pedestal a step over it.
@@ -202,6 +203,9 @@ def records_processing():
         entity("MovingPlatform", 1520, floor - 384, 160, 16, id="business_records_folder_carrier", name="the folder carrier",
                speed=80.0, sweep_dx=440.0, one_way=True, visual="business_folder_carrier"),
         ledge("catwalk_mid", 1040, floor - 384, 460),
+        entity("EnemySpawn", 1260, floor - 384 - 82, 60, 82,
+               name="business_records_moving_goalposts_0", brain="combatant",
+               character_id="moving_goalposts", respawn="OnRoomReenter"),
         ledge("catwalk_intake_shelf", 880, floor - 448, 176),
         ledge("catwalk_desk", 400, floor - 512, 500),
         ledge("archive_step", 336, floor - 576, 128),

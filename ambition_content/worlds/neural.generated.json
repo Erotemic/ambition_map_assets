@@ -2,9 +2,9 @@
   "schema": "ambition.ldtk_generated_record.v1",
   "generated": {
     "neural_callosum": "25b2a6a53bfc23f7",
-    "neural_cathedral": "3fde7db0d8a9d9a0",
+    "neural_cathedral": "0d3c564596461a4a",
     "neural_echo_chamber": "1a4d2864641a10b6",
-    "neural_weights": "6fc889bfc738ddb8"
+    "neural_weights": "054a589a3d262d27"
   },
   "ldtk_owned": []
 }

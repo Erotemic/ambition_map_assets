@@ -682,6 +682,8 @@ def freight_cars():
         solid("ore_car_bed", 992, 624, 432, UNDERFRAME - 624),
         solid("ore_car_east", 1424, 560, 24, UNDERFRAME - 560),
         car("box_car_3", 1512, 1992, 496),
+        entity("EnemySpawn", 1730 - 24, 496 - 70, 48, 70, name=f"{rid}_one_armed_bandit_0", brain="combatant",
+               character_id="one_armed_bandit", respawn="OnRoomReenter"),
         car("flat_car_2", 2088, w, FLAT),
         solid("crates_stack", 2560, FLAT - 64, 128, 64),
         sliding_crate(rid, 1, 2140, FLAT, 300, 90.0),
@@ -703,6 +705,8 @@ def rustler_head():
         car("flat_car_2_end", 0, 300, FLAT),
         solid("crate_step", 180, FLAT - 64, 80, 64),
         car("box_car_4", 364, 844, 480),
+        entity("EnemySpawn", 605 - 37, 480 - 96, 74, 96, name=f"{rid}_multi_armed_bandit_0", brain="combatant",
+               character_id="multi_armed_bandit", respawn="OnRoomReenter"),
         car("rustler_tender", 908, 1308, 528),
         ledge("tender_hatch", 1180, 480, 110),
         # Peyote Lean, the outlaw who rides with Marshal Gallus, keeps the

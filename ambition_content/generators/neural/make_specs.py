@@ -124,6 +124,11 @@ def flier(rid, character, n, x, y, w=40, h=40):
                   character_id=character, respawn="OnRoomReenter")
 
 
+def ground_enemy(rid, character, x, floor, w, h):
+    return entity("EnemySpawn", x - w // 2, floor - h, w, h, name=f"{rid}_{character}_0", brain="combatant",
+                  character_id=character, respawn="OnRoomReenter")
+
+
 def build(rid, e, title, biome, dangerous=False, extra=""):
     at, size = ROOMS_AT[rid]
     text = room(rid, scenery(rid) + e + blurb(rid, size[0] // 2), at=at, size=size, biome=biome, music=MUSIC, bg=BG, title=title,
@@ -185,6 +190,9 @@ def cathedral():
         entity("EnemySpawn", 1252, floor - 72, 36, 72,
                name="neural_cathedral_sunk_cost_fallacy_0", brain="combatant",
                character_id="sunk_cost_fallacy", respawn="OnRoomReenter"),
+        ground_enemy(rid, "anchoring_bias", 730, gallery, 44, 84),
+        ground_enemy(rid, "motor_neuron", 1670, floor, 44, 75),
+        flier(rid, "brainstorm", 0, 1820, 345, 72, 50),
         # Intrusive Thoughts drift in the nave.
         flier(rid, "intrusive_thought", 0, 1050, 760),
         flier(rid, "intrusive_thought", 1, 1900, 620),
@@ -222,6 +230,7 @@ def weights():
         # The classifier's board.
         sign("weights_sign_herring", 1730, 556, "RED HERRING (PROBABLE) 99.7%", 360),
         sign("weights_sign_cats", 1730, 846, "PATTERN RECOGNITION: CAT, CAT, CAT, CAT?", 420),
+        ground_enemy(rid, "stereotyping", 1730, floor, 86, 74),
         # The racks up to the deck, and the Echo Chamber's door on it.
         *[solid(f"rack_{n}", x0, top, x1 - x0, floor - top) for n, (x0, x1, top) in enumerate(RACKS)],
         ledge("deck", d0, deck, d1 - d0),
