@@ -89,7 +89,7 @@ PIT = (1280, 1440)
 #: The lecture hall.
 HALL_FLOOR = 576
 STAGE = 544
-TIERS = ((720, 528), (880, 480), (1040, 432), (1200, 384))
+TIERS = ((720, 880, 512), (880, 1040, 480), (1040, 1200, 432), (1200, 1584, 384))
 
 
 def side_walls(w, h, west, east):
@@ -214,6 +214,12 @@ def college_lecture_hall():
     rid = COLLEGE
     w, h = ROOMS_AT[rid][1]
     floor = HALL_FLOOR
+    back_row = TIERS[-1][2]
+    ladder_top = back_row - 16
+    ladder = f"""
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [1520, {ladder_top}], size: [32, {floor - ladder_top}]),
+    ]),"""
     e = [
         solid("floor", 0, floor, w, h - floor),
         solid("ceiling", 0, 0, w, 32),
@@ -223,14 +229,14 @@ def college_lecture_hall():
         start(rid, 150, floor),
         # The lecturer's stage and the tiers of desks, each one jump up.
         solid("stage", 176, STAGE, 400, floor - STAGE),
-        *[solid(f"tier_{n}", x0, top, w - WALL - x0, floor - top) for n, (x0, top) in enumerate(TIERS)],
+        *[ledge(f"tier_{n}", x0, top, x1 - x0) for n, (x0, x1, top) in enumerate(TIERS)],
         resident("npc_business_professor", "business_professor", 370, STAGE),
         # Zorlack 65536 in the back row.
-        resident("npc_ninja_shadow_oni_leader", "business_zorlack", 1420, TIERS[-1][1], h=72),
+        resident("npc_ninja_shadow_oni_leader", "business_zorlack", 1420, back_row, h=72),
         sign("hall_sign_board", 460, 342, "SYNERGY: 1 + 1 = 3  (RESULTS NOT TYPICAL)", 440),
-        sign("hall_sign_careers", 860, 320, "CAREERS FAIR FRIDAY. DRESS CODE: BRING YOUR WHOLE SELF (IN A NAVY SUIT).", 680),
+        sign("hall_sign_careers", 1112, 320, "CAREERS FAIR FRIDAY. DRESS CODE: BRING YOUR WHOLE SELF (IN A NAVY SUIT).", 680),
     ]
-    return build(rid, e, "CAPITAL BUSINESS COLLEGE: LECTURE HALL 101", biome="business_office")
+    return build(rid, e, "CAPITAL BUSINESS COLLEGE: LECTURE HALL 101", biome="business_office", extra=ladder)
 
 
 ROOMS = (founders_plaza, records_processing, college_lecture_hall)
