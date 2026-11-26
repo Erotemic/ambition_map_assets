@@ -183,6 +183,8 @@ def cathedral():
         flier(rid, "intrusive_thought", 0, 1050, 760),
         flier(rid, "intrusive_thought", 1, 1900, 620),
         flier(rid, "intrusive_thought", 2, 500, 420),
+        # First impressions: the halo that becomes horns in the eastern nave.
+        flier(rid, "halo_horns_effect", 0, 1870, 940, 56, 56),
     ]
     return build(rid, e, "THE NEURAL CATHEDRAL", "neural", dangerous=True)
 
