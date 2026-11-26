@@ -366,11 +366,15 @@ def terraces():
 STAIR_FOOT = local(STAIR, ROOMS_AT[TERRACES][0][1] + TERRACES_HIGH_EDGE)
 STAIR_X0, STAIR_RUN, STAIR_RISE, STAIR_STEPS = 480, 128, 64, 6
 STAIR_DOOR_X = 1720
+STAIR_REST_LEFT, STAIR_REST_RIGHT, STAIR_REST_TOP = 544, 784, 384
+STAIR_OVERLOOK = [("overlook_foot", 208, 352, 576), ("overlook_low", 320, 464, 512),
+                  ("overlook_mid", 432, 576, 448),
+                  ("overlook_rest", STAIR_REST_LEFT, STAIR_REST_RIGHT, STAIR_REST_TOP),
+                  ("overlook_return", 752, 960, 320)]
 
 
 def stair():
-    """THE TEMPLE STAIR. The great stair up the last of the hill, to the
-    door of the Noodly Temple."""
+    """The last stair to the temple, with a route through an overlook."""
     rid = STAIR
     _, (w, h) = ROOMS_AT[rid]
     foot = STAIR_FOOT
@@ -387,8 +391,10 @@ def stair():
         edge("stair_west", "down to the terraces", 0, foot, TERRACES, "terraces_east_high"),
         door("noodle_temple_stair_door", "into the Noodly Temple", STAIR_DOOR_X, landing, NARTHEX, NARTHEX_DOOR),
         start(rid, 200, foot),
+        *[ledge(name, left, top, right - left) for name, left, right, top in STAIR_OVERLOOK],
+        piece("noodle_temple_stair_fixtures", 16, 88, px=1.25),
+        chest("a pilgrim's offering", "currency:30", STAIR_REST_LEFT + 80, STAIR_REST_TOP),
         sign("stair_sign_door", STAIR_DOOR_X - 60, landing - 170, "THE NOODLY TEMPLE. Colanders may be worn.", 400),
-        sign("stair_sign_steps", 860, landing - 40, "Mind the steps. They are al dente.", 360),
         parrot(rid, 1, 1100, 260),
     ]
     return build(rid, e + [blurb(rid, "The last of the hill, and the door of the temple of the Flying Spaghetti "
