@@ -416,6 +416,11 @@ def catacombs():
     Skulls in rows, a fall of rubble, a forgotten shrine; what walks here."""
     w, h, g = CATACOMBS_W, CRYPT_H, CRYPT_FLOOR
     s0, s1 = 40, 104
+    shrine_walk = g - 128
+    ladder = f"""
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [56, 0], size: [32, {g}]),
+    ]),"""
     e = [
         piece("catacombs_west", 16, 0, name="catacombs_west"),
         piece("catacombs_east", 1280, 32, name="catacombs_east"),
@@ -433,17 +438,20 @@ def catacombs():
                activation="EdgeExit", target_room=ALLOT, target_zone="allot_plot_13", bidirectional=True),
         edge("catacombs_east", "on to the founder's crypt", w - WALL, g, CRYPT, "crypt_west"),
         start(CATACOMBS, 200, g),
+        ledge("vault_rubble_step", 1328, g - 64, 160),
+        ledge("vault_shrine_walk", 1488, shrine_walk, 432),
+        ledge("vault_east_step", 1920, g - 64, 192),
         sign("catacombs_sign", 420, 120, "PLOT 13 (from underneath)", 300),
         sign("catacombs_sign_shrine", 1840, 220, "TO WHOEVER THIS WAS", 260),
         enemy(30, "npc_evil_zombie", 760, g, 30, 67),
         enemy(31, "npc_evil_failed_prototype", 1180, g, 32, 40),
-        enemy(32, "npc_evil_zombie", 1700, g, 30, 67),
-        # One that lost its legs, low in the dark under the shrine.
+        enemy(32, "npc_evil_zombie", 1792, shrine_walk, 30, 67),
+        # The crawler stays below the walk.
         enemy(34, "npc_evil_zombie_crawler", 1460, g, 52, 28),
         enemy(33, "npc_evil_spectral_wolf", 2100, g, 56, 56),
     ]
     return CATACOMBS, room(CATACOMBS, e, at=CATACOMBS_AT, size=(w, h), biome="castle_godwin", music="vault_in_the_dark",
-                           bg="#141012", title="THE CATACOMBS", generator=GENERATOR, extra=UNDERGROUND_DARK)
+                           bg="#141012", title="THE CATACOMBS", generator=GENERATOR, extra=UNDERGROUND_DARK + ladder)
 
 
 def ossuary():
@@ -497,11 +505,9 @@ def main(argv):
     # only the end state is checked (the last `validate`).
     if code := make_rooms(WORLD, paths, keep_position="--relayout" not in argv):
         return code
-    # The ladders: down the crypt gate's steps, up the crypt's and the
-    # catacombs' shafts, down the hole in plot 13.
+    # The ladders at the crypt gate and in the crypt and allotments.
     for args in ((MOOR, "Climbable", 1, CRYPT_STAIR[0] + 16, FLOOR - 64, 32, H - FLOOR + 64),
                  (CRYPT, "Climbable", 1, CRYPT_SHAFT[0] + 16, 0, 32, CRYPT_FLOOR),
-                 (CATACOMBS, "Climbable", 1, 56, 0, 32, CRYPT_FLOOR),
                  (ALLOT, "Climbable", 1, PLOT_13[0] + 16, FLOOR - 64, 32, H - FLOOR + 64),
                  # The watchtower's top ladder, from its last landing (272) up
                  # out of the moor: a climb, so the body comes up into the
