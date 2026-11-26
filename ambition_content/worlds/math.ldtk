@@ -11,7 +11,7 @@
 	"iid": "ambition-math-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 211660,
+	"nextUid": 211640,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -18463,7 +18463,11 @@
 									"id": "V_String",
 									"params": ["math_hotel_lobby_street"]
 								}] },
-								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 210871, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
+								}] }
 							]
 						},
 						{
@@ -18501,7 +18505,11 @@
 									"id": "V_String",
 									"params": ["math_hotel_corridor_west"]
 								}] },
-								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 210871, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
+								}] }
 							]
 						},
 						{
@@ -18536,7 +18544,11 @@
 									"id": "V_String",
 									"params": ["math_hotel_lift_door"]
 								}] },
-								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 210871, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
+								}] }
 							]
 						},
 						{
@@ -18571,7 +18583,11 @@
 									"id": "V_String",
 									"params": ["math_hotel_ballroom_door"]
 								}] },
-								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 210871, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
+								}] }
 							]
 						},
 						{
@@ -18654,58 +18670,6 @@
 									"id": "V_String",
 									"params": ["townsfolk_roam"]
 								}] }
-							]
-						},
-						{
-							"__identifier": "DebugLabel",
-							"__grid": [23,4],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 8880,
-							"__worldY": 2464,
-							"iid": "DebugLabel-208622",
-							"width": 520,
-							"height": 24,
-							"defUid": 2007,
-							"px": [380,64],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "hotel_vacancy", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["hotel_vacancy"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "NO VACANCY  /  VACANCY", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["NO VACANCY  /  VACANCY"]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							]
-						},
-						{
-							"__identifier": "DebugLabel",
-							"__grid": [4,2],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 8570,
-							"__worldY": 2440,
-							"iid": "DebugLabel-208624",
-							"width": 900,
-							"height": 24,
-							"defUid": 2007,
-							"px": [70,40],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "math_hotel_lobby_label", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["math_hotel_lobby_label"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "Hylbert's Hotel: the lobby.", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["Hylbert's Hotel: the lobby."]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						}
 					]

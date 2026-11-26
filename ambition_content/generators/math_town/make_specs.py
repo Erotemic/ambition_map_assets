@@ -193,9 +193,10 @@ def label(name, x, y, text, w=420):
     return f'( type: "DebugLabel", px: [{x}, {y}], size: [{w}, 24], fields: ( name: "{name}", text: "{text}", category: "Custom" ) ),'
 
 
-def edge(zone, name, x, y, h, to_room, to_zone):
+def edge(zone, name, x, y, h, to_room, to_zone, *, scene_art=False):
+    presentation = ', presentation: "SceneArt"' if scene_art else ""
     return (f'( type: "LoadingZone", px: [{x}, {y}], size: [16, {h}], fields: ( id: "{zone}", name: "{name}", '
-            f'activation: "EdgeExit", target_room: "{to_room}", target_zone: "{to_zone}", bidirectional: true ) ),')
+            f'activation: "EdgeExit", target_room: "{to_room}", target_zone: "{to_zone}", bidirectional: true{presentation} ) ),')
 
 
 def gate(ring, portal, zone, x, floor, to_room, to_zone, name):
@@ -220,10 +221,12 @@ def room(rid, entities, label_text, theme=BIOME, *, bg=BG, music=MUSIC):
     world_x, w, h = ROOMS_AT[rid]
     danger = "\n    dangerous: true," if rid in DANGEROUS else ""
     world_y = ROOMS_Y.get(rid, 0)
-    body = "\n        ".join(entities + [
+    fixtures = [
         f'( type: "CameraZone", px: [0, 0], size: [{w}, {h}], fields: ( id: "{rid}_camera", name: "{rid}_camera", mode: "Default" ) ),',
-        label(f"{rid}_label", 70, 40, label_text, min(900, w - 140)),
-    ])
+    ]
+    if label_text:
+        fixtures.append(label(f"{rid}_label", 70, 40, label_text, min(900, w - 140)))
+    body = "\n        ".join(entities + fixtures)
     return f"""// Written by game/ambition_map_assets/ambition_content/generators/math_town/make_specs.py. Change the script, not this file.
 (
     id: "{rid}",
@@ -342,9 +345,10 @@ def gate_hall():
     return rid, room(rid, e, "The gate hall under the Math town.", theme="math_undercroft")
 
 
-def door(zone, name, x, floor, to_room, to_zone):
+def door(zone, name, x, floor, to_room, to_zone, *, scene_art=False):
+    presentation = ', presentation: "SceneArt"' if scene_art else ""
     return (f'( type: "LoadingZone", px: [{x}, {floor - 96}], size: [48, 96], fields: ( id: "{zone}", name: "{name}", '
-            f'activation: "Door", target_room: "{to_room}", target_zone: "{to_zone}", bidirectional: true ) ),')
+            f'activation: "Door", target_room: "{to_room}", target_zone: "{to_zone}", bidirectional: true{presentation} ) ),')
 
 
 def body_box(kind):
@@ -782,9 +786,7 @@ CORRIDOR_DOORS = list(range(160, 1600 - 100, 240))
 
 
 def hotel_lobby():
-    """Hylbert's Hotel: the lobby. Hylbert at the front desk (its top walked
-    on), the key rack behind him that never ends, the lift, the stair. East,
-    the corridor."""
+    """Place the desk, lift, ballroom door and east corridor in the lobby."""
     rid = LOBBY
     _, w, h = ROOMS_AT[rid]
     floor = h - INSIDE_FLOOR
@@ -794,16 +796,15 @@ def hotel_lobby():
         solid("ceiling", 0, 0, w, INSIDE_CEILING),
         solid("west_wall", 0, INSIDE_CEILING, WALL, floor - INSIDE_CEILING),
         solid("east_wall", w - WALL, INSIDE_CEILING, WALL, floor - 96 - INSIDE_CEILING - 16),
-        door(f"{rid}_door", "out to the street", 40, floor, STREET, f"{rid}_street"),
-        edge(f"{rid}_east", "to the rooms", w - WALL, floor - 96, 96, CORRIDOR, f"{CORRIDOR}_west"),
-        door(f"{rid}_lift", "into the lift", 956, floor, LIFT, f"{LIFT}_door"),
-        door(f"{rid}_ballroom", "to the ballroom", 300, floor, BALLROOM, f"{BALLROOM}_door"),
+        door(f"{rid}_door", "out to the street", 40, floor, STREET, f"{rid}_street", scene_art=True),
+        edge(f"{rid}_east", "to the rooms", w - WALL, floor - 96, 96, CORRIDOR, f"{CORRIDOR}_west", scene_art=True),
+        door(f"{rid}_lift", "into the lift", 956, floor, LIFT, f"{LIFT}_door", scene_art=True),
+        door(f"{rid}_ballroom", "to the ballroom", 300, floor, BALLROOM, f"{BALLROOM}_door", scene_art=True),
         f'( type: "PlayerStart", px: [120, {floor - 46}], size: [28, 46], fields: ( name: "{rid}_spawn" ) ),',
         still("hotel_desk_top", 520, floor - 48, 240, 4),
         wanderer("hotel_hylbert", "npc_davy_hylbert", 640, floor, dialogue="davy_hylbert"),
-        label("hotel_vacancy", 380, 64, "NO VACANCY  /  VACANCY", 520),
     ]
-    return rid, room(rid, e, "Hylbert's Hotel: the lobby.", theme=INTERIOR)
+    return rid, room(rid, e, None, theme=INTERIOR)
 
 
 def hotel_corridor():
