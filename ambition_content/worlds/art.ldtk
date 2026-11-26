@@ -11,7 +11,7 @@
 	"iid": "ambition-art-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1108796,
+	"nextUid": 1108799,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -23856,6 +23856,92 @@
 								{ "__identifier": "text", "__type": "String", "__value": "THE RESONANT REACH", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["THE RESONANT REACH"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [128,58],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 6048,
+							"__worldY": 1104,
+							"iid": "MovingPlatform-1108796",
+							"width": 112,
+							"height": 16,
+							"defUid": 4251,
+							"px": [2048,928],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "art_reach_tuning_lift", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["art_reach_tuning_lift"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "The tuning lift", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["The tuning lift"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 160.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [160.0] }] },
+								{ "__identifier": "lift_dy", "__type": "Float", "__value": -480.0, "__tile": null, "defUid": 6955, "realEditorValues": [{ "id": "V_Float", "params": [-480.0] }] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] },
+								{ "__identifier": "visual", "__type": "String", "__value": "art_tuning_lift", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["art_tuning_lift"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [128,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6052,
+							"__worldY": 588,
+							"iid": "Prop-1108797",
+							"width": 104,
+							"height": 548,
+							"defUid": 4351,
+							"px": [2052,412],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Tuning lift rails", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Tuning lift rails"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "art_tuning_lift_rails", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["art_tuning_lift_rails"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [126,53],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 6016,
+							"__worldY": 1039,
+							"iid": "DebugLabel-1108798",
+							"width": 176,
+							"height": 24,
+							"defUid": 2007,
+							"px": [2016,863],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "reach_sign_lift", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["reach_sign_lift"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "TUNING LIFT", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["TUNING LIFT"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
