@@ -11,7 +11,7 @@
 	"iid": "ambition-magical-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1009527,
+	"nextUid": 1009537,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -26145,7 +26145,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -26185,7 +26185,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -26700,26 +26700,26 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [209,33],
+							"__grid": [225,34],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 5396,
-							"__worldY": -228,
+							"__worldX": 5658,
+							"__worldY": -220,
 							"iid": "DebugLabel-1009244",
-							"width": 360,
+							"width": 140,
 							"height": 24,
 							"defUid": 2007,
-							"px": [3348,540],
+							"px": [3610,548],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "heights_gap_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["heights_gap_sign"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "GAP IN THE CLOUDS (down to the road)", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "DUNE ROAD", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["GAP IN THE CLOUDS (down to the road)"]
+									"params": ["DUNE ROAD"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -27104,6 +27104,320 @@
 									"params": ["THE STARLIGHT HEIGHTS"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [213,34],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 5466,
+							"__worldY": -220,
+							"iid": "DebugLabel-1009527",
+							"width": 140,
+							"height": 24,
+							"defUid": 2007,
+							"px": [3418,548],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "heights_spring_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["heights_spring_sign"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "STAR SPRING", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["STAR SPRING"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [39,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 2672,
+							"__worldY": -192,
+							"iid": "MovingPlatform-1009528",
+							"width": 192,
+							"height": 16,
+							"defUid": 4251,
+							"px": [624,576],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "heights_west_cloud_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["heights_west_cloud_0"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "west cloud", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["west cloud"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [37,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 2640,
+							"__worldY": -256,
+							"iid": "MovingPlatform-1009529",
+							"width": 272,
+							"height": 16,
+							"defUid": 4251,
+							"px": [592,512],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "heights_west_cloud_1", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["heights_west_cloud_1"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "west cloud", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["west cloud"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [51,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 2864,
+							"__worldY": -304,
+							"iid": "MovingPlatform-1009530",
+							"width": 192,
+							"height": 16,
+							"defUid": 4251,
+							"px": [816,464],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "heights_west_cloud_2", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["heights_west_cloud_2"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "west cloud", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["west cloud"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [60,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 3008,
+							"__worldY": -352,
+							"iid": "MovingPlatform-1009531",
+							"width": 192,
+							"height": 16,
+							"defUid": 4251,
+							"px": [960,416],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "heights_west_cloud_3", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["heights_west_cloud_3"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "west cloud", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["west cloud"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [71,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 3184,
+							"__worldY": -304,
+							"iid": "MovingPlatform-1009532",
+							"width": 200,
+							"height": 16,
+							"defUid": 4251,
+							"px": [1136,464],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "heights_west_cloud_4", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["heights_west_cloud_4"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "west cloud", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["west cloud"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [82,33],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 3360,
+							"__worldY": -240,
+							"iid": "MovingPlatform-1009533",
+							"width": 208,
+							"height": 16,
+							"defUid": 4251,
+							"px": [1312,528],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "heights_west_cloud_5", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["heights_west_cloud_5"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "west cloud", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["west cloud"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [94,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 3552,
+							"__worldY": -192,
+							"iid": "MovingPlatform-1009534",
+							"width": 240,
+							"height": 16,
+							"defUid": 4251,
+							"px": [1504,576],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "heights_west_cloud_6", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["heights_west_cloud_6"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "west cloud", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["west cloud"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [213,33],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5463,
+							"__worldY": -235,
+							"iid": "Prop-1009535",
+							"width": 334,
+							"height": 94,
+							"defUid": 4351,
+							"px": [3415,533],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Eastern descent markers", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Eastern descent markers"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "heights_descent_markers", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["heights_descent_markers"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [37,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2640,
+							"__worldY": -352,
+							"iid": "Prop-1009536",
+							"width": 1137,
+							"height": 206,
+							"defUid": 4351,
+							"px": [592,416],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Western cloud walk", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Western cloud walk"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "heights_west_clouds", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["heights_west_clouds"]
+								}] }
 							]
 						}
 					]
