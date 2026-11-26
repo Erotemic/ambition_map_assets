@@ -9466,7 +9466,7 @@
 						},
 						{
 							"__identifier": "MovingPlatform",
-							"__grid": [3,18],
+							"__grid": [0,18],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -9475,7 +9475,7 @@
 							"width": 120,
 							"height": 22,
 							"defUid": 4251,
-							"px": [60,300],
+							"px": [0,300],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "mockingbird_sky_shark_1", "__tile": null, "defUid": 6853, "realEditorValues": [{
 									"id": "V_String",
@@ -9510,12 +9510,12 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 1804,
+							"__worldX": 1744,
 							"__worldY": 7532
 						},
 						{
 							"__identifier": "MovingPlatform",
-							"__grid": [36,18],
+							"__grid": [32,18],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -9524,7 +9524,7 @@
 							"width": 120,
 							"height": 22,
 							"defUid": 4251,
-							"px": [580,300],
+							"px": [520,300],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "mockingbird_sky_shark_2", "__tile": null, "defUid": 6853, "realEditorValues": [{
 									"id": "V_String",
@@ -9559,12 +9559,12 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 2324,
+							"__worldX": 2264,
 							"__worldY": 7532
 						},
 						{
 							"__identifier": "MovingPlatform",
-							"__grid": [68,18],
+							"__grid": [65,18],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -9573,7 +9573,7 @@
 							"width": 120,
 							"height": 22,
 							"defUid": 4251,
-							"px": [1100,300],
+							"px": [1040,300],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "mockingbird_sky_shark_3", "__tile": null, "defUid": 6853, "realEditorValues": [{
 									"id": "V_String",
@@ -9608,7 +9608,7 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 2844,
+							"__worldX": 2784,
 							"__worldY": 7532
 						},
 						{
