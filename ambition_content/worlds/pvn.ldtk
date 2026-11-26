@@ -11,7 +11,7 @@
 	"iid": "ambition-pvn-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 901109,
+	"nextUid": 901126,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -30185,6 +30185,31 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [52,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5251,
+							"__worldY": 10472,
+							"iid": "Prop-901120",
+							"width": 596,
+							"height": 232,
+							"defUid": 4351,
+							"px": [835,600],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "forest_fallen_cedar_8", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["forest_fallen_cedar_8"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "forest_fallen_cedar", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["forest_fallen_cedar"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [175,46],
 							"__pivot": [0,0],
@@ -30316,6 +30341,35 @@
 								"id": "V_String",
 								"params": ["ninja_village_forest_spawn"]
 							}] }]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [55,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": 5296,
+							"__worldY": 10496,
+							"iid": "SurfaceChain-901125",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [880,624],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fallen_cedar", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fallen_cedar"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "880,784; 936,784; 1408,640", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["880,784; 936,784; 1408,640"]
+								}] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 7681, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
 						},
 						{
 							"__identifier": "LoadingZone",

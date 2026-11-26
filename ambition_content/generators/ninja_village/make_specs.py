@@ -242,6 +242,8 @@ def forest():
         edge("forest_west_high", "onto the roofs", 0, top, STREET, "street_east_high"),
         start(rid, 120, FOREST_FLOOR),
         *[ledge(name, x, y, BRANCH_W) for name, x, y in BRANCHES],
+        entity("SurfaceChain", 880, 624, 16, 16, name="fallen_cedar",
+               points="880,784; 936,784; 1408,640", visual="none"),
         door("forest_clan_door", "to the hall of the Shadow Clan", 2700, FOREST_FLOOR, CLAN, CLAN_DOOR),
         sign("clan_sign", 2480, FOREST_FLOOR - 200, "HALL OF THE SHADOW CLAN. Visitors by appointment. Appointments by stealth.", 520),
         sign("forest_sign", 900, FOREST_FLOOR - 120, "Cedar path. Mind the roots.", 260),
