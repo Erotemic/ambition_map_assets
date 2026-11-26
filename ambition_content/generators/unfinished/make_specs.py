@@ -163,9 +163,11 @@ def draft():
         # The void.
         entity("HazardBlock", GROUND_END, VOID_TOP, CORNER - GROUND_END, h - VOID_TOP, name="the void"),
         sign("draft_sign_void", 1400, 1060, "THE VOID (RESERVED)", 300),
-        # Bugs on the built ground.
+        # One bug and one over-engineered prototype share the built ground.
         bug(rid, 0, 260, FLOOR),
-        bug(rid, 1, 470, FLOOR),
+        entity("EnemySpawn", 434, FLOOR - 88, 58, 88,
+               name="unfinished_draft_feature_creep_0", brain="combatant",
+               character_id="feature_creep", respawn="OnRoomReenter"),
     ]
     return build(rid, e, "THE DRAFT", "unfinished_void", dangerous=True)
 

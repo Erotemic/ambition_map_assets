@@ -191,6 +191,10 @@ def life():
         solid("west_wall", 0, 0, WALL, FLOOR - 96),
         edge("life_to_works", "west, to the Works", 0, FLOOR, WORKS, "works_to_life"),
         start(rid, 120, FLOOR),
+        # A clock from the Works on the broad western terrace.
+        entity("EnemySpawn", 363, FLOOR - 88, 54, 88,
+               name="automaton_life_cuckoo_clock_0", brain="combatant",
+               character_id="cuckoo_clock", respawn="OnRoomReenter"),
         *[solid(f"step_{n}", x0, top, x1 - x0, h - top) for n, (x0, x1, top) in enumerate(STEPS)],
         solid("field_floor", STEPS[-1][1], FIELD_FLOOR, t0 - STEPS[-1][1], h - FIELD_FLOOR),
         # Neighbour Moore and the block.
