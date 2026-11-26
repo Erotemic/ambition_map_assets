@@ -329,6 +329,11 @@ def hollow():
         slop(rid, 1, 800, g),
         slop(rid, 2, 1600, g),
         slop(rid, 3, 2300, g),
+        # Wisps hover above the floor creatures; these are not Void Stars.
+        entity("EnemySpawn", 1220, 278, 38, 38, name="magical_hollow_wisp_0", brain="combatant",
+               character_id="will_o_the_wisp", respawn="OnRoomReenter"),
+        entity("EnemySpawn", 2350, 284, 38, 38, name="magical_hollow_wisp_1", brain="combatant",
+               character_id="will_o_the_wisp", respawn="OnRoomReenter"),
     ]
     return rid, room(rid, e, at=HOLLOW_AT, size=(w, h), biome="starless", music="embedded_theme", bg="#1E1430",
                      title="THE STARLESS HOLLOW", generator=GENERATOR, dangerous=True)
@@ -365,6 +370,8 @@ def road():
         slop(rid, 1, 1300, FLOOR),
         slop(rid, 2, 1900, FLOOR),
         slop(rid, 3, 2600, FLOOR),
+        # The wand repairer Celeste mentions is out checking the road's lamps.
+        resident("npc_magical_wanda", "magical_wanda", 2940, FLOOR, h=64),
     ]
     return rid, room(rid, e, at=ROAD_AT, size=(w, H), biome="stardune", music="sparse_theme", bg="#3A2850",
                      title="THE DUNE ROAD", generator=GENERATOR, dangerous=True)
