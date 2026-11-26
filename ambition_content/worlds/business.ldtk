@@ -11,7 +11,7 @@
 	"iid": "ambition-business-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1608619,
+	"nextUid": 1608648,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -10860,6 +10860,72 @@
 									"params": ["APPROVED"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [54,54],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 3436,
+							"__worldY": 556,
+							"iid": "EnemySpawn-1608634",
+							"width": 48,
+							"height": 84,
+							"defUid": 2008,
+							"px": [876,876],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "business_records_loan_shark_0", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["business_records_loan_shark_0"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "loan_shark", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["loan_shark"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [116,55],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 4431,
+							"__worldY": 564,
+							"iid": "EnemySpawn-1608635",
+							"width": 78,
+							"height": 76,
+							"defUid": 2008,
+							"px": [1871,884],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "business_records_hedge_fund_0", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["business_records_hedge_fund_0"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "hedge_fund", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hedge_fund"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
 							]
 						},
 						{

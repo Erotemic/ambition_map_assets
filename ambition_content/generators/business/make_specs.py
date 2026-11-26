@@ -181,6 +181,14 @@ def records_processing():
         sign("records_board_3", 300, 636, "ESCALATED 327", 200),
         sign("records_board_4", 300, 660, "OVERDUE 5,988", 200),
         sign("records_sign_press", 712, 574, "APPROVED", 160),
+        # The collector works the west floor, with space for his bite rush.
+        entity("EnemySpawn", 876, floor - 84, 48, 84,
+               name="business_records_loan_shark_0", brain="combatant",
+               character_id="loan_shark", respawn="OnRoomReenter"),
+        # The hedge patrols the separate east floor, beyond the shredder.
+        entity("EnemySpawn", 1871, floor - 76, 78, 76,
+               name="business_records_hedge_fund_0", brain="combatant",
+               character_id="hedge_fund", respawn="OnRoomReenter"),
         sign("records_sign_shredder", 1360, 760, "SHREDDING. NO RETURNS.", 280),
         # The climb, east to west: a catwalk a double jump over the floor,
         # one over it against the east wall, the folder carrier across, the
