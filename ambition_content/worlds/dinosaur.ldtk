@@ -11,7 +11,7 @@
 	"iid": "ambition-dinosaur-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 500524,
+	"nextUid": 500526,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -14463,9 +14463,9 @@
 									"id": "V_String",
 									"params": ["ridge_vine"]
 								}] },
-								{ "__identifier": "name", "__type": "String", "__value": "up the vine to the canopy", "__tile": null, "defUid": 3003, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "up to the canopy", "__tile": null, "defUid": 3003, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["up the vine to the canopy"]
+									"params": ["up to the canopy"]
 								}] },
 								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
 									"id": "V_String",
@@ -14539,9 +14539,9 @@
 									"id": "V_String",
 									"params": ["ridge_vine_sign"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "A VINE up into the canopy", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "Up to the canopy", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["A VINE up into the canopy"]
+									"params": ["Up to the canopy"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -14609,6 +14609,50 @@
 								"id": "V_String",
 								"params": ["seep_hatch"]
 							}] }]
+						},
+						{
+							"__identifier": "OneWayPlatform",
+							"__grid": [177,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#A4D65E",
+							"__worldX": 30240,
+							"__worldY": 352,
+							"iid": "OneWayPlatform-500524",
+							"width": 80,
+							"height": 16,
+							"defUid": 2003,
+							"px": [2832,352],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "seep_lookout", "__tile": null, "defUid": 3008, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["seep_lookout"]
+							}] }]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [178,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 30270,
+							"__worldY": 340,
+							"iid": "Prop-500525",
+							"width": 61,
+							"height": 140,
+							"defUid": 4351,
+							"px": [2862,340],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_ridge_seep_lookout", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["primeval_ridge_seep_lookout"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "ridge_seep_lookout", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ridge_seep_lookout"]
+								}] }
+							]
 						}
 					]
 				},
