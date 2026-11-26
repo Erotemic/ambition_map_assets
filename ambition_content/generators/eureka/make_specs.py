@@ -303,8 +303,7 @@ def patent_office():
 
 
 def coil_lab():
-    """Tesseract Laboratories: a high hall of coils. Gantries over the floor;
-    the director's office door at the east end."""
+    """Cross the coil hall on the floor or on the service gantries."""
     rid = LAB
     _, (w, h) = ROOMS_AT[rid]
     floor, ceiling = h - 64, 32
@@ -315,10 +314,13 @@ def coil_lab():
         solid("east_wall", w - WALL, ceiling, WALL, floor - ceiling),
         door("lab_door", "out to the quad", 40, floor, QUAD, "quad_lab_door"),
         start(rid, 140, floor),
-        ledge("crate", 200, floor - 80, 96),
+        ledge("crate", 192, floor - 80, 112),
         ledge("coil_gantry_west", 320, floor - 160, 240),
+        ledge("coil_transfer", 576, floor - 192, 128),
         ledge("coil_gantry_east", 720, floor - 224, 240),
-        ledge("bench", 1000, floor - 48, 160),
+        ledge("coil_service_upper", 976, floor - 160, 80),
+        ledge("coil_service_lower", 1088, floor - 96, 80),
+        ledge("bench", 992, floor - 48, 176),
         resident("npc_eureka_dmitri", "eureka_dmitri", 560, floor),
         # Nikobolt and Coulomba are together between the two gantries, clear
         # of the door, the bench, and the gravity-prototype lever.
@@ -339,7 +341,7 @@ def coil_lab():
                prompt="Do not press", action="FlipGravity"),
         entity("Switch", LAB_LEVER_X, ceiling, 24, 32, id="lab_gravity_prototype_twin", name="the prototype's twin",
                prompt="Press to come down", action="FlipGravity"),
-        sign("lab_sign_prototype", LAB_LEVER_X - 120, floor - 110, "ANTI-GRAVITY PROTOTYPE: DO NOT PRESS", 380),
+        sign("lab_sign_prototype", LAB_LEVER_X - 132, floor - 208, "ANTI-GRAVITY PROTOTYPE: DO NOT PRESS", 380),
         sign("lab_sign_told_you", LAB_LEVER_X - 60, ceiling + 70, "TOLD YOU.", 160),
     ]
     return build(rid, e, None, music=LAB_MUSIC)
