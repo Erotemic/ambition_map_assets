@@ -24,6 +24,8 @@ forms, the rival form, the shouted names of moves), not the culture.
 ## The roads
 
 - The low road: shrine floor, street, forest floor.
+- At the shrine, the low road goes under the stone stair. The signs
+  point along the lower road and up to the torii terrace.
 - The high road follows the forest's branches, the roofs of the street,
   the torii terrace, and the shrine's stair. Each room joins the next at
   both heights.
