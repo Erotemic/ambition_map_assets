@@ -11,7 +11,7 @@
 	"iid": "ambition-noodle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 800224,
+	"nextUid": 800225,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -11903,7 +11903,7 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [13,43],
+							"__grid": [11,42],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -11912,7 +11912,7 @@
 							"width": 120,
 							"height": 24,
 							"defUid": 2007,
-							"px": [222,688],
+							"px": [178,676],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "noodly_cistern_sign_wheel_a", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -11924,8 +11924,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 76222,
-							"__worldY": 688
+							"__worldX": 76178,
+							"__worldY": 676
 						},
 						{
 							"__identifier": "LockWall",
@@ -12086,7 +12086,7 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [40,18],
+							"__grid": [37,17],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -12095,7 +12095,7 @@
 							"width": 120,
 							"height": 24,
 							"defUid": 2007,
-							"px": [642,288],
+							"px": [592,276],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "noodly_cistern_sign_wheel_c", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -12107,8 +12107,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 76642,
-							"__worldY": 288
+							"__worldX": 76592,
+							"__worldY": 276
 						},
 						{
 							"__identifier": "LockWall",
@@ -12210,7 +12210,7 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [44,43],
+							"__grid": [41,42],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -12219,7 +12219,7 @@
 							"width": 120,
 							"height": 24,
 							"defUid": 2007,
-							"px": [708,688],
+							"px": [664,676],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "noodly_cistern_sign_wheel_b", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -12231,8 +12231,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 76708,
-							"__worldY": 688
+							"__worldX": 76664,
+							"__worldY": 676
 						},
 						{
 							"__identifier": "LockWall",
@@ -12648,6 +12648,31 @@
 							],
 							"__worldX": 76040,
 							"__worldY": 32
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [16,7],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 76261,
+							"__worldY": 125,
+							"iid": "Prop-800224",
+							"width": 1197,
+							"height": 739,
+							"defUid": 4351,
+							"px": [261,125],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Cistern pipes and valves", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cistern pipes and valves"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "noodly_cistern_plumbing", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodly_cistern_plumbing"]
+								}] }
+							]
 						}
 					]
 				},
