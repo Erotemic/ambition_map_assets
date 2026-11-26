@@ -95,6 +95,8 @@ PLANT_FLOOR = 928
 #: The plant's walks (x0, x1, y): the upper catwalk, the step, the lower
 #: catwalk, the boilers' tops (`eureka_plant_props.py` draws on these).
 PLANT_WALKS = ((16, 1500, 400), (1540, 1700, 528), (900, 2240, 656), (1080, 1280, 800), (1760, 1960, 800))
+PLANT_RETURN_STEPS = ((1440, 1536, 464), (1728, 1824, 592))
+PLANT_EAST_LADDER_X = 2112
 
 #: The contract with the gate network: the arrival point a dialled SCIENCE
 #: names (its ring is `gate_interface.yaml`, written by
@@ -559,6 +561,12 @@ def plant():
     g, vault = PLANT_FLOOR, 48
     x0 = ROOMS_AT[PLANT][0][0] - ROOMS_AT[QUAD][0][0]
     s0, s1 = MANHOLE[0] - x0, MANHOLE[1] - x0
+    ladder_top = PLANT_WALKS[2][2] - 16
+    ladders = f"""
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [{s0 + 16}, 0], size: [32, {g}]),
+        (kind: "Ladder", px: [{PLANT_EAST_LADDER_X}, {ladder_top}], size: [32, {g - ladder_top}]),
+    ]),"""
     e = [
         solid("floor", 0, g, w, h - g),
         solid("vault_west", 0, 0, s0, vault),
@@ -575,6 +583,7 @@ def plant():
         edge("secret_plant_west", "through the bricked door", 0, g, FIRST_LAB, "secret_first_lab_east"),
         start(rid, s1 + 120, g),
         *[walk(f"plant_walk_{i}", a, y, b - a) for i, (a, b, y) in enumerate(PLANT_WALKS)],
+        *[walk(f"plant_return_{i}", a, y, b - a) for i, (a, b, y) in enumerate(PLANT_RETURN_STEPS)],
         entity("ChestSpawn", 1300, 400 - 58, 76, 58, name="the stoker's tin", reward="currency:50"),
         sign("plant_sign", 1200, 90, "EUREKA STEAM PLANT: est. before anyone asked", 420),
         sign("plant_sign_gauge", 1860, 640, "GAUGE: FINE", 220),
@@ -583,7 +592,7 @@ def plant():
         range_enemy(21, "steam_automaton", 1640, g, 48, 80),
         range_enemy(22, "npc_dividing_mite", 600, 400, 32, 24, "dividing_mite"),
     ]
-    return build(rid, e, "THE STEAM PLANT")
+    return build(rid, e, "THE STEAM PLANT", extra=ladders)
 
 
 def first_lab():
@@ -686,12 +695,8 @@ def main(argv):
         code, _ = run("entity", "add", str(GATE_INTERFACE), "--ldtk", str(WORLD_LDTK), "--in-place")
         if code:
             return code
-    # The manhole's ladder, from over the quad's street down out of its foot,
-    # and the plant's from its vault to its floor.
-    for args in ((QUAD, "Climbable", 1, MANHOLE[0] + 16, 768 - 80, 32, 896 - 768 + 80),
-                 (PLANT, "Climbable", 1, MANHOLE[0] - (ROOMS_AT[PLANT][0][0] - ROOMS_AT[QUAD][0][0]) + 16, 0, 32, PLANT_FLOOR)):
-        if code := paint(WORLD_LDTK, *args):
-            return code
+    if code := paint(WORLD_LDTK, QUAD, "Climbable", 1, MANHOLE[0] + 16, 768 - 80, 32, 896 - 768 + 80):
+        return code
     # The ladder up to QED-TV's lighting grid.
     if code := paint(WORLD_LDTK, QED, "Climbable", 1, QED_LADDER_X, QED_GRID[2] - 16, 32, 704 - 64 - QED_GRID[2] + 16):
         return code
