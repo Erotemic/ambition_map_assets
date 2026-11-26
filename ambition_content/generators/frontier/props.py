@@ -19,6 +19,8 @@ SCENERY = {
         ("frontier_pad_freighter", 1280, 280),
         ("frontier_pad_booth", 624, 480),
         ("frontier_pad_cargo", 976, 500),
+        ("frontier_pad_loading_walk", 530, 482),
+        ("frontier_pad_service_steps", 1736, 480),
     ],
     "frontier_main_street": [
         ("frontier_saloon_front", 150, 150),

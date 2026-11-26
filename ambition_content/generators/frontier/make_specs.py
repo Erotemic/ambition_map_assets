@@ -152,6 +152,13 @@ ROOMS_AT = {
 
 #: The street's floor, and the boardwalk one small step over it.
 STREET = 640
+PAD_LOAD_PATH = (
+    ("cargo_scale", 544, 640, 576),
+    ("arrivals_loading_walk", 848, 976, 528),
+    ("cargo_loading_walk", 1200, 1296, 512),
+    ("freighter_service_landing", 1752, 1848, 512),
+    ("freighter_service_step", 1840, 1952, 576),
+)
 BOARDWALK = STREET - 32
 #: The corral: its floor 64 over the room's bottom (the Rhai script's
 #: `FLOOR_INSET`), the docks a jump over it, the catwalks a double jump over them.
@@ -256,6 +263,7 @@ def landing_pad():
         ledge("box_high", 1072, floor - 128, 128),
         ledge("box_low_east", 1200, floor - 64, 112),
         ledge("freighter_cargo_deck", 1328, floor - 192, 400),
+        *[ledge(name, left, top, right - left) for name, left, right, top in PAD_LOAD_PATH],
         sign("pad_sign_ship", 1528, floor - 290, "HOLD 2: FEED, BOLTS, MAIL", 300),
         edge("pad_to_street", "into town", w - WALL, floor, MAIN, "street_from_pad"),
     ]
