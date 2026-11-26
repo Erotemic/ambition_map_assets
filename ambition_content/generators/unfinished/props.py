@@ -25,7 +25,8 @@ SCENERY = {
         ("unfinished_spill", 540, 590),
     ],
     "unfinished_site_office": [
-        ("unfinished_gauges", 180, 100),
+        ("unfinished_office_wall", 0, 0),
+        ("unfinished_gauges", 180, 32),
         ("unfinished_backlog", 920, 160),
     ],
 }

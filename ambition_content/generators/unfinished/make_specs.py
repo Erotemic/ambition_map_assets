@@ -91,6 +91,7 @@ CORNER = 2240
 VOID_TOP = 1120
 #: The Site Office.
 OFFICE_FLOOR = 512
+OFFICE_WORKTOP = 432
 
 
 def blurb(rid, x):
@@ -112,10 +113,10 @@ def bug(rid, n, x, floor):
                   character_id="glitch_bug", respawn="OnRoomReenter")
 
 
-def build(rid, e, title, biome, dangerous=False):
+def build(rid, e, title, biome, dangerous=False, *, parallax_theme=None, extra=""):
     at, size = ROOMS_AT[rid]
     text = room(rid, scenery(rid) + e + blurb(rid, size[0] // 2), at=at, size=size, biome=biome, music=MUSIC, bg=BG, title=title,
-                generator=GENERATOR, dangerous=dangerous)
+                generator=GENERATOR, dangerous=dangerous, parallax_theme=parallax_theme, extra=extra)
     return rid, text
 
 
@@ -190,6 +191,8 @@ def site_office():
         solid("east_wall", w - WALL, 32, WALL, g - 32),
         door("office_door", "out to the Staging Area", 64, g, STAGING, "staging_office_door"),
         start(rid, 150, g),
+        ledge("office_gauge_bench", 192, OFFICE_WORKTOP, 704),
+        ledge("office_records_table", 944, OFFICE_WORKTOP, 288),
         sign("office_sign_gravity", 300, 372, "GRAVITY", 160),
         sign("office_sign_weather", 540, 372, "WEATHER", 160),
         sign("office_sign_layers", 780, 372, "LAYERS", 160),
@@ -199,7 +202,8 @@ def site_office():
         sign("office_sign_done", 1080, 254, "DONE: THIS SIGN", 260),
         resident("npc_unfinished_placeholder", "unfinished_placeholder", 900, g),
     ]
-    return build(rid, e, "THE SITE OFFICE", "unfinished")
+    return build(rid, e, "THE SITE OFFICE", "unfinished", parallax_theme="unfinished_office",
+                 extra='\n    backdrop: "unfinished",')
 
 
 ROOMS = (staging, draft, site_office)

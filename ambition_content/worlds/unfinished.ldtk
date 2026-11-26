@@ -11,7 +11,7 @@
 	"iid": "ambition-unfinished-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1908604,
+	"nextUid": 1908610,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -11486,7 +11486,11 @@
 					"id": "V_String",
 					"params": ["something_worth_building"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "unfinished", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "unfinished_office", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["unfinished_office"]
+				}] },
+				{ "__identifier": "backdrop", "__type": "String", "__value": "unfinished", "__tile": null, "defUid": 8264, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["unfinished"]
 				}] }
@@ -11560,8 +11564,8 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+						2,2,2,2,2,2,2,2,2,2,2,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -11682,18 +11686,43 @@
 					"entityInstances": [
 						{
 							"__identifier": "Prop",
-							"__grid": [12,6],
+							"__grid": [0,0],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 804,
-							"__worldY": -530,
-							"iid": "Prop-1908543",
-							"width": 697,
-							"height": 402,
+							"__worldX": 608,
+							"__worldY": -640,
+							"iid": "Prop-1908607",
+							"width": 1280,
+							"height": 512,
 							"defUid": 4351,
-							"px": [196,110],
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "unfinished_office_wall", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["unfinished_office_wall"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "unfinished_office_wall", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["unfinished_office_wall"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [12,2],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 800,
+							"__worldY": -608,
+							"iid": "Prop-1908608",
+							"width": 704,
+							"height": 480,
+							"defUid": 4351,
+							"px": [192,32],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "unfinished_gauges", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -11712,13 +11741,13 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 1538,
+							"__worldX": 1548,
 							"__worldY": -470,
-							"iid": "Prop-1908544",
-							"width": 300,
+							"iid": "Prop-1908609",
+							"width": 292,
 							"height": 342,
 							"defUid": 4351,
-							"px": [930,170],
+							"px": [940,170],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "unfinished_backlog", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
