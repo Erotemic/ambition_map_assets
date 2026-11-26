@@ -11,7 +11,7 @@
 	"iid": "ambition-dinosaur-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 500523,
+	"nextUid": 500524,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -10997,26 +10997,26 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [146,22],
+							"__grid": [137,21],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 23950,
-							"__worldY": 360,
+							"__worldX": 23800,
+							"__worldY": 336,
 							"iid": "Prop-500011",
-							"width": 320,
-							"height": 120,
+							"width": 416,
+							"height": 144,
 							"defUid": 4351,
-							"px": [2350,360],
+							"px": [2200,336],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "primeval_run_jungle_ribcage_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "primeval_run_exposed_spine", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["primeval_run_jungle_ribcage_2"]
+									"params": ["primeval_run_exposed_spine"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "jungle_ribcage", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "jungle_run_rib_walk", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["jungle_ribcage"]
+									"params": ["jungle_run_rib_walk"]
 								}] }
 							]
 						},
@@ -11158,6 +11158,35 @@
 									"params": ["THE GREAT TREE: rangers' ladder. Mind the parrots."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [137,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": 23800,
+							"__worldY": 368,
+							"iid": "SurfaceChain-500523",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [2200,368],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "exposed spine", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["exposed spine"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "2200,368; 2224,368; 2312,352; 2416,336; 2496,344; 2560,368; 2592,368", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["2200,368; 2224,368; 2312,352; 2416,336; 2496,344; 2560,368; 2592,368"]
+								}] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 7681, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
 							]
 						}
 					]
