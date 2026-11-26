@@ -11,7 +11,7 @@
 	"iid": "ambition-magical-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1009514,
+	"nextUid": 1009516,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -12102,6 +12102,61 @@
 									"params": ["THE STARLESS HOLLOW"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [63,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": 2040,
+							"__worldY": 1280,
+							"iid": "SurfaceChain-1009514",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1016,512],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "star heap stone ramp", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["star heap stone ramp"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "1016,512; 1088,512; 1136,500; 1192,476; 1248,452; 1304,442; 1348,442", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["1016,512; 1088,512; 1136,500; 1192,476; 1248,452; 1304,442; 1348,442"]
+								}] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 7681, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "boarding", "__type": "String", "__value": null, "__tile": null, "defUid": 7682, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [63,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2040,
+							"__worldY": 1208,
+							"iid": "Prop-1009515",
+							"width": 342,
+							"height": 136,
+							"defUid": 4351,
+							"px": [1016,440],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "star heap stone ramp art", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["star heap stone ramp art"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hollow_star_rib", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hollow_star_rib"]
+								}] }
 							]
 						}
 					]
