@@ -23,6 +23,7 @@ SCENERY = {
         ("neural_dendrite_tree", 1260, 590),
     ],
     "neural_weights": [
+        ("neural_training_bypass", 866, 934),
         ("neural_red_herring_board", 1540, 580),
         ("neural_weights_racks", 1950, 600),
         ("neural_logic_gates", 1040, 830),

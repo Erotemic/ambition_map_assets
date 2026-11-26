@@ -88,6 +88,8 @@ BRANCHES = ((1300, 1500, 896), (1560, 1760, 768), (1300, 1500, 640))
 WEIGHTS_FLOOR = 1024
 SPIKES = (1100, 1340)
 GATES = ((1080, 1200, 928), (1240, 1360, 848))
+WEIGHTS_SHAFTS = ((960, 1024), (1408, 1472))
+WEIGHTS_TUNNEL_FLOOR = 1120
 RACKS = ((1960, 2140, 896), (2180, 2360, 768))
 DECK = (1960, 2384, 640)
 #: The Echo Chamber.
@@ -122,10 +124,10 @@ def flier(rid, character, n, x, y, w=40, h=40):
                   character_id=character, respawn="OnRoomReenter")
 
 
-def build(rid, e, title, biome, dangerous=False):
+def build(rid, e, title, biome, dangerous=False, extra=""):
     at, size = ROOMS_AT[rid]
     text = room(rid, scenery(rid) + e + blurb(rid, size[0] // 2), at=at, size=size, biome=biome, music=MUSIC, bg=BG, title=title,
-                generator=GENERATOR, dangerous=dangerous)
+                generator=GENERATOR, dangerous=dangerous, extra=extra)
     return rid, text
 
 
@@ -199,8 +201,13 @@ def weights():
     floor = WEIGHTS_FLOOR
     s0, s1 = SPIKES
     d0, d1, deck = DECK
+    (west, roof_start), (roof_end, east) = WEIGHTS_SHAFTS
+    tunnel_floor = WEIGHTS_TUNNEL_FLOOR
     e = [
-        solid("floor", 0, floor, w, h - floor),
+        solid("floor_west", 0, floor, west, h - floor),
+        solid("training_deck", roof_start, floor, roof_end - roof_start, 16),
+        solid("floor_east", east, floor, w - east, h - floor),
+        solid("maintenance_floor", west, tunnel_floor, east - west, h - tunnel_floor),
         solid("ceiling", 0, 0, w, 32),
         *side_walls(w, h, floor, None),
         edge("weights_to_callosum", "west, to the Callosum", 0, floor, CALLOSUM, "callosum_to_weights"),
@@ -222,11 +229,16 @@ def weights():
         door("weights_echo_door", "into the Echo Chamber", 2300, deck, ECHO, "echo_door"),
         sign("weights_sign_echo", 2270, deck - 132, "ECHO CHAMBER", 200),
         # Attention Heads watch from the air.
-        flier(rid, "attention_head", 0, 900, 700, 36, 36),
+        flier(rid, "attention_head", 0, 1112, 832, 36, 36),
         flier(rid, "attention_head", 1, 1500, 520, 36, 36),
         flier(rid, "attention_head", 2, 2050, 440, 36, 36),
     ]
-    return build(rid, e, "THE WEIGHTS", "neural_circuit", dangerous=True)
+    ladders = "\n".join(
+        f'        (kind: "Ladder", px: [{x + 16}, {floor - 16}], size: [32, {tunnel_floor - floor + 16}]),'
+        for x, _ in WEIGHTS_SHAFTS
+    )
+    extra = f"\n    intgrid: (climbable: [\n{ladders}\n    ]),"
+    return build(rid, e, "THE WEIGHTS", "neural_circuit", dangerous=True, extra=extra)
 
 
 def echo_chamber():
