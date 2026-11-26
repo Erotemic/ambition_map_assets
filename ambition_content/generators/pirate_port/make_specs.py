@@ -316,7 +316,6 @@ def docks():
         resident("npc_port_jory", "pirate_port_jory", 420, DECK),
         resident("npc_port_bram", "pirate_port_bram", 2640, DECK),
         door("docks_cove_door", "to the pirate cove", 2720, DECK, COVE, COVE_DOOR),
-        sign("docks_sign_cove", 2580, DECK - 200, "PIRATE COVE: crews only. Skyship moorings above it.", 420),
         sign("docks_sign_brig", 2160, SHIP_DECK - 420, "THE BRIG PERSISTENCE: do not climb the rigging", 380),
         sign("docks_sign_warehouse", 1180, WAREHOUSE_ROOF + 120, "BONDED WAREHOUSE: ring freight awaiting a clerk", 420),
     ]

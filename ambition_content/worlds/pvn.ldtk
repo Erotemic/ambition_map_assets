@@ -11,7 +11,7 @@
 	"iid": "ambition-pvn-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 901086,
+	"nextUid": 901095,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -20327,6 +20327,31 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [166,35],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 6826,
+							"__worldY": 508,
+							"iid": "Prop-901094",
+							"width": 132,
+							"height": 196,
+							"defUid": 4351,
+							"px": [2666,572],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "port_cove_entrance_5", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_cove_entrance_5"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_cove_entrance", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_cove_entrance"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "WaterVolume",
 							"__grid": [0,49],
 							"__pivot": [0,0],
@@ -20610,32 +20635,6 @@
 									"params": ["pirate_cove_port_door"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
-							]
-						},
-						{
-							"__identifier": "DebugLabel",
-							"__grid": [148,35],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 6530,
-							"__worldY": 504,
-							"iid": "DebugLabel-607791",
-							"width": 420,
-							"height": 24,
-							"defUid": 2007,
-							"px": [2370,568],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "docks_sign_cove", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["docks_sign_cove"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "PIRATE COVE: crews only. Skyship moorings above it.", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["PIRATE COVE: crews only. Skyship moorings above it."]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
