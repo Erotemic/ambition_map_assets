@@ -438,6 +438,8 @@ def point():
 #: vault, the barrel rack's top (x0, x1, y; walked on).
 CELLARS_FLOOR, CELLARS_CEIL = 576, 64
 CELLARS_BARRELS = (920, 1140, 480)
+CELLARS_INSPECTION_TOP = 432
+CELLARS_CARGO = ((704, 864, 512), (736, 832, 448), (1168, 1296, CELLARS_INSPECTION_TOP), (1344, 1504, 480))
 
 
 def cellars_enemy(n, character, x, feet, w, h, rid=CELLARS):
@@ -466,14 +468,15 @@ def cellars():
         entity("LoadingZone", s0, 0, s1 - s0, 16, id="cellars_shaft", name="up the well to the plaza",
                activation="EdgeExit", target_room=PLAZA, target_zone="plaza_well", bidirectional=True),
         start(rid, 200, g),
+        *[ledge(f"cargo_ledge_{i}", left, y, right - left) for i, (left, right, y) in enumerate(CELLARS_CARGO)],
         ledge("barrel_rack", b0, by, b1 - b0),
         # Fennimore Slipp by his desk (`pirate_port.yarn`).
         resident("npc_port_slipp", "pirate_port_slipp", 340, g),
-        sign("cellars_sign", 800, 120, "BONDED CELLARS: bonded to nobody", 380),
+        sign("cellars_sign", 510, 379, "BONDED CELLARS: bonded to nobody", 324),
         entity("ChestSpawn", b0 + 70, by - 58, 76, 58, name="the undeclared strongbox", reward="currency:80"),
         # His colleagues, east past the crates.
         cellars_enemy(1, "npc_pirate_cutlass_viper", 880, g, 32, 68),
-        cellars_enemy(2, "npc_pirate_quartermaster", 1180, g, 34, 71),
+        cellars_enemy(2, "npc_pirate_quartermaster", 1226, CELLARS_INSPECTION_TOP, 34, 71),
         cellars_enemy(3, "npc_pirate_cutlass_viper", 1440, g, 32, 68),
     ]
     return build(rid, e, "THE CELLARS UNDER CUSTOMS", music=DOCK_MUSIC)

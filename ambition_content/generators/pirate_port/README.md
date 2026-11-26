@@ -30,6 +30,13 @@ Run them from the repository root.
 - The way on: the docks' east door goes to `pirate_cove` (two ways). The
   cove's sky hatch goes to `pirate_sky_lookout`, the raiders' skyship lookout.
 
+## Customs Cellars
+
+The stacked crates lead to the strongbox on the barrel rack. Continue
+on the inspection decks above the still to reach the tunnel arch.
+The Quartermaster starts on the first deck. The two Vipers start on
+the floor.
+
 ## The problem
 
 The wind took page eleven of Ines's freight log to the crow's nest of the
