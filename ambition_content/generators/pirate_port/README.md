@@ -30,6 +30,12 @@ Run them from the repository root.
 - The way on: the docks' east door goes to `pirate_cove` (two ways). The
   cove's sky hatch goes to `pirate_sky_lookout`, the raiders' skyship lookout.
 
+## Gate Plaza
+
+Use the cargo hoist beside the customs booth to reach the loading
+walk. The walk leads to the harbour balcony. The stone stair also
+leads to the balcony.
+
 ## Customs Cellars
 
 The stacked crates lead to the strongbox on the barrel rack. Continue

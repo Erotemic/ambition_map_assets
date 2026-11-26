@@ -11,7 +11,7 @@
 	"iid": "ambition-pvn-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 901219,
+	"nextUid": 901221,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -17288,13 +17288,13 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,
+						2,2,2,2,2,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -17700,18 +17700,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [30,31],
+							"__grid": [30,34],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
 							"__worldX": 490,
-							"__worldY": 504,
+							"__worldY": 546,
 							"iid": "DebugLabel-607725",
 							"width": 420,
 							"height": 24,
 							"defUid": 2007,
-							"px": [490,504],
+							"px": [490,546],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "plaza_sign_freight", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -18020,6 +18020,66 @@
 								{ "__identifier": "action", "__type": "String", "__value": "GateTerminal", "__tile": null, "defUid": 4050, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["GateTerminal"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [30,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 486,
+							"__worldY": 346,
+							"iid": "Prop-901219",
+							"width": 728,
+							"height": 358,
+							"defUid": 4351,
+							"px": [486,346],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the customs loading walk", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the customs loading walk"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "port_plaza_loading_walk", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_plaza_loading_walk"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [43,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 688,
+							"__worldY": 640,
+							"iid": "MovingPlatform-901220",
+							"width": 96,
+							"height": 16,
+							"defUid": 4251,
+							"px": [688,640],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "plaza_cargo_hoist", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["plaza_cargo_hoist"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the cargo hoist", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the cargo hoist"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 120.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [120.0] }] },
+								{ "__identifier": "lift_dy", "__type": "Float", "__value": -256.0, "__tile": null, "defUid": 6955, "realEditorValues": [{ "id": "V_Float", "params": [-256.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "port_plaza_cargo_sling", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["port_plaza_cargo_sling"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
 								}] }
 							]
 						}
