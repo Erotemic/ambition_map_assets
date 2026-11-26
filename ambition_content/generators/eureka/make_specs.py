@@ -488,6 +488,8 @@ def test_range():
         range_enemy(3, "steam_automaton", 1810, btop, 48, 80),
         range_enemy(4, "npc_exploding_mite", 480, floor, 38, 66, "exploding_mite"),
         range_enemy(5, "npc_exploding_mite", 1500, floor, 38, 66, "exploding_mite"),
+        # A reactive molecular escapee above the western half of the range.
+        range_enemy(8, "free_radical", 1020, floor - 180, 64, 46),
         # The range's officer, between the mites and the dummies.
         resident("npc_eureka_pryce", "eureka_pryce", 2500, floor),
         range_enemy(6, "sandbag", 2580, floor, 34, 58, "sandbag_finite"),

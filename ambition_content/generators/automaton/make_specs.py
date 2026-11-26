@@ -215,6 +215,9 @@ def life():
         flier(rid, "life_spaceship", 0, 1000, 640),
         flier(rid, "life_spaceship", 1, 1700, 720),
         flier(rid, "life_spaceship", 2, 1500, 380),
+        # A HighLife visitor near the terrace: the copy finale supplies the
+        # second phase of the encounter rather than placing copies up front.
+        flier(rid, "replicator", 0, 2130, 240, w=36, h=54),
     ]
     return build(rid, e, "THE LIFE FIELD", "automaton_life", dangerous=True)
 
