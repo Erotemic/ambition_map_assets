@@ -345,9 +345,10 @@ def reef():
     """Out of the port: the Wreckers' Reef. A galleon broken in two on the
     reef, and the wreckers who lured her with a false light on the shore.
     The shore (y 768) runs on from the docks; rocks and a boarding net up
-    to the stern (y 616) and its aft castle (y 520); the fallen mast over
-    the gap; the bow (y 672) and its mast stump (y 440, a ladder); rocks at
-    the east end. The sea from y 784."""
+    to the stern (y 616) and its aft castle (y 520). Ladders connect the
+    water in the gap to the stern and the bow (y 672). The bow has a ladder
+    to the mast stump (y 440). Rocks form the east exit. The sea starts at
+    y 784."""
     rid = REEF
     _, (w, h) = ROOMS_AT[rid]
     s0, s1, sd = REEF_STERN
@@ -536,6 +537,8 @@ LADDERS = [
     (DOCKS, SPANS[0][1] + 2, DECK - 16, SEA_FLOOR),
     (DOCKS, SPANS[1][1] + 2, DECK - 16, SEA_FLOOR),
     (DOCKS, MAINMAST - 16, 304 - 16, SHIP_DECK),
+    (REEF, (REEF_STERN[1] + 15) // 16 * 16, REEF_STERN[2] - 16, SEA_FLOOR),
+    (REEF, REEF_BOW[0] - 32, REEF_BOW[2] - 16, SEA_FLOOR),
     (REEF, REEF_STUMP[1], REEF_STUMP[2] - 16, REEF_BOW[2]),
     # Down the old well (its top over the floor, as the Fractal Woods' hole
     # down to the Mobius Mine), and on down the cellars' shaft.
