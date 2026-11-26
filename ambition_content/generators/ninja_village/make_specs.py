@@ -275,8 +275,8 @@ def tea_room():
     """Ume's tea house inside. Floor 448. The tea room, its hearth and
     tables; the step chest up to the loft and its two guest rooms, where a
     family who left before daylight forgot a child's sandals (Ume's talk)
-    and left a thank-you on the pillow. Tsuru the medicine seller is
-    staying."""
+    and left a thank-you on the pillow. Tsuru the medicine seller stays
+    in the east guest room."""
     rid = TEA
     _, (w, h) = ROOMS_AT[rid]
     g = 448
@@ -289,7 +289,7 @@ def tea_room():
         start(rid, 140, g),
         *[ledge(f"step_{i}", x0, top, x1 - x0) for i, (x0, x1, top) in enumerate(TEA_STEPS)],
         ledge("loft", TEA_LOFT[0], TEA_LOFT[2], TEA_LOFT[1] - TEA_LOFT[0]),
-        resident("npc_village_tsuru", "ninja_village_tsuru", 800, g),
+        resident("npc_village_tsuru", "ninja_village_tsuru", 868, TEA_LOFT[2]),
         entity("ChestSpawn", 610, TEA_LOFT[2] - 58, 76, 58, name="a thank-you, left on the pillow", reward="currency:20"),
     ]
     return build(rid, e, "UME'S TEA HOUSE")
