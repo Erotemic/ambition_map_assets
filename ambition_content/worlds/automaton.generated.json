@@ -7,6 +7,7 @@
     "automaton_works": "fca4d699d48bf920"
   },
   "ldtk_owned": [
+    "automaton_life",
     "automaton_works"
   ]
 }
