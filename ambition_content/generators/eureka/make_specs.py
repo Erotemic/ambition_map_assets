@@ -354,12 +354,17 @@ LAB_LEVER_X = 1192
 
 
 def observatory():
-    """The observatory: a dome. Ledges spiral up the wall to the telescope's
-    platform under the slit; Carl Stargan is at the eyepiece."""
+    """The spiral and east viewing stair meet at the telescope."""
     rid = DOME
     _, (w, h) = ROOMS_AT[rid]
     floor = h - 64
     platform = 320
+    viewing_stair = ((1120, 1264, 640), (1008, 1152, 560), (928, 1072, 480), (848, 992, 400))
+    ladder_top = viewing_stair[0][2] - 16
+    ladder = f"""
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [1232, {ladder_top}], size: [32, {floor - ladder_top}]),
+    ]),"""
     e = [
         solid("floor", 0, floor, w, 64),
         solid("dome", 0, 0, w, 32),
@@ -369,11 +374,12 @@ def observatory():
         start(rid, 140, floor),
         # Up the wall in steps of 80 (one jump), east then back west.
         *[ledge(f"stair_{k + 1}", x, floor - 80 * (k + 1), 160) for k, x in enumerate((240, 480, 720, 960, 720, 480, 240))],
+        *[ledge(f"viewing_stair_{i + 1}", x0, y, x1 - x0) for i, (x0, x1, y) in enumerate(viewing_stair)],
         ledge("telescope_platform", 320, platform, 480),
         resident("npc_carl_stargan", "eureka_stargan", 560, platform),
         sign("dome_sign_slit", 640, 72, "The station: a pale dot, directly overhead", 440),
     ]
-    return build(rid, e, None, music=DOME_MUSIC)
+    return build(rid, e, None, music=DOME_MUSIC, extra=ladder)
 
 
 def elevator_station():
