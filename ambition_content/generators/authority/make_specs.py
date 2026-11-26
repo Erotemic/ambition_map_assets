@@ -81,7 +81,8 @@ HALL_FLOOR = 1024
 CATWALK = (960, 1720, 512)
 STAIR_GAP = (1800, 2140)
 STEPS = ((2040, 2140, 768), (1940, 2040, 832), (1840, 1940, 896), (1740, 1840, 960))
-CONVEYOR = (300, 1200, 984)
+LIFT_SHAFT = (1120, 1280)
+CONVEYOR = (300, LIFT_SHAFT[0], 984)
 #: Authority Plaza.
 BALCONY = (16, 520, 448)
 PLAZA_STEPS = ((520, 600, 512), (600, 680, 576))
@@ -120,10 +121,12 @@ def concourse():
     g0, g1 = STAIR_GAP
     c0, c1, walk = CATWALK
     b0, b1, belt = CONVEYOR
+    lift_west, lift_east = LIFT_SHAFT
     e = [
         # The Concourse's floor, open over the stairwell; the baggage hall's
         # floor under it.
-        solid("floor_west", 0, FLOOR, g0, SLAB),
+        solid("floor_west", 0, FLOOR, lift_west, SLAB),
+        solid("floor_middle", lift_east, FLOOR, g0 - lift_east, SLAB),
         solid("floor_east", g1, FLOOR, w - g1, SLAB),
         solid("hall_floor", 0, HALL_FLOOR, w, h - HALL_FLOOR),
         solid("west_wall", 0, 0, WALL, HALL_FLOOR),
@@ -147,6 +150,11 @@ def concourse():
         sign("concourse_sign_baggage", (g0 + g1) // 2, FLOOR - 60, "BAGGAGE BELOW", 200),
         # The baggage hall.
         ledge("conveyor", b0, belt, b1 - b0),
+        ledge("baggage_lift_grate", lift_west, FLOOR, lift_east - lift_west),
+        entity("MovingPlatform", lift_west + 4, belt, lift_east - lift_west - 8, 16,
+               id="authority_concourse_baggage_lift", name="the baggage lift",
+               speed=105.0, lift_dy=float(FLOOR - belt), one_way=True, visual="authority_baggage_lift"),
+        sign("baggage_sign_lift", (lift_west + lift_east) // 2, 824, "BAGGAGE LIFT", 150),
         sign("baggage_sign_sentience", 750, 744, "ORGANIC TRAVELLERS' BAGS: PLEASE DECLARE ANY SENTIENCE", 540),
         sign("baggage_sign_lost", 1440, 744, "LOST BAGGAGE", 200),
         resident("npc_authority_baggage", "authority_baggage", 1440, HALL_FLOOR),

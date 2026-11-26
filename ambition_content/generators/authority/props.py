@@ -19,6 +19,7 @@ SCENERY = {
         ("authority_baggage_wall_west", 8, 696),
         ("authority_baggage_wall_east", 1176, 696),
         ("authority_baggage_hall", 16, 704),
+        ("authority_baggage_lift_shaft", 1100, 598),
         ("authority_stairwell", 1720, 620),
         ("authority_catwalk", 940, 470),
         ("authority_info_booth", 620, 400),
