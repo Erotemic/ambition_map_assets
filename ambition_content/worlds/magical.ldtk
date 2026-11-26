@@ -17367,18 +17367,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [117,36],
+							"__grid": [116,36],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 12247,
+							"__worldX": 12239,
 							"__worldY": 1344,
 							"iid": "Prop-1008622",
-							"width": 282,
+							"width": 291,
 							"height": 64,
 							"defUid": 4351,
-							"px": [1879,576],
+							"px": [1871,576],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "rift_pool", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
