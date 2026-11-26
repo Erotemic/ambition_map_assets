@@ -178,11 +178,11 @@ def plaza():
     return build(rid, e, "THE PIRATE PORT: THE GATE PLAZA")
 
 
+NET_ALLEY_DECKS = ((1984, 2080, 704), (2048, 2144, 624), (1952, 2048, 544), (2016, 2112, 464))
+
+
 def waterfront():
-    """The waterfront. The market street (y 768) runs the whole room; over it
-    the galleries of the houses (y 512), then the roofs (y 448, 384) step up
-    to the east. A stair by the chandler goes from the street to the
-    galleries, and a ladder by the tavern."""
+    """The waterfront. The west stair and east net alley join both roads."""
     rid = WATERFRONT
     _, (w, h) = ROOMS_AT[rid]
     street, gallery, roof_a, roof_b = 768, 512, 448, 384
@@ -207,6 +207,7 @@ def waterfront():
         ledge("gallery", 16, gallery, 1600 - 16),
         ledge("roof_chandlery", 1664, roof_a, 352),
         ledge("roof_net_loft", 2080, roof_b, w - 2080),
+        *[ledge(f"net_alley_deck_{i}", x0, top, x1 - x0) for i, (x0, x1, top) in enumerate(NET_ALLEY_DECKS)],
         # From the street to the galleries: the chandler's stair.
         ledge("chandler_stair_1", 400, street - 64, 96),
         ledge("chandler_stair_2", 480, street - 128, 96),

@@ -42,6 +42,7 @@ SCENERY = {
         ("port_lamp_post", 1612, 664),
         # The drain's hole in the street (seen when its grate is open).
         ("port_drain_shaft", 1682, 762),
+        ("port_net_alley", 1948, 450),
     ],
     "pirate_port_tavern": [
         ("port_tavern_room", 16, 32),

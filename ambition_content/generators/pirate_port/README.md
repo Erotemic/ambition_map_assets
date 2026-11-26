@@ -22,6 +22,8 @@ Run them from the repository root.
 
 - The low road: plaza floor, market street, pier. Two gaps of open water in
   the pier have a ladder out of each.
+- In the waterfront, the west stair leads to the gallery. The net decks
+  in the east alley lead to the chandlery and net loft roofs.
 - The high road: the brig's yards to her crow's nest (each step 112 px, a
   jump and a double jump), the rope to the warehouse roof, the gantry, the
   roofs and galleries of the waterfront, the harbour balcony, the plaza's
