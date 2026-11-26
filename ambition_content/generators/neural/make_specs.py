@@ -95,6 +95,13 @@ RACKS = ((1960, 2140, 896), (2180, 2360, 768))
 DECK = (1960, 2384, 640)
 #: The Echo Chamber.
 ECHO_FLOOR = 512
+ECHO_SEATS = (
+    ("west_lower_seats", 256, 384, 448),
+    ("west_upper_seats", 400, 512, 384),
+    ("viewing_balcony", 528, 848, 320),
+    ("east_upper_seats", 864, 976, 384),
+    ("east_lower_seats", 992, 1120, 448),
+)
 
 
 def side_walls(w, h, west, east):
@@ -269,6 +276,7 @@ def echo_chamber():
         door("echo_door", "out to the Weights", 64, floor, WEIGHTS, "weights_echo_door"),
         start(rid, 150, floor),
         resident("npc_neural_echo", "neural_echo", 640, floor),
+        *[ledge(name, left, top, right - left) for name, left, right, top in ECHO_SEATS],
     ]
     return build(rid, e, "THE ECHO CHAMBER", "neural_circuit")
 

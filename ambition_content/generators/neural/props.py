@@ -29,7 +29,10 @@ SCENERY = {
         ("neural_weights_racks", 1950, 600),
         ("neural_logic_gates", 1040, 830),
     ],
-    "neural_echo_chamber": [("neural_echo_screens", 16, 32)],
+    "neural_echo_chamber": [
+        ("neural_echo_screens", 16, 32),
+        ("neural_echo_viewing_balcony", 240, 268),
+    ],
 }
 
 
