@@ -18,6 +18,12 @@
   },
   "ldtk_owned": [
     "magical_gate_garden",
-    "magical_void_falls"
+    "magical_stardune_road",
+    "magical_starless_hollow",
+    "magical_starlight_square",
+    "magical_void_bridge",
+    "magical_void_falls",
+    "magical_void_keep",
+    "magical_void_rift"
   ]
 }
