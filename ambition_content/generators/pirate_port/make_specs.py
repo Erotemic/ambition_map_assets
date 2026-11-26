@@ -212,7 +212,6 @@ def waterfront():
         resident("npc_port_agnes", "pirate_port_agnes", 840, street),
         sign("chandler_sign", 840, street - 180, "AGNES: CHANDLER. Rope, tar, biscuits, remedies", 380),
         door("waterfront_tavern_door", "into The Drowned Compass", 1320, street, TAVERN, "tavern_door"),
-        sign("tavern_sign", 1344, street - 150, "THE DROWNED COMPASS", 260),
         sign("market_sign", 1900, street - 120, "Fish from three seas. Ask which.", 300),
         door("waterfront_loft_door", "into the sail loft", LOFT_DOOR_X, street, LOFT, "loft_door"),
         sign("loft_sign", LOFT_DOOR_X + 24, street - 140, "BOLT: SAILS & FLAGS", 240),

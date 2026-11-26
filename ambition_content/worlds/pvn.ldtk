@@ -18998,32 +18998,6 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [75,38],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 2814,
-							"__worldY": 554,
-							"iid": "DebugLabel-607743",
-							"width": 260,
-							"height": 24,
-							"defUid": 2007,
-							"px": [1214,618],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "tavern_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["tavern_sign"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "THE DROWNED COMPASS", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["THE DROWNED COMPASS"]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							]
-						},
-						{
-							"__identifier": "DebugLabel",
 							"__grid": [109,40],
 							"__pivot": [0,0],
 							"__tags": [],
