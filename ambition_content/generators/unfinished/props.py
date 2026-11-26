@@ -23,6 +23,7 @@ SCENERY = {
     "unfinished_draft": [
         ("unfinished_cranes", 680, 24),
         ("unfinished_spill", 540, 590),
+        ("unfinished_inspection_scaffold", 588, 488),
     ],
     "unfinished_site_office": [
         ("unfinished_office_wall", 0, 0),

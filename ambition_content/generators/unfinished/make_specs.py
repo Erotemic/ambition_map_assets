@@ -87,6 +87,12 @@ SCAFFOLD_STEPS = (
 GROUND_END = 600
 SLABS = ((700, 860, 640), (960, 1120, 576), (1220, 1380, 640), (1740, 1900, 640), (2000, 2160, 576))
 PAINTER = (1460, 1640, 560)
+INSPECTION_DECKS = (
+    ("spill_landing", 608, 640, 640),
+    ("west_inspection_deck", 640, 1008, 800),
+    ("east_inspection_deck", 1056, 1456, 768),
+)
+INSPECTION_LADDERS = ((656, 592, 800), (1408, 496, 768))
 CORNER = 2240
 VOID_TOP = 1120
 #: The Site Office.
@@ -162,7 +168,8 @@ def draft():
         *[solid(f"slab_{n}", x0, top, x1 - x0, 32) for n, (x0, x1, top) in enumerate(SLABS)],
         solid("painter_platform", p0, ptop, p1 - p0, 24),
         resident("npc_unfinished_subclause_painter", "unfinished_painter", 1590, ptop, w=28, h=40),
-        sign("draft_sign_idea", 1420, 820, "NOT YET BUILT. PLEASE DO NOT STAND ON THE IDEA.", 460),
+        *[ledge(name, x0, top, x1 - x0) for name, x0, x1, top in INSPECTION_DECKS],
+        sign("draft_sign_idea", 1800, 820, "NOT YET BUILT. PLEASE DO NOT STAND ON THE IDEA.", 460),
         # The built corner at the east end.
         solid("built_corner", CORNER, FLOOR, w - CORNER, h - FLOOR),
         solid("east_wall", w - WALL, 0, WALL, FLOOR),
@@ -177,7 +184,12 @@ def draft():
                name="unfinished_draft_feature_creep_0", brain="combatant",
                character_id="feature_creep", respawn="OnRoomReenter"),
     ]
-    return build(rid, e, "THE DRAFT", "unfinished_void", dangerous=True)
+    ladders = " ".join(
+        f'( kind: "Ladder", px: [{x}, {top}], size: [32, {bottom - top}] ),'
+        for x, top, bottom in INSPECTION_LADDERS
+    )
+    return build(rid, e, "THE DRAFT", "unfinished_void", dangerous=True,
+                 extra=f"\n    intgrid: (climbable: [{ladders}]),")
 
 
 def site_office():
