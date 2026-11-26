@@ -43,6 +43,11 @@ The canvas shelves lead to the gallery above the sail. The ladder
 beside Bolt's bench leads to the other end of the gallery. A chest
 on the gallery holds a spare patch kit.
 
+## Smugglers' Hoard
+
+Climb the coin pile to reach the chest. Go back down the pile to the
+plank passage.
+
 ## The problem
 
 The wind took page eleven of Ines's freight log to the crow's nest of the

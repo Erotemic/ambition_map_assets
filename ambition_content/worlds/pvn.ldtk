@@ -11,7 +11,7 @@
 	"iid": "ambition-pvn-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 901212,
+	"nextUid": 901219,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -14822,19 +14822,48 @@
 							}] }]
 						},
 						{
+							"__identifier": "SurfaceChain",
+							"__grid": [7,31],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": 3760,
+							"__worldY": 1328,
+							"iid": "SurfaceChain-901218",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [112,496],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "coin pile", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["coin pile"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "112,576; 144,576; 200,552; 244,520; 280,496; 384,496; 436,532; 496,576", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["112,576; 144,576; 200,552; 244,520; 280,496; 384,496; 436,532; 496,576"]
+								}] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 7681, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "ChestSpawn",
-							"__grid": [20,32],
+							"__grid": [18,27],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#F6C85F",
-							"__worldX": 3978,
-							"__worldY": 1350,
+							"__worldX": 3948,
+							"__worldY": 1270,
 							"iid": "ChestSpawn-900890",
 							"width": 76,
 							"height": 58,
 							"defUid": 2016,
-							"px": [330,518],
+							"px": [300,438],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "the last smuggler's chest", "__tile": null, "defUid": 3041, "realEditorValues": [{
 									"id": "V_String",
@@ -14848,18 +14877,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [4,6],
+							"__grid": [6,20],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 3714,
-							"__worldY": 942,
+							"__worldX": 3744,
+							"__worldY": 1164,
 							"iid": "DebugLabel-900891",
-							"width": 380,
+							"width": 320,
 							"height": 24,
 							"defUid": 2007,
-							"px": [66,110],
+							"px": [96,332],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hoard_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",

@@ -533,10 +533,15 @@ def tunnel():
     return build(rid, e, "THE SMUGGLERS' TUNNEL", music=DOCK_MUSIC)
 
 
+HOARD_CREST = 496
+HOARD_HEAP = ((112, CELLARS_FLOOR), (144, CELLARS_FLOOR), (200, 552), (244, 520), (280, HOARD_CREST),
+              (384, HOARD_CREST), (436, 532), (496, CELLARS_FLOOR))
+
+
 def hoard():
     """Behind the tunnel's plank wall: the smugglers' hoard, coin heaped, a
     figurehead, somebody's grandmother in oils, a crown on a skull; the last
-    smuggler, sat against the chest, who kept it."""
+    smuggler beside the chest. The coin pile rises to the chest."""
     rid = HOARD
     _, (w, h) = ROOMS_AT[rid]
     g, top = CELLARS_FLOOR, CELLARS_CEIL
@@ -547,8 +552,10 @@ def hoard():
         solid("east_wall", w - WALL, top, WALL, g - top),
         edge("secret_hoard_west", "back through the planks to the tunnel", 0, g, TUNNEL, "secret_tunnel_east"),
         start(rid, 100, g),
-        entity("ChestSpawn", 330, g - 58, 76, 58, name="the last smuggler's chest", reward="currency:150"),
-        sign("hoard_sign", 256, 110, "FINDERS KEEPERS (signed, the finders)", 380),
+        entity("SurfaceChain", 112, HOARD_CREST, 16, 16, name="coin pile",
+               points="; ".join(f"{x},{y}" for x, y in HOARD_HEAP), visual="none"),
+        entity("ChestSpawn", 300, HOARD_CREST - 58, 76, 58, name="the last smuggler's chest", reward="currency:150"),
+        sign("hoard_sign", 256, 332, "FINDERS KEEPERS (signed, the finders)", 320),
     ]
     return build(rid, e, "THE SMUGGLERS' HOARD", music=DOCK_MUSIC)
 
