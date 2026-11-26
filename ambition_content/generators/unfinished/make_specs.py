@@ -19,7 +19,7 @@ Site Office is the cabin's inside, so its way in is a door:
 
 - `unfinished_staging`: the gate and terminal; the site cabin and its door;
   Subclause 4(b) at the survey post; the half-painted trees; the scaffold
-  (decks at 512 and 384, a chest on top).
+  (access steps, two main decks, and a chest on top).
 - `unfinished_draft`: the built ground ends; slabs on cranes' cables over
   the void, a jump apart, the painter's platform among them with Subclause
   4(c); the outlines between are drawings and hold nothing; a built corner
@@ -77,6 +77,12 @@ FLOOR = 640
 CABIN_DOOR_X = 716
 SCAFFOLD = (1800, 2040)
 DECKS = (512, 384)
+SCAFFOLD_STEPS = (
+    ("survey_step", 1648, 1760, 576),
+    ("east_upper", 2032, 2144, 448),
+    ("east_middle", 2128, 2240, 512),
+    ("east_step", 2208, 2320, 576),
+)
 #: The Draft.
 GROUND_END = 600
 SLABS = ((700, 860, 640), (960, 1120, 576), (1220, 1380, 640), (1740, 1900, 640), (2000, 2160, 576))
@@ -135,6 +141,7 @@ def staging():
         sign("staging_sign_dust", 1440, 260, "PARDON OUR DUST: A WORLD IS UNDER CONSTRUCTION", 460),
         # The scaffold.
         *[ledge(f"scaffold_deck_{n}", s0 - 6, top, s1 - s0 + 12) for n, top in enumerate(DECKS)],
+        *[ledge(f"scaffold_{name}", left, top, right - left) for name, left, right, top in SCAFFOLD_STEPS],
         sign("staging_sign_soon", (s0 + s1) // 2, DECKS[1] + 44, "EXPECTED COMPLETION: SOON", 260),
         chest("a TODO", "currency:30", 1880, DECKS[1]),
     ]

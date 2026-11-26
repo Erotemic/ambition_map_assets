@@ -18,7 +18,7 @@ SCENERY = {
         ("unfinished_half_trees", 1170, 330),
         ("unfinished_site_cabin", 580, 440),
         ("unfinished_survey_post", 920, 520),
-        ("unfinished_scaffold", 1780, 330),
+        ("unfinished_scaffold", 1632, 330),
     ],
     "unfinished_draft": [
         ("unfinished_cranes", 680, 24),
