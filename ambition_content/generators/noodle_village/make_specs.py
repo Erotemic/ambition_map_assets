@@ -204,7 +204,7 @@ def raft(rid, n, x, y, w, sweep, speed):
     """A cork that drifts on the soda: a one-way platform that sweeps
     `sweep` px along and back."""
     return entity("MovingPlatform", x, y, w, 16, id=f"{rid}_cork_{n}", name=f"a cork {n}", sweep_dx=float(sweep),
-                  speed=float(speed), one_way=True)
+                  speed=float(speed), one_way=True, visual="noodle_caldera_cork")
 
 
 # ---------------------------------------------------------------- the village
@@ -519,9 +519,11 @@ def slopes():
 LAKE = (400, 1520, TUBE + 16, 992)
 EAST_RIM_X0 = 1680
 CRUST = [(408, 320), (656, 352), (904, 320), (1152, 352), (1400, 320)]
+CORK_STOPS = [(688, 752, 800), (1040, 1104, 784)]
 #: The bubble lift stands between the last crust and the east rim, so that
 #: it rises through nothing.
 LIFT_X = 1568
+LIFT_CREST = RIM - 64
 
 
 def caldera():
@@ -540,25 +542,26 @@ def caldera():
         solid("west_rim", 0, RIM, 320, 32),
         ledge("east_rim", EAST_RIM_X0, RIM, w - WALL - EAST_RIM_X0),
         *[ledge(f"crust_{n}", x, y, 160) for n, (x, y) in enumerate(CRUST)],
+        *[ledge(f"cork_stop_{n}", left, top, right - left) for n, (left, right, top) in enumerate(CORK_STOPS)],
         *walls(rid, "west", h, [RIM, TUBE]),
         solid("east_wall", w - WALL, 0, WALL, TUBE),
         edge("caldera_west_rim", "back over the rim", 0, RIM, SLOPES, "slopes_east_rim"),
         edge("caldera_west_tube", "back through the soda tube", 0, TUBE, SLOPES, "slopes_east_tube"),
         start(rid, 160, TUBE),
+        piece("noodle_fizzuvius_caldera_fixtures", 16, 160, px=1.25),
         raft(rid, 1, 440, surface - 24, 96, 200, 60),
         raft(rid, 2, 760, surface - 24, 96, 240, 75),
         raft(rid, 3, 1120, surface - 24, 96, 240, 90),
-        # The bubble lift: it rests on the shore, and the fizz carries a body
-        # that stands on it up to the east rim.
+        # The lift goes above the rim before it goes down. Step off onto the rim.
         entity("MovingPlatform", LIFT_X, TUBE - 16, 96, 16, id=f"{rid}_bubble_lift", name="the bubble lift",
-               lift_dy=float(RIM - (TUBE - 16)), speed=150.0, one_way=True),
-        sign("caldera_sign_lake", 960, surface - 150, "THE LAKE OF FIZZUVIUS. Corks float. You do not.", 460),
-        sign("caldera_sign_lift", LIFT_X + 48, TUBE - 120, "BUBBLE LIFT: stand still and think fizzy thoughts", 420),
-        sign("caldera_sign_mint", 1740, RIM - 140, "THE MINT. It plugged the vent for a thousand years. Please do "
-             "not put it back.", 300),
+               lift_dy=float(LIFT_CREST - (TUBE - 16)), speed=150.0, one_way=True, visual="noodle_caldera_bubble_car"),
+        sign("caldera_sign_lake", 240, 728, "CORKS FLOAT. YOU DO NOT.", 272),
+        sign("caldera_sign_lift", 1700, 710, "BUBBLE LIFT. Stand still and think fizzy thoughts.", 372),
+        sign("caldera_sign_mint", 1760, 186, "THE MINT PLUGGED THIS VENT.", 264),
+        sign("caldera_sign_vent", 1760, 211, "DO NOT PUT IT BACK.", 264),
         chest("the Mint of Fizzuvius", "currency:250", 1780, RIM),
-        noodling(rid, 1, 700, surface - 120),
-        noodling(rid, 2, 1200, surface - 200),
+        noodling(rid, 1, 768, 655),
+        noodling(rid, 2, 1472, 680),
         parrot(rid, 1, 960, 260),
     ]
     return build(rid, e + [blurb(rid, "The crater of the soda volcano: a lake of soda, still fizzing from the last "

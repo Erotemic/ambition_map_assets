@@ -11,7 +11,7 @@
 	"iid": "ambition-noodle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 800309,
+	"nextUid": 800328,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -24261,10 +24261,10 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -24529,6 +24529,31 @@
 							}] }]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [1,11],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 73616,
+							"__worldY": 1590,
+							"iid": "Prop-800316",
+							"width": 1888,
+							"height": 684,
+							"defUid": 4351,
+							"px": [16,182],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "noodle_fizzuvius_caldera_fixtures", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodle_fizzuvius_caldera_fixtures"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "noodle_fizzuvius_caldera_fixtures", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodle_fizzuvius_caldera_fixtures"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "MovingPlatform",
 							"__grid": [27,51],
 							"__pivot": [0,0],
@@ -24553,6 +24578,10 @@
 								}] },
 								{ "__identifier": "sweep_dx", "__type": "Float", "__value": 200.0, "__tile": null, "defUid": 4249, "realEditorValues": [{ "id": "V_Float", "params": [200.0] }] },
 								{ "__identifier": "speed", "__type": "Float", "__value": 60.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [60.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "noodle_caldera_cork", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodle_caldera_cork"]
+								}] },
 								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ true ]
@@ -24584,6 +24613,10 @@
 								}] },
 								{ "__identifier": "sweep_dx", "__type": "Float", "__value": 240.0, "__tile": null, "defUid": 4249, "realEditorValues": [{ "id": "V_Float", "params": [240.0] }] },
 								{ "__identifier": "speed", "__type": "Float", "__value": 75.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [75.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "noodle_caldera_cork", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodle_caldera_cork"]
+								}] },
 								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ true ]
@@ -24615,6 +24648,10 @@
 								}] },
 								{ "__identifier": "sweep_dx", "__type": "Float", "__value": 240.0, "__tile": null, "defUid": 4249, "realEditorValues": [{ "id": "V_Float", "params": [240.0] }] },
 								{ "__identifier": "speed", "__type": "Float", "__value": 90.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [90.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "noodle_caldera_cork", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodle_caldera_cork"]
+								}] },
 								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ true ]
@@ -24645,7 +24682,11 @@
 									"params": ["the bubble lift"]
 								}] },
 								{ "__identifier": "speed", "__type": "Float", "__value": 150.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [150.0] }] },
-								{ "__identifier": "lift_dy", "__type": "Float", "__value": -496.0, "__tile": null, "defUid": 6955, "realEditorValues": [{ "id": "V_Float", "params": [-496.0] }] },
+								{ "__identifier": "lift_dy", "__type": "Float", "__value": -560.0, "__tile": null, "defUid": 6955, "realEditorValues": [{ "id": "V_Float", "params": [-560.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "noodle_caldera_bubble_car", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodle_caldera_bubble_car"]
+								}] },
 								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
 									"id": "V_Bool",
 									"params": [ true ]
@@ -24654,78 +24695,104 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [45,43],
+							"__grid": [6,45],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 74330,
-							"__worldY": 2106,
-							"iid": "DebugLabel-800150",
-							"width": 460,
+							"__worldX": 73704,
+							"__worldY": 2136,
+							"iid": "DebugLabel-800321",
+							"width": 272,
 							"height": 24,
 							"defUid": 2007,
-							"px": [730,698],
+							"px": [104,728],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "caldera_sign_lake", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["caldera_sign_lake"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "THE LAKE OF FIZZUVIUS. Corks float. You do not.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "CORKS FLOAT. YOU DO NOT.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["THE LAKE OF FIZZUVIUS. Corks float. You do not."]
+									"params": ["CORKS FLOAT. YOU DO NOT."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [87,44],
+							"__grid": [94,44],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 75006,
-							"__worldY": 2120,
-							"iid": "DebugLabel-800151",
-							"width": 420,
+							"__worldX": 75114,
+							"__worldY": 2118,
+							"iid": "DebugLabel-800322",
+							"width": 372,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1406,712],
+							"px": [1514,710],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "caldera_sign_lift", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["caldera_sign_lift"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "BUBBLE LIFT: stand still and think fizzy thoughts", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "BUBBLE LIFT. Stand still and think fizzy thoughts.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["BUBBLE LIFT: stand still and think fizzy thoughts"]
+									"params": ["BUBBLE LIFT. Stand still and think fizzy thoughts."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [99,11],
+							"__grid": [101,11],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 75190,
-							"__worldY": 1588,
-							"iid": "DebugLabel-800210",
-							"width": 300,
+							"__worldX": 75228,
+							"__worldY": 1594,
+							"iid": "DebugLabel-800323",
+							"width": 264,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1590,180],
+							"px": [1628,186],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "caldera_sign_mint", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["caldera_sign_mint"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "THE MINT. It plugged the vent for a thousand years. Please do not put it back.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "THE MINT PLUGGED THIS VENT.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["THE MINT. It plugged the vent for a thousand years. Please do not put it back."]
+									"params": ["THE MINT PLUGGED THIS VENT."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [101,13],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 75228,
+							"__worldY": 1619,
+							"iid": "DebugLabel-800324",
+							"width": 264,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1628,211],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "caldera_sign_vent", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["caldera_sign_vent"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "DO NOT PUT IT BACK.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["DO NOT PUT IT BACK."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -24757,18 +24824,18 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [42,43],
+							"__grid": [46,38],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
-							"__worldX": 74280,
-							"__worldY": 2096,
-							"iid": "EnemySpawn-800154",
+							"__worldX": 74348,
+							"__worldY": 2023,
+							"iid": "EnemySpawn-800326",
 							"width": 40,
 							"height": 40,
 							"defUid": 2008,
-							"px": [680,688],
+							"px": [748,615],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "noodle_fizzuvius_caldera_npc_fsm_noodling_1", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
@@ -24790,18 +24857,18 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [73,38],
+							"__grid": [90,40],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
-							"__worldX": 74780,
-							"__worldY": 2016,
-							"iid": "EnemySpawn-800155",
+							"__worldX": 75052,
+							"__worldY": 2048,
+							"iid": "EnemySpawn-800327",
 							"width": 40,
 							"height": 40,
 							"defUid": 2008,
-							"px": [1180,608],
+							"px": [1452,640],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "noodle_fizzuvius_caldera_npc_fsm_noodling_2", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
