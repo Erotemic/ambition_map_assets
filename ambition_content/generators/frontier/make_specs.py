@@ -335,10 +335,11 @@ def wet_whistle():
         # Mae behind the bar; Elias at a table.
         resident("npc_frontier_barkeep", "frontier_barkeep", 884, floor),
         resident("npc_frontier_prospector", "frontier_prospector", 380, floor),
-        # The stair to the balcony over the bar: a landing a jump up, then the
-        # balcony a jump over it.
-        ledge("whistle_stair", 672, floor - 80, 112),
-        ledge("whistle_balcony", 240, balcony, 448),
+        # The entrance steps and the bar lead up to the balcony.
+        ledge("whistle_entry_step", 144, 448, 80),
+        ledge("whistle_entry_landing", 176, 400, 64),
+        ledge("whistle_stair", 672, floor - 80, 320),
+        ledge("whistle_balcony", 240, balcony, 752),
         # The stage at the east end, where the piano is.
         solid("whistle_stage", 1008, floor - 48, w - WALL - 1008, 48),
         sign("whistle_sign_drinks", 440, 120, "WATER 2  -  COFFEE 3  -  WHISKEY 5  -  COOLANT (DO NOT DRINK) 1", 640),
