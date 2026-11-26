@@ -94,7 +94,9 @@ GARDEN_PERCH = (1280, 1392, 512)
 OFFICE_DOOR_X = 2206
 #: The Manifest Office.
 CHAIRS = (420, 820, 604)
+SORTING_COUNTER = (896, 1232, 560)
 CABINETS = ((1240, 1400, 512), (1400, 1584, 384))
+FILE_TRAY = (1312, 1392, 448)
 
 
 def blurb(rid, x):
@@ -206,6 +208,8 @@ def manifest_office():
     rid = OFFICE
     w, h = ROOMS_AT[rid][1]
     a0, a1, seat = CHAIRS
+    c0, c1, counter_top = SORTING_COUNTER
+    t0, t1, tray_top = FILE_TRAY
     e = [
         solid("floor", 0, FLOOR, w, h - FLOOR),
         solid("ceiling", 0, 0, w, 32),
@@ -216,9 +220,11 @@ def manifest_office():
         sign("office_sign_ticket", 260, 448, "TAKE A NUMBER", 200),
         sign("office_sign_serving", 650, 238, "NOW SERVING: 4,096", 240),
         ledge("chairs", a0, seat, a1 - a0),
+        ledge("sorting_counter", c0, counter_top, c1 - c0),
         resident("npc_authority_registrar", "authority_registrar", 1060, FLOOR),
         sign("office_sign_corrected", 1160, 420, "CORRECTED", 160),
         *[solid(f"cabinet_{n}", x0, top, x1 - x0, FLOOR - top) for n, (x0, x1, top) in enumerate(CABINETS)],
+        ledge("extended_file_tray", t0, tray_top, t1 - t0),
         chest("a corrected record", "currency:40", 1450, CABINETS[1][2]),
     ]
     return build(rid, e, "THE MANIFEST OFFICE", "authority_hall")
