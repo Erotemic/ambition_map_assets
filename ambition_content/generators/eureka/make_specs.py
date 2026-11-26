@@ -619,10 +619,9 @@ def first_lab():
 
 #: QED-TV's door on the lecture hall's terrace (quad x).
 QED_DOOR_X = 1660
-#: The studio's lighting grid (x0, x1, y) and its ladder (x), in room
-#: coordinates (`eureka_qed_props.py` draws on these).
+#: The two overhead walks use these room coordinates in the prop art.
 QED_GRID = (600, 1580, 340)
-QED_LADDER_X = 600
+QED_PRODUCTION_WALK = (1616, 2000, 400)
 
 
 def qed_studios():
@@ -636,6 +635,12 @@ def qed_studios():
     _, (w, h) = ROOMS_AT[rid]
     floor, ceiling = h - 64, 32
     g0, g1, gy = QED_GRID
+    bx0, bx1, by = QED_PRODUCTION_WALK
+    ladders = f"""
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [592, 320], size: [48, {floor - 320}]),
+        (kind: "Ladder", px: [1952, {by - 16}], size: [32, {floor - by + 16}]),
+    ]),"""
     e = [
         solid("floor", 0, floor, w, 64),
         solid("ceiling", 0, 0, w, ceiling),
@@ -653,6 +658,7 @@ def qed_studios():
         ledge("anchor_desk", 780, floor - 56, 180),
         resident("npc_will_force", "eureka_will_force", 1000, floor, h=74),
         walk("lighting_grid", g0, gy, g1 - g0),
+        walk("production_walk", bx0, by, bx1 - bx0),
         entity("ChestSpawn", 1120, gy - 58, 76, 58, name="a box of spare bow ties", reward="currency:40"),
         ledge("demonstration_bench", 1320, floor - 48, 200),
         sign("qed_sign_demonstration", 1420, floor - 272, "DEMONSTRATION AREA: goggles past this line", 440),
@@ -664,7 +670,7 @@ def qed_studios():
         sign("qed_sign_production", 1810, 72, "PRODUCTION: quiet when the light is red", 420),
         sign("qed_sign_weather", 2060, 250, "WEATHER CENTRE: the wall is green; the forecast is not", 300),
     ]
-    return build(rid, e, None, music=LAB_MUSIC)
+    return build(rid, e, None, music=LAB_MUSIC, extra=ladders)
 
 
 # The buildings first (they move out of the plant's way).
@@ -697,9 +703,6 @@ def main(argv):
         if code:
             return code
     if code := paint(WORLD_LDTK, QUAD, "Climbable", 1, MANHOLE[0] + 16, 768 - 80, 32, 896 - 768 + 80):
-        return code
-    # The ladder up to QED-TV's lighting grid.
-    if code := paint(WORLD_LDTK, QED, "Climbable", 1, QED_LADDER_X, QED_GRID[2] - 16, 32, 704 - 64 - QED_GRID[2] + 16):
         return code
     code, _ = run("validate", str(WORLD_LDTK))
     return code
