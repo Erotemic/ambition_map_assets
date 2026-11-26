@@ -11,7 +11,7 @@
 	"iid": "ambition-history-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1213184,
+	"nextUid": 1213220,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -64034,6 +64034,31 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [67,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 12272,
+							"__worldY": 6063,
+							"iid": "Prop-1213192",
+							"width": 1252,
+							"height": 273,
+							"defUid": 4351,
+							"px": [1072,303],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "history_hillfort_walk", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["history_hillfort_walk"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "history_hillfort_walk", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["history_hillfort_walk"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "PlayerStart",
 							"__grid": [9,33],
 							"__pivot": [0,0],
@@ -64141,27 +64166,31 @@
 							]
 						},
 						{
-							"__identifier": "Prop",
-							"__grid": [83,30],
+							"__identifier": "SurfaceChain",
+							"__grid": [104,20],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#9966CC",
-							"__worldX": 12536,
-							"__worldY": 6240,
-							"iid": "Prop-1210327",
-							"width": 128,
-							"height": 96,
-							"defUid": 4351,
-							"px": [1336,480],
+							"__smartColor": "#7ED957",
+							"__worldX": 12864,
+							"__worldY": 6080,
+							"iid": "SurfaceChain-1213197",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1664,320],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "palisade_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "hillfort_east_ramp", "__tile": null, "defUid": 6811, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["palisade_2"]
+									"params": ["hillfort_east_ramp"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "history_palisade", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "points", "__type": "String", "__value": "1664,336; 1696,336; 2240,512; 2320,512", "__tile": null, "defUid": 6812, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["history_palisade"]
+									"params": ["1664,336; 1696,336; 2240,512; 2320,512"]
+								}] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 7681, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
 								}] }
 							]
 						},
@@ -64226,18 +64255,18 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [131,32],
+							"__grid": [99,17],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
-							"__worldX": 13300,
-							"__worldY": 6276,
+							"__worldX": 12784,
+							"__worldY": 6036,
 							"iid": "EnemySpawn-1210330",
 							"width": 34,
 							"height": 60,
 							"defUid": 2008,
-							"px": [2100,516],
+							"px": [1584,276],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "history_celtic_frontier_vandal_2", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
@@ -64255,6 +64284,32 @@
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
 								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [135,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 13375,
+							"__worldY": 6194,
+							"iid": "DebugLabel-1213219",
+							"width": 230,
+							"height": 24,
+							"defUid": 2007,
+							"px": [2175,434],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "celtic_sign_ramp", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["celtic_sign_ramp"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "THE HILLFORT WALK", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["THE HILLFORT WALK"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{

@@ -61,6 +61,7 @@ sys.path.insert(0, str(TOOL_SPECS))
 sys.path.insert(0, str(TOOL_SPECS / "gate_network"))
 
 from district_kit import WALL, WORLDS, edge, ensure_world, entity, door, ledge, make_rooms, pad, prop, resident, room, run, sign, solid, start, water  # noqa: E402
+from district_scenery import piece  # noqa: E402
 
 import gates  # noqa: E402
 from blurbs import BLURB  # noqa: E402
@@ -1550,18 +1551,23 @@ def celtic_frontier():
     """The Celtic frontier, 100 CE: hillforts and the edge of Rome. The
     way down at the east end goes to Rome."""
     rid = "history_celtic_frontier"
+    crest = FLOOR - 240
+    landing = FLOOR - 64
     e = [
+        piece("history_hillfort_walk", 1072, 302),
         start(rid, 160, FLOOR),
         prop_at("palisade_1", "history_palisade", 380, FLOOR, 128, 96),
         npc("history_boudic_car", 600, FLOOR, 70),
         enemy(rid, 1, "vandal", 900, FLOOR),
         ledge("hillfort_a", 1080, FLOOR - 80, 192),
         ledge("hillfort_b", 1300, FLOOR - 160, 192),
-        ledge("hillfort_c", 1520, FLOOR - 240, 192),
-        prop_at("palisade_2", "history_palisade", 1400, FLOOR, 128, 96),
+        ledge("hillfort_c", 1520, crest, 192),
+        entity("SurfaceChain", 1664, crest - 16, 16, 16, name="hillfort_east_ramp",
+               points=f"1664,{crest}; 1696,{crest}; 2240,{landing}; 2320,{landing}", visual="none"),
         enemy(rid, 1, "steppe_wolf", 1700, FLOOR),
         sign("celtic_sign", 1400, 140, "THE CELTIC FRONTIER: hillforts, torcs and a very long wall", 560),
-        enemy(rid, 2, "vandal", 2100, FLOOR),
+        enemy(rid, 2, "vandal", 1584, crest),
+        sign("celtic_sign_ramp", 2290, FLOOR - 142, "THE HILLFORT WALK", 230),
         prop_at("palisade_3", "history_palisade", 2400, FLOOR, 128, 96),
         sign("celtic_sign_down", 2680, FLOOR - 260, "DOWN: Rome", 160),
     ]
