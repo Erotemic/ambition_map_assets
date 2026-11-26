@@ -133,10 +133,10 @@ def local(rid, world_y):
     return world_y - ROOMS_AT[rid][0][1]
 
 
-def build(rid, entities, title, music, dangerous=False):
+def build(rid, entities, title, music, dangerous=False, extra=""):
     at, size = ROOMS_AT[rid]
     return rid, room(rid, entities, at=at, size=size, biome=BIOME, music=music, bg=BG, title=title,
-                     generator=GENERATOR, dangerous=dangerous)
+                     generator=GENERATOR, dangerous=dangerous, extra=extra)
 
 
 def blurb(rid, text, x, y, w=620):
@@ -471,19 +471,22 @@ TUBE = 832
 #: The upper slope: rock candy outcrops (x0, y), each 160 wide: west from
 #: the tube's shelf, then east up to the rim.
 SLOPE_OUTCROPS = [(1600, 768), (1408, 704), (1216, 640), (1024, 576), (1216, 512), (1408, 448), (1600, 384)]
+SLOPE_LANDINGS = [(768, 912, 704), (912, 1040, 640)]
+SLOPE_LADDER = (800, 672, 48, SLOPE_SHELVES[2][2] - 672)
 
 
 def slopes():
     """THE SLOPES OF FIZZUVIUS. The flank of the volcano: shelves of rock
     candy, and the soda that runs down between them in channels. The low
-    road ends at the soda tube into the caldera; the outcrops above it
-    climb back west and then up to the rim."""
+    road leads to the soda tube. A ladder from the first dry shelf leads
+    to the thermos ledge. The two climbs join there."""
     rid = SLOPES
     _, (w, h) = ROOMS_AT[rid]
     e = [ground(f"shelf_{n}", x0, x1, top, h) for n, (x0, x1, top) in enumerate(SLOPE_SHELVES)]
     for n, (x0, x1, surface, bed) in enumerate(SLOPE_CHANNELS):
         e += [ground(f"channel_{n}_bed", x0, x1, bed, h), soda(rid, n, x0, surface, x1, bed)]
     e += [ledge(f"outcrop_{n}", x, y, 160) for n, (x, y) in enumerate(SLOPE_OUTCROPS)]
+    e += [ledge(f"ladder_landing_{n}", x0, top, x1 - x0) for n, (x0, x1, top) in enumerate(SLOPE_LANDINGS)]
     e += [
         solid("rim_shelf", 1760, RIM, w - 1760, 32),
         *walls(rid, "west", h, [SLOPE_SHELVES[0][2]]),
@@ -492,16 +495,22 @@ def slopes():
         edge("slopes_east_tube", "into the soda tube", w - WALL, TUBE, CALDERA, "caldera_west_tube"),
         edge("slopes_east_rim", "over the rim", w - WALL, RIM, CALDERA, "caldera_west_rim"),
         start(rid, 120, SLOPE_SHELVES[0][2]),
-        sign("slopes_sign_danger", 640, 1000, "DANGER: CARBONATED", 260),
-        sign("slopes_sign_mint", 1100, 360, "FIZZUVIUS has slept for a thousand years. Someone took the mint out.", 560),
+        piece("noodle_fizzuvius_slopes_fixtures", 336, 208, px=1.25),
+        sign("slopes_sign_danger", 452, 1064, "DANGER: CARBONATED", 224),
+        sign("slopes_sign_mint", 1104, 448, "FIZZUVIUS has slept for a thousand years. Someone took the mint out.", 560),
         chest("a pilgrim's lost thermos", "health:2", 1044, 576),
         spaghetti(rid, 1, 1080, 1024),
         spaghetti(rid, 2, 1480, 960),
-        parrot(rid, 1, 700, 500),
+        parrot(rid, 1, 1452, 420),
     ]
+    x, y, width, height = SLOPE_LADDER
+    ladder = f"""
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [{x}, {y}], size: [{width}, {height}]),
+    ]),"""
     return build(rid, e + [blurb(rid, "The flank of the soda volcano. The rock is rock candy; the streams are not "
                                  "water.", w // 2, 72)],
-                 "MOUNT FIZZUVIUS: THE SLOPES", VOLCANO_MUSIC, dangerous=True)
+                 "MOUNT FIZZUVIUS: THE SLOPES", VOLCANO_MUSIC, dangerous=True, extra=ladder)
 
 
 #: The caldera: the west rim, the shore at the tube, the lake of soda
