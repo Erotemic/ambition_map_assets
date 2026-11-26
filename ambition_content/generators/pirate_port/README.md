@@ -15,7 +15,7 @@ Run them from the repository root.
 | --- | --- | --- |
 | `pirate_port_gate_plaza` | the gate plaza; the ring's freight booth; a stair up to the harbour balcony | Ines (dock clerk), Tomas (gate-sick traveller) |
 | `pirate_port_waterfront` | the market street; the galleries and roofs of the houses over it | Agnes (chandler, sells) |
-| `pirate_port_tavern` | The Drowned Compass | Lark (keeper), Broadside Bess of the cove |
+| `pirate_port_tavern` | The Drowned Compass. The ladder and the bar lead to the chart gallery. | Lark (keeper), Broadside Bess of the cove |
 | `pirate_port_docks` | the pier, the brig Persistence, the warehouse and the gantry; the door to the pirate cove | Jory (fisherman), Bram (harbour master) |
 
 ## The roads

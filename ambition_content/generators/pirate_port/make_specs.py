@@ -225,9 +225,13 @@ def waterfront():
     return build(rid, e, "THE WATERFRONT")
 
 
+TAVERN_GALLERY = (192, 624, 224)
+TAVERN_KEG_STEP = (624, 720, 288)
+TAVERN_LADDER_X = 160
+
+
 def tavern():
-    """The Drowned Compass: one room, the counter at the east end. Lark keeps
-    it; Broadside Bess of the cove drinks in it."""
+    """The Drowned Compass. A ladder and the bar lead to the chart gallery."""
     rid = TAVERN
     _, (w, h) = ROOMS_AT[rid]
     floor, ceiling = h - 64, 32
@@ -239,6 +243,8 @@ def tavern():
         door("tavern_door", "out to the waterfront", 40, floor, WATERFRONT, "waterfront_tavern_door"),
         start(rid, 140, floor),
         ledge("counter", 720, floor - 40, 240),
+        ledge("keg_step", TAVERN_KEG_STEP[0], TAVERN_KEG_STEP[2], TAVERN_KEG_STEP[1] - TAVERN_KEG_STEP[0]),
+        ledge("chart_gallery", TAVERN_GALLERY[0], TAVERN_GALLERY[2], TAVERN_GALLERY[1] - TAVERN_GALLERY[0]),
         resident("npc_port_wren", "pirate_port_wren", 680, floor),
         resident("npc_pirate_heavy_broadside_bess", "pirate_port_bess", 400, floor, w=64, h=96),
         sign("tavern_sign_rules", 520, ceiling + 40, "No duels. No gate talk before noon.", 360),
@@ -568,6 +574,7 @@ ROOMS = (tavern, sail_loft, hoard, tunnel, cellars, plaza, waterfront, docks, re
 #: The ladders out of the two gaps of open water, and up the mainmast
 #: (painted on the `Climbable` layer): (room, x, top, bottom).
 LADDERS = [
+    (TAVERN, TAVERN_LADDER_X, TAVERN_GALLERY[2] - 32, ROOMS_AT[TAVERN][1][1] - 64),
     (LOFT, LOFT_LADDER_X, LOFT_GALLERY[2] - 16, ROOMS_AT[LOFT][1][1] - 64),
     (DOCKS, SPANS[0][1] + 2, DECK - 16, SEA_FLOOR),
     (DOCKS, SPANS[1][0] - 32, DECK - 16, SEA_FLOOR),
