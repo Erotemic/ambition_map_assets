@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 8490,
+	"nextUid": 8491,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -9754,7 +9754,11 @@
 									"id": "V_String",
 									"params": ["hall_entry"]
 								}] },
-								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 8166, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
+								}] }
 							],
 							"__worldX": 1060,
 							"__worldY": 832
@@ -9789,7 +9793,11 @@
 									"id": "V_String",
 									"params": ["hall_of_characters_entry"]
 								}] },
-								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 8166, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
+								}] }
 							],
 							"__worldX": 781,
 							"__worldY": 832
@@ -9824,10 +9832,39 @@
 									"id": "V_String",
 									"params": ["hall_of_biomes_entry"]
 								}] },
-								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] },
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 8166, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["SceneArt"]
+								}] }
 							],
 							"__worldX": 944,
 							"__worldY": 832
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [47,50],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 757,
+							"__worldY": 801,
+							"iid": "Prop-8490",
+							"width": 375,
+							"height": 127,
+							"defUid": 4351,
+							"px": [757,801],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "The gallery doors", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["The gallery doors"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "hub_gallery_doors", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hub_gallery_doors"]
+								}] }
+							]
 						}
 					]
 				},
