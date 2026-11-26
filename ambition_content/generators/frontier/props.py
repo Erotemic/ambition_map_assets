@@ -28,6 +28,7 @@ SCENERY = {
         ("frontier_water_tower", 1040, 200),
         ("frontier_livery_front", 1600, 160),
         ("frontier_assay_front", 2140, 200),
+        ("frontier_water_tower_service_walk", 1436, 386),
     ],
     "frontier_wet_whistle": [("frontier_saloon_room", 16, 32)],
     "frontier_livery": [("frontier_livery_room", 16, 32)],

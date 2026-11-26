@@ -159,6 +159,11 @@ PAD_LOAD_PATH = (
     ("freighter_service_landing", 1752, 1848, 512),
     ("freighter_service_step", 1840, 1952, 576),
 )
+TOWER_SERVICE_PATH = (
+    ("pump_supply_crate", 1616, 1712, 544),
+    ("pump_lower_walk", 1584, 1680, 464),
+    ("pump_upper_walk", 1456, 1568, 416),
+)
 BOARDWALK = STREET - 32
 #: The corral: its floor 64 over the room's bottom (the Rhai script's
 #: `FLOOR_INSET`), the docks a jump over it, the catwalks a double jump over them.
@@ -289,6 +294,7 @@ def main_street():
         ledge("porch_store", 672, porch, 400),
         ledge("porch_livery", 1664, porch, 432),
         ledge("porch_assay", 2160, porch, 432),
+        *[ledge(name, left, top, right - left) for name, left, right, top in TOWER_SERVICE_PATH],
         # The water tower in the middle of the street, its walk a double
         # jump over the porch roofs' height, reached from the store's porch.
         ledge("water_tower_walk", 1200, tower, 240),
