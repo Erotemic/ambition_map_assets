@@ -93,6 +93,7 @@ WEIGHTS_SHAFTS = ((960, 1024), (1408, 1472))
 WEIGHTS_TUNNEL_FLOOR = 1120
 RACKS = ((1960, 2140, 896), (2180, 2360, 768))
 DECK = (1960, 2384, 640)
+WEIGHTS_WALK = ((1424, 1552, 832), (1600, 1728, 768), (1808, 1936, 704))
 #: The Echo Chamber.
 ECHO_FLOOR = 512
 ECHO_SEATS = (
@@ -247,6 +248,7 @@ def weights():
         ground_enemy(rid, "stereotyping", 1730, floor, 86, 74),
         # The racks up to the deck, and the Echo Chamber's door on it.
         *[solid(f"rack_{n}", x0, top, x1 - x0, floor - top) for n, (x0, x1, top) in enumerate(RACKS)],
+        *[ledge(f"circuit_walk_{n}", x0, top, x1 - x0) for n, (x0, x1, top) in enumerate(WEIGHTS_WALK)],
         ledge("deck", d0, deck, d1 - d0),
         chest("a cached result", "currency:35", 2020, deck),
         door("weights_echo_door", "into the Echo Chamber", 2300, deck, ECHO, "echo_door"),

@@ -28,6 +28,7 @@ SCENERY = {
         ("neural_red_herring_board", 1540, 580),
         ("neural_weights_racks", 1950, 600),
         ("neural_logic_gates", 1040, 830),
+        ("neural_weights_circuit_walk", 1392, 675),
     ],
     "neural_echo_chamber": [
         ("neural_echo_screens", 16, 32),
