@@ -11,7 +11,7 @@
 	"iid": "ambition-magical-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1009525,
+	"nextUid": 1009527,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -25440,6 +25440,62 @@
 									"params": ["THE WASTES"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [59,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": 13872,
+							"__worldY": 2560,
+							"iid": "SurfaceChain-1009525",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [944,512],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Fallen star-tree branch", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Fallen star-tree branch"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "944,512; 996,512; 1032,496; 1080,468; 1140,432; 1204,400; 1264,376; 1280,368; 1328,368", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": [
+										"944,512; 996,512; 1032,496; 1080,468; 1140,432; 1204,400; 1264,376; 1280,368; 1328,368"
+									]
+								}] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 7681, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [58,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 13861,
+							"__worldY": 2415,
+							"iid": "Prop-1009526",
+							"width": 391,
+							"height": 172,
+							"defUid": 4351,
+							"px": [933,367],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Fallen star-tree branch art", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Fallen star-tree branch art"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "wastes_fallen_branch", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wastes_fallen_branch"]
+								}] }
 							]
 						}
 					]
