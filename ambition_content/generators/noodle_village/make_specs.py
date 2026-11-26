@@ -422,6 +422,8 @@ FLATS_FLOOR = local(FLATS, VALLEY)
 #: from 16 under the floor to its bed.
 SPRINGS = [(560, 720), (1000, 1200), (1400, 1520)]
 SPRING_BED = FLATS_FLOOR + 96
+FLATS_WALK = [("walk_step", 800, 928, 448), ("walk_west", 912, 1056, 384), ("walk_middle", 1104, 1264, 384),
+              ("walk_turn", 1280, 1424, 416), ("walk_east", 1472, 1616, 416)]
 
 
 def flats():
@@ -445,11 +447,13 @@ def flats():
         edge("flats_west", "back to Brothlehem", 0, g, MARKET, "market_east"),
         edge("flats_east", "up the mountain", w - WALL, g, SLOPES, "slopes_west"),
         start(rid, 120, g),
+        *[ledge(name, left, top, right - left) for name, left, right, top in FLATS_WALK],
+        piece("noodle_fizzy_flats_fixtures", 16, 288, px=1.25),
         resident("npc_weird_hermit", "noodle_fizzy_hermit", 330, g),
         sign("flats_sign_hermit", 330, g - 150, "HERMITAGE. No mints. No visitors. (One visitor.)", 420),
         sign("flats_sign_spring", 640, g - 110, "SODA SPRING. FIZZY. Do not drink, do not swim, do not add mints.", 520),
-        noodling(rid, 1, 1100, g - 120),
-        noodling(rid, 2, 1460, g - 160),
+        noodling(rid, 1, 1168, 384),
+        noodling(rid, 2, 1650, g),
     ]
     return build(rid, e + [blurb(rid, "The foot of Mount Fizzuvius. The ground is a crust of sugar, and under it the "
                                  "mountain is carbonated.", w // 2, 72)],
