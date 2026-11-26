@@ -11,7 +11,7 @@
 	"iid": "ambition-art-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1108803,
+	"nextUid": 1108815,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -28311,8 +28311,8 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,2,2,
+						2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -28564,26 +28564,26 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [31,8],
+							"__grid": [29,12],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -2300,
-							"__worldY": 3940,
+							"__worldX": -2331,
+							"__worldY": 3998,
 							"iid": "DebugLabel-1108697",
 							"width": 600,
 							"height": 24,
 							"defUid": 2007,
-							"px": [500,140],
+							"px": [469,198],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "studio_sign_map", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["studio_sign_map"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "WEST: STORIES. UP: THE STAGE. EAST: MUSIC. DOWN: THE MAKERS.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "ROUTES FROM PAINTER'S PLAZA", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["WEST: STORIES. UP: THE STAGE. EAST: MUSIC. DOWN: THE MAKERS."]
+									"params": ["ROUTES FROM PAINTER'S PLAZA"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -28803,6 +28803,317 @@
 								{ "__identifier": "text", "__type": "String", "__value": "THE CURATOR'S STUDIO", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["THE CURATOR'S STUDIO"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [28,11],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -2352,
+							"__worldY": 3990,
+							"iid": "Prop-1108803",
+							"width": 642,
+							"height": 386,
+							"defUid": 4351,
+							"px": [448,190],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "The Curator's route map", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["The Curator's route map"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "art_curators_route_map", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["art_curators_route_map"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [29,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -2324,
+							"__worldY": 4026,
+							"iid": "DebugLabel-1108804",
+							"width": 152,
+							"height": 24,
+							"defUid": 2007,
+							"px": [476,226],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "studio_map_amphitheatre", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["studio_map_amphitheatre"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Amphitheatre", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Amphitheatre"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [44,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -2084,
+							"__worldY": 4026,
+							"iid": "DebugLabel-1108805",
+							"width": 152,
+							"height": 24,
+							"defUid": 2007,
+							"px": [716,226],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "studio_map_cliffs", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["studio_map_cliffs"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Sketchbook Cliffs", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Sketchbook Cliffs"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [58,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -1872,
+							"__worldY": 4026,
+							"iid": "DebugLabel-1108806",
+							"width": 152,
+							"height": 24,
+							"defUid": 2007,
+							"px": [928,226],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "studio_map_reach", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["studio_map_reach"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Resonant Reach", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Resonant Reach"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [29,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -2324,
+							"__worldY": 4104,
+							"iid": "DebugLabel-1108807",
+							"width": 152,
+							"height": 24,
+							"defUid": 2007,
+							"px": [476,304],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "studio_map_stacks", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["studio_map_stacks"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Story Stacks", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Story Stacks"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [44,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -2084,
+							"__worldY": 4104,
+							"iid": "DebugLabel-1108808",
+							"width": 152,
+							"height": 24,
+							"defUid": 2007,
+							"px": [716,304],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "studio_map_plaza", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["studio_map_plaza"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Painter's Plaza", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Painter's Plaza"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [58,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -1872,
+							"__worldY": 4104,
+							"iid": "DebugLabel-1108809",
+							"width": 152,
+							"height": 24,
+							"defUid": 2007,
+							"px": [928,304],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "studio_map_garden", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["studio_map_garden"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Sculpture Garden", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Sculpture Garden"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [44,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -2084,
+							"__worldY": 4180,
+							"iid": "DebugLabel-1108810",
+							"width": 152,
+							"height": 24,
+							"defUid": 2007,
+							"px": [716,380],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "studio_map_caverns", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["studio_map_caverns"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Inkfall Caverns", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Inkfall Caverns"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [58,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -1872,
+							"__worldY": 4180,
+							"iid": "DebugLabel-1108811",
+							"width": 152,
+							"height": 24,
+							"defUid": 2007,
+							"px": [928,380],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "studio_map_deeps", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["studio_map_deeps"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Workshop Deeps", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Workshop Deeps"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [49,16],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -2001,
+							"__worldY": 4065,
+							"iid": "DebugLabel-1108812",
+							"width": 42,
+							"height": 24,
+							"defUid": 2007,
+							"px": [799,265],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "studio_map_lift", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["studio_map_lift"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Lift", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Lift"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [56,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -1891,
+							"__worldY": 4154,
+							"iid": "DebugLabel-1108813",
+							"width": 46,
+							"height": 24,
+							"defUid": 2007,
+							"px": [909,354],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "studio_map_well", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["studio_map_well"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Well", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Well"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [42,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -2126,
+							"__worldY": 4141,
+							"iid": "DebugLabel-1108814",
+							"width": 112,
+							"height": 24,
+							"defUid": 2007,
+							"px": [674,341],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "studio_map_drain", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["studio_map_drain"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Drain shortcut", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Drain shortcut"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
