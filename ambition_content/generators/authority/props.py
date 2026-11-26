@@ -25,6 +25,7 @@ SCENERY = {
         ("authority_info_booth", 620, 400),
     ],
     "authority_plaza": [
+        ("authority_clock_walk", 508, 394),
         ("authority_clock_arcade", 0, 140),
         ("authority_blossom_tree", 780, 160),
         ("authority_notice_board", 1610, 420),

@@ -86,9 +86,11 @@ CONVEYOR = (300, LIFT_SHAFT[0], 984)
 #: Authority Plaza.
 BALCONY = (16, 520, 448)
 PLAZA_STEPS = ((520, 600, 512), (600, 680, 576))
+CLOCK_WALK = (512, 1056, 448)
 PLANTER = (1040, 1360, 576)
 BENCHES = ((940, 1040, 604), (1360, 1460, 604))
 BOUGH = (1120, 1280, 448)
+GARDEN_PERCH = (1280, 1392, 512)
 OFFICE_DOOR_X = 2206
 #: The Manifest Office.
 CHAIRS = (420, 820, 604)
@@ -169,20 +171,24 @@ def plaza():
     b0, b1, balcony = BALCONY
     p0, p1, ptop = PLANTER
     o0, o1, bough = BOUGH
+    w0, w1, walk_top = CLOCK_WALK
+    g0, g1, perch_top = GARDEN_PERCH
     e = [
         solid("floor", 0, FLOOR, w, h - FLOOR),
         solid("west_wall", 0, 0, WALL, FLOOR - 96),
         solid("east_wall", w - WALL, 0, WALL, FLOOR),
         edge("plaza_to_concourse", "west, to the Concourse", 0, FLOOR, CONCOURSE, "concourse_to_plaza"),
         start(rid, 120, FLOOR),
-        # The clock arcade: steps up to the balcony, and the Gatekeeper.
-        *[solid(f"arcade_step_{n}", x0, top, x1 - x0, FLOOR - top) for n, (x0, x1, top) in enumerate(PLAZA_STEPS)],
+        # The street passes under the clock stairs and the raised walk.
+        *[ledge(f"arcade_step_{n}", x0, top, x1 - x0) for n, (x0, x1, top) in enumerate(PLAZA_STEPS)],
         ledge("arcade_balcony", b0, balcony, b1 - b0),
+        ledge("clock_walk", w0, walk_top, w1 - w0),
         resident("npc_authority_gatekeeper", "authority_gatekeeper", 330, balcony),
         sign("plaza_sign_authority", 268, 100, "THE GATE AUTHORITY", 320),
-        # The blossom tree: its planter, the benches, the bough.
+        # The blossom tree: its planter, the benches, and a step to the bough.
         solid("planter", p0, ptop, p1 - p0, FLOOR - ptop),
         *[ledge(f"bench_{n}", x0, top, x1 - x0) for n, (x0, x1, top) in enumerate(BENCHES)],
+        ledge("garden_perch", g0, perch_top, g1 - g0),
         ledge("blossom_bough", o0, bough, o1 - o0),
         chest("a pressed blossom", "currency:30", 1162, bough),
         # The notice board.
