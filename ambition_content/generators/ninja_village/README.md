@@ -38,11 +38,10 @@ forms, the rival form, the shouted names of moves), not the culture.
 
 ## The rank exam
 
-The dojo's exam floor is an encounter (`ninja_village.rank_exam`): its lock
-wall, its trigger strip, a bell (`ResetEncounter`) to take it again, three
-training dummies (`sandbag`) and the examiner (the Ninja Swordsman, who shows
-his eyes). The encounter has no waves in the wave book, so these spawns are
-its one wave. After it, Sensei Hayashi awards the rank
+The exam starts at the red strip. First, defeat the three training dummies.
+Then defeat the examiner. The wave book gives the order. Steps at both
+ends of the exam beam let a player jump onto it. Use the bell outside
+the exam floor to start again. After the exam, Sensei Hayashi awards the rank
 (`ninja_village_rank_awarded`). The quest is `ninja_village_rank_exam`
 (`quests.ron`); the talk is `dialogue/sandbox/ninja_village.yarn`.
 

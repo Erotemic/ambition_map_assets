@@ -11,7 +11,7 @@
 	"iid": "ambition-pvn-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 901159,
+	"nextUid": 901174,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -24472,8 +24472,8 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
@@ -24640,6 +24640,31 @@
 								{ "__identifier": "kind", "__type": "String", "__value": "village_dojo_exam", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["village_dojo_exam"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [26,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2278,
+							"__worldY": 11944,
+							"iid": "Prop-901164",
+							"width": 970,
+							"height": 168,
+							"defUid": 4351,
+							"px": [422,344],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "village_dojo_exam_markers_2", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_dojo_exam_markers_2"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "village_dojo_exam_markers", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["village_dojo_exam_markers"]
 								}] }
 							]
 						},
@@ -24844,160 +24869,54 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [45,4],
+							"__grid": [31,21],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 2576,
-							"__worldY": 11672,
-							"iid": "DebugLabel-707774",
-							"width": 560,
+							"__worldX": 2364,
+							"__worldY": 11949,
+							"iid": "DebugLabel-901172",
+							"width": 196,
 							"height": 24,
 							"defUid": 2007,
-							"px": [720,72],
+							"px": [508,349],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "exam_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "exam_sign_dummies", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["exam_sign"]
+									"params": ["exam_sign_dummies"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "RANK EXAM, PART ONE: THE DUMMIES. PART TWO: THE EXAMINER.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "1. BREAK THE DUMMIES", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["RANK EXAM, PART ONE: THE DUMMIES. PART TWO: THE EXAMINER."]
+									"params": ["1. BREAK THE DUMMIES"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
-							"__identifier": "EnemySpawn",
-							"__grid": [50,28],
+							"__identifier": "DebugLabel",
+							"__grid": [31,23],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
-							"__smartColor": "#FF6B6B",
-							"__worldX": 2656,
-							"__worldY": 12054,
-							"iid": "EnemySpawn-707803",
-							"width": 34,
-							"height": 58,
-							"defUid": 2008,
-							"px": [800,454],
+							"__smartColor": "#FFFFFF",
+							"__worldX": 2364,
+							"__worldY": 11976,
+							"iid": "DebugLabel-901173",
+							"width": 196,
+							"height": 24,
+							"defUid": 2007,
+							"px": [508,376],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "exam dummy 1", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "exam_sign_examiner", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["exam dummy 1"]
+									"params": ["exam_sign_examiner"]
 								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "sandbag_finite", "__tile": null, "defUid": 3019, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "2. FACE THE EXAMINER", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["sandbag_finite"]
+									"params": ["2. FACE THE EXAMINER"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "sandbag", "__tile": null, "defUid": 6854, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["sandbag"]
-								}] },
-								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["OnRoomReenter"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "EnemySpawn",
-							"__grid": [57,28],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FF6B6B",
-							"__worldX": 2776,
-							"__worldY": 12054,
-							"iid": "EnemySpawn-707804",
-							"width": 34,
-							"height": 58,
-							"defUid": 2008,
-							"px": [920,454],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "exam dummy 2", "__tile": null, "defUid": 3018, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["exam dummy 2"]
-								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "sandbag_finite", "__tile": null, "defUid": 3019, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["sandbag_finite"]
-								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "sandbag", "__tile": null, "defUid": 6854, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["sandbag"]
-								}] },
-								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["OnRoomReenter"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "EnemySpawn",
-							"__grid": [65,28],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FF6B6B",
-							"__worldX": 2896,
-							"__worldY": 12054,
-							"iid": "EnemySpawn-707805",
-							"width": 34,
-							"height": 58,
-							"defUid": 2008,
-							"px": [1040,454],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "exam dummy 3", "__tile": null, "defUid": 3018, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["exam dummy 3"]
-								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "sandbag_finite", "__tile": null, "defUid": 3019, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["sandbag_finite"]
-								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "sandbag", "__tile": null, "defUid": 6854, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["sandbag"]
-								}] },
-								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["OnRoomReenter"]
-								}] }
-							]
-						},
-						{
-							"__identifier": "EnemySpawn",
-							"__grid": [88,27],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FF6B6B",
-							"__worldX": 3276,
-							"__worldY": 12046,
-							"iid": "EnemySpawn-707806",
-							"width": 32,
-							"height": 66,
-							"defUid": 2008,
-							"px": [1420,446],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "the examiner", "__tile": null, "defUid": 3018, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["the examiner"]
-								}] },
-								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["combatant"]
-								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_ninja_shadow_duelist_eye_band", "__tile": null, "defUid": 6854, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["npc_ninja_shadow_duelist_eye_band"]
-								}] },
-								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["OnRoomReenter"]
-								}] }
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{

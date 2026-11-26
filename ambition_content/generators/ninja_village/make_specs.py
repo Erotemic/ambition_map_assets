@@ -313,14 +313,11 @@ def dojo():
                action="ResetEncounter", target_encounter=EXAM),
         entity("LockWall", 496, ceiling, 32, floor - ceiling, id="dojo_exam_wall", name="the exam floor's screen"),
         entity("EncounterTrigger", 640, ceiling, 64, floor - ceiling, id=EXAM, name="the rank exam", camera_zoom=1.2),
-        sign("exam_sign", 1000, ceiling + 40, "RANK EXAM, PART ONE: THE DUMMIES. PART TWO: THE EXAMINER.", 560),
+        sign("exam_sign_dummies", 606, 349, "1. BREAK THE DUMMIES", 196),
+        sign("exam_sign_examiner", 606, 376, "2. FACE THE EXAMINER", 196),
+        ledge("exam_beam_west_step", 912, floor - 64, 96),
         ledge("exam_beam", 1040, floor - 112, 240),
-        # Part one: the dummies. Part two: the examiner, at the far end. The
-        # encounter has no waves of its own, so these are its one wave.
-        *[entity("EnemySpawn", x, floor - 58, 34, 58, name=f"exam dummy {i + 1}", brain="sandbag_finite", character_id="sandbag",
-                 respawn="OnRoomReenter") for i, x in enumerate((800, 920, 1040))],
-        entity("EnemySpawn", 1420, floor - 66, 32, 66, name="the examiner", brain="combatant",
-               character_id="npc_ninja_shadow_duelist_eye_band", respawn="OnRoomReenter"),
+        ledge("exam_beam_east_step", 1312, floor - 64, 80),
     ]
     return build(rid, e, "THE VILLAGE DOJO", music=DOJO_MUSIC)
 

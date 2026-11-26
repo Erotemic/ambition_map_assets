@@ -56,6 +56,7 @@ SCENERY = {
     "ninja_village_dojo": [
         ("village_dojo_entry", 16, 32),
         ("village_dojo_exam", 528, 32),
+        ("village_dojo_exam_markers", 408, 336),
     ],
 }
 
