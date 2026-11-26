@@ -246,14 +246,21 @@ def tavern():
     return build(rid, e, None)
 
 
+LOFT_STEPS = ((208, 304, 320), (128, 304, 272), (128, 304, 208))
+LOFT_GALLERY = (352, 960, 160)
+LOFT_LADDER_X = 928
+
+
 def sail_loft():
     """The sail loft inside the net loft: nets on the rafters, bolts of
     canvas, a sail spread half sewn, flags to order pinned up (a skull with
     an eyepatch, a monocle, a moustache, a party hat; a smiling one sent
-    back). Tamsin Bolt sews them (`pirate_port.yarn`)."""
+    back). Tamsin Bolt sews them (`pirate_port.yarn`). The canvas shelves
+    lead to the gallery above the sail. A ladder leads to the bench."""
     rid = LOFT
     _, (w, h) = ROOMS_AT[rid]
     floor, ceiling = h - 64, 32
+    left, right, gallery_top = LOFT_GALLERY
     e = [
         solid("floor", 0, floor, w, 64),
         solid("ceiling", 0, 0, w, ceiling),
@@ -261,6 +268,9 @@ def sail_loft():
         solid("east_wall", w - WALL, ceiling, WALL, floor - ceiling),
         door("loft_door", "out to the waterfront", 40, floor, WATERFRONT, "waterfront_loft_door"),
         start(rid, 140, floor),
+        *[ledge(f"canvas_shelf_{i}", x0, top, x1 - x0) for i, (x0, x1, top) in enumerate(LOFT_STEPS)],
+        ledge("rigging_gallery", left, gallery_top, right - left),
+        entity("ChestSpawn", 752, gallery_top - 58, 76, 58, name="the sailmaker's patch kit", reward="health:2"),
         resident("npc_port_bolt", "pirate_port_bolt", 830, floor),
         sign("loft_sign_flags", 560, ceiling + 260, "FLAGS TO ORDER: any face you like, on a skull", 420),
     ]
@@ -551,6 +561,7 @@ ROOMS = (tavern, sail_loft, hoard, tunnel, cellars, plaza, waterfront, docks, re
 #: The ladders out of the two gaps of open water, and up the mainmast
 #: (painted on the `Climbable` layer): (room, x, top, bottom).
 LADDERS = [
+    (LOFT, LOFT_LADDER_X, LOFT_GALLERY[2] - 16, ROOMS_AT[LOFT][1][1] - 64),
     (DOCKS, SPANS[0][1] + 2, DECK - 16, SEA_FLOOR),
     (DOCKS, SPANS[1][0] - 32, DECK - 16, SEA_FLOOR),
     (DOCKS, SPANS[1][1] + 2, DECK - 16, SEA_FLOOR),

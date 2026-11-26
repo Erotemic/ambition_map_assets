@@ -37,6 +37,12 @@ on the inspection decks above the still to reach the tunnel arch.
 The Quartermaster starts on the first deck. The two Vipers start on
 the floor.
 
+## Sail Loft
+
+The canvas shelves lead to the gallery above the sail. The ladder
+beside Bolt's bench leads to the other end of the gallery. A chest
+on the gallery holds a spare patch kit.
+
 ## The problem
 
 The wind took page eleven of Ines's freight log to the crow's nest of the
