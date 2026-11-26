@@ -24,11 +24,11 @@ Run them from the repository root.
   the pier have a ladder out of each.
 - In the waterfront, the west stair leads to the gallery. The net decks
   in the east alley lead to the chandlery and net loft roofs.
-- The high road: the brig's yards to her crow's nest (each step 112 px, a
-  jump and a double jump), the rope to the warehouse roof, the gantry, the
-  roofs and galleries of the waterfront, the harbour balcony, the plaza's
-  stair. Each room joins the next at both heights, so the two roads are one
-  loop.
+- The high road: the foremast ladder leads to the signal rope. The
+  mainmast ladder and yards lead to the crow's nest. The rope leads to
+  the warehouse roof and then the gantry. The gantry leads to the
+  waterfront roofs and the harbour balcony. Each room joins the next
+  at both heights. The plaza stair connects the balcony and the floor.
 - The way on: the docks' east door goes to `pirate_cove` (two ways). The
   cove's sky hatch goes to `pirate_sky_lookout`, the raiders' skyship lookout.
 

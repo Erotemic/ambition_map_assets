@@ -289,7 +289,9 @@ DECK, SEA_FLOOR = 768, 928
 SEA_EXIT_HATCH = (2560, 2624)
 SPANS = [(0, 720), (832, 1504), (1616, SEA_EXIT_HATCH[0]), (SEA_EXIT_HATCH[1], 2816)]
 HULL_X0, HULL_X1, SHIP_DECK = 1760, 2560, 640
+FOREMAST = 1968
 MAINMAST = 2256
+SIGNAL_ROPE = 416
 YARDS = [  # (name, x0, x1, y)
     ("fore_yard", 1880, 2040, 528),
     ("main_lower_yard", 2160, 2352, 528),
@@ -303,11 +305,11 @@ def docks():
     """The pier over the harbour. The low road is the pier (y 768), with two
     gaps of open water with ladders on both banks. The hatch past the brig
     connects the water to the east end of the pier. The brig lies on the east span:
-    a gangway to her deck (y 640), and her yards up the masts to the crow's
-    nest (y 304), where the clerk's page is. The high road goes back west:
-    a rope from the main upper yard to the warehouse roof (y 448), then the
-    gantry (y 384) to the waterfront's roofs. The door at the east end is the
-    way to the pirate cove (and the skyship's lookout over it)."""
+    a gangway to her deck (y 640) and a mainmast ladder to the crow's
+    nest (y 304) with the clerk's page. The foremast ladder leads to
+    the signal rope. The rope leads west to the warehouse roof (y 448).
+    The gantry (y 384) leads to the waterfront roofs. The east door
+    leads to the pirate cove and the skyship lookout above it."""
     rid = DOCKS
     _, (w, h) = ROOMS_AT[rid]
     e = [
@@ -334,7 +336,7 @@ def docks():
         entity("PickupSpawn", 2244, 304 - 32, 24, 24, name="the clerk's page", kind=f"flag:{PAGE_FLAG}", respawn="Never",
                sprite="port_manifest_page"),
         # The high road back west.
-        ledge("signal_rope", 1504, 416, 2176 - 1504),
+        ledge("signal_rope", 1504, SIGNAL_ROPE, 2176 - 1504),
         ledge("warehouse_roof", 864, WAREHOUSE_ROOF, 1504 - 864),
         ledge("gantry", WALL, GANTRY, 864 - WALL),
         # The people of the pier.
@@ -572,8 +574,7 @@ def hoard():
 # validated as it is made.
 ROOMS = (tavern, sail_loft, hoard, tunnel, cellars, plaza, waterfront, docks, reef, point)
 
-#: The ladders out of the two gaps of open water, and up the mainmast
-#: (painted on the `Climbable` layer): (room, x, top, bottom).
+#: Climbable rectangles: (room, x, top, bottom).
 LADDERS = [
     (TAVERN, TAVERN_LADDER_X, TAVERN_GALLERY[2] - 32, ROOMS_AT[TAVERN][1][1] - 64),
     (LOFT, LOFT_LADDER_X, LOFT_GALLERY[2] - 16, ROOMS_AT[LOFT][1][1] - 64),
@@ -582,6 +583,7 @@ LADDERS = [
     (DOCKS, SPANS[1][1] + 2, DECK - 16, SEA_FLOOR),
     (DOCKS, SPANS[2][0] - 32, DECK - 16, SEA_FLOOR),
     (DOCKS, SEA_EXIT_HATCH[0] + 16, DECK - 16, SEA_FLOOR),
+    (DOCKS, FOREMAST - 16, SIGNAL_ROPE - 32, SHIP_DECK),
     (DOCKS, MAINMAST - 16, 304 - 16, SHIP_DECK),
     (REEF, (REEF_STERN[1] + 15) // 16 * 16, REEF_STERN[2] - 16, SEA_FLOOR),
     (REEF, REEF_BOW[0] - 32, REEF_BOW[2] - 16, SEA_FLOOR),
