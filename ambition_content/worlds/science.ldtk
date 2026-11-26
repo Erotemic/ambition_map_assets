@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 411318,
+	"nextUid": 411333,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -24275,18 +24275,126 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [110,34],
+							"__grid": [62,27],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 2752,
+							"__worldX": 1998,
+							"__worldY": 1683,
+							"iid": "Prop-411328",
+							"width": 1092,
+							"height": 265,
+							"defUid": 4351,
+							"px": [1006,439],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "orbital_grow_deck", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orbital_grow_deck"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "orbital_grow_deck", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orbital_grow_deck"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [64,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": 2016,
+							"__worldY": 1756,
+							"iid": "SurfaceChain-411329",
+							"width": 1056,
+							"height": 192,
+							"defUid": 6814,
+							"px": [1024,512],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hab_grow_deck", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hab_grow_deck"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "1024,704; 1312,512; 1792,512; 2080,704", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["1024,704; 1312,512; 1792,512; 2080,704"]
+								}] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 7681, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "boarding", "__type": "String", "__value": "up", "__tile": null, "defUid": 7682, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["up"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [86,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2368,
+							"__worldY": 1616,
+							"iid": "Prop-411330",
+							"width": 240,
+							"height": 140,
+							"defUid": 4351,
+							"px": [1376,372],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hab_upper_hydroponics", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hab_upper_hydroponics"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "orbital_hydroponics", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orbital_hydroponics"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [101,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2620,
+							"__worldY": 1716,
+							"iid": "Prop-411331",
+							"width": 160,
+							"height": 40,
+							"defUid": 4351,
+							"px": [1628,472],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hab_grow_bench", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hab_grow_bench"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "orbital_bench", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orbital_bench"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [132,34],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3104,
 							"__worldY": 1788,
-							"iid": "Prop-410813",
+							"iid": "Prop-411332",
 							"width": 220,
 							"height": 160,
 							"defUid": 4351,
-							"px": [1760,544],
+							"px": [2112,544],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hab_bunks_east", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",

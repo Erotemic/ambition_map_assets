@@ -21,7 +21,7 @@ older than their art).
 | `orbital_station_gate_dock` | the gate's arrival `orbital_station_gate_arrival` (clear floor x 128..640 for the ring and its terminal), the freight track, customs (Officer Okafor), the manifest board, the quarantine pen that shuts the freight lane |
 | `orbital_station_docking_bay` | the hauler *Remainder* in its berth, the gantry, a shuttle; Captain Reyes, Bo Lindqvist |
 | `orbital_station_observation_deck` | the viewpoint on the planet; Wen Liang, Neil onGras Turfson |
-| `orbital_station_habitation` | bunks, galley, hydroponic racks; Gus Pell |
+| `orbital_station_habitation` | bunks, galley, grow deck with stairs from both sides, Gus Pell |
 | `orbital_station_service_deck` | the plant, the hatch of the damaged spur, the spoke; Hamid Rahimi |
 | `orbital_station_damaged_spur` | the optional dangerous branch: broken deck over live cable, crawlers and mites, the breaker and a cache |
 | `orbital_station_spoke` | the walk to the gravity works, a tram over the open gap, the lower end of the works' lift |

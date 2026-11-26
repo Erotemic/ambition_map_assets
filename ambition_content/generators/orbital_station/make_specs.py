@@ -77,6 +77,9 @@ if str(TOOLS) not in sys.path:
 from ambition_ldtk_tools.ldtk.paths import default_worlds_dir  # noqa: E402
 
 sys.path.insert(0, str(TOOL_SPECS / "gate_network"))
+sys.path.insert(0, str(TOOL_SPECS))
+from district_scenery import piece  # noqa: E402
+
 import gates  # noqa: E402
 
 WORLD_LDTK = default_worlds_dir() / "science.ldtk"
@@ -369,10 +372,12 @@ def observation_deck():
 
 
 def habitation():
-    """The habitation ring: bunks, the galley, the green racks."""
+    """Place the bunks, galley and two levels of grow racks."""
     rid = HAB
     _, _, w, h = ROOMS_AT[rid]
     floor = 704
+    grow_deck = 512
+    grow_route = ((1024, floor), (1312, grow_deck), (1792, grow_deck), (2080, floor))
     e = shell(w, h, floor, west=OPENING, east=OPENING) + [
         edge("hab_west", "to the service deck", 0, floor, SERVICE, "service_east"),
         start(rid, 160, floor),
@@ -382,7 +387,12 @@ def habitation():
         # Over the gate deck's stairs.
         door("hab_dock_door", "the stairs down to the gate deck", 904, floor, DOCK, "dock_habitation_door"),
         prop("hab_hydroponics", "orbital_hydroponics", 1400, floor, 240, 140),
-        prop("hab_bunks_east", "orbital_bunks", 1760, floor, 220, 160),
+        piece("orbital_grow_deck", 992, 434),
+        entity("SurfaceChain", 1024, grow_deck, 1056, floor - grow_deck, name="hab_grow_deck",
+               points="; ".join(f"{x},{y}" for x, y in grow_route), visual="none", boarding="up"),
+        prop("hab_upper_hydroponics", "orbital_hydroponics", 1376, grow_deck, 240, 140),
+        prop("hab_grow_bench", "orbital_bench", 1628, grow_deck, 160, 40),
+        prop("hab_bunks_east", "orbital_bunks", 2112, floor, 220, 160),
         edge("hab_east", "to the observation deck", w - WALL, floor, VIEW, "view_west"),
     ]
     return rid, room(rid, e, "THE HABITATION RING")
