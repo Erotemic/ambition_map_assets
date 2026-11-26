@@ -77,6 +77,7 @@ sys.path.insert(0, str(TOOL_SPECS / "gate_network"))
 from district_kit import (  # noqa: E402
     WALL, WORLDS, door, edge, entity, ledge, make_rooms, paint, resident, room, run, sign, solid, start,
 )
+from district_scenery import piece  # noqa: E402
 import gates  # noqa: E402
 
 #: The noodle dimension's world file: the temple's rooms are in it too.
@@ -252,7 +253,8 @@ def square():
 #: over the street (x0, x1, y), west to east.
 RACKS = [("rack_west", 16, 400, VILLAGE_HIGH), ("rack_crate", 380, 470, 512), ("rack_low", 300, 460, 448),
          ("rack_spaghetti", 480, 800, 384), ("rack_linguine", 880, 1200, 320), ("rack_lasagne", 1280, 1600, 256),
-         ("rack_east", 1680, 1904, 320)]
+         ("rack_east", 1680, 1904, 320), ("rack_east_crate", 1760, 1856, 512),
+         ("rack_east_bench", 1664, 1776, 432)]
 CURRY_DOOR_X = 1360
 
 
@@ -271,6 +273,8 @@ def market():
         edge("market_west_high", "over the racks to the roofs", 0, VILLAGE_HIGH, SQUARE, "square_east_high"),
         edge("market_east", "out of town, to the soda springs", w - WALL, g, FLATS, "flats_west"),
         start(rid, 120, g),
+        piece("noodle_market_curry_entrance", 1264, 382),
+        piece("noodle_market_racks", 16, 256),
         *[ledge(name, x0, y, x1 - x0) for name, x0, x1, y in RACKS],
         door("market_curry_door", "into the curry house", CURRY_DOOR_X, g, CURRY, "curry_door"),
         sign("market_sign_curry", CURRY_DOOR_X + 24, g - 200, "THE CURRY HOUSE: M. Curry, prop. Radiantly hot.", 420),
