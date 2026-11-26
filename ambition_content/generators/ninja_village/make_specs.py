@@ -324,10 +324,13 @@ def dojo():
 
 #: The Bamboo Pass: its gorge (x), the stream in it and its bed (y), the
 #: stepping stone out (x0, x1, y), the lookout's platforms (x0, x1, (y...)).
-#: The art (`targets/props/ninja_pass_props.py`) is drawn on these numbers.
+#: The art (`targets/props/ninja_pass_props.py`) uses these positions.
 PASS_GORGE = (900, 1400)
-PASS_STREAM, PASS_BED = 880, 944
+PASS_WATER_START = 960
+PASS_STREAM, PASS_BED = 912, 944
 PASS_STEP = (1340, 1390, 880)
+PASS_FORD = ((960, 1056, 896), (1104, 1200, 912), (1248, 1328, 896))
+PASS_FORD_LADDER = (PASS, 912, 816, PASS_BED)
 PASS_LOOKOUT = (1540, 1700, (704, 576))
 
 
@@ -345,9 +348,9 @@ def pass_enemy(n, character, x, feet, w, h, rid=PASS):
 def bamboo_pass():
     """Out of the village: the Bamboo Pass, the Shadow Clan's sparring
     ground, where everyone who passes is an opponent. Floor 832, level with
-    the forest's. A gorge with a stream (a rope bridge over it, a stone to
-    climb out by), a bamboo lookout (its ladder), a waterfall and jizo by
-    the path at the east wall."""
+    the forest's. A ford runs under the rope bridge. A ladder leads to
+    the west bank. A higher stone leads to the east bank. A bamboo
+    lookout, waterfall, and jizo stand to the east."""
     rid = PASS
     _, (w, h) = ROOMS_AT[rid]
     g, (g0, g1) = FOREST_FLOOR, PASS_GORGE
@@ -363,6 +366,7 @@ def bamboo_pass():
         start(rid, 120, g),
         walk("rope_bridge", g0, g, g1 - g0),
         walk("stepping_stone", s0, sy, s1 - s0),
+        *[ledge(f"ford_stone_{i}", left, y, right - left) for i, (left, right, y) in enumerate(PASS_FORD)],
         walk("lookout_low", l0, low, l1 - l0),
         walk("lookout_high", l0, high, l1 - l0),
         entity("ChestSpawn", l0 + 4, high - 58, 76, 58, name="the clan's prize", reward="health:2"),
@@ -371,6 +375,7 @@ def bamboo_pass():
         # bout (`ninja_pass_props.py` `pass_scoreboard`).
         resident("npc_village_matsuda", "ninja_village_matsuda", 330, g),
         sign("bridge_sign", 1150, g - 110, "ROPE BRIDGE: one at a time. Opponents count.", 380),
+        sign("ford_sign", 967, 775, "FORD", 58),
         sign("falls_sign", 2120, g - 140, "Please do not fight the jizo.", 300),
         # The ninjas who can fight where they are placed (locomotion
         # authored): the swordsmen of the rank exam and their oni leader.
@@ -423,6 +428,7 @@ ROOMS = (dojo, tea_room, hidden_way, shrine, street, forest, bamboo_pass)
 
 #: The ladder up the baker's wall: (room, x, top, bottom).
 LADDERS = [(STREET, 400, ROOFS[0][3] - 16, 768), (PASS, PASS_LOOKOUT[1] + 4, PASS_LOOKOUT[2][1] - 16, FOREST_FLOOR),
+           PASS_FORD_LADDER,
            # Down the slab's hole and the loose board's (their tops over the
            # floor, as the port's well), and up the hidden way's shafts.
            (SHRINE, SLAB[0] + 16, 704 - 64, 832),
@@ -472,7 +478,8 @@ def main(argv):
         if code := paint(WORLD_LDTK, rid, "Climbable", 1, x, top, 32, bottom - top):
             return code
     # The pass's stream: murky water (the art draws it).
-    if code := paint(WORLD_LDTK, PASS, "Water", 2, PASS_GORGE[0] + 16, PASS_STREAM, PASS_GORGE[1] - PASS_GORGE[0] - 16, PASS_BED - PASS_STREAM):
+    if code := paint(WORLD_LDTK, PASS, "Water", 2, PASS_WATER_START, PASS_STREAM,
+                     PASS_GORGE[1] - PASS_WATER_START, PASS_BED - PASS_STREAM):
         return code
     for checked in (WORLD_LDTK, SANDBOX_LDTK):
         code, _ = run("validate", str(checked))

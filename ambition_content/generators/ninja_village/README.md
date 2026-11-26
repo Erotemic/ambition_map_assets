@@ -45,6 +45,11 @@ the exam floor to start again. After the exam, Sensei Hayashi awards the rank
 (`ninja_village_rank_awarded`). The quest is `ninja_village_rank_exam`
 (`quests.ron`); the talk is `dialogue/sandbox/ninja_village.yarn`.
 
+## Bamboo Pass
+
+Cross at bridge level or take the ford below it. The ladder at the west
+end and the high stone at the east end lead back to the trail.
+
 ## The gate
 
 Agent GATE places the ring and its terminal on the shrine's clear floor
