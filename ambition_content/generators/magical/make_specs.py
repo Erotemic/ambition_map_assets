@@ -128,6 +128,11 @@ CLOUD_GAP = (1088, 1152)
 #: the rest of the road's height and through the clouds' floor.
 PAD_TOP = FLOOR - 128
 PAD_IMPULSE = -2000
+STAR_CLOUDS = (
+    (1984, 576, 192), (2160, 512, 160), (2336, 448, 160), (2512, 384, 192),
+    (2704, 336, 224),
+    (2900, 384, 156), (2976, 448, 160), (3056, 512, 144), (3184, 576, 200),
+)
 #: The local arches (portal rings, `kind: Portal` in `gate_network.ron`): one
 #: on the heights' west end, one at the keep's east end, one in the heart.
 #: Each reaches the next; the heights' arch cannot reach the heart (farther
@@ -395,11 +400,9 @@ def heights():
         *gates.as_ron(gates.ring("Heights Arch", "magical_heights_arch", HEIGHTS_ARCH_MID - ARCH_HALF_W, FLOOR, "the heights arch", shape="starlit_arch")),
         *gates.as_ron(gates.terminal("Heights Arch", "magical_heights_arch_terminal", HEIGHTS_ARCH_MID + 176, FLOOR, shape="starlit_arch")),
         sign("heights_gap_sign", gap[0] - 120, 540, "GAP IN THE CLOUDS (down to the road)", 360),
-        # Higher clouds, a stair west to east, and a star left out at the top.
-        ledge("cloud_a", 2160, 528, 224),
-        ledge("cloud_b", 2440, 432, 192),
-        ledge("cloud_c", 2700, 336, 224),
-        ledge("cloud_d", 2990, 432, 192),
+        piece("heights_star_clouds", 1968, 232),
+        *[entity("MovingPlatform", x, y, width, 16, id=f"heights_star_cloud_{i}", name="star cloud",
+                 speed=0.0, one_way=True, visual="none") for i, (x, y, width) in enumerate(STAR_CLOUDS)],
         entity("ChestSpawn", 2774, 336 - 58, 76, 58, name="a star hung out to dry", reward="currency:120"),
         ledge("cloud_e", 600, 512, 256),
         ledge("cloud_f", 960, 416, 192),
