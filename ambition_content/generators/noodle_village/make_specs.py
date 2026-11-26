@@ -305,10 +305,14 @@ def curry_house():
         start(rid, 150, g),
         ledge("counter", 520, g - 64, 240),
         ledge("spice_shelf", 800, g - 160, 192),
+        ledge("spice_crate", 912, g - 48, 80),
+        ledge("spice_steps", 800, g - 96, 112),
+        piece("noodle_curry_house_fixtures", 16, 32, px=1.5),
         resident("npc_marie_curry", "noodle_village_curry", 440, g),
         sign("curry_sign_menu", 640, 96, "TODAY: curry udon. TOMORROW: udon curry.", 420),
         chest("the tip jar", "currency:25", 860, g - 160),
-        entity("PickupSpawn", 623, g - 64 - 34 - 4, 34, 34, name="a bowl of curry udon", kind="health:2", respawn="Never"),
+        entity("PickupSpawn", 623, g - 64 - 34 - 4, 34, 34, name="a bowl of curry udon", kind="health:2",
+               respawn="Never", sprite="noodle_curry_udon_pickup"),
     ]
     return build(rid, e, "THE CURRY HOUSE", VILLAGE_MUSIC)
 
