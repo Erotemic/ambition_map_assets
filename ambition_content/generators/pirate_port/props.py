@@ -56,8 +56,12 @@ SCENERY = {
         ("port_warehouse", 828, 440),
         ("port_brig", 1496, 196),
         ("port_dock_clutter", 250, 728),
-        ("port_lamp_post", 2584, 664),
+        ("port_lamp_post", 2636, 664),
         ("port_cove_entrance", 2664, 568),
+        ("port_east_pier_supports", 1616, 768),
+        ("port_swim_landing", 832, 732),
+        ("port_swim_landing", 1616, 732),
+        ("port_swim_landing", 2624, 732),
     ],
 }
 

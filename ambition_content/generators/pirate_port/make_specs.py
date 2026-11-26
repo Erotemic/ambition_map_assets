@@ -263,10 +263,10 @@ def sail_loft():
     return build(rid, e, None)
 
 
-#: The docks, from the west: the pier's three spans and the two gaps of
-#: open water between them, the brig on the east span.
+#: The pier spans, the gaps of open water, and the hatch past the brig.
 DECK, SEA_FLOOR = 768, 928
-SPANS = [(0, 720), (832, 1504), (1616, 2816)]
+SEA_EXIT_HATCH = (2560, 2624)
+SPANS = [(0, 720), (832, 1504), (1616, SEA_EXIT_HATCH[0]), (SEA_EXIT_HATCH[1], 2816)]
 HULL_X0, HULL_X1, SHIP_DECK = 1760, 2560, 640
 MAINMAST = 2256
 YARDS = [  # (name, x0, x1, y)
@@ -280,7 +280,8 @@ WAREHOUSE_ROOF, GANTRY = 448, 384
 
 def docks():
     """The pier over the harbour. The low road is the pier (y 768), with two
-    gaps of open water (ladders out of each). The brig lies on the east span:
+    gaps of open water with ladders on both banks. The hatch past the brig
+    connects the water to the east end of the pier. The brig lies on the east span:
     a gangway to her deck (y 640), and her yards up the masts to the crow's
     nest (y 304), where the clerk's page is. The high road goes back west:
     a rope from the main upper yard to the warehouse roof (y 448), then the
@@ -294,6 +295,8 @@ def docks():
         solid("west_wall_high", 0, 0, WALL, GANTRY - 96),
         solid("west_wall_mid", 0, GANTRY + 16, WALL, DECK - 96 - GANTRY - 16),
         solid("east_wall", w - WALL, 0, WALL, DECK - 112),
+        solid("west_water_wall", 0, DECK + 32, WALL, SEA_FLOOR - DECK - 32),
+        solid("east_water_wall", w - WALL, DECK + 32, WALL, SEA_FLOOR - DECK - 32),
         edge("docks_east", "along the shore to the reef", w - WALL, DECK, REEF, "reef_west"),
         edge("docks_west_low", "to the waterfront", 0, DECK, WATERFRONT, "waterfront_east_low"),
         edge("docks_west_high", "along the roofs to the waterfront", 0, GANTRY, WATERFRONT, "waterfront_east_high"),
@@ -301,6 +304,7 @@ def docks():
     ]
     for i, (x0, x1) in enumerate(SPANS):
         e.append(solid(f"pier_span_{i}", x0, DECK, x1 - x0, 32))
+    e.append(ledge("sea_exit_hatch", SEA_EXIT_HATCH[0], DECK, SEA_EXIT_HATCH[1] - SEA_EXIT_HATCH[0]))
     # The brig: her hull stands on the pier; a gangway to her deck.
     e += [
         solid("brig_hull", HULL_X0, SHIP_DECK, HULL_X1 - HULL_X0, DECK - SHIP_DECK),
@@ -535,7 +539,10 @@ ROOMS = (tavern, sail_loft, hoard, tunnel, cellars, plaza, waterfront, docks, re
 #: (painted on the `Climbable` layer): (room, x, top, bottom).
 LADDERS = [
     (DOCKS, SPANS[0][1] + 2, DECK - 16, SEA_FLOOR),
+    (DOCKS, SPANS[1][0] - 32, DECK - 16, SEA_FLOOR),
     (DOCKS, SPANS[1][1] + 2, DECK - 16, SEA_FLOOR),
+    (DOCKS, SPANS[2][0] - 32, DECK - 16, SEA_FLOOR),
+    (DOCKS, SEA_EXIT_HATCH[0] + 16, DECK - 16, SEA_FLOOR),
     (DOCKS, MAINMAST - 16, 304 - 16, SHIP_DECK),
     (REEF, (REEF_STERN[1] + 15) // 16 * 16, REEF_STERN[2] - 16, SEA_FLOOR),
     (REEF, REEF_BOW[0] - 32, REEF_BOW[2] - 16, SEA_FLOOR),
