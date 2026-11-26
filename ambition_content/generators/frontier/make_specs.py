@@ -356,13 +356,16 @@ def livery():
     e = interior_shell(w, h, floor) + [
         door("livery_door", "out to Main Street", 64, floor, MAIN, "street_livery_door"),
         start(rid, 150, floor),
-        ledge("livery_ladder_rung", 464, floor - 64, 96),
+        ledge("livery_west_step", 464, floor - 64, 48),
         # Gus Bell, by the stalls.
         resident("npc_frontier_liveryman", "frontier_liveryman", 300, floor),
-        ledge("livery_hayloft", 560, loft, w - WALL - 560),
+        ledge("livery_hayloft", 560, loft, 480),
+        ledge("livery_east_bales", 1008, floor - 64, w - WALL - 1008),
         sign("livery_sign_rules", 300, 120, "MULES BY THE DAY. RETURN WITH THE SAME NUMBER OF LEGS.", 560),
     ]
-    return build(rid, e, "BELL'S LIVERY", TOWN_MUSIC, biome="frontier_interior")
+    climb = '( kind: "Ladder", px: [528, 352], size: [32, 160] )'
+    return build(rid, e, "BELL'S LIVERY", TOWN_MUSIC, biome="frontier_interior",
+                 extra=f"\n    intgrid: (climbable: [{climb}]),")
 
 
 def refinery():
