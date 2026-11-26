@@ -9318,9 +9318,9 @@
 									"id": "V_String",
 									"params": ["concourse_sign_gate"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "LICENSED: THE CONCOURSE", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "LEGAL: THE CONCOURSE", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["LICENSED: THE CONCOURSE"]
+									"params": ["LEGAL: THE CONCOURSE"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -9650,10 +9650,10 @@
 									"id": "V_String",
 									"params": ["authority_concourse_blurb_1"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "FACT: the Authority's own gate is LICENSED; bags from every dimension come back through it, some of them changed.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "FACT: the Authority's own gate is LEGAL, the one address posted on every terminal; bags from every dimension come back through it, some of them changed.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
 									"params": [
-										"FACT: the Authority's own gate is LICENSED; bags from every dimension come back through it, some of them changed."
+										"FACT: the Authority's own gate is LEGAL, the one address posted on every terminal; bags from every dimension come back through it, some of them changed."
 									]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Room", "__tile": null, "defUid": 3017, "realEditorValues": [{

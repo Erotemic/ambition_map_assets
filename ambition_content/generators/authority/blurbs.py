@@ -12,7 +12,7 @@ fiction's, and each one is something a player can see in the room.
 BLURB = {
     "authority_concourse": (
         "WHERE: the Concourse, the arrival hall of the Central Hub. WHEN: a weekday, the morning rush.",
-        "FACT: the Authority's own gate is LICENSED; bags from every dimension come back through it, some of them changed."),
+        "FACT: the Authority's own gate is LEGAL, the one address posted on every terminal; bags from every dimension come back through it, some of them changed."),
     "authority_plaza": (
         "WHERE: Authority Plaza, the seat of the Gate Authority. WHEN: blossom season, the armistice holding.",
         "FACT: every licensed gate keeps its time by the great clock."),
