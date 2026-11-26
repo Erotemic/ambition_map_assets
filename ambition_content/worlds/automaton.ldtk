@@ -11,7 +11,7 @@
 	"iid": "ambition-automaton-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 2008726,
+	"nextUid": 2008748,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -10888,6 +10888,39 @@
 								{ "__identifier": "character_id", "__type": "String", "__value": "life_spaceship", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["life_spaceship"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [132,13],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 4512,
+							"__worldY": 213,
+							"iid": "EnemySpawn-2008747",
+							"width": 36,
+							"height": 54,
+							"defUid": 2008,
+							"px": [2112,213],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "automaton_life_replicator_0", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["automaton_life_replicator_0"]
+								}] },
+								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["combatant"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "replicator", "__tile": null, "defUid": 6854, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["replicator"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 8092, "realEditorValues": [{
 									"id": "V_String",

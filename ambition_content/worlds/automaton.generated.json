@@ -2,7 +2,7 @@
   "schema": "ambition.ldtk_generated_record.v1",
   "generated": {
     "automaton_arena": "17feff4ef4b5c93b",
-    "automaton_life": "b98c5499e20d7c4b",
+    "automaton_life": "23125c1363dd68f7",
     "automaton_tape_room": "dd73b6aa8c65bd89",
     "automaton_works": "fca4d699d48bf920"
   },
