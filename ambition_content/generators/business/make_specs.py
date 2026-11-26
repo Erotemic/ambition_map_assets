@@ -17,10 +17,10 @@ building, so its way in is a door:
               |
     [ Founders' Plaza ] ==== [ Records & Processing ]
 
-- `business_founders_plaza`: the gate and its terminal; The Bottom Line, a
-  café whose awning is a step up to its balcony; the Founder's fountain and
-  his gilt statue (the plaque says self-made, the small print says how);
-  the records clerks' picket line; the portico of the Business College.
+- `business_founders_plaza` has the gate, terminal, and The Bottom Line café.
+  Two routes lead to the café balcony, one from the delivery bench and one
+  from the Founder's fountain. The plaza also has the Founder's statue, the
+  records clerks' picket line, and the Business College entrance.
 - `business_records_processing`: two storeys of the city's paperwork. On the
   floor, a conveyor carries forms under the APPROVED press, and the shredder
   is a pit in the floor. Catwalks climb the east side to a folder carrier
@@ -78,8 +78,8 @@ ROOMS_AT = {
 
 #: Founders' Plaza (`targets/props/business_props.py` draws to these).
 PLAZA_FLOOR = 640
-AWNING = 520
-BALCONY = 392
+AWNING = 512
+BALCONY = 384
 RIM = 592
 PEDESTAL = 528
 COLLEGE_DOOR_X = 2280
@@ -134,11 +134,14 @@ def founders_plaza():
         start(rid, 540, floor),
         sign("plaza_sign_gate", 300, floor - 360, "DEALINGS: FOUNDERS' PLAZA, CAPITAL", 400),
         sign("plaza_sign_licence", 340, floor - 330, "DIRECTIONS IN CAPITAL ARE LICENSED. THIS SIGN HAS BILLED YOU.", 620),
-        # The Bottom Line: its awning a step up to the balcony of its upper
-        # floor, where somebody left a dividend nobody claimed.
-        ledge("cafe_awning", 640, AWNING, 360),
-        ledge("cafe_balcony", 960, BALCONY, 220),
-        sign("plaza_sign_cafe", 820, AWNING - 52, "THE BOTTOM LINE  -  COFFEE, LICENSED CUPS", 420),
+        # The delivery bench and the fountain give access to the balcony.
+        ledge("cafe_delivery_bench", 544, 576, 80),
+        ledge("cafe_awning", 640, AWNING, 368),
+        ledge("cafe_window_ledge", 864, 448, 144),
+        ledge("cafe_balcony", 960, BALCONY, 224),
+        ledge("cafe_service_upper", 1152, 464, 80),
+        ledge("cafe_service_lower", 1168, 528, 80),
+        sign("plaza_sign_cafe", 820, 468, "THE BOTTOM LINE  -  COFFEE, LICENSED CUPS", 420),
         chest("an unclaimed dividend", "currency:25", 1090, BALCONY),
         resident("npc_business_barista", "business_barista", 900, floor),
         # Dirk on his call, by the fountain.

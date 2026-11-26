@@ -15,7 +15,7 @@ from district_scenery import piece
 #: Room -> [(kind, frame x, frame y)], furthest back first.
 SCENERY = {
     "business_founders_plaza": [
-        ("business_cafe_front", 600, 290),
+        ("business_cafe_front", 528, 290),
         ("business_college_front", 2060, 140),
         ("business_founder_statue", 1260, 300),
         ("business_picket_line", 1690, 480),
