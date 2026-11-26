@@ -179,6 +179,10 @@ def cathedral():
         ledge("memory_gallery", g0, gallery, g1 - g0),
         chest("a memory of a good day", "currency:35", 880, gallery),
         sign("cathedral_sign_gallery", (g0 + g1) // 2, 250, "THE GALLERY OF MEMORIES (SOME OF THEM YOURS)", 520),
+        # The diver has dragged his chest out of the pool; leave room for its swing.
+        entity("EnemySpawn", 1252, floor - 72, 36, 72,
+               name="neural_cathedral_sunk_cost_fallacy_0", brain="combatant",
+               character_id="sunk_cost_fallacy", respawn="OnRoomReenter"),
         # Intrusive Thoughts drift in the nave.
         flier(rid, "intrusive_thought", 0, 1050, 760),
         flier(rid, "intrusive_thought", 1, 1900, 620),
