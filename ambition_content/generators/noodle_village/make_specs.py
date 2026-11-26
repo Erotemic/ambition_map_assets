@@ -216,6 +216,8 @@ SQUARE_ROOFS = [("roof_cart", 880, 1000, 512), ("roof_baker", 1000, 1280, 448), 
                 ("roof_bell_house", 1720, 1904, 320)]
 #: The roads between the square and the market: the street and the roofs.
 VILLAGE_HIGH = 320
+SQUARE_DELIVERY_STEPS = [("delivery_crate", 1776, 1872, 512), ("delivery_awning", 1664, 1744, 448),
+                        ("delivery_gallery", 1744, 1888, 384)]
 
 
 def square():
@@ -238,10 +240,11 @@ def square():
         *gates.as_ron(gates.terminal(RING_LABEL, RING_TERMINAL, 440, g)),
         entity("ShrineSpawn", 600, g - 80, 44, 80, id=f"{rid}_shrine", name="the shrine of the square"),
         resident("npc_richard_duckling", "noodle_village_duckling", 780, g),
-        *[ledge(name, x0, y, x1 - x0) for name, x0, x1, y in SQUARE_ROOFS],
+        *[ledge(name, x0, y, x1 - x0) for name, x0, x1, y in (*SQUARE_ROOFS, *SQUARE_DELIVERY_STEPS)],
+        piece("noodle_brothlehem_fixtures", 16, 228, px=1.25),
         sign("square_sign_ring", 272, g - 330, "ALDENTE: the gate of Brothlehem", 360),
-        sign("square_sign_board", 1180, g - 200, "WEST: the Pilgrims' Way, up to the Temple. EAST: the market, "
-             "then Mount Fizzuvius. NO MINTS ON THE MOUNTAIN.", 560),
+        sign("square_sign_board", 676, g - 146, "WEST: Pilgrims' Way. EAST: Market and Mount Fizzuvius.", 560),
+        sign("square_sign_mints", 676, g - 121, "NO MINTS ON THE MOUNTAIN.", 280),
         sign("square_sign_rest", 1500, g - 110, "THE PILGRIMS' REST: full (it is always full)", 380),
     ]
     return build(rid, e + [blurb(rid, "A town of pilgrims under the hill of the Noodly Temple. Everyone here came "
