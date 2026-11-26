@@ -84,6 +84,10 @@ LOFT_DOOR_X = 2300
 TUNNEL = "pirate_smugglers_tunnel"
 DRAIN = (1696, 1760)
 DRAIN_LEVER = "pirate_port_drain_lever"
+TUNNEL_CUT = (688, 1344)
+TUNNEL_BED = 704
+TUNNEL_LOADING_TOP = 544
+TUNNEL_LOADING_DOCKS = ((624, 752), (1280, 1440))
 #: Behind the plank wall at the tunnel's east end (a secret): the hoard.
 HOARD = "pirate_smugglers_hoard"
 
@@ -118,7 +122,7 @@ ROOMS_AT = {
     # Under the plaza: its shaft under the well.
     CELLARS: ((0, 832), (1600, 640)),
     # East of the cellars, under the waterfront; the hoard east of it.
-    TUNNEL: ((1600, 832), (2048, 640)),
+    TUNNEL: ((1600, 832), (2048, TUNNEL_BED + 64)),
     HOARD: ((3648, 832), (512, 640)),
 }
 
@@ -476,17 +480,23 @@ def cellars():
 
 
 def tunnel():
-    """East of the cellars through the arch, under the waterfront: the
-    smugglers' tunnel, rails along it, a handcart of undeclared goods (a
-    crate of parrots), the chute from the Drowned Compass's cellar; the
-    drain's shaft up to the street and the lever that opens its grate; at
-    the east end a plank wall with a draught through it (a secret)."""
+    """Connect the cellars to the drain and the hoard."""
     rid = TUNNEL
     _, (w, h) = ROOMS_AT[rid]
     g, top = CELLARS_FLOOR, CELLARS_CEIL
     d0, d1 = DRAIN
+    cut_west, cut_east = TUNNEL_CUT
     e = [
-        solid("floor", 0, g, w, h - g),
+        solid("west_bank", 0, g, cut_west, h - g),
+        solid("east_bank", cut_east, g, w - cut_east, h - g),
+        solid("cut_bed", cut_west, TUNNEL_BED, cut_east - cut_west, h - TUNNEL_BED),
+        entity("WaterVolume", cut_west, g, cut_east - cut_west, TUNNEL_BED - g,
+               id="flooded_freight_cut", name="flooded freight cut", swim_up_impulse=440.0),
+        *[ledge(f"loading_dock_{i}", x0, TUNNEL_LOADING_TOP, x1 - x0)
+          for i, (x0, x1) in enumerate(TUNNEL_LOADING_DOCKS)],
+        entity("MovingPlatform", 720, TUNNEL_LOADING_TOP, 144, 16,
+               id="pirate_tunnel_freight_carrier", name="freight carrier",
+               speed=110.0, sweep_dx=448.0, one_way=True, visual="pirate_tunnel_freight_carrier"),
         solid("vault_west", 0, 0, d0, top),
         solid("vault_east", d1, 0, w - d1, top),
         solid("west_wall", 0, top, WALL, g - 112 - top),
@@ -504,7 +514,7 @@ def tunnel():
         sign("tunnel_sign_chute", 820, 330, "THE COMPASS (rum down, money up)", 340),
         sign("tunnel_sign_drain", d0 - 40, 140, "DRAIN: the fish market (lever)", 320),
         cellars_enemy(10, "npc_pirate_cutlass_viper", 640, g, 32, 68, rid=TUNNEL),
-        cellars_enemy(11, "npc_pirate_quartermaster", 1240, g, 34, 71, rid=TUNNEL),
+        cellars_enemy(11, "npc_pirate_quartermaster", 1460, g, 34, 71, rid=TUNNEL),
         cellars_enemy(12, "npc_pirate_cutlass_viper", 1880, g, 32, 68, rid=TUNNEL),
     ]
     return build(rid, e, "THE SMUGGLERS' TUNNEL", music=DOCK_MUSIC)
@@ -555,6 +565,8 @@ LADDERS = [
     # tunnel's shaft.
     (WATERFRONT, DRAIN[0] + 16, 768 - 64, ROOMS_AT[WATERFRONT][1][1]),
     (TUNNEL, DRAIN[0] + 16, 0, CELLARS_FLOOR),
+    (TUNNEL, TUNNEL_CUT[0], TUNNEL_LOADING_TOP, TUNNEL_BED),
+    (TUNNEL, TUNNEL_CUT[1] - 32, TUNNEL_LOADING_TOP, TUNNEL_BED),
 ]
 
 COVE_DOOR_YAML = f"""# The pirate cove's door to the Pirate Port's docks. Written by {GENERATOR}.

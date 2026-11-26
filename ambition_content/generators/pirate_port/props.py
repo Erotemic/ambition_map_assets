@@ -27,7 +27,9 @@ SCENERY = {
     "pirate_customs_cellars": [("cellars_vault", 16, 16)],
     # The smugglers' tunnel east of them, and the hoard behind its planks
     # (`targets/props/pirate_tunnel_props.py`).
-    "pirate_smugglers_tunnel": [("tunnel_west", 16, 16), ("tunnel_east", 1024, 16)],
+    "pirate_smugglers_tunnel": [
+        ("tunnel_west", 16, 16), ("tunnel_east", 1024, 16), ("tunnel_freight_cut", 624, 380),
+    ],
     "pirate_smugglers_hoard": [("hoard_room", 16, 16)],
     "pirate_port_waterfront": [
         ("port_waterfront_west", 0, 160),
