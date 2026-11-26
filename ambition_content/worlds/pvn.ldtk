@@ -11,7 +11,7 @@
 	"iid": "ambition-pvn-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 901234,
+	"nextUid": 901241,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -22319,6 +22319,35 @@
 								{ "__identifier": "name", "__type": "String", "__value": "reef sea", "__tile": null, "defUid": 4125, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["reef sea"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [91,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": 8432,
+							"__worldY": 544,
+							"iid": "SurfaceChain-901240",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1456,608],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fallen mast", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fallen mast"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "1456,608; 1488,608; 1760,672; 1784,672", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["1456,608; 1488,608; 1760,672; 1784,672"]
+								}] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 7681, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
 								}] }
 							]
 						},
