@@ -105,6 +105,11 @@ LIFT_SIZE = (112, 16)
 LIFT_SPEED = 60.0
 #: The Tape Room.
 ROOM_FLOOR = 512
+TAPE_DECK = 320
+TAPE_LANDINGS = (
+    (224, 448, 112), (288, 384, 128), (368, TAPE_DECK, 144),
+    (1136, TAPE_DECK, 240), (1344, 384, 144), (1424, 448, 128),
+)
 #: The Cell-ular Arena: the gallery's end and its top (the Life field's
 #: terrace height), the steps down, the ground, the ring (x0, x1, top).
 GALLERY = (448, 448)
@@ -234,9 +239,13 @@ def tape_room():
         door("tape_door", "out to the Works", 64, g, WORKS, "works_tape_door"),
         start(rid, 160, g),
         sign("tape_sign_tape", 800, 236, "THE TAPE", 160),
-        sign("tape_sign_table", 1240, 274, "THE TABLE OF STATES: A B C D E", 360),
         sign("tape_sign_count", 560, 160, "STEPS: 47,176,870. THEN IT HALTS.", 400),
         resident("npc_automaton_head", "automaton_head", 760, g, w=48, h=40),
+        *[entity("MovingPlatform", x, y, width, 16, id=f"tape_landing_{i}", name="Inspection landing",
+                 speed=0.0, one_way=True, visual="none") for i, (x, y, width) in enumerate(TAPE_LANDINGS)],
+        entity("MovingPlatform", 520, TAPE_DECK, 144, 16, id="tape_inspection_carriage", name="Inspection carriage",
+               speed=112.0, sweep_dx=464.0, one_way=True, visual="automaton_tape_carriage"),
+        chest("spare tape", "currency:20", 1176, TAPE_DECK),
     ]
     return build(rid, e, "THE TAPE ROOM", "automaton_tower")
 

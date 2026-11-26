@@ -27,6 +27,7 @@ SCENERY = {
     "automaton_tape_room": [
         ("automaton_state_table", 1050, 100),
         ("automaton_tape", 60, 250),
+        ("automaton_tape_landings", 208, 257),
     ],
     "automaton_arena": [
         ("automaton_failure_log", 150, 220),

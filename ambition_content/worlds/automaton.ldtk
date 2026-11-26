@@ -11,7 +11,7 @@
 	"iid": "ambition-automaton-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 2008748,
+	"nextUid": 2008787,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -11928,6 +11928,31 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [14,17],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 1024,
+							"__worldY": -431,
+							"iid": "Prop-2008753",
+							"width": 1328,
+							"height": 227,
+							"defUid": 4351,
+							"px": [224,273],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "automaton_tape_landings", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["automaton_tape_landings"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "automaton_tape_landings", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["automaton_tape_landings"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [4,26],
 							"__pivot": [0,0],
@@ -12009,32 +12034,6 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [66,17],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"__worldX": 1860,
-							"__worldY": -430,
-							"iid": "DebugLabel-2008643",
-							"width": 360,
-							"height": 24,
-							"defUid": 2007,
-							"px": [1060,274],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "tape_sign_table", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["tape_sign_table"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "THE TABLE OF STATES: A B C D E", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["THE TABLE OF STATES: A B C D E"]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							]
-						},
-						{
-							"__identifier": "DebugLabel",
 							"__grid": [22,10],
 							"__pivot": [0,0],
 							"__tags": [],
@@ -12086,6 +12085,270 @@
 								{ "__identifier": "brain_override", "__type": "String", "__value": "stand_still", "__tile": null, "defUid": 6842, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["stand_still"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [14,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 1024,
+							"__worldY": -256,
+							"iid": "MovingPlatform-2008760",
+							"width": 112,
+							"height": 16,
+							"defUid": 4251,
+							"px": [224,448],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "tape_landing_0", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tape_landing_0"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Inspection landing", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Inspection landing"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [18,24],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 1088,
+							"__worldY": -320,
+							"iid": "MovingPlatform-2008761",
+							"width": 128,
+							"height": 16,
+							"defUid": 4251,
+							"px": [288,384],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "tape_landing_1", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tape_landing_1"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Inspection landing", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Inspection landing"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [23,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 1168,
+							"__worldY": -384,
+							"iid": "MovingPlatform-2008762",
+							"width": 144,
+							"height": 16,
+							"defUid": 4251,
+							"px": [368,320],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "tape_landing_2", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tape_landing_2"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Inspection landing", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Inspection landing"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [71,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 1936,
+							"__worldY": -384,
+							"iid": "MovingPlatform-2008763",
+							"width": 240,
+							"height": 16,
+							"defUid": 4251,
+							"px": [1136,320],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "tape_landing_3", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tape_landing_3"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Inspection landing", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Inspection landing"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [84,24],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 2144,
+							"__worldY": -320,
+							"iid": "MovingPlatform-2008764",
+							"width": 144,
+							"height": 16,
+							"defUid": 4251,
+							"px": [1344,384],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "tape_landing_4", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tape_landing_4"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Inspection landing", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Inspection landing"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [89,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 2224,
+							"__worldY": -256,
+							"iid": "MovingPlatform-2008765",
+							"width": 128,
+							"height": 16,
+							"defUid": 4251,
+							"px": [1424,448],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "tape_landing_5", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tape_landing_5"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Inspection landing", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Inspection landing"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 0.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [0.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "MovingPlatform",
+							"__grid": [32,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": 1320,
+							"__worldY": -384,
+							"iid": "MovingPlatform-2008766",
+							"width": 144,
+							"height": 16,
+							"defUid": 4251,
+							"px": [520,320],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "tape_inspection_carriage", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tape_inspection_carriage"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Inspection carriage", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Inspection carriage"]
+								}] },
+								{ "__identifier": "sweep_dx", "__type": "Float", "__value": 464.0, "__tile": null, "defUid": 4249, "realEditorValues": [{ "id": "V_Float", "params": [464.0] }] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 112.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [112.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "automaton_tape_carriage", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["automaton_tape_carriage"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
+							"__identifier": "ChestSpawn",
+							"__grid": [73,16],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#F6C85F",
+							"__worldX": 1976,
+							"__worldY": -442,
+							"iid": "ChestSpawn-2008786",
+							"width": 76,
+							"height": 58,
+							"defUid": 2016,
+							"px": [1176,262],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "spare tape", "__tile": null, "defUid": 3041, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["spare tape"]
+								}] },
+								{ "__identifier": "reward", "__type": "String", "__value": "currency:20", "__tile": null, "defUid": 3042, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["currency:20"]
 								}] }
 							]
 						},
