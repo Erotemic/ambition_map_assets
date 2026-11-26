@@ -360,8 +360,7 @@ def bamboo_pass():
         walk("stepping_stone", s0, sy, s1 - s0),
         walk("lookout_low", l0, low, l1 - l0),
         walk("lookout_high", l0, high, l1 - l0),
-        # A chest for whoever climbs to the top (Jon, 2026-10-30: "interactive elements").
-        entity("ChestSpawn", l0 + 4, low - 58, 76, 58, name="the clan's prize", reward="health:2"),
+        entity("ChestSpawn", l0 + 4, high - 58, 76, 58, name="the clan's prize", reward="health:2"),
         sign("pass_sign", 420, g - 200, "SHADOW CLAN SPARRING GROUND: all who pass are opponents. Nothing personal.", 560),
         # Matsuda, the pass's referee, by his tally board before the first
         # bout (`ninja_pass_props.py` `pass_scoreboard`).
@@ -372,7 +371,7 @@ def bamboo_pass():
         # authored): the swordsmen of the rank exam and their oni leader.
         pass_enemy(1, "npc_ninja_shadow_duelist_eye_band", 640, g, 32, 66),
         pass_enemy(2, "npc_ninja_shadow_duelist_eye_band", 1520, g, 32, 66),
-        pass_enemy(3, "npc_ninja_shadow_oni_leader", 1600, high, 34, 71),
+        pass_enemy(3, "npc_ninja_shadow_oni_leader", l1 - 60, high, 34, 71),
         pass_enemy(4, "npc_ninja_shadow_duelist_eye_band", 2060, g, 32, 66),
     ]
     return build(rid, e, "THE BAMBOO PASS", music=FOREST_MUSIC)

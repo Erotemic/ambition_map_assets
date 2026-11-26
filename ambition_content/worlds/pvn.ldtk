@@ -31793,18 +31793,18 @@
 						},
 						{
 							"__identifier": "ChestSpawn",
-							"__grid": [96,40],
+							"__grid": [96,32],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#F6C85F",
 							"__worldX": 8776,
-							"__worldY": 10518,
+							"__worldY": 10390,
 							"iid": "ChestSpawn-900131",
 							"width": 76,
 							"height": 58,
 							"defUid": 2016,
-							"px": [1544,646],
+							"px": [1544,518],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "the clan's prize", "__tile": null, "defUid": 3041, "realEditorValues": [{
 									"id": "V_String",
@@ -31992,18 +31992,18 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [100,31],
+							"__grid": [102,31],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
-							"__worldX": 8832,
+							"__worldX": 8872,
 							"__worldY": 10377,
 							"iid": "EnemySpawn-900097",
 							"width": 34,
 							"height": 71,
 							"defUid": 2008,
-							"px": [1600,505],
+							"px": [1640,505],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "ninja_bamboo_pass_npc_ninja_shadow_oni_leader_3", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
