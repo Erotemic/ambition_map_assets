@@ -420,6 +420,8 @@ def reef():
 POINT_FLOOR = 960
 POINT_LANDINGS = ((930, 1000, 880), (1000, 1070, 800), (935, 1005, 720), (995, 1065, 640), (940, 1010, 560), (990, 1060, 480))
 POINT_GALLERY = (860, 1140, 400)
+POINT_OIL_STEP = (1120, 1216, 896)
+POINT_WATCH_DECK = (1152, 1520, 832)
 
 
 def point_enemy(n, character, x, feet, w, h):
@@ -431,8 +433,8 @@ def point():
     """Out past the reef: the Lighthouse Point, the honest light the wreckers
     would like out. The rock (y 960) from the reef's east rocks; the
     keeper's cottage; the lighthouse cut away, its stair of landings up
-    inside to the gallery (y 400) and the lamp; wreckers come round the
-    point on its far side."""
+    inside to the gallery (y 400) and the lamp. The lookout watches
+    from the oil deck on the east side of the tower."""
     rid = POINT
     _, (w, h) = ROOMS_AT[rid]
     g = POINT_FLOOR
@@ -445,6 +447,8 @@ def point():
         start(rid, 120, g),
         *[ledge(f"landing_{i}", x0, y, x1 - x0) for i, (x0, x1, y) in enumerate(POINT_LANDINGS)],
         ledge("gallery", gx0, gy, gx1 - gx0),
+        ledge("oil_step", POINT_OIL_STEP[0], POINT_OIL_STEP[2], POINT_OIL_STEP[1] - POINT_OIL_STEP[0]),
+        ledge("oil_deck", POINT_WATCH_DECK[0], POINT_WATCH_DECK[2], POINT_WATCH_DECK[1] - POINT_WATCH_DECK[0]),
         # Ezra Lamplugh, the keeper, by his cottage (`pirate_port.yarn`).
         resident("npc_port_lamplugh", "pirate_port_lamplugh", 700, g),
         entity("ChestSpawn", gx0 + 6, gy - 58, 76, 58, name="the keeper's oil money", reward="currency:60"),
@@ -452,7 +456,7 @@ def point():
         sign("point_sign_cottage", 620, g - 200, "KEEPER'S COTTAGE. Wreckers: no.", 320),
         # The wreckers, come round the point at the tower's far side.
         point_enemy(1, "npc_pirate_cutlass_viper", 1320, g, 32, 68),
-        point_enemy(2, "npc_pirate_lookout", 1460, g, 32, 65),
+        point_enemy(2, "npc_pirate_lookout", 1460, POINT_WATCH_DECK[2], 32, 65),
     ]
     return build(rid, e, "THE LIGHTHOUSE POINT", music=DOCK_MUSIC, extra='\n    backdrop: "pirate_headland",')
 
