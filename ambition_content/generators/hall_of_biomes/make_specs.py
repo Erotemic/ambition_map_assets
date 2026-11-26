@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Make the area specs of the hall of biomes: one hall and one room for each biome.
 
-The hall is one long room with a door for each biome. Each door has the name of
-its biome over it and goes to a small exhibit room that names that biome as its
+The hall has a door for each biome. A walkway above the doors connects the
+four groups of exhibits. Ladders connect the walkway to the floor. Each door
+shows its biome name and goes to a small exhibit room that names that biome as its
 `parallax_theme`. A biome that is a room look (`docs/systems/room-looks.md`)
 names its `palette` also, and a look with states has a switch that goes round
 them. Each exhibit room is the same room: a floor, a block, a block
@@ -76,6 +77,9 @@ DOOR_STEP = 128
 HALL_W = 160 + DOOR_STEP * len(BIOMES) + 96
 HALL_H = 416
 FLOOR = HALL_H - 32
+WALKWAY_Y = 224
+LADDER_W = 32
+WALKWAY_LADDERS = (144, 784, 1296, 1680, 2064)
 
 
 def room_id(key: str) -> str:
@@ -89,6 +93,12 @@ def door_x(index: int) -> int:
 def hall_spec() -> str:
     doors = []
     back = []
+    walkway = []
+    for left, right in zip(WALKWAY_LADDERS, WALKWAY_LADDERS[1:]):
+        start = left + LADDER_W
+        walkway.append(
+            f'        ( type: "OneWayPlatform", px: [{start}, {WALKWAY_Y}], size: [{right - start}, 16] ),'
+        )
     for i, (key, name, *_rest) in enumerate(BIOMES):
         # The door of the room, back to the hall: made with the hall, in the
         # room (`connect_to`). A door to a door that does not exist is refused,
@@ -120,9 +130,10 @@ def hall_spec() -> str:
         ( type: "Solid", px: [0, 0], size: [{HALL_W}, 16], fields: ( name: "ceiling" ) ),
         ( type: "Solid", px: [0, 16], size: [16, {FLOOR - 16}], fields: ( name: "left_wall" ) ),
         ( type: "Solid", px: [{HALL_W - 16}, 16], size: [16, {FLOOR - 16}], fields: ( name: "right_wall" ) ),
+{chr(10).join(walkway)}
         ( type: "PlayerStart", px: [112, {FLOOR - 46}], size: [28, 46], fields: ( name: "{HALL}_spawn" ) ),
         ( type: "LoadingZone", px: [32, {FLOOR - 96}], size: [48, 96], fields: ( id: "{HALL}_entry", name: "to central hub", activation: "Door", target_room: "central_hub_complex", target_zone: "{HALL}_door", bidirectional: true ) ),
-        ( type: "DebugLabel", px: [192, 64], size: [900, 24], fields: ( name: "{HALL}_sign", text: "Hall of biomes. Each door goes to one biome: the same room in each, in the art of that biome.", category: "Custom" ) ),
+        ( type: "Prop", px: [362, 144], size: [1628, 48], fields: ( name: "Exhibit group signs", kind: "biome_gallery_signs" ) ),
 {chr(10).join(doors)}
     ],
     connect_to: [
@@ -211,6 +222,10 @@ def apply(paths: list[Path]) -> None:
     # of each pair: its own, and the one in the room.
     for path in paths[1:] + paths[:1]:
         run("ambition_ldtk_tools", "area", "create", str(path), "--ldtk", LDTK, "--replace-existing")
+    for x in WALKWAY_LADDERS:
+        run("ambition_ldtk_tools", "intgrid", "paint", "--ldtk", LDTK, "--level", HALL,
+            "--layer", "Climbable", "--value", "1", "--px", f"{x},{WALKWAY_Y - 16}",
+            "--size", f"{LADDER_W},{FLOOR - WALKWAY_Y + 16}")
     for key, _name, _biome, theme, palette in BIOMES:
         for layer, value, _what, (x, y), (w, h) in PAINT:
             run("ambition_ldtk_tools", "intgrid", "paint", "--ldtk", LDTK, "--level", room_id(key),
