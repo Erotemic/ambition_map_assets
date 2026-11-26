@@ -228,13 +228,14 @@ FOREST_FLOOR = 832
 #: street's last roof (y 384 there): the high road's side exit meets the
 #: first branch (`specs/check_flat_map.py`).
 BRANCHES = [(f"branch_{i}", i * BRANCH_STEP + (WALL if i == 0 else 0), 448 + 64 * i) for i in range(6)]
+FOREST_GATE_BOUGH = ((2216, 768), (2240, 768), (2344, 788), (2496, 832), (2560, 832))
 
 
 def forest():
     """The cedar forest. Floor 832. The branches step down east from the
     west edge (y 448) to 64 over the floor: from the floor, a robot climbs
-    them west, back to the roofs of the street. The Shadow Dojo's door is
-    at the east end."""
+    them west, back to the roofs of the street. A fallen bough leads from
+    the last branch to the fork by the Shadow Dojo's door."""
     rid = FOREST
     _, (w, h) = ROOMS_AT[rid]
     top = BRANCHES[0][2]
@@ -250,6 +251,8 @@ def forest():
         *[ledge(name, x, y, BRANCH_W) for name, x, y in BRANCHES],
         entity("SurfaceChain", 880, 624, 16, 16, name="fallen_cedar",
                points="880,784; 936,784; 1408,640", visual="none"),
+        entity("SurfaceChain", *FOREST_GATE_BOUGH[0], 16, 16, name="gate_bough",
+               points="; ".join(f"{x},{y}" for x, y in FOREST_GATE_BOUGH), visual="none"),
         door("forest_clan_door", "to the hall of the Shadow Clan", 2700, FOREST_FLOOR, CLAN, CLAN_DOOR),
         sign("clan_sign", 2480, FOREST_FLOOR - 200, "HALL OF THE SHADOW CLAN. Visitors by appointment. Appointments by stealth.", 520),
         sign("forest_sign", 900, FOREST_FLOOR - 120, "Cedar path. Mind the roots.", 260),

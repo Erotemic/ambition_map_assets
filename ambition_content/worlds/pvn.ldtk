@@ -11,7 +11,7 @@
 	"iid": "ambition-pvn-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 901242,
+	"nextUid": 901260,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -30510,7 +30510,7 @@
 							"__worldX": 6308,
 							"__worldY": 10390,
 							"iid": "Prop-901060",
-							"width": 387,
+							"width": 632,
 							"height": 314,
 							"defUid": 4351,
 							"px": [1892,518],
@@ -30755,6 +30755,35 @@
 								{ "__identifier": "points", "__type": "String", "__value": "880,784; 936,784; 1408,640", "__tile": null, "defUid": 6812, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["880,784; 936,784; 1408,640"]
+								}] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 7681, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [138,48],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": 6632,
+							"__worldY": 10640,
+							"iid": "SurfaceChain-901259",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [2216,768],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "gate_bough", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gate_bough"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "2216,768; 2240,768; 2344,788; 2496,832; 2560,832", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["2216,768; 2240,768; 2344,788; 2496,832; 2560,832"]
 								}] },
 								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 7681, "realEditorValues": [{
 									"id": "V_String",
