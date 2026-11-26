@@ -16217,18 +16217,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [63,31],
+							"__grid": [87,31],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 8826,
+							"__worldX": 9200,
 							"__worldY": 1277,
 							"iid": "Prop-1008436",
-							"width": 84,
+							"width": 85,
 							"height": 67,
 							"defUid": 4351,
-							"px": [1018,509],
+							"px": [1392,509],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "bridge_tea_table", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
