@@ -7,8 +7,8 @@
 
 Run it from the repository root. Change the script, not the rooms.
 
-The world file is `authority.ldtk`. The gate (address LICENSED) stands in
-the Concourse. The Concourse and the Plaza join by an edge; the Manifest
+The world file is `authority.ldtk`. The gate (address LEGAL, the one
+address every terminal posts) stands in the Concourse. The Concourse and the Plaza join by an edge; the Manifest
 Office is a room you go into, so its way in is a door:
 
  [ the Concourse ] ==== [ Authority Plaza ]
@@ -133,11 +133,11 @@ def concourse():
         solid("east_wall", w - WALL, 0, WALL, FLOOR - 96),
         solid("east_wall_low", w - WALL, FLOOR + SLAB, WALL, HALL_FLOOR - FLOOR - SLAB),
         edge("concourse_to_plaza", "east, to Authority Plaza", w - WALL, FLOOR, PLAZA, "plaza_to_concourse"),
-        # The gate (LICENSED) and its terminal.
+        # The gate (LEGAL) and its terminal.
         *gates.as_ron(gates.ring("Concourse Gate", "authority_concourse_gate", 96, FLOOR, "the gate")),
         *gates.as_ron(gates.terminal("Concourse Gate", "authority_gate_terminal", 400, FLOOR)),
         start(rid, 540, FLOOR),
-        sign("concourse_sign_gate", 300, FLOOR - 360, "LICENSED: THE CONCOURSE", 300),
+        sign("concourse_sign_gate", 300, FLOOR - 360, "LEGAL: THE CONCOURSE", 300),
         # Information.
         resident("npc_authority_information", "authority_information", 760, FLOOR),
         sign("concourse_sign_information", 760, 380, "INFORMATION", 200),
