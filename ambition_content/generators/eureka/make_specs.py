@@ -275,11 +275,17 @@ def quad():
 
 
 def patent_office():
-    """The patent office: the clerk behind a long counter, the card cabinet,
-    and the archive gallery over it (one jump up from the cabinet's top)."""
+    """The clerk works below the archive. Jump or climb to the gallery."""
     rid = PATENT
     _, (w, h) = ROOMS_AT[rid]
     floor, ceiling = h - 64, 32
+    gallery_top = floor - 176
+    gallery_left = 768
+    ladder_top = gallery_top - 16
+    ladder = f"""
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [{gallery_left}, {ladder_top}], size: [32, {floor - ladder_top}]),
+    ]),"""
     e = [
         solid("floor", 0, floor, w, 64),
         solid("ceiling", 0, 0, w, ceiling),
@@ -289,11 +295,11 @@ def patent_office():
         start(rid, 140, floor),
         ledge("counter", 480, floor - 40, 240),
         ledge("file_cabinets", 820, floor - 96, 160),
-        ledge("archive_gallery", 760, floor - 176, w - WALL - 760),
+        ledge("archive_gallery", gallery_left, gallery_top, w - WALL - gallery_left),
         resident("special_patent_clerk", "eureka_patent_clerk", 640, floor),
         sign("patent_sign_rules", 520, ceiling + 40, "All applications are processed relative to the applicant.", 520),
     ]
-    return build(rid, e, None, music=PATENT_MUSIC)
+    return build(rid, e, None, music=PATENT_MUSIC, extra=ladder)
 
 
 def coil_lab():
