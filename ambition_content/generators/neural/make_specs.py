@@ -83,6 +83,7 @@ FIBRE_CLIMB = (2032, 320, 32, 320)
 CATHEDRAL_FLOOR = 1024
 POOL = (800, 1120, 64)
 GALLERY = (600, 1240, 544)
+GALLERY_LIFT = (480, 592, 992)
 BRANCHES = ((1300, 1500, 896), (1560, 1760, 768), (1300, 1500, 640))
 #: The Weights.
 WEIGHTS_FLOOR = 1024
@@ -172,6 +173,7 @@ def cathedral():
     floor = CATHEDRAL_FLOOR
     p0, p1, depth = POOL
     g0, g1, gallery = GALLERY
+    lift_left, lift_right, lift_bottom = GALLERY_LIFT
     e = [
         solid("floor_west", 0, floor, p0, h - floor),
         solid("pool_bed", p0, floor + depth, p1 - p0, h - floor - depth),
@@ -186,6 +188,9 @@ def cathedral():
         # of memories west of the top one.
         *[ledge(f"branch_{n}", x0, top, x1 - x0) for n, (x0, x1, top) in enumerate(BRANCHES)],
         ledge("memory_gallery", g0, gallery, g1 - g0),
+        entity("MovingPlatform", lift_left, lift_bottom, lift_right - lift_left, 16,
+               id="neural_cathedral_gallery_lift", name="Memory lift", speed=168.0,
+               lift_dy=float(gallery - lift_bottom), one_way=True, visual="neural_cathedral_memory_lift"),
         chest("a memory of a good day", "currency:35", 880, gallery),
         sign("cathedral_sign_gallery", (g0 + g1) // 2, 250, "THE GALLERY OF MEMORIES (SOME OF THEM YOURS)", 520),
         # The diver has dragged his chest out of the pool; leave room for its swing.
@@ -194,7 +199,7 @@ def cathedral():
                character_id="sunk_cost_fallacy", respawn="OnRoomReenter"),
         ground_enemy(rid, "anchoring_bias", 730, gallery, 44, 84),
         ground_enemy(rid, "motor_neuron", 1670, floor, 44, 75),
-        flier(rid, "brainstorm", 0, 1820, 345, 72, 50),
+        flier(rid, "brainstorm", 0, 1620, 432, 72, 50),
         # Intrusive Thoughts drift in the nave.
         flier(rid, "intrusive_thought", 0, 1050, 760),
         flier(rid, "intrusive_thought", 1, 1900, 620),

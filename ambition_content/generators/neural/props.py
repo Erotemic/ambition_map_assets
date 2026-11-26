@@ -19,6 +19,7 @@ SCENERY = {
         ("neural_signpost", 640, 440),
     ],
     "neural_cathedral": [
+        ("neural_cathedral_lift_fibres", 460, 510),
         ("neural_memory_gallery", 580, 32),
         ("neural_dendrite_tree", 1260, 590),
     ],

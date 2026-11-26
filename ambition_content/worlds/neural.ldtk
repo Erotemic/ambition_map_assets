@@ -11,7 +11,7 @@
 	"iid": "ambition-neural-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1708724,
+	"nextUid": 1708741,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -10340,6 +10340,31 @@
 					"entityInstances": [
 						{
 							"__identifier": "Prop",
+							"__grid": [29,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -1921,
+							"__worldY": 128,
+							"iid": "Prop-1708727",
+							"width": 140,
+							"height": 512,
+							"defUid": 4351,
+							"px": [479,512],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "neural_cathedral_lift_fibres", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["neural_cathedral_lift_fibres"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "neural_cathedral_lift_fibres", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["neural_cathedral_lift_fibres"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
 							"__grid": [37,2],
 							"__pivot": [0,0],
 							"__tags": [],
@@ -10501,6 +10526,41 @@
 							]
 						},
 						{
+							"__identifier": "MovingPlatform",
+							"__grid": [30,62],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#5BA1FF",
+							"__worldX": -1920,
+							"__worldY": 608,
+							"iid": "MovingPlatform-1708734",
+							"width": 112,
+							"height": 16,
+							"defUid": 4251,
+							"px": [480,992],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "neural_cathedral_gallery_lift", "__tile": null, "defUid": 6853, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["neural_cathedral_gallery_lift"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "Memory lift", "__tile": null, "defUid": 4248, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Memory lift"]
+								}] },
+								{ "__identifier": "speed", "__type": "Float", "__value": 168.0, "__tile": null, "defUid": 4250, "realEditorValues": [{ "id": "V_Float", "params": [168.0] }] },
+								{ "__identifier": "lift_dy", "__type": "Float", "__value": -448.0, "__tile": null, "defUid": 6955, "realEditorValues": [{ "id": "V_Float", "params": [-448.0] }] },
+								{ "__identifier": "visual", "__type": "String", "__value": "neural_cathedral_memory_lift", "__tile": null, "defUid": 6956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["neural_cathedral_memory_lift"]
+								}] },
+								{ "__identifier": "one_way", "__type": "Bool", "__value": true, "__tile": null, "defUid": 6999, "realEditorValues": [{
+									"id": "V_Bool",
+									"params": [ true ]
+								}] }
+							]
+						},
+						{
 							"__identifier": "ChestSpawn",
 							"__grid": [55,30],
 							"__pivot": [0,0],
@@ -10652,18 +10712,18 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [111,20],
+							"__grid": [99,25],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
-							"__worldX": -616,
-							"__worldY": -64,
-							"iid": "EnemySpawn-1708679",
+							"__worldX": -816,
+							"__worldY": 23,
+							"iid": "EnemySpawn-1708740",
 							"width": 72,
 							"height": 50,
 							"defUid": 2008,
-							"px": [1784,320],
+							"px": [1584,407],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "neural_cathedral_brainstorm_0", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
