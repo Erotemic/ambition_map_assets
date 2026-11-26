@@ -100,6 +100,9 @@ SLAB = (1320, 1384)
 BOARD = (1000, 1064)
 SLAB_LEVER = "ninja_village_slab_lever"
 WAY_FLOOR, WAY_CEIL = 512, 48
+WAY_GALLERY_TOP = 320
+WAY_WEST_GALLERY = ((416, 528, 448), (480, 608, 384), (544, 896, WAY_GALLERY_TOP))
+WAY_EAST_GALLERY = ((1008, 1456, WAY_GALLERY_TOP), (1408, 1504, 384), (1472, 1568, 448))
 #: The shrine, the street and the forest touch where their side exits join,
 #: with the low road and the high road level (`specs/check_flat_map.py`). The
 #: dojo is a building.
@@ -380,18 +383,13 @@ def bamboo_pass():
 
 
 def hidden_way():
-    """Under the street and the shrine: the village's hidden way, dug and
-    timbered, and lived in. A straw dummy, a shuriken target, the nightingale
-    floor (it sings), a sleeping mat and a cold bowl of rice; the weapons
-    rack, a cupboard of disguises. Up a shaft at the west end to the
-    shrine's slab (the lever by it opens it); up one at the east end to the
-    street's loose board."""
+    """Connect the street and shrine by the floor and the training gallery."""
     rid = WAY
     _, (w, h) = ROOMS_AT[rid]
     g, top = WAY_FLOOR, WAY_CEIL
-    x0 = ROOMS_AT[WAY][0][0]
-    s0, s1 = SLAB[0] - x0, SLAB[1] - x0
-    b0, b1 = BOARD[0] + ROOMS_AT[STREET][0][0] - x0, BOARD[1] + ROOMS_AT[STREET][0][0] - x0
+    world_x = ROOMS_AT[WAY][0][0]
+    s0, s1 = SLAB[0] - world_x, SLAB[1] - world_x
+    b0, b1 = BOARD[0] + ROOMS_AT[STREET][0][0] - world_x, BOARD[1] + ROOMS_AT[STREET][0][0] - world_x
     e = [
         solid("floor", 0, g, w, h - g),
         solid("ceiling_west", 0, 0, s0, top),
@@ -405,11 +403,15 @@ def hidden_way():
                activation="EdgeExit", target_room=STREET, target_zone="secret_street_board", bidirectional=True),
         entity("Switch", s1 + 40, g - 32, 24, 32, id=SLAB_LEVER, name="the slab's lever", prompt="Pull the lever",
                action="ToggleFlag", target_encounter=""),
+        *[ledge(f"way_gallery_west_{n}", x0, y, x1 - x0)
+          for n, (x0, x1, y) in enumerate(WAY_WEST_GALLERY)],
+        *[ledge(f"way_gallery_east_{n}", x0, y, x1 - x0)
+          for n, (x0, x1, y) in enumerate(WAY_EAST_GALLERY)],
         start(rid, b0 - 120, g),
         sign("way_sign", 960, 90, "THIS PASSAGE DOES NOT EXIST", 300),
         sign("way_sign_floor", 820, 380, "NIGHTINGALE FLOOR: it is rude to sneak", 340),
         sign("way_sign_slab", s0 + 40, 110, "UP: the shrine (lever). Bow on the way.", 320),
-        entity("ChestSpawn", 1300, g - 58, 76, 58, name="a ninja's savings", reward="currency:60"),
+        entity("ChestSpawn", 1300, WAY_GALLERY_TOP - 58, 76, 58, name="a ninja's savings", reward="currency:60"),
         pass_enemy(10, "npc_ninja_shadow_duelist_eye_band", 620, g, 32, 66, rid=WAY),
         pass_enemy(11, "npc_ninja_shadow_duelist_eye_band", 1180, g, 32, 66, rid=WAY),
     ]
