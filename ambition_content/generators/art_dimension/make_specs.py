@@ -76,6 +76,7 @@ sys.path.insert(0, str(TOOL_SPECS))
 sys.path.insert(0, str(TOOL_SPECS / "gate_network"))
 
 from district_kit import WALL, WORLDS, edge, ensure_world, entity, door, ledge, make_rooms, paint, prop, resident, room, run, sign, solid, start  # noqa: E402
+from district_scenery import piece  # noqa: E402
 
 import gates  # noqa: E402
 
@@ -582,6 +583,7 @@ def library():
         resident("npc_art_the_author", "art_the_author", 380, g, h=72),
         prop_at("lectern", "art_lectern", 470, g, 64, 88),
         prop_at("book_tower", "art_book_tower", 260, g, 96, 192),
+        piece("art_library_stair", 552, 300),
         # Steps up to the balcony of the sad ending.
         ledge("step_a", 560, g - 64, 112),
         ledge("step_b", 680, g - 128, 112),

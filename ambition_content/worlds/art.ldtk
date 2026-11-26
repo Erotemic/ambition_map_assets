@@ -11,7 +11,7 @@
 	"iid": "ambition-art-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 1108777,
+	"nextUid": 1108786,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -19357,6 +19357,31 @@
 								{ "__identifier": "kind", "__type": "String", "__value": "art_book_tower", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["art_book_tower"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [35,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": -2235,
+							"__worldY": 2708,
+							"iid": "Prop-1108785",
+							"width": 555,
+							"height": 268,
+							"defUid": 4351,
+							"px": [565,308],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "art_library_stair", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["art_library_stair"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "art_library_stair", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["art_library_stair"]
 								}] }
 							]
 						},
