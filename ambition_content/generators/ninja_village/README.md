@@ -24,10 +24,12 @@ forms, the rival form, the shouted names of moves), not the culture.
 ## The roads
 
 - The low road: shrine floor, street, forest floor.
-- The high road: the forest's branches (each 64 px over the one east of
-  it), the roofs of the street (gaps of 80 px, steps of 64 px or less), the
-  torii terrace, the shrine's stair. Each room joins the next at both
-  heights, so the two roads are one loop.
+- The high road follows the forest's branches, the roofs of the street,
+  the torii terrace, and the shrine's stair. Each room joins the next at
+  both heights.
+- A ladder at the bakery and the dojo practice platforms connect the
+  street to the roofs. Use the third practice platform to reach the tea
+  house roof. Use the top platform to reach the dojo roof.
 - The way on: the forest's east door goes to `ninja_dojo` (two ways), the
   hall of the Shadow Clan (the Oni leader, the Duelist, the Heavy), and from
   there to the mockingbird arena.

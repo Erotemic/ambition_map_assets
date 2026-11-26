@@ -36,6 +36,7 @@ SCENERY = {
         ("village_watch_house", 2440, 310),
         # The loose board over the hidden way.
         ("ninja_street_board", 996, 758),
+        ("village_dojo_practice", 1448, 512),
     ],
     # The Bamboo Pass (`targets/props/ninja_pass_props.py`, drawn on the
     # room's numbers): each piece at its frame.

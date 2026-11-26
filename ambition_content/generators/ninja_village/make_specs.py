@@ -166,8 +166,7 @@ def shrine():
     return build(rid, e, "THE NINJA VILLAGE: THE GATE SHRINE")
 
 
-#: The roofs of the street, west to east: (name, x0, x1, ridge y). Each
-#: step up is 64 or less and each gap 80, a run and a jump.
+#: The roofs of the street, west to east: (name, x0, x1, ridge y).
 ROOFS = [
     ("roof_baker", 16, 480, 512),
     ("roof_weaver", 560, 1000, 480),
@@ -176,13 +175,15 @@ ROOFS = [
     ("roof_granary", 2040, 2400, 416),
     ("roof_watch_house", 2480, 2800, 384),
 ]
+PRACTICE_PLATFORMS = [(1456, 1520, 704), (1536, 1600, 640), (1472, 1536, 576), (1568, 1664, 512)]
 
 
 def street():
     """The main street (y 768), the length of the room. Over it the roofs of
     the houses are a road of their own, from the shrine's terrace in the west
     to the forest's branches in the east. A ladder goes up the baker's wall
-    from the street to the first roof."""
+    from the street to the first roof. Practice platforms near the dojo
+    lead from the street to the tea house and dojo roofs."""
     rid = STREET
     _, (w, h) = ROOMS_AT[rid]
     ground = 768
@@ -203,13 +204,15 @@ def street():
         edge("street_west_high", "to the torii terrace", 0, west_roof, SHRINE, "shrine_east_high"),
         start(rid, 120, ground),
         *[ledge(name, x0, y, x1 - x0) for name, x0, x1, y in ROOFS],
+        *[ledge(f"practice_platform_{i}", left, top, right - left)
+          for i, (left, right, top) in enumerate(PRACTICE_PLATFORMS)],
         resident("npc_village_daichi", "ninja_village_daichi", 760, ground),
         # Ume by her bench, clear of her door.
         resident("npc_village_ume", "ninja_village_ume", 1390, ground),
         door("street_tea_door", "into the tea house", TEA_DOOR_X, ground, TEA, "tea_door"),
         sign("tea_house_sign", 1280, ground - 200, "UME'S TEA HOUSE: gate-sick half price", 360),
         door("street_dojo_door", "into the dojo", 1736, ground, DOJO, "dojo_door"),
-        sign("dojo_sign", 1760, ground - 180, "VILLAGE DOJO: rank exams on the hour", 340),
+        sign("dojo_sign", 1760, 626, "VILLAGE DOJO: rank exams on the hour", 290),
         sign("notice_board", 2240, ground - 140, "NOTICE: rooftop running permitted after the rice is in", 440),
         edge("street_east_low", "to the forest", w - WALL, ground, FOREST, "forest_west_low"),
         edge("street_east_high", "into the branches", w - WALL, east_roof, FOREST, "forest_west_high"),
