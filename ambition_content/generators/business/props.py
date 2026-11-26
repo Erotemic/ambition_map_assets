@@ -21,6 +21,8 @@ SCENERY = {
         ("business_picket_line", 1690, 480),
     ],
     "business_records_processing": [
+        ("business_records_service_stairs", 1488, 530),
+        ("business_records_archive_stairs", 16, 300),
         ("business_records_desk", 540, 320),
         ("business_stamp_press", 580, 600),
         ("business_records_conveyor", 160, 900),

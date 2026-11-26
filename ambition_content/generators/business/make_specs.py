@@ -190,15 +190,18 @@ def records_processing():
                name="business_records_hedge_fund_0", brain="combatant",
                character_id="hedge_fund", respawn="OnRoomReenter"),
         sign("records_sign_shredder", 1360, 760, "SHREDDING. NO RETURNS.", 280),
-        # The climb, east to west: a catwalk a double jump over the floor,
-        # one over it against the east wall, the folder carrier across, the
-        # walk to the clerk's desk, and the top of the archive.
+        # The service steps lead to the carrier dock.
+        ledge("catwalk_service_step", 1488, floor - 64, 128),
         ledge("catwalk_low", 1600, floor - 128, 360),
+        ledge("catwalk_service_landing", 1936, floor - 192, 224),
         ledge("catwalk_east", 2140, floor - 256, w - WALL - 2140),
+        ledge("catwalk_carrier_dock", 2112, floor - 320, 144),
         entity("MovingPlatform", 1520, floor - 384, 160, 16, id="business_records_folder_carrier", name="the folder carrier",
                speed=80.0, sweep_dx=440.0, one_way=True, visual="business_folder_carrier"),
         ledge("catwalk_mid", 1040, floor - 384, 460),
+        ledge("catwalk_intake_shelf", 880, floor - 448, 176),
         ledge("catwalk_desk", 400, floor - 512, 500),
+        ledge("archive_step", 336, floor - 576, 128),
         ledge("archive_top", WALL, floor - 640, 344),
         resident("npc_business_records_clerk", "business_clerk", 520, floor - 512),
         sign("records_sign_desk", 660, floor - 600, "SENIOR CLERK. TAKE A NUMBER.", 320),
