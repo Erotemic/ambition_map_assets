@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 107779,
+	"nextUid": 107828,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -8928,9 +8928,9 @@
 							"defUid": 104426,
 							"px": [1088,216],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "intro_raider_station slate", "__tile": null, "defUid": 104424, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_keep_clear slate", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["intro_raider_station slate"]
+									"params": ["workshop_sign_keep_clear slate"]
 								}] },
 								{ "__identifier": "kind", "__type": "String", "__value": "workshop_slate_120", "__tile": null, "defUid": 104425, "realEditorValues": [{
 									"id": "V_String",
@@ -8953,15 +8953,40 @@
 							"defUid": 2007,
 							"px": [1096,220],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "intro_raider_station", "__tile": null, "defUid": 3015, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "workshop_sign_keep_clear", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["intro_raider_station"]
+									"params": ["workshop_sign_keep_clear"]
 								}] },
 								{ "__identifier": "text", "__type": "String", "__value": "KEEP CLEAR", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["KEEP CLEAR"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [80,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 970,
+							"__worldY": 2688,
+							"iid": "DebugLabel-107806",
+							"width": 1,
+							"height": 1,
+							"defUid": 2007,
+							"px": [1290,320],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "intro_raider_station", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_raider_station"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": [""]
+								}] }
 							]
 						},
 						{

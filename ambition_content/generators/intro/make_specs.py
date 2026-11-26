@@ -392,7 +392,12 @@ def workshop():
                brain="sandbag_infinite", character_id="practice_sandbag", respawn="OnRoomReenter"),
         *slate("workshop_sign_sandbag", 450, g - 112, "STRIKE TEST", 120),
         *slate("intro_bench_station", 1060, BENCH[2] - 64, "LOGS. DO NOT TIDY.", 180),
-        *slate("intro_raider_station", 1148, g - 136, "KEEP CLEAR", 120),
+        *slate("workshop_sign_keep_clear", 1148, g - 136, "KEEP CLEAR", 120),
+        # Where the raiders form up when the door is down: on the floor
+        # between Scout and the doorway, the first at the door and the rest
+        # toward the bench (`actor.form_up` with negative spacing). A mark
+        # in the air over the bench would stand them on its board.
+        mark("intro_raider_station", BARN_DOOR_X - 30, g - 32),
         mark("intro_brute_throw", 1270, g - 32),
         mark("intro_dennis_impact", 1056, g - 35),
         mark("intro_barn_door_aim", BARN_DOOR_X + 12, g - 56),
