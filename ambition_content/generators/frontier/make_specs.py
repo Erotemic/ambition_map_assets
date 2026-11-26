@@ -34,7 +34,7 @@ the two buildings (the saloon, the livery) by doors:
   one jump up, a catwalk over each a double jump up. The way on to the
   lookout is behind a grille that the Marshal's defeat opens
   (`boss.cleared frontier.marshal_gallus`).
-- `frontier_saddle_lookout`: the top of the east mesa, the beaten Marshal.
+- `frontier_saddle_lookout`: the mesa path and survey decks lead to the summit.
 - `hall_marshal_gallus_corral`: the Hall of Bosses' practice copy of the
   corral (placement `hall.marshal_gallus`), by a door on the hall's lower
   floor.
@@ -477,6 +477,10 @@ def saddle_lookout():
         solid("mesa_shelf", 0, low, 480, h - low),
         slope("summit_path", 480, low, 800, top),
         solid("summit", 800, top, w - 800, h - top),
+        ledge("survey_west_deck", 272, 448, 128),
+        ledge("survey_middle_deck", 448, 384, 144),
+        ledge("survey_rim_deck", 640, 320, 176),
+        ledge("lookout_roof", 880, 272, 240),
         chest("the gate tolls", "currency:150", 1340, top),
         sign("lookout_sign", 1100, top - 240, "THE LEADEN SADDLE: THE TOWN, THE PADS, THE PASS", 520),
     ]
