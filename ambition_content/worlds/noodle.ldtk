@@ -11,7 +11,7 @@
 	"iid": "ambition-noodle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 800230,
+	"nextUid": 800231,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -9968,6 +9968,31 @@
 							],
 							"__worldX": 72600,
 							"__worldY": 822
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [1,8],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 72030,
+							"__worldY": 133,
+							"iid": "Prop-800230",
+							"width": 1554,
+							"height": 859,
+							"defUid": 4351,
+							"px": [30,133],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "Nave alcoves and signs", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Nave alcoves and signs"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "noodly_nave_fixtures", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["noodly_nave_fixtures"]
+								}] }
+							]
 						}
 					]
 				},
