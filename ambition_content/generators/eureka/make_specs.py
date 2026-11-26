@@ -72,7 +72,8 @@ COURT = "eureka_gate_court"
 COLLIDER = "eureka_collider"
 COLLIDER_DOOR_X = 1828
 #: The detector's gallery (x0, x1, y), up a ladder (`eureka_collider_props.py`).
-COLLIDER_GALLERY = (1500, 1760, 384)
+COLLIDER_GALLERY = (1488, 1760, 384)
+COLLIDER_WALKS = ((448, 560, 512), (576, 688, 448), (704, 1408, 384))
 QUAD = "eureka_quad"
 PATENT = "eureka_patent_office"
 LAB = "eureka_coil_lab"
@@ -511,15 +512,16 @@ def test_range():
 # Made from the top of the tether down and then west: a room is placed only
 # where no room stands, so a move of the chain places the far end first.
 def collider():
-    """Under the lecture hall, down its stair: the Eureka Collider. Floor 576.
-    The ring's tunnel, its beam pipe and magnets, the staff's bicycles; the
-    detector at the east end and its gallery (y 384, up a ladder; a chest
-    there). Dr. Ilse Quark by the stair; what has got loose in the tunnel
-    (dividing mites, a steam automaton)."""
+    """Follow the floor or the beam service walk to the detector gallery."""
     rid = COLLIDER
     _, (w, h) = ROOMS_AT[rid]
     floor, vault = 576, 48
     g0, g1, gy = COLLIDER_GALLERY
+    ladder_top = gy - 16
+    ladder = f"""
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [1456, {ladder_top}], size: [48, {floor - ladder_top}]),
+    ]),"""
     e = [
         solid("floor", 0, floor, w, h - floor),
         solid("vault", 0, 0, w, vault),
@@ -528,16 +530,17 @@ def collider():
         solid("east_wall", w - WALL, vault, WALL, floor - vault),
         door("collider_door", "up to the quad", 40, floor, QUAD, "quad_collider_door"),
         start(rid, 140, floor),
+        *[ledge(f"beam_walk_{i}", x0, y, x1 - x0) for i, (x0, x1, y) in enumerate(COLLIDER_WALKS)],
         ledge("detector_gallery", g0, gy, g1 - g0),
-        entity("ChestSpawn", g0 + 90, gy - 58, 76, 58, name="a spare quark (charm)", reward="currency:60"),
+        entity("ChestSpawn", 1590, gy - 58, 76, 58, name="a spare quark (charm)", reward="currency:60"),
         resident("npc_eureka_quark", "eureka_quark", 300, floor),
         sign("collider_sign", 560, 200, "THE EUREKA COLLIDER: circumference 27 km. Staff bicycles only.", 520),
-        sign("collider_sign_beam", 900, 330, "BEAM ON: do not lick the pipe", 300),
+        sign("collider_sign_beam", 900, 272, "BEAM ON: do not lick the pipe", 300),
         range_enemy(10, "npc_dividing_mite", 760, floor, 32, 24, "dividing_mite"),
         range_enemy(11, "npc_dividing_mite", 1080, floor, 32, 24, "dividing_mite"),
-        range_enemy(12, "steam_automaton", 1360, floor, 48, 80),
+        range_enemy(12, "steam_automaton", 1200, COLLIDER_WALKS[-1][2], 48, 80),
     ]
-    return build(rid, e, "THE EUREKA COLLIDER")
+    return build(rid, e, "THE EUREKA COLLIDER", extra=ladder)
 
 
 def plant():
@@ -685,11 +688,6 @@ def main(argv):
             return code
     # The ladder up to QED-TV's lighting grid.
     if code := paint(WORLD_LDTK, QED, "Climbable", 1, QED_LADDER_X, QED_GRID[2] - 16, 32, 704 - 64 - QED_GRID[2] + 16):
-        return code
-    # The ladder up to the collider's detector gallery.
-    code, _ = run("intgrid", "paint", "--ldtk", str(WORLD_LDTK), "--level", COLLIDER, "--layer", "Climbable", "--value", "1",
-                  "--px", f"{COLLIDER_GALLERY[0] - 32},{COLLIDER_GALLERY[2] - 16}", "--size", f"32,{576 - COLLIDER_GALLERY[2] + 16}")
-    if code:
         return code
     code, _ = run("validate", str(WORLD_LDTK))
     return code
