@@ -16,9 +16,8 @@ by edges; the Echo Chamber is a room you go into, so its way in is a door:
                                                   |
  [ the Neural Cathedral ] ==== [ the Callosum ] ==== [ the Weights ]
 
-- `neural_callosum`: the gate and terminal; the signpost (MEMORY west,
-  ATTENTION up, BIASES east); the Grandmother Cell; two synapse caps up to
-  the arch of fibre, and a chest on it.
+- `neural_callosum`: the gate, terminal, signpost, and Grandmother Cell.
+  Synapse caps and an upright fibre bundle lead to the arch and its chest.
 - `neural_cathedral`: the living half. A pool of fluid in the floor; the
   dendrite tree, whose branches climb to the gallery of memories; Donna
   Hebb; Intrusive Thoughts in the air.
@@ -77,8 +76,9 @@ ROOMS_AT = {
 
 #: The Callosum (`targets/props/neural_props.py` draws to these).
 CALLOSUM_FLOOR = 640
-CAPS = ((1240, 560, 128), (1420, 464, 128))
+CAPS = ((1104, 576, 112), (1280, 512, 144), (1488, 448, 96))
 ARCH = (1600, 2000, 368)
+FIBRE_CLIMB = (2032, 320, 32, 320)
 #: The Neural Cathedral.
 CATHEDRAL_FLOOR = 1024
 POOL = (800, 1120, 64)
@@ -155,13 +155,15 @@ def callosum():
         sign("callosum_sign_attention", 740, 547, "ATTENTION ^", 140),
         sign("callosum_sign_biases", 790, 581, "BIASES >", 120),
         resident("npc_neural_grandmother_cell", "neural_grandmother", 1000, floor),
-        # Two synapse caps up to the arch of fibre.
+        # The caps lead up to the arch from the west.
         *[ledge(f"synapse_cap_{n}", x, top, cap_w) for n, (x, top, cap_w) in enumerate(CAPS)],
         ledge("fibre_arch", a0, arch, a1 - a0),
         chest("a misplaced memory", "currency:30", 1760, arch),
         edge("callosum_to_weights", "east, to the built half", w - WALL, floor, WEIGHTS, "weights_to_callosum"),
     ]
-    return build(rid, e, "THE CALLOSUM", "neural")
+    x, top, width, height = FIBRE_CLIMB
+    climb = f'( kind: "Ladder", px: [{x}, {top}], size: [{width}, {height}] )'
+    return build(rid, e, "THE CALLOSUM", "neural", extra=f"\n    intgrid: (climbable: [{climb}]),")
 
 
 def cathedral():

@@ -15,7 +15,7 @@ from district_scenery import piece
 #: Room -> [(kind, frame x, frame y)], furthest back first.
 SCENERY = {
     "neural_callosum": [
-        ("neural_callosum_caps", 1200, 340),
+        ("neural_callosum_caps", 1076, 312),
         ("neural_signpost", 640, 440),
     ],
     "neural_cathedral": [
