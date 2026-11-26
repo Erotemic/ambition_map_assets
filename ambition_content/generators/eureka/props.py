@@ -51,7 +51,7 @@ SCENERY = {
         ("eureka_range_field", 200, 560),
         ("eureka_range_tower", 1960, 270),
         ("eureka_range_rocket", 660, 140),
-        ("eureka_range_bunker", 1670, 560),
+        ("eureka_range_bunker", 1552, 560),
     ],
     "eureka_elevator_station": [
         ("eureka_tether_hall", 0, 0),

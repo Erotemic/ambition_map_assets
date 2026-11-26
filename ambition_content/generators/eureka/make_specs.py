@@ -467,14 +467,14 @@ def range_enemy(n, character, x, feet, w, h, brain="combatant"):
 def test_range():
     """Out of town: the Test Range, west of the gate court. Floor 704. A
     rocket on its pad with a gantry to climb (its walks y 624..384), a blast
-    bunker whose roof is walked on (y 576), an observation tower (y 560, 416).
+    shelter with a floor passage and roof steps, and an observation tower.
     What the institute tests has got loose: its own machines (dividing mites,
     a steam automaton on the bunker, exploding mites); two crash-test dummies wait to be
     hit."""
     rid = RANGE
     _, (w, h) = ROOMS_AT[rid]
     floor = 704
-    bx0, bx1, btop = 1700, 1960, 576
+    bx0, bx1, btop = 1696, 1968, 576
     e = [
         solid("ground", 0, floor, w, h - floor),
         solid("west_wall", 0, 0, WALL, floor),
@@ -482,14 +482,16 @@ def test_range():
         edge("range_east", "back to the gate court", w - WALL, floor, COURT, "court_west"),
         start(rid, w - 200, floor),
         *[ledge(f"gantry_{i}", x0, y, x1 - x0) for i, (x0, x1, y) in enumerate(((680, 820, 624), (760, 900, 544), (680, 820, 464), (760, 900, 384)))],
-        solid("bunker", bx0, btop, bx1 - bx0, floor - btop),
+        solid("bunker_roof", bx0, btop, bx1 - bx0, 32),
+        ledge("bunker_west_step", 1568, floor - 64, 112),
+        ledge("bunker_east_step", 1984, floor - 64, 112),
         ledge("tower_low", 2280, 560, 120),
         ledge("tower_cab", 2320, 416, 120),
         # A chest for whoever climbs to the top (Jon, 2026-10-30: "interactive elements").
         entity("ChestSpawn", 2340, 416 - 58, 76, 58, name="the range's lost and found", reward="currency:50"),
         sign("range_sign", w - 420, floor - 200, "EUREKA TEST RANGE: if the siren sounds, it is already too late", 520),
         sign("rocket_sign", 960, 110, "PROBABLY FINE III", 260),
-        sign("bunker_sign", (bx0 + bx1) // 2, btop - 60, "BLAST BUNKER: knock first, then duck", 360),
+        sign("bunker_sign", (bx0 + bx1) // 2, btop - 1, "BLAST BUNKER: knock first, then duck", bx1 - bx0),
         sign("tower_sign", 2380, 300, "OBSERVATION: the safe side of the glass", 360),
         range_enemy(1, "npc_dividing_mite", 1240, floor, 32, 24, "dividing_mite"),
         range_enemy(2, "npc_dividing_mite", 2120, floor, 32, 24, "dividing_mite"),
