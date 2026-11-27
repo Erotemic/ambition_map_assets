@@ -112,7 +112,7 @@ HILL = "evil_gallows_hill"
 HILL_AT, HILL_W = (-6800, -544), 2800
 BELL_TOWER = (1040, 1160)
 #: The sarcophagus (x0, x1, its lid, walked on).
-SARCOPHAGUS = (1100, 1300, 440)
+SARCOPHAGUS = (1088, 1312, 432)
 FOREST = "evil_gate_forest"
 #: The allotments, west of the moor: the same floor, the rooms touching.
 ALLOT = "evil_castle_allotments"
@@ -329,12 +329,16 @@ def crypt():
                bidirectional=True),
         edge("crypt_west", "into the catacombs", 0, g, CATACOMBS, "catacombs_east"),
         start(CRYPT, CRYPT_SHAFT[0] - 120, g),
+        ledge("crypt_west_plinth", 256, 448, 80),
+        ledge("crypt_funeral_walk", 352, 384, 464),
+        ledge("crypt_memorial_ledge", 848, 416, 208),
         ledge("sarcophagus_lid", s0, lid, s1 - s0),
-        entity("ChestSpawn", s0 + 60, lid - 58, 76, 58, name="the founder's medals", reward="currency:100"),
-        sign("crypt_sign", 800, 110, "HERE LIES OUR FOUNDER (mostly)", 380),
-        sign("crypt_sign_busts", 760, g - 160, "He pointed the way. West. At nothing.", 380),
+        ledge("crypt_east_plinth", 1392, 464, 64),
+        entity("ChestSpawn", (s0 + s1 - 76) // 2, lid - 58, 76, 58, name="the founder's medals", reward="currency:100"),
+        sign("crypt_sign", 1200, 292, "HERE LIES OUR FOUNDER (mostly)", 320),
+        sign("crypt_sign_busts", 597, 298, "He pointed the way. West. At nothing.", 320),
         enemy(10, "npc_evil_spectral_wolf", 620, g, 56, 56),
-        enemy(11, "npc_evil_zombie", 900, g, 30, 67),
+        enemy(11, "npc_shock_warden", 900, g, 40, 64),
         # West, toward the catacombs: not by the steps down.
         enemy(12, "npc_evil_zombie", 260, g, 30, 67),
     ]
