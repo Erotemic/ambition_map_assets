@@ -104,17 +104,21 @@ CAFE, OFFICE, OBSERVATORY = "math_cafe", "math_surveyors_office", "math_observat
 #: Each room: where it is in the world, and its size.
 #: Where the buildings' insides are in the world (y).
 INSIDES_Y = 2400
+STREET_X = 1712
+HALL_SHAFT = (1520, 1584)
+STREET_SHAFT = (96, 160)
+HALL_X = STREET_X + STREET_SHAFT[0] - HALL_SHAFT[0]
 
 ROOMS_AT = {
-    HALL: (0, 1600, 768),
-    STREET: (1712, 3200, 1344),
+    HALL: (HALL_X, 1600, 768),
+    STREET: (STREET_X, 3200, 1344),
     # Each room is about as tall as the camera shows over a body on its floor.
     CAFE: (5100, 960, 448),
     OFFICE: (6200, 1120, 448),
     OBSERVATORY: (7500, 800, 704),
     # Out of town, west of the street along the aqueduct (Jon, 2026-10-30:
     # "out of town zones with enemies").
-    ZENO: (1712 - 3200, 3200, 896),
+    ZENO: (STREET_X - 3200, 3200, 896),
     # Hylbert's Hotel (Jon, 2026-10-30): its lobby, and the corridor east of
     # it, its floor level with the lobby's.
     LOBBY: (8500, 1280, 576),
@@ -129,21 +133,19 @@ ROOMS_AT = {
     # 160 wider than its art at the east end: ground past the mine's hole for
     # whoever comes in from the meadow (the hole was 48 from the edge, and
     # an arrival fell straight down it).
-    WOODS: (1712 + 3200, 2560, 768),
+    WOODS: (STREET_X + 3200, 2560, 768),
     # Under the woods' east end: its shaft (x 96..160) under their hole.
-    MINE: (1712 + 3200 + 2288 - 96, 1600, 640),
-    HANOI: (-1600, 1600, 768),
+    MINE: (STREET_X + 3200 + 2288 - 96, 1600, 640),
+    HANOI: (HALL_X - 1600, 1600, 768),
     # West of the mine, its floor the mine's.
-    ROOTS: (1712 + 3200 + 2288 - 96 - 1600, 1600, 640),
+    ROOTS: (STREET_X + 3200 + 2288 - 96 - 1600, 1600, 640),
     # Between the street's east end and the roots.
-    CONJECTURES: (1712 + 3200, 592, 640),
-    MEADOW: (1712 + 3200 + 2560, 2400, 768),
+    CONJECTURES: (STREET_X + 3200, 592, 640),
+    MEADOW: (STREET_X + 3200 + 2560, 2400, 768),
 }
-#: A room's world y when it is not 0. The rooms of the world touch where they
-#: join (`specs/check_flat_map.py`): Zeno's Aqueduct is west of the street at
-#: its deck, so the gate hall, which is UNDER the street, is placed there.
+#: Vertical room positions. Rooms touch at their edge exits.
 ROOMS_Y = {
-    HALL: 1344,
+    HALL: ROOMS_AT[STREET][2],
     # The buildings' insides (doors: anywhere in the world) are under the
     # town, out of the way of the woods east of the summit.
     **{rid: INSIDES_Y for rid in (CAFE, OFFICE, OBSERVATORY, LOBBY, LIFT, BALLROOM, *CLOSETS)},
@@ -155,7 +157,7 @@ ROOMS_Y = {
     ROOTS: 560 - 704 + 768,
     CONJECTURES: 560 - 704 + 768,
     # Level with the gate hall, west of it.
-    HANOI: 1344,
+    HANOI: ROOMS_AT[STREET][2],
     # Level with the woods, east of them.
     MEADOW: 560 - 704,
 }
@@ -197,6 +199,12 @@ def edge(zone, name, x, y, h, to_room, to_zone, *, scene_art=False):
     presentation = ', presentation: "SceneArt"' if scene_art else ""
     return (f'( type: "LoadingZone", px: [{x}, {y}], size: [16, {h}], fields: ( id: "{zone}", name: "{name}", '
             f'activation: "EdgeExit", target_room: "{to_room}", target_zone: "{to_zone}", bidirectional: true{presentation} ) ),')
+
+
+def shaft_exit(zone, name, shaft, y, to_room, to_zone):
+    x0, x1 = shaft
+    return (f'( type: "LoadingZone", px: [{x0}, {y}], size: [{x1 - x0}, {WALL}], fields: ( id: "{zone}", name: "{name}", '
+            f'activation: "EdgeExit", target_room: "{to_room}", target_zone: "{to_zone}", bidirectional: true ) ),')
 
 
 def gate(ring, portal, zone, x, floor, to_room, to_zone, name):
@@ -300,7 +308,7 @@ def cradle(prefix, cx, floor):
 def gate_hall():
     """The gate hall: a vaulted undercroft under the street. The gate stands
     in its cradle in the middle of the floor, with stairs up to its plinth;
-    galleries along the walls; the door up to the town at the east end. The
+    galleries along the walls; the ladder to the town at the east end. The
     Manifest Office's booth, the customs desk for axioms, the departures
     board, a porter's cart, polyhedral lamps."""
     rid = HALL
@@ -315,7 +323,8 @@ def gate_hall():
         framed("hall_west", "math_hall_west", 16, 300),
         framed("hall_east", "math_hall_east", 1150, 300),
         solid("floor", 0, floor, w, 64),
-        solid("vault", 0, 0, w, 48),
+        solid("vault_west", 0, 0, HALL_SHAFT[0], 48),
+        solid("vault_east", HALL_SHAFT[1], 0, w - HALL_SHAFT[1], 48),
         # The west wall, open on the floor to the Tower of Hanoi.
         solid("west_wall", 0, 48, WALL, floor - 112 - 48),
         edge(f"{rid}_west", "to the Tower of Hanoi", 0, floor - 96, 96, HANOI, f"{HANOI}_east"),
@@ -330,7 +339,7 @@ def gate_hall():
         ledge("west_gallery", 64, floor - 192, 352),
         ledge("east_ledge", w - 432, floor - 96, 96),
         ledge("east_gallery", w - 416, floor - 192, 352),
-        door(f"{rid}_up", "up to the town", w - 112, floor, STREET, f"{STREET}_down"),
+        shaft_exit(f"{rid}_up", "up to the town", HALL_SHAFT, 0, STREET, f"{STREET}_down"),
         wanderer("traveller_trent", "npc_trent", 220, floor, dialogue="trent"),
         wanderer("traveller_walter", "npc_walter", 1180, floor, dialogue="walter"),
         wanderer("porter_beaver", "npc_busy_beaver", 1320, floor, 48, dialogue="busy_beaver"),
@@ -341,13 +350,14 @@ def gate_hall():
         label("hall_sign_axioms", 64, floor - 236, "Arrivals: please declare all axioms", 380),
         label("hall_sign_infinity", w - 444, floor - 236, "Infinity is not a valid destination", 380),
         label("hall_sign_manifest", 40, floor - 40, "<- Manifest Office (closed for recounting)", 420),
+        label("hall_sign_street", w - 222, floor - 136, "Euclid Street ↑", 140),
     ]
     return rid, room(rid, e, "The gate hall under the Math town.", theme="math_undercroft")
 
 
-def door(zone, name, x, floor, to_room, to_zone, *, scene_art=False):
+def door(zone, name, x, floor, to_room, to_zone, *, scene_art=False, height=96):
     presentation = ', presentation: "SceneArt"' if scene_art else ""
-    return (f'( type: "LoadingZone", px: [{x}, {floor - 96}], size: [48, 96], fields: ( id: "{zone}", name: "{name}", '
+    return (f'( type: "LoadingZone", px: [{x}, {floor - height}], size: [48, {height}], fields: ( id: "{zone}", name: "{name}", '
             f'activation: "Door", target_room: "{to_room}", target_zone: "{to_zone}", bidirectional: true{presentation} ) ),')
 
 
@@ -480,11 +490,12 @@ def street():
     """The town climbs: the street, a stair to the first terrace, ladders to
     the second and to the summit, and an aqueduct whose deck crosses the whole
     town from the summit. The street goes on under the first terrace in a
-    vaulted passage, to a gate that is shut (the long way round, for later)."""
+    vaulted passage to the aqueduct foundations."""
     rid = STREET
     _, w, h = ROOMS_AT[rid]
     e = [
-        solid("street", 0, STREET_Y, w, h - STREET_Y),
+        solid("street_west", 0, STREET_Y, STREET_SHAFT[0], h - STREET_Y),
+        solid("street_east", STREET_SHAFT[1], STREET_Y, w - STREET_SHAFT[1], h - STREET_Y),
         solid("terrace_1", CLIFF1, T1, w - CLIFF1, TUNNEL_TOP - T1),
         solid("terrace_2", CLIFF2, T2, w - CLIFF2, T1 - T2),
         solid("summit", CLIFF3, SUMMIT, w - CLIFF3, T2 - SUMMIT),
@@ -494,9 +505,10 @@ def street():
         edge(f"{rid}_aqueduct_west", "along the aqueduct, out of town", 0, DECK - 96, 96, ZENO, f"{ZENO}_east"),
         solid("east_wall", w - WALL, 0, WALL, SUMMIT - 112),
         edge(f"{rid}_summit_east", "into the Fractal Woods", w - WALL, SUMMIT - 96, 96, WOODS, f"{WOODS}_west"),
-        solid("passage_end", w - WALL, TUNNEL_TOP, WALL, STREET_Y - TUNNEL_TOP),
+        solid("passage_end", w - WALL - 48, TUNNEL_TOP, WALL + 48, STREET_Y - TUNNEL_TOP),
         f'( type: "PlayerStart", px: [160, {STREET_Y - 46}], size: [28, 46], fields: ( name: "{rid}_spawn" ) ),',
-        door(f"{rid}_down", "down to the gate hall", 96, STREET_Y, HALL, f"{HALL}_up"),
+        shaft_exit(f"{rid}_down", "down to the gate hall", STREET_SHAFT, h - WALL, HALL, f"{HALL}_up"),
+        label("street_sign_hall", 56, STREET_Y - 116, "Gate Hall ↓", 144),
     ]
     # Furthest back first (the room's scenery draws in the order it is
     # listed): the aqueduct, behind everything.
@@ -506,7 +518,7 @@ def street():
         kind = {STREET_Y: "street", T1: "t1", T2: "t2"}[ground]
         e.append(framed(f"aqueduct_span_{i:02d}", f"math_aqueduct_span_{kind}", x, DECK))
     e.append(still("aqueduct_deck", WALL, DECK, CLIFF3 - WALL, 4))
-    # The passage under the first terrace, its mouth and its gate.
+    # The passage under the first terrace, its mouth and its end wall.
     for i in range((w - CLIFF1) // 160):
         bay_x = CLIFF1 + i * 160
         e.append(framed(f"passage_bay_{i}", "math_tunnel_bay", bay_x, TUNNEL_TOP))
@@ -515,7 +527,7 @@ def street():
         if bay_x != HOTEL_BAY_X:
             e.append(light(f"passage_bay_{i}_window", bay_x + BAY_WINDOW[0], TUNNEL_TOP + BAY_WINDOW[1], *WINDOW_LIGHT))
     e.append(framed("passage_mouth", "math_tunnel_mouth", CLIFF1 - 16, STREET_Y - 112))
-    e.append(framed("passage_gate", "math_tunnel_gate", w - WALL - 48, TUNNEL_TOP))
+    e.append(framed("passage_end_wall", "math_tunnel_end_wall", w - WALL - 48, TUNNEL_TOP))
     # Hylbert's Hotel, in the passage's third bay: its front over the bay, and
     # its door over the revolving door the front paints.
     e.append(framed("hylbert_hotel_front", "math_hotel_entrance", HOTEL_BAY_X, TUNNEL_TOP))
@@ -565,7 +577,7 @@ def street():
         *house("observatory", "math_observatory", CLIFF3 + 52, SUMMIT),
     ]
     for name, kind, x, ground in [
-        ("cypress_door", "math_cypress", 154, STREET_Y),
+        ("cypress_shaft", "math_cypress", 48, STREET_Y),
         ("olive_street", "math_olive", 1190, STREET_Y),
         ("olive_terrace", "math_olive", CLIFF1 + 420, T1),
         ("cypress_terrace", "math_cypress", CLIFF1 + 520, T1),
@@ -582,7 +594,7 @@ def street():
         wanderer("townsperson_leib", "npc_leib_knives", CLIFF2 + 120, T2, dialogue="leib_knives"),
         wanderer("stargazer_hypatia", "npc_hypatia_prime", CLIFF3 + 60, SUMMIT, dialogue="hypatia_prime"),
         label("street_sign", 180, STREET_Y - 300, "Euclid Street (the long way round)", 380),
-        label("passage_sign", w - 300, TUNNEL_TOP + 12, "The long way round: shut", 240),
+        label("passage_sign", w - 300, TUNNEL_TOP + 12, "Aqueduct foundations", 240),
         label("office_sign", CLIFF2 + 60, T2 - 300, "Surveyor's Office", 240),
         label("observatory_sign", CLIFF3 + 60, SUMMIT - 270, "Observatory", 200),
     ]
@@ -810,7 +822,7 @@ def hotel_lobby():
 def hotel_corridor():
     """The corridor of rooms, which goes on: its east end comes back in at
     its west end, so walking east never runs out of rooms; walking west
-    always reaches the lobby. Its doors are numbered from n."""
+    always reaches the lobby. Its wall displays show room numbers from n."""
     rid = CORRIDOR
     _, w, h = ROOMS_AT[rid]
     floor = h - INSIDE_FLOOR
@@ -822,16 +834,16 @@ def hotel_corridor():
         solid("east_wall", w - WALL, INSIDE_CEILING, WALL, floor - 96 - INSIDE_CEILING - 16),
         edge(f"{rid}_west", "back to the lobby", 0, floor - 96, 96, LOBBY, f"{LOBBY}_east"),
         (f'( type: "LoadingZone", px: [{w - WALL}, {floor - 96}], size: [16, 96], fields: ( id: "{rid}_east", name: "more rooms", '
-         f'activation: "EdgeExit", target_room: "{rid}", target_zone: "{rid}_west", bidirectional: false ) ),'),
+         f'activation: "EdgeExit", target_room: "{rid}", target_zone: "{rid}_west", bidirectional: false, presentation: "SceneArt" ) ),'),
+        label("hotel_corridor_sign_east", w - 148, floor - 136, "More rooms →", 128),
         f'( type: "PlayerStart", px: [120, {floor - 46}], size: [28, 46], fields: ( name: "{rid}_spawn" ) ),',
     ]
     for k, x in enumerate(CORRIDOR_DOORS):
         e.append(label(f"{rid}_room_{k}", x - 40, floor - 176, "n" if k == 0 else f"n+{k}", 80))
-    e += [door(f"{rid}_spectral", "into the haunted spectral wing", 376, floor,
-               haunted_wing.LANDING, f"{haunted_wing.LANDING}_entry"),
+    e += [door(f"{rid}_spectral", "into the haunted spectral wing", CORRIDOR_DOORS[1] - 24, floor,
+               haunted_wing.LANDING, f"{haunted_wing.LANDING}_entry", scene_art=True, height=126),
           label("spectral_wing_sign", 280, floor - 224, "SPECTRAL WING / No checkout", 300)]
-    # Guests, each at a door (Jon, 2026-10-30: "character"): the barber,
-    # Furrier and Python Goras (their talk is `math.yarn`'s `hotel_*`).
+    # Guest dialogue: the barber, Furrier and Python Goras.
     for character, dialogue, door_k in (("npc_paradox_barber", "hotel_paradox_barber", 2),
                                         ("npc_joseph_furrier", "hotel_joseph_furrier", 3),
                                         ("npc_python_goras", "hotel_python_goras", 5)):
@@ -1287,6 +1299,8 @@ ROOMS += haunted_wing.builders(sys.modules[__name__])
 
 #: What is painted on an IntGrid layer of a room: (room, layer, value, px, size).
 PAINT = [(STREET, "Climbable", 1, (x, top), (32, bottom - top)) for _name, x, top, bottom in LADDERS] + [
+    (HALL, "Climbable", 1, (HALL_SHAFT[0] + 16, 0), (32, ROOMS_AT[HALL][2] - 64)),
+    (STREET, "Climbable", 1, (STREET_SHAFT[0] + 16, STREET_Y - 64), (32, ROOMS_AT[STREET][2] - STREET_Y + 64)),
     # The ladder up to the office's gallery, at its west end (the art's).
     (OFFICE, "Climbable", 1, (ROOMS_AT[OFFICE][1] - WALL - 380 - 8, ROOMS_AT[OFFICE][2] - INSIDE_FLOOR - 300 + GALLERY_FLOOR - 16), (32, 300 - GALLERY_FLOOR + 16)),
     # Zeno's: up the first pier from the valley to the deck (the art's).
