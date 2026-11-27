@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 411499,
+	"nextUid": 411502,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -25529,7 +25529,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -25889,6 +25889,90 @@
 									"id": "V_String",
 									"params": ["obs_deck_window"]
 								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [18,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 3680,
+							"__worldY": 1766,
+							"iid": "Prop-411499",
+							"width": 1024,
+							"height": 182,
+							"defUid": 4351,
+							"px": [288,522],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "orbital_viewing_walk", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orbital_viewing_walk"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "orbital_viewing_walk", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["orbital_viewing_walk"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "SurfaceChain",
+							"__grid": [18,36],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": 3680,
+							"__worldY": 1828,
+							"iid": "SurfaceChain-411500",
+							"width": 1024,
+							"height": 120,
+							"defUid": 6814,
+							"px": [288,584],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "viewing_walk", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["viewing_walk"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "288,704; 480,624; 600,624; 720,584; 928,584; 1056,624; 1168,624; 1312,704", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["288,704; 480,624; 600,624; 720,584; 928,584; 1056,624; 1168,624; 1312,704"]
+								}] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 7681, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "boarding", "__type": "String", "__value": "up", "__tile": null, "defUid": 7682, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["up"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [45,37],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 4127,
+							"__worldY": 1848,
+							"iid": "DebugLabel-411501",
+							"width": 177,
+							"height": 24,
+							"defUid": 2007,
+							"px": [735,604],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "viewing_walk_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["viewing_walk_sign"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "EUREKA FROM ORBIT", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["EUREKA FROM ORBIT"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						}
 					]
