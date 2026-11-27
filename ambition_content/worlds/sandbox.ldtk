@@ -7511,7 +7511,11 @@
 		}
 	], "enums": [
 		{ "identifier": "BreakablePlatformCollision", "uid": 5002, "values": [ { "id": "Solid", "tileRect": null, "color": 14180189 }, { "id": "OneWayUp", "tileRect": null, "color": 10802479 } ], "iconTilesetUid": null, "externalRelPath": null, "externalFileChecksum": null, "tags": [] },
-		{ "identifier": "LoadingZonePresentation", "uid": 8165, "values": [ { "id": "Default", "tileRect": null, "color": 0 }, { "id": "SceneArt", "tileRect": null, "color": 0 } ], "iconTilesetUid": null, "externalRelPath": null, "externalFileChecksum": null, "tags": [] }
+		{ "identifier": "LoadingZonePresentation", "uid": 8165, "values": [
+			{ "id": "Default", "tileRect": null, "color": 0 },
+			{ "id": "SceneArt", "tileRect": null, "color": 0 },
+			{ "id": "SceneLabel", "tileRect": null, "color": 0 }
+		], "iconTilesetUid": null, "externalRelPath": null, "externalFileChecksum": null, "tags": [] }
 	], "externalEnums": [], "levelFields": [
 		{
 			"identifier": "activeArea",
@@ -9755,9 +9759,9 @@
 									"params": ["hall_entry"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] },
-								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 8166, "realEditorValues": [{
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneLabel", "__tile": null, "defUid": 8166, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["SceneArt"]
+									"params": ["SceneLabel"]
 								}] }
 							],
 							"__worldX": 1060,
@@ -9794,9 +9798,9 @@
 									"params": ["hall_of_characters_entry"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] },
-								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 8166, "realEditorValues": [{
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneLabel", "__tile": null, "defUid": 8166, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["SceneArt"]
+									"params": ["SceneLabel"]
 								}] }
 							],
 							"__worldX": 781,
@@ -9833,9 +9837,9 @@
 									"params": ["hall_of_biomes_entry"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] },
-								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 8166, "realEditorValues": [{
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneLabel", "__tile": null, "defUid": 8166, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["SceneArt"]
+									"params": ["SceneLabel"]
 								}] }
 							],
 							"__worldX": 944,
@@ -9843,26 +9847,26 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [47,50],
+							"__grid": [46,49],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 757,
-							"__worldY": 801,
+							"__worldX": 745,
+							"__worldY": 798,
 							"iid": "Prop-8490",
-							"width": 375,
-							"height": 127,
+							"width": 389,
+							"height": 27,
 							"defUid": 4351,
-							"px": [757,801],
+							"px": [745,798],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "The gallery doors", "__tile": null, "defUid": 4349, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "Gallery entrance plaques", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["The gallery doors"]
+									"params": ["Gallery entrance plaques"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "hub_gallery_doors", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "hub_gallery_plaques", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["hub_gallery_doors"]
+									"params": ["hub_gallery_plaques"]
 								}] }
 							]
 						}
@@ -33158,9 +33162,9 @@
 									"params": ["hall_gram_reaper_arena_entry"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] },
-								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneArt", "__tile": null, "defUid": 8166, "realEditorValues": [{
+								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneLabel", "__tile": null, "defUid": 8166, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["SceneArt"]
+									"params": ["SceneLabel"]
 								}] }
 							]
 						},
@@ -33419,26 +33423,26 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [102,13],
+							"__grid": [101,12],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 9834,
-							"__worldY": 6384,
+							"__worldX": 9815,
+							"__worldY": 6381,
 							"iid": "Prop-8492",
-							"width": 92,
-							"height": 128,
+							"width": 130,
+							"height": 27,
 							"defUid": 4351,
-							"px": [1642,208],
+							"px": [1623,205],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "Gram Reaper entrance", "__tile": null, "defUid": 4349, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "Gram Reaper entrance plaque", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["Gram Reaper entrance"]
+									"params": ["Gram Reaper entrance plaque"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "gram_reaper_hall_door", "__tile": null, "defUid": 4350, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "gram_reaper_hall_plaque", "__tile": null, "defUid": 4350, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["gram_reaper_hall_door"]
+									"params": ["gram_reaper_hall_plaque"]
 								}] }
 							]
 						}
