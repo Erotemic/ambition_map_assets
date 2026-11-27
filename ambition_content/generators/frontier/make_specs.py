@@ -889,12 +889,11 @@ def clinker_row():
 
 
 def clinker_railhead():
-    """The line east to Dry Dock: the old tramway grade comes down from the
-    works' level on trestles to the street, which goes on under it to Pad
-    Three; a water tower, the line's signal."""
+    """The street goes below the tramway. Signal steps connect the two routes."""
     rid = RAILHEAD
     w, h = ROOMS_AT[rid][1]
-    grade_x0, grade_x1 = 288, 2128
+    grade_x0, grade_x1 = 160, 2208
+    signal_x0, signal_x1, signal_y = 1360, 1472, 1120
     e = [
         solid("ground", 0, FLATS_LOW, w, h - FLATS_LOW),
         solid("west_wall_top", 0, 0, WALL, FLATS_HIGH - 96),
@@ -905,9 +904,15 @@ def clinker_railhead():
         edge("railhead_to_pad", "east to Dry Dock", w - WALL, FLATS_LOW, PAD, "pad_from_railhead"),
         start(rid, 100, FLATS_LOW),
         solid("grade_head", 0, FLATS_HIGH, grade_x0, 16),
-        ramp("tramway_grade", grade_x0, FLATS_HIGH, grade_x1, FLATS_LOW),
+        ramp("tramway_grade", grade_x0, FLATS_HIGH, signal_x0, signal_y),
+        ledge("signal_landing", signal_x0, signal_y, signal_x1 - signal_x0),
+        ramp("tramway_grade_east", signal_x1, signal_y, grade_x1, FLATS_LOW),
+        ledge("signal_step_low", 1568, 1344, 128),
+        ledge("signal_step_lower", 1504, 1280, 128),
+        ledge("signal_step_upper", 1440, 1216, 128),
+        ledge("signal_step_high", 1376, 1152, 128),
         sign("railhead_sign_line", 2200, FLATS_LOW - 200, "DRY DOCK AND THE PADS: EAST", 320),
-        sign("railhead_sign_grade", 400, FLATS_HIGH - 120, "OLD TRAMWAY GRADE", 260),
+        sign("railhead_sign_grade", 400, FLATS_HIGH - 6, "OLD TRAMWAY GRADE", 260),
     ]
     return build(rid, e, "CLINKER FLATS RAILHEAD", FLATS_MUSIC, dangerous=True, biome="frontier_works")
 
