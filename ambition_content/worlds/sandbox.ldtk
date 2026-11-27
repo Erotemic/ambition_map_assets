@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 8494,
+	"nextUid": 8495,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -758,6 +758,43 @@
 						"id": "V_String",
 						"params": ["Default"]
 					},
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "door_skin",
+					"doc": null,
+					"__type": "String",
+					"uid": 8494,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -9762,6 +9799,10 @@
 								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneLabel", "__tile": null, "defUid": 8166, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["SceneLabel"]
+								}] },
+								{ "__identifier": "door_skin", "__type": "String", "__value": "gallery_bosses", "__tile": null, "defUid": 8494, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gallery_bosses"]
 								}] }
 							],
 							"__worldX": 1060,
@@ -9801,6 +9842,10 @@
 								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneLabel", "__tile": null, "defUid": 8166, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["SceneLabel"]
+								}] },
+								{ "__identifier": "door_skin", "__type": "String", "__value": "gallery_characters", "__tile": null, "defUid": 8494, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gallery_characters"]
 								}] }
 							],
 							"__worldX": 781,
@@ -9840,6 +9885,10 @@
 								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneLabel", "__tile": null, "defUid": 8166, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["SceneLabel"]
+								}] },
+								{ "__identifier": "door_skin", "__type": "String", "__value": "gallery_biomes", "__tile": null, "defUid": 8494, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gallery_biomes"]
 								}] }
 							],
 							"__worldX": 944,
@@ -33165,6 +33214,10 @@
 								{ "__identifier": "presentation", "__type": "LocalEnum.LoadingZonePresentation", "__value": "SceneLabel", "__tile": null, "defUid": 8166, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["SceneLabel"]
+								}] },
+								{ "__identifier": "door_skin", "__type": "String", "__value": "gallery_gram_reaper", "__tile": null, "defUid": 8494, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["gallery_gram_reaper"]
 								}] }
 							]
 						},
