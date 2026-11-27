@@ -8420,7 +8420,7 @@
 			"identifier": "mockingbird_arena",
 			"iid": "mockingbird_arena-4303",
 			"uid": 900000,
-			"worldX": 2048,
+			"worldX": 2288,
 			"worldY": 4608,
 			"worldDepth": 0,
 			"pxWid": 960,
@@ -8504,7 +8504,7 @@
 					"optionalRules": [],
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
+						1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -8633,7 +8633,7 @@
 								"id": "V_String",
 								"params": ["mockingbird_arena_spawn"]
 							}] }],
-							"__worldX": 2168,
+							"__worldX": 2408,
 							"__worldY": 5298
 						},
 						{
@@ -8674,7 +8674,7 @@
 									"params": [ true ]
 								}] }
 							],
-							"__worldX": 2104,
+							"__worldX": 2344,
 							"__worldY": 5248
 						},
 						{
@@ -8703,7 +8703,7 @@
 									"params": ["Custom"]
 								}] }
 							],
-							"__worldX": 2088,
+							"__worldX": 2328,
 							"__worldY": 5200
 						},
 						{
@@ -8725,7 +8725,7 @@
 								}] },
 								{ "__identifier": "color", "__type": "String", "__value": null, "__tile": null, "defUid": 6896, "realEditorValues": [] }
 							],
-							"__worldX": 2064,
+							"__worldX": 2304,
 							"__worldY": 5248
 						},
 						{
@@ -8766,7 +8766,7 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 2898,
+							"__worldX": 3138,
 							"__worldY": 5248
 						},
 						{
@@ -8788,7 +8788,7 @@
 								}] },
 								{ "__identifier": "color", "__type": "String", "__value": null, "__tile": null, "defUid": 6896, "realEditorValues": [] }
 							],
-							"__worldX": 2946,
+							"__worldX": 3186,
 							"__worldY": 5248
 						},
 						{
@@ -8837,7 +8837,7 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 2648,
+							"__worldX": 2888,
 							"__worldY": 5268
 						},
 						{
@@ -8848,7 +8848,7 @@
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-6977",
-							"width": 176,
+							"width": 160,
 							"height": 16,
 							"defUid": 2002,
 							"px": [576,0],
@@ -8875,7 +8875,7 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 2624,
+							"__worldX": 2864,
 							"__worldY": 4608
 						},
 						{
@@ -8885,7 +8885,7 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 2623,
+							"__worldX": 2863,
 							"__worldY": 5263,
 							"iid": "Prop-901260",
 							"width": 170,
@@ -9180,7 +9180,7 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 2048,
+							"__worldX": 2288,
 							"__worldY": 4608
 						}
 					]
@@ -9217,8 +9217,8 @@
 			"identifier": "mockingbird_sky",
 			"iid": "mockingbird_sky-7000",
 			"uid": 900001,
-			"worldX": 1744,
-			"worldY": 7232,
+			"worldX": 2304,
+			"worldY": 3888,
 			"worldDepth": 0,
 			"pxWid": 1280,
 			"pxHei": 720,
@@ -9461,8 +9461,8 @@
 									"params": ["cove.mockingbird"]
 								}] }
 							],
-							"__worldX": 1869,
-							"__worldY": 7467
+							"__worldX": 2429,
+							"__worldY": 4123
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -9510,8 +9510,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 1744,
-							"__worldY": 7532
+							"__worldX": 2304,
+							"__worldY": 4188
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -9559,8 +9559,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 2264,
-							"__worldY": 7532
+							"__worldX": 2824,
+							"__worldY": 4188
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -9608,8 +9608,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 2784,
-							"__worldY": 7532
+							"__worldX": 3344,
+							"__worldY": 4188
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -9657,8 +9657,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 1964,
-							"__worldY": 7662
+							"__worldX": 2524,
+							"__worldY": 4318
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -9706,8 +9706,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 2484,
-							"__worldY": 7662
+							"__worldX": 3044,
+							"__worldY": 4318
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -9755,8 +9755,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 2894,
-							"__worldY": 7662
+							"__worldX": 3454,
+							"__worldY": 4318
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -9804,8 +9804,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 1884,
-							"__worldY": 7792
+							"__worldX": 2444,
+							"__worldY": 4448
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -9853,8 +9853,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 2404,
-							"__worldY": 7792
+							"__worldX": 2964,
+							"__worldY": 4448
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -9902,8 +9902,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 2899,
-							"__worldY": 7792
+							"__worldX": 3459,
+							"__worldY": 4448
 						},
 						{
 							"__identifier": "PlayerStart",
@@ -9921,8 +9921,8 @@
 								"id": "V_String",
 								"params": ["mockingbird_sky_spawn"]
 							}] }],
-							"__worldX": 2370,
-							"__worldY": 7822
+							"__worldX": 2930,
+							"__worldY": 4478
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -9959,8 +9959,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 1744,
-							"__worldY": 7936
+							"__worldX": 2304,
+							"__worldY": 4592
 						},
 						{
 							"__identifier": "Solid",
@@ -9984,8 +9984,8 @@
 									"params": ["#00000000"]
 								}] }
 							],
-							"__worldX": 1744,
-							"__worldY": 7232
+							"__worldX": 2304,
+							"__worldY": 3888
 						},
 						{
 							"__identifier": "Solid",
@@ -10009,8 +10009,8 @@
 									"params": ["#00000000"]
 								}] }
 							],
-							"__worldX": 3016,
-							"__worldY": 7232
+							"__worldX": 3576,
+							"__worldY": 3888
 						}
 					]
 				},
@@ -10329,8 +10329,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 1744,
-							"__worldY": 7232
+							"__worldX": 2304,
+							"__worldY": 3888
 						}
 					]
 				},

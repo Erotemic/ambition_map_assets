@@ -11,7 +11,7 @@
 	"iid": "ambition-sandbox-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 8493,
+	"nextUid": 8494,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -58649,7 +58649,7 @@
 					"optionalRules": [],
 					"intGridCsv": [
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
+						1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -58821,7 +58821,7 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [2,41],
+							"__grid": [2,37],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -58830,7 +58830,7 @@
 							"width": 800,
 							"height": 20,
 							"defUid": 2007,
-							"px": [40,660],
+							"px": [40,592],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hall_mockingbird_arena_intro_label", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -58846,7 +58846,7 @@
 								}] }
 							],
 							"__worldX": 10392,
-							"__worldY": 6628
+							"__worldY": 6560
 						},
 						{
 							"__identifier": "Solid",
@@ -58927,7 +58927,7 @@
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-6979",
-							"width": 176,
+							"width": 160,
 							"height": 16,
 							"defUid": 2002,
 							"px": [576,0],
@@ -58956,6 +58956,31 @@
 							],
 							"__worldX": 10928,
 							"__worldY": 5968
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [35,40],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 10927,
+							"__worldY": 6623,
+							"iid": "Prop-8493",
+							"width": 170,
+							"height": 81,
+							"defUid": 4351,
+							"px": [575,655],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "mockingbird_shore_mooring", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["mockingbird_shore_mooring"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "mockingbird_shore_mooring", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["mockingbird_shore_mooring"]
+								}] }
+							]
 						}
 					]
 				},
@@ -60239,8 +60264,8 @@
 			"identifier": "hall_mockingbird_sky",
 			"iid": "hall_mockingbird_sky-7019",
 			"uid": 7019,
-			"worldX": 10144,
-			"worldY": 5136,
+			"worldX": 10368,
+			"worldY": 5248,
 			"worldDepth": 0,
 			"pxWid": 1280,
 			"pxHei": 720,
@@ -60486,12 +60511,12 @@
 									"params": ["hall.mockingbird"]
 								}] }
 							],
-							"__worldX": 10269,
-							"__worldY": 5371
+							"__worldX": 10493,
+							"__worldY": 5483
 						},
 						{
 							"__identifier": "MovingPlatform",
-							"__grid": [3,18],
+							"__grid": [0,18],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -60500,7 +60525,7 @@
 							"width": 120,
 							"height": 22,
 							"defUid": 4251,
-							"px": [60,300],
+							"px": [0,300],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "hall_mockingbird_sky_shark_1", "__tile": null, "defUid": 6853, "realEditorValues": [{
 									"id": "V_String",
@@ -60535,12 +60560,12 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 10204,
-							"__worldY": 5436
+							"__worldX": 10368,
+							"__worldY": 5548
 						},
 						{
 							"__identifier": "MovingPlatform",
-							"__grid": [36,18],
+							"__grid": [32,18],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -60549,7 +60574,7 @@
 							"width": 120,
 							"height": 22,
 							"defUid": 4251,
-							"px": [580,300],
+							"px": [520,300],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "hall_mockingbird_sky_shark_2", "__tile": null, "defUid": 6853, "realEditorValues": [{
 									"id": "V_String",
@@ -60584,12 +60609,12 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 10724,
-							"__worldY": 5436
+							"__worldX": 10888,
+							"__worldY": 5548
 						},
 						{
 							"__identifier": "MovingPlatform",
-							"__grid": [68,18],
+							"__grid": [65,18],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
@@ -60598,7 +60623,7 @@
 							"width": 120,
 							"height": 22,
 							"defUid": 4251,
-							"px": [1100,300],
+							"px": [1040,300],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "hall_mockingbird_sky_shark_3", "__tile": null, "defUid": 6853, "realEditorValues": [{
 									"id": "V_String",
@@ -60633,8 +60658,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 11244,
-							"__worldY": 5436
+							"__worldX": 11408,
+							"__worldY": 5548
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -60682,8 +60707,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 10364,
-							"__worldY": 5566
+							"__worldX": 10588,
+							"__worldY": 5678
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -60731,8 +60756,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 10884,
-							"__worldY": 5566
+							"__worldX": 11108,
+							"__worldY": 5678
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -60780,8 +60805,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 11294,
-							"__worldY": 5566
+							"__worldX": 11518,
+							"__worldY": 5678
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -60829,8 +60854,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 10284,
-							"__worldY": 5696
+							"__worldX": 10508,
+							"__worldY": 5808
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -60878,8 +60903,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 10804,
-							"__worldY": 5696
+							"__worldX": 11028,
+							"__worldY": 5808
 						},
 						{
 							"__identifier": "MovingPlatform",
@@ -60927,8 +60952,8 @@
 								{ "__identifier": "swing", "__type": "Float", "__value": null, "__tile": null, "defUid": 7679, "realEditorValues": [] },
 								{ "__identifier": "swing_period", "__type": "Float", "__value": null, "__tile": null, "defUid": 7680, "realEditorValues": [] }
 							],
-							"__worldX": 11299,
-							"__worldY": 5696
+							"__worldX": 11523,
+							"__worldY": 5808
 						},
 						{
 							"__identifier": "PlayerStart",
@@ -60946,8 +60971,8 @@
 								"id": "V_String",
 								"params": ["hall_mockingbird_sky_spawn"]
 							}] }],
-							"__worldX": 10770,
-							"__worldY": 5726
+							"__worldX": 10994,
+							"__worldY": 5838
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -60984,8 +61009,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 10144,
-							"__worldY": 5840
+							"__worldX": 10368,
+							"__worldY": 5952
 						},
 						{
 							"__identifier": "Solid",
@@ -61009,8 +61034,8 @@
 									"params": ["#00000000"]
 								}] }
 							],
-							"__worldX": 10144,
-							"__worldY": 5136
+							"__worldX": 10368,
+							"__worldY": 5248
 						},
 						{
 							"__identifier": "Solid",
@@ -61034,8 +61059,8 @@
 									"params": ["#00000000"]
 								}] }
 							],
-							"__worldX": 11416,
-							"__worldY": 5136
+							"__worldX": 11640,
+							"__worldY": 5248
 						}
 					]
 				},
@@ -61354,8 +61379,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 10144,
-							"__worldY": 5136
+							"__worldX": 10368,
+							"__worldY": 5248
 						}
 					]
 				},
