@@ -130,6 +130,13 @@ HAMLET_W = 2400
 HAMLET_PLATFORM = (1264, 1424, 592)
 W, H, FLOOR = 2400, 784, 656
 BOG = (600, 1100, 640)
+BOG_WALKS = ((496, 592, 608), (592, 720, 560), (752, 896, 560),
+             (928, 1088, 560), (1104, 1264, 608))
+TOWER_LANDINGS = ((1488, 1632, 560), (1536, 1664, 464), (1488, 1632, 368),
+                  (1520, 1680, 272))
+TOWER_STEPS = ((1248, 1408, 544), (1408, 1504, 512), (1456, 1552, 416),
+               (1600, 1728, 320), (1600, 1712, 416), (1648, 1760, 464),
+               (1728, 1824, 512), (1776, 1872, 560))
 
 
 def enemy(n, character, x, feet, w, h):
@@ -141,12 +148,13 @@ def moor():
     bx0, bx1, water = BOG
     e = [
         piece("moor_inn_front", 0, 400, name="moor_inn_front"),
-        piece("moor_wire", 200, 600, name="moor_wire"),
+        piece("moor_wire", 200, 460, name="moor_wire"),
         door("moor_inn_door", "into the Crooked Lantern", 120, FLOOR, INN, "inn_door"),
-        sign("inn_sign", 250, FLOOR - 260, "THE CROOKED LANTERN: open after curfew, which is always", 460),
-        piece("moor_bog", 560, 580, name="moor_bog"),
+        sign("inn_sign", 391, 481, "THE CROOKED LANTERN", 230),
+        sign("inn_sign_curfew", 391, 505, "Open after curfew, which is always.", 230),
+        piece("moor_bog", 480, 460, name="moor_bog"),
         piece("moor_watchtower", 1180, 0, name="moor_watchtower"),
-        piece("moor_statue", 1740, 500, name="moor_statue"),
+        piece("moor_statue", 1740, 390, name="moor_statue"),
         piece("moor_crypt_gate", 2250, 500, name="moor_crypt_gate"),
         # The stair down under the gate's porch to the crypt: a hole in the
         # ground, a ladder down it (`main`), the way down at its bottom.
@@ -162,7 +170,9 @@ def moor():
         solid("east_wall", W - WALL, 0, WALL, FLOOR - 112),
         edge("moor_east", "back to the forest", W - WALL, FLOOR, FOREST, "forest_west"),
         start(MOOR, W - 200, FLOOR),
-        *[ledge(f"tower_{i}", x0, y, x1 - x0) for i, (x0, x1, y) in enumerate(((1500, 1620, 560), (1540, 1660, 464), (1500, 1620, 368), (1520, 1680, 272)))],
+        *[ledge(f"bog_walk_{i}", x0, y, x1 - x0) for i, (x0, x1, y) in enumerate(BOG_WALKS)],
+        *[ledge(f"tower_step_{i}", x0, y, x1 - x0) for i, (x0, x1, y) in enumerate(TOWER_STEPS)],
+        *[ledge(f"tower_{i}", x0, y, x1 - x0) for i, (x0, x1, y) in enumerate(TOWER_LANDINGS)],
         # Over the top of the watchtower, out of the room: the ridge.
         entity("LoadingZone", MOOR_TOWER_TOP[0], 0, MOOR_TOWER_TOP[1] - MOOR_TOWER_TOP[0], 16, id="moor_ridge",
                name="up onto the Searchlight Ridge", activation="EdgeExit", target_room=RIDGE, target_zone="ridge_tower",
@@ -170,15 +180,19 @@ def moor():
         # His back, walked on: a still one-way platform with no picture (the
         # statue's art draws it), as the math town's cradle plinth.
         entity("MovingPlatform", 1890, 600, 300, 16, id="statue_back", name="statue_back", speed=0.0, visual="none", one_way=True),
+        ledge("statue_plinth", 2208, 560, 64),
         # A chest for whoever climbs to the top (Jon, 2026-10-30: "interactive elements").
         entity("ChestSpawn", 1600, 272 - 58, 76, 58, name="the watchman's strongbox", reward="currency:50"),
-        sign("moor_sign", W - 200, FLOOR - 260, "THE MOOR: curfew is always", 360),
-        sign("tower_sign", 1590, 110, "WATCHTOWER 7 (the other six are worse)", 380),
-        sign("bog_sign", 850, FLOOR - 140, "BOG: do not drink, do not swim, do not look", 440),
-        sign("statue_sign", 2050, 450, "OUR FOUNDER (temporarily horizontal)", 380),
+        sign("moor_sign", 2248, 403, "THE MOOR: curfew is always", 214),
+        sign("tower_sign", 1350, 467, "WATCHTOWER 7", 196),
+        sign("tower_sign_note", 1350, 491, "The other six are worse.", 196),
+        sign("bog_sign", 824, 481, "THE BOG", 204),
+        sign("bog_sign_warning", 824, 505, "Do not drink, swim or look.", 204),
+        sign("statue_sign", 2048, 491, "OUR FOUNDER", 204),
+        sign("statue_sign_note", 2048, 515, "Temporarily horizontal.", 204),
         enemy(1, "npc_evil_attack_hound", 420, FLOOR, 52, 50),
         enemy(2, "npc_evil_attack_hound", 1760, FLOOR, 52, 50),
-        enemy(3, "npc_evil_failed_prototype", 1260, FLOOR, 32, 40),
+        enemy(3, "npc_searchlight_crawler", 980, 560, 48, 34),
         enemy(4, "npc_evil_failed_prototype", 1420, FLOOR, 32, 40),
         enemy(5, "npc_evil_zombie", 520, FLOOR, 30, 67),
         enemy(6, "npc_evil_zombie", 1960, 580, 30, 67),

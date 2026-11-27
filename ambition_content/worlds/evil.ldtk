@@ -11,7 +11,7 @@
 	"iid": "ambition-evil-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 310499,
+	"nextUid": 310528,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -42714,7 +42714,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -42740,7 +42740,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,2,2,2,2,2,2,0,0,0,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -42753,7 +42753,7 @@
 						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -42765,20 +42765,22 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,
+						2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,2,2,2,2,2,2,2,2,0,0,2,2,2,2,2,2,2,2,2,0,0,2,2,2,2,2,2,2,2,2,2,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,0,0,0,
+						0,0,0,0,0,0,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,
+						2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -42787,11 +42789,9 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,
+						2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -42963,18 +42963,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [22,38],
+							"__grid": [16,29],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": -2042,
-							"__worldY": 610,
+							"__worldX": -2133,
+							"__worldY": 475,
 							"iid": "Prop-308991",
-							"width": 1109,
-							"height": 46,
+							"width": 1200,
+							"height": 181,
 							"defUid": 4351,
-							"px": [358,610],
+							"px": [267,475],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "moor_wire", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -43023,44 +43023,70 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [1,24],
+							"__grid": [17,30],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -2380,
-							"__worldY": 396,
+							"__worldX": -2124,
+							"__worldY": 481,
 							"iid": "DebugLabel-309034",
-							"width": 460,
+							"width": 230,
 							"height": 24,
 							"defUid": 2007,
-							"px": [20,396],
+							"px": [276,481],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "inn_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["inn_sign"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "THE CROOKED LANTERN: open after curfew, which is always", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "THE CROOKED LANTERN", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["THE CROOKED LANTERN: open after curfew, which is always"]
+									"params": ["THE CROOKED LANTERN"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [17,31],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -2124,
+							"__worldY": 505,
+							"iid": "DebugLabel-310506",
+							"width": 230,
+							"height": 24,
+							"defUid": 2007,
+							"px": [276,505],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "inn_sign_curfew", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["inn_sign_curfew"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Open after curfew, which is always.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Open after curfew, which is always."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [35,37],
+							"__grid": [31,29],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": -1840,
-							"__worldY": 604,
+							"__worldX": -1904,
+							"__worldY": 475,
 							"iid": "Prop-308814",
-							"width": 567,
-							"height": 116,
+							"width": 776,
+							"height": 245,
 							"defUid": 4351,
-							"px": [560,604],
+							"px": [496,475],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "moor_bog", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -43074,18 +43100,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [93,11],
+							"__grid": [77,0],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": -900,
-							"__worldY": 178,
+							"__worldX": -1156,
+							"__worldY": 0,
 							"iid": "Prop-308743",
-							"width": 191,
-							"height": 478,
+							"width": 628,
+							"height": 656,
 							"defUid": 4351,
-							"px": [1500,178],
+							"px": [1244,0],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "moor_watchtower", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -43099,18 +43125,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [109,35],
+							"__grid": [109,24],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"__worldX": -642,
-							"__worldY": 564,
+							"__worldY": 396,
 							"iid": "Prop-308793",
-							"width": 522,
-							"height": 92,
+							"width": 609,
+							"height": 260,
 							"defUid": 4351,
-							"px": [1758,564],
+							"px": [1758,396],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "moor_statue", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -43379,18 +43405,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [126,24],
+							"__grid": [133,25],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -380,
-							"__worldY": 396,
+							"__worldX": -259,
+							"__worldY": 403,
 							"iid": "DebugLabel-308796",
-							"width": 360,
+							"width": 214,
 							"height": 24,
 							"defUid": 2007,
-							"px": [2020,396],
+							"px": [2141,403],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "moor_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -43405,78 +43431,156 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [87,6],
+							"__grid": [78,29],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -1000,
-							"__worldY": 110,
+							"__worldX": -1148,
+							"__worldY": 467,
 							"iid": "DebugLabel-308974",
-							"width": 380,
+							"width": 196,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1400,110],
+							"px": [1252,467],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "tower_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["tower_sign"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "WATCHTOWER 7 (the other six are worse)", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "WATCHTOWER 7", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["WATCHTOWER 7 (the other six are worse)"]
+									"params": ["WATCHTOWER 7"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [39,32],
+							"__grid": [78,30],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -1770,
-							"__worldY": 516,
-							"iid": "DebugLabel-308750",
-							"width": 440,
+							"__worldX": -1148,
+							"__worldY": 491,
+							"iid": "DebugLabel-310520",
+							"width": 196,
 							"height": 24,
 							"defUid": 2007,
-							"px": [630,516],
+							"px": [1252,491],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "tower_sign_note", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tower_sign_note"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "The other six are worse.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["The other six are worse."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [45,30],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -1678,
+							"__worldY": 481,
+							"iid": "DebugLabel-308750",
+							"width": 204,
+							"height": 24,
+							"defUid": 2007,
+							"px": [722,481],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "bog_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["bog_sign"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "BOG: do not drink, do not swim, do not look", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "THE BOG", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["BOG: do not drink, do not swim, do not look"]
+									"params": ["THE BOG"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [116,28],
+							"__grid": [45,31],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -540,
-							"__worldY": 450,
-							"iid": "DebugLabel-308895",
-							"width": 380,
+							"__worldX": -1678,
+							"__worldY": 505,
+							"iid": "DebugLabel-310522",
+							"width": 204,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1860,450],
+							"px": [722,505],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "bog_sign_warning", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["bog_sign_warning"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Do not drink, swim or look.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Do not drink, swim or look."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [121,30],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -454,
+							"__worldY": 491,
+							"iid": "DebugLabel-308895",
+							"width": 204,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1946,491],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "statue_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["statue_sign"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "OUR FOUNDER (temporarily horizontal)", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "OUR FOUNDER", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["OUR FOUNDER (temporarily horizontal)"]
+									"params": ["OUR FOUNDER"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [121,32],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -454,
+							"__worldY": 515,
+							"iid": "DebugLabel-310524",
+							"width": 204,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1946,515],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "statue_sign_note", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["statue_sign_note"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Temporarily horizontal.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Temporarily horizontal."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -43549,30 +43653,30 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [78,38],
+							"__grid": [61,32],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
-							"__worldX": -1140,
-							"__worldY": 616,
-							"iid": "EnemySpawn-308754",
-							"width": 32,
-							"height": 40,
+							"__worldX": -1420,
+							"__worldY": 526,
+							"iid": "EnemySpawn-310527",
+							"width": 48,
+							"height": 34,
 							"defUid": 2008,
-							"px": [1260,616],
+							"px": [980,526],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "evil_searchlight_moor_npc_evil_failed_prototype_3", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "evil_searchlight_moor_npc_searchlight_crawler_3", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["evil_searchlight_moor_npc_evil_failed_prototype_3"]
+									"params": ["evil_searchlight_moor_npc_searchlight_crawler_3"]
 								}] },
 								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["combatant"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_evil_failed_prototype", "__tile": null, "defUid": 6854, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_searchlight_crawler", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_evil_failed_prototype"]
+									"params": ["npc_searchlight_crawler"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
 									"id": "V_String",
