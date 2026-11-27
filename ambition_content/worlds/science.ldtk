@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 411457,
+	"nextUid": 411472,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -11280,10 +11280,10 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,
+						0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1
 					],
 					"__cWid": 80,
 					"__cHei": 200,
@@ -11484,6 +11484,56 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [1,138],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5072,
+							"__worldY": 5259,
+							"iid": "Prop-411464",
+							"width": 1248,
+							"height": 981,
+							"defUid": 4351,
+							"px": [16,2219],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "climb_route_lower_4", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["climb_route_lower_4"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "climb_route_lower", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["climb_route_lower"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [18,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 5355,
+							"__worldY": 3652,
+							"iid": "Prop-411465",
+							"width": 682,
+							"height": 849,
+							"defUid": 4351,
+							"px": [299,612],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "climb_route_upper_5", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["climb_route_upper_5"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "climb_route_upper", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["climb_route_upper"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [36,199],
 							"__pivot": [0,0],
@@ -11615,18 +11665,70 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [42,184],
+							"__grid": [19,193],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 5736,
-							"__worldY": 5984,
-							"iid": "DebugLabel-409744",
-							"width": 440,
+							"__worldX": 5369,
+							"__worldY": 6140,
+							"iid": "DebugLabel-411470",
+							"width": 220,
 							"height": 24,
 							"defUid": 2007,
-							"px": [680,2944],
+							"px": [313,3100],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "climb_roof_return_west", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["climb_roof_return_west"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "GROUND STATION →", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["GROUND STATION →"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [46,193],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 5803,
+							"__worldY": 6140,
+							"iid": "DebugLabel-411471",
+							"width": 220,
+							"height": 24,
+							"defUid": 2007,
+							"px": [747,3100],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "climb_roof_return_east", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["climb_roof_return_east"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "← GROUND STATION", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["← GROUND STATION"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [45,183],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 5780,
+							"__worldY": 5974,
+							"iid": "DebugLabel-409744",
+							"width": 244,
+							"height": 24,
+							"defUid": 2007,
+							"px": [724,2934],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "climb_sign_8", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -11641,18 +11743,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [42,140],
+							"__grid": [45,139],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 5736,
-							"__worldY": 5280,
+							"__worldX": 5780,
+							"__worldY": 5268,
 							"iid": "DebugLabel-409745",
-							"width": 440,
+							"width": 244,
 							"height": 24,
 							"defUid": 2007,
-							"px": [680,2240],
+							"px": [724,2228],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "climb_sign_30", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -11667,18 +11769,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [42,90],
+							"__grid": [45,89],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 5736,
-							"__worldY": 4480,
+							"__worldX": 5780,
+							"__worldY": 4468,
 							"iid": "DebugLabel-409746",
-							"width": 440,
+							"width": 244,
 							"height": 24,
 							"defUid": 2007,
-							"px": [680,1440],
+							"px": [724,1428],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "climb_sign_55", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -11693,18 +11795,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [42,40],
+							"__grid": [19,38],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 5736,
-							"__worldY": 3680,
+							"__worldX": 5370,
+							"__worldY": 3662,
 							"iid": "DebugLabel-409747",
-							"width": 440,
+							"width": 244,
 							"height": 24,
 							"defUid": 2007,
-							"px": [680,640],
+							"px": [314,622],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "climb_sign_80", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",

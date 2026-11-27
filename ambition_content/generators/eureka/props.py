@@ -63,6 +63,8 @@ SCENERY = {
         ("climb_karman", 36, 2220),
         ("climb_satellite", 320, 1320),
         ("climb_navsat", 760, 576),
+        ("climb_route_lower", 16, 2200),
+        ("climb_route_upper", 288, 600),
     ],
     # Under the lecture hall (`eureka_collider_props.py`, room coordinates).
     "eureka_collider": [("collider_tunnel", 16, 48)],

@@ -428,32 +428,38 @@ def elevator_station():
     return build(rid, e, "THE TETHER: GROUND STATION")
 
 
-#: The signs on the climb, by how far up the room they are (0 bottom, 1 top).
+#: Place each height sign beside its landmark.
 CLIMB_SIGNS = [
-    (0.08, "12 km: the weather, now under you"),
-    (0.30, "100 km: the Karman line. Space, technically"),
-    (0.55, "2,000 km: low orbit, and its traffic"),
-    (0.80, "20,000 km: the planet fits in the window"),
+    (8, 846, 2934, "12 km: the weather, now under you"),
+    (30, 846, 2228, "100 km: the Karman line. Space, technically"),
+    (55, 846, 1428, "2,000 km: low orbit, and its traffic"),
+    (80, 436, 622, "20,000 km: the planet fits in the window"),
 ]
 
 
 def elevator_climb():
-    """The climb: a tall room of sky, the tether up its middle. The second car
-    rests where a body coming up through the floor edge stands, and carries
-    it out of the top."""
+    """The car carries riders from the ground station to the terminus.
+
+    The roof landings catch a body that falls beside the shaft. The
+    opening between the landings leads back to the ground station.
+    """
     rid = CLIMB
     _, (w, h) = ROOMS_AT[rid]
     top = h - EDGE_FEET
     e = [
         solid("west_wall", 0, 0, WALL, h),
         solid("east_wall", w - WALL, 0, WALL, h),
+        solid("roof_landing_west", WALL, h - 16, SHAFT_X - WALL, 16),
+        solid("roof_landing_east", SHAFT_X + CAR_W, h - 16, w - WALL - SHAFT_X - CAR_W, 16),
         vertical_edge("climb_from_station", "down to the ground station", SHAFT_X, h - 16, CAR_W, STATION, "station_to_climb"),
         car("tether_car_climb", "the tether's car", SHAFT_X, top, -(top + 60), CLIMB_SPEED),
         vertical_edge("climb_to_terminus", "up to the station", SHAFT_X, 0, CAR_W, TERMINUS, "terminus_from_climb"),
         start(rid, SHAFT_X + CAR_W // 2, top),
+        sign("climb_roof_return_west", 423, 3100, "GROUND STATION →", 220),
+        sign("climb_roof_return_east", 857, 3100, "← GROUND STATION", 220),
     ]
-    for frac, text in CLIMB_SIGNS:
-        e.append(sign(f"climb_sign_{int(frac * 100)}", SHAFT_X + CAR_W // 2 + 260, round(h * (1.0 - frac)), text, 440))
+    for mark, x, y, text in CLIMB_SIGNS:
+        e.append(sign(f"climb_sign_{mark}", x, y, text, 244))
     return build(rid, e, None, music=TETHER_MUSIC, biome=HEIGHTS)
 
 
