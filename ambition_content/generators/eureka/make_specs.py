@@ -159,6 +159,9 @@ CAR_HOP = 40
 CAR_SPEED = 300.0
 CLIMB_SPEED = 340.0
 STATION_SHAFT_X = 960
+STATION_GALLERIES = ((16, 904, 1024), (1144, 1584, 1024))
+STATION_STEPS = ((464, 576, 1280), (416, 528, 1216), (352, 464, 1152), (288, 400, 1088),
+                 (1120, 1232, 1280), (1184, 1296, 1216), (1248, 1360, 1152), (1312, 1424, 1088))
 SHAFT_X = 576
 #: A body that comes up through a floor edge stands this far over it.
 EDGE_FEET = 68
@@ -393,12 +396,11 @@ def observatory():
 
 
 def elevator_station():
-    """The ground station: a tall hall round the foot of the tether. The car
-    waits a hop over the floor under the open roof of the shaft (as the
-    Mockingbird's shark waits in the air): hop on and it is all that holds
-    you, so it carries you. Level with the floor, it set off at the first
-    touch of a foot still on the floor and rose through it. The operator is
-    by it."""
+    """The floor leads to the car and the operator.
+
+    The steps give access to the galleries beside the shaft. The car
+    waits above the floor and moves up when a rider stands on it.
+    """
     rid = STATION
     _, (w, h) = ROOMS_AT[rid]
     floor = h - 64
@@ -414,12 +416,14 @@ def elevator_station():
         car("tether_car_ground", "the tether's car", sx, floor - CAR_HOP, -(floor - CAR_HOP + 60), CAR_SPEED),
         vertical_edge("station_to_climb", "up the tether", sx, 0, sw, CLIMB, "climb_from_station"),
         resident("npc_eureka_teodora", "eureka_teodora", 720, floor),
-        sign("station_sign", 760, 120, "EUREKA TETHER: GROUND STATION", 460),
-        sign("station_sign_car", sx + sw // 2, floor - 200, "STAND ON THE CAR TO ASCEND", 320),
-        sign("station_sign_altitude", sx + sw // 2, floor - 260, "Orbit: 35,786 km. Allow for the view.", 400),
-        # Galleries round the hall.
-        walk("gallery_west", WALL, floor - 320, 480),
-        walk("gallery_east", w - 400, floor - 320, 400 - WALL),
+        sign("station_sign", 294, 812, "EUREKA TETHER: GROUND STATION", 380),
+        sign("station_sign_car", 827, 1180, "STAND ON THE CAR TO ASCEND", 232),
+        sign("station_sign_altitude", 1368, 928, "ORBIT IS 35,786 KM ABOVE EUREKA", 344),
+        sign("station_sign_altitude_note", 1368, 952, "Allow for the view.", 344),
+        *[walk(f"gallery_{side}", left, top, right - left)
+          for side, (left, right, top) in zip(("west", "east"), STATION_GALLERIES)],
+        *[ledge(f"station_step_{i}", left, top, right - left)
+          for i, (left, right, top) in enumerate(STATION_STEPS)],
     ]
     return build(rid, e, "THE TETHER: GROUND STATION")
 
