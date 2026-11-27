@@ -30,6 +30,7 @@ SCENERY = {
         ("quad_fountain", 1250, 600),
         # The manhole down to the steam plant (`eureka_plant_props.py`).
         ("quad_manhole", 870, 728),
+        ("quad_campus_walks", 560, 528),
     ],
     "eureka_steam_plant": [("plant_west", 16, 16), ("plant_east", 1200, 16)],
     "eureka_first_lab": [("first_lab_room", 16, 16)],

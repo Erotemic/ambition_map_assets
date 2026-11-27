@@ -75,6 +75,7 @@ COLLIDER_DOOR_X = 1828
 COLLIDER_GALLERY = (1488, 1760, 384)
 COLLIDER_WALKS = ((448, 560, 512), (576, 688, 448), (704, 1408, 384))
 QUAD = "eureka_quad"
+QUAD_WALKS = ((576, 960, 576), (1008, 1200, 576), (1232, 1408, 592), (1456, 1600, 576))
 PATENT = "eureka_patent_office"
 LAB = "eureka_coil_lab"
 DOME = "eureka_observatory"
@@ -222,10 +223,11 @@ def court():
 
 
 def quad():
-    """The quad. The street (y 768) runs the room; the lecture hall's terrace
-    (y 576) over its middle, the raised walk (y 576) at the west end. Doors on
-    the street to the patent office and the coil laboratory, and on the
-    terrace to the observatory. The cafe's awning is a step."""
+    """The street connects the offices and the tether station.
+
+    The raised walk passes the patent office, cafe, and fountain. It
+    connects the Gate Court to the lecture hall terrace.
+    """
     rid = QUAD
     _, (w, h) = ROOMS_AT[rid]
     # The raised walk is as high over the street as the court's is over its
@@ -239,7 +241,8 @@ def quad():
         # floor over it (dropped through) and a ladder (`main`).
         ledge("manhole_hatch", m0, street, m1 - m0),
         vertical_edge("quad_manhole", "down the manhole to the steam plant", m0, h - 16, m1 - m0, PLANT, "plant_manhole"),
-        sign("manhole_sign", m0 + 30, street - 120, "STEAM PLANT: authorised persons, and the curious", 380),
+        sign("manhole_sign", 920, 612, "STEAM PLANT", 144),
+        sign("manhole_sign_note", 920, 638, "Staff and the curious", 144),
         solid("west_wall_high", 0, 0, WALL, walk_y - 96),
         solid("west_wall_mid", 0, walk_y + 16, WALL, street - 96 - walk_y - 16),
         solid("east_wall", w - WALL, 0, WALL, street - 96),
@@ -251,11 +254,16 @@ def quad():
         ledge("raised_walk", WALL, walk_y, 560),
         ledge("walk_stair_1", 560, street - 64, 96),
         ledge("walk_stair_2", 600, street - 128, 64),
+        *[ledge(f"quad_walk_{i}", left, top, right - left)
+          for i, (left, right, top) in enumerate(QUAD_WALKS)],
         door("quad_patent_door", "into the patent office", 760, street, PATENT, "patent_door"),
-        sign("patent_sign", 784, street - 150, "PATENT OFFICE (THIRD CLASS)", 300),
+        sign("patent_sign", 757, 598, "PATENT OFFICE", 150),
+        sign("patent_sign_class", 757, 622, "Third class", 150),
+        ledge("cafe_street_bench", 960, 720, 80),
         ledge("cafe_awning", 1000, street - 112, 200),
         resident("npc_eureka_mina", "eureka_mina", 1100, street),
-        sign("cafe_sign", 1100, street - 180, "THE UNCERTAIN CUP: coffee, probably", 340),
+        sign("cafe_sign", 1104, 597, "THE UNCERTAIN CUP", 190),
+        sign("cafe_sign_note", 1104, 621, "Coffee, probably.", 190),
         resident("npc_eureka_priya", "eureka_priya", 1320, street),
         # The lecture hall: its steps up to the terrace, and the observatory's door on it.
         ledge("hall_step_1", 1440, street - 64, 96),

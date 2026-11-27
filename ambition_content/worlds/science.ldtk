@@ -11,7 +11,7 @@
 	"iid": "ambition-gnu-ton-handle-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 411419,
+	"nextUid": 411444,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -14229,13 +14229,13 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						1,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
-						2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,
+						2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,2,2,2,2,2,2,
+						2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,
 						2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
 						2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -14275,7 +14275,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -14654,6 +14654,31 @@
 							]
 						},
 						{
+							"__identifier": "Prop",
+							"__grid": [36,34],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 2432,
+							"__worldY": 7362,
+							"iid": "Prop-411431",
+							"width": 1024,
+							"height": 222,
+							"defUid": 4351,
+							"px": [576,546],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "quad_campus_walks_9", "__tile": null, "defUid": 4349, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["quad_campus_walks_9"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "quad_campus_walks", "__tile": null, "defUid": 4350, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["quad_campus_walks"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "LoadingZone",
 							"__grid": [55,55],
 							"__pivot": [0,0],
@@ -14693,26 +14718,52 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [45,40],
+							"__grid": [53,38],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 2576,
-							"__worldY": 7464,
+							"__worldX": 2704,
+							"__worldY": 7428,
 							"iid": "DebugLabel-410531",
-							"width": 380,
+							"width": 144,
 							"height": 24,
 							"defUid": 2007,
-							"px": [720,648],
+							"px": [848,612],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "manhole_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["manhole_sign"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "STEAM PLANT: authorised persons, and the curious", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "STEAM PLANT", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["STEAM PLANT: authorised persons, and the curious"]
+									"params": ["STEAM PLANT"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [53,39],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 2704,
+							"__worldY": 7454,
+							"iid": "DebugLabel-411434",
+							"width": 144,
+							"height": 24,
+							"defUid": 2007,
+							"px": [848,638],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "manhole_sign_note", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["manhole_sign_note"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Staff and the curious", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Staff and the curious"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -14849,26 +14900,52 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [39,38],
+							"__grid": [42,37],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 2490,
-							"__worldY": 7434,
+							"__worldX": 2538,
+							"__worldY": 7414,
 							"iid": "DebugLabel-409674",
-							"width": 300,
+							"width": 150,
 							"height": 24,
 							"defUid": 2007,
-							"px": [634,618],
+							"px": [682,598],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "patent_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["patent_sign"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "PATENT OFFICE (THIRD CLASS)", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "PATENT OFFICE", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["PATENT OFFICE (THIRD CLASS)"]
+									"params": ["PATENT OFFICE"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [42,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 2538,
+							"__worldY": 7438,
+							"iid": "DebugLabel-411440",
+							"width": 150,
+							"height": 24,
+							"defUid": 2007,
+							"px": [682,622],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "patent_sign_class", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["patent_sign_class"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Third class", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Third class"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -14905,26 +14982,52 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [58,36],
+							"__grid": [63,37],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 2786,
-							"__worldY": 7404,
+							"__worldX": 2865,
+							"__worldY": 7413,
 							"iid": "DebugLabel-409676",
-							"width": 340,
+							"width": 190,
 							"height": 24,
 							"defUid": 2007,
-							"px": [930,588],
+							"px": [1009,597],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "cafe_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["cafe_sign"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "THE UNCERTAIN CUP: coffee, probably", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "THE UNCERTAIN CUP", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["THE UNCERTAIN CUP: coffee, probably"]
+									"params": ["THE UNCERTAIN CUP"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [63,38],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 2865,
+							"__worldY": 7437,
+							"iid": "DebugLabel-411443",
+							"width": 190,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1009,621],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "cafe_sign_note", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["cafe_sign_note"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Coffee, probably.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Coffee, probably."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
