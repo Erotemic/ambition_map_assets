@@ -535,9 +535,7 @@ def lever(name, label_text, prompt, x, floor, action="ResetEncounter", target=""
 
 
 def great_hall():
-    """The fight of the castle: a grille shuts the way back, and the muster
-    comes in three waves (`castle_godwin_muster`). Two galleries and a
-    dais to fight from."""
+    """The muster uses the floor, dais, and connected galleries."""
     rid = GREAT_HALL
     _, w, h = ROOMS_AT[rid]
     floor, e = shell(rid)
@@ -554,6 +552,7 @@ def great_hall():
         (f'( type: "EncounterTrigger", px: [320, 48], size: [64, {floor - 48}], fields: ( id: "{MUSTER}", '
          f'name: "{MUSTER}_trigger", camera_zoom: 1.2 ) ),'),
         lever(f"{rid}_again", "the gong of the muster", "Strike the gong", 128, floor, target=MUSTER),
+        piece("castle_muster_galleries", 368, 432, 1.0),
         ledge("gallery_west", 448, floor - 192, 320),
         ledge("gallery_east", w - 768, floor - 192, 320),
         solid("dais", w // 2 - 160, floor - 48, 320, 48),
@@ -565,6 +564,10 @@ def great_hall():
         standing("poster_hall_order", "castle_propaganda_poster_b", w - 620, floor - 300),
         ledge("balcony", w // 2 - 192, floor - 352, 384),
     ]
+    steps = ((400, 64, 112), (448, 128, 112), (720, 256, 112), (800, 304, 96))
+    for index, (x, rise, width) in enumerate(steps, 1):
+        e.append(ledge(f"gallery_step_west_{index}", x, floor - rise, width))
+        e.append(ledge(f"gallery_step_east_{index}", w - x - width, floor - rise, width))
     return rid, castle(rid, e, "Castle Godwin: the great hall.")
 
 
