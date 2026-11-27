@@ -63,7 +63,9 @@ if str(TOOLS) not in sys.path:
 
 from ambition_ldtk_tools.ldtk.paths import default_worlds_dir  # noqa: E402
 
+sys.path.insert(0, str(TOOL_SPECS))
 sys.path.insert(0, str(TOOL_SPECS / "gate_network"))
+from district_scenery import body_box, piece  # noqa: E402
 import gates  # noqa: E402
 
 EVIL_LDTK = default_worlds_dir() / "evil.ldtk"
@@ -239,15 +241,6 @@ def heal(name, x, floor, amount=3):
 def shrine(rid, x, floor, name):
     """A shrine to rest at: it heals, and the castle starts again from it."""
     return f'( type: "ShrineSpawn", px: [{x}, {floor - 80}], size: [44, 80], fields: ( id: "{rid}_shrine", name: "{name}" ) ),'
-
-
-def body_box(kind):
-    """The body box of `kind`'s published sheet in frame pixels, (x, y, w, h):
-    read from the accepted art publication (`district_scenery.body_box`)."""
-    sys.path.insert(0, str(TOOL_SPECS))
-    from district_scenery import body_box as published_body_box
-
-    return published_body_box(kind)
 
 
 def middle_of(kind, x):
@@ -492,8 +485,7 @@ def barracks():
 
 
 def tower():
-    """A climb: ledges from side to side up the tower, a soldier on every
-    other ledge, and the door to the great hall at the top."""
+    """Two service ladders connect the guarded lab landings."""
     rid = TOWER
     _, w, h = ROOMS_AT[rid]
     floor, e = shell(rid)
@@ -505,30 +497,27 @@ def tower():
         # its foot.
         *wall_with_ways("west_wall", 0, 48, floor, (TOWER_FROM_BARRACKS, TOWER_FROM_CELLS)),
         *wall_with_ways("east_wall", w - WALL, 48, floor, (top_floor, floor)),
-        ledge("landing_barracks", WALL, TOWER_FROM_BARRACKS, 160),
-        ledge("landing_cells", WALL, TOWER_FROM_CELLS, 160),
+        ledge("landing_barracks", WALL, TOWER_FROM_BARRACKS, 80),
+        ledge("landing_cells", WALL, TOWER_FROM_CELLS, 80),
         edge(f"{rid}_barracks", "back to the barracks", 0, TOWER_FROM_BARRACKS, BARRACKS, f"{BARRACKS}_east"),
         edge(f"{rid}_cells", "into the cells", 0, TOWER_FROM_CELLS, CELLS, "cells_east"),
         solid("top_floor", w - 384, top_floor, 384 - WALL, 32),
         edge(f"{rid}_top", "into the great hall", w - WALL, top_floor, GREAT_HALL, f"{GREAT_HALL}_west"),
         edge(f"{rid}_foot", "into the workshop", w - WALL, floor, WORKSHOP, "workshop_west"),
+        piece("castle_lab_service_tower", 16, 216, 1.0),
     ]
-    n = 0
-    y = floor - 176
-    k = 0
-    while y > top_floor + 96:
-        x = 160 if k % 2 == 0 else w - 160 - 288
-        e.append(ledge(f"ledge_{k}", x, y, 288))
-        if k % 2 == 1:
-            n += 1
-            # A soldier, then a crawler, up the climb.
-            e.append(soldier(rid, n, x + 128, y, SOLDIER if n % 2 == 1 else CRAWLER))
-        y -= 176
-        k += 1
+    walks = (
+        (160, 1552, 288), (576, 1376, 288), (160, 1200, 704),
+        (576, 1024, 288), (160, 848, 288), (160, 672, 704),
+        (160, 448, 288), (544, 400, 320),
+    )
+    e.extend(ledge(f"ledge_{i}", x, y, width) for i, (x, y, width) in enumerate(walks))
+    e.extend(soldier(rid, i, 704, y, character)
+             for i, (y, character) in enumerate(((1376, SOLDIER), (1024, CRAWLER), (672, SOLDIER)), 1))
     # The lab on the floor of the tower: the vats the prototypes came out of,
     # the coils; the operating table on the top floor.
     e += [standing(f"vat_{i}", "castle_specimen_vat", x, floor) for i, x in enumerate((300, 400, 500))]
-    e += [standing(f"coil_{i}", "castle_tesla_coil", x, floor) for i, x in enumerate((640, 860))]
+    e += [standing(f"coil_{i}", "castle_tesla_coil", x, floor) for i, x in enumerate((640, 928))]
     e.append(standing("operating_table", "castle_operating_table", w - 380, top_floor))
     # The top of the tower: a Shock Warden at the door, and a pack on the
     # first ledge. Past the warden, a shrine: the last rest before the muster
@@ -821,6 +810,9 @@ PAINT = [
     (GATEHOUSE, "Climbable", 1, 1408, 416, 32, 288),
     (BARRACKS, "Climbable", 1, BARRACKS_TRAPDOOR[0] + 16, 704 - 64, 32, ROOMS_AT[BARRACKS][2] - 704 + 64),
     *((BARRACKS, "Climbable", 1, x + BARRACKS_BUNK_LADDER_OFFSET, 448, 32, 256) for x in BARRACKS_BUNKS),
+    (TOWER, "Climbable", 1, 112, 416, 32, 1312),
+    (TOWER, "Climbable", 1, 880, 368, 32, 1360),
+    (TOWER, "Climbable", 1, 592, 224, 32, 176),
 ]
 
 #: The fight of the great hall: its waves are authored in
