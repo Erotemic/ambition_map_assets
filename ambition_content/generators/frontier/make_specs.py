@@ -509,15 +509,17 @@ def siding_station():
         *side_walls(w, h, None, floor),
         *gates.as_ron(gates.ring("Halfway Siding Gate", "frontier_siding_gate", 96, floor, "the gate")),
         *gates.as_ron(gates.terminal("Halfway Siding Gate", "frontier_siding_terminal", 420, floor)),
-        start(rid, 560, floor),
+        start(rid, 520, floor),
         sign("station_sign_gate", 260, floor - 360, "AUXILIARY GATE TERMINAL", 300),
         sign("station_sign_rest", 260, floor - 332, "ARRIVALS: REST BEFORE YOU TRAVEL ON", 400),
-        # The halt's platform and its station house; the house's flat roof
-        # is reached off the luggage stacked at its east end.
-        solid("station_platform", 640, platform, 880, floor - platform),
+        slope("station_west_ramp", 544, floor, 640, platform),
+        solid("station_platform", 640, platform, 848, floor - platform),
+        slope("station_east_ramp", 1488, platform, 1584, floor),
         ledge("station_roof", 720, platform - 160, 480),
-        ledge("trunks_low", 1240, platform - 48, 80),
-        ledge("trunks_high", 1290, platform - 112, 80),
+        ledge("baggage_table", 576, platform - 48, 64),
+        ledge("baggage_awning", 640, platform - 112, 96),
+        ledge("trunks_low", 1232, platform - 48, 96),
+        ledge("trunks_high", 1280, platform - 112, 96),
         sign("station_sign_name", 960, platform - 216, "HALFWAY SIDING", 260),
         sign("station_sign_times", 1360, platform - 200, "NO. 9 ORE FREIGHT, DOWN THE GULCH: 9:40", 420),
         # Augusta Pell, the agent, at the ticket window.

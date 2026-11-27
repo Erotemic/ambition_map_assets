@@ -51,7 +51,7 @@ SCENERY = {
     ],
     "frontier_saddle_lookout": [("frontier_lookout_post", 256, 180)],
     # The first slice (`targets/props/frontier_slice_props.py`).
-    "frontier_siding_station": [("frontier_siding_station_house", 620, 370)],
+    "frontier_siding_station": [("frontier_siding_station_house", 536, 370)],
     "frontier_siding_street": [
         ("frontier_siding_windmill", 1100, 200),
         ("frontier_lie_down_inn_front", 150, 160),
