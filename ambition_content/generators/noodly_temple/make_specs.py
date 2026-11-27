@@ -88,18 +88,17 @@ WALL = 16
 #: A door (a `LockWall`) is this wide and this tall, and so is its opening.
 GATE_W, GATE_H = 32, 128
 
-#: Each room: where it is in the world (a multiple of 16), and its size.
-#: The tests of the level tool make levels at 22000 to 25000, 60000, 100000
-#: and 106000 of the same map: keep clear of them.
+# The room origins and sizes. The main floor meets the stair at world y 1280.
 ROOMS_AT = {
-    "noodly_narthex": (70000, 960, 512),
-    "noodly_nave": (72000, 1600, 1024),
-    "noodly_scullery": (74000, 1408, 640),
-    "noodly_cistern": (76000, 1600, 896),
-    "noodly_belfry": (78000, 1152, 1408),
-    "noodly_reliquary": (80000, 1280, 640),
-    "noodly_sanctum": (82000, 960, 768),
+    "noodly_narthex": (67840, 800, 960, 512),
+    "noodly_nave": (68800, 288, 1600, 1024),
+    "noodly_scullery": (70400, 672, 1408, 640),
+    "noodly_cistern": (66048, 128, 1600, 896),
+    "noodly_belfry": (67648, -672, 1152, 1408),
+    "noodly_reliquary": (71808, 416, 1280, 640),
+    "noodly_sanctum": (70400, -96, 960, 768),
 }
+PASSAGE_H = 128
 
 #: Each key: its flag, what the player reads when he takes it, and the sheet
 #: of the key and of its door.
@@ -134,6 +133,12 @@ def door(zone, name, x, floor_y, to_room, to_zone):
     """A way to another room: a door that a press opens, on the floor at `floor_y`."""
     return (f'( type: "LoadingZone", px: [{x}, {floor_y - 96}], size: [48, 96], fields: ( id: "{zone}", name: "{name}", '
             f'activation: "Door", target_room: "{to_room}", target_zone: "{to_zone}", bidirectional: true ) ),')
+
+
+def passage(zone, name, x, floor_y, to_room, to_zone):
+    return (f'( type: "LoadingZone", px: [{x}, {floor_y - PASSAGE_H}], size: [{WALL}, {PASSAGE_H}], '
+            f'fields: ( id: "{zone}", name: "{name}", activation: "EdgeExit", target_room: "{to_room}", '
+            f'target_zone: "{to_zone}", bidirectional: true ) ),')
 
 
 def gate(wall_id, name, x, y, gated_by, look, h=GATE_H, w=GATE_W):
@@ -213,18 +218,18 @@ def fight(room, encounter, floor, again_x=140, lock_x=176, trigger_x=320):
     ]
 
 
-def shell(w, h):
+def shell(w, h, *, west_open=False, east_open=False):
     floor = h - 32
     return floor, [
         solid("floor", 0, floor, w, 32),
         solid("ceiling", 0, 0, w, WALL),
-        solid("left_wall", 0, WALL, WALL, floor - WALL),
-        solid("right_wall", w - WALL, WALL, WALL, floor - WALL),
+        solid("left_wall", 0, WALL, WALL, floor - WALL - (PASSAGE_H if west_open else 0)),
+        solid("right_wall", w - WALL, WALL, WALL, floor - WALL - (PASSAGE_H if east_open else 0)),
     ]
 
 
 def room(rid, entities, label, connect=(), music=MUSIC, title_at=(240, 32)):
-    world_x, w, h = ROOMS_AT[rid]
+    world_x, world_y, w, h = ROOMS_AT[rid]
     body = "\n        ".join(list(entities) + [
         f'( type: "CameraZone", px: [0, 0], size: [{w}, {h}], fields: ( id: "{rid}_camera", name: "{rid}_camera", mode: "Default" ) ),',
         sign(rid, "title", label, title_at[0], title_at[1], 400),
@@ -235,7 +240,7 @@ def room(rid, entities, label, connect=(), music=MUSIC, title_at=(240, 32)):
     id: "{rid}",
     level_id: "{rid}",
     world_x: {world_x},
-    world_y: 0,
+    world_y: {world_y},
     px_wid: {w},
     px_hei: {h},
     fill_collision: "empty",
@@ -266,8 +271,8 @@ HUB_DOOR_ID = "noodly_hub_door"
 
 def narthex():
     rid = "noodly_narthex"
-    _, w, h = ROOMS_AT[rid]
-    floor, e = shell(w, h)
+    _, _, w, h = ROOMS_AT[rid]
+    floor, e = shell(w, h, east_open=True)
     e += [
         f'( type: "PlayerStart", px: [110, {floor - 46}], size: [28, 46], fields: ( name: "{rid}_spawn" ) ),',
         door(f"{rid}_to_hub", "to the central hub", 32, floor, "central_hub_complex", HUB_DOOR_ID),
@@ -275,7 +280,7 @@ def narthex():
         # from Brothlehem (`generators/noodle_village/make_specs.py`). The
         # dimension's ring (ALDENTE) is in the village's square.
         door(f"{rid}_to_stair", "out to the Pilgrims' Way", 200, floor, "noodle_temple_stair", "noodle_temple_stair_door"),
-        door(f"{rid}_east", "to the nave", w - WALL - 80, floor, "noodly_nave", "noodly_nave_west"),
+        passage(f"{rid}_east", "to the nave", w - WALL, floor, "noodly_nave", "noodly_nave_west"),
         # Ramen-nujan says what the temple is (Jon, 2026-10-12: he is the one
         # at the door, not a sexton).
         (f'( type: "NpcSpawn", px: [480, {floor - 70}], size: [42, 70], fields: ( character_id: "npc_ramen_nujan", '
@@ -299,7 +304,7 @@ def chapel(rid, name, west, top, doors, zone, door_name, to_room, to_zone, label
     """A chapel in a wall of the nave: a room 160 high whose one opening, to
     the hall, is shut by `doors` (a list of keys, from the hall inward). Its
     way out to another room is at its far end."""
-    _, w, _ = ROOMS_AT[rid]
+    _, _, w, _ = ROOMS_AT[rid]
     # How far the chapel goes into the wall: each door more is 96 deeper.
     depth = 240 + 96 * (len(doors) - 1)
     out = []
@@ -326,14 +331,13 @@ def chapel(rid, name, west, top, doors, zone, door_name, to_room, to_zone, label
 
 def nave():
     rid = "noodly_nave"
-    _, w, h = ROOMS_AT[rid]
-    floor, e = shell(w, h)
+    _, _, w, h = ROOMS_AT[rid]
+    floor, e = shell(w, h, west_open=True, east_open=True)
     e += [
         f'( type: "PlayerStart", px: [110, {floor - 46}], size: [28, 46], fields: ( name: "{rid}_spawn" ) ),',
-        door(f"{rid}_west", "to the narthex", 32, floor, "noodly_narthex", "noodly_narthex_east"),
-        door(f"{rid}_east", "to the scullery", w - WALL - 80, floor, "noodly_scullery", "noodly_scullery_west"),
+        passage(f"{rid}_west", "to the narthex", 0, floor, "noodly_narthex", "noodly_narthex_east"),
+        passage(f"{rid}_east", "to the scullery", w - WALL, floor, "noodly_scullery", "noodly_scullery_west"),
         f'( type: "ShrineSpawn", px: [778, {floor - 80}], size: [44, 80], fields: ( id: "{rid}_shrine", name: "the shrine of the nave" ) ),',
-        sign(rid, "scullery", "The scullery. It is open.", w - 190, floor - 150, 280),
     ]
     e += chapel(rid, "cistern", True, 576, ["marinara"], f"{rid}_cistern", "to the cistern", "noodly_cistern",
                 "noodly_cistern_west", "The cistern")
@@ -352,13 +356,13 @@ def nave():
 
 def scullery():
     rid = "noodly_scullery"
-    _, w, h = ROOMS_AT[rid]
-    floor, e = shell(w, h)
+    _, _, w, h = ROOMS_AT[rid]
+    floor, e = shell(w, h, west_open=True)
     brawl = f"{rid}_brawl"
     e += fight(rid, brawl, floor)
     e += [
         f'( type: "PlayerStart", px: [96, {floor - 46}], size: [28, 46], fields: ( name: "{rid}_spawn" ) ),',
-        door(f"{rid}_west", "to the nave", 32, floor, "noodly_nave", "noodly_nave_east"),
+        passage(f"{rid}_west", "to the nave", 0, floor, "noodly_nave", "noodly_nave_east"),
         ledge("rack_a", 480, 480, 160),
         ledge("rack_b", 800, 480, 160),
         ledge("rack_c", 640, 368, 160),
@@ -379,7 +383,7 @@ def scullery():
 
 def cistern():
     rid = "noodly_cistern"
-    _, w, h = ROOMS_AT[rid]
+    _, _, w, h = ROOMS_AT[rid]
     floor, e = shell(w, h)
     # The deck: the dry floor that a body walks on and that each gate stands
     # on. The pools are pits in it, down to the floor of the room. No gate is
@@ -453,7 +457,7 @@ def cistern():
 
 def belfry():
     rid = "noodly_belfry"
-    _, w, h = ROOMS_AT[rid]
+    _, _, w, h = ROOMS_AT[rid]
     floor, e = shell(w, h)
     bells = [f"noodly_bell_{n}" for n in (1, 2, 3)]
     # A bell that was rung stays rung: the flag of a lever that was used.
@@ -515,7 +519,7 @@ def belfry():
 
 def reliquary():
     rid = "noodly_reliquary"
-    _, w, h = ROOMS_AT[rid]
+    _, _, w, h = ROOMS_AT[rid]
     floor, e = shell(w, h)
     vigil = f"{rid}_vigil"
     e += fight(rid, vigil, floor)
@@ -537,7 +541,7 @@ def reliquary():
 
 def sanctum():
     rid = "noodly_sanctum"
-    _, w, h = ROOMS_AT[rid]
+    _, _, w, h = ROOMS_AT[rid]
     floor = h - 32
     e = [
         solid("floor", 0, floor, w, 32),

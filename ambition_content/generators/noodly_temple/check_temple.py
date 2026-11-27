@@ -141,14 +141,16 @@ def main():
         return cx * CELL < box[2] and (cx + BODY_W) * CELL > box[0] and cy * CELL < box[3] and (cy + BODY_H) * CELL > box[1]
 
     def arrival(room, zone_id, shut):
-        """The cell a body is in when it comes in by the door `zone_id`."""
+        """Find the first cell that fits in the arrival zone."""
         for box, fields in room.of("LoadingZone"):
             if fields.get("id") == zone_id:
                 cx = (box[0] + box[2]) // 2 // CELL - 1
+                if fields.get("activation") == "EdgeExit":
+                    cx = max(0, min(cx, room.w - BODY_W))
                 for cy in range(box[3] // CELL - BODY_H, box[1] // CELL - 1, -1):
                     if fits((cx, cy), shut, room):
                         return (cx, cy)
-        raise SystemExit(f"`{room.id}` has no door `{zone_id}` that a body fits in")
+        raise SystemExit(f"`{room.id}` has no arrival zone `{zone_id}` that fits a body")
 
     def walk(facts):
         """Each state (room, cell, wheels on) that a body with `facts` can be

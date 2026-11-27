@@ -8383,8 +8383,8 @@
 			"identifier": "noodly_narthex",
 			"iid": "noodly_narthex-7409",
 			"uid": 800000,
-			"worldX": 70000,
-			"worldY": 0,
+			"worldX": 67840,
+			"worldY": 800,
 			"worldDepth": 0,
 			"pxWid": 960,
 			"pxHei": 512,
@@ -8496,19 +8496,19 @@
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
-						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
@@ -8559,8 +8559,8 @@
 								"id": "V_String",
 								"params": ["noodly_narthex_spawn"]
 							}] }],
-							"__worldX": 70110,
-							"__worldY": 434
+							"__worldX": 67950,
+							"__worldY": 1234
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -8594,21 +8594,21 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 70032,
-							"__worldY": 384
+							"__worldX": 67872,
+							"__worldY": 1184
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [54,24],
+							"__grid": [59,22],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-7414",
-							"width": 48,
-							"height": 96,
+							"width": 16,
+							"height": 128,
 							"defUid": 2002,
-							"px": [864,384],
+							"px": [944,352],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "noodly_narthex_east", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -8618,7 +8618,10 @@
 									"id": "V_String",
 									"params": ["to the nave"]
 								}] },
-								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["EdgeExit"]
+								}] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "noodly_nave", "__tile": null, "defUid": 3005, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["noodly_nave"]
@@ -8629,8 +8632,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 70864,
-							"__worldY": 384
+							"__worldX": 68784,
+							"__worldY": 1152
 						},
 						{
 							"__identifier": "NpcSpawn",
@@ -8665,8 +8668,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 70480,
-							"__worldY": 410
+							"__worldX": 68320,
+							"__worldY": 1210
 						},
 						{
 							"__identifier": "LockWall",
@@ -8698,8 +8701,8 @@
 									"params": ["temple_gate_pesto"]
 								}] }
 							],
-							"__worldX": 70560,
-							"__worldY": 112
+							"__worldX": 68400,
+							"__worldY": 912
 						},
 						{
 							"__identifier": "ChestSpawn",
@@ -8727,8 +8730,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 70700,
-							"__worldY": 182
+							"__worldX": 68540,
+							"__worldY": 982
 						},
 						{
 							"__identifier": "PickupSpawn",
@@ -8758,8 +8761,8 @@
 								{ "__identifier": "respawn_seconds", "__type": "Float", "__value": 0, "__tile": null, "defUid": 6900, "realEditorValues": [] },
 								{ "__identifier": "sprite", "__type": "String", "__value": null, "__tile": null, "defUid": 7408, "realEditorValues": [] }
 							],
-							"__worldX": 70843,
-							"__worldY": 183
+							"__worldX": 68683,
+							"__worldY": 983
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -8784,8 +8787,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 70540,
-							"__worldY": 60
+							"__worldX": 68380,
+							"__worldY": 860
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -8810,8 +8813,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 70040,
-							"__worldY": 32
+							"__worldX": 67880,
+							"__worldY": 832
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -8820,8 +8823,8 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
-							"__worldX": 70200,
-							"__worldY": 384,
+							"__worldX": 68040,
+							"__worldY": 1184,
 							"iid": "LoadingZone-800163",
 							"width": 48,
 							"height": 96,
@@ -8855,8 +8858,8 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 70017,
-							"__worldY": 44,
+							"__worldX": 67857,
+							"__worldY": 844,
 							"iid": "Prop-800232",
 							"width": 927,
 							"height": 436,
@@ -9094,8 +9097,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 70000,
-							"__worldY": 0
+							"__worldX": 67840,
+							"__worldY": 800
 						}
 					]
 				},
@@ -9131,8 +9134,8 @@
 			"identifier": "noodly_nave",
 			"iid": "noodly_nave-7425",
 			"uid": 800001,
-			"worldX": 72000,
-			"worldY": 0,
+			"worldX": 68800,
+			"worldY": 288,
 			"worldDepth": 0,
 			"pxWid": 1600,
 			"pxHei": 1024,
@@ -9359,30 +9362,30 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,
 						2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,
-						2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
-						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -9435,21 +9438,21 @@
 								"id": "V_String",
 								"params": ["noodly_nave_spawn"]
 							}] }],
-							"__worldX": 72110,
-							"__worldY": 946
+							"__worldX": 68910,
+							"__worldY": 1234
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [2,56],
+							"__grid": [0,54],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-7429",
-							"width": 48,
-							"height": 96,
+							"width": 16,
+							"height": 128,
 							"defUid": 2002,
-							"px": [32,896],
+							"px": [0,864],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "noodly_nave_west", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -9459,7 +9462,10 @@
 									"id": "V_String",
 									"params": ["to the narthex"]
 								}] },
-								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["EdgeExit"]
+								}] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "noodly_narthex", "__tile": null, "defUid": 3005, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["noodly_narthex"]
@@ -9470,21 +9476,21 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 72032,
-							"__worldY": 896
+							"__worldX": 68800,
+							"__worldY": 1152
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [94,56],
+							"__grid": [99,54],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-7430",
-							"width": 48,
-							"height": 96,
+							"width": 16,
+							"height": 128,
 							"defUid": 2002,
-							"px": [1504,896],
+							"px": [1584,864],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "noodly_nave_east", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -9494,7 +9500,10 @@
 									"id": "V_String",
 									"params": ["to the scullery"]
 								}] },
-								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["EdgeExit"]
+								}] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "noodly_scullery", "__tile": null, "defUid": 3005, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["noodly_scullery"]
@@ -9505,8 +9514,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 73504,
-							"__worldY": 896
+							"__worldX": 70384,
+							"__worldY": 1152
 						},
 						{
 							"__identifier": "ShrineSpawn",
@@ -9530,34 +9539,8 @@
 									"params": ["the shrine of the nave"]
 								}] }
 							],
-							"__worldX": 72778,
-							"__worldY": 912
-						},
-						{
-							"__identifier": "DebugLabel",
-							"__grid": [79,52],
-							"__pivot": [0,0],
-							"__tags": [],
-							"__tile": null,
-							"__smartColor": "#FFFFFF",
-							"iid": "DebugLabel-7432",
-							"width": 280,
-							"height": 24,
-							"defUid": 2007,
-							"px": [1270,842],
-							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "noodly_nave_sign_scullery", "__tile": null, "defUid": 3015, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["noodly_nave_sign_scullery"]
-								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "The scullery. It is open.", "__tile": null, "defUid": 3016, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["The scullery. It is open."]
-								}] },
-								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
-							],
-							"__worldX": 73270,
-							"__worldY": 842
+							"__worldX": 69578,
+							"__worldY": 1200
 						},
 						{
 							"__identifier": "LockWall",
@@ -9589,8 +9572,8 @@
 									"params": ["temple_gate_marinara"]
 								}] }
 							],
-							"__worldX": 72256,
-							"__worldY": 608
+							"__worldX": 69056,
+							"__worldY": 896
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -9624,8 +9607,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 72064,
-							"__worldY": 640
+							"__worldX": 68864,
+							"__worldY": 928
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -9650,8 +9633,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 72266,
-							"__worldY": 512
+							"__worldX": 69066,
+							"__worldY": 800
 						},
 						{
 							"__identifier": "LockWall",
@@ -9683,8 +9666,8 @@
 									"params": ["temple_gate_marinara"]
 								}] }
 							],
-							"__worldX": 72256,
-							"__worldY": 288
+							"__worldX": 69056,
+							"__worldY": 576
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -9718,8 +9701,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 72064,
-							"__worldY": 320
+							"__worldX": 68864,
+							"__worldY": 608
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -9744,8 +9727,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 72266,
-							"__worldY": 192
+							"__worldX": 69066,
+							"__worldY": 480
 						},
 						{
 							"__identifier": "LockWall",
@@ -9777,8 +9760,8 @@
 									"params": ["temple_gate_pesto"]
 								}] }
 							],
-							"__worldX": 73216,
-							"__worldY": 608
+							"__worldX": 70016,
+							"__worldY": 896
 						},
 						{
 							"__identifier": "LockWall",
@@ -9810,8 +9793,8 @@
 									"params": ["temple_gate_parmesan"]
 								}] }
 							],
-							"__worldX": 73312,
-							"__worldY": 608
+							"__worldX": 70112,
+							"__worldY": 896
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -9845,8 +9828,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 73488,
-							"__worldY": 640
+							"__worldX": 70288,
+							"__worldY": 928
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -9871,8 +9854,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 72956,
-							"__worldY": 512
+							"__worldX": 69756,
+							"__worldY": 800
 						},
 						{
 							"__identifier": "LockWall",
@@ -9904,8 +9887,8 @@
 									"params": ["temple_gate_colander"]
 								}] }
 							],
-							"__worldX": 73312,
-							"__worldY": 288
+							"__worldX": 70112,
+							"__worldY": 576
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -9939,8 +9922,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 73488,
-							"__worldY": 320
+							"__worldX": 70288,
+							"__worldY": 608
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -9965,8 +9948,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 73052,
-							"__worldY": 192
+							"__worldX": 69852,
+							"__worldY": 480
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -9991,8 +9974,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 72600,
-							"__worldY": 822
+							"__worldX": 69400,
+							"__worldY": 1110
 						},
 						{
 							"__identifier": "Prop",
@@ -10001,11 +9984,11 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 72030,
-							"__worldY": 133,
+							"__worldX": 68830,
+							"__worldY": 421,
 							"iid": "Prop-800230",
-							"width": 1554,
-							"height": 859,
+							"width": 1539,
+							"height": 603,
 							"defUid": 4351,
 							"px": [30,133],
 							"fieldInstances": [
@@ -10496,8 +10479,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 72000,
-							"__worldY": 0
+							"__worldX": 68800,
+							"__worldY": 288
 						}
 					]
 				},
@@ -10533,8 +10516,8 @@
 			"identifier": "noodly_scullery",
 			"iid": "noodly_scullery-7450",
 			"uid": 800002,
-			"worldX": 74000,
-			"worldY": 0,
+			"worldX": 70400,
+			"worldY": 672,
 			"worldDepth": 0,
 			"pxWid": 1408,
 			"pxHei": 640,
@@ -10682,25 +10665,25 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,
-						2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,
+						2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -10766,8 +10749,8 @@
 									"params": ["temple_gate_iron"]
 								}] }
 							],
-							"__worldX": 74176,
-							"__worldY": 16
+							"__worldX": 70576,
+							"__worldY": 688
 						},
 						{
 							"__identifier": "EncounterTrigger",
@@ -10792,8 +10775,8 @@
 								}] },
 								{ "__identifier": "camera_zoom", "__type": "Float", "__value": 1.2, "__tile": null, "defUid": 4044, "realEditorValues": [{ "id": "V_Float", "params": [1.2] }] }
 							],
-							"__worldX": 74320,
-							"__worldY": 16
+							"__worldX": 70720,
+							"__worldY": 688
 						},
 						{
 							"__identifier": "Switch",
@@ -10831,8 +10814,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 74140,
-							"__worldY": 576
+							"__worldX": 70540,
+							"__worldY": 1248
 						},
 						{
 							"__identifier": "PlayerStart",
@@ -10850,21 +10833,21 @@
 								"id": "V_String",
 								"params": ["noodly_scullery_spawn"]
 							}] }],
-							"__worldX": 74096,
-							"__worldY": 562
+							"__worldX": 70496,
+							"__worldY": 1234
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [2,32],
+							"__grid": [0,30],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-7457",
-							"width": 48,
-							"height": 96,
+							"width": 16,
+							"height": 128,
 							"defUid": 2002,
-							"px": [32,512],
+							"px": [0,480],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "noodly_scullery_west", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -10874,7 +10857,10 @@
 									"id": "V_String",
 									"params": ["to the nave"]
 								}] },
-								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "activation", "__type": "String", "__value": "EdgeExit", "__tile": null, "defUid": 3004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["EdgeExit"]
+								}] },
 								{ "__identifier": "target_room", "__type": "String", "__value": "noodly_nave", "__tile": null, "defUid": 3005, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["noodly_nave"]
@@ -10885,8 +10871,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 74032,
-							"__worldY": 512
+							"__worldX": 70400,
+							"__worldY": 1152
 						},
 						{
 							"__identifier": "LockWall",
@@ -10918,8 +10904,8 @@
 									"params": ["temple_gate_parmesan"]
 								}] }
 							],
-							"__worldX": 75120,
-							"__worldY": 224
+							"__worldX": 71520,
+							"__worldY": 896
 						},
 						{
 							"__identifier": "LockWall",
@@ -10951,8 +10937,8 @@
 									"params": ["temple_gate_iron"]
 								}] }
 							],
-							"__worldX": 75120,
-							"__worldY": 480
+							"__worldX": 71520,
+							"__worldY": 1152
 						},
 						{
 							"__identifier": "PickupSpawn",
@@ -10985,8 +10971,8 @@
 									"params": ["temple_key_marinara"]
 								}] }
 							],
-							"__worldX": 75253,
-							"__worldY": 531
+							"__worldX": 71653,
+							"__worldY": 1203
 						},
 						{
 							"__identifier": "ChestSpawn",
@@ -11014,8 +11000,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 75190,
-							"__worldY": 294
+							"__worldX": 71590,
+							"__worldY": 966
 						},
 						{
 							"__identifier": "PickupSpawn",
@@ -11045,8 +11031,8 @@
 								{ "__identifier": "respawn_seconds", "__type": "Float", "__value": 0, "__tile": null, "defUid": 6900, "realEditorValues": [] },
 								{ "__identifier": "sprite", "__type": "String", "__value": null, "__tile": null, "defUid": 7408, "realEditorValues": [] }
 							],
-							"__worldX": 75313,
-							"__worldY": 283
+							"__worldX": 71713,
+							"__worldY": 955
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -11071,8 +11057,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 74648,
-							"__worldY": 418
+							"__worldX": 71048,
+							"__worldY": 1090
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -11097,8 +11083,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 74810,
-							"__worldY": 180
+							"__worldX": 71210,
+							"__worldY": 852
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -11123,8 +11109,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 74040,
-							"__worldY": 32
+							"__worldX": 70440,
+							"__worldY": 704
 						},
 						{
 							"__identifier": "Prop",
@@ -11133,8 +11119,8 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 74324,
-							"__worldY": 176,
+							"__worldX": 70724,
+							"__worldY": 848,
 							"iid": "Prop-800231",
 							"width": 1068,
 							"height": 432,
@@ -11464,8 +11450,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 74000,
-							"__worldY": 0
+							"__worldX": 70400,
+							"__worldY": 672
 						}
 					]
 				},
@@ -11501,8 +11487,8 @@
 			"identifier": "noodly_cistern",
 			"iid": "noodly_cistern-7469",
 			"uid": 800003,
-			"worldX": 76000,
-			"worldY": 0,
+			"worldX": 66048,
+			"worldY": 128,
 			"worldDepth": 0,
 			"pxWid": 1600,
 			"pxHei": 896,
@@ -11793,8 +11779,8 @@
 								{ "__identifier": "max_fall_speed", "__type": "Float", "__value": 220, "__tile": null, "defUid": 4128, "realEditorValues": [] },
 								{ "__identifier": "swim_up_impulse", "__type": "Float", "__value": 760, "__tile": null, "defUid": 4129, "realEditorValues": [] }
 							],
-							"__worldX": 76336,
-							"__worldY": 784
+							"__worldX": 66384,
+							"__worldY": 912
 						},
 						{
 							"__identifier": "WaterVolume",
@@ -11822,8 +11808,8 @@
 								{ "__identifier": "max_fall_speed", "__type": "Float", "__value": 220, "__tile": null, "defUid": 4128, "realEditorValues": [] },
 								{ "__identifier": "swim_up_impulse", "__type": "Float", "__value": 760, "__tile": null, "defUid": 4129, "realEditorValues": [] }
 							],
-							"__worldX": 76560,
-							"__worldY": 784
+							"__worldX": 66608,
+							"__worldY": 912
 						},
 						{
 							"__identifier": "WaterVolume",
@@ -11851,8 +11837,8 @@
 								{ "__identifier": "max_fall_speed", "__type": "Float", "__value": 220, "__tile": null, "defUid": 4128, "realEditorValues": [] },
 								{ "__identifier": "swim_up_impulse", "__type": "Float", "__value": 760, "__tile": null, "defUid": 4129, "realEditorValues": [] }
 							],
-							"__worldX": 76832,
-							"__worldY": 784
+							"__worldX": 66880,
+							"__worldY": 912
 						},
 						{
 							"__identifier": "WaterVolume",
@@ -11880,8 +11866,8 @@
 								{ "__identifier": "max_fall_speed", "__type": "Float", "__value": 220, "__tile": null, "defUid": 4128, "realEditorValues": [] },
 								{ "__identifier": "swim_up_impulse", "__type": "Float", "__value": 760, "__tile": null, "defUid": 4129, "realEditorValues": [] }
 							],
-							"__worldX": 77216,
-							"__worldY": 784
+							"__worldX": 67264,
+							"__worldY": 912
 						},
 						{
 							"__identifier": "PlayerStart",
@@ -11899,8 +11885,8 @@
 								"id": "V_String",
 								"params": ["noodly_cistern_spawn"]
 							}] }],
-							"__worldX": 76096,
-							"__worldY": 722
+							"__worldX": 66144,
+							"__worldY": 850
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -11934,8 +11920,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 76032,
-							"__worldY": 672
+							"__worldX": 66080,
+							"__worldY": 800
 						},
 						{
 							"__identifier": "Switch",
@@ -11973,8 +11959,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 76270,
-							"__worldY": 736
+							"__worldX": 66318,
+							"__worldY": 864
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -11999,8 +11985,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 76178,
-							"__worldY": 676
+							"__worldX": 66226,
+							"__worldY": 804
 						},
 						{
 							"__identifier": "LockWall",
@@ -12032,8 +12018,8 @@
 									"params": ["temple_gate_wheel_2"]
 								}] }
 							],
-							"__worldX": 76480,
-							"__worldY": 240
+							"__worldX": 66528,
+							"__worldY": 368
 						},
 						{
 							"__identifier": "LockWall",
@@ -12065,8 +12051,8 @@
 									"params": ["temple_gate_wheel_1"]
 								}] }
 							],
-							"__worldX": 76480,
-							"__worldY": 640
+							"__worldX": 66528,
+							"__worldY": 768
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -12091,8 +12077,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 76360,
-							"__worldY": 200
+							"__worldX": 66408,
+							"__worldY": 328
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -12117,8 +12103,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 76360,
-							"__worldY": 600
+							"__worldX": 66408,
+							"__worldY": 728
 						},
 						{
 							"__identifier": "Switch",
@@ -12156,8 +12142,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 76690,
-							"__worldY": 336
+							"__worldX": 66738,
+							"__worldY": 464
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -12182,8 +12168,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 76592,
-							"__worldY": 276
+							"__worldX": 66640,
+							"__worldY": 404
 						},
 						{
 							"__identifier": "LockWall",
@@ -12215,8 +12201,8 @@
 									"params": ["temple_gate_wheel_1_shut"]
 								}] }
 							],
-							"__worldX": 76912,
-							"__worldY": 240
+							"__worldX": 66960,
+							"__worldY": 368
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -12241,8 +12227,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 76790,
-							"__worldY": 200
+							"__worldX": 66838,
+							"__worldY": 328
 						},
 						{
 							"__identifier": "Switch",
@@ -12280,8 +12266,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 76756,
-							"__worldY": 736
+							"__worldX": 66804,
+							"__worldY": 864
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -12306,8 +12292,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 76664,
-							"__worldY": 676
+							"__worldX": 66712,
+							"__worldY": 804
 						},
 						{
 							"__identifier": "LockWall",
@@ -12339,8 +12325,8 @@
 									"params": ["temple_gate_wheel_1_shut"]
 								}] }
 							],
-							"__worldX": 77040,
-							"__worldY": 640
+							"__worldX": 67088,
+							"__worldY": 768
 						},
 						{
 							"__identifier": "LockWall",
@@ -12372,8 +12358,8 @@
 									"params": ["temple_gate_wheel_3"]
 								}] }
 							],
-							"__worldX": 77136,
-							"__worldY": 640
+							"__worldX": 67184,
+							"__worldY": 768
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -12398,8 +12384,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 76900,
-							"__worldY": 600
+							"__worldX": 66948,
+							"__worldY": 728
 						},
 						{
 							"__identifier": "PickupSpawn",
@@ -12432,8 +12418,8 @@
 									"params": ["temple_key_pesto"]
 								}] }
 							],
-							"__worldX": 77359,
-							"__worldY": 243
+							"__worldX": 67407,
+							"__worldY": 371
 						},
 						{
 							"__identifier": "LockWall",
@@ -12465,8 +12451,8 @@
 									"params": ["temple_gate_parmesan"]
 								}] }
 							],
-							"__worldX": 77456,
-							"__worldY": 640
+							"__worldX": 67504,
+							"__worldY": 768
 						},
 						{
 							"__identifier": "ChestSpawn",
@@ -12494,8 +12480,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 77496,
-							"__worldY": 710
+							"__worldX": 67544,
+							"__worldY": 838
 						},
 						{
 							"__identifier": "GroundItem",
@@ -12523,8 +12509,8 @@
 									"params": ["pool_noodle"]
 								}] }
 							],
-							"__worldX": 76150,
-							"__worldY": 756
+							"__worldX": 66198,
+							"__worldY": 884
 						},
 						{
 							"__identifier": "GroundItem",
@@ -12552,8 +12538,8 @@
 									"params": ["pool_noodle"]
 								}] }
 							],
-							"__worldX": 77298,
-							"__worldY": 292
+							"__worldX": 67346,
+							"__worldY": 420
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -12578,8 +12564,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 76060,
-							"__worldY": 638
+							"__worldX": 66108,
+							"__worldY": 766
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -12617,8 +12603,8 @@
 									"params": ["OnRoomReenter"]
 								}] }
 							],
-							"__worldX": 76720,
-							"__worldY": 150
+							"__worldX": 66768,
+							"__worldY": 278
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -12656,8 +12642,8 @@
 									"params": ["OnRoomReenter"]
 								}] }
 							],
-							"__worldX": 76860,
-							"__worldY": 520
+							"__worldX": 66908,
+							"__worldY": 648
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -12695,8 +12681,8 @@
 									"params": ["OnRoomReenter"]
 								}] }
 							],
-							"__worldX": 77340,
-							"__worldY": 440
+							"__worldX": 67388,
+							"__worldY": 568
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -12721,8 +12707,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 76040,
-							"__worldY": 32
+							"__worldX": 66088,
+							"__worldY": 160
 						},
 						{
 							"__identifier": "Prop",
@@ -12731,8 +12717,8 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 76261,
-							"__worldY": 125,
+							"__worldX": 66309,
+							"__worldY": 253,
 							"iid": "Prop-800224",
 							"width": 1197,
 							"height": 739,
@@ -13182,8 +13168,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 76000,
-							"__worldY": 0
+							"__worldX": 66048,
+							"__worldY": 128
 						}
 					]
 				},
@@ -13219,8 +13205,8 @@
 			"identifier": "noodly_belfry",
 			"iid": "noodly_belfry-7501",
 			"uid": 800004,
-			"worldX": 78000,
-			"worldY": 0,
+			"worldX": 67648,
+			"worldY": -672,
 			"worldDepth": 0,
 			"pxWid": 1152,
 			"pxHei": 1408,
@@ -13522,8 +13508,8 @@
 								"id": "V_String",
 								"params": ["noodly_belfry_spawn"]
 							}] }],
-							"__worldX": 78470,
-							"__worldY": 1330
+							"__worldX": 68118,
+							"__worldY": 658
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -13557,8 +13543,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 78552,
-							"__worldY": 1280
+							"__worldX": 68200,
+							"__worldY": 608
 						},
 						{
 							"__identifier": "LockWall",
@@ -13590,8 +13576,8 @@
 									"params": ["temple_gate_pesto"]
 								}] }
 							],
-							"__worldX": 78400,
-							"__worldY": 352
+							"__worldX": 68048,
+							"__worldY": -320
 						},
 						{
 							"__identifier": "BreakablePlatform",
@@ -13619,8 +13605,8 @@
 								{ "__identifier": "collision", "__type": "LocalEnum.BreakablePlatformCollision", "__value": "Solid", "__tile": null, "defUid": 5014, "realEditorValues": [] },
 								{ "__identifier": "trigger", "__type": "String", "__value": "OnHit", "__tile": null, "defUid": 5015, "realEditorValues": [] }
 							],
-							"__worldX": 78400,
-							"__worldY": 1088
+							"__worldX": 68048,
+							"__worldY": 416
 						},
 						{
 							"__identifier": "LockWall",
@@ -13652,8 +13638,8 @@
 									"params": ["temple_gate_bell"]
 								}] }
 							],
-							"__worldX": 78720,
-							"__worldY": 256
+							"__worldX": 68368,
+							"__worldY": -416
 						},
 						{
 							"__identifier": "LockWall",
@@ -13685,8 +13671,8 @@
 									"params": ["temple_gate_bell"]
 								}] }
 							],
-							"__worldX": 78816,
-							"__worldY": 256
+							"__worldX": 68464,
+							"__worldY": -416
 						},
 						{
 							"__identifier": "LockWall",
@@ -13718,8 +13704,8 @@
 									"params": ["temple_gate_bell"]
 								}] }
 							],
-							"__worldX": 78912,
-							"__worldY": 256
+							"__worldX": 68560,
+							"__worldY": -416
 						},
 						{
 							"__identifier": "PickupSpawn",
@@ -13752,8 +13738,8 @@
 									"params": ["temple_key_parmesan"]
 								}] }
 							],
-							"__worldX": 79023,
-							"__worldY": 313
+							"__worldX": 68671,
+							"__worldY": -359
 						},
 						{
 							"__identifier": "Switch",
@@ -13791,8 +13777,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 78090,
-							"__worldY": 1184
+							"__worldX": 67738,
+							"__worldY": 512
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -13830,8 +13816,8 @@
 									"params": ["OnRoomReenter"]
 								}] }
 							],
-							"__worldX": 78230,
-							"__worldY": 1160
+							"__worldX": 67878,
+							"__worldY": 488
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -13856,8 +13842,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 78088,
-							"__worldY": 1079
+							"__worldX": 67736,
+							"__worldY": 407
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -13882,8 +13868,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 78456,
-							"__worldY": 1050
+							"__worldX": 68104,
+							"__worldY": 378
 						},
 						{
 							"__identifier": "Switch",
@@ -13921,8 +13907,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 79080,
-							"__worldY": 768
+							"__worldX": 68728,
+							"__worldY": 96
 						},
 						{
 							"__identifier": "DamageVolume",
@@ -13950,8 +13936,8 @@
 								{ "__identifier": "path_mode", "__type": "String", "__value": "PingPong", "__tile": null, "defUid": 3028, "realEditorValues": [] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4345, "realEditorValues": [] }
 							],
-							"__worldX": 78818,
-							"__worldY": 658
+							"__worldX": 68466,
+							"__worldY": -14
 						},
 						{
 							"__identifier": "DamageVolume",
@@ -13979,8 +13965,8 @@
 								{ "__identifier": "path_mode", "__type": "String", "__value": "PingPong", "__tile": null, "defUid": 3028, "realEditorValues": [] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4345, "realEditorValues": [] }
 							],
-							"__worldX": 78908,
-							"__worldY": 748
+							"__worldX": 68556,
+							"__worldY": 76
 						},
 						{
 							"__identifier": "DamageVolume",
@@ -14008,8 +13994,8 @@
 								{ "__identifier": "path_mode", "__type": "String", "__value": "PingPong", "__tile": null, "defUid": 3028, "realEditorValues": [] },
 								{ "__identifier": "path_id", "__type": "String", "__value": null, "__tile": null, "defUid": 4345, "realEditorValues": [] }
 							],
-							"__worldX": 78988,
-							"__worldY": 658
+							"__worldX": 68636,
+							"__worldY": -14
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -14034,8 +14020,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 78964,
-							"__worldY": 638
+							"__worldX": 68612,
+							"__worldY": -34
 						},
 						{
 							"__identifier": "Switch",
@@ -14073,8 +14059,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 78090,
-							"__worldY": 448
+							"__worldX": 67738,
+							"__worldY": -224
 						},
 						{
 							"__identifier": "PickupSpawn",
@@ -14104,8 +14090,8 @@
 								{ "__identifier": "respawn_seconds", "__type": "Float", "__value": 0, "__tile": null, "defUid": 6900, "realEditorValues": [] },
 								{ "__identifier": "sprite", "__type": "String", "__value": null, "__tile": null, "defUid": 7408, "realEditorValues": [] }
 							],
-							"__worldX": 78233,
-							"__worldY": 423
+							"__worldX": 67881,
+							"__worldY": -249
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -14130,8 +14116,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 78088,
-							"__worldY": 342
+							"__worldX": 67736,
+							"__worldY": -330
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -14156,8 +14142,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 78446,
-							"__worldY": 190
+							"__worldX": 68094,
+							"__worldY": -482
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -14195,8 +14181,8 @@
 									"params": ["OnRoomReenter"]
 								}] }
 							],
-							"__worldX": 78520,
-							"__worldY": 920
+							"__worldX": 68168,
+							"__worldY": 248
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -14234,8 +14220,8 @@
 									"params": ["OnRoomReenter"]
 								}] }
 							],
-							"__worldX": 78600,
-							"__worldY": 500
+							"__worldX": 68248,
+							"__worldY": -172
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -14273,8 +14259,8 @@
 									"params": ["OnRoomReenter"]
 								}] }
 							],
-							"__worldX": 78560,
-							"__worldY": 720
+							"__worldX": 68208,
+							"__worldY": 48
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -14299,8 +14285,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 78376,
-							"__worldY": 1186
+							"__worldX": 68024,
+							"__worldY": 514
 						},
 						{
 							"__identifier": "Prop",
@@ -14309,8 +14295,8 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 78101,
-							"__worldY": 216,
+							"__worldX": 67749,
+							"__worldY": -456,
 							"iid": "Prop-800225",
 							"width": 1017,
 							"height": 1160,
@@ -14802,8 +14788,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 78000,
-							"__worldY": 0
+							"__worldX": 67648,
+							"__worldY": -672
 						}
 					]
 				},
@@ -14839,8 +14825,8 @@
 			"identifier": "noodly_reliquary",
 			"iid": "noodly_reliquary-7532",
 			"uid": 800005,
-			"worldX": 80000,
-			"worldY": 0,
+			"worldX": 71808,
+			"worldY": 416,
 			"worldDepth": 0,
 			"pxWid": 1280,
 			"pxHei": 640,
@@ -15063,8 +15049,8 @@
 									"params": ["temple_gate_iron"]
 								}] }
 							],
-							"__worldX": 80176,
-							"__worldY": 16
+							"__worldX": 71984,
+							"__worldY": 432
 						},
 						{
 							"__identifier": "EncounterTrigger",
@@ -15089,8 +15075,8 @@
 								}] },
 								{ "__identifier": "camera_zoom", "__type": "Float", "__value": 1.2, "__tile": null, "defUid": 4044, "realEditorValues": [{ "id": "V_Float", "params": [1.2] }] }
 							],
-							"__worldX": 80320,
-							"__worldY": 16
+							"__worldX": 72128,
+							"__worldY": 432
 						},
 						{
 							"__identifier": "Switch",
@@ -15128,8 +15114,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 80140,
-							"__worldY": 576
+							"__worldX": 71948,
+							"__worldY": 992
 						},
 						{
 							"__identifier": "PlayerStart",
@@ -15147,8 +15133,8 @@
 								"id": "V_String",
 								"params": ["noodly_reliquary_spawn"]
 							}] }],
-							"__worldX": 80096,
-							"__worldY": 562
+							"__worldX": 71904,
+							"__worldY": 978
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -15182,8 +15168,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 80032,
-							"__worldY": 512
+							"__worldX": 71840,
+							"__worldY": 928
 						},
 						{
 							"__identifier": "LockWall",
@@ -15215,8 +15201,8 @@
 									"params": ["temple_gate_iron"]
 								}] }
 							],
-							"__worldX": 81056,
-							"__worldY": 480
+							"__worldX": 72864,
+							"__worldY": 896
 						},
 						{
 							"__identifier": "PickupSpawn",
@@ -15249,8 +15235,8 @@
 									"params": ["temple_key_colander"]
 								}] }
 							],
-							"__worldX": 81151,
-							"__worldY": 531
+							"__worldX": 72959,
+							"__worldY": 947
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -15275,8 +15261,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 80700,
-							"__worldY": 418
+							"__worldX": 72508,
+							"__worldY": 834
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -15301,8 +15287,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 80040,
-							"__worldY": 32
+							"__worldX": 71848,
+							"__worldY": 448
 						},
 						{
 							"__identifier": "Prop",
@@ -15311,8 +15297,8 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 80310,
-							"__worldY": 294,
+							"__worldX": 72118,
+							"__worldY": 710,
 							"iid": "Prop-800226",
 							"width": 926,
 							"height": 314,
@@ -15336,8 +15322,8 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF5C8A",
-							"__worldX": 80480,
-							"__worldY": 592,
+							"__worldX": 72288,
+							"__worldY": 1008,
 							"iid": "DamageVolume-800227",
 							"width": 96,
 							"height": 16,
@@ -15358,8 +15344,8 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF5C8A",
-							"__worldX": 80784,
-							"__worldY": 592,
+							"__worldX": 72592,
+							"__worldY": 1008,
 							"iid": "DamageVolume-800228",
 							"width": 96,
 							"height": 16,
@@ -15668,8 +15654,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 80000,
-							"__worldY": 0
+							"__worldX": 71808,
+							"__worldY": 416
 						}
 					]
 				},
@@ -15705,8 +15691,8 @@
 			"identifier": "noodly_sanctum",
 			"iid": "noodly_sanctum-7547",
 			"uid": 800006,
-			"worldX": 82000,
-			"worldY": 0,
+			"worldX": 70400,
+			"worldY": -96,
 			"worldDepth": 0,
 			"pxWid": 960,
 			"pxHei": 768,
@@ -15909,8 +15895,8 @@
 								"id": "V_String",
 								"params": ["noodly_sanctum_spawn"]
 							}] }],
-							"__worldX": 82096,
-							"__worldY": 672
+							"__worldX": 70496,
+							"__worldY": 576
 						},
 						{
 							"__identifier": "LoadingZone",
@@ -15944,8 +15930,8 @@
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
 							],
-							"__worldX": 82160,
-							"__worldY": 640
+							"__worldX": 70560,
+							"__worldY": 544
 						},
 						{
 							"__identifier": "BossSpawn",
@@ -15974,8 +15960,8 @@
 									"params": ["noodly_temple.fsm"]
 								}] }
 							],
-							"__worldX": 82480,
-							"__worldY": 240
+							"__worldX": 70880,
+							"__worldY": 144
 						},
 						{
 							"__identifier": "DebugLabel",
@@ -16000,8 +15986,8 @@
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							],
-							"__worldX": 82040,
-							"__worldY": 32
+							"__worldX": 70440,
+							"__worldY": -64
 						},
 						{
 							"__identifier": "Prop",
@@ -16010,8 +15996,8 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 82048,
-							"__worldY": 78,
+							"__worldX": 70448,
+							"__worldY": -18,
 							"iid": "Prop-800229",
 							"width": 864,
 							"height": 658,
@@ -16305,8 +16291,8 @@
 								{ "__identifier": "cinematic_lock", "__type": "Bool", "__value": false, "__tile": null, "defUid": 4334, "realEditorValues": [] },
 								{ "__identifier": "clamp_mode", "__type": "String", "__value": "room_bounds", "__tile": null, "defUid": 4335, "realEditorValues": [] }
 							],
-							"__worldX": 82000,
-							"__worldY": 0
+							"__worldX": 70400,
+							"__worldY": -96
 						}
 					]
 				},
