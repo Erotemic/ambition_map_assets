@@ -219,9 +219,9 @@ def chicken(rid, n, x, floor, hen=False):
                   character_id=character, respawn="OnRoomReenter")
 
 
-def vertical_edge(zone, name, x0, x1, y, to_room, to_zone):
+def vertical_edge(zone, name, x0, x1, y, to_room, to_zone, height=16):
     """An edge exit across the top (`y` 0) or the bottom of a room."""
-    return entity("LoadingZone", x0, y, x1 - x0, 16, id=zone, name=name, activation="EdgeExit", target_room=to_room,
+    return entity("LoadingZone", x0, y, x1 - x0, height, id=zone, name=name, activation="EdgeExit", target_room=to_room,
                   target_zone=to_zone, bidirectional=True)
 
 
@@ -593,6 +593,9 @@ def lie_down_inn():
 #: The trestle's deck, as the street's floor; the loose planks over the hole.
 DECK = RIM
 PLANKS_X0, PLANKS_X1 = 1120, 1280
+WEST_HATCH, EAST_HATCH = 544, 1792
+HATCH_WIDTH = 64
+INSPECTION_WALK = 848
 
 
 def siding_trestle():
@@ -602,20 +605,34 @@ def siding_trestle():
     way down onto it."""
     rid = TRESTLE
     w, h = ROOMS_AT[rid][1]
+    exit_depth = 384
     e = [
-        solid("deck_west", 0, DECK, PLANKS_X0, 32),
-        solid("deck_east", PLANKS_X1, DECK, w - PLANKS_X1, 32),
+        solid("deck_west_end", 0, DECK, WEST_HATCH, 32),
+        solid("deck_west_span", WEST_HATCH + HATCH_WIDTH, DECK, PLANKS_X0 - WEST_HATCH - HATCH_WIDTH, 32),
+        solid("deck_east_span", PLANKS_X1, DECK, EAST_HATCH - PLANKS_X1, 32),
+        solid("deck_east_end", EAST_HATCH + HATCH_WIDTH, DECK, w - EAST_HATCH - HATCH_WIDTH, 32),
+        ledge("west_inspection_hatch", WEST_HATCH, DECK, HATCH_WIDTH),
+        ledge("east_inspection_hatch", EAST_HATCH, DECK, HATCH_WIDTH),
         ledge("loose_planks", PLANKS_X0, DECK, PLANKS_X1 - PLANKS_X0),
+        solid("west_inspection_walk", WEST_HATCH - 16, INSPECTION_WALK, PLANKS_X0 - WEST_HATCH + 32, 16),
+        solid("east_inspection_walk", PLANKS_X1 - 16, INSPECTION_WALK, EAST_HATCH + HATCH_WIDTH + 32 - PLANKS_X1, 16),
         *side_walls(w, h, DECK, DECK),
         edge("trestle_from_street", "back to the siding", 0, DECK, SIDING_STREET, "street_to_trestle"),
         edge("trestle_to_sprocket", "on to Sprocket Row", w - WALL, DECK, SPROCKET, "sprocket_from_trestle"),
-        vertical_edge("trestle_to_freight", "down onto the freight", WALL, w - WALL, h - 16, TAIL, "freight_from_trestle"),
+        # A falling body must stay in the exit zone while the room loads.
+        vertical_edge("trestle_to_freight", "down onto the freight", WALL, w - WALL, h - exit_depth,
+                      TAIL, "freight_from_trestle", height=exit_depth),
         start(rid, 120, DECK),
         sign("trestle_sign_name", 600, DECK - 200, "THE HALFWAY TRESTLE: 300 FEET TO THE GULCH FLOOR", 520),
         sign("trestle_sign_planks", PLANKS_X0 + 80, DECK - 120, "LOOSE PLANKS. STEP LIGHTLY.", 300),
         sign("trestle_sign_sprocket", 2100, DECK - 200, "SPROCKET ROW", 200),
     ]
-    return build(rid, e, "THE HALFWAY TRESTLE", SIDING_MUSIC, biome="frontier_siding")
+    ladders = f"""
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [{WEST_HATCH + 16}, 608], size: [32, 240]),
+        (kind: "Ladder", px: [{EAST_HATCH + 16}, 608], size: [32, 240]),
+    ]),"""
+    return build(rid, e, "THE HALFWAY TRESTLE", SIDING_MUSIC, biome="frontier_siding", extra=ladders)
 
 
 def sprocket_row():
