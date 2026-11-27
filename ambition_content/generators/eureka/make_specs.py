@@ -523,8 +523,9 @@ def test_range():
     bx0, bx1, btop = 1696, 1968, 576
     e = [
         solid("ground", 0, floor, w, h - floor),
-        solid("west_wall", 0, 0, WALL, floor),
+        solid("west_wall", 0, 0, WALL, floor - 112),
         solid("east_wall_high", w - WALL, 0, WALL, floor - 112),
+        edge("range_to_mine", "to the Elemental Mine", 0, floor, "science_mine_yard", "mine_yard_to_range", h=112),
         edge("range_east", "back to the gate court", w - WALL, floor, COURT, "court_west"),
         start(rid, w - 200, floor),
         *[ledge(f"gantry_{i}", x0, y, x1 - x0) for i, (x0, x1, y) in enumerate(((680, 820, 624), (760, 900, 544), (680, 820, 464), (760, 900, 384)))],
@@ -536,6 +537,7 @@ def test_range():
         # A chest for whoever climbs to the top (Jon, 2026-10-30: "interactive elements").
         entity("ChestSpawn", 2340, 416 - 58, 76, 58, name="the range's lost and found", reward="currency:50"),
         sign("range_sign", w - 420, floor - 200, "EUREKA TEST RANGE: if the siren sounds, it is already too late", 520),
+        sign("mine_road_sign", 205, floor - 126, "ELEMENTAL MINE ←", 250),
         sign("rocket_sign", 960, 110, "PROBABLY FINE III", 260),
         sign("bunker_sign", (bx0 + bx1) // 2, btop - 1, "BLAST BUNKER: knock first, then duck", bx1 - bx0),
         sign("tower_sign", 2380, 300, "OBSERVATION: the safe side of the glass", 360),
@@ -711,8 +713,12 @@ def qed_studios():
 
 
 # The buildings first (they move out of the plant's way).
-ROOMS = (patent_office, coil_lab, qed_studios, terminus, elevator_climb, elevator_station, quad, court, test_range, observatory, plant, first_lab,
-         collider)
+ROOMS = {
+    PATENT: patent_office, LAB: coil_lab, QED: qed_studios, TERMINUS: terminus,
+    CLIMB: elevator_climb, STATION: elevator_station, QUAD: quad, COURT: court,
+    RANGE: test_range, DOME: observatory, PLANT: plant, FIRST_LAB: first_lab, COLLIDER: collider,
+}
+
 
 #: The gate network's ring and terminal in the gate court, if it has written
 #: them: a regenerate of the rooms puts them back.
@@ -721,7 +727,12 @@ GATE_INTERFACE = HERE / "gate_interface.yaml"
 
 def main(argv):
     made = []
-    for make in ROOMS:
+    requested = {rid for arg in argv if arg.startswith("--rooms=") for rid in arg.split("=", 1)[1].split(",")}
+    if unknown := requested - ROOMS.keys():
+        raise SystemExit(f"Unknown room: {sorted(unknown)}")
+    for room_id, make in ROOMS.items():
+        if requested and room_id not in requested:
+            continue
         rid, text = make()
         path = SPEC_OUT / f"{rid}.ron"
         path.write_text(text)
@@ -729,13 +740,13 @@ def main(argv):
         print(path)
     if "--apply" not in argv:
         return 0
-    if code := make_rooms(WORLD_LDTK, made):
+    if code := make_rooms(WORLD_LDTK, made, overwrite_hand_edits="--overwrite-hand-edits" in argv):
         return code
     # An LDtk-owned court is not made again, so it keeps its ring: a second
     # add would duplicate the arrival zone.
     from ambition_ldtk_tools import generated_record
     court_kept = COURT in generated_record.load(WORLD_LDTK)["ldtk_owned"]
-    if GATE_INTERFACE.exists() and not court_kept:
+    if GATE_INTERFACE.exists() and not court_kept and (not requested or COURT in requested):
         code, _ = run("entity", "add", str(GATE_INTERFACE), "--ldtk", str(WORLD_LDTK), "--in-place")
         if code:
             return code

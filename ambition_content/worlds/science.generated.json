@@ -11,10 +11,18 @@
     "eureka_qed_studios": "0e7eedbad36b9e58",
     "eureka_quad": "33dc6ed038efc06b",
     "eureka_steam_plant": "1ade9f51497c6d48",
-    "eureka_test_range": "bbba100799956a55",
+    "eureka_test_range": "d389120cf0dd4a1c",
     "gnu_ton_conservation_hall": "640dcf89a8dc50ed",
     "gnu_ton_inversion_gallery": "408d14e240732e4d",
-    "gnu_ton_vector_well": "608cb7954f7fa0ac"
+    "gnu_ton_vector_well": "608cb7954f7fa0ac",
+    "science_mine_assay": "ea601b381d293313",
+    "science_mine_basin": "c377768b4e7d99a7",
+    "science_mine_lode": "584bd78d400a9f3b",
+    "science_mine_lower": "bfe4b8aee40cf354",
+    "science_mine_pocket": "2e711cc3686ccfe6",
+    "science_mine_shaft": "529ae67684ec3386",
+    "science_mine_vent": "ea9d633554b069e4",
+    "science_mine_yard": "4dca947951470145"
   },
   "ldtk_owned": [
     "eureka_gate_court",
