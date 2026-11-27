@@ -581,10 +581,11 @@ def lie_down_inn():
         resident("npc_frontier_innkeeper", "frontier_innkeeper", 300, floor),
         resident("npc_alice", "frontier_inn_alice", 700, floor),
         resident("npc_bob", "frontier_inn_bob", 820, floor),
-        ledge("inn_stair", 980, floor - 64, 112),
-        ledge("inn_landing", 1092, floor - 128, w - WALL - 1092),
+        ledge("linen_chest", 368, floor - 64, 80),
+        ledge("inn_stair", 976, floor - 64, 112),
+        ledge("inn_gallery", 464, floor - 128, w - WALL - 464),
         sign("inn_sign_rates", 560, 120, "ROOMS BY THE HOUR. A BUCKET WITH EVERY COT.", 520),
-        sign("inn_sign_quiet", 760, 150, "QUIET PLEASE: GUESTS ARE GATE-SICK", 420),
+        sign("inn_sign_quiet", 736, 308, "QUIET PLEASE: GUESTS ARE GATE-SICK", 320),
     ]
     return build(rid, e, "THE LIE-DOWN INN", SIDING_MUSIC, biome="frontier_interior")
 
