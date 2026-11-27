@@ -11,7 +11,7 @@
 	"iid": "ambition-evil-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 310480,
+	"nextUid": 310499,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -41425,25 +41425,25 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0,0,0,
+						0,0,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0,2,2,2,2,2,2,2,
+						2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+						2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,
+						2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,
+						2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,
 						2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -41581,18 +41581,18 @@
 					"entityInstances": [
 						{
 							"__identifier": "Prop",
-							"__grid": [3,31],
+							"__grid": [3,25],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"__worldX": -4352,
-							"__worldY": 506,
+							"__worldY": 409,
 							"iid": "Prop-309253",
-							"width": 852,
-							"height": 150,
+							"width": 948,
+							"height": 247,
 							"defUid": 4351,
-							"px": [48,506],
+							"px": [48,409],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "allotment_west", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -41606,18 +41606,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [60,28],
+							"__grid": [60,26],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"__worldX": -3440,
-							"__worldY": 454,
+							"__worldY": 421,
 							"iid": "Prop-309254",
 							"width": 977,
-							"height": 202,
+							"height": 235,
 							"defUid": 4351,
-							"px": [960,454],
+							"px": [960,421],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "allotment_beds", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -41857,44 +41857,70 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [9,34],
+							"__grid": [13,26],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -4250,
-							"__worldY": 546,
+							"__worldX": -4183,
+							"__worldY": 416,
 							"iid": "DebugLabel-309259",
-							"width": 380,
+							"width": 242,
 							"height": 24,
 							"defUid": 2007,
-							"px": [150,546],
+							"px": [217,416],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "allot_sign_plot", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["allot_sign_plot"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "PLOT 13: H. CRABBE. KEEP OUT. YES, YOU.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "PLOT 13: H. CRABBE", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["PLOT 13: H. CRABBE. KEEP OUT. YES, YOU."]
+									"params": ["PLOT 13: H. CRABBE"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [93,31],
+							"__grid": [13,27],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -2910,
-							"__worldY": 506,
-							"iid": "DebugLabel-309336",
-							"width": 300,
+							"__worldX": -4183,
+							"__worldY": 442,
+							"iid": "DebugLabel-310493",
+							"width": 242,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1490,506],
+							"px": [217,442],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "allot_sign_plot_warning", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["allot_sign_plot_warning"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "KEEP OUT. YES, YOU.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["KEEP OUT. YES, YOU."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [97,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -2836,
+							"__worldY": 456,
+							"iid": "DebugLabel-309336",
+							"width": 216,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1564,456],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "allot_sign_mandrake", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -41909,44 +41935,70 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [81,28],
+							"__grid": [86,26],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -3100,
-							"__worldY": 456,
+							"__worldX": -3014,
+							"__worldY": 430,
 							"iid": "DebugLabel-309315",
-							"width": 360,
+							"width": 156,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1300,456],
+							"px": [1386,430],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "allot_sign_show", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["allot_sign_show"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "BEST IN SHOW: the Malevolent Marrow", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "BEST IN SHOW", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["BEST IN SHOW: the Malevolent Marrow"]
+									"params": ["BEST IN SHOW"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [74,34],
+							"__grid": [86,28],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -3210,
-							"__worldY": 556,
-							"iid": "DebugLabel-309316",
-							"width": 300,
+							"__worldX": -3014,
+							"__worldY": 454,
+							"iid": "DebugLabel-310496",
+							"width": 156,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1190,556],
+							"px": [1386,454],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "allot_sign_marrow", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["allot_sign_marrow"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "The Malevolent Marrow", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["The Malevolent Marrow"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [73,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -3232,
+							"__worldY": 472,
+							"iid": "DebugLabel-309316",
+							"width": 200,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1168,472],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "allot_sign_cabbage", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -41961,30 +42013,30 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [75,36],
+							"__grid": [75,39],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
 							"__worldX": -3200,
-							"__worldY": 589,
-							"iid": "EnemySpawn-309263",
-							"width": 30,
-							"height": 67,
+							"__worldY": 628,
+							"iid": "EnemySpawn-310498",
+							"width": 52,
+							"height": 28,
 							"defUid": 2008,
-							"px": [1200,589],
+							"px": [1200,628],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "evil_searchlight_moor_npc_evil_zombie_20", "__tile": null, "defUid": 3018, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "evil_searchlight_moor_npc_evil_zombie_crawler_20", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["evil_searchlight_moor_npc_evil_zombie_20"]
+									"params": ["evil_searchlight_moor_npc_evil_zombie_crawler_20"]
 								}] },
 								{ "__identifier": "brain", "__type": "String", "__value": "combatant", "__tile": null, "defUid": 3019, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["combatant"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_evil_zombie", "__tile": null, "defUid": 6854, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "npc_evil_zombie_crawler", "__tile": null, "defUid": 6854, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_evil_zombie"]
+									"params": ["npc_evil_zombie_crawler"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 6858, "realEditorValues": [{
 									"id": "V_String",
@@ -42027,18 +42079,18 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [83,36],
+							"__grid": [83,32],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
 							"__worldX": -3060,
-							"__worldY": 584,
+							"__worldY": 520,
 							"iid": "EnemySpawn-309265",
 							"width": 32,
 							"height": 40,
 							"defUid": 2008,
-							"px": [1340,584],
+							"px": [1340,520],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "evil_searchlight_moor_npc_evil_failed_prototype_22", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",

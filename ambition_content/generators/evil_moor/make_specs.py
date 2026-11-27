@@ -190,7 +190,7 @@ def moor():
 def allotments():
     w = ALLOT_W
     e = [
-        piece("allotment_west", 40, 480, name="allotment_west"),
+        piece("allotment_west", 40, 400, name="allotment_west"),
         piece("allotment_beds", 940, 420, name="allotment_beds"),
         # Plot 13's hole down to the catacombs: a ladder (`main`), the way
         # down at its bottom.
@@ -209,17 +209,25 @@ def allotments():
         edge("allot_east", "back to the moor", w - WALL, FLOOR, MOOR, "moor_west"),
         start(ALLOT, w - 200, FLOOR),
         *[ledge(f"bed_{i}", x0, top, x1 - x0) for i, (x0, x1, top) in enumerate(ALLOT_BEDS)],
+        ledge("allot_seed_chest", 144, 608, 80),
+        ledge("allot_shed_walk", 192, 544, 80),
+        ledge("allot_gate_landing", 352, 544, 96),
+        ledge("allot_watering_shelf", 912, 560, 80),
+        ledge("allot_trellis_walk", 1008, 560, 736),
+        ledge("allot_east_step", 1760, 608, 96),
         ledge("water_butt", ALLOT_BUTT[0], ALLOT_BUTT[2], ALLOT_BUTT[1] - ALLOT_BUTT[0]),
         ledge("greenhouse_roof", ALLOT_ROOF[0], ALLOT_ROOF[2], ALLOT_ROOF[1] - ALLOT_ROOF[0]),
         entity("ChestSpawn", 620, ALLOT_ROOF[2] - 58, 76, 58, name="the prize-money tin", reward="currency:60"),
         resident("npc_evil_crabbe", "evil_crabbe", 230, FLOOR),
-        sign("allot_sign_plot", 340, FLOOR - 110, "PLOT 13: H. CRABBE. KEEP OUT. YES, YOU.", 380),
-        sign("allot_sign_mandrake", 1640, FLOOR - 150, "DO NOT PULL THE MANDRAKES", 300),
-        sign("allot_sign_show", 1480, FLOOR - 200, "BEST IN SHOW: the Malevolent Marrow", 360),
-        sign("allot_sign_cabbage", 1340, FLOOR - 100, "CABBAGES: feed from the side", 300),
-        enemy(20, "npc_evil_zombie", 1200, FLOOR, 30, 67),
+        sign("allot_sign_plot", 338, 416, "PLOT 13: H. CRABBE", 242),
+        sign("allot_sign_plot_warning", 338, 442, "KEEP OUT. YES, YOU.", 242),
+        sign("allot_sign_mandrake", 1672, 456, "DO NOT PULL THE MANDRAKES", 216),
+        sign("allot_sign_show", 1464, 430, "BEST IN SHOW", 156),
+        sign("allot_sign_marrow", 1464, 454, "The Malevolent Marrow", 156),
+        sign("allot_sign_cabbage", 1268, 472, "CABBAGES: feed from the side", 200),
+        enemy(20, "npc_evil_zombie_crawler", 1200, FLOOR, 52, 28),
         enemy(21, "npc_evil_attack_hound", 1880, FLOOR, 52, 50),
-        enemy(22, "npc_evil_failed_prototype", 1340, ALLOT_BEDS[1][2], 32, 40),
+        enemy(22, "npc_evil_failed_prototype", 1340, 560, 32, 40),
         enemy(23, "npc_evil_zombie", 1060, ALLOT_BEDS[0][2], 30, 67),
     ]
     return ALLOT, room(ALLOT, e, at=(-W - w, 0), size=(w, H), biome="evil_forest", music="oppressive_crush",
