@@ -36,6 +36,7 @@ Where a room is in the world is its LDtk editor's: `--apply` regenerates each
 room where it stands (`area create --keep-position`), and `ROOMS_AT` places
 only a room that is new. `--apply --relayout` puts every room back where
 `ROOMS_AT` says; `--apply --relayout=<room>[,<room>]` only those rooms.
+Use `--rooms=<room>[,<room>]` to apply only the selected rooms.
 """
 from __future__ import annotations
 
@@ -53,7 +54,7 @@ SPEC_OUT.mkdir(exist_ok=True)
 sys.path.insert(0, str(TOOL_SPECS))
 
 from district_kit import (  # noqa: E402
-    WALL, WORLDS, entity, ledge, make_rooms, paint, room, run, sign, solid, start, water,
+    WALL, WORLDS, door, entity, ledge, make_rooms, paint, room, run, sign, solid, start, water,
 )
 from district_scenery import piece  # noqa: E402
 
@@ -72,6 +73,17 @@ WOODS = "intro_woods"
 SALT_RUN = "intro_salt_run"
 MOOR = "intro_moor"
 BARROW = "intro_barrow"
+CAIRNFIELD = "intro_barrow_cairnfield"
+VOTIVE = "intro_barrow_votive"
+WATCH_CRYPT = "intro_barrow_watch_crypt"
+TALLY_VAULT = "intro_barrow_tally_vault"
+ROYAL_TOMB = "intro_barrow_royal_tomb"
+MOUNTAIN_ASCENT = "fantasy_mountain_ascent"
+MOUNTAIN_PASS = "fantasy_mountain_pass"
+MOUNTAIN_SHELTER = "fantasy_mountain_shelter"
+MOUNTAIN_DESCENT = "fantasy_mountain_descent"
+BRACKENFORD = "fantasy_brackenford"
+OLD_WATCH = "fantasy_old_watch"
 GUILD = "intro_guild_trophy_room"
 MARKET = "drain_alley"
 UNDER_TOWN = "under_town_pipes"
@@ -176,6 +188,17 @@ ROOMS_AT = {
     MOOR: ((MOOR_X, MOOR_Y), (MOOR_W, MOOR_H)),
     # The barrow: under the moor's east half, entered by its door.
     BARROW: ((MOOR_X + 1200, MOOR_Y + MOOR_H), (BARROW_W, BARROW_H)),
+    CAIRNFIELD: ((MOOR_X + MOOR_W, MOOR_Y), (2640, MOOR_H)),
+    VOTIVE: ((MOOR_X + MOOR_W + 720, MOOR_Y + MOOR_H), (1232, 576)),
+    WATCH_CRYPT: ((MOOR_X + MOOR_W + 1952, MOOR_Y + MOOR_H), (1440, 576)),
+    TALLY_VAULT: ((MOOR_X + 1952, MOOR_Y + MOOR_H + BARROW_H), (1968, 576)),
+    ROYAL_TOMB: ((MOOR_X + 3920, MOOR_Y + MOOR_H + BARROW_H), (1536, 576)),
+    MOUNTAIN_ASCENT: ((-2400, 1344), (2400, 768)),
+    MOUNTAIN_PASS: ((-4448, 1024), (2048, 640)),
+    MOUNTAIN_SHELTER: ((-3904, 1664), (1152, 480)),
+    MOUNTAIN_DESCENT: ((-7136, 1072), (2688, 1008)),
+    BRACKENFORD: ((-9824, 1536), (2688, 544)),
+    OLD_WATCH: ((-11424, 1536), (1600, 544)),
     # The guild's trophy room: over the village's east half.
     GUILD: ((VILLAGE_X + 1200, UPPER_Y - GUILD_H - 64), (GUILD_W, GUILD_H)),
     # The salt run: under the valley, from behind the mill wheel to the
@@ -491,6 +514,14 @@ def lane():
         edge("lane_from_workshop", "into the workshop", 0, hi, WORKSHOP, "workshop_to_lane"),
         hen(rid, 1, 260, hi),
         hen(rid, 2, 420, hi),
+        ledge("high_trail_lower_step", 320, hi - 48, 160),
+        ledge("high_trail_upper_step", 224, hi - 80, 112),
+        solid("high_trail_landing", 16, hi - 112, 208, 16),
+        solid("high_trail_lintel", 16, hi - 272, 144, 64),
+        entity("LockWall", 128, hi - 208, 32, 96, id="fantasy_high_trail_gate", name="the washed-out mountain stair",
+               gated_by="fantasy_high_trail_open", look="temple_gate_iron"),
+        door("lane_to_mountain", "the trail above the workshop", 48, hi - 112, MOUNTAIN_ASCENT, "ascent_to_lane"),
+        sign("lane_high_trail_sign", 330, hi - 155, "HIGH PASS / STAIR CLOSED", 250),
         entity("LockWall", SURVEY_LINE_X, hi - 24, 16, 24, id=SURVEY_LINE, name="the survey line",
                gated_by="bob_field_survey_received"),
         *stake_board("lane_sign_line", SURVEY_LINE_X - 110, hi, "SURVEY LINE", "DON'T STEP ON IT"),
@@ -1178,8 +1209,9 @@ def moor():
     check_reach(rid, [("peat bottom", pb), ("heather", g)])
     e = [
         solid("west_wall", 0, 0, WALL, g - 96),
-        solid("east_wall", w - WALL, 0, WALL, g),
+        solid("east_wall", w - WALL, 0, WALL, g - 96),
         edge("moor_from_fell", "back to the fell's top", 0, g, FELL, "fell_to_moor"),
+        edge("moor_to_cairnfield", "follow the burial road", w - WALL, g, CAIRNFIELD, "cairnfield_to_moor"),
         solid("heather_west", 0, g, p0, h - g),
         solid("peat_bottom", p0, pb, p1 - p0, h - pb),
         water(f"{rid}_peat_water", p0, g + 24, p1 - p0, pb - g - 24),
@@ -1217,14 +1249,35 @@ BARROW_PIT = (1040, 1200, 496)
 #: The slab over the pit: (x0, x1, top), a stone laid across it.
 BARROW_SLAB = (1088, 1152, 400)
 BARROW_GRAVE = (1200, BARROW_W, 448)
-BARROW_LAMPS = [(1400, 260), (1900, 260)]
+KING_ENCOUNTER = "intro_barrow_king_vigil"
+
+
+def burial_enemy(name, character, x, floor, w, h):
+    return entity("EnemySpawn", x - w // 2, floor - h, w, h, name=name,
+                  character_id=character, respawn="OnRoomReenter")
+
+
+def chamber_shell(w, h):
+    return [solid("west_end", 0, 0, WALL, h), solid("east_end", w - WALL, 0, WALL, h),
+            solid("roof", 0, 0, w, 64)]
+
+
+def torch(name, x, y, radius=240):
+    return entity("LightSource", x, y, 32, 32, name=name, radius=radius, color="#f8be78", intensity=0.85)
+
+
+def object_art(kind, x, floor, w, h):
+    return entity("Prop", x, floor - h, w, h, name=kind, kind=kind)
+
+
+def crypt(rid, entities, title):
+    _, (w, h) = ROOMS_AT[rid]
+    return build(rid, chamber_shell(w, h) + entities, title, "vault_in_the_dark", look="cave",
+                 bg="#181b23", dangerous=True, extra=UNDERGROUND_DARK)
 
 
 def barrow():
-    """THE BARROW. A grave older than the village under the moor: a stone
-    passage down to a chamber of the old dead, a pit across it, and the
-    king's chamber at the end, where goblin scavengers stack the freight
-    they steal from the gate. The hardest fight in level 1."""
+    """The stairs, family graves, and entrance to the burial vaults."""
     rid = BARROW
     w, h = BARROW_W, BARROW_H
     floors = [(f"step {n}", top) for n, (_, _, top) in enumerate(BARROW_STEPS)]
@@ -1233,36 +1286,278 @@ def barrow():
     check_reach(rid, [("pit", BARROW_PIT[2]), ("grave", BARROW_GRAVE[2]), ("slab", BARROW_SLAB[2]), ("passage", BARROW_STEPS[-1][2])])
     b0, b1, bb = BARROW_PIT
     g0, g1, gy = BARROW_GRAVE
-    e = [solid("west_end", 0, 0, WALL, h), solid("east_end", w - WALL, 0, WALL, h), solid("roof", 0, 0, w, 64)]
+    e = []
     for n, (x0, x1, top) in enumerate(BARROW_STEPS):
         e.append(solid(f"step_{n}", x0, top, x1 - x0, h - top))
     e += [
-        entity("LoadingZone", 64, BARROW_STEPS[0][2] - 96, 48, 96, id="barrow_from_moor", name="out to the moor",
-               activation="Door", target_room=MOOR, target_zone="moor_to_barrow", bidirectional=True),
-        sign("barrow_sign_door", 340, 110, "HERE LIES A KING OF THE VALLEY. LET HIM SLEEP.", 520),
-        # The old dead of the first chamber, up and about.
-        *[entity("EnemySpawn", x - 16, BARROW_STEPS[-1][2] - 48, 32, 48, name=f"barrow_dead_{n}", brain="combatant",
-                 character_id="barrow_wight", respawn="OnRoomReenter") for n, x in enumerate((800, 960))],
-        # The pit: a slab across it, a run and a jump wide, and what is at the
-        # bottom of a barrow's pit.
+        door("barrow_from_moor", "out to the moor", 64, BARROW_STEPS[0][2], MOOR, "moor_to_barrow"),
+        sign("barrow_sign_door", 380, 128, "THE CROWN RESTS BELOW. THE HOUSEHOLDS REST HERE.", 580),
+        object_art("fantasy_grave_niche", 615, 400, 128, 112),
+        burial_enemy("barrow_stair_shambler", "barrow_shambler", 855, 400, 30, 54),
         solid("pit_bottom", b0, bb, b1 - b0, h - bb),
         ledge("pit_slab", BARROW_SLAB[0], BARROW_SLAB[2], BARROW_SLAB[1] - BARROW_SLAB[0]),
-        entity("DamageVolume", b0, bb - 32, b1 - b0, 32, name="barrow pit", damage=1.0),
         solid("grave_floor", g0, gy, g1 - g0, h - gy),
-        sign("barrow_sign_grave", 1700, 150, "ADDED IN CHALK: AND HIS TOASTERS. AND HIS BATTERIES. AND HIS SIXTY PHONE CHARGERS.", 720),
-        *[scavenger(rid, n, x, gy, character)
-          for n, (x, character) in enumerate([(1500, "npc_goblin_scavenger"), (1660, "npc_goblin_scavenger"),
-                                              (1820, "npc_lab_raider")])],
-        # The king, who does not like the company he is keeping.
-        entity("EnemySpawn", 1980 - 16, BARROW_GRAVE[2] - 48, 32, 48, name="barrow_king", brain="combatant",
-               character_id="barrow_king", respawn="OnRoomReenter"),
-        entity("ChestSpawn", 2040, gy - 58, 76, 58, name="the king's grave goods", reward="currency:60"),
-        *[entity("LightSource", x, y, 32, 32, name=f"barrow_lamp_{n}", radius=260.0, color="#ffc070", intensity=0.9)
-          for n, (x, y) in enumerate(BARROW_LAMPS)],
+        object_art("fantasy_grave_niche", 1280, gy, 128, 112),
+        object_art("fantasy_grave_niche", 1590, gy, 128, 112),
+        solid("fallen_arch", 1432, gy - 144, 176, 72),
+        burial_enemy("barrow_arch_crawler", "barrow_crawler", 1490, gy, 58, 30),
+        door("barrow_to_tally", "down to the tally vault", 2048, gy, TALLY_VAULT, "tally_to_barrow"),
+        torch("stair_lamp", 350, 180), torch("family_lamp", 795, 298), torch("deep_lamp", 1750, 318),
         start(rid, 160, BARROW_STEPS[0][2]),
     ]
-    return build(rid, e, "THE BARROW", "vault_in_the_dark", look="cave", bg="#0c0a08", dangerous=True,
-                 extra=UNDERGROUND_DARK)
+    return crypt(rid, e, "THE KING'S BARROW")
+
+
+def cairnfield():
+    """Two small mounds and the survey shelter beside the burial road."""
+    rid, g = CAIRNFIELD, MOOR_FLOOR
+    _, (w, h) = ROOMS_AT[rid]
+    e = [
+        *walls(w, g, west=[g]),
+        edge("cairnfield_to_moor", "back along the burial road", 0, g, MOOR, "moor_to_cairnfield"),
+        solid("west_heather", 0, g, 768, h - g),
+        slope("votive_mound_west", 768, g, 960, g - 64),
+        solid("votive_mound_top", 960, g - 64, 256, h - g + 64),
+        slope("votive_mound_east", 1216, g - 64, 1408, g),
+        solid("middle_heather", 1408, g, 496, h - g),
+        slope("watch_mound_west", 1904, g, 2112, g - 80),
+        solid("watch_mound_top", 2112, g - 80, 224, h - g + 80),
+        slope("watch_mound_east", 2336, g - 80, 2544, g),
+        solid("east_heather", 2544, g, w - 2544, h - g),
+        door("cairnfield_to_votive", "enter the votive mound", 688, g, VOTIVE, "votive_to_field"),
+        door("cairnfield_to_watch", "enter the watch mound", 1808, g, WATCH_CRYPT, "watch_to_field"),
+        object_art("fantasy_grave_niche", 592, g, 128, 112),
+        object_art("fantasy_grave_niche", 1700, g, 128, 112),
+        piece("hill_survey_station", 1460, g - 112),
+        piece("hill_fell_cairn", 1110, g - 64 - 48),
+        *stake_board("cairnfield_waymark", 340, g, "THE CAIRNFIELD", "LEAVE A STONE"),
+        start(rid, 120, g),
+    ]
+    return build(rid, e, "THE CAIRNFIELD", COUNTRY_MUSIC, extra=GATESIDE)
+
+
+def votive_crypt():
+    """A small family grave with a collapsed east wall."""
+    rid, g = VOTIVE, 416
+    e = [
+        solid("west_floor", 0, g, 448, 160),
+        solid("family_floor", 448, g + 48, 448, 112),
+        solid("east_floor", 896, g, 336, 160),
+        door("votive_to_field", "out to the cairnfield", 64, g, CAIRNFIELD, "cairnfield_to_votive"),
+        object_art("fantasy_grave_niche", 460, g + 48, 128, 112),
+        object_art("fantasy_grave_niche", 670, g + 48, 128, 112),
+        burial_enemy("votive_shambler", "barrow_shambler", 722, g + 48, 30, 54),
+        solid("votive_collapse_top", 992, 64, 48, g - 64 - 112),
+        entity("BreakablePlatform", 992, g - 112, 48, 112, id="barrow_votive_rubble", name="fallen masonry",
+               max_hp=2.0, respawn="Persistent", collision="Solid", trigger="OnHit"),
+        entity("ChestSpawn", 1064, g - 58, 76, 58, name="the votive bowl", reward="currency:8"),
+        object_art("fantasy_strata", 1104, g, 112, 72),
+        sign("votive_inscription", 310, 270, "A BOWL OF OATS FOR THE WINTER ROAD.", 380),
+        torch("votive_lamp", 550, 350), start(rid, 152, g),
+    ]
+    return crypt(rid, e, "THE VOTIVE MOUND")
+
+
+def watch_crypt():
+    """Leave the work alcove empty. The service passage joins the tally vault."""
+    rid, g = WATCH_CRYPT, 432
+    e = [
+        solid("watch_floor", 0, g, 1440, 144),
+        door("watch_to_field", "out to the cairnfield", 64, g, CAIRNFIELD, "cairnfield_to_watch"),
+        object_art("fantasy_grave_niche", 338, g, 128, 112),
+        piece("hill_loading_stage", 552, g - 56),
+        solid("fallen_doorhead", 762, g - 160, 160, 80),
+        burial_enemy("watch_crawler", "barrow_crawler", 832, g, 58, 30),
+        burial_enemy("watch_guard", "barrow_wight", 1198, g, 36, 64),
+        door("watch_to_tally", "through the broken service passage", 1320, g, TALLY_VAULT, "tally_to_watch"),
+        sign("watch_inscription", 470, 236, "THE WATCH KEEPS THE WEST DOOR.", 380),
+        torch("watch_entrance_lamp", 316, 324), torch("watch_alcove_lamp", 1110, 324),
+        start(rid, 150, g),
+    ]
+    return crypt(rid, e, "THE WATCH MOUND")
+
+
+def tally_vault():
+    """The service passages lead to a store of salvage."""
+    rid, g = TALLY_VAULT, 448
+    e = [
+        solid("tally_floor", 0, g, 1968, 128),
+        door("tally_to_barrow", "up to the family graves", 64, g, BARROW, "barrow_to_tally"),
+        door("tally_to_watch", "through to the watch mound", 304, g, WATCH_CRYPT, "watch_to_tally"),
+        solid("sorting_dais", 736, g - 48, 224, 48),
+        object_art("fantasy_junk_heap", 514, g, 160, 100),
+        object_art("fantasy_junk_heap", 765, g - 48, 160, 100),
+        object_art("fantasy_junk_heap", 1590, g, 160, 100),
+        burial_enemy("tally_wight", "barrow_wight", 1024, g, 36, 64),
+        burial_enemy("tally_toaster", "barrow_toaster", 1408, g, 42, 38),
+        sign("tally_note", 1160, 230, "COPPER TO THE LEFT. KEEP THE LIVE ONES UNPLUGGED.", 600),
+        door("tally_to_royal", "enter the royal tomb", 1840, g, ROYAL_TOMB, "royal_to_tally"),
+        torch("tally_light_west", 500, 315), torch("tally_light_east", 1580, 320), start(rid, 155, g),
+    ]
+    return crypt(rid, e, "THE TALLY VAULT")
+
+
+def royal_tomb():
+    """Give the king a clear arena and put his grave goods beyond it."""
+    rid, g = ROYAL_TOMB, 432
+    e = [
+        solid("tomb_floor", 0, g, 1536, 144),
+        door("royal_to_tally", "back to the tally vault", 64, g, TALLY_VAULT, "tally_to_royal"),
+        solid("treasury_lintel", 1216, 64, 48, g - 64 - 112),
+        entity("LockWall", 1216, g - 112, 48, 112, id="royal_treasury_grille", name="the grave goods grille",
+               gated_by=f"encounter.cleared {KING_ENCOUNTER}", look="temple_gate_iron"),
+        entity("EncounterTrigger", 228, 64, 160, g - 64, id=KING_ENCOUNTER, name="the king's vigil"),
+        entity("Switch", 172, g - 32, 24, 32, id="royal_vigil_bell", name="the burial bell",
+               prompt="Ring the burial bell", target_encounter=KING_ENCOUNTER, action="ResetEncounter"),
+        object_art("fantasy_grave_niche", 805, g, 192, 168),
+        object_art("fantasy_junk_heap", 368, g, 160, 100),
+        object_art("fantasy_junk_heap", 978, g, 160, 100),
+        object_art("fantasy_junk_heap", 1126, g, 96, 60),
+        entity("ChestSpawn", 1350, g - 58, 76, 58, name="the king's grave goods", reward="currency:30"),
+        torch("royal_vestibule_lamp", 244, 292), torch("royal_dais_lamp", 799, 226, 340),
+        torch("royal_goods_lamp", 1355, 310), start(rid, 150, g),
+    ]
+    return crypt(rid, e, "THE ROYAL TOMB")
+
+
+# The westward road climbs from the workshop, crosses the pass, and drops to Brackenford.
+def mountain_road(rid, flats):
+    _, (w, h) = ROOMS_AT[rid]
+    assert flats[0][0] == 0 and flats[-1][1] == w
+    path = [solid(f"road_floor_{i}", x0, y, x1 - x0, h - y)
+            for i, (x0, x1, y) in enumerate(flats)]
+    path += [slope(f"road_grade_{i}", x1, y, nx, ny)
+             for i, ((_, x1, y), (nx, _, ny)) in enumerate(zip(flats, flats[1:]))]
+    return path
+
+
+def mountain_outdoors(rid, e, title, *, dangerous=False, alpine=True):
+    at, size = ROOMS_AT[rid]
+    return rid, room(rid, e, at=at, size=size, biome=COUNTRY_LOOK, music=COUNTRY_MUSIC,
+                     bg="#afc7d9", title=title, generator=GENERATOR, dangerous=dangerous,
+                     extra='\n    backdrop: "hobford_gateside",' if not alpine else '\n    backdrop: "mountain_pass",')
+
+
+def mountain_ascent():
+    rid, w = MOUNTAIN_ASCENT, 2400
+    e = [
+        *walls(w, 640, west=[240]),
+        *mountain_road(rid, [(0, 448, 240), (1088, 1408, 448), (2048, w, 640)]),
+        edge("ascent_to_pass", "toward the high pass", 0, 240, MOUNTAIN_PASS, "pass_to_ascent"),
+        door("ascent_to_lane", "down to the workshop trail", 2260, 640, LANE, "lane_to_mountain"),
+        npc("npc_fantasy_trail_keeper", "fantasy_trail_keeper", "Talk to Mara", 1260, 448, brain="townsfolk_roam"),
+        object_art("fantasy_pines", 1110, 448, 146, 158),
+        object_art("fantasy_strata", 1680, 528, 142, 120),
+        object_art("fantasy_strata", 1912, 600, 142, 120),
+        solid("ridge_fold_wall", 344, 192, 48, 48),
+        piece("hill_fell_fold_wall", 344, 192),
+        *stake_board("ascent_waymark", 2130, 640, "HIGH PASS", "KEEP TO THE STONE ROAD"),
+        start(rid, 2200, 640),
+    ]
+    return mountain_outdoors(rid, e, "THE WORKSHOP RIDGE")
+
+
+def mountain_pass():
+    rid, w = MOUNTAIN_PASS, 2048
+    e = [
+        *walls(w, 560, west=[304], east=[560]),
+        *mountain_road(rid, [(0, 320, 304), (704, 1056, 224), (1888, w, 560)]),
+        edge("pass_to_ascent", "down to the workshop ridge", w - WALL, 560, MOUNTAIN_ASCENT, "ascent_to_pass"),
+        edge("pass_to_descent", "across the divide", 0, 304, MOUNTAIN_DESCENT, "descent_to_pass"),
+        door("pass_to_shelter", "under the rock into the shelter", 896, 224, MOUNTAIN_SHELTER, "shelter_to_pass"),
+        object_art("fantasy_shelter_face", 783, 224, 232, 132),
+        object_art("fantasy_strata", 1240, 302, 112, 96),
+        piece("hill_fell_cairn", 722, 224 - 48),
+        sheep(243, 304),
+        entity("CameraZone", 647, 0, 464, 320, id="high_pass_overlook", name="the divide", mode="Default",
+               target_offset_y=-116, zoom=0.85),
+        start(rid, 1940, 560),
+    ]
+    return mountain_outdoors(rid, e, "THE HIGH PASS")
+
+
+def mountain_shelter():
+    rid, g = MOUNTAIN_SHELTER, 352
+    at, (w, h) = ROOMS_AT[rid]
+    e = [
+        *chamber_shell(w, h),
+        solid("shelter_west", 0, g, 480, h - g),
+        solid("shelter_pool", 480, g + 32, 320, h - g - 32),
+        solid("shelter_east", 800, g, w - 800, h - g),
+        door("shelter_to_pass", "back out to the pass", 64, g, MOUNTAIN_PASS, "pass_to_shelter"),
+        npc("npc_fantasy_wayfarer", "fantasy_wayfarer", "Talk to Anwen", 327, g),
+        object_art("fantasy_strata", 590, g + 32, 144, 112),
+        sign("shelter_mark", 365, 235, "KEEP A LOG DRY FOR THE NEXT TRAVELER.", 360),
+        torch("shelter_fire", 225, 283), torch("shelter_far_lamp", 843, 260),
+        entity("ChestSpawn", 928, g - 58, 76, 58, name="the travelers' tin", reward="currency:6"),
+        start(rid, 138, g),
+    ]
+    return rid, room(rid, e, at=at, size=(w, h), biome="cave", music=COUNTRY_MUSIC, bg="#232933",
+                     title="THE STORM SHELTER", generator=GENERATOR, extra=UNDERGROUND_DARK)
+
+
+def mountain_descent():
+    rid, w = MOUNTAIN_DESCENT, 2688
+    e = [
+        *walls(w, 880, west=[880], east=[256]),
+        *mountain_road(rid, [(0, 288, 880), (928, 1168, 656), (1728, 1968, 448), (2496, w, 256)]),
+        edge("descent_to_pass", "back up to the pass", w - WALL, 256, MOUNTAIN_PASS, "pass_to_descent"),
+        edge("descent_to_brackenford", "down to Brackenford", 0, 880, BRACKENFORD, "brackenford_to_descent"),
+        object_art("fantasy_strata", 2060, 414, 138, 124),
+        object_art("fantasy_pines", 1728, 448, 146, 158),
+        object_art("fantasy_pines", 1018, 656, 146, 158),
+        object_art("fantasy_pines", 116, 880, 146, 158),
+        piece("hill_fell_gorse", 930, 624),
+        sheep(203, 880), sheep(989, 656),
+        start(rid, 2570, 256),
+    ]
+    return mountain_outdoors(rid, e, "THE ALDER DESCENT")
+
+
+def brackenford():
+    rid, w, g = BRACKENFORD, 2688, 416
+    e = [
+        *walls(w, g, west=[g], east=[g]),
+        *mountain_road(rid, [(0, w, g)]),
+        edge("brackenford_to_descent", "back up the alder road", w - WALL, g, MOUNTAIN_DESCENT, "descent_to_brackenford"),
+        edge("brackenford_to_watch", "toward the old watch", 0, g, OLD_WATCH, "old_watch_to_brackenford"),
+        piece("hill_village_cottage", 400, g - 212),
+        piece("hill_village_inn", 1456, g - 212),
+        piece("hill_village_well", 1108, g - 142),
+        ledge("brackenford_cottage_porch", 420, g - 48, 80),
+        ledge("brackenford_cottage_roof", 460, g - 112, 240),
+        ledge("brackenford_inn_porch", 1476, g - 48, 80),
+        ledge("brackenford_inn_roof", 1516, g - 112, 300),
+        solid("brackenford_well_curb", 1120, g - 48, 64, 48),
+        entity("PickupSpawn", 1680, g - 112 - 28, 24, 24, name="a coin from the gutter", kind="currency:3"),
+        npc("npc_fantasy_broker", "fantasy_broker", "Talk to Nell", 1718, g, brain="townsfolk_roam"),
+        npc("npc_fantasy_cooper", "fantasy_cooper", "Talk to Tom", 842, g, brain="townsfolk_roam"),
+        npc("npc_fantasy_knight", "fantasy_knight", "Talk to Sir Cumference", 487, g, brain="townsfolk_roam"),
+        hen(rid, 1, 957, g), hen(rid, 2, 1255, g),
+        *stake_board("brackenford_road_board", 2305, g, "BRACKENFORD", "BREAD AT THE INN"),
+        *stake_board("brackenford_west_board", 220, g, "THE OLD WATCH", "KEEP OUT OF THE PEN"),
+        start(rid, 2400, g),
+    ]
+    return mountain_outdoors(rid, e, "BRACKENFORD", alpine=False)
+
+
+def old_watch():
+    rid, w, g = OLD_WATCH, 1600, 416
+    e = [
+        *walls(w, g, east=[g]),
+        *mountain_road(rid, [(0, 320, 352), (560, w, g)]),
+        edge("old_watch_to_brackenford", "back to Brackenford", w - WALL, g, BRACKENFORD, "brackenford_to_watch"),
+        solid("ruin_threshold", 608, g - 48, 80, 48),
+        solid("watch_fold_wall", 688, g - 48, 48, 48),
+        object_art("fantasy_grave_niche", 374, 366, 128, 112),
+        object_art("fantasy_strata", 550, g, 140, 94),
+        piece("hill_fell_fold_wall", 688, g - 48),
+        burial_enemy("old_watch_bellback", "fantasy_bellback", 804, g, 66, 54),
+        entity("ChestSpawn", 110, 352 - 58, 76, 58, name="the watch's toll box", reward="currency:14"),
+        sign("old_watch_bell_sign", 1120, 268, "PLEASE DO NOT RING THE GOAT.", 360),
+        start(rid, 1450, g),
+    ]
+    return mountain_outdoors(rid, e, "THE OLD WATCH", dangerous=True, alpine=False)
 
 
 # ------------------------------------------- the town under the gate stack
@@ -1370,15 +1665,26 @@ def culvert():
 
 #: East to west: a relayout moves the rooms east, and each one's new place
 #: is free once the rooms east of it have moved.
-ROOMS = (barrow, moor, fell, siding, clearing, meadow, woods, village, guild_room, millstream, lane, workshop, market,
-         culvert, salt_run)
+ROOMS = {
+    BARROW: barrow, MOOR: moor, CAIRNFIELD: cairnfield, VOTIVE: votive_crypt, WATCH_CRYPT: watch_crypt,
+    TALLY_VAULT: tally_vault, ROYAL_TOMB: royal_tomb, MOUNTAIN_ASCENT: mountain_ascent,
+    MOUNTAIN_PASS: mountain_pass, MOUNTAIN_SHELTER: mountain_shelter, MOUNTAIN_DESCENT: mountain_descent,
+    BRACKENFORD: brackenford, OLD_WATCH: old_watch, FELL: fell, SIDING: siding, CLEARING: clearing,
+    MEADOW: meadow, WOODS: woods, VILLAGE: village, GUILD: guild_room, MILLSTREAM: millstream,
+    LANE: lane, WORKSHOP: workshop, MARKET: market, UNDER_TOWN: culvert, SALT_RUN: salt_run,
+}
 
 
 def main(argv):
     made = []
     SUMP.clear()
-    for make in ROOMS:
-        rid, text = make()
+    selected = {rid for arg in argv if arg.startswith("--rooms=") for rid in arg.split("=", 1)[1].split(",")}
+    if unknown := selected - ROOMS.keys():
+        raise SystemExit(f"--rooms names no room of this generator: {sorted(unknown)}")
+    for rid, make in ROOMS.items():
+        if selected and rid not in selected:
+            continue
+        _, text = make()
         path = SPEC_OUT / f"{rid}.ron"
         path.write_text(text)
         made.append(path)
