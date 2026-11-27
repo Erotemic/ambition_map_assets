@@ -45,7 +45,7 @@ SPEC_OUT = Path(tempfile.gettempdir()) / "ambition_castle_kitchens_specs"
 SPEC_OUT.mkdir(exist_ok=True)
 sys.path.insert(0, str(TOOL_SPECS))
 
-from district_kit import WALL, WORLDS, edge, entity, make_rooms, paint, resident, room, run, sign, solid, start  # noqa: E402
+from district_kit import WALL, WORLDS, edge, entity, ledge, make_rooms, paint, resident, room, run, sign, solid, start  # noqa: E402
 from district_scenery import piece  # noqa: E402
 
 WORLD = WORLDS / "evil.ldtk"
@@ -112,13 +112,19 @@ def kitchens():
                activation="EdgeExit", target_room=GATEHOUSE, target_zone="castle_godwin_gatehouse_stair", bidirectional=True),
         edge("kitchens_east", "on to the Complaints Department", W - WALL, FLOOR, COMPLAINTS, "complaints_west"),
         start(KITCHENS, 160, FLOOR),
+        ledge("pantry_crates", 336, 448, 112),
+        ledge("pantry_shelf", 352, 384, 128),
+        ledge("pantry_hearth_walk", 496, 352, 368),
+        ledge("pantry_dining_walk", 880, 384, 288),
+        ledge("dumbwaiter_crates", 1168, 448, 80),
         resident("npc_castle_osgood", "castle_osgood", 280, FLOOR),
         resident("npc_castle_hargreave", "castle_hargreave", 860 - 20, FLOOR),
         resident("npc_castle_dunmore", "castle_dunmore", 1040, FLOOR),
         # Under the cook's table, after the scraps.
         legless(KITCHENS, 1, 600, FLOOR),
-        sign("kitchens_sign_menu", 660, 250, "TODAY: gruel. TOMORROW: gruel (evil)", 400),
-        sign("kitchens_sign_guild", 1010, 350, "HENCHPERSONS' GUILD, LOCAL 666: meeting at the kettle", 460),
+        sign("kitchens_sign_menu", 660, 240, "TODAY: gruel. TOMORROW: gruel (evil)", 400),
+        sign("kitchens_sign_guild", 1010, 417, "HENCHPERSONS' GUILD, LOCAL 666", 300),
+        sign("kitchens_sign_meeting", 1010, 445, "Meeting at the kettle", 300),
     ]
     return room(KITCHENS, e, at=WHERE[KITCHENS], size=(W, H), biome="castle_godwin", music="doves_of_the_commons", bg="#1A1416",
                 title="THE CASTLE KITCHENS", generator=GENERATOR)
