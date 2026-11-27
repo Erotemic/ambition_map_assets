@@ -140,11 +140,14 @@ def complaints():
         edge("complaints_west", "back to the kitchens", 0, CFLOOR, KITCHENS, "kitchens_east"),
         edge("complaints_east", "on to the cells", CW - WALL, CFLOOR, CELLS, "cells_west"),
         start(COMPLAINTS, 120, CFLOOR),
+        ledge("complaints_suggestions_crate", 368, 352, 48),
+        ledge("complaints_counter", 416, 320, 464),
+        ledge("complaints_forms_crate", 880, 352, 64),
         resident("npc_evil_mudge", "evil_mudge", 200, CFLOOR),
         sign("complaints_sign_ticket", 316, 290, "TAKE A NUMBER", 200),
         sign("complaints_sign_hours", 660, 340, "OPEN: by appointment. APPOINTMENTS: by complaint", 470),
         sign("complaints_sign_serving", 615, 70, "NOW SERVING", 160),
-        sign("complaints_sign_box", 400, 250, "SUGGESTIONS", 160),
+        sign("complaints_sign_box", 384, 248, "SUGGESTIONS", 160),
     ]
     return room(COMPLAINTS, e, at=WHERE[COMPLAINTS], size=(CW, CH), biome="castle_godwin", music="doves_of_the_commons",
                 bg="#1A1416", title="THE COMPLAINTS DEPARTMENT", generator=GENERATOR)
