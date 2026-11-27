@@ -17,15 +17,10 @@ his chest and is saved. The hall's life switch brings him back.
 
     [ the Hall of Bosses ] -door-> [ the War Room ]
 
-The floor is flat and open: his lines run its whole length. His Command
-Uplink comes down 344 in from the west wall in his first phase and from the
-east wall after (`ambition_content_modules::supreme_leader::UPLINK_INSET`):
-the space behind it, by the wall, is out of its lines. Two ledges over the
-floor (a double jump: 136) and a bar over the middle (a double jump again)
-are out of the low line's way and in the decree's.
-
-The robot's numbers (`platformer_defaults.ron`): a jump rises 88 px, a jump
-and a double jump 139 px; the body is 30 x 48.
+The floor is open from wall to wall. The Command Uplink arrives 344
+units from the west wall in the first phase and from the east wall in
+the second phase. The uplink fires into the room. Use the steps on
+either side to reach the ledges and the command gallery.
 """
 from __future__ import annotations
 
@@ -43,6 +38,7 @@ SPEC_OUT.mkdir(exist_ok=True)
 sys.path.insert(0, str(TOOL_SPECS))
 
 from district_kit import SANDBOX_LDTK, WALL, WORLDS, add_entities, door, entity, ledge, make_rooms, room, run, sign, solid, start  # noqa: E402
+from district_scenery import piece  # noqa: E402
 
 WORLD = WORLDS / "evil.ldtk"
 GENERATOR = "game/ambition_map_assets/ambition_content/generators/war_room/make_specs.py"
@@ -59,8 +55,7 @@ PLACEMENT = "hall.supreme_leader"
 #: of their way), and its size.
 AT, W, H = (0, 8000), 1920, 768
 FLOOR = 704
-#: The regime's architecture (the castle's skin and backdrop: the look of
-#: the regime, not the place) until the War Room has a backdrop of its own.
+#: Use the castle skin for the floor, walls, and door.
 BIOME = "castle_godwin"
 BG = "#0E0E14"
 MUSIC = "military_iron_resolve"
@@ -68,6 +63,7 @@ MUSIC = "military_iron_resolve"
 ZOOM = 1.6
 #: A double jump.
 TIER = 136
+STEPS = ((432, 560, 624), (704, 832, 496), (1088, 1216, 496), (1360, 1488, 624))
 #: His body box (`npc_supreme_leader`), its feet on the floor at the middle.
 LEADER_W, LEADER_H = 64, 150
 
@@ -79,14 +75,17 @@ def war_room():
         solid("ceiling", 0, 0, w, 32),
         solid("west_wall", 0, 32, WALL, FLOOR - 32),
         solid("east_wall", w - WALL, 32, WALL, FLOOR - 32),
+        piece("war_room_command_wall", 16, 32, px=1),
+        piece("war_room_galleries", 416, 416, px=1),
         door(ENTRY, "back to the hall", 48, FLOOR, HALL, HALL_DOOR),
         start(ROOM, 150, FLOOR),
-        # Two ledges a double jump over the floor, and a bar over the
-        # middle a double jump over them.
+        *[ledge(f"war_room_step_{i}", left, top, right - left)
+          for i, (left, right, top) in enumerate(STEPS)],
         ledge("ledge_west", 520, FLOOR - TIER, 200),
         ledge("ledge_east", w - 720, FLOOR - TIER, 200),
         ledge("bar_middle", w // 2 - 100, FLOOR - 2 * TIER, 200),
-        sign(f"{ROOM}_plan", w // 2, 96, "EVERYTHING IS PROCEEDING ACCORDING TO PLAN", 640),
+        sign(f"{ROOM}_plan", w // 2, 244, "EVERYTHING IS PROCEEDING", 440),
+        sign(f"{ROOM}_plan_finish", w // 2, 270, "ACCORDING TO PLAN", 440),
         entity("BossSpawn", w // 2 - LEADER_W // 2, FLOOR - LEADER_H, LEADER_W, LEADER_H, name="the Supreme Leader",
                brain="PhaseScript:supreme_leader", encounter_id=PLACEMENT),
     ]
