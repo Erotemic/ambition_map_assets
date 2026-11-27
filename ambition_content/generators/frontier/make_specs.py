@@ -727,9 +727,7 @@ def freight_tail():
 
 
 def freight_cars():
-    """The flat car's other end, a tank car and its dome, an open ore car
-    (down into the ore and up its far end), a box car, a flat car with a
-    loose crate on it."""
+    """The tank and ore cars, a guarded roof over a sorting car, and a flat car."""
     rid = CARS
     w, h = ROOMS_AT[rid][1]
     e = track_bed(w) + [
@@ -737,19 +735,27 @@ def freight_cars():
         car("flat_car_1_end", 0, 360, FLAT),
         car("tank_car", 424, 904, 560),
         solid("tank_dome", 620, 512, 80, 48),
-        car("ore_car_west", 968, 992, 560),
+        car("ore_car_west", 960, 992, 560),
         solid("ore_car_bed", 992, 624, 432, UNDERFRAME - 624),
-        solid("ore_car_east", 1424, 560, 24, UNDERFRAME - 560),
-        car("box_car_3", 1512, 1992, 496),
+        solid("ore_car_east", 1424, 560, 32, UNDERFRAME - 560),
+        solid("ore_gangway", 1456, FLAT, 48, 16),
+        solid("sorting_car_roof", 1504, 496, 496, 16),
+        car("sorting_car_deck", 1504, 2000, FLAT),
         entity("EnemySpawn", 1730 - 24, 496 - 70, 48, 70, name=f"{rid}_one_armed_bandit_0", brain="combatant",
                character_id="one_armed_bandit", respawn="OnRoomReenter"),
-        car("flat_car_2", 2088, w, FLAT),
+        solid("sorting_car_gangway", 2000, FLAT, 80, 16),
+        car("flat_car_2", 2080, w, FLAT),
         solid("crates_stack", 2560, FLAT - 64, 128, 64),
         sliding_crate(rid, 1, 2140, FLAT, 300, 90.0),
         start(rid, 120, FLAT),
         edge("freight_cars_to_head", "on to the head of the train", w - WALL, FLAT, HEAD, "rustler_head_from_cars"),
     ]
-    return build_freight(rid, e, "THE NUMBER 9 FREIGHT")
+    ladders = """
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [1472, 464], size: [32, 144]),
+        (kind: "Ladder", px: [2016, 464], size: [32, 144]),
+    ]),"""
+    return build_freight(rid, e, "THE NUMBER 9 FREIGHT", extra=ladders)
 
 
 def rustler_head():
