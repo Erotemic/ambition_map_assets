@@ -542,14 +542,20 @@ def siding_street():
         *side_walls(w, h, floor, floor),
         edge("street_from_station", "to the station", 0, floor, STATION, "station_to_street"),
         edge("street_to_trestle", "to the trestle", w - WALL, floor, TRESTLE, "trestle_from_street"),
-        start(rid, 100, floor),
-        solid("boardwalk_west", 160, walk, 920, floor - walk),
+        start(rid, 48, floor),
+        slope("inn_ramp", 80, floor, 160, walk),
+        solid("boardwalk_west", 160, walk, 928, floor - walk),
+        slope("mercantile_ramp", 1088, walk, 1168, floor),
+        slope("telegraph_ramp", 1360, floor, 1440, walk),
         solid("boardwalk_east", 1440, walk, 720, floor - walk),
+        slope("trestle_road_ramp", 2160, walk, 2240, floor),
         ledge("porch_inn", 200, porch, 440),
         ledge("porch_store", 700, porch, 360),
         ledge("porch_telegraph", 1460, porch, 320),
-        # The windmill's platform over the trough, a jump off the store's porch.
-        ledge("windmill_platform", 1150, porch - 64, 190),
+        ledge("mercantile_supply_crate", 992, walk - 48, 80),
+        ledge("telegraph_wire_reels", 1408, walk - 48, 64),
+        ledge("telegraph_service_walk", 1392, porch, 64),
+        ledge("windmill_platform", 1136, porch - 64, 208),
         chest("a coffee tin of coins on the windmill", "currency:15", 1206, porch - 64),
         door("street_inn_door", "into The Lie-Down Inn", 396, walk, INN, "inn_door"),
         sign("street_sign_inn", 420, porch - 32, "THE LIE-DOWN INN", 240),
@@ -558,7 +564,8 @@ def siding_street():
         sign("street_sign_post_1", 2020, floor - 200, "SPROCKET ROW, MECHANICS: OVER THE TRESTLE", 440),
         sign("street_sign_post_2", 2020, floor - 172, "DRY DOCK: BY RAIL, DOWN THE GULCH", 380),
     ]
-    return build(rid, e, "HALFWAY SIDING", SIDING_MUSIC, biome="frontier_siding")
+    ladder = "\n    intgrid: (climbable: [(kind: \"Ladder\", px: [1344, 400], size: [32, 240])]),"
+    return build(rid, e, "HALFWAY SIDING", SIDING_MUSIC, biome="frontier_siding", extra=ladder)
 
 
 def lie_down_inn():

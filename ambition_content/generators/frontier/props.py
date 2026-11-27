@@ -54,9 +54,9 @@ SCENERY = {
     "frontier_siding_station": [("frontier_siding_station_house", 536, 370)],
     "frontier_siding_street": [
         ("frontier_siding_windmill", 1100, 200),
-        ("frontier_lie_down_inn_front", 150, 160),
+        ("frontier_lie_down_inn_front", 72, 160),
         ("frontier_mercantile_front", 670, 220),
-        ("frontier_telegraph_front", 1430, 170),
+        ("frontier_telegraph_front", 1352, 170),
     ],
     "frontier_lie_down_inn": [("frontier_lie_down_inn_room", 16, 32)],
     "frontier_siding_trestle": [("frontier_siding_trestle", 0, 380, 1.0)],
