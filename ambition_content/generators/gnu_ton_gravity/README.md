@@ -46,9 +46,11 @@ way along the face).
    - Test: a band across the well pulls left. Walk up the east wall into it,
      fall across the well, and walk up the west wall.
    - Twist: at the top of the west wall an up field (room 1) takes you to
-     the vault. Along the vault, out of the field, you drop into the passage
-     of the door on. That is right, left, up, down.
+     the vault. Walk out of the field to drop into the upper passage.
+   - Climb the ladder from the passage to Conservation Hall.
 3. **`gnu_ton_conservation_hall` — two places made one (portals).**
+   - Climb from the shaft landing to the hall floor. To go down to the
+     well, step into the shaft and drop through the landing.
    - Teach: a shelf too tall to jump. A portal in the floor before it has
      its other end on a post on top. Walk in, come out on top.
    - Test: the shelf is closed in by a wall to the vault. The only way on is

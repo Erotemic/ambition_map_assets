@@ -94,7 +94,7 @@ WALL = 16
 ROOMS_AT = {
     ORCHARD: (8192, 1088, 2816, 960),
     WELL: (11008, 256, 1280, 1600),
-    HALL: (12800, 384, 2560, 1024),
+    HALL: (11008, -768, 2560, 1024),
     GALLERY: (15616, 384, 2560, 960),
     APPROACH: (18432, -1472, 1280, 1408),
     ARENA: (18432, 64, 1920, 1280),
@@ -400,7 +400,8 @@ def vector_well():
     corridor_top = floor - 128
     e = [
         solid("floor", 0, floor, w, h - floor),
-        solid("vault", 0, 0, w, vault),
+        solid("vault_west", 0, 0, 64, vault),
+        solid("vault_east", 160, 0, w - 160, vault),
         solid("east_wall", w - WALL, vault, WALL, floor - vault),
         solid("passage_west_wall", 0, vault, WALL, passage_floor - vault),
         solid("west_rock", 0, passage_floor, shaft_x, corridor_top - passage_floor),
@@ -416,9 +417,15 @@ def vector_well():
                name="to the orchard", activation="EdgeExit", target_room=ORCHARD,
                target_zone="orchard_east_door", bidirectional=True),
         start(rid, 176, floor),
-        door("well_top_door", "on to the conservation hall", 48, passage_floor, HALL, "hall_west_door"),
+        entity("LoadingZone", 64, 0, 96, 16, id="well_top_door", name="up to Conservation Hall",
+               activation="EdgeExit", target_room=HALL, target_zone="hall_west_door", bidirectional=True),
+        label("well_hall_sign", 146, 60, "↑ CONSERVATION HALL", 166),
     ]
-    return rid, room(rid, e, "THE VECTOR WELL: EVERY WALL IS A FLOOR")
+    ladder = """
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [96, 0], size: [32, 144]),
+    ]),"""
+    return rid, room(rid, e, "THE VECTOR WELL: EVERY WALL IS A FLOOR", extra_fields=ladder)
 
 
 def conservation_hall():
@@ -436,7 +443,7 @@ def conservation_hall():
     and go on falling up, onto the ceiling (the orchard's idea). Walk the
     ceiling out of the field and drop to the door.
 
-    The pit's floor is a hazard: the hall starts again at its door.
+    The pit floor is a hazard. A fall returns the robot to the hall entrance.
     """
     rid = HALL
     _, _, w, h = ROOMS_AT[rid]
@@ -450,7 +457,9 @@ def conservation_hall():
         solid("vault", 0, 0, w, vault),
         solid("west_wall", 0, vault, WALL, floor - vault),
         solid("east_wall", w - WALL, vault, WALL, floor - vault),
-        solid("floor_west", 0, floor, pillar_x + 32, h - floor),
+        solid("floor_west", 0, floor, 64, h - floor),
+        solid("floor_at_shelf", 160, floor, pillar_x + 32 - 160, h - floor),
+        ledge("hall_shaft_landing", 64, 976, 96),
         solid("pit_bed", pillar_x + 32, h - 16, pit_end - pillar_x - 32, 16),
         hazard("pit_hazard", pillar_x + 32, h - 32, pit_end - pillar_x - 32),
         solid("floor_east", pit_end, floor, w - pit_end, h - floor),
@@ -476,11 +485,17 @@ def conservation_hall():
         portal("hall_well_door", "hall_gallery_pair", 2112, floor - 9, "up", "green"),
         portal("hall_gallery_door", "hall_gallery_pair", 2016, gallery_floor - 9, "up", "magenta"),
         coin("hall_gallery_coin", 1952, vault + 4),
-        door("hall_west_door", "back to the vector well", 48, floor, WELL, "well_top_door"),
+        entity("LoadingZone", 64, h - 16, 96, 16, id="hall_west_door", name="down to the Vector Well",
+               activation="EdgeExit", target_room=WELL, target_zone="well_top_door", bidirectional=True),
+        label("hall_well_sign", 29, 800, "↓ VECTOR WELL", 164),
         start(rid, 176, floor),
         door("hall_gallery_exit", "on to the inversion gallery", w - 112, gallery_floor, GALLERY, "gallery_west_door"),
     ]
-    return rid, room(rid, e, "THE CONSERVATION HALL: TWO PLACES MADE ONE")
+    ladder = """
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [96, 848], size: [32, 176]),
+    ]),"""
+    return rid, room(rid, e, "THE CONSERVATION HALL: TWO PLACES MADE ONE", extra_fields=ladder)
 
 
 def inversion_gallery():
