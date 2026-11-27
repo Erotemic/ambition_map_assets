@@ -50,7 +50,9 @@ if str(TOOLS) not in sys.path:
 from ambition_ldtk_tools.ldtk.paths import default_worlds_dir  # noqa: E402
 
 sys.path.insert(0, str(TOOL_SPECS / "gate_network"))
+sys.path.insert(0, str(TOOL_SPECS))
 import gates  # noqa: E402
+from district_kit import make_rooms  # noqa: E402
 
 WORLD_LDTK = default_worlds_dir() / "science.ldtk"
 SANDBOX_LDTK = default_worlds_dir() / "sandbox.ldtk"
@@ -63,8 +65,7 @@ GALLERY = "gnu_ton_inversion_gallery"
 APPROACH = "gnu_ton_works_approach"
 ARENA = "gnu_ton_shoulders"
 
-#: The station's rooms the works join (`game/ambition_map_assets/ambition_content/generators/orbital_station/make_specs.py`):
-#: the spoke's door at the orchard, and the lower end of the approach's lift.
+#: The spoke connects to the orchard and to the express lift.
 SPOKE = "orbital_station_spoke"
 SPOKE_WORKS_DOOR = "spoke_works_door"
 SPOKE_LIFT_DOOR = "spoke_lift_door"
@@ -91,12 +92,12 @@ WALL = 16
 
 #: Each room: (world_x, world_y, width, height).
 ROOMS_AT = {
-    ORCHARD: (0, 0, 2816, 960),
-    WELL: (3072, -640, 1280, 1600),
-    HALL: (4608, -704, 2560, 1024),
-    GALLERY: (7424, -704, 2560, 960),
-    APPROACH: (10240, -2560, 1280, 1408),
-    ARENA: (10240, -1024, 1920, 1280),
+    ORCHARD: (8192, 1088, 2816, 960),
+    WELL: (11264, 448, 1280, 1600),
+    HALL: (12800, 384, 2560, 1024),
+    GALLERY: (15616, 384, 2560, 960),
+    APPROACH: (18432, -1472, 1280, 1408),
+    ARENA: (18432, 64, 1920, 1280),
 }
 
 
@@ -328,7 +329,7 @@ def orchard():
         solid("vault_west", 0, 0, nook_x, vault),
         solid("vault_nook_cap", nook_x, 0, nook_w, 16),
         solid("vault_east", nook_x + nook_w, 0, w - nook_x - nook_w, vault),
-        solid("west_wall", 0, vault, WALL, floor - vault),
+        solid("west_wall", 0, vault, WALL, floor - vault - 128),
         solid("east_wall", w - WALL, vault, WALL, floor - vault),
         # The ground: three banks and two chasms.
         solid("west_bank", 0, floor, 960, h - floor),
@@ -357,9 +358,8 @@ def orchard():
         # Doors.
         door("orchard_hub_door", "back to the hub", 64, floor, HUB_ROOM, HUB_DOOR),
         start(rid, 176, floor),
-        # The spoke to the station, by the way in: the works and the station
-        # are one geography.
-        door("orchard_spoke_door", "the spoke to the station", 272, floor, SPOKE, SPOKE_WORKS_DOOR),
+        entity("LoadingZone", 0, floor - 128, 16, 128, id="orchard_spoke_door", name="to the tram spoke",
+               activation="EdgeExit", target_room=SPOKE, target_zone=SPOKE_WORKS_DOOR, bidirectional=True),
         door("orchard_east_door", "on to the vector well", w - 112, floor, WELL, "well_bottom_door"),
         # The trail's ring (ASCENT, `data/gate_network.ron`) and its terminal,
         # on the west bank between the first tree and the first chasm.
@@ -695,20 +695,14 @@ def main(argv):
         print(path)
     if "--apply" not in argv:
         return 0
-    # The rooms are made again from nothing: a room of the first draft may
-    # stand where a room of this one goes.
     world = WORLD_LDTK.read_text()
-    for retired in (*RETIRED, *(build.__name__ and path.stem for build, path in zip(ROOMS, made))):
+    for retired in RETIRED:
         if f'"identifier": "{retired}"' in world:
             code, _ = run("level", "delete", retired, "--ldtk", str(WORLD_LDTK), "--in-place", "--no-repair")
             if code != 0:
                 return code
-    # Each room's doors name the other rooms, so the world is whole only
-    # after the last room: until then it is enough that each was written.
-    for path in made:
-        code, out = run("area", "create", str(path), "--ldtk", str(WORLD_LDTK), "--replace-existing")
-        if code != 0 and "wrote new level" not in out and "replaced level" not in out:
-            return code
+    if code := make_rooms(WORLD_LDTK, made, keep_position=True):
+        return code
     # The hub's door (only with `--hub`: the hub is the gate network's, and
     # these edits are the first draft's; they change nothing on a hub that
     # has them). Until it names the orchard, the hub's check finds a door to

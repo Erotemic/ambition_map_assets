@@ -4,16 +4,16 @@ The gravity works of the Science dimension (Jon, 2026-10-24: GNU-ton lives
 in the Science dimension, with its orbital station): four rooms of gravity
 and portal puzzles, and GNU-ton at the end. The world file is
 `science.ldtk`, which holds the station's rooms too
-(`game/ambition_map_assets/ambition_content/generators/orbital_station/`). The orchard's spoke door leads along the spoke
-to the station's service deck: the works and the station are one
-geography, with a gate each (`ASCENT` at the orchard, `GALACTIC` at the
-station). The rooms use the station's `orbital_truss` theme: open trusses
+(`../orbital_station/`). Walk west from the orchard to the tram spoke
+and the station's observation deck. The orchard has the ASCENT gate.
+The station has the GALACTIC gate. The rooms use the `orbital_truss` theme: open trusses
 under glass, the planet below. The central hub's door `gnu_ton_handle_hub_door`
 (main floor, between the Hall of Biomes and the gate stack) leads in, both
 ways. The arena's door goes home to it.
 
-`make_specs.py` writes each room's `.ron` spec and, with `--apply`, makes
-the rooms and the hub's door. Change the script, not the specs. Run it from the repository root.
+`make_specs.py` writes the room specs. Run it from the repository root.
+Use `--apply` to update the generated rooms. Edit LDtk-owned rooms in
+`science.ldtk`.
 
 ## How each room is made
 
@@ -107,10 +107,11 @@ hall's shelf and gallery are closed by solid wall.
 each room with a player's inputs: the trees of the orchard, the swinging
 tree, the four falls of the well, the hall's two portal pairs, the gallery's
 levers and its crossing, the approach's climb, the lift and its gate in
-the spoke, the spoke to the station, and the door chain from the hub to the
-arena and home. It also checks that GNU-ton is alive at his placement, that his punch
-opens his portals in this room, and that his recorded defeat opens the way
-home.
+the spoke, and the door chain from the hub to the arena and home.
+It also checks that GNU-ton is alive, that his punch opens his portals,
+and that his recorded defeat opens the way home. The orbital station
+tests check the tram route from the orchard to the observation deck
+and back.
 
 ## Not done
 
