@@ -93,10 +93,10 @@ WALL = 16
 #: Each room: (world_x, world_y, width, height).
 ROOMS_AT = {
     ORCHARD: (8192, 1088, 2816, 960),
-    WELL: (11264, 448, 1280, 1600),
-    HALL: (12800, 384, 2560, 1024),
-    GALLERY: (15616, 384, 2560, 960),
-    APPROACH: (18432, -1472, 1280, 1408),
+    WELL: (11008, 256, 1280, 1600),
+    HALL: (11008, -768, 2560, 1024),
+    GALLERY: (13568, -1232, 2560, 960),
+    APPROACH: (16128, -1680, 1280, 1408),
     ARENA: (18432, 64, 1920, 1280),
 }
 
@@ -316,8 +316,8 @@ def orchard():
     Twist: the last column swings from bank to bank. A body on the ceiling
     stays in it only by walking with it.
 
-    The chasms are 192 deep, deeper than a double jump, and the steps out of
-    each are on its near side: a fall costs the walk back up.
+    Steps lead out of each chasm to the west. Service ladders lead to the
+    east banks.
     """
     rid = ORCHARD
     _, _, w, h = ROOMS_AT[rid]
@@ -330,7 +330,7 @@ def orchard():
         solid("vault_nook_cap", nook_x, 0, nook_w, 16),
         solid("vault_east", nook_x + nook_w, 0, w - nook_x - nook_w, vault),
         solid("west_wall", 0, vault, WALL, floor - vault - 128),
-        solid("east_wall", w - WALL, vault, WALL, floor - vault),
+        solid("east_wall", w - WALL, vault, WALL, floor - vault - 128),
         # The ground: three banks and two chasms.
         solid("west_bank", 0, floor, 960, h - floor),
         solid("chasm_one_floor", 960, pit_floor, 544, h - pit_floor),
@@ -360,13 +360,21 @@ def orchard():
         start(rid, 176, floor),
         entity("LoadingZone", 0, floor - 128, 16, 128, id="orchard_spoke_door", name="to the tram spoke",
                activation="EdgeExit", target_room=SPOKE, target_zone=SPOKE_WORKS_DOOR, bidirectional=True),
-        door("orchard_east_door", "on to the vector well", w - 112, floor, WELL, "well_bottom_door"),
+        entity("LoadingZone", w - WALL, floor - 128, WALL, 128, id="orchard_east_door",
+               name="to the vector well", activation="EdgeExit", target_room=WELL,
+               target_zone="well_bottom_door", bidirectional=True),
+        label("orchard_service_sign", 1232, 812, "SERVICE LADDER →", 232),
         # The trail's ring (ASCENT, `data/gate_network.ron`) and its terminal,
         # on the west bank between the first tree and the first chasm.
         *gates.as_ron(gates.ring("Gravity Trail Gate", "orchard_gate", 568, floor, "the gate")),
         *gates.as_ron(gates.terminal("Gravity Trail Gate", "orchard_gate_terminal", 836, floor)),
     ]
-    return rid, room(rid, e, "THE ORCHARD: HERE AN APPLE FALLS UP")
+    ladders = """
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [1472, 688], size: [32, 208]),
+        (kind: "Ladder", px: [2432, 688], size: [32, 208]),
+    ]),"""
+    return rid, room(rid, e, "THE ORCHARD: HERE AN APPLE FALLS UP", extra_fields=ladders)
 
 
 def vector_well():
@@ -392,11 +400,11 @@ def vector_well():
     corridor_top = floor - 128
     e = [
         solid("floor", 0, floor, w, h - floor),
-        solid("vault", 0, 0, w, vault),
+        solid("vault_west", 0, 0, 64, vault),
+        solid("vault_east", 160, 0, w - 160, vault),
         solid("east_wall", w - WALL, vault, WALL, floor - vault),
         solid("passage_west_wall", 0, vault, WALL, passage_floor - vault),
         solid("west_rock", 0, passage_floor, shaft_x, corridor_top - passage_floor),
-        solid("corridor_west_wall", 0, corridor_top, WALL, floor - corridor_top),
         # Teach: the floor of the well pulls right, onto the east wall.
         field("well_east_pull", 800, 1024, w - 800, floor - 1024, "right"),
         coin("well_east_wall_coin", w - WALL - 28, 1072),
@@ -405,11 +413,19 @@ def vector_well():
         # Twist: up, by the west wall, to the vault and the passage.
         field("well_up_pull", shaft_x, vault, 320, 560 - vault, "up"),
         coin("well_vault_coin", 560, vault + 4),
-        door("well_bottom_door", "back to the orchard", 48, floor, ORCHARD, "orchard_east_door"),
+        entity("LoadingZone", 0, corridor_top, WALL, 128, id="well_bottom_door",
+               name="to the orchard", activation="EdgeExit", target_room=ORCHARD,
+               target_zone="orchard_east_door", bidirectional=True),
         start(rid, 176, floor),
-        door("well_top_door", "on to the conservation hall", 48, passage_floor, HALL, "hall_west_door"),
+        entity("LoadingZone", 64, 0, 96, 16, id="well_top_door", name="up to Conservation Hall",
+               activation="EdgeExit", target_room=HALL, target_zone="hall_west_door", bidirectional=True),
+        label("well_hall_sign", 146, 60, "↑ CONSERVATION HALL", 166),
     ]
-    return rid, room(rid, e, "THE VECTOR WELL: EVERY WALL IS A FLOOR")
+    ladder = """
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [96, 0], size: [32, 144]),
+    ]),"""
+    return rid, room(rid, e, "THE VECTOR WELL: EVERY WALL IS A FLOOR", extra_fields=ladder)
 
 
 def conservation_hall():
@@ -421,13 +437,13 @@ def conservation_hall():
     on is down: off its edge, into a portal that is the whole floor of the
     basin below. Its other end is in the next wall, facing a pit too wide to
     jump. What falls far comes out fast, and flies over.
-    Twist: the door on is in a gallery shut in by solid wall. Its way in is a
+    Twist: the exit is in a gallery above the hall floor. Its way in is a
     portal in the floor of the hall whose other end is in the gallery's
     floor, under a field that pulls up: you fall in down, come out going up,
     and go on falling up, onto the ceiling (the orchard's idea). Walk the
-    ceiling out of the field and drop to the door.
+    ceiling out of the field and drop to the exit.
 
-    The pit's floor is a hazard: the hall starts again at its door.
+    The pit floor is a hazard. A fall returns the robot to the hall entrance.
     """
     rid = HALL
     _, _, w, h = ROOMS_AT[rid]
@@ -436,12 +452,16 @@ def conservation_hall():
     pillar_x = 1280
     pit_end = 1568
     gallery_x, gallery_floor = 1856, 432
+    exit_height = 128
     basin = pillar_x - shelf_end
     e = [
         solid("vault", 0, 0, w, vault),
         solid("west_wall", 0, vault, WALL, floor - vault),
-        solid("east_wall", w - WALL, vault, WALL, floor - vault),
-        solid("floor_west", 0, floor, pillar_x + 32, h - floor),
+        solid("east_wall", w - WALL, vault, WALL, gallery_floor - exit_height - vault),
+        solid("east_wall_below_gallery", w - WALL, gallery_floor, WALL, floor - gallery_floor),
+        solid("floor_west", 0, floor, 64, h - floor),
+        solid("floor_at_shelf", 160, floor, pillar_x + 32 - 160, h - floor),
+        ledge("hall_shaft_landing", 64, 976, 96),
         solid("pit_bed", pillar_x + 32, h - 16, pit_end - pillar_x - 32, 16),
         hazard("pit_hazard", pillar_x + 32, h - 32, pit_end - pillar_x - 32),
         solid("floor_east", pit_end, floor, w - pit_end, h - floor),
@@ -467,17 +487,25 @@ def conservation_hall():
         portal("hall_well_door", "hall_gallery_pair", 2112, floor - 9, "up", "green"),
         portal("hall_gallery_door", "hall_gallery_pair", 2016, gallery_floor - 9, "up", "magenta"),
         coin("hall_gallery_coin", 1952, vault + 4),
-        door("hall_west_door", "back to the vector well", 48, floor, WELL, "well_top_door"),
+        entity("LoadingZone", 64, h - 16, 96, 16, id="hall_west_door", name="down to the Vector Well",
+               activation="EdgeExit", target_room=WELL, target_zone="well_top_door", bidirectional=True),
+        label("hall_well_sign", 29, 800, "↓ VECTOR WELL", 164),
         start(rid, 176, floor),
-        door("hall_gallery_exit", "on to the inversion gallery", w - 112, gallery_floor, GALLERY, "gallery_west_door"),
+        entity("LoadingZone", w - WALL, gallery_floor - exit_height, WALL, exit_height, id="hall_gallery_exit",
+               name="to the Inversion Gallery", activation="EdgeExit", target_room=GALLERY,
+               target_zone="gallery_west_door", bidirectional=True),
     ]
-    return rid, room(rid, e, "THE CONSERVATION HALL: TWO PLACES MADE ONE")
+    ladder = """
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [96, 848], size: [32, 176]),
+    ]),"""
+    return rid, room(rid, e, "THE CONSERVATION HALL: TWO PLACES MADE ONE", extra_fields=ladder)
 
 
 def inversion_gallery():
     """4. THE INVERSION GALLERY — the whole room turns over (switches).
 
-    Teach: a lever by the door turns the room's gravity up; a lever on the
+    Teach: a lever by the west passage turns the room's gravity up; a lever on the
     ceiling above it turns it down again.
     Test: the floor stops at a chasm with a hazard in it; the ceiling goes
     on. Turn the room over and walk the ceiling across.
@@ -485,10 +513,9 @@ def inversion_gallery():
     it. Before it is a portal in the ceiling (the hall's idea), and past it
     the other end, on the face of a wall that hangs from the ceiling. Upside
     down, the road steps down to the first portal: walk off the step, fall
-    up into it, and come out of the hanging wall past the hole. Past it, a column of DOWN field (the orchard's field,
-    turned) stands from the ceiling to the floor: in an upside-down room it
-    is the one place that falls down, onto the ledge of GNU-ton's door and a
-    shrine.
+    up into it, and come out of the hanging wall past the hole. The field
+    by the east passage pulls down to the floor. The floor leads past the
+    shrine and into the Approach.
 
     A fall into a hazard starts the gallery again, the right way up.
     """
@@ -501,13 +528,14 @@ def inversion_gallery():
     step_x, step_low = 1600, 160
     hole_x, hole_end = 1760, 2080
     down_x = 2304
+    exit_height = 128
     e = [
         solid("vault_west", 0, 0, step_x, step_low),
         solid("vault_before_hole", step_x, 0, hole_x - step_x, vault),
         solid("vault_east", hole_end, 0, w - hole_end, vault),
         hazard("hole_hazard", hole_x, 0, hole_end - hole_x),
-        solid("west_wall", 0, step_low, WALL, floor - step_low),
-        solid("east_wall", w - WALL, vault, WALL, floor - vault),
+        solid("west_wall", 0, step_low, WALL, floor - exit_height - step_low),
+        solid("east_wall", w - WALL, vault, WALL, floor - exit_height - vault),
         solid("floor_west", 0, floor, chasm_x, h - floor),
         hazard("chasm_hazard", chasm_x, h - 16, chasm_end - chasm_x),
         solid("floor_east", chasm_end, floor, w - chasm_end, h - floor),
@@ -519,12 +547,16 @@ def inversion_gallery():
         portal("gallery_step_door", "gallery_hole_pair", step_x, vault - 9, "down", "cyan", length=hole_x - step_x),
         solid("hanging_wall", hole_end, vault, 32, 192),
         portal("gallery_far_door", "gallery_hole_pair", hole_end + 32 - 9, vault + 32, "right", "rose", length=hole_x - step_x),
-        # The column that remembers down, over the door's ledge.
-        field("gallery_down_column", down_x, vault, w - WALL - down_x, floor - vault, "down"),
+        # The field pulls down to the path through the east passage.
+        field("gallery_down_column", down_x, vault, w - down_x, floor - vault, "down"),
         entity("ShrineSpawn", down_x + 48, floor - 80, 44, 80, id="gallery_shrine", name="the shrine before GNU-ton"),
-        door("gallery_west_door", "back to the conservation hall", 48, floor, HALL, "hall_gallery_exit"),
+        entity("LoadingZone", 0, floor - exit_height, WALL, exit_height, id="gallery_west_door",
+               name="to Conservation Hall", activation="EdgeExit", target_room=HALL,
+               target_zone="hall_gallery_exit", bidirectional=True),
         start(rid, 176, floor),
-        door("gallery_arena_door", "on to the approach", w - 112, floor, APPROACH, "approach_gallery_door"),
+        entity("LoadingZone", w - WALL, floor - exit_height, WALL, exit_height, id="gallery_arena_door",
+               name="to the Approach", activation="EdgeExit", target_room=APPROACH,
+               target_zone="approach_gallery_door", bidirectional=True),
     ]
     return rid, room(rid, e, "THE INVERSION GALLERY: THE WHOLE ROOM TURNS OVER", title_y=step_low + 48)
 
@@ -532,26 +564,26 @@ def inversion_gallery():
 def approach():
     """5. THE APPROACH — the climb to GNU-ton, and the way back.
 
-    The gallery solved, the works open up: a tall hall under glass, the
-    giant's shoulders above. A column of up field by the door lifts the
-    robot to the vault (the orchard's idea, one last time, with nothing to
-    lose) along the face of a tower too tall to jump; walk the vault out of
-    it and drop onto the tower, where GNU-ton's door is. By the way in, the works' lift goes down to the spoke, by the
-    orchard: the shortcut back, once the gallery is behind you. Its gate in
-    the spoke is let go from the lift's side.
+    Walk east from the west passage to the field. The field lifts the robot
+    along the face of the tower to the vault. Walk out of the field to drop
+    onto the landing at GNU-ton's door. The lift near the west passage goes
+    down to the spoke. The release for the spoke gate is on the lift side.
     """
     rid = APPROACH
     _, _, w, h = ROOMS_AT[rid]
     floor, vault = h - 64, 48
     column_x, column_w = 512, 192
     landing_y = 352
+    exit_height = 128
     ring_x = column_x + column_w - 32
     e = [
         solid("floor", 0, floor, w, h - floor),
         solid("vault", 0, 0, w, vault),
-        solid("west_wall", 0, vault, WALL, floor - vault),
+        solid("west_wall", 0, vault, WALL, floor - exit_height - vault),
         solid("east_wall", w - WALL, vault, WALL, floor - vault),
-        door("approach_gallery_door", "back to the inversion gallery", 48, floor, GALLERY, "gallery_arena_door"),
+        entity("LoadingZone", 0, floor - exit_height, WALL, exit_height, id="approach_gallery_door",
+               name="to the Inversion Gallery", activation="EdgeExit", target_room=GALLERY,
+               target_zone="gallery_arena_door", bidirectional=True),
         start(rid, 176, floor),
         door("approach_lift_door", "the lift down to the spoke", 304, floor, SPOKE, SPOKE_LIFT_DOOR),
         label("approach_lift_sign", 240, floor - 160, "LIFT: DOWN TO THE SPOKE AND THE ORCHARD", 420),

@@ -36,40 +36,45 @@ way along the face).
      A column stands over it from bank to bank: walk the ceiling across.
    - Twist: the last column swings from bank to bank (256 each way,
      0.5 rad/s). On the ceiling you stay in it only if you walk with it.
+   - Walk across either pit floor to the service ladder on its east
+     bank. Use the steps on the west side to go back.
+   - Continue east along the floor into the Vector Well.
 2. **`gnu_ton_vector_well` — every wall is a floor (side fields).**
+   - The bottom passage opens west onto the orchard floor.
    - Teach: the floor of the well pulls right. Walk in, the east wall is
      the floor; walk up it. Over the field you fall back to the floor.
    - Test: a band across the well pulls left. Walk up the east wall into it,
      fall across the well, and walk up the west wall.
    - Twist: at the top of the west wall an up field (room 1) takes you to
-     the vault. Along the vault, out of the field, you drop into the passage
-     of the door on. That is right, left, up, down.
+     the vault. Walk out of the field to drop into the upper passage.
+   - Climb the ladder from the passage to Conservation Hall.
 3. **`gnu_ton_conservation_hall` — two places made one (portals).**
+   - Climb from the shaft landing to the hall floor. To go down to the
+     well, step into the shaft and drop through the landing.
    - Teach: a shelf too tall to jump. A portal in the floor before it has
      its other end on a post on top. Walk in, come out on top.
    - Test: the shelf is closed in by a wall to the vault. The only way on is
      off its edge, into a portal that is the whole floor of the basin. Its
      other end is in the next wall, over a pit with a hazard in it. What falls
      far comes out fast and flies over.
-   - Twist: the door on is in a gallery closed in by solid wall. A portal in
-     the hall's floor has its other end in the gallery's floor, under an up
-     field (room 1). You fall in going down, come out going up, and go on
-     falling up to the ceiling. Walk out of the field and drop to the door.
+   - Twist: a portal in the hall floor has its other end in the raised
+     gallery floor, under a field that pulls up. Fall into the portal and
+     go up to the ceiling. Walk out of the field and fall to the floor.
+     The east passage connects this floor to the Inversion Gallery.
 4. **`gnu_ton_inversion_gallery` — the whole room turns over (switches).**
-   - Teach: the lever by the door (`SetGravityUp`) turns the room's gravity
-     up. The lever on the ceiling over it (`SetGravityDown`) turns it back.
+   - Teach: the lever by the west passage (`SetGravityUp`) turns the room's
+     gravity up. The lever above it (`SetGravityDown`) turns gravity down.
    - Test: the floor stops at a chasm with a hazard. The ceiling goes on.
      Turn the room over and walk the ceiling across.
    - Twist: the ceiling has a hole with a hazard in it, too wide to jump. The
      upside-down road steps down to a portal in the ceiling (room 3). Its
      other end is on a wall that hangs from the ceiling past the hole. Past
-     that, a column of DOWN field (room 1, turned) is the one place in the
-     room that falls down: onto the ledge of a shrine and GNU-ton's door.
+     that, a field pulls down to the shrine floor. Walk east through the
+     passage into the Approach.
 5. **`gnu_ton_works_approach` — the climb to GNU-ton, and the way back.**
-   The gallery solved, a tall hall under glass: a column of up field by
-   the door lifts the robot to the vault (room 1, one last time, with
-   nothing to lose); out of it, the robot drops onto the landing of
-   GNU-ton's door. By the way in, the works' lift goes down to the end of
+   From the west passage, walk into the field that lifts the robot to
+   the vault. Walk out of the field to drop to the landing at GNU-ton's
+   door. Near the passage, the works' lift goes down to the end of
    the station's spoke, by the orchard. Its gate in the spoke is let go from
    the lift's side (`spoke_lift_release`): the shortcut back, once the
    gallery is behind you.
@@ -105,9 +110,9 @@ hall's shelf and gallery are closed by solid wall.
 
 `game/ambition_app/tests/the_gnu_ton_handle.rs` drives the robot through
 each room with a player's inputs: the trees of the orchard, the swinging
-tree, the four falls of the well, the hall's two portal pairs, the gallery's
-levers and its crossing, the approach's climb, the lift and its gate in
-the spoke, and the door chain from the hub to the arena and home.
+tree, the four falls of the well, all three portal pairs in the hall, the
+gallery levers and crossing, the approach's climb, the lift and its gate in
+the spoke, and the route from the hub to the arena and home.
 It also checks that GNU-ton is alive, that his punch opens his portals,
 and that his recorded defeat opens the way home. The orbital station
 tests check the tram route from the orchard to the observation deck
