@@ -295,9 +295,17 @@ def inn():
         solid("east_wall", w - WALL, 32, WALL, g - 32),
         door("inn_door", "out onto the moor", 40, g, MOOR, "moor_inn_door"),
         start(INN, 140, g),
+        ledge("inn_firewood_box", 144, 384, 80),
+        ledge("inn_map_gallery", 128, 320, 144),
+        ledge("inn_mantel", 272, 320, 128),
+        ledge("inn_tasting_table", 448, 384, 80),
+        ledge("inn_counter", 560, 400, 288),
         resident("npc_evil_tobias", "evil_tobias", 430, g),
         resident("npc_evil_gudrun", "evil_gudrun", 700, g),
-        sign("inn_sign_rules", 512, 110, "NO SINGING THE OLD ANTHEM. HUM IT.", 420),
+        sign("inn_sign_rules", 470, 140, "NO SINGING THE OLD ANTHEM. HUM IT.", 304),
+        sign("inn_map_ridge", 219, 190, "RIDGE", 60),
+        sign("inn_map_road", 219, 214, "ROAD", 60),
+        sign("inn_map_crypt", 219, 238, "CRYPT", 60),
     ]
     return INN, room(INN, e, at=INN_AT, size=(w, h), biome="castle_godwin", music="argand_waltz", bg="#2A1A14",
                      title="THE CROOKED LANTERN", generator=GENERATOR)

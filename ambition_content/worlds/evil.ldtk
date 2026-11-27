@@ -11,7 +11,7 @@
 	"iid": "ambition-evil-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 310390,
+	"nextUid": 310402,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -33804,18 +33804,18 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,2,2,2,2,2,2,2,
+						2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,
+						2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -34067,18 +34067,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [18,6],
+							"__grid": [19,8],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -2098,
-							"__worldY": 2414,
+							"__worldX": -2082,
+							"__worldY": 2444,
 							"iid": "DebugLabel-309064",
-							"width": 420,
+							"width": 304,
 							"height": 24,
 							"defUid": 2007,
-							"px": [302,110],
+							"px": [318,140],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "inn_sign_rules", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -34087,6 +34087,84 @@
 								{ "__identifier": "text", "__type": "String", "__value": "NO SINGING THE OLD ANTHEM. HUM IT.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["NO SINGING THE OLD ANTHEM. HUM IT."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [11,11],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -2211,
+							"__worldY": 2494,
+							"iid": "DebugLabel-310399",
+							"width": 60,
+							"height": 24,
+							"defUid": 2007,
+							"px": [189,190],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "inn_map_ridge", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["inn_map_ridge"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "RIDGE", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["RIDGE"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [11,13],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -2211,
+							"__worldY": 2518,
+							"iid": "DebugLabel-310400",
+							"width": 60,
+							"height": 24,
+							"defUid": 2007,
+							"px": [189,214],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "inn_map_road", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["inn_map_road"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "ROAD", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ROAD"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [11,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -2211,
+							"__worldY": 2542,
+							"iid": "DebugLabel-310401",
+							"width": 60,
+							"height": 24,
+							"defUid": 2007,
+							"px": [189,238],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "inn_map_crypt", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["inn_map_crypt"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "CRYPT", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["CRYPT"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
