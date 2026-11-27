@@ -127,6 +127,8 @@ GATEHOUSE_STAIR = (1240, 1304)
 #: cracked stone until the lever in the cells is pulled, a shortcut from the
 #: lower floor up to the barracks (a ladder up the cells' shaft).
 BARRACKS_TRAPDOOR = (2000, 2064)
+BARRACKS_BUNKS = (360, 1000, 1640)
+BARRACKS_BUNK_LADDER_OFFSET = 248
 TRAPDOOR_LEVER = "castle_godwin_trapdoor_lever"
 KITCHENS = "castle_godwin_kitchens"
 CELLS = "castle_godwin_cells"
@@ -449,19 +451,23 @@ def barracks():
         edge(f"{rid}_east", "into the lab tower", w - WALL, floor, TOWER, f"{TOWER}_barracks"),
     ]
     # The bunks: each bed's picture under its two one-way mattresses.
-    for i, x in enumerate((360, 1000, 1640)):
+    for i, x in enumerate(BARRACKS_BUNKS):
         e += [standing(f"bunk_bed_{i}", "castle_bunk_bed", x, floor),
               ledge(f"bunk_{i}_low", x, floor - 112, 224), ledge(f"bunk_{i}_high", x, floor - 224, 224)]
     e += [
-        standing("lockers_west", "castle_locker_row", 180, floor),
+        standing("lockers_west", "castle_locker_row", 160, floor),
+        standing("barracks_bunk_walks", "castle_barracks_bunk_walks", 272, floor),
         standing("mess_table", "castle_mess_table", 1250, floor),
         standing("lockers_east", "castle_locker_row", 1900, floor),
         standing("poster_order", "castle_propaganda_poster_b", 880, floor - 260),
         standing("wanted_barracks", "castle_wanted_poster", 2060, floor - 150),
         standing("poster_obey_barracks", "castle_propaganda_poster_a", 2420, floor - 170),
+        ledge("barracks_footlocker", 288, floor - 64, 64),
+        ledge("barracks_bunk_walk_west", 656, floor - 112, 336),
+        ledge("barracks_bunk_walk_east", 1296, floor - 112, 336),
     ]
     for i, x in enumerate((760, 1400, 2040)):
-        e.append(solid(f"pillar_{i}", x, 48, 64, floor - 208))
+        e.append(solid(f"pillar_{i}", x, 48, 64, floor - 240))
     e += [
         soldier(rid, 1, 520, floor),
         soldier(rid, 2, 1100, floor - 224),
@@ -814,6 +820,7 @@ PAINT = [
     (GATEHOUSE, "Climbable", 1, GATEHOUSE_STAIR[0] + 16, 704 - 64, 32, ROOMS_AT[GATEHOUSE][2] - 704 + 64),
     (GATEHOUSE, "Climbable", 1, 1408, 416, 32, 288),
     (BARRACKS, "Climbable", 1, BARRACKS_TRAPDOOR[0] + 16, 704 - 64, 32, ROOMS_AT[BARRACKS][2] - 704 + 64),
+    *((BARRACKS, "Climbable", 1, x + BARRACKS_BUNK_LADDER_OFFSET, 448, 32, 256) for x in BARRACKS_BUNKS),
 ]
 
 #: The fight of the great hall: its waves are authored in
