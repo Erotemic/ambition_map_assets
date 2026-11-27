@@ -97,9 +97,9 @@ SCENERY = {
         ("frontier_slag_pots", 670, 530),
     ],
     "frontier_clinker_row": [
-        ("frontier_row_shacks_west", 220, 470),
-        ("frontier_row_pump", 880, 430),
-        ("frontier_row_shacks_east", 1580, 470),
+        ("frontier_row_shacks_west", 132, 470),
+        ("frontier_row_pump", 850, 408),
+        ("frontier_row_shacks_east", 1580, 450),
     ],
     "frontier_clinker_railhead": [("frontier_railhead_grade", 0, 600, 1.0)],
 }

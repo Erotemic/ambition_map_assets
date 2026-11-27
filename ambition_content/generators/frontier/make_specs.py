@@ -856,8 +856,7 @@ def clinker_works():
 
 
 def clinker_row():
-    """The shacks under the works: their roofs a jump up, the pump on a hump
-    of cinders in the middle of the Row, washing on lines."""
+    """The street goes past the pump. A drying deck connects the roofs."""
     rid = ROW
     w, h = ROOMS_AT[rid][1]
     floor = RIM
@@ -868,17 +867,23 @@ def clinker_row():
         edge("row_from_yard", "back to the yard", 0, floor, YARD, "yard_to_row"),
         edge("row_to_railhead", "on to the railhead", w - WALL, floor, RAILHEAD, "railhead_from_row"),
         start(rid, 100, floor),
+        ledge("wash_stand_west", 144, floor - 64, 80),
         ledge("shack_roof_1", 240, floor - 112, 320),
         ledge("shack_roof_2", 600, floor - 96, 240),
+        ledge("drying_walk_west", 864, floor - 96, 144),
+        ledge("drying_deck", 1040, floor - 128, 320),
+        ledge("drying_walk_east", 1392, floor - 96, 184),
         slope("cinders_up", 896, floor, 1104, hump),
         solid("cinders_top", 1104, hump, 192, floor - hump),
         slope("cinders_down", 1296, hump, 1504, floor),
         ledge("shack_roof_3", 1600, floor - 112, 280),
         ledge("shack_roof_4", 1960, floor - 96, 280),
+        ledge("wash_stand_east", 2264, floor - 64, 80),
         # Ida Soames, who does the Row's washing.
         resident("npc_frontier_laundress", "frontier_laundress", 1200, hump),
-        sign("row_sign_name", 600, floor - 300, "THE ROW", 160),
-        sign("row_sign_laundry", 1800, floor - 260, "WASHING DONE. SOOT NOT GUARANTEED OUT.", 420),
+        sign("row_sign_name", 400, floor - 144, "THE ROW", 144),
+        sign("row_sign_laundry", 1740, floor - 170, "WASHING DONE", 260),
+        sign("row_sign_soot", 1740, floor - 142, "SOOT NOT GUARANTEED OUT.", 260),
     ]
     return build(rid, e, "THE ROW", FLATS_MUSIC, dangerous=True, biome="frontier_works")
 
