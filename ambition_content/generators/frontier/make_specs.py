@@ -636,9 +636,7 @@ def siding_trestle():
 
 
 def sprocket_row():
-    """The mechanics' street over the trestle: its arch, Hettie Gimbal's
-    open garage with its hoist, a parts yard and a boiler on blocks, and the
-    workshops' rolling gate, shut."""
+    """The mechanics' street, with a raised route from the garage to the yard."""
     rid = SPROCKET
     w, h = ROOMS_AT[rid][1]
     floor = RIM
@@ -648,14 +646,15 @@ def sprocket_row():
         edge("sprocket_from_trestle", "back over the trestle", 0, floor, TRESTLE, "trestle_to_sprocket"),
         start(rid, 100, floor),
         sign("sprocket_sign_arch", 240, floor - 250, "SPROCKET ROW: FITTERS, SMITHS, MECHANICS", 460),
-        # Hettie's garage: the hoist's beam over the bay, off a crate.
-        solid("garage_crate", 940, floor - 64, 80, 64),
-        ledge("hoist_beam", 680, floor - 128, 280),
+        ledge("garage_workbench", 544, floor - 64, 112),
+        ledge("garage_trolley", 944, floor - 64, 80),
+        ledge("hoist_beam", 672, floor - 128, 288),
+        ledge("transfer_walk", 992, floor - 144, 208),
         resident("npc_frontier_mechanic", "frontier_mechanic", 760, floor),
         sign("sprocket_sign_garage", 780, floor - 260, "HETTIE GIMBAL: REPAIRS OF ALL KINDS", 400),
-        # The parts yard: a boiler on blocks, its top off a crate.
-        solid("yard_crate", 1220, floor - 64, 80, 64),
-        solid("boiler", 1320, floor - 112, 160, 112),
+        ledge("yard_parts_rack", 1216, floor - 64, 96),
+        solid("boiler", 1312, floor - 112, 176, 48),
+        ledge("yard_valve_bench", 1488, floor - 64, 96),
         # The workshops' rolling gate across the street's end.
         sign("sprocket_sign_gate", 1800, floor - 230, "WORKSHOPS: CLOSED FOR STOCKTAKE", 380),
     ]
