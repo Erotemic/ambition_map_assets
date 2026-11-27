@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 108221,
+	"nextUid": 108491,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -3328,6 +3328,43 @@
 					"doc": null,
 					"__type": "String",
 					"uid": 106533,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "RefLinkBetweenCenters",
+					"editorDisplayPos": "Above",
+					"editorDisplayScale": 1.0,
+					"editorDisplayColor": null,
+					"editorAlwaysShow": false,
+					"editorCutLongValues": true,
+					"editorShowInWorld": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"editorLinkStyle": "CurvedArrow",
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"tilesetUid": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "Any",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"exportToToc": false,
+					"searchable": true
+				},
+				{
+					"identifier": "sprite",
+					"doc": null,
+					"__type": "String",
+					"uid": 108245,
 					"type": "F_String",
 					"isArray": false,
 					"canBeNull": true,
@@ -8000,6 +8037,43 @@
 			"doc": "The colour of a dark room's darkness, #rrggbb",
 			"__type": "String",
 			"uid": 106407,
+			"type": "F_String",
+			"isArray": false,
+			"canBeNull": true,
+			"arrayMinLength": null,
+			"arrayMaxLength": null,
+			"editorDisplayMode": "NameAndValue",
+			"editorDisplayScale": 1,
+			"editorDisplayPos": "Above",
+			"editorLinkStyle": "ZigZag",
+			"editorDisplayColor": null,
+			"editorAlwaysShow": true,
+			"editorShowInWorld": false,
+			"editorCutLongValues": true,
+			"editorTextSuffix": null,
+			"editorTextPrefix": null,
+			"useForSmartColor": false,
+			"exportToToc": false,
+			"searchable": true,
+			"min": null,
+			"max": null,
+			"regex": null,
+			"acceptFileTypes": null,
+			"defaultOverride": null,
+			"textLanguageMode": null,
+			"symmetricalRef": false,
+			"autoChainRef": false,
+			"allowOutOfLevelRef": false,
+			"allowedRefs": "Any",
+			"allowedRefsEntityUid": null,
+			"allowedRefTags": [],
+			"tilesetUid": null
+		},
+		{
+			"identifier": "map_path",
+			"doc": "Path from the dimension map to the room group. Use a slash between groups.",
+			"__type": "String",
+			"uid": 108221,
 			"type": "F_String",
 			"isArray": false,
 			"canBeNull": true,
@@ -35828,17 +35902,21 @@
 					"id": "V_String",
 					"params": ["intro_barrow"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "cave", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "map_path", "__type": "String", "__value": "The Barrows", "__tile": null, "defUid": 108221, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["cave"]
+					"params": ["The Barrows"]
+				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "barrow_vault", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["barrow_vault"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "vault_in_the_dark", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["vault_in_the_dark"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "cave", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "barrow_vault", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["cave"]
+					"params": ["barrow_vault"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
@@ -36186,6 +36264,31 @@
 						},
 						{
 							"__identifier": "Prop",
+							"__grid": [5,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 26404,
+							"__worldY": 2688,
+							"iid": "Prop-108227",
+							"width": 156,
+							"height": 192,
+							"defUid": 104426,
+							"px": [84,64],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_arch"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_arch"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
 							"__grid": [38,18],
 							"__pivot": [0,0],
 							"__tags": [],
@@ -36314,6 +36417,66 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 104932, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [109,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 28064,
+							"__worldY": 2976,
+							"iid": "LoadingZone-108233",
+							"width": 48,
+							"height": 96,
+							"defUid": 2002,
+							"px": [1744,352],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "barrow_to_votive", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_to_votive"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "through the votive passage", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["through the votive passage"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "intro_barrow_votive", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barrow_votive"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "votive_to_barrow", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["votive_to_barrow"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [125,15],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 28330,
+							"__worldY": 2876,
+							"iid": "Prop-108234",
+							"width": 166,
+							"height": 196,
+							"defUid": 104426,
+							"px": [2010,252],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_arch"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_arch"]
 								}] }
 							]
 						},
@@ -37687,6 +37850,31 @@
 									"params": ["barrow_from_moor"]
 								}] },
 								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [93,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 26620,
+							"__worldY": 2317,
+							"iid": "Prop-108403",
+							"width": 152,
+							"height": 179,
+							"defUid": 104426,
+							"px": [1500,461],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_arch"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_arch"]
+								}] }
 							]
 						},
 						{
@@ -39833,51 +40021,51 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [37,33],
+							"__grid": [40,30],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 28512,
-							"__worldY": 2384,
-							"iid": "Prop-107893",
+							"__worldX": 28568,
+							"__worldY": 2342,
+							"iid": "Prop-108430",
 							"width": 128,
-							"height": 112,
+							"height": 154,
 							"defUid": 104426,
-							"px": [592,528],
+							"px": [648,486],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "fantasy_grave_niche", "__tile": null, "defUid": 104424, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fantasy_grave_niche"]
+									"params": ["barrow_arch"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "fantasy_grave_niche", "__tile": null, "defUid": 104425, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104425, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fantasy_grave_niche"]
+									"params": ["barrow_arch"]
 								}] }
 							]
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [106,33],
+							"__grid": [110,29],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 29620,
-							"__worldY": 2384,
-							"iid": "Prop-107894",
-							"width": 128,
-							"height": 112,
+							"__worldX": 29684,
+							"__worldY": 2335,
+							"iid": "Prop-108431",
+							"width": 136,
+							"height": 161,
 							"defUid": 104426,
-							"px": [1700,528],
+							"px": [1764,479],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "fantasy_grave_niche", "__tile": null, "defUid": 104424, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fantasy_grave_niche"]
+									"params": ["barrow_arch"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "fantasy_grave_niche", "__tile": null, "defUid": 104425, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104425, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fantasy_grave_niche"]
+									"params": ["barrow_arch"]
 								}] }
 							]
 						},
@@ -40588,17 +40776,21 @@
 					"id": "V_String",
 					"params": ["intro_barrow_votive"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "cave", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "map_path", "__type": "String", "__value": "The Barrows", "__tile": null, "defUid": 108221, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["cave"]
+					"params": ["The Barrows"]
+				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "barrow_vault", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["barrow_vault"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "vault_in_the_dark", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["vault_in_the_dark"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "cave", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "barrow_vault", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["cave"]
+					"params": ["barrow_vault"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
@@ -40672,8 +40864,8 @@
 						0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,
+						2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -40681,7 +40873,7 @@
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,
+						0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -40838,6 +41030,41 @@
 							]
 						},
 						{
+							"__identifier": "LoadingZone",
+							"__grid": [17,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 28920,
+							"__worldY": 2944,
+							"iid": "LoadingZone-108250",
+							"width": 48,
+							"height": 96,
+							"defUid": 2002,
+							"px": [280,320],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "votive_to_barrow", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["votive_to_barrow"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "through to the family graves", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["through to the family graves"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "intro_barrow", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barrow"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "barrow_to_votive", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_to_votive"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
 							"__identifier": "Prop",
 							"__grid": [28,22],
 							"__pivot": [0,0],
@@ -40913,6 +41140,64 @@
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 104932, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [47,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 29402,
+							"__worldY": 2816,
+							"iid": "Prop-108254",
+							"width": 152,
+							"height": 160,
+							"defUid": 104426,
+							"px": [762,192],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_arch"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_arch"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "PickupSpawn",
+							"__grid": [51,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#8AFF80",
+							"__worldX": 29464,
+							"__worldY": 2944,
+							"iid": "PickupSpawn-108255",
+							"width": 32,
+							"height": 32,
+							"defUid": 2015,
+							"px": [824,320],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the bronze ward key", "__tile": null, "defUid": 3039, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the bronze ward key"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "item:barrowwardkey", "__tile": null, "defUid": 3040, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["item:barrowwardkey"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "Never", "__tile": null, "defUid": 106533, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Never"]
+								}] },
+								{ "__identifier": "sprite", "__type": "String", "__value": "barrow_ward_key", "__tile": null, "defUid": 108245, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_ward_key"]
 								}] }
 							]
 						},
@@ -41000,28 +41285,55 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [7,16],
+							"__grid": [8,17],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 28760,
-							"__worldY": 2894,
-							"iid": "DebugLabel-107916",
-							"width": 380,
+							"__worldX": 28770,
+							"__worldY": 2902,
+							"iid": "DebugLabel-108259",
+							"width": 520,
 							"height": 24,
 							"defUid": 2007,
-							"px": [120,270],
+							"px": [130,278],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "votive_inscription", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["votive_inscription"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "A BOWL OF OATS FOR THE WINTER ROAD.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "THE WARDEN KEEPS HIS BRONZE WITH THE OFFERINGS.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["A BOWL OF OATS FOR THE WINTER ROAD."]
+									"params": ["THE WARDEN KEEPS HIS BRONZE WITH THE OFFERINGS."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [51,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 29460,
+							"__worldY": 2916,
+							"iid": "LightSource-108260",
+							"width": 32,
+							"height": 32,
+							"defUid": 106502,
+							"px": [820,292],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 170.0, "__tile": null, "defUid": 106499, "realEditorValues": [{ "id": "V_Float", "params": [170.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#f8be78", "__tile": null, "defUid": 106500, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#f8be78"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.85, "__tile": null, "defUid": 106501, "realEditorValues": [{ "id": "V_Float", "params": [0.85] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "warden_shelf_lamp", "__tile": null, "defUid": 106503, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["warden_shelf_lamp"]
+								}] }
 							]
 						},
 						{
@@ -41337,17 +41649,21 @@
 					"id": "V_String",
 					"params": ["intro_barrow_watch_crypt"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "cave", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "map_path", "__type": "String", "__value": "The Barrows", "__tile": null, "defUid": 108221, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["cave"]
+					"params": ["The Barrows"]
+				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "barrow_vault", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["barrow_vault"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "vault_in_the_dark", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["vault_in_the_dark"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "cave", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "barrow_vault", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["cave"]
+					"params": ["barrow_vault"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
@@ -41424,17 +41740,17 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,1,1,1,1,1,
 						1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -41601,6 +41917,31 @@
 						},
 						{
 							"__identifier": "Prop",
+							"__grid": [6,15],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 29968,
+							"__worldY": 2876,
+							"iid": "Prop-108272",
+							"width": 144,
+							"height": 180,
+							"defUid": 104426,
+							"px": [96,252],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_arch"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_arch"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
 							"__grid": [21,20],
 							"__pivot": [0,0],
 							"__tags": [],
@@ -41646,6 +41987,31 @@
 								{ "__identifier": "kind", "__type": "String", "__value": "hill_loading_stage", "__tile": null, "defUid": 104425, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["hill_loading_stage"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "ChestSpawn",
+							"__grid": [51,13],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#F6C85F",
+							"__worldX": 30694,
+							"__worldY": 2838,
+							"iid": "ChestSpawn-108450",
+							"width": 76,
+							"height": 58,
+							"defUid": 2016,
+							"px": [822,214],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the watch's lamp fund", "__tile": null, "defUid": 3041, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the watch's lamp fund"]
+								}] },
+								{ "__identifier": "reward", "__type": "String", "__value": "currency:10", "__tile": null, "defUid": 3042, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["currency:10"]
 								}] }
 							]
 						},
@@ -42134,17 +42500,21 @@
 					"id": "V_String",
 					"params": ["intro_barrow_tally_vault"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "cave", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "map_path", "__type": "String", "__value": "The Barrows", "__tile": null, "defUid": 108221, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["cave"]
+					"params": ["The Barrows"]
+				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "barrow_vault", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["barrow_vault"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "vault_in_the_dark", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["vault_in_the_dark"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "cave", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "barrow_vault", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["cave"]
+					"params": ["barrow_vault"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
@@ -42185,64 +42555,64 @@
 						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 						1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,
 						0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,
 						0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,
 						0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,
 						0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,
 						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -42466,44 +42836,104 @@
 							]
 						},
 						{
+							"__identifier": "ShrineSpawn",
+							"__grid": [27,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7CF2A8",
+							"__worldX": 27510,
+							"__worldY": 3632,
+							"iid": "ShrineSpawn-108292",
+							"width": 44,
+							"height": 80,
+							"defUid": 104957,
+							"px": [438,368],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_barrow_tally_vault_shrine", "__tile": null, "defUid": 104955, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barrow_tally_vault_shrine"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the candle bench", "__tile": null, "defUid": 104956, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the candle bench"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [38,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 27688,
+							"__worldY": 3616,
+							"iid": "LoadingZone-108293",
+							"width": 48,
+							"height": 96,
+							"defUid": 2002,
+							"px": [616,352],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "tally_to_wheelworks", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tally_to_wheelworks"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "down to the wheelworks", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["down to the wheelworks"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "intro_barrow_wheelworks", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barrow_wheelworks"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "wheelworks_to_tally", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wheelworks_to_tally"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
 							"__identifier": "Prop",
-							"__grid": [32,21],
+							"__grid": [36,17],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 27586,
-							"__worldY": 3612,
-							"iid": "Prop-107947",
-							"width": 160,
-							"height": 100,
+							"__worldX": 27652,
+							"__worldY": 3538,
+							"iid": "Prop-108294",
+							"width": 146,
+							"height": 174,
 							"defUid": 104426,
-							"px": [514,348],
+							"px": [580,274],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "fantasy_junk_heap", "__tile": null, "defUid": 104424, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fantasy_junk_heap"]
+									"params": ["barrow_arch"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "fantasy_junk_heap", "__tile": null, "defUid": 104425, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104425, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fantasy_junk_heap"]
+									"params": ["barrow_arch"]
 								}] }
 							]
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [47,18],
+							"__grid": [48,18],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 27837,
+							"__worldX": 27842,
 							"__worldY": 3564,
-							"iid": "Prop-107948",
+							"iid": "Prop-108295",
 							"width": 160,
 							"height": 100,
 							"defUid": 104426,
-							"px": [765,300],
+							"px": [770,300],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "fantasy_junk_heap", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
@@ -42517,18 +42947,43 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [99,21],
+							"__grid": [74,18],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 28662,
-							"__worldY": 3612,
-							"iid": "Prop-107949",
-							"width": 160,
-							"height": 100,
+							"__worldX": 28264,
+							"__worldY": 3556,
+							"iid": "Prop-108296",
+							"width": 184,
+							"height": 156,
 							"defUid": 104426,
-							"px": [1590,348],
+							"px": [1192,292],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_salvage_stack", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_salvage_stack"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_salvage_stack", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_salvage_stack"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [93,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 28560,
+							"__worldY": 3606,
+							"iid": "Prop-108297",
+							"width": 170,
+							"height": 106,
+							"defUid": 104426,
+							"px": [1488,342],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "fantasy_junk_heap", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
@@ -42599,27 +43054,145 @@
 							]
 						},
 						{
+							"__identifier": "LockWall",
+							"__grid": [71,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9E9E9E",
+							"__worldX": 28216,
+							"__worldY": 3600,
+							"iid": "LockWall-108300",
+							"width": 48,
+							"height": 112,
+							"defUid": 4084,
+							"px": [1144,336],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "barrow_bronze_seal", "__tile": null, "defUid": 4082, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_bronze_seal"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "requires the bronze ward key", "__tile": null, "defUid": 4083, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["requires the bronze ward key"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "inventory.holds barrowwardkey", "__tile": null, "defUid": 104934, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["inventory.holds barrowwardkey"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "barrow_bronze_seal", "__tile": null, "defUid": 106405, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_bronze_seal"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LockWall",
+							"__grid": [107,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9E9E9E",
+							"__worldX": 28784,
+							"__worldY": 3600,
+							"iid": "LockWall-108301",
+							"width": 48,
+							"height": 112,
+							"defUid": 4084,
+							"px": [1712,336],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "barrow_crown_seal", "__tile": null, "defUid": 4082, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_crown_seal"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "requires the crown key", "__tile": null, "defUid": 4083, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["requires the crown key"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "inventory.holds barrowcrownkey", "__tile": null, "defUid": 104934, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["inventory.holds barrowcrownkey"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "barrow_crown_seal", "__tile": null, "defUid": 106405, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_crown_seal"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "DebugLabel",
-							"__grid": [53,14],
+							"__grid": [51,14],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 27932,
+							"__worldX": 27888,
 							"__worldY": 3494,
-							"iid": "DebugLabel-107952",
-							"width": 600,
+							"iid": "DebugLabel-108302",
+							"width": 420,
 							"height": 24,
 							"defUid": 2007,
-							"px": [860,230],
+							"px": [816,230],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "tally_key_record", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tally_key_record"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "BRONZE WARD. SPARE WITH THE VOTIVE KEEPERS.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["BRONZE WARD. SPARE WITH THE VOTIVE KEEPERS."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [76,17],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 28292,
+							"__worldY": 3542,
+							"iid": "DebugLabel-108303",
+							"width": 420,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1220,278],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "tally_note", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["tally_note"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "COPPER TO THE LEFT. KEEP THE LIVE ONES UNPLUGGED.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "SOCKETS FACE THE WALL. ONE BIT THE WARDEN.", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["COPPER TO THE LEFT. KEEP THE LIVE ONES UNPLUGGED."]
+									"params": ["SOCKETS FACE THE WALL. ONE BIT THE WARDEN."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [84,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 28427,
+							"__worldY": 3464,
+							"iid": "DebugLabel-108304",
+							"width": 350,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1355,200],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "tally_crown_record", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tally_crown_record"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "CROWN KEY. BELOW THE WHEELWORKS.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["CROWN KEY. BELOW THE WHEELWORKS."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -43093,17 +43666,21 @@
 					"id": "V_String",
 					"params": ["intro_barrow_royal_tomb"]
 				}] },
-				{ "__identifier": "biome", "__type": "String", "__value": "cave", "__tile": null, "defUid": 4172, "realEditorValues": [{
+				{ "__identifier": "map_path", "__type": "String", "__value": "The Barrows", "__tile": null, "defUid": 108221, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["cave"]
+					"params": ["The Barrows"]
+				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "barrow_vault", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["barrow_vault"]
 				}] },
 				{ "__identifier": "music_track", "__type": "String", "__value": "vault_in_the_dark", "__tile": null, "defUid": 4173, "realEditorValues": [{
 					"id": "V_String",
 					"params": ["vault_in_the_dark"]
 				}] },
-				{ "__identifier": "parallax_theme", "__type": "String", "__value": "cave", "__tile": null, "defUid": 4337, "realEditorValues": [{
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "barrow_vault", "__tile": null, "defUid": 4337, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["cave"]
+					"params": ["barrow_vault"]
 				}] },
 				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
 					"id": "V_Bool",
@@ -43455,26 +44032,76 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [50,16],
+							"__grid": [12,15],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 29845,
-							"__worldY": 3528,
-							"iid": "Prop-107969",
-							"width": 192,
-							"height": 168,
+							"__worldX": 29236,
+							"__worldY": 3508,
+							"iid": "Prop-108368",
+							"width": 158,
+							"height": 188,
 							"defUid": 104426,
-							"px": [805,264],
+							"px": [196,244],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "fantasy_grave_niche", "__tile": null, "defUid": 104424, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fantasy_grave_niche"]
+									"params": ["barrow_arch"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "fantasy_grave_niche", "__tile": null, "defUid": 104425, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104425, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fantasy_grave_niche"]
+									"params": ["barrow_arch"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [43,9],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 29742,
+							"__worldY": 3408,
+							"iid": "Prop-108369",
+							"width": 336,
+							"height": 288,
+							"defUid": 104426,
+							"px": [702,144],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_royal_canopy", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_royal_canopy"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_royal_canopy", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_royal_canopy"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [49,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 29831,
+							"__worldY": 3602,
+							"iid": "Prop-108370",
+							"width": 152,
+							"height": 94,
+							"defUid": 104426,
+							"px": [791,338],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_sarcophagus", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_sarcophagus"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_sarcophagus", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_sarcophagus"]
 								}] }
 							]
 						},
@@ -43505,26 +44132,26 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [61,20],
+							"__grid": [62,17],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": 30018,
-							"__worldY": 3596,
-							"iid": "Prop-107971",
-							"width": 160,
-							"height": 100,
+							"__worldX": 30040,
+							"__worldY": 3550,
+							"iid": "Prop-108372",
+							"width": 170,
+							"height": 146,
 							"defUid": 104426,
-							"px": [978,332],
+							"px": [1000,286],
 							"fieldInstances": [
-								{ "__identifier": "name", "__type": "String", "__value": "fantasy_junk_heap", "__tile": null, "defUid": 104424, "realEditorValues": [{
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_salvage_stack", "__tile": null, "defUid": 104424, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fantasy_junk_heap"]
+									"params": ["barrow_salvage_stack"]
 								}] },
-								{ "__identifier": "kind", "__type": "String", "__value": "fantasy_junk_heap", "__tile": null, "defUid": 104425, "realEditorValues": [{
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_salvage_stack", "__tile": null, "defUid": 104425, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["fantasy_junk_heap"]
+									"params": ["barrow_salvage_stack"]
 								}] }
 							]
 						},
@@ -50293,6 +50920,2151 @@
 					"optionalRules": [],
 					"autoLayerTiles": [],
 					"seed": 108085,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				}
+			],
+			"__neighbours": []
+		},
+		{
+			"identifier": "intro_barrow_wheelworks",
+			"iid": "intro_barrow_wheelworks-108314",
+			"uid": 108314,
+			"worldX": 25184,
+			"worldY": 3264,
+			"worldDepth": 0,
+			"pxWid": 1856,
+			"pxHei": 640,
+			"__bgColor": "#181b23",
+			"bgColor": "#181b23",
+			"useAutoIdentifier": false,
+			"bgRelPath": null,
+			"bgPos": null,
+			"bgPivotX": 0.5,
+			"bgPivotY": 0.5,
+			"__smartColor": "#FFFFFF",
+			"__bgPos": null,
+			"externalRelPath": null,
+			"fieldInstances": [
+				{ "__identifier": "activeArea", "__type": "String", "__value": "intro_barrow_wheelworks", "__tile": null, "defUid": 4000, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["intro_barrow_wheelworks"]
+				}] },
+				{ "__identifier": "map_path", "__type": "String", "__value": "The Barrows", "__tile": null, "defUid": 108221, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["The Barrows"]
+				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "barrow_vault", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["barrow_vault"]
+				}] },
+				{ "__identifier": "music_track", "__type": "String", "__value": "vault_in_the_dark", "__tile": null, "defUid": 4173, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["vault_in_the_dark"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "barrow_vault", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["barrow_vault"]
+				}] },
+				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
+					"id": "V_Bool",
+					"params": [ true ]
+				}] },
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged", "__tile": null, "defUid": 105338, "realEditorValues": [{
+					"id": "V_String",
+					"params": [
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged"
+					]
+				}] },
+				{ "__identifier": "darkness", "__type": "Int", "__value": 75, "__tile": null, "defUid": 106406, "realEditorValues": [{ "id": "V_Int", "params": [75] }] },
+				{ "__identifier": "ambient", "__type": "String", "__value": "#0a0806", "__tile": null, "defUid": 106407, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["#0a0806"]
+				}] }
+			],
+			"layerInstances": [
+				{
+					"__identifier": "Collision",
+					"__type": "IntGrid",
+					"iid": "Collision-108315",
+					"layerDefUid": 5024,
+					"intGridCsv": [
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,
+						0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,
+						1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,
+						0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,
+						0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,
+						0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,1,1,1,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,
+						0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,
+						0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,
+						2,2,2,0,0,0,0,0,0,0,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,
+						2,2,2,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+						1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+					],
+					"__cWid": 116,
+					"__cHei": 40,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 108314,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 108314,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				},
+				{
+					"__identifier": "AmbitionCameras",
+					"__type": "Entities",
+					"iid": "AmbitionCameras-108340",
+					"layerDefUid": 104888,
+					"intGridCsv": [],
+					"__cWid": 116,
+					"__cHei": 40,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 108314,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 108314,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 25184,
+							"__worldY": 3264,
+							"iid": "CameraZone-108336",
+							"width": 1856,
+							"height": 640,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_barrow_wheelworks_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barrow_wheelworks_camera"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "intro_barrow_wheelworks_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barrow_wheelworks_camera"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] }
+							]
+						}
+					]
+				},
+				{
+					"__identifier": "Ambition",
+					"__type": "Entities",
+					"iid": "Ambition-108316",
+					"layerDefUid": 1070,
+					"intGridCsv": [],
+					"__cWid": 116,
+					"__cHei": 40,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 108314,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 108314,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [4,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 25248,
+							"__worldY": 3680,
+							"iid": "LoadingZone-108317",
+							"width": 48,
+							"height": 96,
+							"defUid": 2002,
+							"px": [64,416],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "wheelworks_to_tally", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wheelworks_to_tally"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "up to the tally vault", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["up to the tally vault"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "intro_barrow_tally_vault", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barrow_tally_vault"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "tally_to_wheelworks", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["tally_to_wheelworks"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "LockWall",
+							"__grid": [32,17],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9E9E9E",
+							"__worldX": 25696,
+							"__worldY": 3536,
+							"iid": "LockWall-108318",
+							"width": 48,
+							"height": 112,
+							"defUid": 4084,
+							"px": [512,272],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "wheel_upper_gate", "__tile": null, "defUid": 4082, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wheel_upper_gate"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the high passage", "__tile": null, "defUid": 4083, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the high passage"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "not world.switch_on barrow_counterweight", "__tile": null, "defUid": 104934, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["not world.switch_on barrow_counterweight"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "barrow_latch_weight", "__tile": null, "defUid": 106405, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_latch_weight"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LockWall",
+							"__grid": [32,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9E9E9E",
+							"__worldX": 25696,
+							"__worldY": 3680,
+							"iid": "LockWall-108319",
+							"width": 48,
+							"height": 96,
+							"defUid": 4084,
+							"px": [512,416],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "wheel_lower_gate", "__tile": null, "defUid": 4082, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wheel_lower_gate"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the low passage", "__tile": null, "defUid": 4083, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the low passage"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "world.switch_on barrow_counterweight", "__tile": null, "defUid": 104934, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["world.switch_on barrow_counterweight"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "barrow_latch_weight", "__tile": null, "defUid": 106405, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_latch_weight"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LockWall",
+							"__grid": [53,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9E9E9E",
+							"__worldX": 26032,
+							"__worldY": 3680,
+							"iid": "LockWall-108320",
+							"width": 48,
+							"height": 96,
+							"defUid": 4084,
+							"px": [848,416],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "wheel_sluice_recess", "__tile": null, "defUid": 4082, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wheel_sluice_recess"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the sluice recess", "__tile": null, "defUid": 4083, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the sluice recess"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "world.switch_on barrow_counterweight", "__tile": null, "defUid": 104934, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["world.switch_on barrow_counterweight"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "barrow_latch_weight", "__tile": null, "defUid": 106405, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_latch_weight"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [16,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 25446,
+							"__worldY": 3740,
+							"iid": "Switch-108321",
+							"width": 28,
+							"height": 36,
+							"defUid": 4051,
+							"px": [262,476],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "barrow_counterweight", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_counterweight"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the counterweight wheel", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the counterweight wheel"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Turn the counterweight wheel", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Turn the counterweight wheel"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "ToggleFlag", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ToggleFlag"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Switch",
+							"__grid": [56,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFC857",
+							"__worldX": 26092,
+							"__worldY": 3740,
+							"iid": "Switch-108322",
+							"width": 28,
+							"height": 36,
+							"defUid": 4051,
+							"px": [908,476],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "barrow_sluice", "__tile": null, "defUid": 4046, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_sluice"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the sluice wheel", "__tile": null, "defUid": 4047, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the sluice wheel"]
+								}] },
+								{ "__identifier": "prompt", "__type": "String", "__value": "Turn the sluice wheel", "__tile": null, "defUid": 4048, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Turn the sluice wheel"]
+								}] },
+								{ "__identifier": "action", "__type": "String", "__value": "ToggleFlag", "__tile": null, "defUid": 4050, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["ToggleFlag"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [12,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 25377,
+							"__worldY": 3560,
+							"iid": "Prop-108323",
+							"width": 186,
+							"height": 216,
+							"defUid": 104426,
+							"px": [193,296],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_counterweights", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_counterweights"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_counterweights", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_counterweights"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [53,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 26037,
+							"__worldY": 3572,
+							"iid": "Prop-108324",
+							"width": 190,
+							"height": 204,
+							"defUid": 104426,
+							"px": [853,308],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_sluice_pipe", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_sluice_pipe"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_sluice_pipe", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_sluice_pipe"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [6,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 25286,
+							"__worldY": 3581,
+							"iid": "DebugLabel-108474",
+							"width": 380,
+							"height": 24,
+							"defUid": 2007,
+							"px": [102,317],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "wheel_weight_clue", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wheel_weight_clue"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "RAISE ONE PORTCULLIS. LOWER THE OTHER.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["RAISE ONE PORTCULLIS. LOWER THE OTHER."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [37,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 25779,
+							"__worldY": 3576,
+							"iid": "DebugLabel-108475",
+							"width": 540,
+							"height": 24,
+							"defUid": 2007,
+							"px": [595,312],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "wheel_drain_clue", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wheel_drain_clue"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "TURN THE SLUICE. RETURN THE COUNTERWEIGHT TO ITS REST.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["TURN THE SLUICE. RETURN THE COUNTERWEIGHT TO ITS REST."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "LockWall",
+							"__grid": [77,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9E9E9E",
+							"__worldX": 26416,
+							"__worldY": 3664,
+							"iid": "LockWall-108327",
+							"width": 48,
+							"height": 112,
+							"defUid": 4084,
+							"px": [1232,400],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "wheel_weight_bolt", "__tile": null, "defUid": 4082, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wheel_weight_bolt"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the counterweight bolt", "__tile": null, "defUid": 4083, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the counterweight bolt"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "not world.switch_on barrow_counterweight", "__tile": null, "defUid": 104934, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["not world.switch_on barrow_counterweight"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "barrow_latch_weight", "__tile": null, "defUid": 106405, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_latch_weight"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LockWall",
+							"__grid": [87,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9E9E9E",
+							"__worldX": 26576,
+							"__worldY": 3664,
+							"iid": "LockWall-108328",
+							"width": 48,
+							"height": 112,
+							"defUid": 4084,
+							"px": [1392,400],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "wheel_sluice_bolt", "__tile": null, "defUid": 4082, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wheel_sluice_bolt"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the sluice grille", "__tile": null, "defUid": 4083, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the sluice grille"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "world.switch_on barrow_sluice", "__tile": null, "defUid": 104934, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["world.switch_on barrow_sluice"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "barrow_latch_water", "__tile": null, "defUid": 106405, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_latch_water"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "EnemySpawn",
+							"__grid": [45,28],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF6B6B",
+							"__worldX": 25914,
+							"__worldY": 3722,
+							"iid": "EnemySpawn-108329",
+							"width": 30,
+							"height": 54,
+							"defUid": 2008,
+							"px": [730,458],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "wheelworks_shambler", "__tile": null, "defUid": 3018, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wheelworks_shambler"]
+								}] },
+								{ "__identifier": "character_id", "__type": "String", "__value": "barrow_shambler", "__tile": null, "defUid": 104930, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_shambler"]
+								}] },
+								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 104932, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["OnRoomReenter"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [100,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 26788,
+							"__worldY": 3572,
+							"iid": "Prop-108330",
+							"width": 178,
+							"height": 204,
+							"defUid": 104426,
+							"px": [1604,308],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_arch"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_arch"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [104,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 26848,
+							"__worldY": 3680,
+							"iid": "LoadingZone-108331",
+							"width": 48,
+							"height": 96,
+							"defUid": 2002,
+							"px": [1664,416],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "wheelworks_to_reliquary", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wheelworks_to_reliquary"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "into the reliquary", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["into the reliquary"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "intro_barrow_reliquary", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barrow_reliquary"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "reliquary_to_wheelworks", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["reliquary_to_wheelworks"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [17,24],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 25460,
+							"__worldY": 3652,
+							"iid": "LightSource-108332",
+							"width": 32,
+							"height": 32,
+							"defUid": 106502,
+							"px": [276,388],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 236.0, "__tile": null, "defUid": 106499, "realEditorValues": [{ "id": "V_Float", "params": [236.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#f8be78", "__tile": null, "defUid": 106500, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#f8be78"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.85, "__tile": null, "defUid": 106501, "realEditorValues": [{ "id": "V_Float", "params": [0.85] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "wheel_west_torch", "__tile": null, "defUid": 106503, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wheel_west_torch"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [36,17],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 25760,
+							"__worldY": 3542,
+							"iid": "LightSource-108482",
+							"width": 32,
+							"height": 32,
+							"defUid": 106502,
+							"px": [576,278],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 150.0, "__tile": null, "defUid": 106499, "realEditorValues": [{ "id": "V_Float", "params": [150.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#f8be78", "__tile": null, "defUid": 106500, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#f8be78"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.85, "__tile": null, "defUid": 106501, "realEditorValues": [{ "id": "V_Float", "params": [0.85] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "wheel_upper_torch", "__tile": null, "defUid": 106503, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wheel_upper_torch"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [58,24],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 26125,
+							"__worldY": 3654,
+							"iid": "LightSource-108333",
+							"width": 32,
+							"height": 32,
+							"defUid": 106502,
+							"px": [941,390],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 226.0, "__tile": null, "defUid": 106499, "realEditorValues": [{ "id": "V_Float", "params": [226.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#f8be78", "__tile": null, "defUid": 106500, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#f8be78"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.85, "__tile": null, "defUid": 106501, "realEditorValues": [{ "id": "V_Float", "params": [0.85] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "wheel_east_torch", "__tile": null, "defUid": 106503, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wheel_east_torch"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [98,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 26754,
+							"__worldY": 3626,
+							"iid": "LightSource-108334",
+							"width": 32,
+							"height": 32,
+							"defUid": 106502,
+							"px": [1570,362],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 200.0, "__tile": null, "defUid": 106499, "realEditorValues": [{ "id": "V_Float", "params": [200.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#f8be78", "__tile": null, "defUid": 106500, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#f8be78"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.85, "__tile": null, "defUid": 106501, "realEditorValues": [{ "id": "V_Float", "params": [0.85] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "wheel_door_torch", "__tile": null, "defUid": 106503, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wheel_door_torch"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "PlayerStart",
+							"__grid": [8,29],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#41D1FF",
+							"__worldX": 25324,
+							"__worldY": 3730,
+							"iid": "PlayerStart-108335",
+							"width": 28,
+							"height": 46,
+							"defUid": 2000,
+							"px": [140,466],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "intro_barrow_wheelworks_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["intro_barrow_wheelworks_spawn"]
+							}] }]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [29,2],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 25662,
+							"__worldY": 3304,
+							"iid": "DebugLabel-108337",
+							"width": 900,
+							"height": 24,
+							"defUid": 2007,
+							"px": [478,40],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "intro_barrow_wheelworks_title", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barrow_wheelworks_title"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "THE WHEELWORKS", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["THE WHEELWORKS"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						}
+					]
+				},
+				{
+					"__identifier": "Climbable",
+					"__type": "IntGrid",
+					"iid": "Climbable-108338",
+					"layerDefUid": 4201,
+					"intGridCsv": [
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+					],
+					"__cWid": 116,
+					"__cHei": 40,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 108314,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 108314,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				},
+				{
+					"__identifier": "Water",
+					"__type": "IntGrid",
+					"iid": "Water-108339",
+					"layerDefUid": 4140,
+					"intGridCsv": [
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+					],
+					"__cWid": 116,
+					"__cHei": 40,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 108314,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 108314,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				}
+			],
+			"__neighbours": []
+		},
+		{
+			"identifier": "intro_barrow_reliquary",
+			"iid": "intro_barrow_reliquary-108341",
+			"uid": 108341,
+			"worldX": 25856,
+			"worldY": 3904,
+			"worldDepth": 0,
+			"pxWid": 1728,
+			"pxHei": 608,
+			"__bgColor": "#181b23",
+			"bgColor": "#181b23",
+			"useAutoIdentifier": false,
+			"bgRelPath": null,
+			"bgPos": null,
+			"bgPivotX": 0.5,
+			"bgPivotY": 0.5,
+			"__smartColor": "#FFFFFF",
+			"__bgPos": null,
+			"externalRelPath": null,
+			"fieldInstances": [
+				{ "__identifier": "activeArea", "__type": "String", "__value": "intro_barrow_reliquary", "__tile": null, "defUid": 4000, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["intro_barrow_reliquary"]
+				}] },
+				{ "__identifier": "map_path", "__type": "String", "__value": "The Barrows", "__tile": null, "defUid": 108221, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["The Barrows"]
+				}] },
+				{ "__identifier": "biome", "__type": "String", "__value": "barrow_vault", "__tile": null, "defUid": 4172, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["barrow_vault"]
+				}] },
+				{ "__identifier": "music_track", "__type": "String", "__value": "vault_in_the_dark", "__tile": null, "defUid": 4173, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["vault_in_the_dark"]
+				}] },
+				{ "__identifier": "parallax_theme", "__type": "String", "__value": "barrow_vault", "__tile": null, "defUid": 4337, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["barrow_vault"]
+				}] },
+				{ "__identifier": "dangerous", "__type": "Bool", "__value": true, "__tile": null, "defUid": 105007, "realEditorValues": [{
+					"id": "V_Bool",
+					"params": [ true ]
+				}] },
+				{ "__identifier": "withheld_verbs", "__type": "String", "__value": "double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged", "__tile": null, "defUid": 105338, "realEditorValues": [{
+					"id": "V_String",
+					"params": [
+						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged"
+					]
+				}] },
+				{ "__identifier": "darkness", "__type": "Int", "__value": 75, "__tile": null, "defUid": 106406, "realEditorValues": [{ "id": "V_Int", "params": [75] }] },
+				{ "__identifier": "ambient", "__type": "String", "__value": "#0a0806", "__tile": null, "defUid": 106407, "realEditorValues": [{
+					"id": "V_String",
+					"params": ["#0a0806"]
+				}] }
+			],
+			"layerInstances": [
+				{
+					"__identifier": "Collision",
+					"__type": "IntGrid",
+					"iid": "Collision-108342",
+					"layerDefUid": 5024,
+					"intGridCsv": [
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,
+						1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+						1,1,1,1,1,1,1,1,1
+					],
+					"__cWid": 108,
+					"__cHei": 38,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 108341,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 108341,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				},
+				{
+					"__identifier": "AmbitionCameras",
+					"__type": "Entities",
+					"iid": "AmbitionCameras-108360",
+					"layerDefUid": 104888,
+					"intGridCsv": [],
+					"__cWid": 108,
+					"__cHei": 38,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 108341,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 108341,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "CameraZone",
+							"__grid": [0,0],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#86A8E7",
+							"__worldX": 25856,
+							"__worldY": 3904,
+							"iid": "CameraZone-108356",
+							"width": 1728,
+							"height": 608,
+							"defUid": 4002,
+							"px": [0,0],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_barrow_reliquary_camera", "__tile": null, "defUid": 4003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barrow_reliquary_camera"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "intro_barrow_reliquary_camera", "__tile": null, "defUid": 4004, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barrow_reliquary_camera"]
+								}] },
+								{ "__identifier": "mode", "__type": "String", "__value": "Default", "__tile": null, "defUid": 4005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Default"]
+								}] }
+							]
+						}
+					]
+				},
+				{
+					"__identifier": "Ambition",
+					"__type": "Entities",
+					"iid": "Ambition-108343",
+					"layerDefUid": 1070,
+					"intGridCsv": [],
+					"__cWid": 108,
+					"__cHei": 38,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 108341,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 108341,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": [
+						{
+							"__identifier": "LoadingZone",
+							"__grid": [4,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD166",
+							"__worldX": 25920,
+							"__worldY": 4272,
+							"iid": "LoadingZone-108344",
+							"width": 48,
+							"height": 96,
+							"defUid": 2002,
+							"px": [64,368],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "reliquary_to_wheelworks", "__tile": null, "defUid": 3002, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["reliquary_to_wheelworks"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "back to the wheelworks", "__tile": null, "defUid": 3003, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["back to the wheelworks"]
+								}] },
+								{ "__identifier": "activation", "__type": "String", "__value": "Door", "__tile": null, "defUid": 3004, "realEditorValues": [] },
+								{ "__identifier": "target_room", "__type": "String", "__value": "intro_barrow_wheelworks", "__tile": null, "defUid": 3005, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barrow_wheelworks"]
+								}] },
+								{ "__identifier": "target_zone", "__type": "String", "__value": "wheelworks_to_reliquary", "__tile": null, "defUid": 3006, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["wheelworks_to_reliquary"]
+								}] },
+								{ "__identifier": "bidirectional", "__type": "Bool", "__value": true, "__tile": null, "defUid": 3007, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "EncounterTrigger",
+							"__grid": [15,4],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FF7AB6",
+							"__worldX": 26108,
+							"__worldY": 3968,
+							"iid": "EncounterTrigger-108345",
+							"width": 128,
+							"height": 400,
+							"defUid": 4045,
+							"px": [252,64],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "intro_barrow_reliquary_watch", "__tile": null, "defUid": 4042, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barrow_reliquary_watch"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the wardens' watch", "__tile": null, "defUid": 4043, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the wardens' watch"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [18,15],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 26150,
+							"__worldY": 4150,
+							"iid": "Prop-108346",
+							"width": 182,
+							"height": 218,
+							"defUid": 104426,
+							"px": [294,246],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_arch"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_arch", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_arch"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [38,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 26466,
+							"__worldY": 4200,
+							"iid": "Prop-108347",
+							"width": 134,
+							"height": 120,
+							"defUid": 104426,
+							"px": [610,296],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "fantasy_grave_niche", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fantasy_grave_niche"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "fantasy_grave_niche", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["fantasy_grave_niche"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [52,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 26703,
+							"__worldY": 4263,
+							"iid": "Prop-108348",
+							"width": 174,
+							"height": 105,
+							"defUid": 104426,
+							"px": [847,359],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_sarcophagus", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_sarcophagus"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_sarcophagus", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_sarcophagus"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LockWall",
+							"__grid": [78,22],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9E9E9E",
+							"__worldX": 27112,
+							"__worldY": 4256,
+							"iid": "LockWall-108349",
+							"width": 48,
+							"height": 112,
+							"defUid": 4084,
+							"px": [1256,352],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "reliquary_screen", "__tile": null, "defUid": 4082, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["reliquary_screen"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the watchers' grille", "__tile": null, "defUid": 4083, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the watchers' grille"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "encounter.cleared intro_barrow_reliquary_watch", "__tile": null, "defUid": 104934, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["encounter.cleared intro_barrow_reliquary_watch"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "temple_gate_iron", "__tile": null, "defUid": 106405, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["temple_gate_iron"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Prop",
+							"__grid": [83,12],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9966CC",
+							"__worldX": 27192,
+							"__worldY": 4104,
+							"iid": "Prop-108350",
+							"width": 294,
+							"height": 264,
+							"defUid": 104426,
+							"px": [1336,200],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "barrow_royal_canopy", "__tile": null, "defUid": 104424, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_royal_canopy"]
+								}] },
+								{ "__identifier": "kind", "__type": "String", "__value": "barrow_royal_canopy", "__tile": null, "defUid": 104425, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["barrow_royal_canopy"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "ChestSpawn",
+							"__grid": [90,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#F6C85F",
+							"__worldX": 27306,
+							"__worldY": 4310,
+							"iid": "ChestSpawn-108351",
+							"width": 76,
+							"height": 58,
+							"defUid": 2016,
+							"px": [1450,406],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "the crown key casket", "__tile": null, "defUid": 3041, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the crown key casket"]
+								}] },
+								{ "__identifier": "reward", "__type": "String", "__value": "item:barrowcrownkey", "__tile": null, "defUid": 3042, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["item:barrowcrownkey"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [25,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 26266,
+							"__worldY": 4214,
+							"iid": "LightSource-108352",
+							"width": 32,
+							"height": 32,
+							"defUid": 106502,
+							"px": [410,310],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 200.0, "__tile": null, "defUid": 106499, "realEditorValues": [{ "id": "V_Float", "params": [200.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#f8be78", "__tile": null, "defUid": 106500, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#f8be78"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.85, "__tile": null, "defUid": 106501, "realEditorValues": [{ "id": "V_Float", "params": [0.85] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "reliquary_entrance_torch", "__tile": null, "defUid": 106503, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["reliquary_entrance_torch"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [50,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 26661,
+							"__worldY": 4222,
+							"iid": "LightSource-108353",
+							"width": 32,
+							"height": 32,
+							"defUid": 106502,
+							"px": [805,318],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 270.0, "__tile": null, "defUid": 106499, "realEditorValues": [{ "id": "V_Float", "params": [270.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#f8be78", "__tile": null, "defUid": 106500, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#f8be78"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.85, "__tile": null, "defUid": 106501, "realEditorValues": [{ "id": "V_Float", "params": [0.85] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "reliquary_vigil_torch", "__tile": null, "defUid": 106503, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["reliquary_vigil_torch"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [92,19],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 27341,
+							"__worldY": 4214,
+							"iid": "LightSource-108354",
+							"width": 32,
+							"height": 32,
+							"defUid": 106502,
+							"px": [1485,310],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 215.0, "__tile": null, "defUid": 106499, "realEditorValues": [{ "id": "V_Float", "params": [215.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#f8be78", "__tile": null, "defUid": 106500, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#f8be78"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.85, "__tile": null, "defUid": 106501, "realEditorValues": [{ "id": "V_Float", "params": [0.85] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "reliquary_casket_torch", "__tile": null, "defUid": 106503, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["reliquary_casket_torch"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "PlayerStart",
+							"__grid": [8,26],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#41D1FF",
+							"__worldX": 25995,
+							"__worldY": 4322,
+							"iid": "PlayerStart-108355",
+							"width": 28,
+							"height": 46,
+							"defUid": 2000,
+							"px": [139,418],
+							"fieldInstances": [{ "__identifier": "name", "__type": "String", "__value": "intro_barrow_reliquary_spawn", "__tile": null, "defUid": 3000, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["intro_barrow_reliquary_spawn"]
+							}] }]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [25,2],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 26270,
+							"__worldY": 3944,
+							"iid": "DebugLabel-108357",
+							"width": 900,
+							"height": 24,
+							"defUid": 2007,
+							"px": [414,40],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "intro_barrow_reliquary_title", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["intro_barrow_reliquary_title"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "THE RELIQUARY", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["THE RELIQUARY"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						}
+					]
+				},
+				{
+					"__identifier": "Climbable",
+					"__type": "IntGrid",
+					"iid": "Climbable-108358",
+					"layerDefUid": 4201,
+					"intGridCsv": [
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0
+					],
+					"__cWid": 108,
+					"__cHei": 38,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 108341,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 108341,
+					"overrideTilesetUid": null,
+					"gridTiles": [],
+					"entityInstances": []
+				},
+				{
+					"__identifier": "Water",
+					"__type": "IntGrid",
+					"iid": "Water-108359",
+					"layerDefUid": 4140,
+					"intGridCsv": [
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0
+					],
+					"__cWid": 108,
+					"__cHei": 38,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"levelId": 108341,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"autoLayerTiles": [],
+					"seed": 108341,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
 					"entityInstances": []

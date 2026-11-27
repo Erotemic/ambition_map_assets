@@ -77,6 +77,8 @@ CAIRNFIELD = "intro_barrow_cairnfield"
 VOTIVE = "intro_barrow_votive"
 WATCH_CRYPT = "intro_barrow_watch_crypt"
 TALLY_VAULT = "intro_barrow_tally_vault"
+WHEELWORKS = "intro_barrow_wheelworks"
+RELIQUARY = "intro_barrow_reliquary"
 ROYAL_TOMB = "intro_barrow_royal_tomb"
 MOUNTAIN_ASCENT = "fantasy_mountain_ascent"
 MOUNTAIN_PASS = "fantasy_mountain_pass"
@@ -192,6 +194,8 @@ ROOMS_AT = {
     VOTIVE: ((MOOR_X + MOOR_W + 720, MOOR_Y + MOOR_H), (1232, 576)),
     WATCH_CRYPT: ((MOOR_X + MOOR_W + 1952, MOOR_Y + MOOR_H), (1440, 576)),
     TALLY_VAULT: ((MOOR_X + 1952, MOOR_Y + MOOR_H + BARROW_H), (1968, 576)),
+    WHEELWORKS: ((MOOR_X + 64, MOOR_Y + MOOR_H + BARROW_H), (1856, 640)),
+    RELIQUARY: ((MOOR_X + 736, MOOR_Y + MOOR_H + BARROW_H + 640), (1728, 608)),
     ROYAL_TOMB: ((MOOR_X + 3920, MOOR_Y + MOOR_H + BARROW_H), (1536, 576)),
     MOUNTAIN_ASCENT: ((-2400, 1344), (2400, 768)),
     MOUNTAIN_PASS: ((-4448, 1024), (2048, 640)),
@@ -1227,6 +1231,7 @@ def moor():
         # The barrow's door at the foot of its mound: into the grave.
         entity("LoadingZone", BARROW_DOOR_X, g - 96, 48, 96, id="moor_to_barrow", name="into the barrow", activation="Door",
                target_room=BARROW, target_zone="barrow_from_moor", bidirectional=True),
+        object_art("barrow_arch", BARROW_DOOR_X - 52, g, 152, 179),
         *stake_board("moor_sign_barrow", 1120, g, "THE BARROW", "KNOCK. NOBODY WILL."),
         slope("mound_west", m0, g, m1, mt),
         solid("mound_top", m1, mt, m2 - m1, h - mt),
@@ -1250,6 +1255,11 @@ BARROW_PIT = (1040, 1200, 496)
 BARROW_SLAB = (1088, 1152, 400)
 BARROW_GRAVE = (1200, BARROW_W, 448)
 KING_ENCOUNTER = "intro_barrow_king_vigil"
+RELIQUARY_ENCOUNTER = "intro_barrow_reliquary_watch"
+WARD_KEY = "barrowwardkey"
+CROWN_KEY = "barrowcrownkey"
+COUNTERWEIGHT = "barrow_counterweight"
+SLUICE = "barrow_sluice"
 
 
 def burial_enemy(name, character, x, floor, w, h):
@@ -1272,8 +1282,25 @@ def object_art(kind, x, floor, w, h):
 
 def crypt(rid, entities, title):
     _, (w, h) = ROOMS_AT[rid]
-    return build(rid, chamber_shell(w, h) + entities, title, "vault_in_the_dark", look="cave",
-                 bg="#181b23", dangerous=True, extra=UNDERGROUND_DARK)
+    return build(rid, chamber_shell(w, h) + entities, title, "vault_in_the_dark", look="barrow_vault",
+                 bg="#181b23", dangerous=True,
+                 extra=UNDERGROUND_DARK + '\n    map_path: "The Barrows",')
+
+
+def barrow_gate(gate, x, bottom, condition, look, name, *, top=64, gap=112):
+    return [
+        solid(f"{gate}_lintel", x, top, 48, bottom - gap - top),
+        entity("LockWall", x, bottom - gap, 48, gap, id=gate, name=name, gated_by=condition, look=look),
+    ]
+
+
+def barrow_lever(switch, x, floor, name):
+    return entity("Switch", x, floor - 36, 28, 36, id=switch, name=name,
+                  prompt=f"Turn {name}", action="ToggleFlag")
+
+
+def barrow_shrine(rid, name, x, floor):
+    return entity("ShrineSpawn", x, floor - 80, 44, 80, id=f"{rid}_shrine", name=name)
 
 
 def barrow():
@@ -1292,6 +1319,7 @@ def barrow():
     e += [
         door("barrow_from_moor", "out to the moor", 64, BARROW_STEPS[0][2], MOOR, "moor_to_barrow"),
         sign("barrow_sign_door", 380, 128, "THE CROWN RESTS BELOW. THE HOUSEHOLDS REST HERE.", 580),
+        object_art("barrow_arch", 84, BARROW_STEPS[0][2], 156, 192),
         object_art("fantasy_grave_niche", 615, 400, 128, 112),
         burial_enemy("barrow_stair_shambler", "barrow_shambler", 855, 400, 30, 54),
         solid("pit_bottom", b0, bb, b1 - b0, h - bb),
@@ -1301,6 +1329,8 @@ def barrow():
         object_art("fantasy_grave_niche", 1590, gy, 128, 112),
         solid("fallen_arch", 1432, gy - 144, 176, 72),
         burial_enemy("barrow_arch_crawler", "barrow_crawler", 1490, gy, 58, 30),
+        door("barrow_to_votive", "through the votive passage", 1744, gy, VOTIVE, "votive_to_barrow"),
+        object_art("barrow_arch", 2010, gy, 166, 196),
         door("barrow_to_tally", "down to the tally vault", 2048, gy, TALLY_VAULT, "tally_to_barrow"),
         torch("stair_lamp", 350, 180), torch("family_lamp", 795, 298), torch("deep_lamp", 1750, 318),
         start(rid, 160, BARROW_STEPS[0][2]),
@@ -1326,8 +1356,8 @@ def cairnfield():
         solid("east_heather", 2544, g, w - 2544, h - g),
         door("cairnfield_to_votive", "enter the votive mound", 688, g, VOTIVE, "votive_to_field"),
         door("cairnfield_to_watch", "enter the watch mound", 1808, g, WATCH_CRYPT, "watch_to_field"),
-        object_art("fantasy_grave_niche", 592, g, 128, 112),
-        object_art("fantasy_grave_niche", 1700, g, 128, 112),
+        object_art("barrow_arch", 648, g, 128, 154),
+        object_art("barrow_arch", 1764, g, 136, 161),
         piece("hill_survey_station", 1460, g - 112),
         piece("hill_fell_cairn", 1110, g - 64 - 48),
         *stake_board("cairnfield_waymark", 340, g, "THE CAIRNFIELD", "LEAVE A STONE"),
@@ -1344,15 +1374,22 @@ def votive_crypt():
         solid("family_floor", 448, g + 48, 448, 112),
         solid("east_floor", 896, g, 336, 160),
         door("votive_to_field", "out to the cairnfield", 64, g, CAIRNFIELD, "cairnfield_to_votive"),
+        door("votive_to_barrow", "through to the family graves", 280, g, BARROW, "barrow_to_votive"),
         object_art("fantasy_grave_niche", 460, g + 48, 128, 112),
         object_art("fantasy_grave_niche", 670, g + 48, 128, 112),
         burial_enemy("votive_shambler", "barrow_shambler", 722, g + 48, 30, 54),
+        ledge("offering_step", 580, g, 160),
+        ledge("warden_shelf", 752, g - 64, 176),
+        object_art("barrow_arch", 762, g - 64, 152, 160),
+        entity("PickupSpawn", 824, g - 96, 32, 32, name="the bronze ward key",
+               kind=f"item:{WARD_KEY}", respawn="Never", sprite="barrow_ward_key"),
         solid("votive_collapse_top", 992, 64, 48, g - 64 - 112),
         entity("BreakablePlatform", 992, g - 112, 48, 112, id="barrow_votive_rubble", name="fallen masonry",
                max_hp=2.0, respawn="Persistent", collision="Solid", trigger="OnHit"),
         entity("ChestSpawn", 1064, g - 58, 76, 58, name="the votive bowl", reward="currency:8"),
         object_art("fantasy_strata", 1104, g, 112, 72),
-        sign("votive_inscription", 310, 270, "A BOWL OF OATS FOR THE WINTER ROAD.", 380),
+        sign("votive_inscription", 390, 278, "THE WARDEN KEEPS HIS BRONZE WITH THE OFFERINGS.", 520),
+        torch("warden_shelf_lamp", 820, 292, 170),
         torch("votive_lamp", 550, 350), start(rid, 152, g),
     ]
     return crypt(rid, e, "THE VOTIVE MOUND")
@@ -1364,9 +1401,13 @@ def watch_crypt():
     e = [
         solid("watch_floor", 0, g, 1440, 144),
         door("watch_to_field", "out to the cairnfield", 64, g, CAIRNFIELD, "cairnfield_to_watch"),
+        object_art("barrow_arch", 96, g, 144, 180),
         object_art("fantasy_grave_niche", 338, g, 128, 112),
         piece("hill_loading_stage", 552, g - 56),
         solid("fallen_doorhead", 762, g - 160, 160, 80),
+        ledge("watch_step", 574, g - 48, 96),
+        ledge("watch_corbels", 680, g - 104, 108),
+        entity("ChestSpawn", 822, g - 218, 76, 58, name="the watch's lamp fund", reward="currency:10"),
         burial_enemy("watch_crawler", "barrow_crawler", 832, g, 58, 30),
         burial_enemy("watch_guard", "barrow_wight", 1198, g, 36, 64),
         door("watch_to_tally", "through the broken service passage", 1320, g, TALLY_VAULT, "tally_to_watch"),
@@ -1384,17 +1425,87 @@ def tally_vault():
         solid("tally_floor", 0, g, 1968, 128),
         door("tally_to_barrow", "up to the family graves", 64, g, BARROW, "barrow_to_tally"),
         door("tally_to_watch", "through to the watch mound", 304, g, WATCH_CRYPT, "watch_to_tally"),
+        barrow_shrine(rid, "the candle bench", 438, g),
+        door("tally_to_wheelworks", "down to the wheelworks", 616, g, WHEELWORKS, "wheelworks_to_tally"),
         solid("sorting_dais", 736, g - 48, 224, 48),
-        object_art("fantasy_junk_heap", 514, g, 160, 100),
-        object_art("fantasy_junk_heap", 765, g - 48, 160, 100),
-        object_art("fantasy_junk_heap", 1590, g, 160, 100),
+        object_art("barrow_arch", 580, g, 146, 174),
+        object_art("fantasy_junk_heap", 770, g - 48, 160, 100),
+        object_art("barrow_salvage_stack", 1192, g, 184, 156),
+        object_art("fantasy_junk_heap", 1488, g, 170, 106),
         burial_enemy("tally_wight", "barrow_wight", 1024, g, 36, 64),
         burial_enemy("tally_toaster", "barrow_toaster", 1408, g, 42, 38),
-        sign("tally_note", 1160, 230, "COPPER TO THE LEFT. KEEP THE LIVE ONES UNPLUGGED.", 600),
+        *barrow_gate("barrow_bronze_seal", 1144, g, f"inventory.holds {WARD_KEY}",
+                     "barrow_bronze_seal", "requires the bronze ward key"),
+        *barrow_gate("barrow_crown_seal", 1712, g, f"inventory.holds {CROWN_KEY}",
+                     "barrow_crown_seal", "requires the crown key"),
+        sign("tally_key_record", 1026, 230, "BRONZE WARD. SPARE WITH THE VOTIVE KEEPERS.", 420),
+        sign("tally_note", 1430, 278, "SOCKETS FACE THE WALL. ONE BIT THE WARDEN.", 420),
+        sign("tally_crown_record", 1530, 200, "CROWN KEY. BELOW THE WHEELWORKS.", 350),
         door("tally_to_royal", "enter the royal tomb", 1840, g, ROYAL_TOMB, "royal_to_tally"),
         torch("tally_light_west", 500, 315), torch("tally_light_east", 1580, 320), start(rid, 155, g),
     ]
     return crypt(rid, e, "THE TALLY VAULT")
+
+
+def wheelworks():
+    """The counterweight trades the lower passage for the upper one."""
+    rid, g = WHEELWORKS, 512
+    on = f"world.switch_on {COUNTERWEIGHT}"
+    off = f"not {on}"
+    e = [
+        solid("wheelworks_floor", 0, g, 1856, 128),
+        door("wheelworks_to_tally", "up to the tally vault", 64, g, TALLY_VAULT, "tally_to_wheelworks"),
+        ledge("wheel_step_west", 344, 464, 110),
+        ledge("wheel_landing_west", 426, 416, 82),
+        ledge("wheel_crossing", 478, 384, 164),
+        ledge("wheel_landing_east", 628, 416, 94),
+        ledge("wheel_step_east", 708, 464, 104),
+        *barrow_gate("wheel_upper_gate", 512, 384, off, "barrow_latch_weight", "the high passage"),
+        *barrow_gate("wheel_lower_gate", 512, g, on, "barrow_latch_weight", "the low passage", top=384, gap=96),
+        ledge("sluice_roof_step", 798, 432, 86),
+        solid("sluice_roof", 848, 384, 244, 32),
+        solid("sluice_end_wall", 1044, 416, 48, 96),
+        entity("LockWall", 848, 416, 48, 96, id="wheel_sluice_recess", name="the sluice recess",
+               gated_by=on, look="barrow_latch_weight"),
+        barrow_lever(COUNTERWEIGHT, 262, g, "the counterweight wheel"),
+        barrow_lever(SLUICE, 908, g, "the sluice wheel"),
+        object_art("barrow_counterweights", 193, g, 186, 216),
+        object_art("barrow_sluice_pipe", 853, g, 190, 204),
+        sign("wheel_weight_clue", 292, 317, "RAISE ONE PORTCULLIS. LOWER THE OTHER.", 380),
+        sign("wheel_drain_clue", 865, 312, "TURN THE SLUICE. RETURN THE COUNTERWEIGHT TO ITS REST.", 540),
+        *barrow_gate("wheel_weight_bolt", 1232, g, off, "barrow_latch_weight", "the counterweight bolt"),
+        *barrow_gate("wheel_sluice_bolt", 1392, g, f"world.switch_on {SLUICE}",
+                     "barrow_latch_water", "the sluice grille"),
+        burial_enemy("wheelworks_shambler", "barrow_shambler", 745, g, 30, 54),
+        object_art("barrow_arch", 1604, g, 178, 204),
+        door("wheelworks_to_reliquary", "into the reliquary", 1664, g, RELIQUARY, "reliquary_to_wheelworks"),
+        torch("wheel_west_torch", 276, 388, 236), torch("wheel_upper_torch", 576, 278, 150),
+        torch("wheel_east_torch", 941, 390, 226),
+        torch("wheel_door_torch", 1570, 362, 200), start(rid, 154, g),
+    ]
+    return crypt(rid, e, "THE WHEELWORKS")
+
+
+def reliquary():
+    """The crown key lies past the old guard."""
+    rid, g = RELIQUARY, 464
+    e = [
+        solid("reliquary_floor", 0, g, 1728, 144),
+        door("reliquary_to_wheelworks", "back to the wheelworks", 64, g, WHEELWORKS, "wheelworks_to_reliquary"),
+        entity("EncounterTrigger", 252, 64, 128, g - 64, id=RELIQUARY_ENCOUNTER, name="the wardens' watch"),
+        object_art("barrow_arch", 294, g, 182, 218),
+        ledge("reliquary_shelf", 576, g - 48, 204),
+        object_art("fantasy_grave_niche", 610, g - 48, 134, 120),
+        object_art("barrow_sarcophagus", 847, g, 174, 105),
+        ledge("reliquary_footrest", 968, g - 32, 156),
+        *barrow_gate("reliquary_screen", 1256, g, f"encounter.cleared {RELIQUARY_ENCOUNTER}",
+                     "temple_gate_iron", "the watchers' grille"),
+        object_art("barrow_royal_canopy", 1336, g, 294, 264),
+        entity("ChestSpawn", 1450, g - 58, 76, 58, name="the crown key casket", reward=f"item:{CROWN_KEY}"),
+        torch("reliquary_entrance_torch", 410, 310, 200), torch("reliquary_vigil_torch", 805, 318, 270),
+        torch("reliquary_casket_torch", 1485, 310, 215), start(rid, 153, g),
+    ]
+    return crypt(rid, e, "THE RELIQUARY")
 
 
 def royal_tomb():
@@ -1409,9 +1520,11 @@ def royal_tomb():
         entity("EncounterTrigger", 228, 64, 160, g - 64, id=KING_ENCOUNTER, name="the king's vigil"),
         entity("Switch", 172, g - 32, 24, 32, id="royal_vigil_bell", name="the burial bell",
                prompt="Ring the burial bell", target_encounter=KING_ENCOUNTER, action="ResetEncounter"),
-        object_art("fantasy_grave_niche", 805, g, 192, 168),
+        object_art("barrow_arch", 196, g, 158, 188),
+        object_art("barrow_royal_canopy", 702, g, 336, 288),
+        object_art("barrow_sarcophagus", 791, g, 152, 94),
         object_art("fantasy_junk_heap", 368, g, 160, 100),
-        object_art("fantasy_junk_heap", 978, g, 160, 100),
+        object_art("barrow_salvage_stack", 1000, g, 170, 146),
         object_art("fantasy_junk_heap", 1126, g, 96, 60),
         entity("ChestSpawn", 1350, g - 58, 76, 58, name="the king's grave goods", reward="currency:30"),
         torch("royal_vestibule_lamp", 244, 292), torch("royal_dais_lamp", 799, 226, 340),
@@ -1667,7 +1780,8 @@ def culvert():
 #: is free once the rooms east of it have moved.
 ROOMS = {
     BARROW: barrow, MOOR: moor, CAIRNFIELD: cairnfield, VOTIVE: votive_crypt, WATCH_CRYPT: watch_crypt,
-    TALLY_VAULT: tally_vault, ROYAL_TOMB: royal_tomb, MOUNTAIN_ASCENT: mountain_ascent,
+    TALLY_VAULT: tally_vault, WHEELWORKS: wheelworks, RELIQUARY: reliquary, ROYAL_TOMB: royal_tomb,
+    MOUNTAIN_ASCENT: mountain_ascent,
     MOUNTAIN_PASS: mountain_pass, MOUNTAIN_SHELTER: mountain_shelter, MOUNTAIN_DESCENT: mountain_descent,
     BRACKENFORD: brackenford, OLD_WATCH: old_watch, FELL: fell, SIDING: siding, CLEARING: clearing,
     MEADOW: meadow, WOODS: woods, VILLAGE: village, GUILD: guild_room, MILLSTREAM: millstream,
