@@ -95,7 +95,7 @@ ROOMS_AT = {
     ORCHARD: (8192, 1088, 2816, 960),
     WELL: (11008, 256, 1280, 1600),
     HALL: (11008, -768, 2560, 1024),
-    GALLERY: (15616, 384, 2560, 960),
+    GALLERY: (13568, -1232, 2560, 960),
     APPROACH: (18432, -1472, 1280, 1408),
     ARENA: (18432, 64, 1920, 1280),
 }
@@ -437,11 +437,11 @@ def conservation_hall():
     on is down: off its edge, into a portal that is the whole floor of the
     basin below. Its other end is in the next wall, facing a pit too wide to
     jump. What falls far comes out fast, and flies over.
-    Twist: the door on is in a gallery shut in by solid wall. Its way in is a
+    Twist: the exit is in a gallery above the hall floor. Its way in is a
     portal in the floor of the hall whose other end is in the gallery's
     floor, under a field that pulls up: you fall in down, come out going up,
     and go on falling up, onto the ceiling (the orchard's idea). Walk the
-    ceiling out of the field and drop to the door.
+    ceiling out of the field and drop to the exit.
 
     The pit floor is a hazard. A fall returns the robot to the hall entrance.
     """
@@ -452,11 +452,13 @@ def conservation_hall():
     pillar_x = 1280
     pit_end = 1568
     gallery_x, gallery_floor = 1856, 432
+    exit_height = 128
     basin = pillar_x - shelf_end
     e = [
         solid("vault", 0, 0, w, vault),
         solid("west_wall", 0, vault, WALL, floor - vault),
-        solid("east_wall", w - WALL, vault, WALL, floor - vault),
+        solid("east_wall", w - WALL, vault, WALL, gallery_floor - exit_height - vault),
+        solid("east_wall_below_gallery", w - WALL, gallery_floor, WALL, floor - gallery_floor),
         solid("floor_west", 0, floor, 64, h - floor),
         solid("floor_at_shelf", 160, floor, pillar_x + 32 - 160, h - floor),
         ledge("hall_shaft_landing", 64, 976, 96),
@@ -489,7 +491,9 @@ def conservation_hall():
                activation="EdgeExit", target_room=WELL, target_zone="well_top_door", bidirectional=True),
         label("hall_well_sign", 29, 800, "↓ VECTOR WELL", 164),
         start(rid, 176, floor),
-        door("hall_gallery_exit", "on to the inversion gallery", w - 112, gallery_floor, GALLERY, "gallery_west_door"),
+        entity("LoadingZone", w - WALL, gallery_floor - exit_height, WALL, exit_height, id="hall_gallery_exit",
+               name="to the Inversion Gallery", activation="EdgeExit", target_room=GALLERY,
+               target_zone="gallery_west_door", bidirectional=True),
     ]
     ladder = """
     intgrid: (climbable: [
@@ -501,7 +505,7 @@ def conservation_hall():
 def inversion_gallery():
     """4. THE INVERSION GALLERY — the whole room turns over (switches).
 
-    Teach: a lever by the door turns the room's gravity up; a lever on the
+    Teach: a lever by the west passage turns the room's gravity up; a lever on the
     ceiling above it turns it down again.
     Test: the floor stops at a chasm with a hazard in it; the ceiling goes
     on. Turn the room over and walk the ceiling across.
@@ -525,12 +529,13 @@ def inversion_gallery():
     step_x, step_low = 1600, 160
     hole_x, hole_end = 1760, 2080
     down_x = 2304
+    exit_height = 128
     e = [
         solid("vault_west", 0, 0, step_x, step_low),
         solid("vault_before_hole", step_x, 0, hole_x - step_x, vault),
         solid("vault_east", hole_end, 0, w - hole_end, vault),
         hazard("hole_hazard", hole_x, 0, hole_end - hole_x),
-        solid("west_wall", 0, step_low, WALL, floor - step_low),
+        solid("west_wall", 0, step_low, WALL, floor - exit_height - step_low),
         solid("east_wall", w - WALL, vault, WALL, floor - vault),
         solid("floor_west", 0, floor, chasm_x, h - floor),
         hazard("chasm_hazard", chasm_x, h - 16, chasm_end - chasm_x),
@@ -546,7 +551,9 @@ def inversion_gallery():
         # The column that remembers down, over the door's ledge.
         field("gallery_down_column", down_x, vault, w - WALL - down_x, floor - vault, "down"),
         entity("ShrineSpawn", down_x + 48, floor - 80, 44, 80, id="gallery_shrine", name="the shrine before GNU-ton"),
-        door("gallery_west_door", "back to the conservation hall", 48, floor, HALL, "hall_gallery_exit"),
+        entity("LoadingZone", 0, floor - exit_height, WALL, exit_height, id="gallery_west_door",
+               name="to Conservation Hall", activation="EdgeExit", target_room=HALL,
+               target_zone="hall_gallery_exit", bidirectional=True),
         start(rid, 176, floor),
         door("gallery_arena_door", "on to the approach", w - 112, floor, APPROACH, "approach_gallery_door"),
     ]

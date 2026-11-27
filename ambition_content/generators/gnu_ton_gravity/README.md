@@ -57,13 +57,13 @@ way along the face).
      off its edge, into a portal that is the whole floor of the basin. Its
      other end is in the next wall, over a pit with a hazard in it. What falls
      far comes out fast and flies over.
-   - Twist: the door on is in a gallery closed in by solid wall. A portal in
-     the hall's floor has its other end in the gallery's floor, under an up
-     field (room 1). You fall in going down, come out going up, and go on
-     falling up to the ceiling. Walk out of the field and drop to the door.
+   - Twist: a portal in the hall floor has its other end in the raised
+     gallery floor, under a field that pulls up. Fall into the portal and
+     go up to the ceiling. Walk out of the field and fall to the floor.
+     The east passage connects this floor to the Inversion Gallery.
 4. **`gnu_ton_inversion_gallery` — the whole room turns over (switches).**
-   - Teach: the lever by the door (`SetGravityUp`) turns the room's gravity
-     up. The lever on the ceiling over it (`SetGravityDown`) turns it back.
+   - Teach: the lever by the west passage (`SetGravityUp`) turns the room's
+     gravity up. The lever above it (`SetGravityDown`) turns gravity down.
    - Test: the floor stops at a chasm with a hazard. The ceiling goes on.
      Turn the room over and walk the ceiling across.
    - Twist: the ceiling has a hole with a hazard in it, too wide to jump. The
@@ -111,9 +111,9 @@ hall's shelf and gallery are closed by solid wall.
 
 `game/ambition_app/tests/the_gnu_ton_handle.rs` drives the robot through
 each room with a player's inputs: the trees of the orchard, the swinging
-tree, the four falls of the well, the hall's two portal pairs, the gallery's
-levers and its crossing, the approach's climb, the lift and its gate in
-the spoke, and the door chain from the hub to the arena and home.
+tree, the four falls of the well, all three portal pairs in the hall, the
+gallery levers and crossing, the approach's climb, the lift and its gate in
+the spoke, and the route from the hub to the arena and home.
 It also checks that GNU-ton is alive, that his punch opens his portals,
 and that his recorded defeat opens the way home. The orbital station
 tests check the tram route from the orchard to the observation deck
