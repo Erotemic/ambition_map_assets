@@ -237,7 +237,7 @@ def shell(w, h, floor, vault=48, west=0, east=0):
     ]
 
 
-def room(rid, entities, title, theme=DECK_THEME, music=MUSIC, title_y=64):
+def room(rid, entities, title, theme=DECK_THEME, music=MUSIC, title_y=64, *, extra=""):
     world_x, world_y, w, h = ROOMS_AT[rid]
     body = "\n        ".join(entities + [camera(rid, w, h), label(f"{rid}_title", 64, title_y, title, min(900, w - 128))])
     return f"""// Written by game/ambition_map_assets/ambition_content/generators/orbital_station/make_specs.py. Change the script, not this file.
@@ -252,7 +252,7 @@ def room(rid, entities, title, theme=DECK_THEME, music=MUSIC, title_y=64):
     bg_color: "{BG}",
     biome: "{theme}",
     parallax_theme: "{theme}",
-    music_track: "{music}",
+    music_track: "{music}",{extra}
     entities: [
         {body}
     ],
@@ -268,6 +268,8 @@ def room(rid, entities, title, theme=DECK_THEME, music=MUSIC, title_y=64):
 #: The freight lane's pen, in the dock and in the bay: its gate is a lock
 #: wall that stands until customs clears the crate.
 PEN_GATE_W, PEN_GATE_H = 96, 144
+BAY_SERVICE_LADDER = (2176, 560, 32, 400)
+BAY_SERVICE_STEPS = ((2352, 2464, 896), (2288, 2400, 832), (2112, 2368, 768))
 
 
 def gate_dock():
@@ -313,15 +315,20 @@ def gate_dock():
 
 
 def docking_bay():
-    """The docking bay, open on space behind its field. The hauler hangs in
-    its berth over the floor; a gantry climbs from the floor to a walk under
-    its spine and on to the stairs up to the observation deck, high in the
-    east. The freight lane comes in at the west end, the tether terminus is
-    on through the east end."""
+    """The west gantry and east ladder lead to the walk under the hauler.
+
+    The shuttle steps give access to the east ladder at the service deck.
+    The floor leads to the freight lane and the tether terminus.
+    """
     rid = BAY
     _, _, w, h = ROOMS_AT[rid]
     floor = 960
     walk = 576
+    x, y, width, height = BAY_SERVICE_LADDER
+    ladder = f"""
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [{x}, {y}], size: [{width}, {height}]),
+    ]),"""
     e = shell(w, h, floor, west=PEN_GATE_H, east=OPENING) + [
         # The freight lane from the gate dock, behind its own pen gate.
         edge("bay_freight_lane", "the freight lane to the gate deck", 0, floor, DOCK, "dock_freight_lane", PEN_GATE_H),
@@ -334,6 +341,7 @@ def docking_bay():
         prop("bay_freight_west", "orbital_freight_stack", 320, floor, 180, 120),
         prop("bay_freight_east", "orbital_freight_stack", 1500, floor, 180, 120),
         prop("bay_shuttle", "orbital_shuttle", 1880, floor, 300, 140),
+        piece("orbital_bay_gangways", 536, 462),
         resident("npc_station_lindqvist", "station_lindqvist", 1240, floor),
         # The gantry: steps of 64 from the floor up to the walk.
         ledge("gantry_1", 560, 896, 128),
@@ -342,6 +350,10 @@ def docking_bay():
         ledge("gantry_4", 640, 704, 128),
         ledge("gantry_5", 560, 640, 128),
         ledge("hauler_walk", 640, walk, 1760),
+        *[ledge(f"bay_service_step_{i}", left, top, right - left)
+          for i, (left, right, top) in enumerate(BAY_SERVICE_STEPS)],
+        label("bay_observation_sign", 2190, 484, "OBSERVATION DECK →", 204),
+        label("bay_terminus_sign", 2340, 785, "TETHER TERMINUS →", 204),
         resident("npc_station_reyes", "station_reyes", 1560, walk, roam=False),
         coin("bay_spine_coin", 1100, walk - 40),
         # The landing of the stairs up to the observation deck, high in the east.
@@ -350,7 +362,7 @@ def docking_bay():
         # The space elevator's terminus, on east (`specs/eureka`).
         edge("bay_east", "on to the tether terminus", w - WALL, floor, TERMINUS, TERMINUS_WEST),
     ]
-    return rid, room(rid, e, "THE DOCKING BAY: THE HAULER REMAINDER IN ITS BERTH", theme=OPEN_THEME)
+    return rid, room(rid, e, "THE DOCKING BAY: THE HAULER REMAINDER IN ITS BERTH", theme=OPEN_THEME, extra=ladder)
 
 
 def observation_deck():

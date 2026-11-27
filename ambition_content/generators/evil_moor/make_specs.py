@@ -111,8 +111,9 @@ MOOR_TOWER_TOP = (1500, 1620)
 HILL = "evil_gallows_hill"
 HILL_AT, HILL_W = (-6800, -544), 2800
 BELL_TOWER = (1040, 1160)
+HILL_TERRACE = ((1328, RIDGE_G), (1584, 384), (1856, 384), (2112, 352), (2368, 352), (2688, RIDGE_G))
 #: The sarcophagus (x0, x1, its lid, walked on).
-SARCOPHAGUS = (1100, 1300, 440)
+SARCOPHAGUS = (1088, 1312, 432)
 FOREST = "evil_gate_forest"
 #: The allotments, west of the moor: the same floor, the rooms touching.
 ALLOT = "evil_castle_allotments"
@@ -126,9 +127,16 @@ ALLOT_ROOF = (470, 850, 512)
 HAMLET = "evil_lower_godwin"
 HAMLET_W = 2400
 #: The crier's platform (x0, x1, y), walked on (`evil_hamlet_props.py`).
-HAMLET_PLATFORM = (1270, 1410, 592)
+HAMLET_PLATFORM = (1264, 1424, 592)
 W, H, FLOOR = 2400, 784, 656
 BOG = (600, 1100, 640)
+BOG_WALKS = ((496, 592, 608), (592, 720, 560), (752, 896, 560),
+             (928, 1088, 560), (1104, 1264, 608))
+TOWER_LANDINGS = ((1488, 1632, 560), (1536, 1664, 464), (1488, 1632, 368),
+                  (1520, 1680, 272))
+TOWER_STEPS = ((1248, 1408, 544), (1408, 1504, 512), (1456, 1552, 416),
+               (1600, 1728, 320), (1600, 1712, 416), (1648, 1760, 464),
+               (1728, 1824, 512), (1776, 1872, 560))
 
 
 def enemy(n, character, x, feet, w, h):
@@ -140,12 +148,13 @@ def moor():
     bx0, bx1, water = BOG
     e = [
         piece("moor_inn_front", 0, 400, name="moor_inn_front"),
-        piece("moor_wire", 200, 600, name="moor_wire"),
+        piece("moor_wire", 200, 460, name="moor_wire"),
         door("moor_inn_door", "into the Crooked Lantern", 120, FLOOR, INN, "inn_door"),
-        sign("inn_sign", 250, FLOOR - 260, "THE CROOKED LANTERN: open after curfew, which is always", 460),
-        piece("moor_bog", 560, 580, name="moor_bog"),
+        sign("inn_sign", 391, 481, "THE CROOKED LANTERN", 230),
+        sign("inn_sign_curfew", 391, 505, "Open after curfew, which is always.", 230),
+        piece("moor_bog", 480, 460, name="moor_bog"),
         piece("moor_watchtower", 1180, 0, name="moor_watchtower"),
-        piece("moor_statue", 1740, 500, name="moor_statue"),
+        piece("moor_statue", 1740, 390, name="moor_statue"),
         piece("moor_crypt_gate", 2250, 500, name="moor_crypt_gate"),
         # The stair down under the gate's porch to the crypt: a hole in the
         # ground, a ladder down it (`main`), the way down at its bottom.
@@ -161,7 +170,9 @@ def moor():
         solid("east_wall", W - WALL, 0, WALL, FLOOR - 112),
         edge("moor_east", "back to the forest", W - WALL, FLOOR, FOREST, "forest_west"),
         start(MOOR, W - 200, FLOOR),
-        *[ledge(f"tower_{i}", x0, y, x1 - x0) for i, (x0, x1, y) in enumerate(((1500, 1620, 560), (1540, 1660, 464), (1500, 1620, 368), (1520, 1680, 272)))],
+        *[ledge(f"bog_walk_{i}", x0, y, x1 - x0) for i, (x0, x1, y) in enumerate(BOG_WALKS)],
+        *[ledge(f"tower_step_{i}", x0, y, x1 - x0) for i, (x0, x1, y) in enumerate(TOWER_STEPS)],
+        *[ledge(f"tower_{i}", x0, y, x1 - x0) for i, (x0, x1, y) in enumerate(TOWER_LANDINGS)],
         # Over the top of the watchtower, out of the room: the ridge.
         entity("LoadingZone", MOOR_TOWER_TOP[0], 0, MOOR_TOWER_TOP[1] - MOOR_TOWER_TOP[0], 16, id="moor_ridge",
                name="up onto the Searchlight Ridge", activation="EdgeExit", target_room=RIDGE, target_zone="ridge_tower",
@@ -169,15 +180,19 @@ def moor():
         # His back, walked on: a still one-way platform with no picture (the
         # statue's art draws it), as the math town's cradle plinth.
         entity("MovingPlatform", 1890, 600, 300, 16, id="statue_back", name="statue_back", speed=0.0, visual="none", one_way=True),
+        ledge("statue_plinth", 2208, 560, 64),
         # A chest for whoever climbs to the top (Jon, 2026-10-30: "interactive elements").
         entity("ChestSpawn", 1600, 272 - 58, 76, 58, name="the watchman's strongbox", reward="currency:50"),
-        sign("moor_sign", W - 200, FLOOR - 260, "THE MOOR: curfew is always", 360),
-        sign("tower_sign", 1590, 110, "WATCHTOWER 7 (the other six are worse)", 380),
-        sign("bog_sign", 850, FLOOR - 140, "BOG: do not drink, do not swim, do not look", 440),
-        sign("statue_sign", 2050, 450, "OUR FOUNDER (temporarily horizontal)", 380),
+        sign("moor_sign", 2248, 403, "THE MOOR: curfew is always", 214),
+        sign("tower_sign", 1350, 467, "WATCHTOWER 7", 196),
+        sign("tower_sign_note", 1350, 491, "The other six are worse.", 196),
+        sign("bog_sign", 824, 481, "THE BOG", 204),
+        sign("bog_sign_warning", 824, 505, "Do not drink, swim or look.", 204),
+        sign("statue_sign", 2048, 491, "OUR FOUNDER", 204),
+        sign("statue_sign_note", 2048, 515, "Temporarily horizontal.", 204),
         enemy(1, "npc_evil_attack_hound", 420, FLOOR, 52, 50),
         enemy(2, "npc_evil_attack_hound", 1760, FLOOR, 52, 50),
-        enemy(3, "npc_evil_failed_prototype", 1260, FLOOR, 32, 40),
+        enemy(3, "npc_searchlight_crawler", 980, 560, 48, 34),
         enemy(4, "npc_evil_failed_prototype", 1420, FLOOR, 32, 40),
         enemy(5, "npc_evil_zombie", 520, FLOOR, 30, 67),
         enemy(6, "npc_evil_zombie", 1960, 580, 30, 67),
@@ -189,7 +204,7 @@ def moor():
 def allotments():
     w = ALLOT_W
     e = [
-        piece("allotment_west", 40, 480, name="allotment_west"),
+        piece("allotment_west", 40, 400, name="allotment_west"),
         piece("allotment_beds", 940, 420, name="allotment_beds"),
         # Plot 13's hole down to the catacombs: a ladder (`main`), the way
         # down at its bottom.
@@ -208,17 +223,25 @@ def allotments():
         edge("allot_east", "back to the moor", w - WALL, FLOOR, MOOR, "moor_west"),
         start(ALLOT, w - 200, FLOOR),
         *[ledge(f"bed_{i}", x0, top, x1 - x0) for i, (x0, x1, top) in enumerate(ALLOT_BEDS)],
+        ledge("allot_seed_chest", 144, 608, 80),
+        ledge("allot_shed_walk", 192, 544, 80),
+        ledge("allot_gate_landing", 352, 544, 96),
+        ledge("allot_watering_shelf", 912, 560, 80),
+        ledge("allot_trellis_walk", 1008, 560, 736),
+        ledge("allot_east_step", 1760, 608, 96),
         ledge("water_butt", ALLOT_BUTT[0], ALLOT_BUTT[2], ALLOT_BUTT[1] - ALLOT_BUTT[0]),
         ledge("greenhouse_roof", ALLOT_ROOF[0], ALLOT_ROOF[2], ALLOT_ROOF[1] - ALLOT_ROOF[0]),
         entity("ChestSpawn", 620, ALLOT_ROOF[2] - 58, 76, 58, name="the prize-money tin", reward="currency:60"),
         resident("npc_evil_crabbe", "evil_crabbe", 230, FLOOR),
-        sign("allot_sign_plot", 340, FLOOR - 110, "PLOT 13: H. CRABBE. KEEP OUT. YES, YOU.", 380),
-        sign("allot_sign_mandrake", 1640, FLOOR - 150, "DO NOT PULL THE MANDRAKES", 300),
-        sign("allot_sign_show", 1480, FLOOR - 200, "BEST IN SHOW: the Malevolent Marrow", 360),
-        sign("allot_sign_cabbage", 1340, FLOOR - 100, "CABBAGES: feed from the side", 300),
-        enemy(20, "npc_evil_zombie", 1200, FLOOR, 30, 67),
+        sign("allot_sign_plot", 338, 416, "PLOT 13: H. CRABBE", 242),
+        sign("allot_sign_plot_warning", 338, 442, "KEEP OUT. YES, YOU.", 242),
+        sign("allot_sign_mandrake", 1672, 456, "DO NOT PULL THE MANDRAKES", 216),
+        sign("allot_sign_show", 1464, 430, "BEST IN SHOW", 156),
+        sign("allot_sign_marrow", 1464, 454, "The Malevolent Marrow", 156),
+        sign("allot_sign_cabbage", 1268, 472, "CABBAGES: feed from the side", 200),
+        enemy(20, "npc_evil_zombie_crawler", 1200, FLOOR, 52, 28),
         enemy(21, "npc_evil_attack_hound", 1880, FLOOR, 52, 50),
-        enemy(22, "npc_evil_failed_prototype", 1340, ALLOT_BEDS[1][2], 32, 40),
+        enemy(22, "npc_evil_failed_prototype", 1340, 560, 32, 40),
         enemy(23, "npc_evil_zombie", 1060, ALLOT_BEDS[0][2], 30, 67),
     ]
     return ALLOT, room(ALLOT, e, at=(-W - w, 0), size=(w, H), biome="evil_forest", music="oppressive_crush",
@@ -229,13 +252,18 @@ def hamlet():
     w = HAMLET_W
     p0, p1, py = HAMLET_PLATFORM
     e = [
-        piece("hamlet_west", 90, FLOOR - 210, name="hamlet_west"),
-        piece("hamlet_east", 1250, FLOOR - 180, name="hamlet_east"),
+        piece("hamlet_west", 90, 352, name="hamlet_west"),
+        piece("hamlet_east", 1120, 400, name="hamlet_east"),
         solid("ground", 0, FLOOR, w, H - FLOOR),
         solid("west_wall", 0, 0, WALL, FLOOR),
         solid("east_wall", w - WALL, 0, WALL, FLOOR - 112),
         edge("hamlet_east", "to the allotments", w - WALL, FLOOR, ALLOT, "allot_west"),
         start(HAMLET, w - 200, FLOOR),
+        ledge("hamlet_flour_bin", 544, 608, 80),
+        ledge("hamlet_flour_rack", 608, 544, 96),
+        ledge("hamlet_bakery_loft", 688, 496, 240),
+        ledge("hamlet_tower_west_landing", 928, 496, 128),
+        ledge("hamlet_tower_east_landing", 1152, 528, 112),
         ledge("crier_platform", p0, py, p1 - p0),
         # The bell tower: its ladder (`main`) up out of the room's top to the
         # hill.
@@ -243,14 +271,18 @@ def hamlet():
         entity("LoadingZone", BELL_TOWER[0], 0, BELL_TOWER[1] - BELL_TOWER[0], 16, id="hamlet_belltower_top",
                name="up the bell tower to Gallows Hill", activation="EdgeExit", target_room=HILL,
                target_zone="hill_belltower", bidirectional=True),
-        sign("hamlet_sign_bell", BELL_TOWER[1] + 60, FLOOR - 220, "THE CURFEW BELL: rung at dusk, at dawn, and whenever", 440),
-        resident("npc_evil_bellows", "evil_bellows", p0 + 50, py),
+        sign("hamlet_sign_bell", 1262, 415, "THE CURFEW BELL", 256),
+        sign("hamlet_sign_bell_hours", 1262, 441, "Rung at dusk, at dawn, and whenever.", 256),
+        resident("npc_evil_bellows", "evil_bellows", 1320, py),
         resident("npc_evil_crumb", "evil_crumb", 780, FLOOR),
         door("hamlet_bakery_door", "into Crumb's bakery", BAKERY_DOOR_X, FLOOR, BAKERY, "bakery_door"),
-        sign("hamlet_sign", 600, 140, "LOWER GODWIN: twinned with nowhere, by order", 460),
-        sign("hamlet_sign_stocks", 1640, FLOOR - 100, "STOCKS: for complaining", 260),
-        sign("hamlet_sign_decree", 1800, FLOOR - 190, "DECREE 47: smiling is compulsory on Tuesdays", 440),
-        sign("hamlet_sign_bakery", 810, FLOOR - 240, "CRUMB'S: bread for the castle, bread for us", 420),
+        sign("hamlet_sign", 400, 400, "LOWER GODWIN", 296),
+        sign("hamlet_sign_twin", 400, 426, "Twinned with nowhere, by order.", 296),
+        sign("hamlet_sign_stocks", 1640, 555, "STOCKS: for complaining", 176),
+        sign("hamlet_sign_decree", 1800, 475, "DECREE 47", 240),
+        sign("hamlet_sign_decree_smile", 1800, 501, "Smiling is compulsory on Tuesdays.", 240),
+        sign("hamlet_sign_bakery", 810, 380, "CRUMB'S", 280),
+        sign("hamlet_sign_bread", 810, 406, "Bread for the castle, bread for us.", 280),
     ]
     return HAMLET, room(HAMLET, e, at=(-W - ALLOT_W - w, 0), size=(w, H), biome="evil_forest", music="argand_waltz",
                         bg="#3A0E0E", title="LOWER GODWIN", generator=GENERATOR)
@@ -276,7 +308,16 @@ def bakery():
         solid("east_wall", w - WALL, 32, WALL, g - 32),
         door("bakery_door", "out to Lower Godwin", 40, g, HAMLET, "hamlet_bakery_door"),
         start(BAKERY, 140, g),
-        resident("npc_evil_prentice", "evil_prentice", 830, g),
+        ledge("bakery_prep_bench", 96, 320, 80),
+        ledge("bakery_oven_walk", 192, 256, 208),
+        ledge("bakery_loading_shelf", 416, 240, 272),
+        ledge("bakery_counter", 432, 336, 240),
+        ledge("bakery_flour_rack", 704, 304, 96),
+        ledge("bakery_paper_bench", 832, 352, 80),
+        resident("npc_evil_prentice", "evil_prentice", 936, g),
+        sign("bakery_sign_castle_loaves", 548, 76, "CASTLE ORDER", 200),
+        sign("bakery_sign_hamlet_loaves", 548, 124, "HAMLET LOAVES", 200),
+        sign("bakery_sign_gazette", 864, 147, "THE LOWER GODWIN GAZETTE", 228),
     ]
     return BAKERY, room(BAKERY, e, at=BAKERY_AT, size=(w, h), biome="castle_godwin", music="argand_waltz", bg="#2A1A14",
                         title="CRUMB'S BAKERY", generator=GENERATOR)
@@ -295,9 +336,17 @@ def inn():
         solid("east_wall", w - WALL, 32, WALL, g - 32),
         door("inn_door", "out onto the moor", 40, g, MOOR, "moor_inn_door"),
         start(INN, 140, g),
+        ledge("inn_firewood_box", 144, 384, 80),
+        ledge("inn_map_gallery", 128, 320, 144),
+        ledge("inn_mantel", 272, 320, 128),
+        ledge("inn_tasting_table", 448, 384, 80),
+        ledge("inn_counter", 560, 400, 288),
         resident("npc_evil_tobias", "evil_tobias", 430, g),
         resident("npc_evil_gudrun", "evil_gudrun", 700, g),
-        sign("inn_sign_rules", 512, 110, "NO SINGING THE OLD ANTHEM. HUM IT.", 420),
+        sign("inn_sign_rules", 470, 140, "NO SINGING THE OLD ANTHEM. HUM IT.", 304),
+        sign("inn_map_ridge", 219, 190, "RIDGE", 60),
+        sign("inn_map_road", 219, 214, "ROAD", 60),
+        sign("inn_map_crypt", 219, 238, "CRYPT", 60),
     ]
     return INN, room(INN, e, at=INN_AT, size=(w, h), biome="castle_godwin", music="argand_waltz", bg="#2A1A14",
                      title="THE CROOKED LANTERN", generator=GENERATOR)
@@ -321,12 +370,16 @@ def crypt():
                bidirectional=True),
         edge("crypt_west", "into the catacombs", 0, g, CATACOMBS, "catacombs_east"),
         start(CRYPT, CRYPT_SHAFT[0] - 120, g),
+        ledge("crypt_west_plinth", 256, 448, 80),
+        ledge("crypt_funeral_walk", 352, 384, 464),
+        ledge("crypt_memorial_ledge", 848, 416, 208),
         ledge("sarcophagus_lid", s0, lid, s1 - s0),
-        entity("ChestSpawn", s0 + 60, lid - 58, 76, 58, name="the founder's medals", reward="currency:100"),
-        sign("crypt_sign", 800, 110, "HERE LIES OUR FOUNDER (mostly)", 380),
-        sign("crypt_sign_busts", 760, g - 160, "He pointed the way. West. At nothing.", 380),
+        ledge("crypt_east_plinth", 1392, 464, 64),
+        entity("ChestSpawn", (s0 + s1 - 76) // 2, lid - 58, 76, 58, name="the founder's medals", reward="currency:100"),
+        sign("crypt_sign", 1200, 292, "HERE LIES OUR FOUNDER (mostly)", 320),
+        sign("crypt_sign_busts", 597, 298, "He pointed the way. West. At nothing.", 320),
         enemy(10, "npc_evil_spectral_wolf", 620, g, 56, 56),
-        enemy(11, "npc_evil_zombie", 900, g, 30, 67),
+        enemy(11, "npc_shock_warden", 900, g, 40, 64),
         # West, toward the catacombs: not by the steps down.
         enemy(12, "npc_evil_zombie", 260, g, 30, 67),
     ]
@@ -346,7 +399,7 @@ def ridge():
     g0, g1 = RIDGE_GAP
     e = [
         piece("ridge_west", 16, 0, name="ridge_west"),
-        piece("ridge_east", 1800, 0, name="ridge_east"),
+        piece("ridge_east", 1784, 0, name="ridge_east"),
         solid("ground_west_end", 0, g, g0, h - g),
         solid("ground", g1, g, t0 - g1, h - g),
         solid("ground_east", t1, g, w - t1, h - g),
@@ -362,11 +415,18 @@ def ridge():
         # The hatch at the watchtower's top: come up through it and stand on
         # it; drop through it to go down.
         ledge("tower_hatch", t0, g, t1 - t0),
+        ledge("ridge_loading_step", 1824, 416, 96),
+        ledge("ridge_west_gantry", 1920, 352, 320),
+        ledge("ridge_sentry_hut_roof", 2288, 336, 192),
+        ledge("ridge_east_gantry", 2512, 368, 144),
+        ledge("ridge_turntable_deck", 2688, 400, 144),
+        ledge("ridge_east_step", 2880, 432, 80),
         start(RIDGE, t0 - 120, g),
         entity("ChestSpawn", g1 + 160, g - 58, 76, 58, name="the sentry's thermos money", reward="currency:60"),
-        sign("ridge_sign", 2380, 240, "THE SEARCHLIGHT RIDGE: smile, you are always lit", 460),
-        sign("ridge_sign_gap", g1 + 40, 300, "MIND THE GAP (the gap minds you)", 320),
-        enemy(40, "npc_fascist_enforcer", 2500, g, 32, 72),
+        sign("ridge_sign", 2384, 230, "THE SEARCHLIGHT RIDGE", 204),
+        sign("ridge_sign_lights", 2384, 256, "Smile. You are always lit.", 204),
+        sign("ridge_sign_gap", 532, 348, "MIND THE GAP (the gap minds you)", 212),
+        enemy(40, "npc_searchlight_crawler", 2580, 368, 48, 34),
         enemy(41, "npc_evil_attack_hound", 1900, g, 52, 50),
         enemy(42, "npc_fascist_enforcer", 1300, g, 32, 72),
         # A clubman by the sentry hut, waiting for someone to persuade.
@@ -384,9 +444,10 @@ def hill():
     and the moor."""
     w, h, g = HILL_W, RIDGE_H, RIDGE_G
     t0, t1 = BELL_TOWER
+    terrace_points = "; ".join(f"{x},{y}" for x, y in HILL_TERRACE)
     e = [
         piece("hill_west", 16, 200, name="hill_west"),
-        piece("hill_east", 1600, 140, name="hill_east"),
+        piece("hill_east", 1584, 140, name="hill_east"),
         solid("ground_west", 0, g, t0, h - g),
         solid("ground_east", t1, g, w - t1, h - g),
         solid("west_wall", 0, 0, WALL, g),
@@ -396,13 +457,16 @@ def hill():
                activation="EdgeExit", target_room=HAMLET, target_zone="hamlet_belltower_top", bidirectional=True),
         # The hatch at the bell tower's top, as the ridge's watchtower.
         ledge("belltower_hatch", t0, g, t1 - t0),
+        entity("SurfaceChain", 1328, 336, 16, 16, name="hill_terrace", points=terrace_points, visual="none", boarding="up"),
+        ledge("hill_wall_step", 1968, 416, 112),
         start(HILL, t1 + 120, g),
         entity("ChestSpawn", 200, g - 58, 76, 58, name="the hangman's tips", reward="currency:60"),
-        sign("hill_sign", 1400, 260, "GALLOWS HILL: views of the whole hamlet, and it of you", 460),
-        sign("hill_sign_gibbet", 1770, 380, "TEMPORARILY UNOCCUPIED. APPLY WITHIN.", 360),
-        sign("hill_sign_graves", 560, 400, "THE PAUPERS (they could not afford names)", 400),
+        sign("hill_sign", 1400, 291, "GALLOWS HILL", 276),
+        sign("hill_sign_view", 1400, 317, "Views of the whole hamlet, and it of you.", 276),
+        sign("hill_sign_gibbet", 1772, 300, "TEMPORARILY UNOCCUPIED. APPLY WITHIN.", 290),
+        sign("hill_sign_graves", 560, 375, "THE PAUPERS (they could not afford names)", 292),
         enemy(50, "npc_evil_zombie", 620, g, 30, 67),
-        enemy(51, "npc_evil_spectral_wolf", 1500, g, 56, 56),
+        enemy(51, "npc_evil_spectral_wolf", 1624, 384, 56, 56),
         enemy(52, "npc_fascist_enforcer", 2300, g, 32, 72),
     ]
     return HILL, room(HILL, e, at=HILL_AT, size=(w, h), biome="evil_forest", music="oppressive_crush", bg="#3A0E0E",
@@ -467,8 +531,12 @@ def ossuary():
         solid("east_wall", w - WALL, 32, WALL, g - 112 - 32),
         edge("secret_ossuary_east", "back through the broken wall", w - WALL, g, CATACOMBS, "secret_catacombs_west"),
         start(OSSUARY, w - 120, g),
-        entity("ChestSpawn", 282, g - 58, 76, 58, name="the first founder's signet", reward="currency:120"),
-        sign("ossuary_sign", 320, 60, "FOUNDERS 1 TO 6 (we do not speak of them)", 400),
+        ledge("ossuary_west_plinth", 144, 448, 80),
+        ledge("ossuary_signet_altar", 256, 384, 128),
+        ledge("ossuary_east_plinth", 416, 448, 80),
+        entity("ChestSpawn", 282, 384 - 58, 76, 58, name="the first founder's signet", reward="currency:120"),
+        sign("ossuary_sign", 320, 211, "FOUNDERS 1 TO 6", 198),
+        sign("ossuary_sign_silence", 320, 237, "(we do not speak of them)", 198),
     ]
     return OSSUARY, room(OSSUARY, e, at=OSSUARY_AT, size=(w, h), biome="castle_godwin", music="vault_in_the_dark",
                          bg="#141012", title="THE OTHER FOUNDERS", generator=GENERATOR, extra=UNDERGROUND_DARK)

@@ -75,6 +75,7 @@ COLLIDER_DOOR_X = 1828
 COLLIDER_GALLERY = (1488, 1760, 384)
 COLLIDER_WALKS = ((448, 560, 512), (576, 688, 448), (704, 1408, 384))
 QUAD = "eureka_quad"
+QUAD_WALKS = ((576, 960, 576), (1008, 1200, 576), (1232, 1408, 592), (1456, 1600, 576))
 PATENT = "eureka_patent_office"
 LAB = "eureka_coil_lab"
 DOME = "eureka_observatory"
@@ -107,6 +108,9 @@ ARRIVAL = "eureka_gate_arrival"
 BAY_EAST = "bay_east"
 #: How high the terminus's west end is open on to the bay.
 BAY_OPENING = 128
+TERMINUS_GALLERIES = ((192, 576, 720), (704, 1136, 720))
+TERMINUS_STEPS = ((128, 240, 880), (192, 304, 816), (256, 368, 752),
+                  (1104, 1216, 880), (1040, 1152, 816), (976, 1088, 752))
 
 BIOME = "eureka"
 HEIGHTS = "eureka_heights"
@@ -158,6 +162,9 @@ CAR_HOP = 40
 CAR_SPEED = 300.0
 CLIMB_SPEED = 340.0
 STATION_SHAFT_X = 960
+STATION_GALLERIES = ((16, 904, 1024), (1144, 1584, 1024))
+STATION_STEPS = ((464, 576, 1280), (416, 528, 1216), (352, 464, 1152), (288, 400, 1088),
+                 (1120, 1232, 1280), (1184, 1296, 1216), (1248, 1360, 1152), (1312, 1424, 1088))
 SHAFT_X = 576
 #: A body that comes up through a floor edge stands this far over it.
 EDGE_FEET = 68
@@ -222,10 +229,11 @@ def court():
 
 
 def quad():
-    """The quad. The street (y 768) runs the room; the lecture hall's terrace
-    (y 576) over its middle, the raised walk (y 576) at the west end. Doors on
-    the street to the patent office and the coil laboratory, and on the
-    terrace to the observatory. The cafe's awning is a step."""
+    """The street connects the offices and the tether station.
+
+    The raised walk passes the patent office, cafe, and fountain. It
+    connects the Gate Court to the lecture hall terrace.
+    """
     rid = QUAD
     _, (w, h) = ROOMS_AT[rid]
     # The raised walk is as high over the street as the court's is over its
@@ -239,7 +247,8 @@ def quad():
         # floor over it (dropped through) and a ladder (`main`).
         ledge("manhole_hatch", m0, street, m1 - m0),
         vertical_edge("quad_manhole", "down the manhole to the steam plant", m0, h - 16, m1 - m0, PLANT, "plant_manhole"),
-        sign("manhole_sign", m0 + 30, street - 120, "STEAM PLANT: authorised persons, and the curious", 380),
+        sign("manhole_sign", 920, 612, "STEAM PLANT", 144),
+        sign("manhole_sign_note", 920, 638, "Staff and the curious", 144),
         solid("west_wall_high", 0, 0, WALL, walk_y - 96),
         solid("west_wall_mid", 0, walk_y + 16, WALL, street - 96 - walk_y - 16),
         solid("east_wall", w - WALL, 0, WALL, street - 96),
@@ -251,11 +260,16 @@ def quad():
         ledge("raised_walk", WALL, walk_y, 560),
         ledge("walk_stair_1", 560, street - 64, 96),
         ledge("walk_stair_2", 600, street - 128, 64),
+        *[ledge(f"quad_walk_{i}", left, top, right - left)
+          for i, (left, right, top) in enumerate(QUAD_WALKS)],
         door("quad_patent_door", "into the patent office", 760, street, PATENT, "patent_door"),
-        sign("patent_sign", 784, street - 150, "PATENT OFFICE (THIRD CLASS)", 300),
+        sign("patent_sign", 757, 598, "PATENT OFFICE", 150),
+        sign("patent_sign_class", 757, 622, "Third class", 150),
+        ledge("cafe_street_bench", 960, 720, 80),
         ledge("cafe_awning", 1000, street - 112, 200),
         resident("npc_eureka_mina", "eureka_mina", 1100, street),
-        sign("cafe_sign", 1100, street - 180, "THE UNCERTAIN CUP: coffee, probably", 340),
+        sign("cafe_sign", 1104, 597, "THE UNCERTAIN CUP", 190),
+        sign("cafe_sign_note", 1104, 621, "Coffee, probably.", 190),
         resident("npc_eureka_priya", "eureka_priya", 1320, street),
         # The lecture hall: its steps up to the terrace, and the observatory's door on it.
         ledge("hall_step_1", 1440, street - 64, 96),
@@ -385,12 +399,11 @@ def observatory():
 
 
 def elevator_station():
-    """The ground station: a tall hall round the foot of the tether. The car
-    waits a hop over the floor under the open roof of the shaft (as the
-    Mockingbird's shark waits in the air): hop on and it is all that holds
-    you, so it carries you. Level with the floor, it set off at the first
-    touch of a foot still on the floor and rose through it. The operator is
-    by it."""
+    """The floor leads to the car and the operator.
+
+    The steps give access to the galleries beside the shaft. The car
+    waits above the floor and moves up when a rider stands on it.
+    """
     rid = STATION
     _, (w, h) = ROOMS_AT[rid]
     floor = h - 64
@@ -406,48 +419,58 @@ def elevator_station():
         car("tether_car_ground", "the tether's car", sx, floor - CAR_HOP, -(floor - CAR_HOP + 60), CAR_SPEED),
         vertical_edge("station_to_climb", "up the tether", sx, 0, sw, CLIMB, "climb_from_station"),
         resident("npc_eureka_teodora", "eureka_teodora", 720, floor),
-        sign("station_sign", 760, 120, "EUREKA TETHER: GROUND STATION", 460),
-        sign("station_sign_car", sx + sw // 2, floor - 200, "STAND ON THE CAR TO ASCEND", 320),
-        sign("station_sign_altitude", sx + sw // 2, floor - 260, "Orbit: 35,786 km. Allow for the view.", 400),
-        # Galleries round the hall.
-        walk("gallery_west", WALL, floor - 320, 480),
-        walk("gallery_east", w - 400, floor - 320, 400 - WALL),
+        sign("station_sign", 294, 812, "EUREKA TETHER: GROUND STATION", 380),
+        sign("station_sign_car", 827, 1180, "STAND ON THE CAR TO ASCEND", 232),
+        sign("station_sign_altitude", 1368, 928, "ORBIT IS 35,786 KM ABOVE EUREKA", 344),
+        sign("station_sign_altitude_note", 1368, 952, "Allow for the view.", 344),
+        *[walk(f"gallery_{side}", left, top, right - left)
+          for side, (left, right, top) in zip(("west", "east"), STATION_GALLERIES)],
+        *[ledge(f"station_step_{i}", left, top, right - left)
+          for i, (left, right, top) in enumerate(STATION_STEPS)],
     ]
     return build(rid, e, "THE TETHER: GROUND STATION")
 
 
-#: The signs on the climb, by how far up the room they are (0 bottom, 1 top).
+#: Place each height sign beside its landmark.
 CLIMB_SIGNS = [
-    (0.08, "12 km: the weather, now under you"),
-    (0.30, "100 km: the Karman line. Space, technically"),
-    (0.55, "2,000 km: low orbit, and its traffic"),
-    (0.80, "20,000 km: the planet fits in the window"),
+    (8, 846, 2934, "12 km: the weather, now under you"),
+    (30, 846, 2228, "100 km: the Karman line. Space, technically"),
+    (55, 846, 1428, "2,000 km: low orbit, and its traffic"),
+    (80, 436, 622, "20,000 km: the planet fits in the window"),
 ]
 
 
 def elevator_climb():
-    """The climb: a tall room of sky, the tether up its middle. The second car
-    rests where a body coming up through the floor edge stands, and carries
-    it out of the top."""
+    """The car carries riders from the ground station to the terminus.
+
+    The roof landings catch a body that falls beside the shaft. The
+    opening between the landings leads back to the ground station.
+    """
     rid = CLIMB
     _, (w, h) = ROOMS_AT[rid]
     top = h - EDGE_FEET
     e = [
         solid("west_wall", 0, 0, WALL, h),
         solid("east_wall", w - WALL, 0, WALL, h),
+        solid("roof_landing_west", WALL, h - 16, SHAFT_X - WALL, 16),
+        solid("roof_landing_east", SHAFT_X + CAR_W, h - 16, w - WALL - SHAFT_X - CAR_W, 16),
         vertical_edge("climb_from_station", "down to the ground station", SHAFT_X, h - 16, CAR_W, STATION, "station_to_climb"),
         car("tether_car_climb", "the tether's car", SHAFT_X, top, -(top + 60), CLIMB_SPEED),
         vertical_edge("climb_to_terminus", "up to the station", SHAFT_X, 0, CAR_W, TERMINUS, "terminus_from_climb"),
         start(rid, SHAFT_X + CAR_W // 2, top),
+        sign("climb_roof_return_west", 423, 3100, "GROUND STATION →", 220),
+        sign("climb_roof_return_east", 857, 3100, "← GROUND STATION", 220),
     ]
-    for frac, text in CLIMB_SIGNS:
-        e.append(sign(f"climb_sign_{int(frac * 100)}", SHAFT_X + CAR_W // 2 + 260, round(h * (1.0 - frac)), text, 440))
+    for mark, x, y, text in CLIMB_SIGNS:
+        e.append(sign(f"climb_sign_{mark}", x, y, text, 244))
     return build(rid, e, None, music=TETHER_MUSIC, biome=HEIGHTS)
 
 
 def terminus():
-    """The station end of the tether: you come up through the floor and stand
-    on it. The docking bay is on through the west end."""
+    """The floor connects the arrival point, kiosk, and docking bay.
+
+    The steps give access to both sides of the viewing gallery.
+    """
     rid = TERMINUS
     _, (w, h) = ROOMS_AT[rid]
     floor = h - EDGE_FEET
@@ -456,13 +479,17 @@ def terminus():
         solid("vault", 0, 0, w, 48),
         solid("west_wall", 0, 48, WALL, floor - 48 - BAY_OPENING),
         solid("east_wall", w - WALL, 48, WALL, floor - 48),
-        vertical_edge("terminus_from_climb", "down the tether", SHAFT_X, h - 16, CAR_W, CLIMB, "climb_to_terminus"),
+        vertical_edge("terminus_from_climb", "tether arrival", SHAFT_X, h - 16, CAR_W, CLIMB, "climb_to_terminus"),
         start(rid, SHAFT_X + CAR_W // 2, floor),
         edge("terminus_west", "to the docking bay", 0, floor, BAY, BAY_EAST, h=BAY_OPENING),
-        sign("terminus_sign", w // 2, 120, "TETHER TERMINUS: the planet is 35,786 km down", 520),
-        # The arrivals board and the souvenir kiosk (`orbital_terminus_props.py`).
-        sign("terminus_sign_arrivals", 540, 300, "ARRIVALS: every car ON TIME. It is a ribbon.", 440),
-        sign("terminus_sign_kiosk", 375, floor - 150, "GENUINE ORBIT AIR, bottled at altitude", 380),
+        *[ledge(f"terminus_walk_{i}", left, top, right - left)
+          for i, (left, right, top) in enumerate((*TERMINUS_GALLERIES, *TERMINUS_STEPS))],
+        sign("terminus_sign", 400, 483, "TETHER TERMINUS: the planet is 35,786 km down", 320),
+        sign("terminus_sign_arrivals", 400, 548, "ARRIVALS: EVERY CAR ON TIME", 272),
+        sign("terminus_sign_arrivals_note", 400, 574, "It is a ribbon.", 272),
+        sign("terminus_sign_kiosk", 375, 774, "GENUINE ORBIT AIR", 164),
+        sign("terminus_sign_kiosk_note", 375, 798, "Bottled at altitude", 164),
+        sign("terminus_sign_bay", 127, 789, "← DOCKING BAY", 192),
         resident("npc_station_dobbs", "station_dobbs", 390, floor),
     ]
     return build(rid, e, "THE TETHER TERMINUS", music=STATION_MUSIC, biome=STATION_THEME)
