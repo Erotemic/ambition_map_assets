@@ -832,8 +832,7 @@ def clinker_yard():
 
 
 def clinker_works():
-    """The smelter works on its terrace: the furnace house, the slag pots,
-    the crane's gantry over them (a step up off a pot)."""
+    """The smelter floor and the crane's two gantries."""
     rid = WORKS
     w, h = ROOMS_AT[rid][1]
     floor = FLATS_HIGH
@@ -843,17 +842,17 @@ def clinker_works():
         edge("works_from_yard", "back to the yard", 0, floor, YARD, "yard_to_works"),
         edge("works_to_railhead", "on to the railhead", w - WALL, floor, RAILHEAD, "railhead_from_works"),
         start(rid, 100, floor),
-        solid("slag_pot_1", 700, floor - 64, 112, 64),
-        solid("slag_pot_2", 1400, floor - 64, 112, 64),
-        ledge("crane_gantry_west", 820, floor - 128, 360),
-        ledge("crane_gantry_east", 1200, floor - 192, 360),
+        ledge("crane_loading_step", 608, floor - 64, 96),
+        ledge("crane_gantry_west", 720, floor - 128, 464),
+        ledge("crane_gantry_east", 1200, floor - 192, 368),
         chest("a pay packet left on the gantry", "currency:25", 1360, floor - 192),
         # Magda Ferro, the crane driver, at the foot of her crane.
         resident("npc_frontier_crane_driver", "frontier_crane_driver", 1700, floor),
         sign("works_sign_name", 400, floor - 320, "CLINKER FLATS SMELTER WORKS", 360),
         sign("works_sign_slag", 1100, floor - 300, "HOT SLAG. KEEP OFF THE POTS.", 320),
     ]
-    return build(rid, e, "THE SMELTER WORKS", FLATS_MUSIC, dangerous=True, biome="frontier_works")
+    ladder = "\n    intgrid: (climbable: [(kind: \"Ladder\", px: [1568, 416], size: [32, 224])]),"
+    return build(rid, e, "THE SMELTER WORKS", FLATS_MUSIC, dangerous=True, biome="frontier_works", extra=ladder)
 
 
 def clinker_row():

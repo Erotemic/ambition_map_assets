@@ -92,9 +92,9 @@ SCENERY = {
         ("frontier_tipple_road", 480, 330, 1.0),
     ],
     "frontier_clinker_works": [
-        ("frontier_furnace_house", 90, 60),
-        ("frontier_works_crane", 800, 280),
-        ("frontier_slag_pots", 690, 560),
+        ("frontier_furnace_house", 90, 0),
+        ("frontier_works_crane", 598, 280),
+        ("frontier_slag_pots", 670, 530),
     ],
     "frontier_clinker_row": [
         ("frontier_row_shacks_west", 220, 470),
