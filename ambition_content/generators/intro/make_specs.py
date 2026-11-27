@@ -1242,7 +1242,7 @@ def barrow():
         sign("barrow_sign_door", 340, 110, "HERE LIES A KING OF THE VALLEY. LET HIM SLEEP.", 520),
         # The old dead of the first chamber, up and about.
         *[entity("EnemySpawn", x - 16, BARROW_STEPS[-1][2] - 48, 32, 48, name=f"barrow_dead_{n}", brain="combatant",
-                 character_id="npc_evil_zombie", respawn="OnRoomReenter") for n, x in enumerate((800, 960))],
+                 character_id="barrow_wight", respawn="OnRoomReenter") for n, x in enumerate((800, 960))],
         # The pit: a slab across it, a run and a jump wide, and what is at the
         # bottom of a barrow's pit.
         solid("pit_bottom", b0, bb, b1 - b0, h - bb),

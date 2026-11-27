@@ -36113,9 +36113,9 @@
 									"id": "V_String",
 									"params": ["combatant"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_evil_zombie", "__tile": null, "defUid": 104930, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "barrow_wight", "__tile": null, "defUid": 104930, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_evil_zombie"]
+									"params": ["barrow_wight"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 104932, "realEditorValues": [{
 									"id": "V_String",
@@ -36146,9 +36146,9 @@
 									"id": "V_String",
 									"params": ["combatant"]
 								}] },
-								{ "__identifier": "character_id", "__type": "String", "__value": "npc_evil_zombie", "__tile": null, "defUid": 104930, "realEditorValues": [{
+								{ "__identifier": "character_id", "__type": "String", "__value": "barrow_wight", "__tile": null, "defUid": 104930, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["npc_evil_zombie"]
+									"params": ["barrow_wight"]
 								}] },
 								{ "__identifier": "respawn", "__type": "String", "__value": "OnRoomReenter", "__tile": null, "defUid": 104932, "realEditorValues": [{
 									"id": "V_String",
