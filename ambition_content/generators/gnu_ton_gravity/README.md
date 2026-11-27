@@ -36,7 +36,11 @@ way along the face).
      A column stands over it from bank to bank: walk the ceiling across.
    - Twist: the last column swings from bank to bank (256 each way,
      0.5 rad/s). On the ceiling you stay in it only if you walk with it.
+   - Walk across either pit floor to the service ladder on its east
+     bank. Use the steps on the west side to go back.
+   - Continue east along the floor into the Vector Well.
 2. **`gnu_ton_vector_well` — every wall is a floor (side fields).**
+   - The bottom passage opens west onto the orchard floor.
    - Teach: the floor of the well pulls right. Walk in, the east wall is
      the floor; walk up it. Over the field you fall back to the floor.
    - Test: a band across the well pulls left. Walk up the east wall into it,

@@ -93,7 +93,7 @@ WALL = 16
 #: Each room: (world_x, world_y, width, height).
 ROOMS_AT = {
     ORCHARD: (8192, 1088, 2816, 960),
-    WELL: (11264, 448, 1280, 1600),
+    WELL: (11008, 256, 1280, 1600),
     HALL: (12800, 384, 2560, 1024),
     GALLERY: (15616, 384, 2560, 960),
     APPROACH: (18432, -1472, 1280, 1408),
@@ -316,8 +316,8 @@ def orchard():
     Twist: the last column swings from bank to bank. A body on the ceiling
     stays in it only by walking with it.
 
-    The chasms are 192 deep, deeper than a double jump, and the steps out of
-    each are on its near side: a fall costs the walk back up.
+    Steps lead out of each chasm to the west. Service ladders lead to the
+    east banks.
     """
     rid = ORCHARD
     _, _, w, h = ROOMS_AT[rid]
@@ -330,7 +330,7 @@ def orchard():
         solid("vault_nook_cap", nook_x, 0, nook_w, 16),
         solid("vault_east", nook_x + nook_w, 0, w - nook_x - nook_w, vault),
         solid("west_wall", 0, vault, WALL, floor - vault - 128),
-        solid("east_wall", w - WALL, vault, WALL, floor - vault),
+        solid("east_wall", w - WALL, vault, WALL, floor - vault - 128),
         # The ground: three banks and two chasms.
         solid("west_bank", 0, floor, 960, h - floor),
         solid("chasm_one_floor", 960, pit_floor, 544, h - pit_floor),
@@ -360,13 +360,21 @@ def orchard():
         start(rid, 176, floor),
         entity("LoadingZone", 0, floor - 128, 16, 128, id="orchard_spoke_door", name="to the tram spoke",
                activation="EdgeExit", target_room=SPOKE, target_zone=SPOKE_WORKS_DOOR, bidirectional=True),
-        door("orchard_east_door", "on to the vector well", w - 112, floor, WELL, "well_bottom_door"),
+        entity("LoadingZone", w - WALL, floor - 128, WALL, 128, id="orchard_east_door",
+               name="to the vector well", activation="EdgeExit", target_room=WELL,
+               target_zone="well_bottom_door", bidirectional=True),
+        label("orchard_service_sign", 1232, 812, "SERVICE LADDER →", 232),
         # The trail's ring (ASCENT, `data/gate_network.ron`) and its terminal,
         # on the west bank between the first tree and the first chasm.
         *gates.as_ron(gates.ring("Gravity Trail Gate", "orchard_gate", 568, floor, "the gate")),
         *gates.as_ron(gates.terminal("Gravity Trail Gate", "orchard_gate_terminal", 836, floor)),
     ]
-    return rid, room(rid, e, "THE ORCHARD: HERE AN APPLE FALLS UP")
+    ladders = """
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [1472, 688], size: [32, 208]),
+        (kind: "Ladder", px: [2432, 688], size: [32, 208]),
+    ]),"""
+    return rid, room(rid, e, "THE ORCHARD: HERE AN APPLE FALLS UP", extra_fields=ladders)
 
 
 def vector_well():
@@ -396,7 +404,6 @@ def vector_well():
         solid("east_wall", w - WALL, vault, WALL, floor - vault),
         solid("passage_west_wall", 0, vault, WALL, passage_floor - vault),
         solid("west_rock", 0, passage_floor, shaft_x, corridor_top - passage_floor),
-        solid("corridor_west_wall", 0, corridor_top, WALL, floor - corridor_top),
         # Teach: the floor of the well pulls right, onto the east wall.
         field("well_east_pull", 800, 1024, w - 800, floor - 1024, "right"),
         coin("well_east_wall_coin", w - WALL - 28, 1072),
@@ -405,7 +412,9 @@ def vector_well():
         # Twist: up, by the west wall, to the vault and the passage.
         field("well_up_pull", shaft_x, vault, 320, 560 - vault, "up"),
         coin("well_vault_coin", 560, vault + 4),
-        door("well_bottom_door", "back to the orchard", 48, floor, ORCHARD, "orchard_east_door"),
+        entity("LoadingZone", 0, corridor_top, WALL, 128, id="well_bottom_door",
+               name="to the orchard", activation="EdgeExit", target_room=ORCHARD,
+               target_zone="orchard_east_door", bidirectional=True),
         start(rid, 176, floor),
         door("well_top_door", "on to the conservation hall", 48, passage_floor, HALL, "hall_west_door"),
     ]
