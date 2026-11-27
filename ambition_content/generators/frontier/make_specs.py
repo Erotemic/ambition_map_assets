@@ -684,16 +684,16 @@ def sliding_crate(rid, n, x, deck, dx, speed=70.0):
                   sweep_dx=float(dx), speed=speed, visual="frontier_loose_crate")
 
 
-def build_freight(rid, e, title, music=FREIGHT_MUSIC):
-    return build(rid, e, title, music, dangerous=True, biome="frontier_rails", extra=f"\n    sky_scroll: {FREIGHT_SCROLL},")
+def build_freight(rid, e, title, music=FREIGHT_MUSIC, extra=""):
+    return build(rid, e, title, music, dangerous=True, biome="frontier_rails",
+                 extra=f"\n    sky_scroll: {FREIGHT_SCROLL},{extra}")
 
 
 FLAT = 608
 
 
 def freight_tail():
-    """The caboose and its cupola, two box cars (the trestle's hole is over
-    the second), a flat car of crates that runs on into the next room."""
+    """The caboose, two loading cars, and a flat car to the east."""
     rid = TAIL
     w, h = ROOMS_AT[rid][1]
     e = track_bed(w) + [
@@ -701,8 +701,13 @@ def freight_tail():
         vertical_edge("freight_from_trestle", "up to the trestle", WALL, w - WALL, 0, TRESTLE, "trestle_to_freight"),
         car("caboose", 32, 480, 512),
         solid("cupola", 160, 448, 140, 64),
-        car("box_car_1", 544, 1024, 480),
-        car("box_car_2", 1088, 1568, 480),
+        solid("caboose_gangway", 480, FLAT, 64, 16),
+        solid("box_car_1_roof", 544, 480, 480, 16),
+        car("box_car_1_deck", 544, 1024, FLAT),
+        solid("box_car_gangway", 1024, FLAT, 64, 16),
+        solid("box_car_2_roof", 1088, 480, 480, 16),
+        car("box_car_2_deck", 1088, 1568, FLAT),
+        solid("flat_car_gangway", 1568, FLAT, 80, 16),
         car("flat_car_1", 1648, w, FLAT),
         solid("crates_low", 1760, FLAT - 64, 128, 64),
         solid("crates_high", 1888, FLAT - 128, 80, 128),
@@ -712,7 +717,13 @@ def freight_tail():
         resident("npc_frontier_brakeman", "frontier_brakeman", 380, 512),
         edge("freight_tail_to_cars", "along the train", w - WALL, FLAT, CARS, "freight_cars_from_tail"),
     ]
-    return build_freight(rid, e, "THE NUMBER 9 FREIGHT")
+    ladders = """
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [480, 448], size: [32, 160]),
+        (kind: "Ladder", px: [1040, 448], size: [32, 160]),
+        (kind: "Ladder", px: [1584, 448], size: [32, 160]),
+    ]),"""
+    return build_freight(rid, e, "THE NUMBER 9 FREIGHT", extra=ladders)
 
 
 def freight_cars():
