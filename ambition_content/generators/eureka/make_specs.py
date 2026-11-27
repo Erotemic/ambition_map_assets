@@ -58,7 +58,7 @@ SPEC_OUT.mkdir(exist_ok=True)
 sys.path.insert(0, str(TOOL_SPECS))
 
 from district_kit import (  # noqa: E402
-    WALL, WORLDS, breakable_wall, door, edge, entity, ledge, make_rooms, paint, resident, room, run, sign, solid,
+    WALL, WORLDS, breakable_wall, door, edge, entity, ledge, make_rooms, resident, room, run, sign, solid,
     start,
 )
 
@@ -232,7 +232,8 @@ def quad():
     """The street connects the offices and the tether station.
 
     The raised walk passes the patent office, cafe, and fountain. It
-    connects the Gate Court to the lecture hall terrace.
+    connects the Gate Court to the lecture hall terrace. The east steps
+    connect the terrace to the street near the lab.
     """
     rid = QUAD
     _, (w, h) = ROOMS_AT[rid]
@@ -240,11 +241,15 @@ def quad():
     # floor, so the two meet level.
     street, terrace, walk_y = 768, 576, 576
     m0, m1 = MANHOLE
+    ladder_top = street - 80
+    ladder = f"""
+    intgrid: (climbable: [
+        (kind: "Ladder", px: [{m0 + 16}, {ladder_top}], size: [32, {h - ladder_top}]),
+    ]),"""
     e = [
         solid("street_west", 0, street, m0, h - street),
         solid("street_east", m1, street, w - m1, h - street),
-        # The manhole down to the steam plant: an open hole with a one-way
-        # floor over it (dropped through) and a ladder (`main`).
+        # Drop through the manhole cover or climb down the ladder.
         ledge("manhole_hatch", m0, street, m1 - m0),
         vertical_edge("quad_manhole", "down the manhole to the steam plant", m0, h - 16, m1 - m0, PLANT, "plant_manhole"),
         sign("manhole_sign", 920, 612, "STEAM PLANT", 144),
@@ -275,6 +280,9 @@ def quad():
         ledge("hall_step_1", 1440, street - 64, 96),
         ledge("hall_step_2", 1520, street - 128, 96),
         ledge("hall_terrace", 1600, terrace, 720),
+        ledge("hall_east_step_1", 2304, street - 48, 96),
+        ledge("hall_east_step_2", 2240, street - 96, 96),
+        ledge("hall_east_step_3", 2176, street - 144, 96),
         # QED-TV on the terrace, west of the observatory (`eureka_qed_props.py`).
         door("quad_qed_door", "into QED-TV", QED_DOOR_X, terrace, QED, "qed_door"),
         sign("qed_sign", 1760, 200, "QED-TV: the news, straight from the horse's mouth", 360),
@@ -288,7 +296,7 @@ def quad():
         resident("npc_eureka_wilbur", "eureka_wilbur", 2620, street),
         edge("quad_east", "to the tether's ground station", w - WALL, street, STATION, "station_west"),
     ]
-    return build(rid, e, "THE QUAD")
+    return build(rid, e, "THE QUAD", extra=ladder)
 
 
 def patent_office():
@@ -729,8 +737,6 @@ def main(argv):
         code, _ = run("entity", "add", str(GATE_INTERFACE), "--ldtk", str(WORLD_LDTK), "--in-place")
         if code:
             return code
-    if code := paint(WORLD_LDTK, QUAD, "Climbable", 1, MANHOLE[0] + 16, 768 - 80, 32, 896 - 768 + 80):
-        return code
     code, _ = run("validate", str(WORLD_LDTK))
     return code
 
