@@ -386,19 +386,22 @@ def gatehouse():
         (f'( type: "LoadingZone", px: [{s0}, {h - 16}], size: [{s1 - s0}, 16], fields: ( id: "{rid}_stair", '
          f'name: "down the stair to the kitchens", activation: "EdgeExit", target_room: "{KITCHENS}", '
          f'target_zone: "kitchens_stair", bidirectional: true ) ),'),
-        label("gatehouse_sign_stair", s0 - 60, floor - 300, "KITCHENS: staff only. All staff.", 300),
+        label("gatehouse_sign_stair", 992, floor - 51, "KITCHENS: staff only. All staff.", 240),
     ]
     e += [
         door(f"{rid}_west", "out to the forest", 64, floor, FOREST, f"{FOREST}_castle_door"),
         edge(f"{rid}_east", "on to the barracks", w - WALL, floor, BARRACKS, f"{BARRACKS}_west"),
         # The guard post at the gate, the posters, a searchlight at the far door.
         standing("guard_post", "castle_guard_post", 200, floor),
+        standing("gatehouse_gallery", "castle_gatehouse_gallery", 512, floor),
         standing("wanted_robot", "castle_wanted_poster", 420, floor - 150),
         standing("poster_obey", "castle_propaganda_poster_a", 830, floor - 170),
-        standing("poster_papers", "castle_propaganda_poster_c", 1110, floor - 150),
-        standing("searchlight_gate", "castle_searchlight", 1380, floor),
-        solid("dais", 560, floor - 64, 192, 64),
+        standing("poster_papers", "castle_propaganda_poster_c", 1110, floor - 120),
+        standing("searchlight_gate", "castle_searchlight", 1460, floor),
+        ledge("dais", 560, floor - 64, 192),
+        ledge("gallery_west_step", 752, floor - 112, 112),
         ledge("gallery_west", 880, floor - 160, 224),
+        ledge("gallery_watch_step", 1104, floor - 208, 80),
         ledge("gallery_east", 1200, floor - 256, 192),
         # The dead at the gate, a soldier on the dais and one on the gallery,
         # a dog, and a crawler under the far searchlight.
@@ -809,6 +812,7 @@ ROOMS = (forest, gatehouse, barracks, tower, great_hall, throne)
 #: gatehouse's stair: a ladder from over its floor down the hole.
 PAINT = [
     (GATEHOUSE, "Climbable", 1, GATEHOUSE_STAIR[0] + 16, 704 - 64, 32, ROOMS_AT[GATEHOUSE][2] - 704 + 64),
+    (GATEHOUSE, "Climbable", 1, 1408, 416, 32, 288),
     (BARRACKS, "Climbable", 1, BARRACKS_TRAPDOOR[0] + 16, 704 - 64, 32, ROOMS_AT[BARRACKS][2] - 704 + 64),
 ]
 
