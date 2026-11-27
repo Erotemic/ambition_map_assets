@@ -11,7 +11,7 @@
 	"iid": "ambition-evil-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 310437,
+	"nextUid": 310449,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -38365,7 +38365,7 @@
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -38504,18 +38504,18 @@
 					"entityInstances": [
 						{
 							"__identifier": "Prop",
-							"__grid": [1,18],
+							"__grid": [1,17],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"__worldX": -6784,
-							"__worldY": -246,
+							"__worldY": -262,
 							"iid": "Prop-310038",
-							"width": 1584,
-							"height": 246,
+							"width": 1600,
+							"height": 262,
 							"defUid": 4351,
-							"px": [16,298],
+							"px": [16,282],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hill_west", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -38529,18 +38529,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [100,11],
+							"__grid": [99,9],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": -5200,
-							"__worldY": -364,
+							"__worldX": -5216,
+							"__worldY": -386,
 							"iid": "Prop-310039",
-							"width": 1200,
-							"height": 364,
+							"width": 1216,
+							"height": 386,
 							"defUid": 4351,
-							"px": [1600,180],
+							"px": [1584,158],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hill_east", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -38629,6 +38629,39 @@
 							]
 						},
 						{
+							"__identifier": "SurfaceChain",
+							"__grid": [83,21],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#7ED957",
+							"__worldX": -5472,
+							"__worldY": -208,
+							"iid": "SurfaceChain-310444",
+							"width": 16,
+							"height": 16,
+							"defUid": 6814,
+							"px": [1328,336],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hill_terrace", "__tile": null, "defUid": 6811, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_terrace"]
+								}] },
+								{ "__identifier": "points", "__type": "String", "__value": "1328,480; 1584,384; 1856,384; 2112,352; 2368,352; 2688,480", "__tile": null, "defUid": 6812, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["1328,480; 1584,384; 1856,384; 2112,352; 2368,352; 2688,480"]
+								}] },
+								{ "__identifier": "visual", "__type": "String", "__value": "none", "__tile": null, "defUid": 7681, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["none"]
+								}] },
+								{ "__identifier": "boarding", "__type": "String", "__value": "up", "__tile": null, "defUid": 7682, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["up"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "PlayerStart",
 							"__grid": [79,27],
 							"__pivot": [0,0],
@@ -38674,44 +38707,70 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [73,16],
+							"__grid": [78,18],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -5630,
-							"__worldY": -284,
+							"__worldX": -5538,
+							"__worldY": -253,
 							"iid": "DebugLabel-310044",
-							"width": 460,
+							"width": 276,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1170,260],
+							"px": [1262,291],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hill_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["hill_sign"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "GALLOWS HILL: views of the whole hamlet, and it of you", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "GALLOWS HILL", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["GALLOWS HILL: views of the whole hamlet, and it of you"]
+									"params": ["GALLOWS HILL"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [99,23],
+							"__grid": [78,19],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -5210,
-							"__worldY": -164,
-							"iid": "DebugLabel-310045",
-							"width": 360,
+							"__worldX": -5538,
+							"__worldY": -227,
+							"iid": "DebugLabel-310448",
+							"width": 276,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1590,380],
+							"px": [1262,317],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hill_sign_view", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hill_sign_view"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Views of the whole hamlet, and it of you.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Views of the whole hamlet, and it of you."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [101,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -5173,
+							"__worldY": -244,
+							"iid": "DebugLabel-310045",
+							"width": 290,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1627,300],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hill_sign_gibbet", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -38726,18 +38785,18 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [22,25],
+							"__grid": [25,23],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -6440,
-							"__worldY": -144,
+							"__worldX": -6386,
+							"__worldY": -169,
 							"iid": "DebugLabel-310046",
-							"width": 400,
+							"width": 292,
 							"height": 24,
 							"defUid": 2007,
-							"px": [360,400],
+							"px": [414,375],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hill_sign_graves", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -38785,18 +38844,18 @@
 						},
 						{
 							"__identifier": "EnemySpawn",
-							"__grid": [93,26],
+							"__grid": [101,20],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF6B6B",
-							"__worldX": -5300,
-							"__worldY": -120,
+							"__worldX": -5176,
+							"__worldY": -216,
 							"iid": "EnemySpawn-310048",
 							"width": 56,
 							"height": 56,
 							"defUid": 2008,
-							"px": [1500,424],
+							"px": [1624,328],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "evil_searchlight_moor_npc_evil_spectral_wolf_51", "__tile": null, "defUid": 3018, "realEditorValues": [{
 									"id": "V_String",

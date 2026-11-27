@@ -111,6 +111,7 @@ MOOR_TOWER_TOP = (1500, 1620)
 HILL = "evil_gallows_hill"
 HILL_AT, HILL_W = (-6800, -544), 2800
 BELL_TOWER = (1040, 1160)
+HILL_TERRACE = ((1328, RIDGE_G), (1584, 384), (1856, 384), (2112, 352), (2368, 352), (2688, RIDGE_G))
 #: The sarcophagus (x0, x1, its lid, walked on).
 SARCOPHAGUS = (1088, 1312, 432)
 FOREST = "evil_gate_forest"
@@ -403,9 +404,10 @@ def hill():
     and the moor."""
     w, h, g = HILL_W, RIDGE_H, RIDGE_G
     t0, t1 = BELL_TOWER
+    terrace_points = "; ".join(f"{x},{y}" for x, y in HILL_TERRACE)
     e = [
         piece("hill_west", 16, 200, name="hill_west"),
-        piece("hill_east", 1600, 140, name="hill_east"),
+        piece("hill_east", 1584, 140, name="hill_east"),
         solid("ground_west", 0, g, t0, h - g),
         solid("ground_east", t1, g, w - t1, h - g),
         solid("west_wall", 0, 0, WALL, g),
@@ -415,13 +417,16 @@ def hill():
                activation="EdgeExit", target_room=HAMLET, target_zone="hamlet_belltower_top", bidirectional=True),
         # The hatch at the bell tower's top, as the ridge's watchtower.
         ledge("belltower_hatch", t0, g, t1 - t0),
+        entity("SurfaceChain", 1328, 336, 16, 16, name="hill_terrace", points=terrace_points, visual="none", boarding="up"),
+        ledge("hill_wall_step", 1968, 416, 112),
         start(HILL, t1 + 120, g),
         entity("ChestSpawn", 200, g - 58, 76, 58, name="the hangman's tips", reward="currency:60"),
-        sign("hill_sign", 1400, 260, "GALLOWS HILL: views of the whole hamlet, and it of you", 460),
-        sign("hill_sign_gibbet", 1770, 380, "TEMPORARILY UNOCCUPIED. APPLY WITHIN.", 360),
-        sign("hill_sign_graves", 560, 400, "THE PAUPERS (they could not afford names)", 400),
+        sign("hill_sign", 1400, 291, "GALLOWS HILL", 276),
+        sign("hill_sign_view", 1400, 317, "Views of the whole hamlet, and it of you.", 276),
+        sign("hill_sign_gibbet", 1772, 300, "TEMPORARILY UNOCCUPIED. APPLY WITHIN.", 290),
+        sign("hill_sign_graves", 560, 375, "THE PAUPERS (they could not afford names)", 292),
         enemy(50, "npc_evil_zombie", 620, g, 30, 67),
-        enemy(51, "npc_evil_spectral_wolf", 1500, g, 56, 56),
+        enemy(51, "npc_evil_spectral_wolf", 1624, 384, 56, 56),
         enemy(52, "npc_fascist_enforcer", 2300, g, 32, 72),
     ]
     return HILL, room(HILL, e, at=HILL_AT, size=(w, h), biome="evil_forest", music="oppressive_crush", bg="#3A0E0E",
