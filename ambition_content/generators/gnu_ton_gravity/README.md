@@ -69,13 +69,12 @@ way along the face).
    - Twist: the ceiling has a hole with a hazard in it, too wide to jump. The
      upside-down road steps down to a portal in the ceiling (room 3). Its
      other end is on a wall that hangs from the ceiling past the hole. Past
-     that, a column of DOWN field (room 1, turned) is the one place in the
-     room that falls down: onto the ledge of a shrine and GNU-ton's door.
+     that, a field pulls down to the shrine floor. Walk east through the
+     passage into the Approach.
 5. **`gnu_ton_works_approach` — the climb to GNU-ton, and the way back.**
-   The gallery solved, a tall hall under glass: a column of up field by
-   the door lifts the robot to the vault (room 1, one last time, with
-   nothing to lose); out of it, the robot drops onto the landing of
-   GNU-ton's door. By the way in, the works' lift goes down to the end of
+   From the west passage, walk into the field that lifts the robot to
+   the vault. Walk out of the field to drop to the landing at GNU-ton's
+   door. Near the passage, the works' lift goes down to the end of
    the station's spoke, by the orchard. Its gate in the spoke is let go from
    the lift's side (`spoke_lift_release`): the shortcut back, once the
    gallery is behind you.

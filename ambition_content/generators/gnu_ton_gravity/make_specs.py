@@ -96,7 +96,7 @@ ROOMS_AT = {
     WELL: (11008, 256, 1280, 1600),
     HALL: (11008, -768, 2560, 1024),
     GALLERY: (13568, -1232, 2560, 960),
-    APPROACH: (18432, -1472, 1280, 1408),
+    APPROACH: (16128, -1680, 1280, 1408),
     ARENA: (18432, 64, 1920, 1280),
 }
 
@@ -513,10 +513,9 @@ def inversion_gallery():
     it. Before it is a portal in the ceiling (the hall's idea), and past it
     the other end, on the face of a wall that hangs from the ceiling. Upside
     down, the road steps down to the first portal: walk off the step, fall
-    up into it, and come out of the hanging wall past the hole. Past it, a column of DOWN field (the orchard's field,
-    turned) stands from the ceiling to the floor: in an upside-down room it
-    is the one place that falls down, onto the ledge of GNU-ton's door and a
-    shrine.
+    up into it, and come out of the hanging wall past the hole. The field
+    by the east passage pulls down to the floor. The floor leads past the
+    shrine and into the Approach.
 
     A fall into a hazard starts the gallery again, the right way up.
     """
@@ -536,7 +535,7 @@ def inversion_gallery():
         solid("vault_east", hole_end, 0, w - hole_end, vault),
         hazard("hole_hazard", hole_x, 0, hole_end - hole_x),
         solid("west_wall", 0, step_low, WALL, floor - exit_height - step_low),
-        solid("east_wall", w - WALL, vault, WALL, floor - vault),
+        solid("east_wall", w - WALL, vault, WALL, floor - exit_height - vault),
         solid("floor_west", 0, floor, chasm_x, h - floor),
         hazard("chasm_hazard", chasm_x, h - 16, chasm_end - chasm_x),
         solid("floor_east", chasm_end, floor, w - chasm_end, h - floor),
@@ -548,14 +547,16 @@ def inversion_gallery():
         portal("gallery_step_door", "gallery_hole_pair", step_x, vault - 9, "down", "cyan", length=hole_x - step_x),
         solid("hanging_wall", hole_end, vault, 32, 192),
         portal("gallery_far_door", "gallery_hole_pair", hole_end + 32 - 9, vault + 32, "right", "rose", length=hole_x - step_x),
-        # The column that remembers down, over the door's ledge.
-        field("gallery_down_column", down_x, vault, w - WALL - down_x, floor - vault, "down"),
+        # The field pulls down to the path through the east passage.
+        field("gallery_down_column", down_x, vault, w - down_x, floor - vault, "down"),
         entity("ShrineSpawn", down_x + 48, floor - 80, 44, 80, id="gallery_shrine", name="the shrine before GNU-ton"),
         entity("LoadingZone", 0, floor - exit_height, WALL, exit_height, id="gallery_west_door",
                name="to Conservation Hall", activation="EdgeExit", target_room=HALL,
                target_zone="hall_gallery_exit", bidirectional=True),
         start(rid, 176, floor),
-        door("gallery_arena_door", "on to the approach", w - 112, floor, APPROACH, "approach_gallery_door"),
+        entity("LoadingZone", w - WALL, floor - exit_height, WALL, exit_height, id="gallery_arena_door",
+               name="to the Approach", activation="EdgeExit", target_room=APPROACH,
+               target_zone="approach_gallery_door", bidirectional=True),
     ]
     return rid, room(rid, e, "THE INVERSION GALLERY: THE WHOLE ROOM TURNS OVER", title_y=step_low + 48)
 
@@ -563,26 +564,26 @@ def inversion_gallery():
 def approach():
     """5. THE APPROACH — the climb to GNU-ton, and the way back.
 
-    The gallery solved, the works open up: a tall hall under glass, the
-    giant's shoulders above. A column of up field by the door lifts the
-    robot to the vault (the orchard's idea, one last time, with nothing to
-    lose) along the face of a tower too tall to jump; walk the vault out of
-    it and drop onto the tower, where GNU-ton's door is. By the way in, the works' lift goes down to the spoke, by the
-    orchard: the shortcut back, once the gallery is behind you. Its gate in
-    the spoke is let go from the lift's side.
+    Walk east from the west passage to the field. The field lifts the robot
+    along the face of the tower to the vault. Walk out of the field to drop
+    onto the landing at GNU-ton's door. The lift near the west passage goes
+    down to the spoke. The release for the spoke gate is on the lift side.
     """
     rid = APPROACH
     _, _, w, h = ROOMS_AT[rid]
     floor, vault = h - 64, 48
     column_x, column_w = 512, 192
     landing_y = 352
+    exit_height = 128
     ring_x = column_x + column_w - 32
     e = [
         solid("floor", 0, floor, w, h - floor),
         solid("vault", 0, 0, w, vault),
-        solid("west_wall", 0, vault, WALL, floor - vault),
+        solid("west_wall", 0, vault, WALL, floor - exit_height - vault),
         solid("east_wall", w - WALL, vault, WALL, floor - vault),
-        door("approach_gallery_door", "back to the inversion gallery", 48, floor, GALLERY, "gallery_arena_door"),
+        entity("LoadingZone", 0, floor - exit_height, WALL, exit_height, id="approach_gallery_door",
+               name="to the Inversion Gallery", activation="EdgeExit", target_room=GALLERY,
+               target_zone="gallery_arena_door", bidirectional=True),
         start(rid, 176, floor),
         door("approach_lift_door", "the lift down to the spoke", 304, floor, SPOKE, SPOKE_LIFT_DOOR),
         label("approach_lift_sign", 240, floor - 160, "LIFT: DOWN TO THE SPOKE AND THE ORCHARD", 420),
