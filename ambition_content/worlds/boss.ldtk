@@ -11369,9 +11369,9 @@
 							"height": 160,
 							"defUid": 1408295,
 							"px": [240,416],
-							"fieldInstances": [{ "__identifier": "cutscene", "__type": "String", "__value": "boss_retirement", "__tile": null, "defUid": 1408294, "realEditorValues": [{
+							"fieldInstances": [{ "__identifier": "cutscene", "__type": "String", "__value": "boss_early_access", "__tile": null, "defUid": 1408294, "realEditorValues": [{
 								"id": "V_String",
-								"params": ["boss_retirement"]
+								"params": ["boss_early_access"]
 							}] }]
 						},
 						{

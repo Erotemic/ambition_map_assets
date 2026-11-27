@@ -12,7 +12,7 @@ The bossofthegame's last show. Its ring's address is LEGACY
 (`data/gate_network.ron`, hidden): it dials straight to the lobby, one door
 from the stage. The world file is `boss.ldtk`. The rooms join by doors:
 
-    [ the lobby ] -door-> [ the main stage ] -door (shut until he retires)-> [ the green room ]
+    [ the lobby ] -door-> [ the main stage ] -door (shut until his defeat)-> [ the green room ]
          ^                                                                          |
          +-------------------------- one way, home ---------------------------------+
 
@@ -22,9 +22,9 @@ from the stage. The world file is `boss.ldtk`. The rooms join by doors:
   at the centre and the Boss stands on its shoulders. Tiered risers at each
   side (low, middle, high) and a lighting truss over each side reach the
   height of its top. The way on to the green room is in an alcove past the
-  east wall, behind a grille that his retirement opens.
-- `boss_green_room`: where he retires (a `CutsceneTrigger`,
-  `boss_retirement`); a door home to the lobby.
+  east wall, behind a grille that his defeat opens.
+- `boss_green_room`: where he takes a break (a `CutsceneTrigger`,
+  `boss_early_access`); a door home to the lobby.
 - `hall_bossofthegame_stage`: the Hall of Bosses' practice copy of the stage
   (placement `hall.bossofthegame`), by a door on the hall's lower floor.
 
@@ -200,7 +200,7 @@ def stage():
     floor = STAGE_FLOOR
     e = stage_floor_plan(rid, PLACEMENT, entry="boss_stage_entry", home_room=LOBBY, home_zone="boss_lobby_stage_door") + [
         # The way on: an alcove past the east wall, behind a grille that the
-        # Boss's retirement opens.
+        # Boss's defeat opens.
         solid("east_wall", ALCOVE_X, 32, WALL, ALCOVE_TOP - 32),
         solid("alcove_roof", ALCOVE_X + WALL, ALCOVE_TOP - 32, w - ALCOVE_X - 2 * WALL, 32),
         solid("alcove_back", w - WALL, 32, WALL, floor - 32),
@@ -239,14 +239,10 @@ def green_room():
         start(rid, 160, floor),
         # A low dais at the far end, where he sits down.
         solid("dais", 760, floor - 48, w - WALL - 760, 48),
-        # And he is on it: the voice of the retirement is in the room. He is
-        # the bossofthegame himself (one body, one actor): retired is the
-        # world's fact `bossofthegame_retired`, not a second character.
         entity("EnemySpawn", 840, floor - 48 - 96, 54, 96, name="the bossofthegame", brain="stand_still",
                character_id="npc_bossofthegame", disposition="Peaceful"),
         sign("green_sign", 640, 120, "GREEN ROOM: PERFORMERS ONLY", 420),
-        # He retires here: the scene plays once, as the player comes in.
-        entity("CutsceneTrigger", 240, floor - 160, 160, 160, cutscene="boss_retirement"),
+        entity("CutsceneTrigger", 240, floor - 160, 160, 160, cutscene="boss_early_access"),
         # Far enough from the wall that its one-way warning, centred over
         # it, stays in the room.
         door("boss_green_lobby_door", "home to the lobby", w - 260, floor - 48, LOBBY, "boss_lobby_green_arrival",
@@ -260,7 +256,7 @@ def green_room():
 ROOMS = (lobby, stage, green_room, hall_stage)
 
 #: The sandbox's defs have no `CutsceneTrigger` (the intro's world has it):
-#: the green room's retirement is one.
+#: the green room's conversation is one.
 CUTSCENE_TRIGGER_DEF = """entities:
   - identifier: CutsceneTrigger
     color: "#B07AFF"
