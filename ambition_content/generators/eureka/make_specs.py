@@ -108,6 +108,9 @@ ARRIVAL = "eureka_gate_arrival"
 BAY_EAST = "bay_east"
 #: How high the terminus's west end is open on to the bay.
 BAY_OPENING = 128
+TERMINUS_GALLERIES = ((192, 576, 720), (704, 1136, 720))
+TERMINUS_STEPS = ((128, 240, 880), (192, 304, 816), (256, 368, 752),
+                  (1104, 1216, 880), (1040, 1152, 816), (976, 1088, 752))
 
 BIOME = "eureka"
 HEIGHTS = "eureka_heights"
@@ -464,8 +467,10 @@ def elevator_climb():
 
 
 def terminus():
-    """The station end of the tether: you come up through the floor and stand
-    on it. The docking bay is on through the west end."""
+    """The floor connects the arrival point, kiosk, and docking bay.
+
+    The steps give access to both sides of the viewing gallery.
+    """
     rid = TERMINUS
     _, (w, h) = ROOMS_AT[rid]
     floor = h - EDGE_FEET
@@ -474,13 +479,17 @@ def terminus():
         solid("vault", 0, 0, w, 48),
         solid("west_wall", 0, 48, WALL, floor - 48 - BAY_OPENING),
         solid("east_wall", w - WALL, 48, WALL, floor - 48),
-        vertical_edge("terminus_from_climb", "down the tether", SHAFT_X, h - 16, CAR_W, CLIMB, "climb_to_terminus"),
+        vertical_edge("terminus_from_climb", "tether arrival", SHAFT_X, h - 16, CAR_W, CLIMB, "climb_to_terminus"),
         start(rid, SHAFT_X + CAR_W // 2, floor),
         edge("terminus_west", "to the docking bay", 0, floor, BAY, BAY_EAST, h=BAY_OPENING),
-        sign("terminus_sign", w // 2, 120, "TETHER TERMINUS: the planet is 35,786 km down", 520),
-        # The arrivals board and the souvenir kiosk (`orbital_terminus_props.py`).
-        sign("terminus_sign_arrivals", 540, 300, "ARRIVALS: every car ON TIME. It is a ribbon.", 440),
-        sign("terminus_sign_kiosk", 375, floor - 150, "GENUINE ORBIT AIR, bottled at altitude", 380),
+        *[ledge(f"terminus_walk_{i}", left, top, right - left)
+          for i, (left, right, top) in enumerate((*TERMINUS_GALLERIES, *TERMINUS_STEPS))],
+        sign("terminus_sign", 400, 483, "TETHER TERMINUS: the planet is 35,786 km down", 320),
+        sign("terminus_sign_arrivals", 400, 548, "ARRIVALS: EVERY CAR ON TIME", 272),
+        sign("terminus_sign_arrivals_note", 400, 574, "It is a ribbon.", 272),
+        sign("terminus_sign_kiosk", 375, 774, "GENUINE ORBIT AIR", 164),
+        sign("terminus_sign_kiosk_note", 375, 798, "Bottled at altitude", 164),
+        sign("terminus_sign_bay", 127, 789, "← DOCKING BAY", 192),
         resident("npc_station_dobbs", "station_dobbs", 390, floor),
     ]
     return build(rid, e, "THE TETHER TERMINUS", music=STATION_MUSIC, biome=STATION_THEME)
