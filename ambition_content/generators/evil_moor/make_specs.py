@@ -286,7 +286,16 @@ def bakery():
         solid("east_wall", w - WALL, 32, WALL, g - 32),
         door("bakery_door", "out to Lower Godwin", 40, g, HAMLET, "hamlet_bakery_door"),
         start(BAKERY, 140, g),
-        resident("npc_evil_prentice", "evil_prentice", 830, g),
+        ledge("bakery_prep_bench", 96, 320, 80),
+        ledge("bakery_oven_walk", 192, 256, 208),
+        ledge("bakery_loading_shelf", 416, 240, 272),
+        ledge("bakery_counter", 432, 336, 240),
+        ledge("bakery_flour_rack", 704, 304, 96),
+        ledge("bakery_paper_bench", 832, 352, 80),
+        resident("npc_evil_prentice", "evil_prentice", 936, g),
+        sign("bakery_sign_castle_loaves", 548, 76, "CASTLE ORDER", 200),
+        sign("bakery_sign_hamlet_loaves", 548, 124, "HAMLET LOAVES", 200),
+        sign("bakery_sign_gazette", 864, 147, "THE LOWER GODWIN GAZETTE", 228),
     ]
     return BAKERY, room(BAKERY, e, at=BAKERY_AT, size=(w, h), biome="castle_godwin", music="argand_waltz", bg="#2A1A14",
                         title="CRUMB'S BAKERY", generator=GENERATOR)
