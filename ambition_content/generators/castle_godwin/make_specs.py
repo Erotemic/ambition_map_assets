@@ -129,6 +129,7 @@ GATEHOUSE_STAIR = (1240, 1304)
 #: cracked stone until the lever in the cells is pulled, a shortcut from the
 #: lower floor up to the barracks (a ladder up the cells' shaft).
 BARRACKS_TRAPDOOR = (2000, 2064)
+BARRACKS_TRAPDOOR_DEPTH = 16
 BARRACKS_BUNKS = (360, 1000, 1640)
 BARRACKS_BUNK_LADDER_OFFSET = 248
 TRAPDOOR_LEVER = "castle_godwin_trapdoor_lever"
@@ -433,7 +434,7 @@ def barracks():
         solid("floor_east", t1, floor, w - t1, h - floor),
         # The trapdoor down to the cells: cracked stone until the lever in
         # the cells is pulled; then a ladder (`PAINT`) down the hole.
-        lock_wall(f"{rid}_trapdoor", t0, floor, t1 - t0, h - floor, f"world.switch_on {TRAPDOOR_LEVER}",
+        lock_wall(f"{rid}_trapdoor", t0, floor, t1 - t0, BARRACKS_TRAPDOOR_DEPTH, f"world.switch_on {TRAPDOOR_LEVER}",
                   "the cracked trapdoor over the cells", look="castle_cracked_floor"),
         (f'( type: "LoadingZone", px: [{t0}, {h - 16}], size: [{t1 - t0}, 16], fields: ( id: "{rid}_trapdoor", '
          f'name: "down the trapdoor to the cells", activation: "EdgeExit", target_room: "{CELLS}", '
@@ -811,7 +812,9 @@ ROOMS = (forest, gatehouse, barracks, tower, great_hall, throne)
 PAINT = [
     (GATEHOUSE, "Climbable", 1, GATEHOUSE_STAIR[0] + 16, 704 - 64, 32, ROOMS_AT[GATEHOUSE][2] - 704 + 64),
     (GATEHOUSE, "Climbable", 1, 1408, 416, 32, 288),
-    (BARRACKS, "Climbable", 1, BARRACKS_TRAPDOOR[0] + 16, 704 - 64, 32, ROOMS_AT[BARRACKS][2] - 704 + 64),
+    (BARRACKS, "Climbable", 1, BARRACKS_TRAPDOOR[0] + 16, 704 - 64, 32, 64),
+    (BARRACKS, "Climbable", 1, BARRACKS_TRAPDOOR[0] + 16, 704 + BARRACKS_TRAPDOOR_DEPTH, 32,
+     ROOMS_AT[BARRACKS][2] - 704 - BARRACKS_TRAPDOOR_DEPTH),
     *((BARRACKS, "Climbable", 1, x + BARRACKS_BUNK_LADDER_OFFSET, 448, 32, 256) for x in BARRACKS_BUNKS),
     (TOWER, "Climbable", 1, 112, 416, 32, 1312),
     (TOWER, "Climbable", 1, 880, 368, 32, 1360),

@@ -66,6 +66,8 @@ CW, CH, CFLOOR = 960, 448, 384
 #: x 160..224 under the barracks' 2000..2064).
 LW, LH, LFLOOR, LCEILING = 720, 640, 576, 112
 TRAPDOOR = (160, 224)
+TRAPDOOR_GATE_TOP = 16
+TRAPDOOR_CLIMB_TOP = 32
 TRAPDOOR_LEVER = "castle_godwin_trapdoor_lever"
 #: Where each room goes when it is new (or with `--relayout`): the floor of
 #: each at world y 1344, the tower's join to the cells. The kitchens under
@@ -191,16 +193,24 @@ def cells():
         entity("LoadingZone", t0, 0, t1 - t0, 16, id="cells_trapdoor", name="up through the trapdoor to the barracks",
                activation="EdgeExit", target_room="castle_godwin_barracks", target_zone="castle_godwin_barracks_trapdoor",
                bidirectional=True),
+        entity("LockWall", t0, TRAPDOOR_GATE_TOP, t1 - t0, TRAPDOOR_CLIMB_TOP - TRAPDOOR_GATE_TOP,
+               id="cells_trapdoor_cover", name="the barracks trapdoor",
+               gated_by=f"world.switch_on {TRAPDOOR_LEVER}", look="castle_cracked_floor"),
         entity("Switch", 600, LFLOOR - 32, 24, 32, id=TRAPDOOR_LEVER, name="the trapdoor lever", prompt="Pull the lever",
                action="ToggleFlag", target_encounter=""),
         start(CELLS, 300, LFLOOR),
+        ledge("cells_paper_crate", 96, 512, 64),
+        ledge("cells_file_walk", 224, 464, 336),
+        ledge("cells_desk", 544, 528, 144),
         resident("npc_castle_quill", "castle_quill", 420, LFLOOR),
         # A prisoner the castle forgot, and raised anyway: it drags itself
         # out from under the chute.
         legless(CELLS, 1, 190, LFLOOR),
-        sign("cells_sign_chute", 140, 150, "SUGGESTIONS: received", 260),
+        sign("cells_sign_chute", 104, 144, "SUGGESTIONS", 132),
+        sign("cells_sign_received", 104, 172, "Received", 132),
         sign("cells_sign_rules", 520, 180, "NO COMPLAINING", 220),
-        sign("cells_sign_trapdoor", 250, 70, "TRAPDOOR: to the barracks (lever by the desk)", 380),
+        sign("cells_sign_trapdoor", 573, 346, "TRAPDOOR TO THE BARRACKS", 235),
+        sign("cells_sign_lever", 573, 374, "Lever by the desk", 235),
     ]
     return room(CELLS, e, at=WHERE[CELLS], size=(LW, LH), biome="castle_godwin", music="doves_of_the_commons", bg="#1A1416",
                 title="THE CELLS", generator=GENERATOR)
@@ -251,7 +261,8 @@ def main(argv):
     # cells'.
     if code := paint(WORLD, KITCHENS, "Climbable", 1, STAIR[0] + 16, 0, 32, FLOOR):
         return code
-    if code := paint(WORLD, CELLS, "Climbable", 1, TRAPDOOR[0] + 16, 0, 32, LFLOOR):
+    # The ladder ends at the cover. A climb permits blocks that overlap the ladder.
+    if code := paint(WORLD, CELLS, "Climbable", 1, TRAPDOOR[0] + 16, TRAPDOOR_CLIMB_TOP, 32, LFLOOR - TRAPDOOR_CLIMB_TOP):
         return code
     code, _ = run("validate", str(WORLD))
     return code

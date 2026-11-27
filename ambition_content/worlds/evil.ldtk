@@ -11,7 +11,7 @@
 	"iid": "ambition-evil-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 310360,
+	"nextUid": 310377,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -19054,7 +19054,7 @@
 							"__worldY": 704,
 							"iid": "LockWall-309746",
 							"width": 64,
-							"height": 64,
+							"height": 16,
 							"defUid": 4084,
 							"px": [2000,704],
 							"fieldInstances": [
@@ -20099,7 +20099,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -45993,13 +45993,13 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,
+						2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -46247,6 +46247,39 @@
 							]
 						},
 						{
+							"__identifier": "LockWall",
+							"__grid": [10,1],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#9E9E9E",
+							"__worldX": 5600,
+							"__worldY": 784,
+							"iid": "LockWall-310367",
+							"width": 64,
+							"height": 16,
+							"defUid": 4084,
+							"px": [160,16],
+							"fieldInstances": [
+								{ "__identifier": "id", "__type": "String", "__value": "cells_trapdoor_cover", "__tile": null, "defUid": 4082, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["cells_trapdoor_cover"]
+								}] },
+								{ "__identifier": "name", "__type": "String", "__value": "the barracks trapdoor", "__tile": null, "defUid": 4083, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["the barracks trapdoor"]
+								}] },
+								{ "__identifier": "gated_by", "__type": "String", "__value": "world.switch_on castle_godwin_trapdoor_lever", "__tile": null, "defUid": 6860, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["world.switch_on castle_godwin_trapdoor_lever"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "castle_cracked_floor", "__tile": null, "defUid": 7407, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["castle_cracked_floor"]
+								}] }
+							]
+						},
+						{
 							"__identifier": "Switch",
 							"__grid": [37,34],
 							"__pivot": [0,0],
@@ -46364,26 +46397,52 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [0,9],
+							"__grid": [2,9],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 5450,
-							"__worldY": 918,
-							"iid": "DebugLabel-309786",
-							"width": 260,
+							"__worldX": 5478,
+							"__worldY": 912,
+							"iid": "DebugLabel-310372",
+							"width": 132,
 							"height": 24,
 							"defUid": 2007,
-							"px": [10,150],
+							"px": [38,144],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "cells_sign_chute", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["cells_sign_chute"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "SUGGESTIONS: received", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "SUGGESTIONS", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["SUGGESTIONS: received"]
+									"params": ["SUGGESTIONS"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [2,10],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 5478,
+							"__worldY": 940,
+							"iid": "DebugLabel-310373",
+							"width": 132,
+							"height": 24,
+							"defUid": 2007,
+							"px": [38,172],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "cells_sign_received", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["cells_sign_received"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Received", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Received"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -46416,26 +46475,52 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [3,4],
+							"__grid": [28,21],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 5500,
-							"__worldY": 838,
-							"iid": "DebugLabel-309788",
-							"width": 380,
+							"__worldX": 5896,
+							"__worldY": 1114,
+							"iid": "DebugLabel-310375",
+							"width": 235,
 							"height": 24,
 							"defUid": 2007,
-							"px": [60,70],
+							"px": [456,346],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "cells_sign_trapdoor", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["cells_sign_trapdoor"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "TRAPDOOR: to the barracks (lever by the desk)", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "TRAPDOOR TO THE BARRACKS", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["TRAPDOOR: to the barracks (lever by the desk)"]
+									"params": ["TRAPDOOR TO THE BARRACKS"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [28,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 5896,
+							"__worldY": 1142,
+							"iid": "DebugLabel-310376",
+							"width": 235,
+							"height": 24,
+							"defUid": 2007,
+							"px": [456,374],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "cells_sign_lever", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["cells_sign_lever"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Lever by the desk", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Lever by the desk"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -46474,8 +46559,8 @@
 					"iid": "Climbable-309711",
 					"layerDefUid": 4201,
 					"intGridCsv": [
-						0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
