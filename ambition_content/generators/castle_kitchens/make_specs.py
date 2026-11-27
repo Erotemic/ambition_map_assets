@@ -85,6 +85,7 @@ WHERE = {
 }
 #: The stair up to the gatehouse: the shaft in the kitchens' ceiling (x0, x1).
 STAIR = (40, 104)
+WORKSHOP_LADDER = (384, 336, 32, 176)
 #: A Risen Conscript with no legs (the Crawling Conscript), and its box: low
 #: and wide, its body on the floor.
 LEGLESS, LEGLESS_BOX = "npc_evil_zombie_crawler", (52, 28)
@@ -164,10 +165,14 @@ def workshop():
         solid("east_wall", W - WALL, CEILING, WALL, FLOOR - CEILING),
         edge("workshop_west", "back into the lab tower", 0, FLOOR, TOWER, "castle_godwin_tower_foot"),
         start(WORKSHOP, 140, FLOOR),
+        ledge("workshop_boiler_walk", 416, 336, 480),
+        ledge("workshop_receiving_deck", 976, 336, 128),
+        ledge("workshop_test_stand", 1056, 400, 80),
+        ledge("workshop_loading_step", 1136, 464, 64),
         resident("npc_castle_sprocket", "castle_sprocket", 790, FLOOR),
-        entity("ChestSpawn", 1110, FLOOR - 58, 76, 58, name="a crate of spare parts", reward="currency:40"),
-        sign("workshop_sign_kettle", 1040, FLOOR - 150, "MARK 47: almost", 220),
-        sign("workshop_sign_button", 1180, FLOOR - 110, "DO NOT", 120),
+        entity("ChestSpawn", 1000, 336 - 58, 76, 58, name="a crate of spare parts", reward="currency:40"),
+        sign("workshop_sign_kettle", 1000, 390, "MARK 47: almost", 180),
+        sign("workshop_sign_button", 1220, FLOOR - 110, "DO NOT", 100),
         sign("workshop_sign_tools", 255, 220, "RETURN THE BIG SPANNER", 300),
     ]
     return room(WORKSHOP, e, at=WHERE[WORKSHOP], size=(W, H), biome="castle_godwin", music="doves_of_the_commons", bg="#1A1416",
@@ -257,9 +262,9 @@ def main(argv):
         return 0
     # The rooms name each other: only the end state is checked.
     make_rooms(WORLD, paths, keep_position="--relayout" not in argv)
-    # The stair's ladder, up the kitchens' shaft; the trapdoor's, up the
-    # cells'.
     if code := paint(WORLD, KITCHENS, "Climbable", 1, STAIR[0] + 16, 0, 32, FLOOR):
+        return code
+    if code := paint(WORLD, WORKSHOP, "Climbable", 1, *WORKSHOP_LADDER):
         return code
     # The ladder ends at the cover. A climb permits blocks that overlap the ladder.
     if code := paint(WORLD, CELLS, "Climbable", 1, TRAPDOOR[0] + 16, TRAPDOOR_CLIMB_TOP, 32, LFLOOR - TRAPDOOR_CLIMB_TOP):
