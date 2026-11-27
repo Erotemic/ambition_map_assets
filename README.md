@@ -24,7 +24,8 @@ derivable from its path here and needs no lookup table.
 > **Use edge exits between rooms in one region.** Place rooms so their
 > paths meet at shared edges. Use platforms for climbs. Reserve ladders
 > for a specific purpose. Reserve loading-zone doors for rare
-> thresholds such as dungeon or building entrances. Read
+> thresholds such as dungeon or building entrances. The Sandbox
+> (`sandbox.ldtk`) may use doors between rooms. Read
 > `docs/concepts/level-connections.md` in the Ambition checkout before you
 > lay out rooms.
 
