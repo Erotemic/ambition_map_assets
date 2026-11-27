@@ -358,7 +358,7 @@ def ridge():
     g0, g1 = RIDGE_GAP
     e = [
         piece("ridge_west", 16, 0, name="ridge_west"),
-        piece("ridge_east", 1800, 0, name="ridge_east"),
+        piece("ridge_east", 1784, 0, name="ridge_east"),
         solid("ground_west_end", 0, g, g0, h - g),
         solid("ground", g1, g, t0 - g1, h - g),
         solid("ground_east", t1, g, w - t1, h - g),
@@ -374,11 +374,18 @@ def ridge():
         # The hatch at the watchtower's top: come up through it and stand on
         # it; drop through it to go down.
         ledge("tower_hatch", t0, g, t1 - t0),
+        ledge("ridge_loading_step", 1824, 416, 96),
+        ledge("ridge_west_gantry", 1920, 352, 320),
+        ledge("ridge_sentry_hut_roof", 2288, 336, 192),
+        ledge("ridge_east_gantry", 2512, 368, 144),
+        ledge("ridge_turntable_deck", 2688, 400, 144),
+        ledge("ridge_east_step", 2880, 432, 80),
         start(RIDGE, t0 - 120, g),
         entity("ChestSpawn", g1 + 160, g - 58, 76, 58, name="the sentry's thermos money", reward="currency:60"),
-        sign("ridge_sign", 2380, 240, "THE SEARCHLIGHT RIDGE: smile, you are always lit", 460),
-        sign("ridge_sign_gap", g1 + 40, 300, "MIND THE GAP (the gap minds you)", 320),
-        enemy(40, "npc_fascist_enforcer", 2500, g, 32, 72),
+        sign("ridge_sign", 2384, 230, "THE SEARCHLIGHT RIDGE", 204),
+        sign("ridge_sign_lights", 2384, 256, "Smile. You are always lit.", 204),
+        sign("ridge_sign_gap", 532, 348, "MIND THE GAP (the gap minds you)", 212),
+        enemy(40, "npc_searchlight_crawler", 2580, 368, 48, 34),
         enemy(41, "npc_evil_attack_hound", 1900, g, 52, 50),
         enemy(42, "npc_fascist_enforcer", 1300, g, 32, 72),
         # A clubman by the sentry hut, waiting for someone to persuade.
