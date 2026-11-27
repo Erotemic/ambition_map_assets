@@ -20,6 +20,14 @@ derivable from its path here and needs no lookup table.
 
 ## Authored level data lives here too
 
+> [!IMPORTANT]
+> **Use edge exits between rooms in one region.** Place rooms so their
+> paths meet at shared edges. Use platforms for climbs. Reserve ladders
+> for a specific purpose. Reserve loading-zone doors for rare
+> thresholds such as dungeon or building entrances. Read
+> `docs/concepts/level-connections.md` in the Ambition checkout before you
+> lay out rooms.
+
 A world that a script lays out keeps that script here, beside the world:
 `ambition_content/generators/<dimension>/` (first: `generators/history/`, the
 History dimension's `make_specs.py` and its room blurbs). The script and the
