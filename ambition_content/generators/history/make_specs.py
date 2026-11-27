@@ -28,8 +28,8 @@ everyone starts in Africa (`tools/ambition_ldtk_tools/specs/check_flat_map.py hi
     R0 Americas       beringia ┐    maize           olmecs       maya        taino       haiti
     R½ S. America     beringia ┘    andes           caral        amazonia    palmares    rio 1888
     R1 East Asia      mammoth st.┐  yellow river    shang        silk road   song        steppe kamakura
-    R1½ E. coasts     mammoth st.┘  jōmon           taiwan       silla       joseon      heian  edo         meiji
-    R1¾ Micronesia                                  marianas     nan madol   marshalls   yap    nauru       bikini
+    R1½ E. coasts     mammoth st.│  jōmon           taiwan       silla       joseon      heian  edo         meiji
+    R1¾ Micronesia    mammoth st.┘                                  marianas     nan madol   marshalls   yap    nauru       bikini
     R2 Oceania        sahul         highlands       lapita       wayfinders  rapa nui    tonga  aotearoa    waitangi
     R2¼ Australia     lake mungo    budj bim                                                                sydney cove
     R2½ SE Asia       sulawesi      austronesians   dong son     srivijaya   angkor
@@ -85,10 +85,10 @@ GRID = {
     # steppe under South America's row.
     (1, 0.5): "history_beringia",
     (1, 1): "history_mammoth_steppe",
-    # The mammoth steppe takes two floors, as Beringia does: its foot is the
-    # peninsula that joined Hokkaido to Siberia, beside the Jōmon. So it also
-    # touches Sahul under the coasts' floor.
+    # The middle floor is the peninsula beside the Jōmon. The coast passage
+    # below the peninsula connects the steppe to Sahul.
     (1, 1.5): "history_mammoth_steppe",
+    (1, 1.75): "history_mammoth_steppe",
     (1, 2): "history_sahul",
     # East Asia's coasts, a floor between East Asia and Oceania: Japan,
     # Taiwan and Korea. Taiwan is over the Lapita: the Austronesians sailed
@@ -2917,7 +2917,7 @@ def sydney_cove():
 
 
 def mammoth_steppe():
-    """The mammoth steppe, 40,000 to 20,000 years ago, in two floors. On top:
+    """The mammoth steppe, 40,000 to 20,000 years ago, above a coast passage. On top:
     Denisovans, mammoths and the road north-east, up to Beringia, and east
     to the Yellow River. Down the bluff: the peninsula that joined Hokkaido
     to Siberia when the sea was low, where the mammoths walked, and east of
@@ -2950,6 +2950,12 @@ def mammoth_steppe():
         sign("mammoth_sign_boats", 2440, g - 272, "Someone went to an island by boat, and came back.", 500),
         sign("mammoth_sign_down", down + HOLE // 2, g - 200, "DOWN: Sahul, by the atlas's road", 312),
         enemy(rid, 2, "steppe_wolf", 2500, g),
+        ledge("peninsula_hatch", down, g, HOLE),
+        *solids_beside("peninsula_floor", [(down, down + HOLE)], g, 64),
+        solid("coast_west", 0, 2 * H, 1840, H),
+        solid("coast_east", 2464, 2 * H, W - 2464, H),
+        *[ledge(f"coast_step_{n}", x, 2 * H + 16 + 64 * n, 208)
+          for n, x in enumerate((2080, 1952, 2112, 1952, 2112, 1952, 2112, 1952, 2112))],
     ]
     return grid_room(rid, "THE MAMMOTH STEPPE", e)
 
