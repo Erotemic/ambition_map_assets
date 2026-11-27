@@ -11,7 +11,7 @@
 	"iid": "ambition-evil-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 310377,
+	"nextUid": 310390,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -46804,8 +46804,8 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,
+						1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,
+						2,2,2,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -47026,52 +47026,156 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [19,18],
+							"__grid": [25,18],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 2550,
-							"__worldY": 1132,
+							"__worldX": 2642,
+							"__worldY": 1124,
 							"iid": "DebugLabel-309819",
-							"width": 420,
+							"width": 236,
 							"height": 24,
 							"defUid": 2007,
-							"px": [310,300],
+							"px": [402,292],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "guild_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["guild_sign"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "HENCHPERSONS' GUILD, LOCAL 666: members only", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "HENCHPERSONS' GUILD", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["HENCHPERSONS' GUILD, LOCAL 666: members only"]
+									"params": ["HENCHPERSONS' GUILD"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [32,26],
+							"__grid": [25,19],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": 2760,
-							"__worldY": 1252,
-							"iid": "DebugLabel-309820",
-							"width": 420,
+							"__worldX": 2642,
+							"__worldY": 1150,
+							"iid": "DebugLabel-310385",
+							"width": 236,
 							"height": 24,
 							"defUid": 2007,
-							"px": [520,420],
+							"px": [402,318],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "guild_sign_members", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["guild_sign_members"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "LOCAL 666 · members only", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["LOCAL 666 · members only"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [43,15],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 2932,
+							"__worldY": 1080,
+							"iid": "DebugLabel-309820",
+							"width": 176,
+							"height": 24,
+							"defUid": 2007,
+							"px": [692,248],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "guild_sign_demands", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["guild_sign_demands"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "DEMANDS: dental, less shouting, helmets that fit", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "DEMANDS", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["DEMANDS: dental, less shouting, helmets that fit"]
+									"params": ["DEMANDS"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [43,17],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 2932,
+							"__worldY": 1104,
+							"iid": "DebugLabel-310387",
+							"width": 176,
+							"height": 24,
+							"defUid": 2007,
+							"px": [692,272],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "guild_demand_dental", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["guild_demand_dental"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Dental", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Dental"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [43,18],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 2932,
+							"__worldY": 1128,
+							"iid": "DebugLabel-310388",
+							"width": 176,
+							"height": 24,
+							"defUid": 2007,
+							"px": [692,296],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "guild_demand_shouting", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["guild_demand_shouting"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Less shouting", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Less shouting"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [43,20],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": 2932,
+							"__worldY": 1152,
+							"iid": "DebugLabel-310389",
+							"width": 176,
+							"height": 24,
+							"defUid": 2007,
+							"px": [692,320],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "guild_demand_helmets", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["guild_demand_helmets"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Helmets that fit", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Helmets that fit"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -47108,18 +47212,18 @@
 						},
 						{
 							"__identifier": "NpcSpawn",
-							"__grid": [19,28],
+							"__grid": [45,24],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF9EEA",
-							"__worldX": 2554,
-							"__worldY": 1280,
+							"__worldX": 2972,
+							"__worldY": 1216,
 							"iid": "NpcSpawn-310240",
 							"width": 32,
 							"height": 64,
 							"defUid": 2006,
-							"px": [314,448],
+							"px": [732,384],
 							"fieldInstances": [
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_fascist_swordsman", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
@@ -47138,18 +47242,18 @@
 						},
 						{
 							"__identifier": "NpcSpawn",
-							"__grid": [27,28],
+							"__grid": [29,24],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FF9EEA",
-							"__worldX": 2684,
-							"__worldY": 1280,
+							"__worldX": 2714,
+							"__worldY": 1216,
 							"iid": "NpcSpawn-310241",
 							"width": 32,
 							"height": 64,
 							"defUid": 2006,
-							"px": [444,448],
+							"px": [474,384],
 							"fieldInstances": [
 								{ "__identifier": "character_id", "__type": "String", "__value": "npc_evil_failed_prototype", "__tile": null, "defUid": 3012, "realEditorValues": [{
 									"id": "V_String",
