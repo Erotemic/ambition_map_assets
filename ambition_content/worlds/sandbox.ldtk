@@ -12592,8 +12592,8 @@
 			"identifier": "scroll_lab",
 			"iid": "scroll_lab-1242",
 			"uid": 1243,
-			"worldX": 3232,
-			"worldY": 96,
+			"worldX": 3056,
+			"worldY": 128,
 			"worldDepth": 0,
 			"pxWid": 3200,
 			"pxHei": 900,
@@ -13036,21 +13036,21 @@
 								"id": "V_String",
 								"params": ["scroll_start"]
 							}] }],
-							"__worldX": 3428,
-							"__worldY": 878
+							"__worldX": 3252,
+							"__worldY": 910
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [0,42],
+							"__grid": [0,40],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-0040",
 							"width": 30,
-							"height": 176,
+							"height": 208,
 							"defUid": 2002,
-							"px": [0,676],
+							"px": [0,640],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "west_exit", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -13077,8 +13077,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 3232,
-							"__worldY": 772
+							"__worldX": 3056,
+							"__worldY": 768
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -13114,8 +13114,8 @@
 								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
 								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 3832,
-							"__worldY": 734
+							"__worldX": 3656,
+							"__worldY": 766
 						},
 						{
 							"__identifier": "EnemySpawn",
@@ -13154,8 +13154,8 @@
 								{ "__identifier": "path_ref", "__type": "EntityRef", "__value": null, "__tile": null, "defUid": 6858, "realEditorValues": [] },
 								{ "__identifier": "grounding", "__type": "String", "__value": null, "__tile": null, "defUid": 7044, "realEditorValues": [] }
 							],
-							"__worldX": 5172,
-							"__worldY": 728
+							"__worldX": 4996,
+							"__worldY": 760
 						},
 						{
 							"__identifier": "PogoOrb",
@@ -13173,8 +13173,8 @@
 								"id": "V_String",
 								"params": ["pogo alpha"]
 							}] }],
-							"__worldX": 3768,
-							"__worldY": 582
+							"__worldX": 3592,
+							"__worldY": 614
 						},
 						{
 							"__identifier": "PogoOrb",
@@ -13192,8 +13192,8 @@
 								"id": "V_String",
 								"params": ["pogo beta"]
 							}] }],
-							"__worldX": 4063,
-							"__worldY": 547
+							"__worldX": 3887,
+							"__worldY": 579
 						},
 						{
 							"__identifier": "PogoOrb",
@@ -13211,8 +13211,8 @@
 								"id": "V_String",
 								"params": ["pogo gamma"]
 							}] }],
-							"__worldX": 4348,
-							"__worldY": 632
+							"__worldX": 4172,
+							"__worldY": 664
 						},
 						{
 							"__identifier": "PogoOrb",
@@ -13230,8 +13230,8 @@
 								"id": "V_String",
 								"params": ["pogo ceiling note"]
 							}] }],
-							"__worldX": 3915,
-							"__worldY": 379
+							"__worldX": 3739,
+							"__worldY": 411
 						},
 						{
 							"__identifier": "ReboundPad",
@@ -13253,8 +13253,8 @@
 								{ "__identifier": "impulseX", "__type": "Float", "__value": 570, "__tile": null, "defUid": 3022, "realEditorValues": [{ "id": "V_Float", "params": [570] }] },
 								{ "__identifier": "impulseY", "__type": "Float", "__value": -810, "__tile": null, "defUid": 3023, "realEditorValues": [{ "id": "V_Float", "params": [-810] }] }
 							],
-							"__worldX": 3592,
-							"__worldY": 908
+							"__worldX": 3416,
+							"__worldY": 940
 						},
 						{
 							"__identifier": "ReboundPad",
@@ -13276,8 +13276,8 @@
 								{ "__identifier": "impulseX", "__type": "Float", "__value": -720, "__tile": null, "defUid": 3022, "realEditorValues": [{ "id": "V_Float", "params": [-720] }] },
 								{ "__identifier": "impulseY", "__type": "Float", "__value": -680, "__tile": null, "defUid": 3023, "realEditorValues": [{ "id": "V_Float", "params": [-680] }] }
 							],
-							"__worldX": 4622,
-							"__worldY": 891
+							"__worldX": 4446,
+							"__worldY": 923
 						},
 						{
 							"__identifier": "ReboundPad",
@@ -13299,8 +13299,8 @@
 								{ "__identifier": "impulseX", "__type": "Float", "__value": 760, "__tile": null, "defUid": 3022, "realEditorValues": [{ "id": "V_Float", "params": [760] }] },
 								{ "__identifier": "impulseY", "__type": "Float", "__value": 240, "__tile": null, "defUid": 3023, "realEditorValues": [{ "id": "V_Float", "params": [240] }] }
 							],
-							"__worldX": 3882,
-							"__worldY": 180
+							"__worldX": 3706,
+							"__worldY": 212
 						},
 						{
 							"__identifier": "PogoOrb",
@@ -13318,8 +13318,8 @@
 								"id": "V_String",
 								"params": ["scroll wing pogo"]
 							}] }],
-							"__worldX": 5673,
-							"__worldY": 537
+							"__worldX": 5497,
+							"__worldY": 569
 						},
 						{
 							"__identifier": "ReboundPad",
@@ -13341,21 +13341,21 @@
 								{ "__identifier": "impulseX", "__type": "Float", "__value": 630, "__tile": null, "defUid": 3022, "realEditorValues": [{ "id": "V_Float", "params": [630] }] },
 								{ "__identifier": "impulseY", "__type": "Float", "__value": -720, "__tile": null, "defUid": 3023, "realEditorValues": [{ "id": "V_Float", "params": [-720] }] }
 							],
-							"__worldX": 5842,
-							"__worldY": 891
+							"__worldX": 5666,
+							"__worldY": 923
 						},
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [37,45],
+							"__grid": [32,40],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "4ba232f0-bde0-11f1-91e4-07d4f4733876",
-							"width": 1,
-							"height": 80,
+							"width": 48,
+							"height": 64,
 							"defUid": 2002,
-							"px": [592,720],
+							"px": [520,640],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "scroll_lab_door", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -13379,8 +13379,8 @@
 									"params": [ false ]
 								}] }
 							],
-							"__worldX": 3824,
-							"__worldY": 816
+							"__worldX": 3576,
+							"__worldY": 768
 						}
 					]
 				},
@@ -72981,16 +72981,16 @@
 					"entityInstances": [
 						{
 							"__identifier": "LoadingZone",
-							"__grid": [70,15],
+							"__grid": [70,16],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFD166",
 							"iid": "LoadingZone-7756",
 							"width": 30,
-							"height": 224,
+							"height": 208,
 							"defUid": 2002,
-							"px": [1122,248],
+							"px": [1122,256],
 							"fieldInstances": [
 								{ "__identifier": "id", "__type": "String", "__value": "east_exit", "__tile": null, "defUid": 3002, "realEditorValues": [{
 									"id": "V_String",
@@ -73018,7 +73018,7 @@
 								}] }
 							],
 							"__worldX": 3026,
-							"__worldY": 760
+							"__worldY": 768
 						},
 						{
 							"__identifier": "DebugLabel",
