@@ -479,8 +479,12 @@ def ossuary():
         solid("east_wall", w - WALL, 32, WALL, g - 112 - 32),
         edge("secret_ossuary_east", "back through the broken wall", w - WALL, g, CATACOMBS, "secret_catacombs_west"),
         start(OSSUARY, w - 120, g),
-        entity("ChestSpawn", 282, g - 58, 76, 58, name="the first founder's signet", reward="currency:120"),
-        sign("ossuary_sign", 320, 60, "FOUNDERS 1 TO 6 (we do not speak of them)", 400),
+        ledge("ossuary_west_plinth", 144, 448, 80),
+        ledge("ossuary_signet_altar", 256, 384, 128),
+        ledge("ossuary_east_plinth", 416, 448, 80),
+        entity("ChestSpawn", 282, 384 - 58, 76, 58, name="the first founder's signet", reward="currency:120"),
+        sign("ossuary_sign", 320, 211, "FOUNDERS 1 TO 6", 198),
+        sign("ossuary_sign_silence", 320, 237, "(we do not speak of them)", 198),
     ]
     return OSSUARY, room(OSSUARY, e, at=OSSUARY_AT, size=(w, h), biome="castle_godwin", music="vault_in_the_dark",
                          bg="#141012", title="THE OTHER FOUNDERS", generator=GENERATOR, extra=UNDERGROUND_DARK)
