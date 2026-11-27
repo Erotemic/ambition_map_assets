@@ -801,13 +801,12 @@ FLATS_HIGH = 640
 
 
 def clinker_yard():
-    """The freight's way off is the yard's loading dock. Tracks and cars on
-    the ground; the tipple road climbs on trestles west to east to the
-    works' level; the ground goes on under it to the Row."""
+    """The loading dock and the two levels of the yard."""
     rid = YARD
     w, h = ROOMS_AT[rid][1]
     dock = FLATS_LOW - 32
-    road_x0, road_x1 = 496, 2340
+    road_x0, road_x1 = 496, 2384
+    hatch_y = 1024
     e = [
         solid("ground", 0, FLATS_LOW, w, h - FLATS_LOW),
         solid("dock", 0, dock, 448, FLATS_LOW - dock),
@@ -818,14 +817,18 @@ def clinker_yard():
         edge("yard_to_row", "on to the Row", w - WALL, FLATS_LOW, ROW, "row_from_yard"),
         edge("yard_to_works", "on to the works", w - WALL, FLATS_HIGH, WORKS, "works_from_yard"),
         start(rid, 200, dock),
-        ramp("tipple_road", road_x0, FLATS_LOW, road_x1, FLATS_HIGH),
+        ramp("tipple_road", road_x0, FLATS_LOW, 1424, hatch_y),
+        ledge("tipple_inspection_hatch", 1424, hatch_y, 32),
+        ramp("tipple_road_east", 1456, hatch_y, road_x1, FLATS_HIGH),
         solid("tipple_floor", road_x1, FLATS_HIGH, w - road_x1, 16),
+        ledge("tipple_inspection_landing", 1456, 1088, 144),
         # Lou Shunter, the yardmaster, on the dock.
         resident("npc_frontier_yardmaster", "frontier_yardmaster", 330, dock),
         sign("yard_sign_name", 300, dock - 300, "CLINKER FLATS. YARD LIMIT.", 320),
         sign("yard_sign_tipple", 1500, 900, "TIPPLE ROAD: TO THE WORKS", 300),
     ]
-    return build(rid, e, "CLINKER FLATS YARD", FLATS_MUSIC, dangerous=True, biome="frontier_works")
+    ladder = "\n    intgrid: (climbable: [(kind: \"Ladder\", px: [1424, 976], size: [32, 432])]),"
+    return build(rid, e, "CLINKER FLATS YARD", FLATS_MUSIC, dangerous=True, biome="frontier_works", extra=ladder)
 
 
 def clinker_works():
