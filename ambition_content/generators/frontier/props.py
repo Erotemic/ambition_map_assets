@@ -85,7 +85,7 @@ SCENERY = {
         ("frontier_freight_track_head", 0, 700, 1.0),
         ("frontier_flat_car_2_end", 0, 530),
         ("frontier_box_car_4", 350, 470),
-        ("frontier_rustler", 720, 300, 1.0),
+        ("frontier_rustler", 720, 168, 1.0),
     ],
     "frontier_clinker_yard": [
         ("frontier_yard_tracks", 0, 1240, 1.0),
