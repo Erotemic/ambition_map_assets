@@ -73,15 +73,16 @@ way along the face).
      passage into the Approach.
 5. **`gnu_ton_works_approach` — the climb to GNU-ton, and the way back.**
    From the west passage, walk into the field that lifts the robot to
-   the vault. Walk out of the field to drop to the landing at GNU-ton's
-   door. Near the passage, the works' lift goes down to the end of
-   the station's spoke, by the orchard. Its gate in the spoke is let go from
+   the vault. Walk out of the field to drop to the landing. The east
+   passage leads from the landing to the arena. The lift near the west
+   passage goes down to the end of the station's spoke, by the orchard.
+   Its gate in the spoke is let go from
    the lift's side (`spoke_lift_release`): the shortcut back, once the
    gallery is behind you.
-6. **`gnu_ton_shoulders` — GNU-ton.** This is the hall's arena
-   (`gnu_ton_arena`, `sandbox.ldtk`) as it is: the same floor, walls,
-   perches, giant and rider, so the fight is the hall's fight. You come in at
-   the top and the pad under you breaks. His placement is
+6. **`gnu_ton_shoulders` — GNU-ton.** GNU-ton and his giant are on
+   the main floor. The west
+   passage enters on a ledge. The pad east of the ledge breaks when the
+   robot stands on it. His placement is
    `gnu_ton_handle.gnu_ton` (the hall's copy is `hall.gnu_ton`). His reward
    and music are the boss's own. The way out is a door home in an alcove past
    the east wall, behind two `LockWall`s: one stands until his defeat is
@@ -90,12 +91,11 @@ way along the face).
 
    **GNU2's cell (2026-11-19, GNUTON-GNU2-FINALE).** The room is LDtk-owned
    (`science.generated.json`), so its cell was authored in the LDtk file and
-   `shoulders()` here does not have it. The room is 2048 high: its top 1280
-   is the hall (the camera zone, `clamp_mode: zone_bounds`, so the rest is
-   never seen), its floor is solid down to 1344, and under it is a sealed
-   cell (x 96-960, y 1344-1920). GNU2 (`gnu_ton_handle.gnu2`,
-   `PhaseScript:gnu2`, `wakes_after` GNU-ton) sleeps at the cell's east end,
-   2 px over its floor (it does not fall), until he enrages. Then GNU2 opens
+   `shoulders()` here does not have it. The camera shows the top 1280 px
+   of the room. The arena floor is solid from y 1248 to 1344. The cell is
+   below it at x 96 to 960 and y 1344 to 2240. GNU2 (`gnu_ton_handle.gnu2`,
+   `PhaseScript:gnu2`, `wakes_after` GNU-ton) sleeps near the west wall
+   until he enrages. Then GNU2 opens
    a pair of portals, one in the cell's west wall and one in the hall's west
    wall, and walks into the hall (`ambition_content_modules::gnu2`).
    The hall's copy (`gnu_ton_arena`, `sandbox.ldtk`) has the same cell, as

@@ -97,7 +97,7 @@ ROOMS_AT = {
     HALL: (11008, -768, 2560, 1024),
     GALLERY: (13568, -1232, 2560, 960),
     APPROACH: (16128, -1680, 1280, 1408),
-    ARENA: (18432, 64, 1920, 1280),
+    ARENA: (17408, -1536, 1920, 1280),
 }
 
 
@@ -566,7 +566,7 @@ def approach():
 
     Walk east from the west passage to the field. The field lifts the robot
     along the face of the tower to the vault. Walk out of the field to drop
-    onto the landing at GNU-ton's door. The lift near the west passage goes
+    onto the landing at the arena passage. The lift near the west passage goes
     down to the spoke. The release for the spoke gate is on the lift side.
     """
     rid = APPROACH
@@ -580,7 +580,8 @@ def approach():
         solid("floor", 0, floor, w, h - floor),
         solid("vault", 0, 0, w, vault),
         solid("west_wall", 0, vault, WALL, floor - exit_height - vault),
-        solid("east_wall", w - WALL, vault, WALL, floor - vault),
+        solid("east_wall", w - WALL, vault, WALL, landing_y - exit_height - vault),
+        solid("landing_edge", w - WALL, landing_y, WALL, floor - landing_y),
         entity("LoadingZone", 0, floor - exit_height, WALL, exit_height, id="approach_gallery_door",
                name="to the Inversion Gallery", activation="EdgeExit", target_room=GALLERY,
                target_zone="gallery_arena_door", bidirectional=True),
@@ -593,11 +594,10 @@ def approach():
         field("approach_column", column_x, vault, column_w, floor - 32 - vault, "up"),
         solid("landing", column_x + column_w, landing_y, w - WALL - column_x - column_w, floor - landing_y),
         coin("approach_landing_coin", 1040, landing_y - 32),
-        door("approach_arena_door", "to GNU-ton", w - 144, landing_y, ARENA, "shoulders_entry"),
-        # The prelude (round 3, 2026-10-24): GNU-ton on his own feet waits on
-        # the tower by his door and duels the player there. Nearly beaten, he
-        # runs out by it, and the player chases him to his giant
-        # (`bosses/gnu_ton/prelude.rs` in `ambition_content`).
+        entity("LoadingZone", w - WALL, landing_y - exit_height, WALL, exit_height, id="approach_arena_door",
+               name="to GNU-ton's arena", activation="EdgeExit", target_room=ARENA,
+               target_zone="shoulders_entry", bidirectional=True),
+        # GNU-ton duels on the landing and retreats through the passage.
         entity("EnemySpawn", 920, landing_y - 64, 40, 64, ref="gnu_ton_prelude", name="GNU-ton", brain="combatant",
                character_id="npc_gnu_ton", respawn="DeadStaysDead", disposition="Hostile"),
         # The military survey ring (hidden address TESLA) on the tower's top:
@@ -624,10 +624,12 @@ def shoulders():
     floor = 1248
     east = 1776
     alcove_top = 1136
+    entry_y, entry_height = 208, 128
     e = [
         solid("floor", 0, floor, w, h - floor),
         solid("ceiling", 0, 0, w, 16),
-        solid("left_wall", 0, 16, 16, floor - 16),
+        solid("left_wall", 0, WALL, WALL, entry_y - entry_height - WALL),
+        solid("left_wall_below_entry", 0, entry_y, WALL, floor - entry_y),
         # The east wall stands where the hall's does: the fight measures it.
         solid("east_wall", east, 16, 16, alcove_top - 16),
         solid("alcove_roof", east + 16, alcove_top - 32, w - east - 16, 32),
@@ -636,11 +638,13 @@ def shoulders():
                name="the grille of the way home", gated_by=f"boss.cleared {GNU_TON_PLACEMENT}", look="temple_gate_iron"),
         door("shoulders_home_door", "home to the hub", east + 40, floor, HUB_ROOM, HUB_DOOR, bidirectional=False),
         # The entry and the pad that breaks.
-        solid("entry_ledge", 16, 208, 288, 16),
-        entity("BreakablePlatform", 304, 208, 160, 16, name="spawn_descent_pad", max_hp=3, collision="Solid",
+        solid("entry_ledge", WALL, entry_y, 288, WALL),
+        entity("BreakablePlatform", 304, entry_y, 160, 16, name="spawn_descent_pad", max_hp=3, collision="Solid",
                trigger="OnStand", respawn="Never"),
         entity("PlayerStart", 368, 162, 28, 46, name=f"{rid}_spawn"),
-        door("shoulders_entry", "back to the approach", 64, 208, APPROACH, "approach_arena_door"),
+        entity("LoadingZone", 0, entry_y - entry_height, WALL, entry_height, id="shoulders_entry",
+               name="to the Approach", activation="EdgeExit", target_room=APPROACH,
+               target_zone="approach_arena_door", bidirectional=True),
         # Two low steps at the walls, and no more (Jon, 2026-10-24: "avoid too
         # many platforms in the room, because the mechanism to get onto the
         # boss should be the shoulders, back and portals"). The giant walks
