@@ -11,7 +11,7 @@
 	"iid": "ambition-evil-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 310449,
+	"nextUid": 310470,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "Free",
@@ -40002,7 +40002,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -40011,10 +40011,10 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -40031,7 +40031,7 @@
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,
 						2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,
-						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -40180,18 +40180,18 @@
 					"entityInstances": [
 						{
 							"__identifier": "Prop",
-							"__grid": [6,28],
+							"__grid": [6,23],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
 							"__worldX": -6692,
-							"__worldY": 456,
+							"__worldY": 370,
 							"iid": "Prop-309401",
-							"width": 850,
-							"height": 200,
+							"width": 948,
+							"height": 286,
 							"defUid": 4351,
-							"px": [108,456],
+							"px": [108,370],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hamlet_west", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -40205,18 +40205,18 @@
 						},
 						{
 							"__identifier": "Prop",
-							"__grid": [79,30],
+							"__grid": [70,25],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#9966CC",
-							"__worldX": -5530,
-							"__worldY": 488,
+							"__worldX": -5676,
+							"__worldY": 405,
 							"iid": "Prop-309402",
-							"width": 1081,
-							"height": 168,
+							"width": 1227,
+							"height": 251,
 							"defUid": 4351,
-							"px": [1270,488],
+							"px": [1124,405],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hamlet_east", "__tile": null, "defUid": 4349, "realEditorValues": [{
 									"id": "V_String",
@@ -40350,26 +40350,52 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [62,27],
+							"__grid": [70,25],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -5800,
-							"__worldY": 436,
+							"__worldX": -5666,
+							"__worldY": 415,
 							"iid": "DebugLabel-310064",
-							"width": 440,
+							"width": 256,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1000,436],
+							"px": [1134,415],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hamlet_sign_bell", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["hamlet_sign_bell"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "THE CURFEW BELL: rung at dusk, at dawn, and whenever", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "THE CURFEW BELL", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["THE CURFEW BELL: rung at dusk, at dawn, and whenever"]
+									"params": ["THE CURFEW BELL"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [70,27],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -5666,
+							"__worldY": 441,
+							"iid": "DebugLabel-310459",
+							"width": 256,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1134,441],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hamlet_sign_bell_hours", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hamlet_sign_bell_hours"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Rung at dusk, at dawn, and whenever.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Rung at dusk, at dawn, and whenever."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
@@ -40471,44 +40497,70 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [23,8],
+							"__grid": [15,25],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -6430,
-							"__worldY": 140,
+							"__worldX": -6548,
+							"__worldY": 400,
 							"iid": "DebugLabel-309407",
-							"width": 460,
+							"width": 296,
 							"height": 24,
 							"defUid": 2007,
-							"px": [370,140],
+							"px": [252,400],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hamlet_sign", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["hamlet_sign"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "LOWER GODWIN: twinned with nowhere, by order", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "LOWER GODWIN", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["LOWER GODWIN: twinned with nowhere, by order"]
+									"params": ["LOWER GODWIN"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [94,34],
+							"__grid": [15,26],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -5290,
-							"__worldY": 556,
-							"iid": "DebugLabel-309408",
-							"width": 260,
+							"__worldX": -6548,
+							"__worldY": 426,
+							"iid": "DebugLabel-310464",
+							"width": 296,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1510,556],
+							"px": [252,426],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hamlet_sign_twin", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hamlet_sign_twin"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Twinned with nowhere, by order.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Twinned with nowhere, by order."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [97,34],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -5248,
+							"__worldY": 555,
+							"iid": "DebugLabel-309408",
+							"width": 176,
+							"height": 24,
+							"defUid": 2007,
+							"px": [1552,555],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hamlet_sign_stocks", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
@@ -40523,52 +40575,104 @@
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [98,29],
+							"__grid": [105,29],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -5220,
-							"__worldY": 466,
+							"__worldX": -5120,
+							"__worldY": 475,
 							"iid": "DebugLabel-309409",
-							"width": 440,
+							"width": 240,
 							"height": 24,
 							"defUid": 2007,
-							"px": [1580,466],
+							"px": [1680,475],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hamlet_sign_decree", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["hamlet_sign_decree"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "DECREE 47: smiling is compulsory on Tuesdays", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "DECREE 47", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["DECREE 47: smiling is compulsory on Tuesdays"]
+									"params": ["DECREE 47"]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]
 						},
 						{
 							"__identifier": "DebugLabel",
-							"__grid": [37,26],
+							"__grid": [105,31],
 							"__pivot": [0,0],
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#FFFFFF",
-							"__worldX": -6200,
-							"__worldY": 416,
-							"iid": "DebugLabel-309410",
-							"width": 420,
+							"__worldX": -5120,
+							"__worldY": 501,
+							"iid": "DebugLabel-310467",
+							"width": 240,
 							"height": 24,
 							"defUid": 2007,
-							"px": [600,416],
+							"px": [1680,501],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hamlet_sign_decree_smile", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hamlet_sign_decree_smile"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Smiling is compulsory on Tuesdays.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Smiling is compulsory on Tuesdays."]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [41,23],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -6130,
+							"__worldY": 380,
+							"iid": "DebugLabel-309410",
+							"width": 280,
+							"height": 24,
+							"defUid": 2007,
+							"px": [670,380],
 							"fieldInstances": [
 								{ "__identifier": "name", "__type": "String", "__value": "hamlet_sign_bakery", "__tile": null, "defUid": 3015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["hamlet_sign_bakery"]
 								}] },
-								{ "__identifier": "text", "__type": "String", "__value": "CRUMB'S: bread for the castle, bread for us", "__tile": null, "defUid": 3016, "realEditorValues": [{
+								{ "__identifier": "text", "__type": "String", "__value": "CRUMB'S", "__tile": null, "defUid": 3016, "realEditorValues": [{
 									"id": "V_String",
-									"params": ["CRUMB'S: bread for the castle, bread for us"]
+									"params": ["CRUMB'S"]
+								}] },
+								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
+							]
+						},
+						{
+							"__identifier": "DebugLabel",
+							"__grid": [41,25],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFFFFF",
+							"__worldX": -6130,
+							"__worldY": 406,
+							"iid": "DebugLabel-310469",
+							"width": 280,
+							"height": 24,
+							"defUid": 2007,
+							"px": [670,406],
+							"fieldInstances": [
+								{ "__identifier": "name", "__type": "String", "__value": "hamlet_sign_bread", "__tile": null, "defUid": 3015, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["hamlet_sign_bread"]
+								}] },
+								{ "__identifier": "text", "__type": "String", "__value": "Bread for the castle, bread for us.", "__tile": null, "defUid": 3016, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Bread for the castle, bread for us."]
 								}] },
 								{ "__identifier": "category", "__type": "String", "__value": "Custom", "__tile": null, "defUid": 3017, "realEditorValues": [] }
 							]

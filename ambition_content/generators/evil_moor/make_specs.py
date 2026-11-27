@@ -127,7 +127,7 @@ ALLOT_ROOF = (470, 850, 512)
 HAMLET = "evil_lower_godwin"
 HAMLET_W = 2400
 #: The crier's platform (x0, x1, y), walked on (`evil_hamlet_props.py`).
-HAMLET_PLATFORM = (1270, 1410, 592)
+HAMLET_PLATFORM = (1264, 1424, 592)
 W, H, FLOOR = 2400, 784, 656
 BOG = (600, 1100, 640)
 
@@ -230,13 +230,18 @@ def hamlet():
     w = HAMLET_W
     p0, p1, py = HAMLET_PLATFORM
     e = [
-        piece("hamlet_west", 90, FLOOR - 210, name="hamlet_west"),
-        piece("hamlet_east", 1250, FLOOR - 180, name="hamlet_east"),
+        piece("hamlet_west", 90, 352, name="hamlet_west"),
+        piece("hamlet_east", 1120, 400, name="hamlet_east"),
         solid("ground", 0, FLOOR, w, H - FLOOR),
         solid("west_wall", 0, 0, WALL, FLOOR),
         solid("east_wall", w - WALL, 0, WALL, FLOOR - 112),
         edge("hamlet_east", "to the allotments", w - WALL, FLOOR, ALLOT, "allot_west"),
         start(HAMLET, w - 200, FLOOR),
+        ledge("hamlet_flour_bin", 544, 608, 80),
+        ledge("hamlet_flour_rack", 608, 544, 96),
+        ledge("hamlet_bakery_loft", 688, 496, 240),
+        ledge("hamlet_tower_west_landing", 928, 496, 128),
+        ledge("hamlet_tower_east_landing", 1152, 528, 112),
         ledge("crier_platform", p0, py, p1 - p0),
         # The bell tower: its ladder (`main`) up out of the room's top to the
         # hill.
@@ -244,14 +249,18 @@ def hamlet():
         entity("LoadingZone", BELL_TOWER[0], 0, BELL_TOWER[1] - BELL_TOWER[0], 16, id="hamlet_belltower_top",
                name="up the bell tower to Gallows Hill", activation="EdgeExit", target_room=HILL,
                target_zone="hill_belltower", bidirectional=True),
-        sign("hamlet_sign_bell", BELL_TOWER[1] + 60, FLOOR - 220, "THE CURFEW BELL: rung at dusk, at dawn, and whenever", 440),
-        resident("npc_evil_bellows", "evil_bellows", p0 + 50, py),
+        sign("hamlet_sign_bell", 1262, 415, "THE CURFEW BELL", 256),
+        sign("hamlet_sign_bell_hours", 1262, 441, "Rung at dusk, at dawn, and whenever.", 256),
+        resident("npc_evil_bellows", "evil_bellows", 1320, py),
         resident("npc_evil_crumb", "evil_crumb", 780, FLOOR),
         door("hamlet_bakery_door", "into Crumb's bakery", BAKERY_DOOR_X, FLOOR, BAKERY, "bakery_door"),
-        sign("hamlet_sign", 600, 140, "LOWER GODWIN: twinned with nowhere, by order", 460),
-        sign("hamlet_sign_stocks", 1640, FLOOR - 100, "STOCKS: for complaining", 260),
-        sign("hamlet_sign_decree", 1800, FLOOR - 190, "DECREE 47: smiling is compulsory on Tuesdays", 440),
-        sign("hamlet_sign_bakery", 810, FLOOR - 240, "CRUMB'S: bread for the castle, bread for us", 420),
+        sign("hamlet_sign", 400, 400, "LOWER GODWIN", 296),
+        sign("hamlet_sign_twin", 400, 426, "Twinned with nowhere, by order.", 296),
+        sign("hamlet_sign_stocks", 1640, 555, "STOCKS: for complaining", 176),
+        sign("hamlet_sign_decree", 1800, 475, "DECREE 47", 240),
+        sign("hamlet_sign_decree_smile", 1800, 501, "Smiling is compulsory on Tuesdays.", 240),
+        sign("hamlet_sign_bakery", 810, 380, "CRUMB'S", 280),
+        sign("hamlet_sign_bread", 810, 406, "Bread for the castle, bread for us.", 280),
     ]
     return HAMLET, room(HAMLET, e, at=(-W - ALLOT_W - w, 0), size=(w, H), biome="evil_forest", music="argand_waltz",
                         bg="#3A0E0E", title="LOWER GODWIN", generator=GENERATOR)
