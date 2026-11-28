@@ -1035,6 +1035,7 @@ def lamp(n, x, y):
 
 #: The run is dark: it is under the hill (dark rooms, DR1).
 UNDERGROUND_DARK = '\n    darkness: 75,\n    ambient: "#0a0806",'
+TOMB_LIGHT = '\n    darkness: 58,\n    ambient: "#17131a",'
 
 
 def salt_run():
@@ -1328,11 +1329,11 @@ def object_art(kind, x, floor, w, h):
     return entity("Prop", x, floor - h, w, h, name=kind, kind=kind)
 
 
-def crypt(rid, entities, title, *, west=None, east=None, roof_slot=None):
+def crypt(rid, entities, title, *, west=None, east=None, roof_slot=None, lighting=UNDERGROUND_DARK):
     _, (w, h) = ROOMS_AT[rid]
     return build(rid, chamber_shell(w, h, west, east, roof_slot) + entities, title, "vault_in_the_dark", look="barrow_vault",
                  bg="#181b23", dangerous=True,
-                 extra=UNDERGROUND_DARK + '\n    map_path: "The Barrows",')
+                 extra=lighting + '\n    map_path: "The Barrows",')
 
 
 def barrow_gate(gate, x, bottom, condition, look, name, *, top=64, gap=112):
@@ -1579,6 +1580,7 @@ def royal_tomb_floor(placement):
         object_art("barrow_salvage_stack", 1000, g, 170, 146),
         object_art("fantasy_junk_heap", 1126, g, 96, 60),
         torch("royal_vestibule_lamp", 244, 292),
+        torch("royal_aisle_lamp", 512, 232, 300),
         torch("royal_dais_lamp", 799, 195, 370),
         torch("royal_goods_lamp", 1355, 310),
     ]
@@ -1595,7 +1597,7 @@ def royal_tomb():
         entity("ChestSpawn", 1350, g - 58, 76, 58, name="the king's grave goods", reward="currency:30"),
         start(rid, 150, g),
     ]
-    return crypt(rid, e, "THE ROYAL TOMB", west=g)
+    return crypt(rid, e, "THE ROYAL TOMB", west=g, lighting=TOMB_LIGHT)
 
 
 def hall_royal_tomb():
@@ -1608,7 +1610,7 @@ def hall_royal_tomb():
     ]
     return HALL_TOMB, room(HALL_TOMB, e, at=at, size=size, biome="barrow_vault", music="vault_in_the_dark",
                            bg="#181b23", title="THE BARROW KING (PRACTICE)", generator=GENERATOR,
-                           extra=UNDERGROUND_DARK + "\n    practice: true,")
+                           extra=TOMB_LIGHT + "\n    practice: true,")
 
 
 HALL_DOOR_YAML = f"""level_id: {HALL}

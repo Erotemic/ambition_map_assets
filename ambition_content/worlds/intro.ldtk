@@ -11,7 +11,7 @@
 	"iid": "ambition-intro-world",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 108746,
+	"nextUid": 108792,
 	"identifierStyle": "Free",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -43797,10 +43797,10 @@
 						"double_jump wall_jump wall_cling wall_climb ledge_grab dash double_dash dodge fly fly_toggle glide blink precision_blink blink_through_soft_walls blink_through_hard_walls pogo directional_special shield grab morph ranged"
 					]
 				}] },
-				{ "__identifier": "darkness", "__type": "Int", "__value": 75, "__tile": null, "defUid": 106406, "realEditorValues": [{ "id": "V_Int", "params": [75] }] },
-				{ "__identifier": "ambient", "__type": "String", "__value": "#0a0806", "__tile": null, "defUid": 106407, "realEditorValues": [{
+				{ "__identifier": "darkness", "__type": "Int", "__value": 58, "__tile": null, "defUid": 106406, "realEditorValues": [{ "id": "V_Int", "params": [58] }] },
+				{ "__identifier": "ambient", "__type": "String", "__value": "#17131a", "__tile": null, "defUid": 106407, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["#0a0806"]
+					"params": ["#17131a"]
 				}] }
 			],
 			"layerInstances": [
@@ -44237,6 +44237,33 @@
 								{ "__identifier": "name", "__type": "String", "__value": "royal_vestibule_lamp", "__tile": null, "defUid": 106503, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["royal_vestibule_lamp"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [32,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 30544,
+							"__worldY": 3512,
+							"iid": "LightSource-108758",
+							"width": 32,
+							"height": 32,
+							"defUid": 106502,
+							"px": [512,232],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 300.0, "__tile": null, "defUid": 106499, "realEditorValues": [{ "id": "V_Float", "params": [300.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#f8be78", "__tile": null, "defUid": 106500, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#f8be78"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.85, "__tile": null, "defUid": 106501, "realEditorValues": [{ "id": "V_Float", "params": [0.85] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "royal_aisle_lamp", "__tile": null, "defUid": 106503, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["royal_aisle_lamp"]
 								}] }
 							]
 						},
@@ -53227,10 +53254,10 @@
 					"id": "V_Bool",
 					"params": [ true ]
 				}] },
-				{ "__identifier": "darkness", "__type": "Int", "__value": 75, "__tile": null, "defUid": 106406, "realEditorValues": [{ "id": "V_Int", "params": [75] }] },
-				{ "__identifier": "ambient", "__type": "String", "__value": "#0a0806", "__tile": null, "defUid": 106407, "realEditorValues": [{
+				{ "__identifier": "darkness", "__type": "Int", "__value": 58, "__tile": null, "defUid": 106406, "realEditorValues": [{ "id": "V_Int", "params": [58] }] },
+				{ "__identifier": "ambient", "__type": "String", "__value": "#17131a", "__tile": null, "defUid": 106407, "realEditorValues": [{
 					"id": "V_String",
-					"params": ["#0a0806"]
+					"params": ["#17131a"]
 				}] }
 			],
 			"layerInstances": [
@@ -53667,6 +53694,33 @@
 								{ "__identifier": "name", "__type": "String", "__value": "royal_vestibule_lamp", "__tile": null, "defUid": 106503, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["royal_vestibule_lamp"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "LightSource",
+							"__grid": [32,14],
+							"__pivot": [0,0],
+							"__tags": [],
+							"__tile": null,
+							"__smartColor": "#FFD27A",
+							"__worldX": 33280,
+							"__worldY": 4840,
+							"iid": "LightSource-108782",
+							"width": 32,
+							"height": 32,
+							"defUid": 106502,
+							"px": [512,232],
+							"fieldInstances": [
+								{ "__identifier": "radius", "__type": "Float", "__value": 300.0, "__tile": null, "defUid": 106499, "realEditorValues": [{ "id": "V_Float", "params": [300.0] }] },
+								{ "__identifier": "color", "__type": "String", "__value": "#f8be78", "__tile": null, "defUid": 106500, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["#f8be78"]
+								}] },
+								{ "__identifier": "intensity", "__type": "Float", "__value": 0.85, "__tile": null, "defUid": 106501, "realEditorValues": [{ "id": "V_Float", "params": [0.85] }] },
+								{ "__identifier": "name", "__type": "String", "__value": "royal_aisle_lamp", "__tile": null, "defUid": 106503, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["royal_aisle_lamp"]
 								}] }
 							]
 						},
