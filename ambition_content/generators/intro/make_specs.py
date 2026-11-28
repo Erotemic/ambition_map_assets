@@ -54,7 +54,7 @@ SPEC_OUT.mkdir(exist_ok=True)
 sys.path.insert(0, str(TOOL_SPECS))
 
 from district_kit import (  # noqa: E402
-    WALL, WORLDS, door, entity, ledge, make_rooms, paint, room, run, sign, solid, start, water,
+    SANDBOX_LDTK, WALL, WORLDS, add_entities, door, entity, ledge, make_rooms, paint, room, run, sign, solid, start, water,
 )
 from district_scenery import piece  # noqa: E402
 
@@ -80,6 +80,11 @@ TALLY_VAULT = "intro_barrow_tally_vault"
 WHEELWORKS = "intro_barrow_wheelworks"
 RELIQUARY = "intro_barrow_reliquary"
 ROYAL_TOMB = "intro_barrow_royal_tomb"
+HALL = "hall_of_bosses"
+HALL_TOMB = "hall_barrow_king_tomb"
+HALL_DOOR = "hall_to_barrow_king"
+HALL_TOMB_ENTRY = "hall_barrow_king_return"
+HALL_KING = "hall.barrow_king"
 MOUNTAIN_ASCENT = "fantasy_mountain_ascent"
 MOUNTAIN_PASS = "fantasy_mountain_pass"
 MOUNTAIN_SHELTER = "fantasy_mountain_shelter"
@@ -211,6 +216,7 @@ ROOMS_AT = {
     WHEELWORKS: ((WHEEL_X, WHEEL_Y), (WHEEL_W, WHEEL_H)),
     RELIQUARY: ((WHEEL_X + WHEEL_W, WHEEL_Y + WHEEL_FLOOR - RELIQUARY_FLOOR), (RELIQUARY_W, RELIQUARY_H)),
     ROYAL_TOMB: ((TALLY_X + TALLY_W, TALLY_Y + TALLY_FLOOR - ROYAL_FLOOR), (ROYAL_W, ROYAL_H)),
+    HALL_TOMB: ((32768, 4608), (ROYAL_W, ROYAL_H)),
     MOUNTAIN_ASCENT: ((-2400, 1344), (2400, 768)),
     MOUNTAIN_PASS: ((-4448, 1024), (2048, 640)),
     MOUNTAIN_SHELTER: ((-3904, 1664), (1152, 480)),
@@ -1559,29 +1565,74 @@ def reliquary():
     return crypt(rid, e, "THE RELIQUARY", west=g)
 
 
-def royal_tomb():
-    """Give the king a clear arena and put his grave goods beyond it."""
-    rid, g = ROYAL_TOMB, ROYAL_FLOOR
+def royal_tomb_floor(placement):
+    g = ROYAL_FLOOR
     e = [
-        solid("tomb_floor", 0, g, 1536, 144),
-        edge("royal_to_tally", "back to the tally vault", 0, g, TALLY_VAULT, "tally_to_royal"),
-        solid("treasury_lintel", 1216, 64, 48, g - 64 - 112),
-        entity("LockWall", 1216, g - 112, 48, 112, id="royal_treasury_grille", name="the grave goods grille",
-               gated_by=f"encounter.cleared {KING_ENCOUNTER}", look="temple_gate_iron"),
-        entity("EncounterTrigger", 228, 64, 160, g - 64, id=KING_ENCOUNTER, name="the king's vigil"),
-        entity("Switch", 172, g - 32, 24, 32, id="royal_vigil_bell", name="the burial bell",
-               prompt="Ring the burial bell", target_encounter=KING_ENCOUNTER, action="ResetEncounter"),
+        solid("tomb_floor", 0, g, ROYAL_W, ROYAL_H - g),
+        entity("BossSpawn", 796, g - 184, 88, 184, name="The Barrow King",
+               brain="PhaseScript:barrow_king", encounter_id=placement),
         object_art("barrow_arch", 196, g, 158, 188),
         object_art("barrow_royal_canopy", 702, g, 336, 288),
         object_art("barrow_sarcophagus", 791, g, 152, 94),
         object_art("fantasy_junk_heap", 368, g, 160, 100),
+        sign("royal_vigil_inscription", 300, g - 154, "LEAVE THE KING'S MARKS. STRIKE WHEN THE LAMP DIMS.", 420),
         object_art("barrow_salvage_stack", 1000, g, 170, 146),
         object_art("fantasy_junk_heap", 1126, g, 96, 60),
+        torch("royal_vestibule_lamp", 244, 292),
+        torch("royal_dais_lamp", 799, 195, 370),
+        torch("royal_goods_lamp", 1355, 310),
+    ]
+    return e
+
+
+def royal_tomb():
+    """Put the grave goods beyond the king's arena."""
+    rid, g = ROYAL_TOMB, ROYAL_FLOOR
+    e = royal_tomb_floor(KING_ENCOUNTER) + [
+        edge("royal_to_tally", "back to the tally vault", 0, g, TALLY_VAULT, "tally_to_royal"),
+        *barrow_gate("royal_treasury_grille", 1216, g, f"boss.cleared {KING_ENCOUNTER}",
+                     "temple_gate_iron", "the grave goods grille"),
         entity("ChestSpawn", 1350, g - 58, 76, 58, name="the king's grave goods", reward="currency:30"),
-        torch("royal_vestibule_lamp", 244, 292), torch("royal_dais_lamp", 799, 226, 340),
-        torch("royal_goods_lamp", 1355, 310), start(rid, 150, g),
+        start(rid, 150, g),
     ]
     return crypt(rid, e, "THE ROYAL TOMB", west=g)
+
+
+def hall_royal_tomb():
+    """Give the hall its own king and a door back."""
+    g = ROYAL_FLOOR
+    at, size = ROOMS_AT[HALL_TOMB]
+    e = chamber_shell(*size, None, None, None) + royal_tomb_floor(HALL_KING) + [
+        door(HALL_TOMB_ENTRY, "back to the hall", 48, g, HALL, HALL_DOOR),
+        start(HALL_TOMB, 150, g),
+    ]
+    return HALL_TOMB, room(HALL_TOMB, e, at=at, size=size, biome="barrow_vault", music="vault_in_the_dark",
+                           bg="#181b23", title="THE BARROW KING (PRACTICE)", generator=GENERATOR,
+                           extra=UNDERGROUND_DARK + "\n    practice: true,")
+
+
+HALL_DOOR_YAML = f"""level_id: {HALL}
+entities:
+  - type: LoadingZone
+    px: [416, 384]
+    size: [48, 96]
+    fields:
+      id: {HALL_DOOR}
+      name: "to the Barrow King"
+      activation: Door
+      target_room: {HALL_TOMB}
+      target_zone: {HALL_TOMB_ENTRY}
+      bidirectional: true
+  - type: Switch
+    px: [476, 448]
+    size: [24, 32]
+    fields:
+      id: hall_barrow_king_life_switch
+      name: "Barrow King life switch"
+      prompt: "Revive or defeat the Barrow King"
+      target_encounter: {HALL_KING}
+      action: BossLife
+"""
 
 
 # The westward road climbs from the workshop, crosses the pass, and drops to Brackenford.
@@ -1832,7 +1883,7 @@ def culvert():
 #: Move the other eastbound rooms from east to west.
 ROOMS = {
     BARROW: barrow, MOOR: moor, CAIRNFIELD: cairnfield, VOTIVE: votive_crypt,
-    ROYAL_TOMB: royal_tomb, TALLY_VAULT: tally_vault, WHEELWORKS: wheelworks,
+    ROYAL_TOMB: royal_tomb, HALL_TOMB: hall_royal_tomb, TALLY_VAULT: tally_vault, WHEELWORKS: wheelworks,
     WATCH_CRYPT: watch_crypt, RELIQUARY: reliquary,
     MOUNTAIN_ASCENT: mountain_ascent,
     MOUNTAIN_PASS: mountain_pass, MOUNTAIN_SHELTER: mountain_shelter, MOUNTAIN_DESCENT: mountain_descent,
@@ -1858,6 +1909,11 @@ def main(argv):
         print(path)
     if "--apply" not in argv:
         return 0
+    if not selected or HALL_TOMB in selected:
+        code, out = run("level", "add-field-def", "practice", "--type", "Bool", "--default", "false",
+                        str(WORLD_LDTK), "--in-place")
+        if code and "already" not in out.lower():
+            return code
     overwrite = "--overwrite-hand-edits" in argv
     # `--relayout` puts every room back where `ROOMS_AT` says;
     # `--relayout=<room>,<room>` only those (a room that changed its size or
@@ -1880,6 +1936,9 @@ def main(argv):
     # under its surface.
     for rid, x0, y0, x1, y1 in SUMP:
         if code := paint(WORLD_LDTK, rid, "Water", 2, x0, y0, x1 - x0, y1 - y0):
+            return code
+    if not selected or HALL_TOMB in selected:
+        if code := add_entities(HALL_DOOR_YAML, SANDBOX_LDTK, SPEC_OUT / "hall_barrow_king.yaml", unless=HALL_DOOR):
             return code
     code, _ = run("validate", str(WORLD_LDTK))
     return code
