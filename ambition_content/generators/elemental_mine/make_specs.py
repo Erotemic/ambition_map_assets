@@ -233,7 +233,7 @@ def pocket():
         *shell(w, h), floor(w, g, h),
         door("pocket_to_basin", "out to the settling basin", 1008, g, BASIN, "basin_to_pocket"),
         solid("pocket_rock_lintel", 510, 64, 48, 304),
-        breakable_wall("mine_sample_wall", 510, 368, 48, 112, hp=3, name="the cracked seam"),
+        breakable_wall("mine_sample_wall", 510, 368, 48, 112, look="mine_seam_wall", hp=3, name="the cracked seam"),
         scene("mine_bismuth", 200, g, 272, 178),
         scene("mine_brace", 596, g, 200, 260),
         chest(192, g, "the old crew's sample locker", 24),

@@ -51114,9 +51114,9 @@
 									"id": "V_String",
 									"params": ["mine_sample_wall"]
 								}] },
-								{ "__identifier": "look", "__type": "String", "__value": "", "__tile": null, "defUid": 410518, "realEditorValues": [{
+								{ "__identifier": "look", "__type": "String", "__value": "mine_seam_wall", "__tile": null, "defUid": 410518, "realEditorValues": [{
 									"id": "V_String",
-									"params": [""]
+									"params": ["mine_seam_wall"]
 								}] }
 							]
 						},

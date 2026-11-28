@@ -21860,6 +21860,10 @@
 								{ "__identifier": "trigger", "__type": "String", "__value": "OnHit", "__tile": null, "defUid": 5015, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["OnHit"]
+								}] },
+								{ "__identifier": "look", "__type": "String", "__value": "breakable_wood_crate", "__tile": null, "defUid": 8122, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["breakable_wood_crate"]
 								}] }
 							],
 							"__worldX": 5620,
